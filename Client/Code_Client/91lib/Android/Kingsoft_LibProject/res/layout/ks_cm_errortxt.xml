@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="37dp"
+    android:gravity="right"
+    android:background="@drawable/ks_error_txt_bg"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/ks_error_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:maxWidth="@dimen/ks_cm_login_edittext_layout_width"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:layout_margin="4dp"
+        android:gravity="center_vertical|left"
+        android:textSize="14dp" />
+
+</LinearLayout>

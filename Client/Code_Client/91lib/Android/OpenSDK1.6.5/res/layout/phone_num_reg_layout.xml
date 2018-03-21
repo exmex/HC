@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:nearme="http://com.nearme.gamecenter.open.core.view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+    
+    	<TextView
+        	android:id="@+id/account_pwd_has_changed_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/keke_input_box_margin_left"
+            android:layout_marginRight="@dimen/keke_input_box_margin_left"
+            android:layout_marginTop="@dimen/keke_input_box_margin_left"
+            android:textColor="#4c4d4d"
+            android:textSize="@dimen/nmgc_login_common_text_size"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+                
+            <RelativeLayout 
+            	android:id="@+id/phone_input_and_verify_code_root"
+            	android:layout_width="wrap_content"
+            	android:layout_height="@dimen/phone_num_input_area_height"
+            	android:layout_marginLeft="@dimen/keke_input_box_margin_left"
+            	android:layout_marginRight="@dimen/keke_input_box_margin_left"
+            	android:layout_marginTop="@dimen/phone_num_margin_top"
+            	android:layout_centerHorizontal="true">
+                	
+                <Button
+                	android:id="@+id/get_verify_code"
+                    android:layout_width="@dimen/get_verify_code_btn_width"
+                    android:layout_height="@dimen/phone_num_input_area_height"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/keke_get_verify_code_btn_selector"
+                    android:textColor="#494949"
+                    android:text="@string/get_verify_code"
+                    android:textSize="@dimen/px45_text_size" />
+                    
+                <com.nearme.gamecenter.open.core.view.InputBar
+                    android:id="@+id/phone_num_input_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/phone_num_input_area_height"
+                    android:layout_toLeftOf="@id/get_verify_code"
+                    android:layout_marginRight="@dimen/get_verify_code_btn_margin_left"
+                    nearme:input_hint="@string/nmgc_reg_phone_number_eleven"
+                    nearme:input_label="@string/phone_num"
+                    nearme:input_length="11" >
+                </com.nearme.gamecenter.open.core.view.InputBar>
+  	
+            </RelativeLayout>
+
+                <com.nearme.gamecenter.open.core.view.InputBar
+                    android:id="@+id/verify_code_input_area"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/phone_input_and_verify_code_root"
+                    android:layout_height="@dimen/phone_num_input_area_height"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/keke_input_box_margin_left"
+                    android:layout_marginRight="@dimen/keke_input_box_margin_left"
+                    android:layout_marginTop="@dimen/verify_code_input_area_margin_top"
+                    nearme:input_hint="@string/verify_code_num"
+                    nearme:input_label="@string/verify_code" 
+                    nearme:input_length="4" >
+                </com.nearme.gamecenter.open.core.view.InputBar>
+
+                <com.nearme.gamecenter.open.core.view.InputBar
+                    android:id="@+id/password_input_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/phone_num_input_area_height"
+                    android:layout_below="@id/verify_code_input_area"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/keke_input_box_margin_left"
+                    android:layout_marginRight="@dimen/keke_input_box_margin_left"
+                    android:layout_marginTop="@dimen/verify_code_input_area_margin_top"
+                    nearme:input_hint="@string/nmgc_changepwd_pwdhint"
+                    nearme:input_label="@string/nmgc_password"
+                    nearme:input_length="16" >
+                </com.nearme.gamecenter.open.core.view.InputBar>
+
+                <Button
+                    android:id="@+id/account_register_phone"
+                    android:layout_width="@dimen/login_btn_width"
+                    android:layout_height="@dimen/login_btn_height"
+                    android:layout_below="@id/password_input_area"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/regist_login_btn_margin_left"
+                    android:layout_marginRight="@dimen/regist_login_btn_margin_left"
+                    android:layout_marginTop="@dimen/phone_regist_btn_margin_top"
+                    android:background="@drawable/keke_regist_btn_selector"
+                    android:text="@string/account_register_btn"
+                    android:textColor="#f7f7f7"
+                    
+                    android:textSize="@dimen/nmgc_login_common_text_size" />
+
+            </RelativeLayout>
+        
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+$#include "libPlatform.h"
+
+struct BUYINFO
+{
+	std::string cooOrderSerial;
+	std::string productId;
+	std::string productName;//display on dev.91.com
+	float productPrice;
+	float productOrignalPrice;
+	unsigned int productCount;
+	std::string description;
+};
+
+
+class libPlatform
+{
+	void openBBS();
+
+	void userFeedBack();
+	
+	void gamePause();
+
+	bool getLogined() = 0;
+
+	const std::string& loginUin() = 0;
+	
+	void login() = 0;
+	
+	void switchUsers();
+	
+	const std::string& sessionID();
+	
+	const std::string& nickName();
+    
+	const std::string getPlatformInfo();
+
+	const std::string getClientChannel();
+
+	const unsigned int getPlatformId();
+};
+
+
+class libPlatformManager
+{
+	void setPlatform(std::string name);
+	static libPlatform* getPlatform();
+	static libPlatformManager* getInstance();
+
+};
+
+#endif

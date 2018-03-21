@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:id="@+id/flsdk_loading_bar_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/flsdk_gamehelper_color_50translucent"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/flsdk_loading_bar"
+        android:layout_width="28.0dip"
+        android:layout_height="28.0dip"
+        android:layout_gravity="center"
+        android:indeterminateDrawable="@drawable/flsdk_loading_progressbar_bg"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/flsdk_loading_error_image"
+        style="@style/flsdk_style_btn_unable"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="errorClick"
+        android:text="@string/flsdk_loading_error_image_text"
+        android:visibility="gone" />
+
+</merge>

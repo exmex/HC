@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/mainbottom" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<Button android:id="@+id/btn_pay" android:layout_width="wrap_content"
+			android:layout_weight="1" android:layout_height="wrap_content"
+			android:background="@drawable/upomp_bypay_nav1_on" />
+		<Button android:id="@+id/btn_account" android:layout_width="wrap_content"
+			android:layout_weight="1" android:layout_height="wrap_content"
+			android:background="@drawable/upomp_bypay_nav2_default" />
+		<Button android:id="@+id/btn_card" android:layout_width="wrap_content"
+			android:layout_weight="1" android:layout_height="wrap_content"
+			android:background="@drawable/upomp_bypay_nav3_default" />
+		<Button android:id="@+id/btn_exit" android:layout_width="wrap_content"
+			android:layout_weight="1" android:layout_height="wrap_content"
+			android:background="@drawable/upomp_bypay_nav4_default" />
+	</LinearLayout>
+</LinearLayout>

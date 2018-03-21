@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:background="@color/dcn_white">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dcn_grey" />
+
+    <LinearLayout
+        android:id="@+id/dcn_pay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:src="@drawable/dcn_record_pay_icon" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/dcn_light_black"
+            android:text="@string/dcn_payment_record" />
+
+        <ImageView
+            android:id="@+id/dcn_pay_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/dcn_list_selected" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dcn_grey" />
+
+    <LinearLayout
+        android:id="@+id/dcn_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:src="@drawable/dcn_record_recharge_icon" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/dcn_light_black"
+            android:text="@string/dcn_recharge_record" />
+
+        <ImageView
+            android:id="@+id/dcn_recharge_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:visibility="gone"
+            android:src="@drawable/dcn_list_selected" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dcn_grey" />
+</LinearLayout>

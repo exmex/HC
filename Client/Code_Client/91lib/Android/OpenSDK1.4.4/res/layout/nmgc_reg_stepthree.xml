@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/nmgc_login_title_height"
+        android:background="@drawable/nmgc_global_title" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/nmgc_login_x_right"
+            android:layout_marginTop="@dimen/nmgc_login_title_top"
+            android:contentDescription="@string/nmgc_global_title"
+            android:src="@drawable/nmgc_x"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/nmgc_login_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/nmgc_login_title_top"
+            android:text="@string/nmgc_reg_wanshanxinxi"
+            android:textSize="@dimen/nmgc_login_title_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/nmgc_reg_stepone_input_height"
+        android:layout_marginLeft="@dimen/nmgc_reg_stepone_input_margin_left"
+        android:layout_marginRight="@dimen/nmgc_reg_stepone_input_margin_left"
+        android:layout_marginTop="@dimen/nmgc_reg_stepone_input_margin_top"
+        android:background="@drawable/nmgc_input_border"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <ImageView
+            android:id="@+id/nmgc_x1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/nmgc_global_title"
+            android:src="@drawable/nmgc_x"/>
+
+        <TextView
+            style="@style/nmgc_login_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/nmgc_left"
+            android:layout_marginLeft="@dimen/nmgc_reg_stepone_input_text_margin_left"
+            android:layout_marginRight="@dimen/nmgc_reg_stepone_input_text_margin_left"
+            android:gravity="center"
+            android:text="@string/nmgc_reg_nickname"
+            android:textSize="@dimen/nmgc_login_common_text_size" />
+
+        <EditText
+            android:id="@+id/nmgc_reg_stepthree_input_nickname"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:maxLength="12"
+            android:background="@null"
+            android:layout_toRightOf="@id/nmgc_left"
+            android:layout_toLeftOf="@id/nmgc_x1"
+            android:gravity="center_vertical"
+            android:hint="@string/nmgc_reg_nickname_hint"
+            android:singleLine="true"
+            android:textColor="#1a1a1a"
+            android:textSize="@dimen/nmgc_login_common_text_size" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/nmgc_reg_stepthree_hint1"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/nmgc_reg_stepthree_hint1_margin"
+        android:layout_marginBottom="@dimen/nmgc_reg_stepthree_hint1_margin"
+        android:layout_marginLeft="@dimen/nmgc_reg_stepone_input_margin_left"
+        android:layout_marginRight="@dimen/nmgc_reg_stepone_input_margin_left"
+        android:textColor="#e32626"
+        android:text="@string/nmgc_reg_cannotusernicknametologin"
+        android:layout_height="wrap_content"/>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/nmgc_reg_stepone_input_height"
+        android:layout_marginLeft="@dimen/nmgc_reg_stepone_input_margin_left"
+        android:layout_marginRight="@dimen/nmgc_reg_stepone_input_margin_left"
+        android:background="@drawable/nmgc_input_border"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <ImageView
+            android:id="@+id/nmgc_x2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/nmgc_global_title"
+            android:src="@drawable/nmgc_x"/>
+        <TextView
+            style="@style/nmgc_login_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/nmgc_left2"
+            android:layout_marginLeft="@dimen/nmgc_reg_stepone_input_text_margin_left"
+            android:layout_marginRight="@dimen/nmgc_reg_stepone_input_text_margin_left"
+            android:gravity="center"
+            android:text="@string/nmgc_lg_password"
+            android:textSize="@dimen/nmgc_login_common_text_size" />
+
+        <EditText
+            android:id="@+id/nmgc_reg_stepthree_input_password"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/nmgc_left2"
+            android:layout_toLeftOf="@id/nmgc_x2"
+            android:maxLength="16"
+            android:inputType="textVisiblePassword"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/nmgc_reg_password_hint"
+            android:singleLine="true"
+            android:textColor="#1a1a1a"
+            android:textSize="@dimen/nmgc_login_common_text_size" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/nmgc_reg_stepthree_hint2"
+        android:layout_marginTop="@dimen/nmgc_reg_stepthree_hint1_margin"
+        android:layout_marginLeft="@dimen/nmgc_reg_stepone_input_margin_left"
+        android:layout_marginRight="@dimen/nmgc_reg_stepone_input_margin_left"
+        android:textColor="#e32626"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/nmgc_reg_stepone_hint_margin_left"
+        android:gravity="center_vertical">
+        <CheckBox
+            android:id="@+id/nmgc_reg_stepthree_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/nmgc_custom_checkbox"
+            android:checked="true"
+            android:gravity="center" >
+        </CheckBox>
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4a4a4a"
+            android:textSize="@dimen/nmgc_reg_stepone_hint_text_size"
+            android:gravity="center_vertical"
+            android:text="@string/nmgc_reg_mingwenmiam"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/nmgc_reg_stepone_button_margin_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center" >
+        <TextView
+            android:id="@+id/nmgc_reg_stepthree_button"
+            android:layout_width="@dimen/nmgc_reg_stepone_button_width"
+            android:layout_height="@dimen/nmgc_reg_stepone_button_height"
+            android:textSize="@dimen/nmgc_charge_index_text_size"
+            android:text="@string/nmgc_reg_complete"
+            android:gravity="center"
+            android:background="@drawable/nmgc_button_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="#3e3e3e"/>
+    </LinearLayout>
+</LinearLayout>

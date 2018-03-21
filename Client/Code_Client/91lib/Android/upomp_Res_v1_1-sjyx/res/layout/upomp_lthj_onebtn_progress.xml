@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="vertical"
+	>
+<RelativeLayout 
+    style="@style/upomp_lthj_dialog"
+	>
+	<RelativeLayout style="@style/upomp_lthj_dialog_content" >
+    	    <RelativeLayout style="@style/upomp_lthj_dialog_content" android:layout_above="@id/upomp_lthj_rel_above_bottom">
+	    	    <ProgressBar
+	    	        android:indeterminateDrawable="@drawable/upomp_lthj_progressbar"
+	    	        android:id="@id/upomp_lthj_dialog_progress"
+	    	        android:layout_width="@dimen/upomp_lthj_imgViewCheck_height"
+	    	        android:layout_height="@dimen/upomp_lthj_imgViewCheck_height"
+	    	        android:layout_centerVertical="true"
+	    	        android:layout_toLeftOf="@id/upomp_lthj_dialog_message" />
+	    	    <TextView style="@style/upomp_lthj_dialog_tv" android:id="@id/upomp_lthj_dialog_message" android:text="@string/upomp_lthj_watting" android:layout_centerInParent="true"/>
+    	    </RelativeLayout>
+	    	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="25dip" android:layout_alignParentBottom="true" android:id="@id/upomp_lthj_rel_above_bottom">
+	    		<Button
+	    		    style="@style/upomp_lthj_dialog_button"
+	    		    android:layout_weight="1.0" 
+	    		    android:layout_marginLeft="75dip"
+	    		    android:layout_marginRight="75dip"
+	    		    android:text="@string/upomp_lthj_cancel"
+	    		    android:id="@id/upomp_lthj_button_cancel"
+	    		    />
+		    </LinearLayout>
+    	</RelativeLayout>
+	    <ImageView android:layout_height="20dip" android:layout_width="33dip" android:background="@drawable/upomp_lthj_smalllogo" android:layout_alignParentBottom="true" android:layout_alignParentRight="true"/>	
+</RelativeLayout>
+</LinearLayout>

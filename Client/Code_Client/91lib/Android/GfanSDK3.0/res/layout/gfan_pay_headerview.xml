@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!-- 付款帐号 -->
+
+    <TextView
+        android:id="@+id/headerview_tv_payaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp" />
+
+    <!-- 账户余额 -->
+
+    <TextView
+        android:id="@+id/headerview_tv_account_balance"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="20dp" />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/headerview_hint_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <!-- 支付名称 -->
+
+        <TextView
+            android:id="@+id/headerview_tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/headerview_tv_account_balance" />
+
+        <!-- 产品名 -->
+
+        <TextView
+            android:id="@+id/headerview_tv_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:layout_below="@+id/headerview_tv_desc" />
+
+        <!-- 支付数额 -->
+
+        <TextView
+            android:id="@+id/headerview_tv_pay_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:layout_below="@+id/headerview_tv_product_name" />
+
+        <!-- 所购内容 -->
+
+        <TextView
+            android:id="@+id/headerview_tv_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:layout_below="@+id/headerview_tv_pay_money" />
+    </RelativeLayout>
+
+</LinearLayout>

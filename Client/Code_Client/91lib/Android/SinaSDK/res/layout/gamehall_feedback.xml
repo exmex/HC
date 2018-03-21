@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="left|top"
+        android:layout_margin="5dp"
+        android:background="@drawable/gamehall_popup_detail_bg_black"
+        android:orientation="vertical" >
+
+        <include layout="@layout/gamehall_feedback_title_include" />
+
+        <RadioGroup
+            android:id="@+id/gamehall_feedback_group"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                style="@style/popup_content_port_menu_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/gamehall_feedback_left_selector"
+                android:text="@string/gamehall_feedback_wmessage"
+                android:textSize="14dp" />
+
+            <RadioButton
+                style="@style/popup_content_port_menu_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/gamehall_feedback_right_selector"
+                android:text="@string/gamehall_feedback_rmessage"
+                android:textColor="@android:color/white"
+                android:textSize="14dp" />
+        </RadioGroup>
+
+        <FrameLayout
+            android:id="@+id/gamehall_feedback_record_tabContent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/gamehall_feedback_write"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/gamehall_feedback_write"
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@android:color/white"
+                    android:gravity="top|left"
+                    android:singleLine="false"
+                    android:textColor="@android:color/white"
+                    android:padding="1dp"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/gamehall_feedback_record_read"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="gone" >
+
+                <cn.sina.youxi.ui.pulltorefresh_reload_listview.XListView
+                    android:id="@+id/gamehall_feedback_read_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:footerDividersEnabled="false"
+                    android:headerDividersEnabled="false"
+                    android:scrollbars="none" >
+                </cn.sina.youxi.ui.pulltorefresh_reload_listview.XListView>
+            </FrameLayout>
+
+            <include
+                android:id="@+id/gamehall_feedback_list_loading"
+                layout="@layout/gamehall_loading_view"
+                android:visibility="gone" />
+            
+            <include 
+                android:id="@+id/gamehall_feedback_nonet"
+                layout="@layout/gamehall_nonet_page"
+                android:visibility="gone"
+                />
+            
+            <include 
+                android:id="@+id/gamehall_feedback_nodata"
+                layout="@layout/gamehall_nodata_view"
+                android:visibility="gone"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/gamehall_feedback_readlist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" >
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

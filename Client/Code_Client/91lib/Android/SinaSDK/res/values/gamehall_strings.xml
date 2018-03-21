@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- app 列表名称 -->
+    <string name="gamehall_app_name">SinaSDK</string>
+	<string name="gamehall_sdk_version">2.0.1</string>
+
+    <!-- 网络 -->
+    <string name="gamehall_network_null">无法连接到网络，请检查网络设置</string>
+    <string name="gamehall_network_null_retry">您的网络不给力，请点击重试</string>
+    
+    <!-- 密码找回 -->
+    <string name="gamehall_pwd_reset_msg">1069009088</string>
+    <string name="gamehall_pwd_reset_number">4000 960 960</string>
+
+    <!-- 用户名可输入规则 -->
+    <string name="gamehall_reg_usercode_digits">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_</string>
+    
+    <string name="sinasdk_unknown_function_code">unknown sdk function code</string>
+    <string name="sinasdk_attach_floatview_to_window_success">attach floatview to window success</string>
+	<string name="gamehall_feedback_title">客服反馈</string>
+	<string name="gamehall_messagecenter_title">消息中心</string>
+    <string name="gamehall_feedback_wmessage">写消息</string>
+    <string name="gamehall_feedback_rmessage">已发消息</string>
+    <string name="gamehall_feedback_send">发送</string>
+    <string name="gamehall_systemmessage_title">系统消息</string>
+    
+    <string name="gamehall_loading">努力加载中...</string>
+    <string name="gamehall_nodata">暂时没有内容</string>
+    
+    <string name="gamehall_card_title">存卡箱</string>
+    <string name="gamehall_card_radio_left">已领礼包</string>
+    <string name="gamehall_card_radio_right">我的预定</string>
+    
+    <!-- 升级 -->
+    <string name="gamehall_update">立即更新</string>
+    <string name="gamehall_no_update">暂不更新</string>
+    
+    <!-- 标题栏 -->
+    <string name="gamehall_title_back">返回</string>
+    
+    <!-- 登录、注册 -->
+    <string name="gamehall_account_label">账号</string>
+    <string name="gamehall_account_hint">微博帐号/手机号/新浪邮箱</string>
+    <string name="gamehall_pwd_label">密码</string>
+    <string name="gamehall_pwd_hint">请输入密码</string>
+    <string name="gamehall_login_btn">立即登录</string>
+    <string name="gamehall_register_btn">快速注册</string>
+    <string name="gamehall_pwd_reset">密码找回</string>
+    
+    <!-- 密码找回 -->
+    <string name="gamehall_account_reset_phone_label">手机号注册用户点此</string>
+    <string name="gamehall_account_reset_phone_desc">通过发送短信的方式找回密码，快捷方便</string>
+    <string name="gamehall_account_reset_email_label">用户名注册用户点此</string>
+    <string name="gamehall_account_reset_email_desc">通过致电客服，享受贴心的密码找回服务</string>
+    
+    <!-- 密码找回-邮箱 -->
+    <string name="gamehall_account_reset_email_title">用户名注册用户</string>
+    <string name="gamehall_account_reset_email_method">通过客服找回密码</string>
+    
+    <!-- 密码找回-手机 -->
+    <string name="gamehall_account_reset_phone_title">手机号注册用户</string>
+    <string name="gamehall_account_reset_phone_method1">短信发送6-16位新密码至：</string>
+    <string name="gamehall_account_reset_phone_method2">收到回执短信即可重新登录</string>
+   
+    <!-- 账号注册-->
+     <string name="gamehall_register_email_label">\@game.weibo.com</string>
+    <string name="gamehall_account_register_tab_left">手机号注册</string>
+    <string name="gamehall_account_register_tab_right">用户名注册</string>
+    
+    <string name="gamehall_account_register_email_name_label">用户名</string>
+    <string name="gamehall_account_register_email_name_hint">请输入用户名</string>
+    
+    <string name="gamehall_account_register_pwd_label">密    码</string>
+    <string name="gamehall_account_register_pwd_hint">请设置密码</string>
+    
+    <string name="gamehall_account_register_show_pwd">显示密码</string>
+    
+    <string name="gamehall_account_register_btn">注册</string>
+    
+    <string name="gamehall_account_register_location">中国大陆</string>
+    
+    <string name="gamehall_account_register_phone_name_label">手机号</string>
+    <string name="gamehall_account_register_phone_name_hint">请输入手机号</string>
+    
+    <string name="gamehall_account_register_warn_title">温馨提示</string>
+    <string name="gamehall_account_register_warn_label">该手机号已经绑定过新浪微博账号</string>
+    <string name="gamehall_account_register_warn_desc">您可以选择：</string>
+    
+    <string name="gamehall_account_register_warn_change_btn">换个账号</string>
+    <string name="gamehall_account_register_warn_login_btn">直接登录</string>
+    
+    <!-- 登录 -->
+    <string name="gamehall_loading_switch">切换用户</string>
+    <string name="gamehall_loading_info">新浪用户</string>
+    <string name="gamehall_loading_text">正在登录...</string>
+    
+    <string name="gamehall_account_register_verify_title">输入验证码完成注册</string>
+    <string name="gamehall_account_register_verify_tag">验证码</string>
+    <string name="gamehall_account_register_verify_tag2">秒后后可重新获取验证码</string>
+    <string name="gamehall_account_register_verify_hint">请输入刚刚收到的验证码</string>
+    <string name="gamehall_account_register_reget_btn">重新获取验证码</string>
+    <string name="gamehall_account_register_submit_btn">提交验证码</string>
+    
+    <!-- 登录验证 -->
+    <string name="gamehall_loading_verify_title">您的帐号状态异常</string>
+    <string name="gamehall_loading_verify_label">请输入图形字符并提交</string>
+    <string name="gamehall_loading_verify_refreh">换一张</string>
+    <string name="gamehall_loading_verify_hint">请输入验证码</string>
+    <string name="gamehall_loading_verify_submit">提交</string>
+    
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_fail">加载失败，请点击重试</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="xlistview_footer_hint_nomessage">没有任何消息</string>
+    <string name="xlistview_footer_hint_nomoremessage">已显示全部消息</string>
+    
+    <string name="gamehall_feedback_normal">加载更多消息</string>
+    <string name="gamehall_feedback_nodata">没有更多消息了</string>
+    <string name="gamehall_feedback_loading">努力加载中...</string>
+    
+    <string name="gamehall_feedback_empty">发送消息不能为空</string>
+    <string name="gamehall_feedback_http_error">请确保连接网络后重试</string>
+    <string name="gamehall_feedback_fail">发送失败，请重新发送</string>
+    <string name="gamehall_feedback_success">发送成功</string>
+    <string name="gamehall_feedback_enter">确定</string>
+    <string name="gamehall_feedback_cancel">取消</string>
+    <string name="gamehall_reply_send">确定重发该信息？</string>
+    
+    <string name="gamehall_popup_lb">礼包</string>
+    <string name="gamehall_popup_gl">攻略</string>
+    <string name="gamehall_popup_lt">论坛</string>
+    <string name="gamehall_popup_hd">活动</string>
+    <string name="gamehall_popup_wd">我的</string>
+</resources>

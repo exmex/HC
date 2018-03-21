@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="40dp" >
+
+    <RelativeLayout
+        android:id="@+id/ks_forum_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/ks_forum_module_title"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/forum_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:padding="5dip"
+            android:text="@string/ks_news_module_back_game" />
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/ks_forum_title_layout" />
+
+    <include
+        android:id="@+id/ks_loading_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/ks_loading" />
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/payeco_waitHttpResDialog"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/payeco_radiu_dialog"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="25.0dip" >
+
+    <ProgressBar
+        android:id="@+id/payeco_progressBar"
+        android:indeterminateDrawable="@drawable/payeco_plugin_progressbar"
+        android:layout_width="80.0dip"
+        android:layout_height="80.0dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:text="@string/payeco_loading"
+        android:textColor="@color/payeco_textColorBlack"
+        android:textSize="@dimen/payeco_smaller_textsize" />
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/inner_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFF5F5F5"
+    android:orientation="vertical"
+    android:paddingBottom="10dp" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="2dp"
+            android:fadeScrollbars="true" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gamehall_feedback_list_selector" >
+
+    <TextView
+        android:id="@+id/gamehall_feedback_sent_text"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/gamehall_feedback_item_height"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="50dp"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:drawablePadding="5dp"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/gamehall_feedback_sent_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:layout_marginRight="8dp"
+        android:textColor="#b2b2b2"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/gamehall_feedback_sent_allows_selector" />
+</FrameLayout>

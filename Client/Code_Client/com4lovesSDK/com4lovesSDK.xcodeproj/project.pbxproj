@@ -1,0 +1,2166 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2209A76C17FD1B7200B0BA11 /* BindingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2209A76A17FD1B7200B0BA11 /* BindingView.m */; };
+		2209A76E17FD1E4100B0BA11 /* BindingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2209A76A17FD1B7200B0BA11 /* BindingView.m */; };
+		2228CD921859904700B5906F /* SelfPayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2228CD911859904700B5906F /* SelfPayView.xib */; };
+		2236C3B2181A8A7300152787 /* detailIcon_90.png in Resources */ = {isa = PBXBuildFile; fileRef = 2236C3B1181A88ED00152787 /* detailIcon_90.png */; };
+		228AA1D817FE9DE100C97D6B /* YouaiUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 228AA1D717FE9DE100C97D6B /* YouaiUser.m */; };
+		228AA1D917FE9DE100C97D6B /* YouaiUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 228AA1D717FE9DE100C97D6B /* YouaiUser.m */; };
+		228E897E18614BDF005D74BB /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D39717C4CFAD005565A8 /* NSObject+SBJSON.m */; };
+		228E897F18614BE5005D74BB /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D39917C4CFAD005565A8 /* NSString+SBJSON.m */; };
+		22982D9217F7D4D3002CE405 /* ChangePassword.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFB3ED0417CE041F00FB772F /* ChangePassword.xib */; };
+		229C75DC184491EF006B448B /* YouaiServerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 229C75DB184491EF006B448B /* YouaiServerInfo.m */; };
+		229C75DD184491EF006B448B /* YouaiServerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 229C75DB184491EF006B448B /* YouaiServerInfo.m */; };
+		229C75DE184491EF006B448B /* YouaiServerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 229C75DB184491EF006B448B /* YouaiServerInfo.m */; };
+		229C75DF184491EF006B448B /* YouaiServerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 229C75DB184491EF006B448B /* YouaiServerInfo.m */; };
+		229C75E0184491EF006B448B /* YouaiServerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 229C75DB184491EF006B448B /* YouaiServerInfo.m */; };
+		229C75E1184491EF006B448B /* YouaiServerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 229C75DB184491EF006B448B /* YouaiServerInfo.m */; };
+		229C75E2184491EF006B448B /* YouaiServerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 229C75DB184491EF006B448B /* YouaiServerInfo.m */; };
+		229C75E91844DAF6006B448B /* ConvertUTF.c in Sources */ = {isa = PBXBuildFile; fileRef = 229C75E61844DAF6006B448B /* ConvertUTF.c */; };
+		229C75EA1844DAF6006B448B /* ConvertUTF.c in Sources */ = {isa = PBXBuildFile; fileRef = 229C75E61844DAF6006B448B /* ConvertUTF.c */; };
+		229C75EB1844DAF6006B448B /* ConvertUTF.c in Sources */ = {isa = PBXBuildFile; fileRef = 229C75E61844DAF6006B448B /* ConvertUTF.c */; };
+		229C75EC1844DAF6006B448B /* ConvertUTF.c in Sources */ = {isa = PBXBuildFile; fileRef = 229C75E61844DAF6006B448B /* ConvertUTF.c */; };
+		229C75ED1844DAF6006B448B /* ConvertUTF.c in Sources */ = {isa = PBXBuildFile; fileRef = 229C75E61844DAF6006B448B /* ConvertUTF.c */; };
+		229C75EE1844DAF6006B448B /* ConvertUTF.c in Sources */ = {isa = PBXBuildFile; fileRef = 229C75E61844DAF6006B448B /* ConvertUTF.c */; };
+		229C75EF1844DAF6006B448B /* ConvertUTF.c in Sources */ = {isa = PBXBuildFile; fileRef = 229C75E61844DAF6006B448B /* ConvertUTF.c */; };
+		229ED3BB18614D3400FEDBD2 /* InAppPurchaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2A1F5617C63BA5006754E6 /* InAppPurchaseManager.m */; };
+		229ED3BC18614D3400FEDBD2 /* com4lovesSDK.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF14D37617C3703B005565A8 /* com4lovesSDK.mm */; };
+		229ED3BD18614D3400FEDBD2 /* SDKUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CF93987D17CAFF6900A7DB25 /* SDKUtility.m */; };
+		229ED3BE18614D3400FEDBD2 /* SDKEncrypt.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF9398B217CB0E8A00A7DB25 /* SDKEncrypt.mm */; };
+		229ED3BF18614D3400FEDBD2 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ECD817CC938700FB772F /* GTMBase64.m */; };
+		229ED3C018614D3400FEDBD2 /* ServerLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ECDC17CD950300FB772F /* ServerLogic.m */; };
+		229ED3C118614D3400FEDBD2 /* com4loves.mm in Sources */ = {isa = PBXBuildFile; fileRef = CFDA232317D22B8E00352C5D /* com4loves.mm */; };
+		229ED3C218614D3400FEDBD2 /* ConvertUTF.c in Sources */ = {isa = PBXBuildFile; fileRef = 229C75E61844DAF6006B448B /* ConvertUTF.c */; };
+		229ED3C318614D3400FEDBD2 /* YouaiUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 228AA1D717FE9DE100C97D6B /* YouaiUser.m */; };
+		229ED3C518614D3400FEDBD2 /* YouaiServerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 229C75DB184491EF006B448B /* YouaiServerInfo.m */; };
+		229ED3C718614D3400FEDBD2 /* AccountCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ED0917CE1CF600FB772F /* AccountCenterView.m */; };
+		229ED3C818614D3400FEDBD2 /* AccountManagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ED0117CE032D00FB772F /* AccountManagerView.m */; };
+		229ED3C918614D3400FEDBD2 /* BindingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2209A76A17FD1B7200B0BA11 /* BindingView.m */; };
+		229ED3CA18614D3400FEDBD2 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D3DC17C5B99C005565A8 /* LoginView.m */; };
+		229ED3CB18614D3400FEDBD2 /* RegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA4802617C60BD500B6C7CA /* RegisterView.m */; };
+		229ED3CC18614D3400FEDBD2 /* SelfPayView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC8ED9417F2E5280059CB9B /* SelfPayView.m */; };
+		229ED3CD18614D3400FEDBD2 /* UserListView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD4F6CF17D0440C00CC373A /* UserListView.m */; };
+		229ED3CE18614D3400FEDBD2 /* WebView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF93987817CAF78200A7DB25 /* WebView.m */; };
+		229ED3CF18614D3400FEDBD2 /* ChangePasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ED0C17CE1DDD00FB772F /* ChangePasswordView.m */; };
+		229ED3D118614D3400FEDBD2 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF34559A183614E200E73FB7 /* AdSupport.framework */; };
+		229ED3D218614D3400FEDBD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF14D36F17C3703B005565A8 /* Foundation.framework */; };
+		22F413D2180549C10012D26D /* background_youai.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F413D1180549C10012D26D /* background_youai.png */; };
+		22F413D618054E780012D26D /* btn_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F413D518054E780012D26D /* btn_gray.png */; };
+		22F413D8180553AE0012D26D /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F413D7180553AE0012D26D /* delete.png */; };
+		22FD7275181B6B3E002A7022 /* com4lovesSDK.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF14D37617C3703B005565A8 /* com4lovesSDK.mm */; };
+		22FD7276181B6B3E002A7022 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D39717C4CFAD005565A8 /* NSObject+SBJSON.m */; };
+		22FD7277181B6B3E002A7022 /* BindingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2209A76A17FD1B7200B0BA11 /* BindingView.m */; };
+		22FD7278181B6B3E002A7022 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D39917C4CFAD005565A8 /* NSString+SBJSON.m */; };
+		22FD7279181B6B3E002A7022 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D39B17C4CFAD005565A8 /* SBJSON.m */; };
+		22FD727A181B6B3E002A7022 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D39D17C4CFAD005565A8 /* SBJsonBase.m */; };
+		22FD727B181B6B3E002A7022 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D39F17C4CFAD005565A8 /* SBJsonParser.m */; };
+		22FD727C181B6B3E002A7022 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D3A117C4CFAD005565A8 /* SBJsonWriter.m */; };
+		22FD727D181B6B3E002A7022 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D3DC17C5B99C005565A8 /* LoginView.m */; };
+		22FD727E181B6B3E002A7022 /* RegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA4802617C60BD500B6C7CA /* RegisterView.m */; };
+		22FD727F181B6B3E002A7022 /* InAppPurchaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2A1F5617C63BA5006754E6 /* InAppPurchaseManager.m */; };
+		22FD7280181B6B3E002A7022 /* WebView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF93987817CAF78200A7DB25 /* WebView.m */; };
+		22FD7281181B6B3E002A7022 /* SDKUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CF93987D17CAFF6900A7DB25 /* SDKUtility.m */; };
+		22FD7282181B6B3E002A7022 /* SDKEncrypt.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF9398B217CB0E8A00A7DB25 /* SDKEncrypt.mm */; };
+		22FD7283181B6B3E002A7022 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ECD817CC938700FB772F /* GTMBase64.m */; };
+		22FD7284181B6B3E002A7022 /* ServerLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ECDC17CD950300FB772F /* ServerLogic.m */; };
+		22FD7285181B6B3E002A7022 /* AccountManagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ED0117CE032D00FB772F /* AccountManagerView.m */; };
+		22FD7286181B6B3E002A7022 /* AccountCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ED0917CE1CF600FB772F /* AccountCenterView.m */; };
+		22FD7287181B6B3E002A7022 /* ChangePasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ED0C17CE1DDD00FB772F /* ChangePasswordView.m */; };
+		22FD7288181B6B3E002A7022 /* UserListView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD4F6CF17D0440C00CC373A /* UserListView.m */; };
+		22FD7289181B6B3E002A7022 /* com4loves.mm in Sources */ = {isa = PBXBuildFile; fileRef = CFDA232317D22B8E00352C5D /* com4loves.mm */; };
+		22FD728D181B6B3E002A7022 /* YouaiUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 228AA1D717FE9DE100C97D6B /* YouaiUser.m */; };
+		22FD728E181B6B3E002A7022 /* c4lSelfPay.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB9B00717EFF9770024D06C /* c4lSelfPay.m */; };
+		22FD728F181B6B3E002A7022 /* SelfPayView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC8ED9417F2E5280059CB9B /* SelfPayView.m */; };
+		22FD7291181B6B3E002A7022 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF14D36F17C3703B005565A8 /* Foundation.framework */; };
+		22FD74F5181E471A002A7022 /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FD74F2181E471A002A7022 /* OtherViewController.m */; };
+		22FD74F6181E471A002A7022 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 22FD74F4181E471A002A7022 /* ViewController.mm */; };
+		22FD74F9181E4A4F002A7022 /* UseSDKView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FD74F7181E4A4F002A7022 /* UseSDKView.m */; };
+		4638CBF619CD7C2A00EAC316 /* AlixPay.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB9AFFB17EFF6050024D06C /* AlixPay.m */; };
+		4638CBF719CD7C2D00EAC316 /* AlixPayOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB9AFFC17EFF6050024D06C /* AlixPayOrder.m */; };
+		4638CBF819CD7C3000EAC316 /* AlixPayResult.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB9AFFD17EFF6060024D06C /* AlixPayResult.m */; };
+		465B109719CDCB84000501AF /* cb_glossy_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 465B109519CDCB84000501AF /* cb_glossy_off.png */; };
+		465B109819CDCB84000501AF /* cb_glossy_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 465B109619CDCB84000501AF /* cb_glossy_on.png */; };
+		465B70211A00F6E30033549A /* LOGO.png in Resources */ = {isa = PBXBuildFile; fileRef = 465B70201A00F6E30033549A /* LOGO.png */; };
+		465B70311A012EAA0033549A /* name.png in Resources */ = {isa = PBXBuildFile; fileRef = 465B702F1A012EAA0033549A /* name.png */; };
+		465B70321A012EAA0033549A /* passWord.png in Resources */ = {isa = PBXBuildFile; fileRef = 465B70301A012EAA0033549A /* passWord.png */; };
+		465B703D1A01D3410033549A /* facebook_nl.png in Resources */ = {isa = PBXBuildFile; fileRef = 465B703B1A01D3410033549A /* facebook_nl.png */; };
+		465B703E1A01D3410033549A /* facebook_nm.png in Resources */ = {isa = PBXBuildFile; fileRef = 465B703C1A01D3410033549A /* facebook_nm.png */; };
+		465B70451A01D93E0033549A /* IndexViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 465B70441A01D93E0033549A /* IndexViewViewController.m */; };
+		465B70461A01DC950033549A /* IndexViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 465B70351A01CE310033549A /* IndexViewViewController.xib */; };
+		465B704A1A02225D0033549A /* ChooseBindingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 465B70481A02225D0033549A /* ChooseBindingView.m */; };
+		465B704B1A02255A0033549A /* ChooseBindingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 465B70491A02225D0033549A /* ChooseBindingView.xib */; };
+		465B704E1A0257900033549A /* sdk_guest_btn_bd_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 465B704C1A0257900033549A /* sdk_guest_btn_bd_off.png */; };
+		465B704F1A0257900033549A /* sdk_guest_btn_nobd_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 465B704D1A0257900033549A /* sdk_guest_btn_nobd_off.png */; };
+		465B70541A0258B80033549A /* sdk_facebook_click.png in Resources */ = {isa = PBXBuildFile; fileRef = 465B70501A0258B80033549A /* sdk_facebook_click.png */; };
+		465B70551A0258B80033549A /* sdk_facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 465B70511A0258B80033549A /* sdk_facebook.png */; };
+		465B70561A0258B80033549A /* sdk_login_fast_click.png in Resources */ = {isa = PBXBuildFile; fileRef = 465B70521A0258B80033549A /* sdk_login_fast_click.png */; };
+		465B70571A0258B80033549A /* sdk_login_fast.png in Resources */ = {isa = PBXBuildFile; fileRef = 465B70531A0258B80033549A /* sdk_login_fast.png */; };
+		465B705F1A0262340033549A /* login_account.png in Resources */ = {isa = PBXBuildFile; fileRef = 465B70581A0262340033549A /* login_account.png */; };
+		465B70601A0262340033549A /* login_mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 465B70591A0262340033549A /* login_mail.png */; };
+		465B70611A0262340033549A /* login_pass.png in Resources */ = {isa = PBXBuildFile; fileRef = 465B705A1A0262340033549A /* login_pass.png */; };
+		465B70621A0262340033549A /* sdk_login.png in Resources */ = {isa = PBXBuildFile; fileRef = 465B705B1A0262340033549A /* sdk_login.png */; };
+		465B70631A0262340033549A /* sdk_register.png in Resources */ = {isa = PBXBuildFile; fileRef = 465B705C1A0262340033549A /* sdk_register.png */; };
+		465B70641A0262340033549A /* sdk_small_login.png in Resources */ = {isa = PBXBuildFile; fileRef = 465B705D1A0262340033549A /* sdk_small_login.png */; };
+		465B70651A0262340033549A /* sdk_small_reg.png in Resources */ = {isa = PBXBuildFile; fileRef = 465B705E1A0262340033549A /* sdk_small_reg.png */; };
+		465B70671A027A7B0033549A /* warning.png in Resources */ = {isa = PBXBuildFile; fileRef = 465B70661A027A7B0033549A /* warning.png */; };
+		465B70691A027F7D0033549A /* return.png in Resources */ = {isa = PBXBuildFile; fileRef = 465B70681A027F7D0033549A /* return.png */; };
+		465EEFBE1A03C790007DEA46 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 465EEFBD1A03C790007DEA46 /* close.png */; };
+		46A7FF851A0788BD007E24F6 /* GamesBundle-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46A7FF831A0788BD007E24F6 /* GamesBundle-Info.plist */; };
+		AF07DBEA181FA0CE00BBCDD3 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = AF07DBE8181FA0CE00BBCDD3 /* background.png */; };
+		AF07DBEB181FA0CE00BBCDD3 /* alipayWebicon.png in Resources */ = {isa = PBXBuildFile; fileRef = AF07DBE9181FA0CE00BBCDD3 /* alipayWebicon.png */; };
+		AF34559B183614E200E73FB7 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF34559A183614E200E73FB7 /* AdSupport.framework */; };
+		AF34559C183614E800E73FB7 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF34559A183614E200E73FB7 /* AdSupport.framework */; };
+		AF34559D183614EE00E73FB7 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF34559A183614E200E73FB7 /* AdSupport.framework */; };
+		AF34559E183614F300E73FB7 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF34559A183614E200E73FB7 /* AdSupport.framework */; };
+		AF34559F183614F900E73FB7 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF34559A183614E200E73FB7 /* AdSupport.framework */; };
+		AF3455A0183614FF00E73FB7 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF34559A183614E200E73FB7 /* AdSupport.framework */; };
+		AF395A1218E15D51008BD820 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 223F71FE1859639B00659946 /* Localizable.strings */; };
+		AF5B9F7217E43A9800B2480E /* SDKUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CF93987D17CAFF6900A7DB25 /* SDKUtility.m */; };
+		AF5B9F7317E43A9800B2480E /* SDKEncrypt.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF9398B217CB0E8A00A7DB25 /* SDKEncrypt.mm */; };
+		AF5B9F7417E43A9800B2480E /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ECD817CC938700FB772F /* GTMBase64.m */; };
+		AF5B9F7517E43A9800B2480E /* ServerLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ECDC17CD950300FB772F /* ServerLogic.m */; };
+		AF5B9F7A17E43A9800B2480E /* com4loves.mm in Sources */ = {isa = PBXBuildFile; fileRef = CFDA232317D22B8E00352C5D /* com4loves.mm */; };
+		AF5B9F7C17E43A9800B2480E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF14D36F17C3703B005565A8 /* Foundation.framework */; };
+		AF7B9D86185899D40029CAC8 /* com4lovesSDK.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF14D37617C3703B005565A8 /* com4lovesSDK.mm */; };
+		AF7B9D87185899D40029CAC8 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D39717C4CFAD005565A8 /* NSObject+SBJSON.m */; };
+		AF7B9D88185899D40029CAC8 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D39917C4CFAD005565A8 /* NSString+SBJSON.m */; };
+		AF7B9D89185899D40029CAC8 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D39B17C4CFAD005565A8 /* SBJSON.m */; };
+		AF7B9D8A185899D40029CAC8 /* ConvertUTF.c in Sources */ = {isa = PBXBuildFile; fileRef = 229C75E61844DAF6006B448B /* ConvertUTF.c */; };
+		AF7B9D8B185899D40029CAC8 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D39D17C4CFAD005565A8 /* SBJsonBase.m */; };
+		AF7B9D8C185899D40029CAC8 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D39F17C4CFAD005565A8 /* SBJsonParser.m */; };
+		AF7B9D8D185899D40029CAC8 /* YouaiUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 228AA1D717FE9DE100C97D6B /* YouaiUser.m */; };
+		AF7B9D8E185899D40029CAC8 /* BindingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2209A76A17FD1B7200B0BA11 /* BindingView.m */; };
+		AF7B9D8F185899D40029CAC8 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D3A117C4CFAD005565A8 /* SBJsonWriter.m */; };
+		AF7B9D90185899D40029CAC8 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D3DC17C5B99C005565A8 /* LoginView.m */; };
+		AF7B9D91185899D40029CAC8 /* RegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA4802617C60BD500B6C7CA /* RegisterView.m */; };
+		AF7B9D92185899D40029CAC8 /* InAppPurchaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2A1F5617C63BA5006754E6 /* InAppPurchaseManager.m */; };
+		AF7B9D93185899D40029CAC8 /* WebView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF93987817CAF78200A7DB25 /* WebView.m */; };
+		AF7B9D94185899D40029CAC8 /* SDKUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CF93987D17CAFF6900A7DB25 /* SDKUtility.m */; };
+		AF7B9D95185899D40029CAC8 /* SDKEncrypt.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF9398B217CB0E8A00A7DB25 /* SDKEncrypt.mm */; };
+		AF7B9D96185899D40029CAC8 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ECD817CC938700FB772F /* GTMBase64.m */; };
+		AF7B9D97185899D40029CAC8 /* ServerLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ECDC17CD950300FB772F /* ServerLogic.m */; };
+		AF7B9D98185899D40029CAC8 /* AccountManagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ED0117CE032D00FB772F /* AccountManagerView.m */; };
+		AF7B9D99185899D40029CAC8 /* AccountCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ED0917CE1CF600FB772F /* AccountCenterView.m */; };
+		AF7B9D9A185899D40029CAC8 /* ChangePasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ED0C17CE1DDD00FB772F /* ChangePasswordView.m */; };
+		AF7B9D9B185899D40029CAC8 /* UserListView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD4F6CF17D0440C00CC373A /* UserListView.m */; };
+		AF7B9D9C185899D40029CAC8 /* com4loves.mm in Sources */ = {isa = PBXBuildFile; fileRef = CFDA232317D22B8E00352C5D /* com4loves.mm */; };
+		AF7B9D9D185899D40029CAC8 /* YouaiServerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 229C75DB184491EF006B448B /* YouaiServerInfo.m */; };
+		AF7B9D9E185899D40029CAC8 /* SelfPayView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC8ED9417F2E5280059CB9B /* SelfPayView.m */; };
+		AF7B9DA0185899D40029CAC8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF34559A183614E200E73FB7 /* AdSupport.framework */; };
+		AF7B9DA1185899D40029CAC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF14D36F17C3703B005565A8 /* Foundation.framework */; };
+		AF9F039D183B646C00A75463 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D39717C4CFAD005565A8 /* NSObject+SBJSON.m */; };
+		AF9F039E183B646C00A75463 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D39917C4CFAD005565A8 /* NSString+SBJSON.m */; };
+		AF9F039F183B646C00A75463 /* InAppPurchaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2A1F5617C63BA5006754E6 /* InAppPurchaseManager.m */; };
+		AF9F03A0183B646C00A75463 /* com4lovesSDK.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF14D37617C3703B005565A8 /* com4lovesSDK.mm */; };
+		AF9F03A1183B646C00A75463 /* SDKUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CF93987D17CAFF6900A7DB25 /* SDKUtility.m */; };
+		AF9F03A2183B646C00A75463 /* SDKEncrypt.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF9398B217CB0E8A00A7DB25 /* SDKEncrypt.mm */; };
+		AF9F03A3183B646C00A75463 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ECD817CC938700FB772F /* GTMBase64.m */; };
+		AF9F03A4183B646C00A75463 /* ServerLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ECDC17CD950300FB772F /* ServerLogic.m */; };
+		AF9F03A5183B646C00A75463 /* com4loves.mm in Sources */ = {isa = PBXBuildFile; fileRef = CFDA232317D22B8E00352C5D /* com4loves.mm */; };
+		AF9F03A6183B646C00A75463 /* YouaiUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 228AA1D717FE9DE100C97D6B /* YouaiUser.m */; };
+		AF9F03AA183B646C00A75463 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF34559A183614E200E73FB7 /* AdSupport.framework */; };
+		AF9F03AB183B646C00A75463 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF14D36F17C3703B005565A8 /* Foundation.framework */; };
+		AFF9F1B01806D1460077F885 /* YouaiUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 228AA1D717FE9DE100C97D6B /* YouaiUser.m */; };
+		AFF9F1B11806D1490077F885 /* YouaiUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 228AA1D717FE9DE100C97D6B /* YouaiUser.m */; };
+		AFF9F1B21806D1490077F885 /* YouaiUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 228AA1D717FE9DE100C97D6B /* YouaiUser.m */; };
+		AFF9F1B31806D1760077F885 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D39B17C4CFAD005565A8 /* SBJSON.m */; };
+		AFF9F1B41806D17B0077F885 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D39D17C4CFAD005565A8 /* SBJsonBase.m */; };
+		B55BFA0E19A679A500875E47 /* InAppPurchaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2A1F5617C63BA5006754E6 /* InAppPurchaseManager.m */; };
+		B55BFA0F19A679A500875E47 /* com4lovesSDK.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF14D37617C3703B005565A8 /* com4lovesSDK.mm */; };
+		B55BFA1019A679A500875E47 /* SDKUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CF93987D17CAFF6900A7DB25 /* SDKUtility.m */; };
+		B55BFA1119A679A500875E47 /* SDKEncrypt.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF9398B217CB0E8A00A7DB25 /* SDKEncrypt.mm */; };
+		B55BFA1319A679A500875E47 /* ServerLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ECDC17CD950300FB772F /* ServerLogic.m */; };
+		B55BFA1419A679A500875E47 /* com4loves.mm in Sources */ = {isa = PBXBuildFile; fileRef = CFDA232317D22B8E00352C5D /* com4loves.mm */; };
+		B55BFA1519A679A500875E47 /* ConvertUTF.c in Sources */ = {isa = PBXBuildFile; fileRef = 229C75E61844DAF6006B448B /* ConvertUTF.c */; };
+		B55BFA1619A679A500875E47 /* YouaiUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 228AA1D717FE9DE100C97D6B /* YouaiUser.m */; };
+		B55BFA1719A679A500875E47 /* YouaiServerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 229C75DB184491EF006B448B /* YouaiServerInfo.m */; };
+		B55BFA1819A679A500875E47 /* AccountCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ED0917CE1CF600FB772F /* AccountCenterView.m */; };
+		B55BFA1919A679A500875E47 /* AccountManagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ED0117CE032D00FB772F /* AccountManagerView.m */; };
+		B55BFA1A19A679A500875E47 /* BindingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2209A76A17FD1B7200B0BA11 /* BindingView.m */; };
+		B55BFA1B19A679A500875E47 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D3DC17C5B99C005565A8 /* LoginView.m */; };
+		B55BFA1C19A679A500875E47 /* RegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA4802617C60BD500B6C7CA /* RegisterView.m */; };
+		B55BFA1D19A679A500875E47 /* SelfPayView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC8ED9417F2E5280059CB9B /* SelfPayView.m */; };
+		B55BFA1E19A679A500875E47 /* UserListView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD4F6CF17D0440C00CC373A /* UserListView.m */; };
+		B55BFA1F19A679A500875E47 /* WebView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF93987817CAF78200A7DB25 /* WebView.m */; };
+		B55BFA2019A679A500875E47 /* ChangePasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ED0C17CE1DDD00FB772F /* ChangePasswordView.m */; };
+		B55BFA2219A679A500875E47 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF34559A183614E200E73FB7 /* AdSupport.framework */; };
+		B55BFA2319A679A500875E47 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF14D36F17C3703B005565A8 /* Foundation.framework */; };
+		CF14D37017C3703B005565A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF14D36F17C3703B005565A8 /* Foundation.framework */; };
+		CF14D37717C3703B005565A8 /* com4lovesSDK.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF14D37617C3703B005565A8 /* com4lovesSDK.mm */; };
+		CF14D3A217C4CFAD005565A8 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D39717C4CFAD005565A8 /* NSObject+SBJSON.m */; };
+		CF14D3A317C4CFAD005565A8 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D39917C4CFAD005565A8 /* NSString+SBJSON.m */; };
+		CF14D3A417C4CFAD005565A8 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D39B17C4CFAD005565A8 /* SBJSON.m */; };
+		CF14D3A517C4CFAD005565A8 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D39D17C4CFAD005565A8 /* SBJsonBase.m */; };
+		CF14D3A617C4CFAD005565A8 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D39F17C4CFAD005565A8 /* SBJsonParser.m */; };
+		CF14D3A717C4CFAD005565A8 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D3A117C4CFAD005565A8 /* SBJsonWriter.m */; };
+		CF14D3DD17C5B99D005565A8 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D3DC17C5B99C005565A8 /* LoginView.m */; };
+		CF2A1F5717C63BA5006754E6 /* InAppPurchaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2A1F5617C63BA5006754E6 /* InAppPurchaseManager.m */; };
+		CF79C48C17CC786E00C01CFA /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF58C88317CC5BA00098DF0C /* CoreFoundation.framework */; };
+		CF79C49717CC787F00C01CFA /* textfield.png in Resources */ = {isa = PBXBuildFile; fileRef = CF93A07217CC576900A7DB25 /* textfield.png */; };
+		CF79C49817CC787F00C01CFA /* userIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CF93A07417CC59A000A7DB25 /* userIcon.png */; };
+		CF79C49917CC787F00C01CFA /* normalbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = CF93A07017CC537D00A7DB25 /* normalbutton.png */; };
+		CF79C49A17CC787F00C01CFA /* passwordIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CF93A07317CC587900A7DB25 /* passwordIcon.png */; };
+		CF79C49C17CC787F00C01CFA /* WebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF93987617CAF60000A7DB25 /* WebView.xib */; };
+		CF79C49D17CC787F00C01CFA /* RegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFA4802F17C6193800B6C7CA /* RegisterView.xib */; };
+		CF79C49E17CC787F00C01CFA /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF14D3DA17C5B91B005565A8 /* LoginView.xib */; };
+		CF79C4A217CC7FF500C01CFA /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = CF79C4A117CC7FF500C01CFA /* title.png */; };
+		CF93987917CAF78200A7DB25 /* WebView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF93987817CAF78200A7DB25 /* WebView.m */; };
+		CF93987E17CAFF6900A7DB25 /* SDKUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CF93987D17CAFF6900A7DB25 /* SDKUtility.m */; };
+		CF9398B317CB0E8A00A7DB25 /* SDKEncrypt.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF9398B217CB0E8A00A7DB25 /* SDKEncrypt.mm */; };
+		CFA4802817C60BD500B6C7CA /* RegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA4802617C60BD500B6C7CA /* RegisterView.m */; };
+		CFB3ECDA17CC938700FB772F /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ECD817CC938700FB772F /* GTMBase64.m */; };
+		CFB3ECDD17CD950300FB772F /* ServerLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ECDC17CD950300FB772F /* ServerLogic.m */; };
+		CFB3ECDF17CDC7B000FB772F /* emailIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB3ECDE17CDC7B000FB772F /* emailIcon.png */; };
+		CFB3ECE117CDCA0100FB772F /* titlebutton.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB3ECE017CDCA0100FB772F /* titlebutton.png */; };
+		CFB3ECE317CDCCEE00FB772F /* AccountCenter.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFB3ECE217CDCCEE00FB772F /* AccountCenter.xib */; };
+		CFB3ECE517CDCD9F00FB772F /* textBubble.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB3ECE417CDCD9F00FB772F /* textBubble.png */; };
+		CFB3ECE717CDCE5A00FB772F /* headface.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB3ECE617CDCE5A00FB772F /* headface.png */; };
+		CFB3ECE917CDD04800FB772F /* detailedbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB3ECE817CDD04800FB772F /* detailedbutton.png */; };
+		CFB3ECEB17CDF03000FB772F /* detailIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB3ECEA17CDF03000FB772F /* detailIcon.png */; };
+		CFB3ECEF17CDF0D400FB772F /* accountIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB3ECEC17CDF0D400FB772F /* accountIcon.png */; };
+		CFB3ECF017CDF0D400FB772F /* logoutIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB3ECED17CDF0D400FB772F /* logoutIcon.png */; };
+		CFB3ECF117CDF0D400FB772F /* mainpageIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB3ECEE17CDF0D400FB772F /* mainpageIcon.png */; };
+		CFB3ECF317CDF5AB00FB772F /* passwordIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB3ECF217CDF5AB00FB772F /* passwordIcon2.png */; };
+		CFB3ECF517CDF5D400FB772F /* AccountManager.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFB3ECF417CDF5D400FB772F /* AccountManager.xib */; };
+		CFB3ECF717CDF8D100FB772F /* UserListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFB3ECF617CDF8D100FB772F /* UserListView.xib */; };
+		CFB3ECFA17CDFB5600FB772F /* userlistBottom.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB3ECF817CDFB5600FB772F /* userlistBottom.png */; };
+		CFB3ECFB17CDFB5600FB772F /* userlistTitle.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB3ECF917CDFB5600FB772F /* userlistTitle.png */; };
+		CFB3ECFD17CDFC3600FB772F /* userlistCenter.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB3ECFC17CDFC3600FB772F /* userlistCenter.png */; };
+		CFB3ECFF17CDFE4400FB772F /* shockIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB3ECFE17CDFE4300FB772F /* shockIcon.png */; };
+		CFB3ED0317CE032D00FB772F /* AccountManagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ED0117CE032D00FB772F /* AccountManagerView.m */; };
+		CFB3ED0A17CE1CF600FB772F /* AccountCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ED0917CE1CF600FB772F /* AccountCenterView.m */; };
+		CFB3ED0D17CE1DDE00FB772F /* ChangePasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ED0C17CE1DDD00FB772F /* ChangePasswordView.m */; };
+		CFB5AC3B17CF2BBB006E4F0E /* public.pem in Resources */ = {isa = PBXBuildFile; fileRef = CFB5AC3A17CF2BBB006E4F0E /* public.pem */; };
+		CFB9AFE017EFF58C0024D06C /* com4lovesSDK.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF14D37617C3703B005565A8 /* com4lovesSDK.mm */; };
+		CFB9AFE117EFF58C0024D06C /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D39717C4CFAD005565A8 /* NSObject+SBJSON.m */; };
+		CFB9AFE217EFF58C0024D06C /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D39917C4CFAD005565A8 /* NSString+SBJSON.m */; };
+		CFB9AFE317EFF58C0024D06C /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D39B17C4CFAD005565A8 /* SBJSON.m */; };
+		CFB9AFE417EFF58C0024D06C /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D39D17C4CFAD005565A8 /* SBJsonBase.m */; };
+		CFB9AFE517EFF58C0024D06C /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D39F17C4CFAD005565A8 /* SBJsonParser.m */; };
+		CFB9AFE617EFF58C0024D06C /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D3A117C4CFAD005565A8 /* SBJsonWriter.m */; };
+		CFB9AFE717EFF58C0024D06C /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D3DC17C5B99C005565A8 /* LoginView.m */; };
+		CFB9AFE817EFF58C0024D06C /* RegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA4802617C60BD500B6C7CA /* RegisterView.m */; };
+		CFB9AFE917EFF58C0024D06C /* InAppPurchaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2A1F5617C63BA5006754E6 /* InAppPurchaseManager.m */; };
+		CFB9AFEA17EFF58C0024D06C /* WebView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF93987817CAF78200A7DB25 /* WebView.m */; };
+		CFB9AFEB17EFF58C0024D06C /* SDKUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CF93987D17CAFF6900A7DB25 /* SDKUtility.m */; };
+		CFB9AFEC17EFF58C0024D06C /* SDKEncrypt.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF9398B217CB0E8A00A7DB25 /* SDKEncrypt.mm */; };
+		CFB9AFED17EFF58C0024D06C /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ECD817CC938700FB772F /* GTMBase64.m */; };
+		CFB9AFEE17EFF58C0024D06C /* ServerLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ECDC17CD950300FB772F /* ServerLogic.m */; };
+		CFB9AFEF17EFF58C0024D06C /* AccountManagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ED0117CE032D00FB772F /* AccountManagerView.m */; };
+		CFB9AFF017EFF58C0024D06C /* AccountCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ED0917CE1CF600FB772F /* AccountCenterView.m */; };
+		CFB9AFF117EFF58C0024D06C /* ChangePasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ED0C17CE1DDD00FB772F /* ChangePasswordView.m */; };
+		CFB9AFF217EFF58C0024D06C /* UserListView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD4F6CF17D0440C00CC373A /* UserListView.m */; };
+		CFB9AFF317EFF58C0024D06C /* com4loves.mm in Sources */ = {isa = PBXBuildFile; fileRef = CFDA232317D22B8E00352C5D /* com4loves.mm */; };
+		CFB9AFF517EFF58C0024D06C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF14D36F17C3703B005565A8 /* Foundation.framework */; };
+		CFB9AFFE17EFF6060024D06C /* AlixPay.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB9AFFB17EFF6050024D06C /* AlixPay.m */; };
+		CFB9AFFF17EFF6060024D06C /* AlixPayOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB9AFFC17EFF6050024D06C /* AlixPayOrder.m */; };
+		CFB9B00017EFF6060024D06C /* AlixPayResult.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB9AFFD17EFF6060024D06C /* AlixPayResult.m */; };
+		CFB9B00817EFF9770024D06C /* c4lSelfPay.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB9B00717EFF9770024D06C /* c4lSelfPay.m */; };
+		CFC8ED9517F2E5280059CB9B /* SelfPayView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC8ED9417F2E5280059CB9B /* SelfPayView.m */; };
+		CFC8ED9617F2E5280059CB9B /* SelfPayView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC8ED9417F2E5280059CB9B /* SelfPayView.m */; };
+		CFC8ED9C17F2E66F0059CB9B /* u2_charge_main_alipay_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = CFC8ED9917F2E66F0059CB9B /* u2_charge_main_alipay_normal.png */; };
+		CFC8ED9D17F2E66F0059CB9B /* u2_charge_main_game_card_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = CFC8ED9A17F2E66F0059CB9B /* u2_charge_main_game_card_normal.png */; };
+		CFC8ED9E17F2E66F0059CB9B /* u2_charge_main_tencent.png in Resources */ = {isa = PBXBuildFile; fileRef = CFC8ED9B17F2E66F0059CB9B /* u2_charge_main_tencent.png */; };
+		CFD4F6D017D0440C00CC373A /* UserListView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD4F6CF17D0440C00CC373A /* UserListView.m */; };
+		CFDA232517D22B8E00352C5D /* com4loves.mm in Sources */ = {isa = PBXBuildFile; fileRef = CFDA232317D22B8E00352C5D /* com4loves.mm */; };
+		CFF183AF17E46F14002DBAF9 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D39717C4CFAD005565A8 /* NSObject+SBJSON.m */; };
+		CFF183B017E46F14002DBAF9 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D39917C4CFAD005565A8 /* NSString+SBJSON.m */; };
+		CFF183B117E46F14002DBAF9 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D39B17C4CFAD005565A8 /* SBJSON.m */; };
+		CFF183B217E46F14002DBAF9 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D39D17C4CFAD005565A8 /* SBJsonBase.m */; };
+		CFF183B317E46F14002DBAF9 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D39F17C4CFAD005565A8 /* SBJsonParser.m */; };
+		CFF183B417E46F14002DBAF9 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D3A117C4CFAD005565A8 /* SBJsonWriter.m */; };
+		CFF183B917E46F14002DBAF9 /* SDKUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CF93987D17CAFF6900A7DB25 /* SDKUtility.m */; };
+		CFF183BA17E46F14002DBAF9 /* SDKEncrypt.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF9398B217CB0E8A00A7DB25 /* SDKEncrypt.mm */; };
+		CFF183BC17E46F14002DBAF9 /* ServerLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ECDC17CD950300FB772F /* ServerLogic.m */; };
+		CFF183C117E46F14002DBAF9 /* com4loves.mm in Sources */ = {isa = PBXBuildFile; fileRef = CFDA232317D22B8E00352C5D /* com4loves.mm */; };
+		CFF183C317E46F14002DBAF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF14D36F17C3703B005565A8 /* Foundation.framework */; };
+		CFF183E717E46F98002DBAF9 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D39717C4CFAD005565A8 /* NSObject+SBJSON.m */; };
+		CFF183E817E46F98002DBAF9 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D39917C4CFAD005565A8 /* NSString+SBJSON.m */; };
+		CFF183ED17E46F98002DBAF9 /* SDKUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CF93987D17CAFF6900A7DB25 /* SDKUtility.m */; };
+		CFF183EE17E46F98002DBAF9 /* SDKEncrypt.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF9398B217CB0E8A00A7DB25 /* SDKEncrypt.mm */; };
+		CFF183F017E46F98002DBAF9 /* ServerLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ECDC17CD950300FB772F /* ServerLogic.m */; };
+		CFF183F517E46F98002DBAF9 /* com4loves.mm in Sources */ = {isa = PBXBuildFile; fileRef = CFDA232317D22B8E00352C5D /* com4loves.mm */; };
+		CFF183F717E46F98002DBAF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF14D36F17C3703B005565A8 /* Foundation.framework */; };
+		CFF1840217E476AB002DBAF9 /* com4lovesSDK.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF14D37617C3703B005565A8 /* com4lovesSDK.mm */; };
+		CFF1840317E476B7002DBAF9 /* com4lovesSDK.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF14D37617C3703B005565A8 /* com4lovesSDK.mm */; };
+		CFF1840417E476C2002DBAF9 /* com4lovesSDK.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF14D37617C3703B005565A8 /* com4lovesSDK.mm */; };
+		CFF1840517E477CE002DBAF9 /* InAppPurchaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2A1F5617C63BA5006754E6 /* InAppPurchaseManager.m */; };
+		CFF1840617E477D6002DBAF9 /* InAppPurchaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2A1F5617C63BA5006754E6 /* InAppPurchaseManager.m */; };
+		CFF1840717E477E0002DBAF9 /* InAppPurchaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2A1F5617C63BA5006754E6 /* InAppPurchaseManager.m */; };
+		F7B62F2F184838A000434B0E /* AccountCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ED0917CE1CF600FB772F /* AccountCenterView.m */; };
+		F7B62F30184838A100434B0E /* AccountCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ED0917CE1CF600FB772F /* AccountCenterView.m */; };
+		F7B62F31184838AA00434B0E /* AccountManagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ED0117CE032D00FB772F /* AccountManagerView.m */; };
+		F7B62F32184838AB00434B0E /* AccountManagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ED0117CE032D00FB772F /* AccountManagerView.m */; };
+		F7B62F33184838B000434B0E /* BindingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2209A76A17FD1B7200B0BA11 /* BindingView.m */; };
+		F7B62F34184838B200434B0E /* BindingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2209A76A17FD1B7200B0BA11 /* BindingView.m */; };
+		F7B62F37184838C100434B0E /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D3DC17C5B99C005565A8 /* LoginView.m */; };
+		F7B62F38184838C200434B0E /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D3DC17C5B99C005565A8 /* LoginView.m */; };
+		F7B62F39184838C700434B0E /* RegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA4802617C60BD500B6C7CA /* RegisterView.m */; };
+		F7B62F3A184838C800434B0E /* RegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA4802617C60BD500B6C7CA /* RegisterView.m */; };
+		F7B62F3B184838CC00434B0E /* SelfPayView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC8ED9417F2E5280059CB9B /* SelfPayView.m */; };
+		F7B62F3C184838CD00434B0E /* SelfPayView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC8ED9417F2E5280059CB9B /* SelfPayView.m */; };
+		F7B62F3D184838D100434B0E /* UserListView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD4F6CF17D0440C00CC373A /* UserListView.m */; };
+		F7B62F3E184838D200434B0E /* UserListView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD4F6CF17D0440C00CC373A /* UserListView.m */; };
+		F7B62F3F184838D600434B0E /* WebView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF93987817CAF78200A7DB25 /* WebView.m */; };
+		F7B62F40184838D600434B0E /* WebView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF93987817CAF78200A7DB25 /* WebView.m */; };
+		F7B62F4118483E1500434B0E /* ChangePasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3ED0C17CE1DDD00FB772F /* ChangePasswordView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2209A76917FD1B7200B0BA11 /* BindingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindingView.h; sourceTree = "<group>"; };
+		2209A76A17FD1B7200B0BA11 /* BindingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindingView.m; sourceTree = "<group>"; };
+		2228CD911859904700B5906F /* SelfPayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SelfPayView.xib; path = com4lovesSDK/SelfPayView.xib; sourceTree = "<group>"; };
+		2236C3B1181A88ED00152787 /* detailIcon_90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = detailIcon_90.png; path = resource/detailIcon_90.png; sourceTree = "<group>"; };
+		228AA1D617FE9DE100C97D6B /* YouaiUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouaiUser.h; sourceTree = "<group>"; };
+		228AA1D717FE9DE100C97D6B /* YouaiUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouaiUser.m; sourceTree = "<group>"; };
+		229C75DA184491EF006B448B /* YouaiServerInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouaiServerInfo.h; sourceTree = "<group>"; };
+		229C75DB184491EF006B448B /* YouaiServerInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouaiServerInfo.m; sourceTree = "<group>"; };
+		229C75E61844DAF6006B448B /* ConvertUTF.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ConvertUTF.c; path = iniperser/ConvertUTF.c; sourceTree = "<group>"; };
+		229C75E71844DAF6006B448B /* ConvertUTF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConvertUTF.h; path = iniperser/ConvertUTF.h; sourceTree = "<group>"; };
+		229C75E81844DAF6006B448B /* SimpleIni.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleIni.h; path = iniperser/SimpleIni.h; sourceTree = "<group>"; };
+		229ED3D618614D3400FEDBD2 /* libcom4lovesSDKNoJsonTotle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcom4lovesSDKNoJsonTotle.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		22C27C7117F86E1B00665906 /* AlixPay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlixPay.h; path = aliPay/include/AlixPay.h; sourceTree = "<group>"; };
+		22C27C7217F86E1B00665906 /* AlixPayOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlixPayOrder.h; path = aliPay/include/AlixPayOrder.h; sourceTree = "<group>"; };
+		22C27C7317F86E1B00665906 /* AlixPayResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlixPayResult.h; path = aliPay/include/AlixPayResult.h; sourceTree = "<group>"; };
+		22E9D67F17FC141E00A3099E /* liblibOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibOS.a; path = "../build/Release-iphoneos/liblibOS.a"; sourceTree = "<group>"; };
+		22F413D1180549C10012D26D /* background_youai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background_youai.png; path = resource/background_youai.png; sourceTree = "<group>"; };
+		22F413D518054E780012D26D /* btn_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_gray.png; path = resource/btn_gray.png; sourceTree = "<group>"; };
+		22F413D7180553AE0012D26D /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = delete.png; path = resource/delete.png; sourceTree = "<group>"; };
+		22FD7295181B6B3E002A7022 /* libcom4lovesSDKKuaiyong.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcom4lovesSDKKuaiyong.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		22FD74E8181BEF6A002A7022 /* KY_PaySDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KY_PaySDK.h; path = com4lovesSDK/KY_PaySDK.h; sourceTree = "<group>"; };
+		22FD74F1181E471A002A7022 /* OtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OtherViewController.h; path = com4lovesSDK/OtherViewController.h; sourceTree = "<group>"; };
+		22FD74F2181E471A002A7022 /* OtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OtherViewController.m; path = com4lovesSDK/OtherViewController.m; sourceTree = "<group>"; };
+		22FD74F3181E471A002A7022 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = com4lovesSDK/ViewController.h; sourceTree = "<group>"; };
+		22FD74F4181E471A002A7022 /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ViewController.mm; path = com4lovesSDK/ViewController.mm; sourceTree = "<group>"; };
+		22FD74F7181E4A4F002A7022 /* UseSDKView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UseSDKView.m; path = com4lovesSDK/UseSDKView.m; sourceTree = "<group>"; };
+		22FD74F8181E4A4F002A7022 /* UseSDKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UseSDKView.h; path = com4lovesSDK/UseSDKView.h; sourceTree = "<group>"; };
+		465B109519CDCB84000501AF /* cb_glossy_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cb_glossy_off.png; path = resource/cb_glossy_off.png; sourceTree = "<group>"; };
+		465B109619CDCB84000501AF /* cb_glossy_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cb_glossy_on.png; path = resource/cb_glossy_on.png; sourceTree = "<group>"; };
+		465B70201A00F6E30033549A /* LOGO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LOGO.png; path = resource/LOGO.png; sourceTree = "<group>"; };
+		465B702F1A012EAA0033549A /* name.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = name.png; path = resource/name.png; sourceTree = "<group>"; };
+		465B70301A012EAA0033549A /* passWord.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = passWord.png; path = resource/passWord.png; sourceTree = "<group>"; };
+		465B70351A01CE310033549A /* IndexViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = IndexViewViewController.xib; path = com4lovesSDK/IndexViewViewController.xib; sourceTree = "<group>"; };
+		465B703B1A01D3410033549A /* facebook_nl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = facebook_nl.png; path = resource/facebook_nl.png; sourceTree = "<group>"; };
+		465B703C1A01D3410033549A /* facebook_nm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = facebook_nm.png; path = resource/facebook_nm.png; sourceTree = "<group>"; };
+		465B70431A01D93E0033549A /* IndexViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexViewViewController.h; sourceTree = "<group>"; };
+		465B70441A01D93E0033549A /* IndexViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexViewViewController.m; sourceTree = "<group>"; };
+		465B70471A02225D0033549A /* ChooseBindingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseBindingView.h; sourceTree = "<group>"; };
+		465B70481A02225D0033549A /* ChooseBindingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseBindingView.m; sourceTree = "<group>"; };
+		465B70491A02225D0033549A /* ChooseBindingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ChooseBindingView.xib; path = com4lovesSDK/ChooseBindingView.xib; sourceTree = "<group>"; };
+		465B704C1A0257900033549A /* sdk_guest_btn_bd_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sdk_guest_btn_bd_off.png; path = resource/sdk_guest_btn_bd_off.png; sourceTree = "<group>"; };
+		465B704D1A0257900033549A /* sdk_guest_btn_nobd_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sdk_guest_btn_nobd_off.png; path = resource/sdk_guest_btn_nobd_off.png; sourceTree = "<group>"; };
+		465B70501A0258B80033549A /* sdk_facebook_click.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sdk_facebook_click.png; path = resource/sdk_facebook_click.png; sourceTree = "<group>"; };
+		465B70511A0258B80033549A /* sdk_facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sdk_facebook.png; path = resource/sdk_facebook.png; sourceTree = "<group>"; };
+		465B70521A0258B80033549A /* sdk_login_fast_click.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sdk_login_fast_click.png; path = resource/sdk_login_fast_click.png; sourceTree = "<group>"; };
+		465B70531A0258B80033549A /* sdk_login_fast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sdk_login_fast.png; path = resource/sdk_login_fast.png; sourceTree = "<group>"; };
+		465B70581A0262340033549A /* login_account.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = login_account.png; path = resource/login_account.png; sourceTree = "<group>"; };
+		465B70591A0262340033549A /* login_mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = login_mail.png; path = resource/login_mail.png; sourceTree = "<group>"; };
+		465B705A1A0262340033549A /* login_pass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = login_pass.png; path = resource/login_pass.png; sourceTree = "<group>"; };
+		465B705B1A0262340033549A /* sdk_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sdk_login.png; path = resource/sdk_login.png; sourceTree = "<group>"; };
+		465B705C1A0262340033549A /* sdk_register.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sdk_register.png; path = resource/sdk_register.png; sourceTree = "<group>"; };
+		465B705D1A0262340033549A /* sdk_small_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sdk_small_login.png; path = resource/sdk_small_login.png; sourceTree = "<group>"; };
+		465B705E1A0262340033549A /* sdk_small_reg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sdk_small_reg.png; path = resource/sdk_small_reg.png; sourceTree = "<group>"; };
+		465B70661A027A7B0033549A /* warning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = warning.png; path = resource/warning.png; sourceTree = "<group>"; };
+		465B70681A027F7D0033549A /* return.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = return.png; path = resource/return.png; sourceTree = "<group>"; };
+		465EEFBD1A03C790007DEA46 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = close.png; path = resource/close.png; sourceTree = "<group>"; };
+		46A7FF831A0788BD007E24F6 /* GamesBundle-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GamesBundle-Info.plist"; sourceTree = "<group>"; };
+		46A7FF841A0788BD007E24F6 /* GamesBundle-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GamesBundle-Prefix.pch"; sourceTree = "<group>"; };
+		AF07DBE8181FA0CE00BBCDD3 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = resource/background.png; sourceTree = "<group>"; };
+		AF07DBE9181FA0CE00BBCDD3 /* alipayWebicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = alipayWebicon.png; path = resource/alipayWebicon.png; sourceTree = "<group>"; };
+		AF34559A183614E200E73FB7 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		AF395A1118E15D26008BD820 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AF5B9F8217E43A9800B2480E /* libcom4lovesSDKNoJson.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcom4lovesSDKNoJson.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF7B9DA5185899D40029CAC8 /* libcom4lovesSDKTW.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcom4lovesSDKTW.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF9F03AF183B646C00A75463 /* libcom4lovesSDKNoJsonClean.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcom4lovesSDKNoJsonClean.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B55BFA2719A679A500875E47 /* libcom4lovesSDKNoJsonNo64.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcom4lovesSDKNoJsonNo64.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF14D36C17C3703B005565A8 /* libcom4lovesSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcom4lovesSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF14D36F17C3703B005565A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CF14D37317C3703B005565A8 /* com4lovesSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "com4lovesSDK-Prefix.pch"; sourceTree = "<group>"; };
+		CF14D37417C3703B005565A8 /* com4lovesSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = com4lovesSDK.h; sourceTree = "<group>"; };
+		CF14D37617C3703B005565A8 /* com4lovesSDK.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = com4lovesSDK.mm; sourceTree = "<group>"; };
+		CF14D39517C4CFAD005565A8 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		CF14D39617C4CFAD005565A8 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		CF14D39717C4CFAD005565A8 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		CF14D39817C4CFAD005565A8 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		CF14D39917C4CFAD005565A8 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		CF14D39A17C4CFAD005565A8 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		CF14D39B17C4CFAD005565A8 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		CF14D39C17C4CFAD005565A8 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		CF14D39D17C4CFAD005565A8 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		CF14D39E17C4CFAD005565A8 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		CF14D39F17C4CFAD005565A8 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		CF14D3A017C4CFAD005565A8 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		CF14D3A117C4CFAD005565A8 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		CF14D3DA17C5B91B005565A8 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginView.xib; path = com4lovesSDK/LoginView.xib; sourceTree = "<group>"; };
+		CF14D3DB17C5B99C005565A8 /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		CF14D3DC17C5B99C005565A8 /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
+		CF2A1F5517C63BA5006754E6 /* InAppPurchaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppPurchaseManager.h; sourceTree = "<group>"; };
+		CF2A1F5617C63BA5006754E6 /* InAppPurchaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppPurchaseManager.m; sourceTree = "<group>"; };
+		CF58C88317CC5BA00098DF0C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		CF79C48B17CC786E00C01CFA /* GamesBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GamesBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF79C4A117CC7FF500C01CFA /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = title.png; path = resource/title.png; sourceTree = "<group>"; };
+		CF93987617CAF60000A7DB25 /* WebView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WebView.xib; path = com4lovesSDK/WebView.xib; sourceTree = "<group>"; };
+		CF93987717CAF78200A7DB25 /* WebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebView.h; sourceTree = "<group>"; };
+		CF93987817CAF78200A7DB25 /* WebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebView.m; sourceTree = "<group>"; };
+		CF93987C17CAFF6900A7DB25 /* SDKUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDKUtility.h; sourceTree = "<group>"; };
+		CF93987D17CAFF6900A7DB25 /* SDKUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDKUtility.m; sourceTree = "<group>"; };
+		CF9398B117CB0E8A00A7DB25 /* SDKEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDKEncrypt.h; sourceTree = "<group>"; };
+		CF9398B217CB0E8A00A7DB25 /* SDKEncrypt.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SDKEncrypt.mm; sourceTree = "<group>"; };
+		CF93A07017CC537D00A7DB25 /* normalbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = normalbutton.png; path = resource/normalbutton.png; sourceTree = "<group>"; };
+		CF93A07217CC576900A7DB25 /* textfield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = textfield.png; path = resource/textfield.png; sourceTree = "<group>"; };
+		CF93A07317CC587900A7DB25 /* passwordIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = passwordIcon.png; path = resource/passwordIcon.png; sourceTree = "<group>"; };
+		CF93A07417CC59A000A7DB25 /* userIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = userIcon.png; path = resource/userIcon.png; sourceTree = "<group>"; };
+		CFA4802517C60BD500B6C7CA /* RegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterView.h; sourceTree = "<group>"; };
+		CFA4802617C60BD500B6C7CA /* RegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterView.m; sourceTree = "<group>"; };
+		CFA4802F17C6193800B6C7CA /* RegisterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RegisterView.xib; path = com4lovesSDK/RegisterView.xib; sourceTree = "<group>"; };
+		CFB3ECD717CC938700FB772F /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		CFB3ECD817CC938700FB772F /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		CFB3ECD917CC938700FB772F /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		CFB3ECDB17CD950300FB772F /* ServerLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerLogic.h; sourceTree = "<group>"; };
+		CFB3ECDC17CD950300FB772F /* ServerLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerLogic.m; sourceTree = "<group>"; };
+		CFB3ECDE17CDC7B000FB772F /* emailIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = emailIcon.png; path = resource/emailIcon.png; sourceTree = "<group>"; };
+		CFB3ECE017CDCA0100FB772F /* titlebutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = titlebutton.png; path = resource/titlebutton.png; sourceTree = "<group>"; };
+		CFB3ECE217CDCCEE00FB772F /* AccountCenter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AccountCenter.xib; path = com4lovesSDK/AccountCenter.xib; sourceTree = "<group>"; };
+		CFB3ECE417CDCD9F00FB772F /* textBubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = textBubble.png; path = resource/textBubble.png; sourceTree = "<group>"; };
+		CFB3ECE617CDCE5A00FB772F /* headface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = headface.png; path = resource/headface.png; sourceTree = "<group>"; };
+		CFB3ECE817CDD04800FB772F /* detailedbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = detailedbutton.png; path = resource/detailedbutton.png; sourceTree = "<group>"; };
+		CFB3ECEA17CDF03000FB772F /* detailIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = detailIcon.png; path = resource/detailIcon.png; sourceTree = "<group>"; };
+		CFB3ECEC17CDF0D400FB772F /* accountIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = accountIcon.png; path = resource/accountIcon.png; sourceTree = "<group>"; };
+		CFB3ECED17CDF0D400FB772F /* logoutIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logoutIcon.png; path = resource/logoutIcon.png; sourceTree = "<group>"; };
+		CFB3ECEE17CDF0D400FB772F /* mainpageIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mainpageIcon.png; path = resource/mainpageIcon.png; sourceTree = "<group>"; };
+		CFB3ECF217CDF5AB00FB772F /* passwordIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = passwordIcon2.png; path = resource/passwordIcon2.png; sourceTree = "<group>"; };
+		CFB3ECF417CDF5D400FB772F /* AccountManager.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AccountManager.xib; path = com4lovesSDK/AccountManager.xib; sourceTree = "<group>"; };
+		CFB3ECF617CDF8D100FB772F /* UserListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UserListView.xib; path = com4lovesSDK/UserListView.xib; sourceTree = "<group>"; };
+		CFB3ECF817CDFB5600FB772F /* userlistBottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = userlistBottom.png; path = resource/userlistBottom.png; sourceTree = "<group>"; };
+		CFB3ECF917CDFB5600FB772F /* userlistTitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = userlistTitle.png; path = resource/userlistTitle.png; sourceTree = "<group>"; };
+		CFB3ECFC17CDFC3600FB772F /* userlistCenter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = userlistCenter.png; path = resource/userlistCenter.png; sourceTree = "<group>"; };
+		CFB3ECFE17CDFE4300FB772F /* shockIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shockIcon.png; path = resource/shockIcon.png; sourceTree = "<group>"; };
+		CFB3ED0017CE032D00FB772F /* AccountManagerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountManagerView.h; sourceTree = "<group>"; };
+		CFB3ED0117CE032D00FB772F /* AccountManagerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountManagerView.m; sourceTree = "<group>"; };
+		CFB3ED0417CE041F00FB772F /* ChangePassword.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ChangePassword.xib; path = com4lovesSDK/ChangePassword.xib; sourceTree = "<group>"; };
+		CFB3ED0817CE1CF600FB772F /* AccountCenterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountCenterView.h; sourceTree = "<group>"; };
+		CFB3ED0917CE1CF600FB772F /* AccountCenterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountCenterView.m; sourceTree = "<group>"; };
+		CFB3ED0B17CE1DDD00FB772F /* ChangePasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePasswordView.h; sourceTree = "<group>"; };
+		CFB3ED0C17CE1DDD00FB772F /* ChangePasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePasswordView.m; sourceTree = "<group>"; };
+		CFB5AC3A17CF2BBB006E4F0E /* public.pem */ = {isa = PBXFileReference; lastKnownFileType = text; path = public.pem; sourceTree = "<group>"; };
+		CFB9AFF917EFF58C0024D06C /* libcom4lovesSDKselfPay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcom4lovesSDKselfPay.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFB9AFFB17EFF6050024D06C /* AlixPay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlixPay.m; path = aliPay/src/AlixPay.m; sourceTree = "<group>"; };
+		CFB9AFFC17EFF6050024D06C /* AlixPayOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlixPayOrder.m; path = aliPay/src/AlixPayOrder.m; sourceTree = "<group>"; };
+		CFB9AFFD17EFF6060024D06C /* AlixPayResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlixPayResult.m; path = aliPay/src/AlixPayResult.m; sourceTree = "<group>"; };
+		CFB9B00617EFF9770024D06C /* c4lSelfPay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = c4lSelfPay.h; path = com4lovesSDK/c4lSelfPay.h; sourceTree = "<group>"; };
+		CFB9B00717EFF9770024D06C /* c4lSelfPay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = c4lSelfPay.m; path = com4lovesSDK/c4lSelfPay.m; sourceTree = "<group>"; };
+		CFC8ED9317F2E5280059CB9B /* SelfPayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfPayView.h; sourceTree = "<group>"; };
+		CFC8ED9417F2E5280059CB9B /* SelfPayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfPayView.m; sourceTree = "<group>"; };
+		CFC8ED9917F2E66F0059CB9B /* u2_charge_main_alipay_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = u2_charge_main_alipay_normal.png; path = resource/u2_charge_main_alipay_normal.png; sourceTree = "<group>"; };
+		CFC8ED9A17F2E66F0059CB9B /* u2_charge_main_game_card_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = u2_charge_main_game_card_normal.png; path = resource/u2_charge_main_game_card_normal.png; sourceTree = "<group>"; };
+		CFC8ED9B17F2E66F0059CB9B /* u2_charge_main_tencent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = u2_charge_main_tencent.png; path = resource/u2_charge_main_tencent.png; sourceTree = "<group>"; };
+		CFD4F6CE17D0440C00CC373A /* UserListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserListView.h; sourceTree = "<group>"; };
+		CFD4F6CF17D0440C00CC373A /* UserListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserListView.m; sourceTree = "<group>"; };
+		CFDA232317D22B8E00352C5D /* com4loves.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = com4loves.mm; sourceTree = "<group>"; };
+		CFDA232417D22B8E00352C5D /* com4loves.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = com4loves.h; sourceTree = "<group>"; };
+		CFF183C917E46F14002DBAF9 /* libcom4lovesSDKNoGTMBase64.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcom4lovesSDKNoGTMBase64.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFF183FD17E46F98002DBAF9 /* libcom4lovesSDKPure.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcom4lovesSDKPure.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		229ED3D018614D3400FEDBD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				229ED3D118614D3400FEDBD2 /* AdSupport.framework in Frameworks */,
+				229ED3D218614D3400FEDBD2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22FD7290181B6B3E002A7022 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF3455A0183614FF00E73FB7 /* AdSupport.framework in Frameworks */,
+				22FD7291181B6B3E002A7022 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF5B9F7B17E43A9800B2480E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF34559C183614E800E73FB7 /* AdSupport.framework in Frameworks */,
+				AF5B9F7C17E43A9800B2480E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF7B9D9F185899D40029CAC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF7B9DA0185899D40029CAC8 /* AdSupport.framework in Frameworks */,
+				AF7B9DA1185899D40029CAC8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF9F03A9183B646C00A75463 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF9F03AA183B646C00A75463 /* AdSupport.framework in Frameworks */,
+				AF9F03AB183B646C00A75463 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B55BFA2119A679A500875E47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B55BFA2219A679A500875E47 /* AdSupport.framework in Frameworks */,
+				B55BFA2319A679A500875E47 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF14D36917C3703B005565A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF34559B183614E200E73FB7 /* AdSupport.framework in Frameworks */,
+				CF14D37017C3703B005565A8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF79C48817CC786E00C01CFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF79C48C17CC786E00C01CFA /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFB9AFF417EFF58C0024D06C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF34559F183614F900E73FB7 /* AdSupport.framework in Frameworks */,
+				CFB9AFF517EFF58C0024D06C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFF183C217E46F14002DBAF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF34559D183614EE00E73FB7 /* AdSupport.framework in Frameworks */,
+				CFF183C317E46F14002DBAF9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFF183F617E46F98002DBAF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF34559E183614F300E73FB7 /* AdSupport.framework in Frameworks */,
+				CFF183F717E46F98002DBAF9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		229C75E51844DADD006B448B /* iniperser */ = {
+			isa = PBXGroup;
+			children = (
+				229C75E61844DAF6006B448B /* ConvertUTF.c */,
+				229C75E71844DAF6006B448B /* ConvertUTF.h */,
+				229C75E81844DAF6006B448B /* SimpleIni.h */,
+			);
+			name = iniperser;
+			sourceTree = "<group>";
+		};
+		22FD74E7181BEF52002A7022 /* kuaiyong */ = {
+			isa = PBXGroup;
+			children = (
+				22FD74F7181E4A4F002A7022 /* UseSDKView.m */,
+				22FD74F8181E4A4F002A7022 /* UseSDKView.h */,
+				22FD74F1181E471A002A7022 /* OtherViewController.h */,
+				22FD74F2181E471A002A7022 /* OtherViewController.m */,
+				22FD74F3181E471A002A7022 /* ViewController.h */,
+				22FD74F4181E471A002A7022 /* ViewController.mm */,
+				22FD74E8181BEF6A002A7022 /* KY_PaySDK.h */,
+			);
+			name = kuaiyong;
+			sourceTree = "<group>";
+		};
+		CF14D36317C3703B005565A8 = {
+			isa = PBXGroup;
+			children = (
+				229C75E51844DADD006B448B /* iniperser */,
+				22FD74E7181BEF52002A7022 /* kuaiyong */,
+				CFB9AFFA17EFF5E80024D06C /* alipay */,
+				CFB3ECD617CC938700FB772F /* gtmbase64 */,
+				CFB3ECD517CC857800FB772F /* resources */,
+				CF14D39417C4CFAD005565A8 /* JSON1 */,
+				CF14D37117C3703B005565A8 /* com4lovesSDK */,
+				CF79C48D17CC786E00C01CFA /* com4lovesBundle */,
+				CF14D36E17C3703B005565A8 /* Frameworks */,
+				CF14D36D17C3703B005565A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF14D36D17C3703B005565A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF14D36C17C3703B005565A8 /* libcom4lovesSDK.a */,
+				CF79C48B17CC786E00C01CFA /* GamesBundle.bundle */,
+				AF5B9F8217E43A9800B2480E /* libcom4lovesSDKNoJson.a */,
+				CFF183C917E46F14002DBAF9 /* libcom4lovesSDKNoGTMBase64.a */,
+				CFF183FD17E46F98002DBAF9 /* libcom4lovesSDKPure.a */,
+				CFB9AFF917EFF58C0024D06C /* libcom4lovesSDKselfPay.a */,
+				22FD7295181B6B3E002A7022 /* libcom4lovesSDKKuaiyong.a */,
+				AF9F03AF183B646C00A75463 /* libcom4lovesSDKNoJsonClean.a */,
+				AF7B9DA5185899D40029CAC8 /* libcom4lovesSDKTW.a */,
+				229ED3D618614D3400FEDBD2 /* libcom4lovesSDKNoJsonTotle.a */,
+				B55BFA2719A679A500875E47 /* libcom4lovesSDKNoJsonNo64.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF14D36E17C3703B005565A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF34559A183614E200E73FB7 /* AdSupport.framework */,
+				22E9D67F17FC141E00A3099E /* liblibOS.a */,
+				CF14D36F17C3703B005565A8 /* Foundation.framework */,
+				CF58C88317CC5BA00098DF0C /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF14D37117C3703B005565A8 /* com4lovesSDK */ = {
+			isa = PBXGroup;
+			children = (
+				CFB3ED0617CE1C9000FB772F /* views */,
+				CF14D37217C3703B005565A8 /* Supporting Files */,
+				CF93987C17CAFF6900A7DB25 /* SDKUtility.h */,
+				CF93987D17CAFF6900A7DB25 /* SDKUtility.m */,
+				CF9398B117CB0E8A00A7DB25 /* SDKEncrypt.h */,
+				CF9398B217CB0E8A00A7DB25 /* SDKEncrypt.mm */,
+				CF14D37417C3703B005565A8 /* com4lovesSDK.h */,
+				CF14D37617C3703B005565A8 /* com4lovesSDK.mm */,
+				CF2A1F5517C63BA5006754E6 /* InAppPurchaseManager.h */,
+				CF2A1F5617C63BA5006754E6 /* InAppPurchaseManager.m */,
+				CFB3ECDB17CD950300FB772F /* ServerLogic.h */,
+				CFB3ECDC17CD950300FB772F /* ServerLogic.m */,
+				CFDA232417D22B8E00352C5D /* com4loves.h */,
+				CFDA232317D22B8E00352C5D /* com4loves.mm */,
+				228AA1D617FE9DE100C97D6B /* YouaiUser.h */,
+				228AA1D717FE9DE100C97D6B /* YouaiUser.m */,
+				229C75DA184491EF006B448B /* YouaiServerInfo.h */,
+				229C75DB184491EF006B448B /* YouaiServerInfo.m */,
+			);
+			path = com4lovesSDK;
+			sourceTree = "<group>";
+		};
+		CF14D37217C3703B005565A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF14D37317C3703B005565A8 /* com4lovesSDK-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF14D39417C4CFAD005565A8 /* JSON1 */ = {
+			isa = PBXGroup;
+			children = (
+				CF14D39517C4CFAD005565A8 /* JSON.h */,
+				CF14D39617C4CFAD005565A8 /* NSObject+SBJSON.h */,
+				CF14D39717C4CFAD005565A8 /* NSObject+SBJSON.m */,
+				CF14D39817C4CFAD005565A8 /* NSString+SBJSON.h */,
+				CF14D39917C4CFAD005565A8 /* NSString+SBJSON.m */,
+				CF14D39A17C4CFAD005565A8 /* SBJSON.h */,
+				CF14D39B17C4CFAD005565A8 /* SBJSON.m */,
+				CF14D39C17C4CFAD005565A8 /* SBJsonBase.h */,
+				CF14D39D17C4CFAD005565A8 /* SBJsonBase.m */,
+				CF14D39E17C4CFAD005565A8 /* SBJsonParser.h */,
+				CF14D39F17C4CFAD005565A8 /* SBJsonParser.m */,
+				CF14D3A017C4CFAD005565A8 /* SBJsonWriter.h */,
+				CF14D3A117C4CFAD005565A8 /* SBJsonWriter.m */,
+			);
+			path = JSON1;
+			sourceTree = "<group>";
+		};
+		CF79C48D17CC786E00C01CFA /* com4lovesBundle */ = {
+			isa = PBXGroup;
+			children = (
+				CF79C48E17CC786E00C01CFA /* Supporting Files */,
+			);
+			path = com4lovesBundle;
+			sourceTree = "<group>";
+		};
+		CF79C48E17CC786E00C01CFA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46A7FF831A0788BD007E24F6 /* GamesBundle-Info.plist */,
+				46A7FF841A0788BD007E24F6 /* GamesBundle-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CFB3ECD517CC857800FB772F /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				465EEFBD1A03C790007DEA46 /* close.png */,
+				465B70681A027F7D0033549A /* return.png */,
+				465B70661A027A7B0033549A /* warning.png */,
+				465B70581A0262340033549A /* login_account.png */,
+				465B70591A0262340033549A /* login_mail.png */,
+				465B705A1A0262340033549A /* login_pass.png */,
+				465B705B1A0262340033549A /* sdk_login.png */,
+				465B705C1A0262340033549A /* sdk_register.png */,
+				465B705D1A0262340033549A /* sdk_small_login.png */,
+				465B705E1A0262340033549A /* sdk_small_reg.png */,
+				465B70501A0258B80033549A /* sdk_facebook_click.png */,
+				465B70511A0258B80033549A /* sdk_facebook.png */,
+				465B70521A0258B80033549A /* sdk_login_fast_click.png */,
+				465B70531A0258B80033549A /* sdk_login_fast.png */,
+				465B704C1A0257900033549A /* sdk_guest_btn_bd_off.png */,
+				465B704D1A0257900033549A /* sdk_guest_btn_nobd_off.png */,
+				465B703B1A01D3410033549A /* facebook_nl.png */,
+				465B703C1A01D3410033549A /* facebook_nm.png */,
+				465B702F1A012EAA0033549A /* name.png */,
+				465B70301A012EAA0033549A /* passWord.png */,
+				465B70201A00F6E30033549A /* LOGO.png */,
+				465B109519CDCB84000501AF /* cb_glossy_off.png */,
+				465B109619CDCB84000501AF /* cb_glossy_on.png */,
+				CFB5AC3A17CF2BBB006E4F0E /* public.pem */,
+				CFB3ED0717CE1CB500FB772F /* views */,
+				CFB3ECF217CDF5AB00FB772F /* passwordIcon2.png */,
+				CFC8ED9917F2E66F0059CB9B /* u2_charge_main_alipay_normal.png */,
+				2236C3B1181A88ED00152787 /* detailIcon_90.png */,
+				CFC8ED9A17F2E66F0059CB9B /* u2_charge_main_game_card_normal.png */,
+				22F413D1180549C10012D26D /* background_youai.png */,
+				AF07DBE8181FA0CE00BBCDD3 /* background.png */,
+				AF07DBE9181FA0CE00BBCDD3 /* alipayWebicon.png */,
+				22F413D7180553AE0012D26D /* delete.png */,
+				CFC8ED9B17F2E66F0059CB9B /* u2_charge_main_tencent.png */,
+				22F413D518054E780012D26D /* btn_gray.png */,
+				CFB3ECEC17CDF0D400FB772F /* accountIcon.png */,
+				CFB3ECED17CDF0D400FB772F /* logoutIcon.png */,
+				CFB3ECEE17CDF0D400FB772F /* mainpageIcon.png */,
+				CFB3ECEA17CDF03000FB772F /* detailIcon.png */,
+				CFB3ECE817CDD04800FB772F /* detailedbutton.png */,
+				CF79C4A117CC7FF500C01CFA /* title.png */,
+				CFB3ECE417CDCD9F00FB772F /* textBubble.png */,
+				CF93A07217CC576900A7DB25 /* textfield.png */,
+				CF93A07417CC59A000A7DB25 /* userIcon.png */,
+				CFB3ECDE17CDC7B000FB772F /* emailIcon.png */,
+				CFB3ECE017CDCA0100FB772F /* titlebutton.png */,
+				CF93A07017CC537D00A7DB25 /* normalbutton.png */,
+				CF93A07317CC587900A7DB25 /* passwordIcon.png */,
+				CFB3ECFE17CDFE4300FB772F /* shockIcon.png */,
+				CFB3ECE617CDCE5A00FB772F /* headface.png */,
+				CFB3ECF817CDFB5600FB772F /* userlistBottom.png */,
+				CFB3ECF917CDFB5600FB772F /* userlistTitle.png */,
+				CFB3ECFC17CDFC3600FB772F /* userlistCenter.png */,
+				223F71FE1859639B00659946 /* Localizable.strings */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		CFB3ECD617CC938700FB772F /* gtmbase64 */ = {
+			isa = PBXGroup;
+			children = (
+				CFB3ECD717CC938700FB772F /* GTMBase64.h */,
+				CFB3ECD817CC938700FB772F /* GTMBase64.m */,
+				CFB3ECD917CC938700FB772F /* GTMDefines.h */,
+			);
+			path = gtmbase64;
+			sourceTree = "<group>";
+		};
+		CFB3ED0617CE1C9000FB772F /* views */ = {
+			isa = PBXGroup;
+			children = (
+				465B70431A01D93E0033549A /* IndexViewViewController.h */,
+				465B70441A01D93E0033549A /* IndexViewViewController.m */,
+				CFB3ED0817CE1CF600FB772F /* AccountCenterView.h */,
+				CFB3ED0917CE1CF600FB772F /* AccountCenterView.m */,
+				CFB3ED0017CE032D00FB772F /* AccountManagerView.h */,
+				CFB3ED0117CE032D00FB772F /* AccountManagerView.m */,
+				2209A76917FD1B7200B0BA11 /* BindingView.h */,
+				2209A76A17FD1B7200B0BA11 /* BindingView.m */,
+				CFB3ED0B17CE1DDD00FB772F /* ChangePasswordView.h */,
+				CFB3ED0C17CE1DDD00FB772F /* ChangePasswordView.m */,
+				CF14D3DB17C5B99C005565A8 /* LoginView.h */,
+				CF14D3DC17C5B99C005565A8 /* LoginView.m */,
+				CFA4802517C60BD500B6C7CA /* RegisterView.h */,
+				CFA4802617C60BD500B6C7CA /* RegisterView.m */,
+				CFC8ED9317F2E5280059CB9B /* SelfPayView.h */,
+				CFC8ED9417F2E5280059CB9B /* SelfPayView.m */,
+				CFD4F6CE17D0440C00CC373A /* UserListView.h */,
+				CFD4F6CF17D0440C00CC373A /* UserListView.m */,
+				CF93987717CAF78200A7DB25 /* WebView.h */,
+				CF93987817CAF78200A7DB25 /* WebView.m */,
+				465B70471A02225D0033549A /* ChooseBindingView.h */,
+				465B70481A02225D0033549A /* ChooseBindingView.m */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		CFB3ED0717CE1CB500FB772F /* views */ = {
+			isa = PBXGroup;
+			children = (
+				2228CD911859904700B5906F /* SelfPayView.xib */,
+				CF14D3DA17C5B91B005565A8 /* LoginView.xib */,
+				CF93987617CAF60000A7DB25 /* WebView.xib */,
+				CFA4802F17C6193800B6C7CA /* RegisterView.xib */,
+				CFB3ECF417CDF5D400FB772F /* AccountManager.xib */,
+				465B70491A02225D0033549A /* ChooseBindingView.xib */,
+				CFB3ECE217CDCCEE00FB772F /* AccountCenter.xib */,
+				465B70351A01CE310033549A /* IndexViewViewController.xib */,
+				CFB3ED0417CE041F00FB772F /* ChangePassword.xib */,
+				CFB3ECF617CDF8D100FB772F /* UserListView.xib */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		CFB9AFFA17EFF5E80024D06C /* alipay */ = {
+			isa = PBXGroup;
+			children = (
+				22C27C7117F86E1B00665906 /* AlixPay.h */,
+				CFB9AFFB17EFF6050024D06C /* AlixPay.m */,
+				22C27C7217F86E1B00665906 /* AlixPayOrder.h */,
+				CFB9AFFC17EFF6050024D06C /* AlixPayOrder.m */,
+				22C27C7317F86E1B00665906 /* AlixPayResult.h */,
+				CFB9AFFD17EFF6060024D06C /* AlixPayResult.m */,
+				CFB9B00617EFF9770024D06C /* c4lSelfPay.h */,
+				CFB9B00717EFF9770024D06C /* c4lSelfPay.m */,
+			);
+			name = alipay;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		229ED3B718614D3400FEDBD2 /* com4lovesSDKNoJsonTotle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 229ED3D318614D3400FEDBD2 /* Build configuration list for PBXNativeTarget "com4lovesSDKNoJsonTotle" */;
+			buildPhases = (
+				229ED3B818614D3400FEDBD2 /* Sources */,
+				229ED3D018614D3400FEDBD2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = com4lovesSDKNoJsonTotle;
+			productName = com4lovesSDK;
+			productReference = 229ED3D618614D3400FEDBD2 /* libcom4lovesSDKNoJsonTotle.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		22FD7273181B6B3E002A7022 /* com4lovesSDKKuaiyong */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22FD7292181B6B3E002A7022 /* Build configuration list for PBXNativeTarget "com4lovesSDKKuaiyong" */;
+			buildPhases = (
+				22FD7274181B6B3E002A7022 /* Sources */,
+				22FD7290181B6B3E002A7022 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = com4lovesSDKKuaiyong;
+			productName = com4lovesSDK;
+			productReference = 22FD7295181B6B3E002A7022 /* libcom4lovesSDKKuaiyong.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AF5B9F6517E43A9800B2480E /* com4lovesSDKNoJson */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF5B9F7F17E43A9800B2480E /* Build configuration list for PBXNativeTarget "com4lovesSDKNoJson" */;
+			buildPhases = (
+				AF5B9F6617E43A9800B2480E /* Sources */,
+				AF5B9F7B17E43A9800B2480E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = com4lovesSDKNoJson;
+			productName = com4lovesSDK;
+			productReference = AF5B9F8217E43A9800B2480E /* libcom4lovesSDKNoJson.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AF7B9D84185899D40029CAC8 /* com4lovesSDKTW */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF7B9DA2185899D40029CAC8 /* Build configuration list for PBXNativeTarget "com4lovesSDKTW" */;
+			buildPhases = (
+				AF7B9D85185899D40029CAC8 /* Sources */,
+				AF7B9D9F185899D40029CAC8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = com4lovesSDKTW;
+			productName = com4lovesSDK;
+			productReference = AF7B9DA5185899D40029CAC8 /* libcom4lovesSDKTW.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AF9F039B183B646C00A75463 /* com4lovesSDKNoJsonClean */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF9F03AC183B646C00A75463 /* Build configuration list for PBXNativeTarget "com4lovesSDKNoJsonClean" */;
+			buildPhases = (
+				AF9F039C183B646C00A75463 /* Sources */,
+				AF9F03A9183B646C00A75463 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = com4lovesSDKNoJsonClean;
+			productName = com4lovesSDK;
+			productReference = AF9F03AF183B646C00A75463 /* libcom4lovesSDKNoJsonClean.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B55BFA0C19A679A500875E47 /* com4lovesSDKNoJsonNo64 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B55BFA2419A679A500875E47 /* Build configuration list for PBXNativeTarget "com4lovesSDKNoJsonNo64" */;
+			buildPhases = (
+				B55BFA0D19A679A500875E47 /* Sources */,
+				B55BFA2119A679A500875E47 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = com4lovesSDKNoJsonNo64;
+			productName = com4lovesSDK;
+			productReference = B55BFA2719A679A500875E47 /* libcom4lovesSDKNoJsonNo64.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CF14D36B17C3703B005565A8 /* com4lovesSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF14D37A17C3703B005565A8 /* Build configuration list for PBXNativeTarget "com4lovesSDK" */;
+			buildPhases = (
+				CF14D36817C3703B005565A8 /* Sources */,
+				CF14D36917C3703B005565A8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = com4lovesSDK;
+			productName = com4lovesSDK;
+			productReference = CF14D36C17C3703B005565A8 /* libcom4lovesSDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CF79C48A17CC786E00C01CFA /* GamesBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF79C49417CC786E00C01CFA /* Build configuration list for PBXNativeTarget "GamesBundle" */;
+			buildPhases = (
+				CF79C48717CC786E00C01CFA /* Sources */,
+				CF79C48817CC786E00C01CFA /* Frameworks */,
+				CF79C48917CC786E00C01CFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GamesBundle;
+			productName = com4lovesBundle;
+			productReference = CF79C48B17CC786E00C01CFA /* GamesBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		CFB9AFDE17EFF58C0024D06C /* com4lovesSDKselfPay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFB9AFF617EFF58C0024D06C /* Build configuration list for PBXNativeTarget "com4lovesSDKselfPay" */;
+			buildPhases = (
+				CFB9AFDF17EFF58C0024D06C /* Sources */,
+				CFB9AFF417EFF58C0024D06C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = com4lovesSDKselfPay;
+			productName = com4lovesSDK;
+			productReference = CFB9AFF917EFF58C0024D06C /* libcom4lovesSDKselfPay.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CFF183AC17E46F14002DBAF9 /* com4lovesSDKNoGTMBase64 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFF183C617E46F14002DBAF9 /* Build configuration list for PBXNativeTarget "com4lovesSDKNoGTMBase64" */;
+			buildPhases = (
+				CFF183AD17E46F14002DBAF9 /* Sources */,
+				CFF183C217E46F14002DBAF9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = com4lovesSDKNoGTMBase64;
+			productName = com4lovesSDK;
+			productReference = CFF183C917E46F14002DBAF9 /* libcom4lovesSDKNoGTMBase64.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CFF183E417E46F98002DBAF9 /* com4lovesSDKPure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFF183FA17E46F98002DBAF9 /* Build configuration list for PBXNativeTarget "com4lovesSDKPure" */;
+			buildPhases = (
+				CFF183E517E46F98002DBAF9 /* Sources */,
+				CFF183F617E46F98002DBAF9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = com4lovesSDKPure;
+			productName = com4lovesSDK;
+			productReference = CFF183FD17E46F98002DBAF9 /* libcom4lovesSDKPure.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF14D36417C3703B005565A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = com4loves;
+			};
+			buildConfigurationList = CF14D36717C3703B005565A8 /* Build configuration list for PBXProject "com4lovesSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+				"zh-Hant",
+			);
+			mainGroup = CF14D36317C3703B005565A8;
+			productRefGroup = CF14D36D17C3703B005565A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF14D36B17C3703B005565A8 /* com4lovesSDK */,
+				CF79C48A17CC786E00C01CFA /* GamesBundle */,
+				AF5B9F6517E43A9800B2480E /* com4lovesSDKNoJson */,
+				CFF183AC17E46F14002DBAF9 /* com4lovesSDKNoGTMBase64 */,
+				CFF183E417E46F98002DBAF9 /* com4lovesSDKPure */,
+				CFB9AFDE17EFF58C0024D06C /* com4lovesSDKselfPay */,
+				22FD7273181B6B3E002A7022 /* com4lovesSDKKuaiyong */,
+				AF9F039B183B646C00A75463 /* com4lovesSDKNoJsonClean */,
+				AF7B9D84185899D40029CAC8 /* com4lovesSDKTW */,
+				229ED3B718614D3400FEDBD2 /* com4lovesSDKNoJsonTotle */,
+				B55BFA0C19A679A500875E47 /* com4lovesSDKNoJsonNo64 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF79C48917CC786E00C01CFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				465B70311A012EAA0033549A /* name.png in Resources */,
+				465B70691A027F7D0033549A /* return.png in Resources */,
+				22982D9217F7D4D3002CE405 /* ChangePassword.xib in Resources */,
+				CFB5AC3B17CF2BBB006E4F0E /* public.pem in Resources */,
+				CF79C49717CC787F00C01CFA /* textfield.png in Resources */,
+				CF79C49817CC787F00C01CFA /* userIcon.png in Resources */,
+				465B109819CDCB84000501AF /* cb_glossy_on.png in Resources */,
+				CF79C49917CC787F00C01CFA /* normalbutton.png in Resources */,
+				CF79C49A17CC787F00C01CFA /* passwordIcon.png in Resources */,
+				465B70611A0262340033549A /* login_pass.png in Resources */,
+				CF79C49C17CC787F00C01CFA /* WebView.xib in Resources */,
+				CF79C49D17CC787F00C01CFA /* RegisterView.xib in Resources */,
+				465B70651A0262340033549A /* sdk_small_reg.png in Resources */,
+				CF79C49E17CC787F00C01CFA /* LoginView.xib in Resources */,
+				465B705F1A0262340033549A /* login_account.png in Resources */,
+				CF79C4A217CC7FF500C01CFA /* title.png in Resources */,
+				CFB3ECDF17CDC7B000FB772F /* emailIcon.png in Resources */,
+				465B70571A0258B80033549A /* sdk_login_fast.png in Resources */,
+				465EEFBE1A03C790007DEA46 /* close.png in Resources */,
+				2236C3B2181A8A7300152787 /* detailIcon_90.png in Resources */,
+				22F413D8180553AE0012D26D /* delete.png in Resources */,
+				CFB3ECE117CDCA0100FB772F /* titlebutton.png in Resources */,
+				465B109719CDCB84000501AF /* cb_glossy_off.png in Resources */,
+				CFB3ECE317CDCCEE00FB772F /* AccountCenter.xib in Resources */,
+				465B70631A0262340033549A /* sdk_register.png in Resources */,
+				CFB3ECE517CDCD9F00FB772F /* textBubble.png in Resources */,
+				465B70321A012EAA0033549A /* passWord.png in Resources */,
+				465B70461A01DC950033549A /* IndexViewViewController.xib in Resources */,
+				465B703D1A01D3410033549A /* facebook_nl.png in Resources */,
+				CFB3ECE717CDCE5A00FB772F /* headface.png in Resources */,
+				CFB3ECE917CDD04800FB772F /* detailedbutton.png in Resources */,
+				CFB3ECEB17CDF03000FB772F /* detailIcon.png in Resources */,
+				465B70541A0258B80033549A /* sdk_facebook_click.png in Resources */,
+				CFB3ECEF17CDF0D400FB772F /* accountIcon.png in Resources */,
+				CFB3ECF017CDF0D400FB772F /* logoutIcon.png in Resources */,
+				465B70601A0262340033549A /* login_mail.png in Resources */,
+				CFB3ECF117CDF0D400FB772F /* mainpageIcon.png in Resources */,
+				465B70551A0258B80033549A /* sdk_facebook.png in Resources */,
+				CFB3ECF317CDF5AB00FB772F /* passwordIcon2.png in Resources */,
+				465B70561A0258B80033549A /* sdk_login_fast_click.png in Resources */,
+				465B70671A027A7B0033549A /* warning.png in Resources */,
+				CFB3ECF517CDF5D400FB772F /* AccountManager.xib in Resources */,
+				2228CD921859904700B5906F /* SelfPayView.xib in Resources */,
+				CFB3ECF717CDF8D100FB772F /* UserListView.xib in Resources */,
+				465B70211A00F6E30033549A /* LOGO.png in Resources */,
+				AF07DBEA181FA0CE00BBCDD3 /* background.png in Resources */,
+				AF07DBEB181FA0CE00BBCDD3 /* alipayWebicon.png in Resources */,
+				CFB3ECFA17CDFB5600FB772F /* userlistBottom.png in Resources */,
+				46A7FF851A0788BD007E24F6 /* GamesBundle-Info.plist in Resources */,
+				CFB3ECFB17CDFB5600FB772F /* userlistTitle.png in Resources */,
+				CFB3ECFD17CDFC3600FB772F /* userlistCenter.png in Resources */,
+				465B704E1A0257900033549A /* sdk_guest_btn_bd_off.png in Resources */,
+				465B703E1A01D3410033549A /* facebook_nm.png in Resources */,
+				465B704F1A0257900033549A /* sdk_guest_btn_nobd_off.png in Resources */,
+				CFB3ECFF17CDFE4400FB772F /* shockIcon.png in Resources */,
+				22F413D2180549C10012D26D /* background_youai.png in Resources */,
+				465B70641A0262340033549A /* sdk_small_login.png in Resources */,
+				CFC8ED9C17F2E66F0059CB9B /* u2_charge_main_alipay_normal.png in Resources */,
+				465B70621A0262340033549A /* sdk_login.png in Resources */,
+				22F413D618054E780012D26D /* btn_gray.png in Resources */,
+				AF395A1218E15D51008BD820 /* Localizable.strings in Resources */,
+				CFC8ED9D17F2E66F0059CB9B /* u2_charge_main_game_card_normal.png in Resources */,
+				465B704B1A02255A0033549A /* ChooseBindingView.xib in Resources */,
+				CFC8ED9E17F2E66F0059CB9B /* u2_charge_main_tencent.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		229ED3B818614D3400FEDBD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				229ED3BB18614D3400FEDBD2 /* InAppPurchaseManager.m in Sources */,
+				229ED3BC18614D3400FEDBD2 /* com4lovesSDK.mm in Sources */,
+				229ED3BD18614D3400FEDBD2 /* SDKUtility.m in Sources */,
+				229ED3BE18614D3400FEDBD2 /* SDKEncrypt.mm in Sources */,
+				229ED3BF18614D3400FEDBD2 /* GTMBase64.m in Sources */,
+				229ED3C018614D3400FEDBD2 /* ServerLogic.m in Sources */,
+				229ED3C118614D3400FEDBD2 /* com4loves.mm in Sources */,
+				229ED3C218614D3400FEDBD2 /* ConvertUTF.c in Sources */,
+				229ED3C318614D3400FEDBD2 /* YouaiUser.m in Sources */,
+				229ED3C518614D3400FEDBD2 /* YouaiServerInfo.m in Sources */,
+				229ED3C718614D3400FEDBD2 /* AccountCenterView.m in Sources */,
+				229ED3C818614D3400FEDBD2 /* AccountManagerView.m in Sources */,
+				229ED3C918614D3400FEDBD2 /* BindingView.m in Sources */,
+				229ED3CA18614D3400FEDBD2 /* LoginView.m in Sources */,
+				229ED3CB18614D3400FEDBD2 /* RegisterView.m in Sources */,
+				229ED3CC18614D3400FEDBD2 /* SelfPayView.m in Sources */,
+				229ED3CD18614D3400FEDBD2 /* UserListView.m in Sources */,
+				229ED3CE18614D3400FEDBD2 /* WebView.m in Sources */,
+				229ED3CF18614D3400FEDBD2 /* ChangePasswordView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22FD7274181B6B3E002A7022 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22FD7275181B6B3E002A7022 /* com4lovesSDK.mm in Sources */,
+				22FD7276181B6B3E002A7022 /* NSObject+SBJSON.m in Sources */,
+				22FD7277181B6B3E002A7022 /* BindingView.m in Sources */,
+				22FD7278181B6B3E002A7022 /* NSString+SBJSON.m in Sources */,
+				22FD7279181B6B3E002A7022 /* SBJSON.m in Sources */,
+				22FD727A181B6B3E002A7022 /* SBJsonBase.m in Sources */,
+				229C75E1184491EF006B448B /* YouaiServerInfo.m in Sources */,
+				22FD727B181B6B3E002A7022 /* SBJsonParser.m in Sources */,
+				22FD727C181B6B3E002A7022 /* SBJsonWriter.m in Sources */,
+				22FD727D181B6B3E002A7022 /* LoginView.m in Sources */,
+				22FD727E181B6B3E002A7022 /* RegisterView.m in Sources */,
+				22FD727F181B6B3E002A7022 /* InAppPurchaseManager.m in Sources */,
+				22FD7280181B6B3E002A7022 /* WebView.m in Sources */,
+				22FD7281181B6B3E002A7022 /* SDKUtility.m in Sources */,
+				22FD7282181B6B3E002A7022 /* SDKEncrypt.mm in Sources */,
+				22FD7283181B6B3E002A7022 /* GTMBase64.m in Sources */,
+				22FD7284181B6B3E002A7022 /* ServerLogic.m in Sources */,
+				22FD7285181B6B3E002A7022 /* AccountManagerView.m in Sources */,
+				229C75EE1844DAF6006B448B /* ConvertUTF.c in Sources */,
+				22FD7286181B6B3E002A7022 /* AccountCenterView.m in Sources */,
+				22FD74F5181E471A002A7022 /* OtherViewController.m in Sources */,
+				22FD7287181B6B3E002A7022 /* ChangePasswordView.m in Sources */,
+				22FD7288181B6B3E002A7022 /* UserListView.m in Sources */,
+				22FD7289181B6B3E002A7022 /* com4loves.mm in Sources */,
+				22FD728D181B6B3E002A7022 /* YouaiUser.m in Sources */,
+				22FD728E181B6B3E002A7022 /* c4lSelfPay.m in Sources */,
+				22FD728F181B6B3E002A7022 /* SelfPayView.m in Sources */,
+				22FD74F9181E4A4F002A7022 /* UseSDKView.m in Sources */,
+				22FD74F6181E471A002A7022 /* ViewController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF5B9F6617E43A9800B2480E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				228E897E18614BDF005D74BB /* NSObject+SBJSON.m in Sources */,
+				228E897F18614BE5005D74BB /* NSString+SBJSON.m in Sources */,
+				CFF1840717E477E0002DBAF9 /* InAppPurchaseManager.m in Sources */,
+				CFF1840317E476B7002DBAF9 /* com4lovesSDK.mm in Sources */,
+				AF5B9F7217E43A9800B2480E /* SDKUtility.m in Sources */,
+				AF5B9F7317E43A9800B2480E /* SDKEncrypt.mm in Sources */,
+				AF5B9F7417E43A9800B2480E /* GTMBase64.m in Sources */,
+				AF5B9F7517E43A9800B2480E /* ServerLogic.m in Sources */,
+				AF5B9F7A17E43A9800B2480E /* com4loves.mm in Sources */,
+				229C75EA1844DAF6006B448B /* ConvertUTF.c in Sources */,
+				AFF9F1B01806D1460077F885 /* YouaiUser.m in Sources */,
+				AFF9F1B31806D1760077F885 /* SBJSON.m in Sources */,
+				229C75DD184491EF006B448B /* YouaiServerInfo.m in Sources */,
+				AFF9F1B41806D17B0077F885 /* SBJsonBase.m in Sources */,
+				F7B62F30184838A100434B0E /* AccountCenterView.m in Sources */,
+				F7B62F31184838AA00434B0E /* AccountManagerView.m in Sources */,
+				F7B62F33184838B000434B0E /* BindingView.m in Sources */,
+				F7B62F37184838C100434B0E /* LoginView.m in Sources */,
+				F7B62F39184838C700434B0E /* RegisterView.m in Sources */,
+				F7B62F3B184838CC00434B0E /* SelfPayView.m in Sources */,
+				F7B62F3D184838D100434B0E /* UserListView.m in Sources */,
+				F7B62F3F184838D600434B0E /* WebView.m in Sources */,
+				F7B62F4118483E1500434B0E /* ChangePasswordView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF7B9D85185899D40029CAC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF7B9D86185899D40029CAC8 /* com4lovesSDK.mm in Sources */,
+				AF7B9D87185899D40029CAC8 /* NSObject+SBJSON.m in Sources */,
+				AF7B9D88185899D40029CAC8 /* NSString+SBJSON.m in Sources */,
+				AF7B9D89185899D40029CAC8 /* SBJSON.m in Sources */,
+				AF7B9D8A185899D40029CAC8 /* ConvertUTF.c in Sources */,
+				AF7B9D8B185899D40029CAC8 /* SBJsonBase.m in Sources */,
+				AF7B9D8C185899D40029CAC8 /* SBJsonParser.m in Sources */,
+				AF7B9D8D185899D40029CAC8 /* YouaiUser.m in Sources */,
+				AF7B9D8E185899D40029CAC8 /* BindingView.m in Sources */,
+				AF7B9D8F185899D40029CAC8 /* SBJsonWriter.m in Sources */,
+				AF7B9D90185899D40029CAC8 /* LoginView.m in Sources */,
+				AF7B9D91185899D40029CAC8 /* RegisterView.m in Sources */,
+				AF7B9D92185899D40029CAC8 /* InAppPurchaseManager.m in Sources */,
+				AF7B9D93185899D40029CAC8 /* WebView.m in Sources */,
+				AF7B9D94185899D40029CAC8 /* SDKUtility.m in Sources */,
+				AF7B9D95185899D40029CAC8 /* SDKEncrypt.mm in Sources */,
+				AF7B9D96185899D40029CAC8 /* GTMBase64.m in Sources */,
+				AF7B9D97185899D40029CAC8 /* ServerLogic.m in Sources */,
+				AF7B9D98185899D40029CAC8 /* AccountManagerView.m in Sources */,
+				AF7B9D99185899D40029CAC8 /* AccountCenterView.m in Sources */,
+				AF7B9D9A185899D40029CAC8 /* ChangePasswordView.m in Sources */,
+				AF7B9D9B185899D40029CAC8 /* UserListView.m in Sources */,
+				AF7B9D9C185899D40029CAC8 /* com4loves.mm in Sources */,
+				AF7B9D9D185899D40029CAC8 /* YouaiServerInfo.m in Sources */,
+				AF7B9D9E185899D40029CAC8 /* SelfPayView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF9F039C183B646C00A75463 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF9F039D183B646C00A75463 /* NSObject+SBJSON.m in Sources */,
+				AF9F039E183B646C00A75463 /* NSString+SBJSON.m in Sources */,
+				AF9F039F183B646C00A75463 /* InAppPurchaseManager.m in Sources */,
+				AF9F03A0183B646C00A75463 /* com4lovesSDK.mm in Sources */,
+				AF9F03A1183B646C00A75463 /* SDKUtility.m in Sources */,
+				229C75EF1844DAF6006B448B /* ConvertUTF.c in Sources */,
+				AF9F03A2183B646C00A75463 /* SDKEncrypt.mm in Sources */,
+				AF9F03A3183B646C00A75463 /* GTMBase64.m in Sources */,
+				229C75E2184491EF006B448B /* YouaiServerInfo.m in Sources */,
+				AF9F03A4183B646C00A75463 /* ServerLogic.m in Sources */,
+				AF9F03A5183B646C00A75463 /* com4loves.mm in Sources */,
+				AF9F03A6183B646C00A75463 /* YouaiUser.m in Sources */,
+				F7B62F2F184838A000434B0E /* AccountCenterView.m in Sources */,
+				F7B62F32184838AB00434B0E /* AccountManagerView.m in Sources */,
+				F7B62F34184838B200434B0E /* BindingView.m in Sources */,
+				F7B62F38184838C200434B0E /* LoginView.m in Sources */,
+				F7B62F3A184838C800434B0E /* RegisterView.m in Sources */,
+				F7B62F3C184838CD00434B0E /* SelfPayView.m in Sources */,
+				F7B62F3E184838D200434B0E /* UserListView.m in Sources */,
+				F7B62F40184838D600434B0E /* WebView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B55BFA0D19A679A500875E47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B55BFA0E19A679A500875E47 /* InAppPurchaseManager.m in Sources */,
+				B55BFA0F19A679A500875E47 /* com4lovesSDK.mm in Sources */,
+				B55BFA1019A679A500875E47 /* SDKUtility.m in Sources */,
+				B55BFA1119A679A500875E47 /* SDKEncrypt.mm in Sources */,
+				B55BFA1319A679A500875E47 /* ServerLogic.m in Sources */,
+				B55BFA1419A679A500875E47 /* com4loves.mm in Sources */,
+				B55BFA1519A679A500875E47 /* ConvertUTF.c in Sources */,
+				B55BFA1619A679A500875E47 /* YouaiUser.m in Sources */,
+				B55BFA1719A679A500875E47 /* YouaiServerInfo.m in Sources */,
+				B55BFA1819A679A500875E47 /* AccountCenterView.m in Sources */,
+				B55BFA1919A679A500875E47 /* AccountManagerView.m in Sources */,
+				B55BFA1A19A679A500875E47 /* BindingView.m in Sources */,
+				B55BFA1B19A679A500875E47 /* LoginView.m in Sources */,
+				B55BFA1C19A679A500875E47 /* RegisterView.m in Sources */,
+				B55BFA1D19A679A500875E47 /* SelfPayView.m in Sources */,
+				B55BFA1E19A679A500875E47 /* UserListView.m in Sources */,
+				B55BFA1F19A679A500875E47 /* WebView.m in Sources */,
+				B55BFA2019A679A500875E47 /* ChangePasswordView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF14D36817C3703B005565A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF14D37717C3703B005565A8 /* com4lovesSDK.mm in Sources */,
+				CF14D3A217C4CFAD005565A8 /* NSObject+SBJSON.m in Sources */,
+				CF14D3A317C4CFAD005565A8 /* NSString+SBJSON.m in Sources */,
+				CF14D3A417C4CFAD005565A8 /* SBJSON.m in Sources */,
+				229C75E91844DAF6006B448B /* ConvertUTF.c in Sources */,
+				CF14D3A517C4CFAD005565A8 /* SBJsonBase.m in Sources */,
+				CF14D3A617C4CFAD005565A8 /* SBJsonParser.m in Sources */,
+				228AA1D817FE9DE100C97D6B /* YouaiUser.m in Sources */,
+				4638CBF619CD7C2A00EAC316 /* AlixPay.m in Sources */,
+				4638CBF819CD7C3000EAC316 /* AlixPayResult.m in Sources */,
+				2209A76C17FD1B7200B0BA11 /* BindingView.m in Sources */,
+				CF14D3A717C4CFAD005565A8 /* SBJsonWriter.m in Sources */,
+				CF14D3DD17C5B99D005565A8 /* LoginView.m in Sources */,
+				CFA4802817C60BD500B6C7CA /* RegisterView.m in Sources */,
+				CF2A1F5717C63BA5006754E6 /* InAppPurchaseManager.m in Sources */,
+				CF93987917CAF78200A7DB25 /* WebView.m in Sources */,
+				4638CBF719CD7C2D00EAC316 /* AlixPayOrder.m in Sources */,
+				CF93987E17CAFF6900A7DB25 /* SDKUtility.m in Sources */,
+				CF9398B317CB0E8A00A7DB25 /* SDKEncrypt.mm in Sources */,
+				CFB3ECDA17CC938700FB772F /* GTMBase64.m in Sources */,
+				465B70451A01D93E0033549A /* IndexViewViewController.m in Sources */,
+				CFB3ECDD17CD950300FB772F /* ServerLogic.m in Sources */,
+				CFB3ED0317CE032D00FB772F /* AccountManagerView.m in Sources */,
+				CFB3ED0A17CE1CF600FB772F /* AccountCenterView.m in Sources */,
+				CFB3ED0D17CE1DDE00FB772F /* ChangePasswordView.m in Sources */,
+				465B704A1A02225D0033549A /* ChooseBindingView.m in Sources */,
+				CFD4F6D017D0440C00CC373A /* UserListView.m in Sources */,
+				CFDA232517D22B8E00352C5D /* com4loves.mm in Sources */,
+				229C75DC184491EF006B448B /* YouaiServerInfo.m in Sources */,
+				CFC8ED9517F2E5280059CB9B /* SelfPayView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF79C48717CC786E00C01CFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFB9AFDF17EFF58C0024D06C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB9AFE017EFF58C0024D06C /* com4lovesSDK.mm in Sources */,
+				CFB9AFE117EFF58C0024D06C /* NSObject+SBJSON.m in Sources */,
+				2209A76E17FD1E4100B0BA11 /* BindingView.m in Sources */,
+				CFB9AFE217EFF58C0024D06C /* NSString+SBJSON.m in Sources */,
+				CFB9AFE317EFF58C0024D06C /* SBJSON.m in Sources */,
+				CFB9AFE417EFF58C0024D06C /* SBJsonBase.m in Sources */,
+				229C75E0184491EF006B448B /* YouaiServerInfo.m in Sources */,
+				CFB9AFE517EFF58C0024D06C /* SBJsonParser.m in Sources */,
+				CFB9AFE617EFF58C0024D06C /* SBJsonWriter.m in Sources */,
+				CFB9AFE717EFF58C0024D06C /* LoginView.m in Sources */,
+				CFB9AFE817EFF58C0024D06C /* RegisterView.m in Sources */,
+				CFB9AFE917EFF58C0024D06C /* InAppPurchaseManager.m in Sources */,
+				CFB9AFEA17EFF58C0024D06C /* WebView.m in Sources */,
+				CFB9AFEB17EFF58C0024D06C /* SDKUtility.m in Sources */,
+				CFB9AFEC17EFF58C0024D06C /* SDKEncrypt.mm in Sources */,
+				CFB9AFED17EFF58C0024D06C /* GTMBase64.m in Sources */,
+				CFB9AFEE17EFF58C0024D06C /* ServerLogic.m in Sources */,
+				CFB9AFEF17EFF58C0024D06C /* AccountManagerView.m in Sources */,
+				229C75ED1844DAF6006B448B /* ConvertUTF.c in Sources */,
+				CFB9AFF017EFF58C0024D06C /* AccountCenterView.m in Sources */,
+				CFB9AFF117EFF58C0024D06C /* ChangePasswordView.m in Sources */,
+				CFB9AFF217EFF58C0024D06C /* UserListView.m in Sources */,
+				CFB9AFF317EFF58C0024D06C /* com4loves.mm in Sources */,
+				CFB9AFFE17EFF6060024D06C /* AlixPay.m in Sources */,
+				CFB9AFFF17EFF6060024D06C /* AlixPayOrder.m in Sources */,
+				CFB9B00017EFF6060024D06C /* AlixPayResult.m in Sources */,
+				228AA1D917FE9DE100C97D6B /* YouaiUser.m in Sources */,
+				CFB9B00817EFF9770024D06C /* c4lSelfPay.m in Sources */,
+				CFC8ED9617F2E5280059CB9B /* SelfPayView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFF183AD17E46F14002DBAF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFF1840617E477D6002DBAF9 /* InAppPurchaseManager.m in Sources */,
+				CFF1840217E476AB002DBAF9 /* com4lovesSDK.mm in Sources */,
+				CFF183AF17E46F14002DBAF9 /* NSObject+SBJSON.m in Sources */,
+				CFF183B017E46F14002DBAF9 /* NSString+SBJSON.m in Sources */,
+				CFF183B117E46F14002DBAF9 /* SBJSON.m in Sources */,
+				CFF183B217E46F14002DBAF9 /* SBJsonBase.m in Sources */,
+				229C75DE184491EF006B448B /* YouaiServerInfo.m in Sources */,
+				CFF183B317E46F14002DBAF9 /* SBJsonParser.m in Sources */,
+				CFF183B417E46F14002DBAF9 /* SBJsonWriter.m in Sources */,
+				CFF183B917E46F14002DBAF9 /* SDKUtility.m in Sources */,
+				CFF183BA17E46F14002DBAF9 /* SDKEncrypt.mm in Sources */,
+				CFF183BC17E46F14002DBAF9 /* ServerLogic.m in Sources */,
+				CFF183C117E46F14002DBAF9 /* com4loves.mm in Sources */,
+				AFF9F1B11806D1490077F885 /* YouaiUser.m in Sources */,
+				229C75EB1844DAF6006B448B /* ConvertUTF.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFF183E517E46F98002DBAF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFF1840517E477CE002DBAF9 /* InAppPurchaseManager.m in Sources */,
+				CFF1840417E476C2002DBAF9 /* com4lovesSDK.mm in Sources */,
+				229C75DF184491EF006B448B /* YouaiServerInfo.m in Sources */,
+				229C75EC1844DAF6006B448B /* ConvertUTF.c in Sources */,
+				CFF183E717E46F98002DBAF9 /* NSObject+SBJSON.m in Sources */,
+				CFF183E817E46F98002DBAF9 /* NSString+SBJSON.m in Sources */,
+				CFF183ED17E46F98002DBAF9 /* SDKUtility.m in Sources */,
+				CFF183EE17E46F98002DBAF9 /* SDKEncrypt.mm in Sources */,
+				CFF183F017E46F98002DBAF9 /* ServerLogic.m in Sources */,
+				CFF183F517E46F98002DBAF9 /* com4loves.mm in Sources */,
+				AFF9F1B21806D1490077F885 /* YouaiUser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		223F71FE1859639B00659946 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF395A1118E15D26008BD820 /* en */,
+			);
+			name = Localizable.strings;
+			path = resource;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		229ED3D418614D3400FEDBD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				DSTROOT = /tmp/com4lovesSDK.dst;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "com4lovesSDK/com4lovesSDK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/ios-openssl-master/include\"",
+					"\"$(SRCROOT)/../libOS/include\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = com4lovesSDKNoJsonTotle;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		229ED3D518614D3400FEDBD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				DSTROOT = /tmp/com4lovesSDK.dst;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "com4lovesSDK/com4lovesSDK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/ios-openssl-master/include\"",
+					"\"$(SRCROOT)/../libOS/include\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = com4lovesSDKNoJsonTotle;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		22FD7293181B6B3E002A7022 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				DSTROOT = /tmp/com4lovesSDK.dst;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "com4lovesSDK/com4lovesSDK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					C4L_SELFPAY,
+					YOUAI_KUAIYONG,
+				);
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/ios-openssl-master/include\"",
+					"\"$(SRCROOT)/aliPay/include\"",
+					"\"$(SRCROOT)/../libOS/include\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = com4lovesSDKKuaiyong;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		22FD7294181B6B3E002A7022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				DSTROOT = /tmp/com4lovesSDK.dst;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "com4lovesSDK/com4lovesSDK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					C4L_SELFPAY,
+					YOUAI_KUAIYONG,
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/ios-openssl-master/include\"",
+					"\"$(SRCROOT)/aliPay/include\"",
+					"\"$(SRCROOT)/../libOS/include\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = com4lovesSDKKuaiyong;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AF5B9F8017E43A9800B2480E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				DSTROOT = /tmp/com4lovesSDK.dst;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "com4lovesSDK/com4lovesSDK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/ios-openssl-master/include\"",
+					"\"$(SRCROOT)/../libOS/include\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = com4lovesSDKNoJson;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AF5B9F8117E43A9800B2480E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				DSTROOT = /tmp/com4lovesSDK.dst;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "com4lovesSDK/com4lovesSDK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/ios-openssl-master/include\"",
+					"\"$(SRCROOT)/../libOS/include\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = com4lovesSDKNoJson;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AF7B9DA3185899D40029CAC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				DSTROOT = /tmp/com4lovesSDK.dst;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "com4lovesSDK/com4lovesSDK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					com4lovesSDKTW,
+				);
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../libOS/include\"",
+					"\"$(SRCROOT)/ios-openssl-master/include\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = com4lovesSDKTW;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Debug;
+		};
+		AF7B9DA4185899D40029CAC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				DSTROOT = /tmp/com4lovesSDK.dst;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "com4lovesSDK/com4lovesSDK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					com4lovesSDKTW,
+				);
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../libOS/include\"",
+					"\"$(SRCROOT)/ios-openssl-master/include\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = com4lovesSDKTW;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Release;
+		};
+		AF9F03AD183B646C00A75463 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				DSTROOT = /tmp/com4lovesSDK.dst;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "com4lovesSDK/com4lovesSDK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/ios-openssl-master/include\"",
+					"\"$(SRCROOT)/../libOS/include\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = com4lovesSDKNoJsonClean;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AF9F03AE183B646C00A75463 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				DSTROOT = /tmp/com4lovesSDK.dst;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "com4lovesSDK/com4lovesSDK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/ios-openssl-master/include\"",
+					"\"$(SRCROOT)/../libOS/include\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = com4lovesSDKNoJsonClean;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B55BFA2519A679A500875E47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				DSTROOT = /tmp/com4lovesSDK.dst;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "com4lovesSDK/com4lovesSDK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/ios-openssl-master/include\"",
+					"\"$(SRCROOT)/../libOS/include\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = com4lovesSDKNoJsonNo64;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B55BFA2619A679A500875E47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				DSTROOT = /tmp/com4lovesSDK.dst;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "com4lovesSDK/com4lovesSDK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/ios-openssl-master/include\"",
+					"\"$(SRCROOT)/../libOS/include\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = com4lovesSDKNoJsonNo64;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CF14D37817C3703B005565A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					ENABLE_FEEDBACK,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/../libOS/include\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CF14D37917C3703B005565A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					ENABLE_FEEDBACK,
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/../libOS/include\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF14D37B17C3703B005565A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				DSTROOT = /tmp/com4lovesSDK.dst;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../91lib/iOS/facebookSDK\"";
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "com4lovesSDK/com4lovesSDK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../libOS/include\"",
+					"\"$(SRCROOT)/ios-openssl-master/include\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/ljc/Documents/Code_Client/build/Release-iphoneos",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Debug;
+		};
+		CF14D37C17C3703B005565A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				DSTROOT = /tmp/com4lovesSDK.dst;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../91lib/iOS/facebookSDK\"";
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "com4lovesSDK/com4lovesSDK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../libOS/include\"",
+					"\"$(SRCROOT)/ios-openssl-master/include\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/ljc/Documents/Code_Client/build/Release-iphoneos",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Release;
+		};
+		CF79C49517CC786E00C01CFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GamesBundle/GamesBundle-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "com4lovesBundle/GamesBundle-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		CF79C49617CC786E00C01CFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GamesBundle/GamesBundle-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "com4lovesBundle/GamesBundle-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		CFB9AFF717EFF58C0024D06C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				DSTROOT = /tmp/com4lovesSDK.dst;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "com4lovesSDK/com4lovesSDK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					C4L_SELFPAY,
+				);
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/ios-openssl-master/include\"",
+					"\"$(SRCROOT)/aliPay/include\"",
+					"\"$(SRCROOT)/../libOS/include\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = com4lovesSDKselfPay;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CFB9AFF817EFF58C0024D06C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				DSTROOT = /tmp/com4lovesSDK.dst;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "com4lovesSDK/com4lovesSDK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					C4L_SELFPAY,
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/ios-openssl-master/include\"",
+					"\"$(SRCROOT)/aliPay/include\"",
+					"\"$(SRCROOT)/../libOS/include\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = com4lovesSDKselfPay;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CFF183C717E46F14002DBAF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				DSTROOT = /tmp/com4lovesSDK.dst;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "com4lovesSDK/com4lovesSDK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					C4L_PURE_WITHOUT_INTERFACE,
+				);
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/ios-openssl-master/include\"",
+					"\"$(SRCROOT)/../libOS/include\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = com4lovesSDKNoGTMBase64;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CFF183C817E46F14002DBAF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				DSTROOT = /tmp/com4lovesSDK.dst;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "com4lovesSDK/com4lovesSDK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					C4L_PURE_WITHOUT_INTERFACE,
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/ios-openssl-master/include\"",
+					"\"$(SRCROOT)/../libOS/include\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = com4lovesSDKNoGTMBase64;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CFF183FB17E46F98002DBAF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				DSTROOT = /tmp/com4lovesSDK.dst;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "com4lovesSDK/com4lovesSDK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					C4L_PURE_WITHOUT_INTERFACE,
+				);
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/ios-openssl-master/include\"",
+					"\"$(SRCROOT)/../libOS/include\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = com4lovesSDKPure;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CFF183FC17E46F98002DBAF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				DSTROOT = /tmp/com4lovesSDK.dst;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "com4lovesSDK/com4lovesSDK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					C4L_PURE_WITHOUT_INTERFACE,
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/ios-openssl-master/include\"",
+					"\"$(SRCROOT)/../libOS/include\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = com4lovesSDKPure;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		229ED3D318614D3400FEDBD2 /* Build configuration list for PBXNativeTarget "com4lovesSDKNoJsonTotle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				229ED3D418614D3400FEDBD2 /* Debug */,
+				229ED3D518614D3400FEDBD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22FD7292181B6B3E002A7022 /* Build configuration list for PBXNativeTarget "com4lovesSDKKuaiyong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22FD7293181B6B3E002A7022 /* Debug */,
+				22FD7294181B6B3E002A7022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF5B9F7F17E43A9800B2480E /* Build configuration list for PBXNativeTarget "com4lovesSDKNoJson" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF5B9F8017E43A9800B2480E /* Debug */,
+				AF5B9F8117E43A9800B2480E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF7B9DA2185899D40029CAC8 /* Build configuration list for PBXNativeTarget "com4lovesSDKTW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF7B9DA3185899D40029CAC8 /* Debug */,
+				AF7B9DA4185899D40029CAC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF9F03AC183B646C00A75463 /* Build configuration list for PBXNativeTarget "com4lovesSDKNoJsonClean" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF9F03AD183B646C00A75463 /* Debug */,
+				AF9F03AE183B646C00A75463 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B55BFA2419A679A500875E47 /* Build configuration list for PBXNativeTarget "com4lovesSDKNoJsonNo64" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B55BFA2519A679A500875E47 /* Debug */,
+				B55BFA2619A679A500875E47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF14D36717C3703B005565A8 /* Build configuration list for PBXProject "com4lovesSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF14D37817C3703B005565A8 /* Debug */,
+				CF14D37917C3703B005565A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF14D37A17C3703B005565A8 /* Build configuration list for PBXNativeTarget "com4lovesSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF14D37B17C3703B005565A8 /* Debug */,
+				CF14D37C17C3703B005565A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF79C49417CC786E00C01CFA /* Build configuration list for PBXNativeTarget "GamesBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF79C49517CC786E00C01CFA /* Debug */,
+				CF79C49617CC786E00C01CFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFB9AFF617EFF58C0024D06C /* Build configuration list for PBXNativeTarget "com4lovesSDKselfPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFB9AFF717EFF58C0024D06C /* Debug */,
+				CFB9AFF817EFF58C0024D06C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFF183C617E46F14002DBAF9 /* Build configuration list for PBXNativeTarget "com4lovesSDKNoGTMBase64" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFF183C717E46F14002DBAF9 /* Debug */,
+				CFF183C817E46F14002DBAF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFF183FA17E46F98002DBAF9 /* Build configuration list for PBXNativeTarget "com4lovesSDKPure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFF183FB17E46F98002DBAF9 /* Debug */,
+				CFF183FC17E46F98002DBAF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF14D36417C3703B005565A8 /* Project object */;
+}

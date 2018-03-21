@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/anzhi_F9F9F1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/normal_reg"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/size_48"
+                android:background="@color/anzhi_F9F9F1"
+                android:gravity="center"
+                android:text="@string/anzhi_registerbyusername"
+                android:textColor="@color/anzhi_494949"
+                android:textSize="@dimen/font_18" />
+
+            <View
+                android:id="@+id/divider_left"
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:background="@color/anzhi_D6D6D6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tel_reg"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/size_48"
+                android:background="@color/anzhi_F9F9F1"
+                android:gravity="center"
+                android:text="@string/anzhi_registerbyphone"
+                android:textColor="@color/anzhi_494949"
+                android:textSize="@dimen/font_18" />
+
+            <View
+                android:id="@+id/divider_right"
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:background="@color/anzhi_D6D6D6" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:flipInterval="30" />
+
+</LinearLayout>

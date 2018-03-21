@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/dialog_close_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="right"
+        android:paddingRight="20dip"
+        android:paddingTop="5dip" >
+
+        <ImageButton
+            android:id="@+id/dialog_close_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gamehall_button3_selector1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dialog_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_close_view"
+        android:layout_marginTop="5dip"
+        android:paddingLeft="20dip"
+        android:text="感谢您对我们的支持"
+        android:textColor="@color/txt_white"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/dialog_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_text"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="4dip"
+        android:background="@drawable/gamehall_dialog_edittext"
+        android:gravity="top"
+        android:hint="输入您的建议..."
+        android:lines="8"
+        android:scrollbars="vertical"
+        android:textColor="@color/txt_white"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_text2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dip"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="42dip"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip" >
+
+        <Button
+            android:id="@+id/dialog_yes_btn"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dip"
+            android:background="@drawable/gamehall_button2_selector1"
+            android:text="确认"
+            android:textColor="@color/txt_white"
+            android:textSize="17dp" />
+
+        <Button
+            android:id="@+id/dialog_no_btn"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:background="@drawable/gamehall_button2_selector1"
+            android:text="取消"
+            android:textColor="@color/txt_white"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- <string-array name="pay_mode"> -->
+    <!-- <item>百付宝余额</item> -->
+    <!-- <item>信用卡</item> -->
+    <!-- <item>储蓄卡</item> -->
+    <!-- <item>手机充值卡</item> -->
+    <!-- <item>游戏充值卡</item> -->
+    <!-- <item>短信</item> -->
+    <!-- <item>支付宝</item> -->
+    <!-- </string-array> -->
+    <string-array name="ebpay_who">
+        <item>爸爸</item>
+        <item>妈妈</item>
+        <item>丈夫</item>
+        <item>妻子</item>
+        <item>外公</item>
+        <item>外婆</item>
+        <item>爷爷</item>
+        <item>奶奶</item>
+        <item>儿子</item>
+        <item>女儿</item>
+        <item>小学老师</item>
+        <item>中学老师</item>
+        <item>大学老师</item>
+    </string-array>
+    <string-array name="ebpay_type">
+        <item>姓名</item>
+        <item>生日</item>
+        <item>出生地</item>
+    </string-array>
+    <!-- <string-array name="pay_mode_assistant"> -->
+    <!-- <item>%1$.2f元</item> -->
+    <!-- <item>快捷%1$.0f张</item> -->
+    <!-- <item>快捷%1$.0f张</item> -->
+    <!-- <item></item> -->
+    <!-- <item></item> -->
+    <!-- <item></item> -->
+    <!-- <item></item> -->
+    <!-- </string-array> -->
+    <string-array name="ebpay_identity_type">
+        <item>身份证</item>
+        <item>护照</item>
+        <item>军人证</item>
+    </string-array>
+    
+     <string-array name="ebpay_fast_type">
+        <item>储蓄卡</item>
+        <item>信用卡</item>
+    </string-array>
+
+    <!-- <integer-array name="pay_mode_item_bgs"> -->
+    <!-- <item>@drawable/bg_mode_surplus</item> -->
+    <!-- <item>@drawable/bg_mode_credit</item> -->
+    <!-- <item>@drawable/bg_mode_debit</item> -->
+    <!-- <item>@drawable/bg_mode_p_card</item> -->
+    <!-- <item>@drawable/bg_mode_g_card</item> -->
+    <!-- <item>@drawable/bg_mode_sms</item> -->
+    <!-- </integer-array> -->
+
+</resources>

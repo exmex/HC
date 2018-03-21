@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 充值界面 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<RelativeLayout android:id="@+id/szf_title"
+		android:layout_width="fill_parent" android:layout_height="48dp"
+		android:background="@drawable/appchina_pay_title_bg"
+		android:layout_alignParentTop="true">
+		<TextView android:id="@+id/title" android:layout_width="wrap_content"
+			android:text="话费充值卡支付" android:textColor="#ffffff" android:textSize="20sp"
+			android:layout_height="wrap_content" android:layout_centerInParent="true" />
+	</RelativeLayout>
+	<RelativeLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<ScrollView android:layout_width="fill_parent"
+			android:scrollbarAlwaysDrawVerticalTrack="true"
+			android:layout_alignParentTop="true" android:layout_above="@+id/btn_ly"
+			android:layout_height="wrap_content">
+			<LinearLayout android:orientation="vertical"
+				android:layout_width="fill_parent" android:layout_height="fill_parent">
+				<TextView android:layout_width="wrap_content"
+						android:layout_marginLeft="10dp"
+						android:layout_marginRight="10dp"
+						android:layout_marginTop="10dp"
+						android:textColor="#ff7800" android:textSize="15sp"
+						android:layout_height="wrap_content" android:text="@string/appchina_pay_creditcard_warn" />
+				<TextView android:id="@+id/warn_text"
+						android:layout_marginLeft="10dp"
+						android:layout_marginRight="10dp"
+						android:layout_width="fill_parent" android:textSize="15sp"
+						android:textColor="#000000" android:layout_height="wrap_content" />
+				<TextView 
+					style="@style/appchina_pay_text_highlight"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:layout_marginTop="5dp"
+					android:text="请选择卡号类型:" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" />
+				<Spinner android:id="@+id/szf_card_type" android:background="@drawable/appchina_pay_dropdown_button"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:paddingRight="30dip" android:drawSelectorOnTop="true"
+					android:prompt="@string/appchina_pay_spinner_promt_default" style="@style/appchina_pay_MySpinner" />
+				<TextView 
+					style="@style/appchina_pay_text_highlight"
+					android:layout_marginTop="5dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:text="请输入充值卡号:" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" />
+				<EditText android:id="@+id/szf_card_no" android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:layout_width="fill_parent"
+					android:layout_gravity="center_vertical|left" android:singleLine="true"
+					android:background="@drawable/appchina_pay_edittext"
+					android:digits="1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM"
+					android:hint="8~21位数字"
+					android:inputType="text" android:maxLength="32" />
+				<TextView 
+					style="@style/appchina_pay_text_highlight"
+					android:layout_marginTop="5dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:text="请输入充值卡密码:" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" />
+				<EditText android:id="@+id/szf_card_psd" android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:layout_width="fill_parent"
+					android:hint="8~21位数字"
+					android:layout_gravity="center_vertical|left" android:singleLine="true"
+					android:background="@drawable/appchina_pay_edittext"
+					android:digits="1234567890"
+					android:inputType="number" android:maxLength="32" />
+				<TextView 
+					style="@style/appchina_pay_text_highlight_14"
+					android:layout_marginTop="5dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:text="@string/appchina_pay_card_tip"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+		</ScrollView>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_marginLeft="10dp" android:layout_alignParentBottom="true"
+			android:id="@id/btn_ly" android:gravity="center_vertical"
+			android:layout_marginBottom="5dp"
+			android:layout_marginRight="10dp" android:layout_height="wrap_content">
+			<Button android:id="@+id/submit" android:layout_width="0dp"
+				android:layout_weight="1" android:layout_marginRight="10dp"
+				android:layout_marginLeft="5dp" android:padding="8dp"
+				android:layout_height="wrap_content" android:gravity="center"
+				android:textSize="18sp" android:text="提交"
+				android:background="@drawable/appchina_pay_by_button_selector"
+				android:textColor="#ffffff" />
+			<Button android:layout_width="0dp" android:id="@+id/cancel"
+				android:layout_weight="1" android:padding="8dp"
+				android:layout_height="wrap_content" android:layout_marginLeft="10dp"
+				android:layout_marginRight="5dp" android:gravity="center"
+				android:textSize="18sp" android:text="取消"
+				android:background="@drawable/appchina_pay_by_button_selector"
+				android:textColor="#ffffff" />
+		</LinearLayout>
+	</RelativeLayout>
+</LinearLayout>

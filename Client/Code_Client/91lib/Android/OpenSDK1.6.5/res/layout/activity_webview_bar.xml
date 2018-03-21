@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_secondary_top_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/main_tab_top_bar"
+        android:orientation="vertical" >
+
+        <WebView
+            android:id="@+id/nmgc_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+             />
+
+        <include
+            android:id="@+id/inc_loading_full_root"
+            layout="@layout/nmgc_loading_full"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

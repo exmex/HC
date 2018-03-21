@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gamehall_mine_selector" >
+
+    <ImageView
+        android:id="@+id/logoView"
+        android:layout_width="81dip"
+        android:layout_height="52dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/gamehall_avtivity_def"
+        android:scaleType="fitXY" >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/gamehall_mine_go" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/indicator"
+        android:layout_toRightOf="@id/logoView"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:paddingTop="2dip"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:paddingTop="2dip"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/gamehall_common_desc"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+</RelativeLayout>

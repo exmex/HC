@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+   	<color name="light_blue">#ff323232</color>
+    
+    <color name="transparent">#00000000</color>
+	<color name="link_text">#ffffa000</color>
+	<color name="splash_notification_bg">#7FFF</color>
+	
+	<color name="note_above_color">#a97750</color>
+	<color name="note_below_color">#357dc1</color>
+	<color name="note_selet_color">#ff6600</color>
+	<color name="note_normal">#5b493b</color>
+	
+	<color name="transparent_background">#70000000</color>
+   	<color name="textclick">#e8773e</color>
+   	<color name="textnormal">#555555</color>
+   	<color name="textwhite">#ffffff</color>
+   	
+   	<!-- 3.0颜色 -->
+   	<color name="text_hint">#9aaad0</color>
+   	<color name="text_blue">#507da0</color>
+   	<color name="text_yellow">#c3710f</color>
+   	<color name="text_blue_click">#507da0</color>
+   	<color name="text_gray">#999999</color>
+   	<color name="text_orange">#c3710f</color>
+
+</resources>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sogou.gamecenter.sdk"
+    android:versionCode="23"
+    android:versionName="v1.4_6.6_23" >
+
+    <!-- 搜狗游戏SDK必要权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application android:label="@string/sogou_game_sdk_app_name" >
+
+        <!-- 搜狗游戏SDK配置 -->
+        <activity
+            android:name="com.sogou.gamecenter.sdk.SogouProgressDialog"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="landscape"
+            android:theme="@style/Activity_MyDialog" />
+        <activity
+            android:name="com.sogou.gamecenter.sdk.SogouLoginActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize|layoutDirection"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/Activity_MyDialog" />
+        <activity
+            android:name="com.sogou.gamecenter.sdk.SogouRegActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize|layoutDirection"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowBackground="@null"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.sogou.gamecenter.sdk.SogouPayActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize|layoutDirection"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowBackground="@null"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.sogou.gamecenter.sdk.SogouWebViewActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize|layoutDirection"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowBackground="@null"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+        <activity
+            android:name="com.sogou.gamecenter.sdk.SogouThirdLoginActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize|layoutDirection"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowBackground="@null"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.sogou.gamecenter.sdk.SogouAliwapActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize|layoutDirection"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowBackground="@null"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.sogou.gamecenter.sdk.SogouPayRecordActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowBackground="@null"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.sogou.gamecenter.sdk.SogouFeedBackActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize|layoutDirection"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowBackground="@null"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.sogou.gamecenter.sdk.SogouFeedBackRecordActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize|layoutDirection"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowBackground="@null"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <uses-library android:name="android.test.runner" />
+
+        <!-- 接入push的声明 -->
+        <service
+            android:name="com.sogou.udp.push.PushService"
+            android:exported="true"
+            android:process=":push_service" />
+
+        <receiver android:name="com.sogou.udp.push.SystemReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.sogou.udp.push.PushServiceReceiver" >
+            <intent-filter>
+                <action android:name="com.sogou.pushservice.action.METHOD" />
+                <action android:name="com.sogou.pushservice.action.notification.SHOW" >
+                    <action android:name="com.sogou.pushservice.action.payload.CLICK" />
+                    <action android:name="com.sogou.pushservice.action.notification.CLICK" />
+                </action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.sogou.gamecenter.sdk.push.MessageReceiver" >
+            <intent-filter>
+                <action android:name="com.sogou.pushservice.action.message.RECEIVE" />
+                <action android:name="com.sogou.pushservice.action.bind.RECEIVE" />
+                <action android:name="com.sogou.pushservice.action.message.CLICK" />
+                <action android:name="com.sogou.pushservice.action.pushstate.conn" />
+                <action android:name="com.sogou.pushservice.action.pushstate.unconn" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="appid"
+            android:value="6000" />
+        <meta-data
+            android:name="appkey"
+            android:value="bur9abc978494b0cb36d88akchydqwea" />
+        <meta-data
+            android:name="IsSogouApp"
+            android:value="false" />
+        <!-- sdkVersion格式必须与提供的版本号一致，且格式为"X.0——X.9" -->
+        <meta-data
+            android:name="SdkVersion"
+            android:value="3.5" />
+        <!-- END:接入push的声明 -->
+    </application>
+
+</manifest>

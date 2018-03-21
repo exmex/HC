@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/inc_loading_full_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:id="@+id/inc_loading_full_loding_root"
+        android:background="@drawable/nmgc_full_loading_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp" >
+
+        <RelativeLayout
+            android:layout_width="78.17dp"
+            android:layout_height="78.17dp" >
+
+            <ImageView
+                android:id="@+id/inc_loading_full_loading_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/nmgc_loading_full_outer"
+                android:contentDescription="@null" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@null"
+                android:src="@drawable/nmgc_loading_full_center" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/inc_loading_progress_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:maxWidth="120dp"
+            android:text="@string/nmgc_loading_text"
+            android:textColor="@android:color/white"
+         
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/inc_loading_full_hint_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/inc_loading_full_hint_text"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/nmgc_data_error"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" 
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/nmgc_loading_error_logo"
+            android:gravity="center"
+             />
+    </RelativeLayout>
+
+</RelativeLayout>

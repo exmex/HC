@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/white"
+            android:paddingBottom="@dimen/size_20" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_marginRight="@dimen/size_10"
+                android:layout_marginTop="@dimen/size_10"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/anzhi_textview_normal"
+                    android:gravity="center_vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="100dip"
+                        android:background="@android:color/white" >
+
+                        <ImageView
+                            android:id="@+id/iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/anzhi_arrow_right" />
+
+                        <RelativeLayout
+                            android:id="@+id/img_header_lay"
+                            android:layout_width="96dip"
+                            android:layout_height="96dip"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_toLeftOf="@+id/iv"
+                            android:gravity="center" >
+
+                            <ImageView
+                                android:id="@+id/img_header"
+                                android:layout_width="95dip"
+                                android:layout_height="95dip"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/anzhi_default_header"
+                                android:gravity="center"
+                                android:scaleType="fitXY" />
+
+                            <ImageView
+                                android:id="@+id/img_header_arc"
+                                android:layout_width="96dip"
+                                android:layout_height="96dip"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/anzhi_default_header3"
+                                android:gravity="center"
+                                android:scaleType="fitXY" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tv_register_prompt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/size_14"
+                            android:text="@string/anzhi_headphoto"
+                            android:textColor="@color/anzhi_494949"
+                            android:textSize="@dimen/font_16" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_nick"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/size_58"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:background="@drawable/anzhi_textview_normal"
+                    android:gravity="center_vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/size_58"
+                        android:background="@android:color/white" >
+
+                        <TextView
+                            android:id="@+id/nick_tv_"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/size_14"
+                            android:text="@string/anzhi_nickname"
+                            android:textColor="@color/anzhi_494949"
+                            android:textSize="@dimen/font_16" />
+
+                        <ImageView
+                            android:id="@+id/iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/anzhi_arrow_right" />
+
+                        <TextView
+                            android:id="@+id/txt_nick"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/iv"
+                            android:layout_toRightOf="@id/nick_tv_"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:textColor="@color/anzhi_494949"
+                            android:textSize="@dimen/font_16" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_sex"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/size_58"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/anzhi_textview_normal"
+                    android:gravity="center_vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/size_58"
+                        android:background="@android:color/white" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/size_14"
+                            android:text="@string/anzhi_sex"
+                            android:textColor="@color/anzhi_494949"
+                            android:textSize="@dimen/font_16" />
+
+                        <ImageView
+                            android:id="@+id/iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/anzhi_arrow_right" />
+
+                        <TextView
+                            android:id="@+id/txt_sex"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/iv"
+                            android:singleLine="true"
+                            android:textColor="@color/anzhi_494949"
+                            android:textSize="@dimen/font_16" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_address"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/size_58"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/anzhi_textview_normal"
+                    android:gravity="center_vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/size_58"
+                        android:background="@android:color/white" >
+
+                        <TextView
+                            android:id="@+id/dq_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/size_14"
+                            android:text="@string/anzhi_area"
+                            android:textColor="@color/anzhi_494949"
+                            android:textSize="@dimen/font_16" />
+
+                        <ImageView
+                            android:id="@+id/iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/anzhi_arrow_right" />
+
+                        <TextView
+                            android:id="@+id/txt_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dip"
+                            android:layout_toLeftOf="@id/iv"
+                            android:layout_toRightOf="@id/dq_tv"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:textColor="@color/anzhi_494949"
+                            android:textSize="@dimen/font_16" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_birthday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/size_58"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/anzhi_textview_normal"
+                    android:gravity="center_vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/size_58"
+                        android:background="@android:color/white" >
+
+                        <TextView
+                            android:id="@+id/birthday_tv_"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/size_14"
+                            android:text="@string/anzhi_birthday"
+                            android:textColor="@color/anzhi_494949"
+                            android:textSize="@dimen/font_16" />
+
+                        <ImageView
+                            android:id="@+id/iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/anzhi_arrow_right" />
+
+                        <TextView
+                            android:id="@+id/txt_birthday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/iv"
+                            android:layout_toRightOf="@id/birthday_tv_"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:textColor="@color/anzhi_494949"
+                            android:textSize="@dimen/font_16" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_star"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/size_58"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/anzhi_textview_normal"
+                    android:gravity="center_vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/size_58"
+                        android:background="@android:color/white" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/size_14"
+                            android:text="@string/anzhi_star"
+                            android:textColor="@color/anzhi_494949"
+                            android:textSize="@dimen/font_16" />
+
+                        <ImageView
+                            android:id="@+id/iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/anzhi_arrow_right" />
+
+                        <TextView
+                            android:id="@+id/txt_star"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/iv"
+                            android:singleLine="true"
+                            android:textColor="@color/anzhi_494949"
+                            android:textSize="@dimen/font_16" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_qq"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/size_58"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/anzhi_textview_normal"
+                    android:gravity="center_vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/size_58"
+                        android:background="@android:color/white" >
+
+                        <TextView
+                            android:id="@+id/other_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/size_14"
+                            android:text="@string/anzhi_QQ"
+                            android:textColor="@color/anzhi_494949"
+                            android:textSize="@dimen/font_16" />
+
+                        <ImageView
+                            android:id="@+id/iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/anzhi_arrow_right" />
+
+                        <TextView
+                            android:id="@+id/txt_qq"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dip"
+                            android:layout_toLeftOf="@id/iv"
+                            android:layout_toRightOf="@id/other_textview"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:textColor="@color/anzhi_494949"
+                            android:textSize="@dimen/font_16" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

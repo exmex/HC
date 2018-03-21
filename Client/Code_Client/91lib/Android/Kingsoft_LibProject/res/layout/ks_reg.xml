@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <com.ijinshan.ksmglogin.ui.account.ResizeScrollView
+        android:id="@+id/ks_reg_mainlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="@dimen/ks_entry_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ks_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/ks_entry_input_padding" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+				<Button
+				    android:id="@+id/reg_return_btn"
+                    android:layout_width="@dimen/ks_returnbtn_width"
+                    android:layout_height="@dimen/ks_returnbtn_width"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/entry_layout_title"
+                    android:background="@drawable/ks_return_btn" />
+                <TextView
+                    android:id="@+id/entry_layout_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/ks_entry_padding"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:text="@string/ks_reg_title"
+                    android:textColor="@color/ks_entry_txt"
+                    android:textSize="@dimen/ks_entry_txt" />
+                
+                  
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/entry_layout_error1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#cf000d"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ks_input_bg"
+                android:orientation="horizontal"
+                android:padding="@dimen/ks_entry_padding" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/ks_entry_user"
+                    android:textColor="@color/ks_entry_txt"
+                    android:textSize="@dimen/ks_entry_txt" />
+
+                <EditText
+                    android:id="@+id/reg_layout_user"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:hint="@string/ks_entry_user_hint1"
+                    android:singleLine="true"
+                    android:textColor="@color/ks_entry_txt"
+                    android:textColorHint="@color/ks_entry_hint"
+                    android:textSize="@dimen/ks_entry_txt" >
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/entry_layout_usr_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/ks_entry_padding"
+                    android:src="@drawable/ks_delete_selector"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/entry_layout_error2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#cf000d"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ks_input_bg"
+                android:orientation="horizontal"
+                android:padding="@dimen/ks_entry_padding" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/ks_entry_psw"
+                    android:textColor="@color/ks_entry_txt"
+                    android:textSize="@dimen/ks_entry_txt" />
+
+                <EditText
+                    android:id="@+id/reg_layout_psw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:hint="@string/ks_entry_psw_hint1"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="@color/ks_entry_txt"
+                    android:textColorHint="@color/ks_entry_hint"
+                    android:textSize="@dimen/ks_entry_txt" />
+
+                <ImageView
+                    android:id="@+id/entry_layout_psw_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ks_delete_selector"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ks_entry_padding" >
+
+                <CheckBox
+                    android:id="@+id/show_password_box"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/ks_reg_checkbox"
+                    android:layout_weight="1.0"
+                    android:checked="true"
+                    android:button="@drawable/ks_checkbox_selector"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/ks_checkbox_showpass"
+                    android:textColor="@color/ks_reg_checkbox"
+                    android:textSize="13.5dp" />
+
+                <CheckBox
+                    android:id="@+id/ksservice_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/ks_reg_checkbox"
+                    android:button="@drawable/ks_checkbox_selector"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/ks_agree"
+                    android:textColor="@color/ks_reg_checkbox"
+                    android:textSize="@dimen/ks_entry_tips" />
+
+                <TextView
+                    android:id="@+id/ksservice_box_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/ks_agreement"
+                    android:textColor="@color/ks_reg_checkbox"
+                    android:textSize="@dimen/ks_entry_tips" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ks_entry_padding" >
+
+                <Button
+                    android:id="@+id/reg_layout_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ks_entry_btn_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/ks_btn_blue_selector"
+                    android:text="@string/ks_btn_register"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/ks_entry_txt" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.ijinshan.ksmglogin.ui.account.ResizeScrollView>
+
+    <LinearLayout
+        android:id="@+id/reg_loading"
+        android:layout_width="@dimen/ks_entry_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ks_loading_height"
+            android:background="@drawable/ks_loading_top"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/ks_loading_padding"
+            android:paddingRight="@dimen/ks_loading_padding"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:text="@string/ks_loading_user"
+                android:textColor="@color/ks_entry_txt"
+                android:textSize="@dimen/ks_entry_txt" />
+
+            <TextView
+                android:id="@+id/entry_loading_usr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/ks_entry_txt"
+                android:textSize="@dimen/ks_entry_txt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ks_loading_height"
+            android:background="@drawable/ks_loading_bottom"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp" >
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="@dimen/ks_entry_padding"
+                android:background="@drawable/ks_loading_halo"
+                android:indeterminateDrawable="@drawable/ks_progress" />
+
+            <ImageView
+                android:id="@+id/reg_success_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/ks_entry_padding"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/reg_loading_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/ks_reg_loading_text"
+                android:textColor="@color/ks_entry_txt"
+                android:textSize="@dimen/ks_entry_txt" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

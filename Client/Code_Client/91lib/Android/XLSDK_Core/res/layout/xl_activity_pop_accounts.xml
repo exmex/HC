@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b0000000"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xl_blue_circle_accounts"
+        android:padding="1dp" >
+
+        <LinearLayout
+            android:id="@+id/xl_login_pop_window_layout_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:background="@drawable/xl_shape_login_top"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_marginLeft="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:gravity="center"
+                android:background="@color/xl_transparent"
+                android:text="@string/xl_login_please_select_account"
+                android:textColor="#1165b8"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/xl_login_pop_window_layout_1"
+            android:background="@drawable/xl_shape_pop_listview"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ListView
+                android:id="@+id/xl_login_accounts_list"
+                style="@style/xl_login_pop_accounts_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#f5f5f5"
+                android:cacheColorHint="@android:color/transparent"
+                android:focusableInTouchMode="true" >
+            </ListView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

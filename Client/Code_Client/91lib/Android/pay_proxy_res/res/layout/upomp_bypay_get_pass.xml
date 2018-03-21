@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/rl_user_getpass" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" android:background="#dae3ec">
+	<LinearLayout android:focusable="true"
+		android:focusableInTouchMode="true" android:layout_width="0dip"
+		android:layout_height="0dip" />
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_marginBottom="70dip">
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<include layout="@layout/upomp_bypay_navigator" />
+
+			<LinearLayout android:id="@+id/ll_user_getpass"
+				android:orientation="horizontal" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_marginTop="0dip"
+				android:background="@drawable/upomp_bypay_sub_bg"
+				android:layout_below="@+id/rl_header" android:gravity="center_vertical">
+				<Button android:id="@+id/btn_login_getpass"
+					android:layout_width="wrap_content" android:layout_weight="1"
+					android:layout_marginLeft="15dip" android:layout_height="wrap_content"
+					android:background="@drawable/upomp_bypay_sub10_default"
+					android:text="@string/upomp_bypay_loading" android:textColor="#FFFFFF" android:textSize="17sp" />
+				<Button android:id="@+id/btn_register_getpass"
+					android:layout_width="wrap_content" android:layout_weight="1"
+					android:layout_marginRight="15dip" android:layout_height="wrap_content"
+					android:background="@drawable/upomp_bypay_sub11_default"
+					android:text="@string/upomp_bypay_register" android:textColor="#FFFFFF" android:textSize="17sp" />
+
+			</LinearLayout>
+			<!-- one -->
+			<RelativeLayout android:id="@+id/rl_info_getpass"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_marginTop="8dip" android:layout_below="@+id/ll_user_getpass"
+				android:visibility="gone">
+				<RelativeLayout android:id="@+id/rl_username_getpass"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:background="@drawable/upomp_bypay_input_bg"
+					android:layout_marginLeft="15dip" android:layout_marginRight="15dip">
+					<RelativeLayout android:id="@+id/rl_username_getpass_title"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_centerVertical="true">
+						<TextView android:id="@+id/tv_username_getpass"
+							android:layout_width="wrap_content" android:layout_height="40dip"
+							android:gravity="center_vertical" android:layout_marginLeft="10dip"
+							android:text="@string/upomp_bypay_username" android:textColor="#000000"
+							android:textSize="15sp" />
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/rl_username_getpass_content"
+						android:layout_width="fill_parent" android:layout_toRightOf="@+id/rl_username_getpass_title"
+						android:layout_marginLeft="5dip" android:layout_height="wrap_content"
+						android:layout_marginRight="5dip">
+						<EditText android:id="@+id/et_username_getpass"
+							android:singleLine="true" android:layout_width="fill_parent"
+							android:layout_height="40dip" android:textColor="#000000"
+							android:hint="@string/upomp_bypay_sixtotwenty" android:textSize="15sp"
+							android:background="#00000000" android:maxLength="20"/>
+					</RelativeLayout>
+				</RelativeLayout>
+				<RelativeLayout android:id="@+id/rl_telnum_getpass"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_below="@+id/rl_username_getpass"
+					android:layout_marginTop="8dip" android:background="@drawable/upomp_bypay_input_bg"
+					android:layout_marginLeft="15dip" android:layout_marginRight="15dip">
+					<RelativeLayout android:id="@+id/rl_telnum_getpass_title"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_centerVertical="true">
+						<TextView android:id="@+id/tv_telnum_getpass"
+							android:layout_width="wrap_content" android:layout_height="40dip"
+							android:gravity="center_vertical" android:layout_marginLeft="10dip"
+							android:text="@string/upomp_bypay_firstmobilenum" android:textColor="#000000"
+							android:textSize="15sp" />
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/rl_telnum_getpass_content"
+						android:layout_width="fill_parent" android:layout_toRightOf="@+id/rl_telnum_getpass_title"
+						android:layout_marginLeft="5dip" android:layout_height="wrap_content"
+						android:layout_marginRight="5dip">
+						<EditText android:id="@+id/et_telnum_getpass"
+							android:singleLine="true" android:layout_width="fill_parent"
+							android:layout_height="40dip" android:textColor="#000000"
+							android:hint="@string/upomp_bypay_secondmobilenum" android:numeric="integer" android:maxLength="11"
+							android:textSize="15sp" android:background="#00000000" />
+					</RelativeLayout>
+				</RelativeLayout>
+				<RelativeLayout android:id="@+id/rl_validcode_getpass"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_below="@+id/rl_telnum_getpass"
+					android:layout_marginTop="8dip" android:background="@drawable/upomp_bypay_input_bg"
+					android:layout_marginLeft="15dip" android:layout_marginRight="15dip">
+					<RelativeLayout android:id="@+id/rl_validcode_getpass_title"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_centerVertical="true">
+						<TextView android:id="@+id/tv_validcode_getpass"
+							android:layout_width="wrap_content" android:layout_height="40dip"
+							android:text="@string/upomp_bypay_firstshortmessagesecuritycode" android:gravity="center_vertical"
+							android:textColor="#000000" android:layout_marginLeft="10dip"
+							android:textSize="15sp" />
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/rl_validcode_getpass_content"
+						android:layout_width="fill_parent" android:layout_toRightOf="@+id/rl_validcode_getpass_title"
+						android:layout_marginLeft="5dip" android:layout_height="wrap_content"
+						android:layout_marginRight="0dip">
+						<EditText android:id="@+id/et_validcode_getpass"
+							android:singleLine="true" android:layout_width="fill_parent"
+							android:layout_height="40dip" android:numeric="integer"
+							android:maxLength="6" android:textColor="#000000" android:hint="@string/upomp_bypay_secondshortmessagesecuritycode"
+							android:textSize="15sp" android:background="#00000000" />
+						<Button android:id="@+id/btn_validcode_getpass"
+							android:layout_width="wrap_content" android:layout_height="40dip"
+							android:layout_alignParentRight="true"
+							android:layout_marginLeft="5dip" android:background="@drawable/upomp_bypay_input_btn4"
+							android:text="@string/upomp_bypay_get" android:textSize="15dip" android:textColor="#000000" />
+					</RelativeLayout>
+				</RelativeLayout>
+				<RelativeLayout android:id="@+id/rl_webvalidcode_getpass"
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:layout_marginTop="8dip" android:layout_alignParentRight="true"
+					android:layout_below="@+id/rl_validcode_getpass"
+					android:background="@drawable/upomp_bypay_input_bg"
+					android:layout_marginLeft="15dip" android:layout_marginRight="15dip">
+					<RelativeLayout android:id="@+id/rl_webvalidcode_getpass_title"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_centerVertical="true">
+						<TextView android:layout_height="40dip" android:gravity="center_vertical"
+							android:layout_marginLeft="10dip" android:id="@+id/tv_webvalidcode_getpass"
+							android:text="@string/upomp_bypay_checkcode" android:layout_width="wrap_content"
+							android:textSize="15sp" android:textColor="#000000" />
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/rl_webvalidcode_getpass_content"
+						android:layout_width="wrap_content" android:layout_toRightOf="@+id/rl_webvalidcode_getpass_title"
+						android:layout_marginLeft="5dip" android:layout_height="wrap_content"
+						android:layout_marginRight="2dip">
+						<EditText android:layout_height="40dip"
+							android:singleLine="true" android:id="@+id/et_webvalidcode_getpass"
+							android:layout_width="120dip" android:numeric="integer"
+							android:textColor="#000000" android:maxLength="4"
+							android:textSize="15sp" android:background="#00000000" />
+						<ImageView android:id="@+id/iv_webvalidcode_getpass"
+							android:layout_height="38dip" android:layout_marginLeft="5dip"
+							android:layout_width="70dip" android:layout_alignParentRight="true"/>
+						<ProgressBar android:id="@+id/p_webvalidcode_getpass"
+							android:layout_width="30dip" android:layout_height="30dip"
+							android:layout_alignParentRight="true"
+							android:indeterminateDrawable="@drawable/upomp_bypay_progress"
+							android:visibility="gone" android:layout_marginLeft="30dip"
+							android:layout_marginTop="5dip" />
+					</RelativeLayout>
+				</RelativeLayout>
+				<RelativeLayout android:id="@+id/rl_button_next_getpass"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_below="@+id/rl_webvalidcode_getpass"
+					android:layout_marginTop="20dip">
+					<Button android:id="@+id/btn_button_next_getpass"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:background="@drawable/upomp_bypay_btn_enter"
+						android:layout_centerHorizontal="true" android:layout_marginLeft="30dip"
+						android:layout_marginRight="30dip" android:gravity="center"
+						android:textSize="20sp" android:text="@string/upomp_bypay_next" android:textColor="#FFFFFF" />
+				</RelativeLayout>
+			</RelativeLayout>
+			<!-- two -->
+			<RelativeLayout android:id="@+id/rl_next_getpass"
+				android:visibility="visible" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_marginTop="8dip"
+				android:layout_below="@+id/ll_user_getpass">
+				<RelativeLayout android:id="@+id/rl_question_getpass"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:background="@drawable/upomp_bypay_input_bg"
+					android:layout_marginLeft="15dip" android:layout_marginRight="15dip">
+					<RelativeLayout android:id="@+id/rl_question_getpass_title"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_centerVertical="true">
+						<TextView android:id="@+id/tv_question_getpass"
+							android:layout_width="wrap_content" android:layout_height="40dip"
+							android:gravity="center_vertical" android:layout_marginLeft="10dip"
+							android:text="@string/upomp_bypay_securityissue" android:textColor="#000000"
+							android:textSize="15sp" />
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/rl_question_getpass_content"
+						android:layout_width="fill_parent" android:layout_toRightOf="@+id/rl_question_getpass_title"
+						android:layout_marginLeft="5dip" android:layout_height="wrap_content"
+						android:layout_marginRight="5dip">
+						<TextView android:id="@+id/tv_question_info_getpass"
+							android:singleLine="true" android:layout_width="fill_parent"
+							android:layout_height="40dip" android:textColor="#000000"
+							android:gravity="center_vertical" android:textSize="15sp" />
+					</RelativeLayout>
+				</RelativeLayout>
+				<RelativeLayout android:id="@+id/rl_question_result_getpass"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_marginTop="8dip" android:layout_below="@+id/rl_question_getpass"
+					android:background="@drawable/upomp_bypay_input_bg"
+					android:layout_marginLeft="15dip" android:layout_marginRight="15dip">
+					<RelativeLayout android:id="@+id/rl_question_result_getpass_title"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_centerVertical="true">
+						<TextView android:id="@+id/tv_question_result_getpass"
+							android:layout_width="wrap_content" android:layout_height="40dip"
+							android:gravity="center_vertical" android:text="@string/upomp_bypay_securityquestionanswer"
+							android:textColor="#000000" android:layout_marginLeft="10dip"
+							android:textSize="15sp" />
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/rl_question_result_getpass_content"
+						android:layout_width="fill_parent" android:layout_toRightOf="@+id/rl_question_result_getpass_title"
+						android:layout_marginLeft="5dip" android:layout_height="wrap_content"
+						android:layout_marginRight="5dip">
+						<EditText android:id="@+id/et_question_result_getpass"
+							android:singleLine="true" android:layout_width="fill_parent"
+							android:layout_height="40dip" android:textColor="#000000"
+							android:hint="@string/upomp_bypay_twotosixteen" android:textSize="15sp"
+							android:background="#00000000" />
+					</RelativeLayout>
+				</RelativeLayout>
+				<RelativeLayout android:id="@+id/rl_newpass_getpass"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_below="@+id/rl_question_result_getpass"
+					android:layout_marginTop="8dip" android:background="@drawable/upomp_bypay_input_bg"
+					android:layout_marginLeft="15dip" android:layout_marginRight="15dip">
+					<RelativeLayout android:id="@+id/rl_newpass_getpass_title"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_centerVertical="true">
+						<TextView android:id="@+id/tv_newpass_getpass"
+							android:layout_width="wrap_content" android:layout_height="40dip"
+							android:layout_marginLeft="10dip" android:text="@string/upomp_bypay_newpsw"
+							android:gravity="center_vertical" android:textColor="#000000"
+							android:textSize="15sp" />
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/rl_newpass_getpass_content"
+						android:layout_width="fill_parent" android:layout_toRightOf="@+id/rl_newpass_getpass_title"
+						android:layout_marginLeft="5dip" android:layout_height="wrap_content"
+						android:layout_marginRight="5dip">
+						<Button android:id="@+id/btn_newpass_getpass"
+							android:layout_width="fill_parent" android:layout_height="40dip"
+							android:hint="@string/upomp_bypay_sixtotwelve" android:textColor="#000000"
+							android:gravity="left|center_vertical"
+							android:layout_marginRight="5dip" android:background="#00000000" />
+					</RelativeLayout>
+				</RelativeLayout>
+				<RelativeLayout android:id="@+id/rl_confirm_newpass_getpass"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_below="@+id/rl_newpass_getpass"
+					android:layout_marginTop="8dip" android:background="@drawable/upomp_bypay_input_bg"
+					android:layout_marginLeft="15dip" android:layout_marginRight="15dip">
+					<RelativeLayout android:id="@+id/rl_confirm_newpass_getpass_title"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_centerVertical="true">
+						<TextView android:id="@+id/tv_confirm_newpass_getpass"
+							android:layout_width="wrap_content" android:layout_height="40dip"
+							android:text="@string/upomp_bypay_enternewpsw" android:gravity="center_vertical"
+							android:textColor="#000000" android:layout_marginLeft="10dip"
+							android:textSize="15sp" />
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/rl_confirm_newpass_getpass_content"
+						android:layout_width="fill_parent" android:layout_toRightOf="@+id/rl_confirm_newpass_getpass_title"
+						android:layout_marginLeft="5dip" android:layout_height="wrap_content"
+						android:layout_marginRight="5dip">
+						<Button android:id="@+id/btn_confirm_newpass_getpass"
+							android:layout_width="fill_parent" android:layout_height="40dip"
+							android:hint="@string/upomp_bypay_sixtotwelve" android:textColor="#000000"
+							android:gravity="left|center_vertical"
+							android:layout_marginRight="5dip" android:background="#00000000" />
+					</RelativeLayout>
+				</RelativeLayout>
+				<RelativeLayout android:id="@+id/rl_result_psw_getpass"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_below="@+id/rl_confirm_newpass_getpass"
+					android:layout_marginTop="20dip">
+					<Button android:id="@+id/btn_result_psw_getpass"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:background="@drawable/upomp_bypay_btn_enter"
+						android:layout_centerHorizontal="true" android:layout_marginLeft="30dip"
+						android:layout_marginRight="30dip" android:gravity="center"
+						android:text="@string/upomp_bypay_affirm" android:textColor="#FFFFFF" android:textSize="20sp" />
+				</RelativeLayout>
+			</RelativeLayout>
+		</RelativeLayout>
+	</ScrollView>
+	<com.unionpay.upomp.bypay.view.MainBottom
+		android:id="@+id/main_bottom" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

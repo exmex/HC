@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearlayout_tel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <RelativeLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/size_48"
+                android:layout_below="@id/linearLayout1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/size_10" >
+
+                <TextView
+                    android:id="@+id/getcode_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/size_40"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/size_10"
+                    android:background="@drawable/anzhi_button_bg_orange"
+                    android:gravity="center"
+                    android:text="@string/get_authcode_txt"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_18" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/size_48"
+                    android:layout_toLeftOf="@id/getcode_tv"
+                    android:background="@drawable/anzhi_textview_normal" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/white" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="@dimen/size_10"
+                            android:text="@string/anzhi_mobilephone"
+                            android:textColor="@color/anzhi_494949"
+                            android:textSize="@dimen/font_18" />
+
+                        <EditText
+                            android:id="@+id/nameid_tel"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@null"
+                            android:hint="@string/anzhi_input_telnumber"
+                            android:inputType="phone"
+                            android:paddingRight="5dip"
+                            android:singleLine="true"
+                            android:textColor="@color/anzhi_494949"
+                            android:textColorHint="@color/anzhi_d0d0d0"
+                            android:textSize="@dimen/font_18" >
+
+                            <requestFocus />
+                        </EditText>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/size_48"
+                android:layout_below="@id/linearLayout1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/size_10" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/size_48"
+                    android:background="@drawable/anzhi_textview_normal" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/white" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/size_10"
+                            android:gravity="center"
+                            android:text="@string/anzhi_validatecode"
+                            android:textColor="@color/anzhi_494949"
+                            android:textSize="@dimen/font_18" />
+
+                        <EditText
+                            android:id="@+id/code_edittext"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@null"
+                            android:hint="@string/anzhi_input_six_validatecode"
+                            android:inputType="number"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="@dimen/size_10"
+                            android:paddingRight="5dip"
+                            android:singleLine="true"
+                            android:textColor="@color/anzhi_494949"
+                            android:textColorHint="@color/anzhi_d0d0d0"
+                            android:textSize="@dimen/font_18" >
+
+                            <requestFocus />
+                        </EditText>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/size_48"
+                android:layout_below="@id/line1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/size_10"
+                android:background="@drawable/anzhi_textview_normal" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/white" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/size_10"
+                        android:text="@string/anzhi_pwd"
+                        android:textColor="@color/anzhi_494949"
+                        android:textSize="@dimen/font_18" />
+
+                    <EditText
+                        android:id="@+id/pwdid_tel"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:hint="@string/anzhi_sixtosixteen_wordornumber"
+                        android:inputType="textPassword"
+                        android:maxLength="16"
+                        android:paddingRight="5dip"
+                        android:password="true"
+                        android:singleLine="true"
+                        android:textColor="@color/anzhi_494949"
+                        android:textColorHint="@color/anzhi_d0d0d0"
+                        android:textSize="@dimen/font_18" >
+
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/trade_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearLayout1"
+                android:layout_marginTop="@dimen/size_20"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal" >
+
+                <CheckBox
+                    android:id="@+id/tel_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/anzhi_checkbox_false"
+                    android:button="@drawable/anzhi_checkbox"
+                    android:checked="true"
+                    android:focusable="false" />
+
+                <TextView
+                    android:id="@+id/tel_readper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:textColor="@color/anzhi_EB9100"
+                    android:textSize="@dimen/font_16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trade_layout"
+                android:layout_marginTop="@dimen/size_40"
+                android:gravity="center_vertical" >
+
+                <Button
+                    android:id="@+id/tel_button1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/size_40"
+                    android:layout_marginLeft="@dimen/size_40"
+                    android:layout_marginRight="@dimen/size_40"
+                    android:background="@drawable/anzhi_button_bg"
+                    android:text="@string/title_register"
+                    android:textColor="@color/anzhi_FFFFFF"
+                    android:textSize="@dimen/font_18" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

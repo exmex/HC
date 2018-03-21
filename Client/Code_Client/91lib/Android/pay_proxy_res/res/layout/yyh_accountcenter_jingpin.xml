@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/yyh_center_jingpin_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="加载中..."
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <com.appchina.usersdk.ZCListView
+        android:id="@+id/yyh_center_jingpin_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+
+</LinearLayout>

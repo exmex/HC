@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" 
+    android:id="@+id/yyh_history_item_container"
+    >
+
+    <TextView
+        android:id="@+id/yyh_history_username"
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dip"
+        android:gravity="left|center_vertical" />
+
+    <LinearLayout
+        android:id="@+id/yyh_history_delete_item"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical|center_horizontal" >
+        <Button
+            
+            android:layout_width="15dip"
+            android:layout_height="15dip"
+            android:background="@drawable/yyh_delete_historyitem_selector"
+             />
+    </LinearLayout>
+
+</RelativeLayout>

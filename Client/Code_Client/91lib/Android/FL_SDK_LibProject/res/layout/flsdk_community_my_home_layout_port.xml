@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 社区我的主页 - 竖屏 -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <include layout="@layout/flsdk_base_bg_layout_port" />
+
+    <LinearLayout
+        style="@style/flsdk_style_body_lay_port"
+        android:orientation="vertical"
+        android:padding="0.0dip" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/flsdk_my_home_user_info_bg"
+            android:paddingBottom="14.0dip"
+            android:paddingTop="14.0dip" >
+
+            <ImageView
+                android:id="@+id/info_icon"
+                android:layout_width="60.0dip"
+                android:layout_height="60.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:background="@drawable/flsdk_user_icon_default"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/info_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/info_icon"
+                android:layout_alignRight="@+id/info_icon"
+                android:scaleType="fitXY"
+                android:src="@drawable/flsdk_user_gender_male" />
+
+            <TextView
+                android:id="@+id/info_nickname"
+                style="@style/flsdk_style_2b261c_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/info_icon"
+                android:layout_marginLeft="16.0dip"
+                android:layout_marginTop="2.0dip"
+                android:layout_toRightOf="@+id/info_icon" />
+
+            <Button
+                android:id="@+id/info_editinfo"
+                style="@style/flsdk_style_btn_yellow"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/info_nickname"
+                android:layout_marginLeft="16.0dip"
+                android:layout_marginTop="2.0dip"
+                android:layout_toRightOf="@+id/info_icon"
+                android:onClick="onEditClick"
+                android:text="@string/info_editinfo" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/flsdk_account_line" />
+
+        <RadioGroup
+            android:id="@+id/info_posts_type_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/flsdk_my_home_posttype_lay_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="10.0dip" >
+
+            <RadioButton
+                android:id="@+id/info_posts_posted"
+                android:layout_width="80.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16.0dip"
+                android:checked="true"
+                android:button="@drawable/flsdk_myhome_mine_post" />
+
+            <RadioButton
+                android:id="@+id/info_posts_replyed"
+                android:layout_width="80.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.0dip"
+                android:button="@drawable/flsdk_myhome_mine_reply" />
+        </RadioGroup>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/flsdk_account_line" />
+
+        <ListView
+            android:id="@+id/info_postlist_posted"
+            style="@style/flsdk_style_list_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <ListView
+            android:id="@+id/info_postlist_replyed"
+            style="@style/flsdk_style_list_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <include layout="@layout/flsdk_base_loading_layout" />
+
+</merge>

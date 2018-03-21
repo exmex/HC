@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/anzhi_252525"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/size_40"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_marginRight="@dimen/size_10"
+                android:layout_marginTop="@dimen/size_10"
+                android:gravity="center_vertical"
+                android:text="@string/anzhi_select_date_of_birth"
+                android:textColor="@color/anzhi_cccccc"
+                android:textSize="@dimen/font_18"
+                android:visibility="visible" />
+
+            <DatePicker
+                android:id="@+id/datepicker_dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10" />
+
+            <View
+                android:id="@+id/imageView1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="@dimen/size_10"
+                android:background="@color/anzhi_555555" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_20"
+                android:layout_marginTop="@dimen/size_20" >
+
+                <Button
+                    android:id="@+id/btn_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/size_40"
+                    android:layout_marginLeft="@dimen/size_40"
+                    android:layout_marginRight="@dimen/size_40"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/anzhi_button_bg_gray"
+                    android:gravity="center"
+                    android:text="@string/ok"
+                    android:textColor="@color/anzhi_545454"
+                    android:textSize="@dimen/font_18" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

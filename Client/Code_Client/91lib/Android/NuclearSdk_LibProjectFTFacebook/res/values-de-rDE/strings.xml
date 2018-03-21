@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">Einstellung</string>
+    <string name="hello_world">Test</string>
+    <string name="remote_call_failed">Zugriff auf Server gescheitert</string>
+    <string name="permission_not_granted">Kein Recht für solche Operation</string>
+    <string name="ok">OK</string>
+    <string name="success">erfolgreich</string>
+    <string name="error">Fehler</string>
+    <string name="confirm_install_hint">"Installationshinweise"</string>
+    <string name="ensure">"Bestätigen"</string>
+    <string name="cancel">"aufheben"</string>
+    <string name="check_sign_failed">Ihre Auftragsinformation wurde illegal verändert。</string>
+    <string name="SystemErr">System hat keinen Speicherplatz mehr,schalten Sie bitte die unnötigen Anwendungsprogramme aus.</string>
+
+    <string-array name="control">
+        <item> Zugangsverwaltung</item>
+        <item>Internetportal</item>
+        <item>umloggen</item>
+    </string-array>
+    <string name="app_dev">nuclear</string>
+    <string name="title_back">Rücksprung</string>
+    <string name="title_login">einloggen</string>
+    <string name="title_ok">OK</string>
+    <string name="title_change_pass">Passwort verändern</string>
+    <string name="nowpass">originales Passwort:</string>
+    <string name="newpass">neues Passwort:</string>
+    <string name="newpassagain">neues Passwort:</string>
+    <string name="inputold">Originales Passwort eingeben</string>
+    <string name="inputnew">Neues Passwort eingeben</string>
+    <string name="change_pass">Passwort verändern</string>
+    <string name="title_man">Kontozentrum</string>
+    <string name="sub_title_userman">Zugangsverwaltung</string>
+    <string name="sub_title_bbs">Internetportal</string>
+    <string name="sub_title_logout">Abmeldung</string>
+    <string name="select_pay">Zahlungsweise wählen</string>
+    <string name="title_register">registrieren</string>
+    <string name="regist_name">Nutzerkonto：</string>
+    <string name="regist_pass">Passwort：</string>
+    <string name="regist_email">Email：</string>
+    <string name="regist_tv">Sie können Email,Buchstaben /Zahlen als Ihr Zugangskonto eingeben\n,Oder benutzen Sie ein vom System automatisch erzeugtes Konto</string>
+    <string name="user_delete">löschen</string>
+    <string name="user_loined">Nutzer eingeloggt</string>
+    <string name="user_account">Konto：</string>
+    <string name="user_password">Passwort：</string>
+    <string name="logout">Abmeldung</string>
+    <string name="user_other_login">umloggen</string>
+    <string name="user_forgetpass">Passwort vergessen</string>
+    <string name="user_findpass">Klick hier zum Finden Ihres Passwortes</string>
+    <string name="close">ausschalten</string>
+    <string name="user_rebang">Nutzerverbindung</string>
+    <string name="user_bang">Verbindung</string>
+    <string name="use_protocol">Ich habe die“Nutzungsbedingungen" durchgelesen und akzeptiert</string>
+    <string name="rightbtn">rechter Knopf</string>
+    <string name="choosewrite">freiwillige Angaben</string>
+    <string name="user_email">Email：</string>
+    <string name="registerpass">Passwort：</string>
+    <string name="writelimit">6 bis 12 Buchstaben od.Zahlen</string>
+    <string name="payproduct">bestellte Artikel</string>
+    <string name="payprice">Aufladebetrag</string>
+    <string name="custom_phone">Kundenhotline</string>
+    <string name="custom_time">Sprechstunden：10:00-22:00</string>
+    <string name="youaiweb">Internetportal：</string>
+    <string name="findpasschoose"> notwendige Angaben zum Finden Ihres Passwortes</string>
+    <string name="loading">Laden...</string>
+    <string name="nothaveaccount">Sie haben bisher noch nicht eingeloggt</string>
+    <string name="initfailinner">Initialisierung scheitert</string>
+    <string name="initfailtryagain">Initialisierung scheitert,Re-Ini im Vorgang</string>
+    <string name="netwarning">Netzwerkfehler</string>
+    <string name="warning">Hinweise</string>
+    <string name="bindsuccess">Registrierungsverbindung erfolgreich</string>
+    <string name="logoutsuccess">Abmeldung erfolgreich</string>
+    <string name="logouneedre">Abmeldung während des Spiels erfordert Wiederstarten des Spiels\n</string>
+    <string name="namenull">Konto darf nicht leer sein</string>
+    <string name="passwordnull">Passwort darf nicht leer sein</string>
+    <string name="emailnull">Email darf nicht leer sein</string>
+    <string name="nameerr">Kontoformat ist falsch</string>
+    <string name="passworderr">Passwortformat ist falsch</string>
+    <string name="mailerr">Emailformat ist falsch</string>
+    <string name="registererr">Registrierung scheitert</string>
+    <string name="registeryes">Registrierung erfolgreich</string>
+    <string name="loginfailnet">Netzwerkfehler Einloggen gescheitert</string>
+    <string name="registfailnet">Netzwerkfehler Registrierung scheitert</string>
+    <string name="welcome">Herzlich willkommen</string>
+    <string name="errbind">Netzwerkfehler Verbindung scheitert</string>
+    <string name="binderr">Verbindung scheitert</string>
+    <string name="bindneterr">Netzwerkfehler Verbindung scheitert</string>
+    <string name="paygame">Spielaufladen</string>
+    <string name="payuser">Kontoaufladen</string>
+    <string name="buything">Artikel bestellen</string>
+    <string name="tryuser">Gast</string>
+    <string name="paymoney">Aufladebetrag</string>
+    <string name="helpphone">Kundenhotline</string>
+    <string name="nettryerr">Netzwerkfehler, wiederholen Sie bitte</string>
+    <string name="httperr">Netzzugrifffehler</string>
+    <string name="paynow">Zahlung im Vorgang</string>
+    <string name="yuan">Yuan</string>
+    <string name="account">Konto</string>
+    <string name="initpassword">das vom system für Sie automatisch bereitgestelltes Passwort：</string>
+    <string name="passwordcgeok">Passwortänderung erfolgreich</string>
+    <string name="passwordcgeerr">Passwortänderung scheitert</string>
+    <string name="controlpassword">Passwort ändern</string>
+    <string name="controlwebsite">Kreiswebseite</string>
+    <string name="controluser">umloggen</string>
+    <string name="controlfeedback">Vorschlagrückmeldung</string>
+    <string name="startgame">Einloggen im Vorgang</string>
+    <string name="loginsuccess">Einloggen erfolgreich</string>
+    <string name="loginfail">Einloggen gescheitert</string>
+    <string name="login">Einloggen</string>
+    <string name="sdk_small_login">Einloggen</string>
+    <string name="sdk_register">Registrierung</string>
+    <string name="sdk_small_reg">Registrierung</string>
+    <string name="sdk_login">Einloggen</string>
+    <string name="sdk_guest_btn_bd_off">verbinden sofort</string>
+    <string name="sdk_guest_btn_nobd_off">verbinden später</string>
+    <string name="fast_login">schneller Einloggen</string>
+    <string name="read_protol">Bitte lesen Sie sorgfältig die Spielrelevanten Bedingungen durch</string>
+    <string name="protol">Spielbedingungen</string>
+    <string name="officialweb">Internetportal</string>
+    <string name="facebookfen">Fanclub/string><string name="totry">Probespiel</string><string name="u2_protocol">Nutzungsbedingungen und Geheimpolitik</string><string name="title_protocol">Bedingungen und Geheimpolitik</string><string name="intogame">ins Spiel</string><string name="ensuresafe">um die Kontosicherheit gewährzuleisten,verbinden Sie bitte Ihr Konto</string><string name="binduser">Konto verbinden</string><string name="nowaccount">Konto:</string><string name="changeuser">Umloggen</string><string name="findpass">Passwort finden</string></string>
+
+</resources>

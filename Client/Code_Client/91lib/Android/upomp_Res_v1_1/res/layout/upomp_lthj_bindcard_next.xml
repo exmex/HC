@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     style="@style/upomp_lthj_scrollview_big">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/upomp_lthj_layout_padding"
+    android:orientation="vertical" >
+    <LinearLayout style="@style/upomp_lthj_info_layout" android:orientation="vertical">
+       <com.unionpay.upomp.lthj.widget.LineFrameView 
+           android:layout_width="fill_parent" android:layout_height="wrap_content"
+           android:src="@drawable/upomp_lthj_card_icon"
+           android:id="@id/upomp_lthj_bankcard_info_view"
+           />
+       <ImageView style="@style/upomp_lthj_rowline"/>
+       <com.unionpay.upomp.lthj.widget.LineFrameView 
+           android:layout_width="fill_parent" android:layout_height="wrap_content"
+           android:src="@drawable/upomp_lthj_mobile_icon"
+            android:id="@id/upomp_lthj_mobile_number_view"
+           />
+    </LinearLayout>
+	 <RelativeLayout style="@style/upomp_lthj_input_layout" >
+         <EditText style="@style/upomp_lthj_input_edittext" android:hint="@string/upomp_lthj_mobile_mac_hint" android:layout_centerVertical="true" android:id="@id/upomp_lthj_mobilemac_edit" android:maxLength="6" android:inputType="phone"/>
+         <Button style="@style/upomp_lthj_verifycode_btn" android:layout_alignParentRight="true"  android:layout_centerVertical="true" android:id="@id/upomp_lthj_get_mac_btn" android:text="@string/upomp_lthj_get_mac"/>
+     </RelativeLayout>
+     <RelativeLayout style="@style/upomp_lthj_input_layout"  android:id="@id/upomp_lthj_date_layout">
+         <EditText style="@style/upomp_lthj_input_edittext" android:hint="@string/upomp_lthj_date_hint" android:layout_centerVertical="true" android:id="@id/upomp_lthj_date_edit"/>
+          <Button style="@style/upomp_lthj_input_help_btn" android:layout_alignParentRight="true"  android:layout_centerVertical="true" android:id="@id/upomp_lthj_date_help" />
+     </RelativeLayout>
+	 <RelativeLayout style="@style/upomp_lthj_input_layout" android:id="@id/upomp_lthj_cvn2_layout">
+         <EditText style="@style/upomp_lthj_input_edittext" android:hint="@string/upomp_lthj_cvn2_hint" android:layout_centerVertical="true" android:id="@id/upomp_lthj_cvn2_edit"/>
+         <Button style="@style/upomp_lthj_input_help_btn" android:layout_alignParentRight="true"  android:layout_centerVertical="true" android:id="@id/upomp_lthj_cvn2_help"/>
+     </RelativeLayout>
+   	 <RelativeLayout style="@style/upomp_lthj_input_layout" android:id="@id/upomp_lthj_pin_layout">
+         <EditText style="@style/upomp_lthj_input_edittext" android:hint="@string/upomp_lthj_pin_hint" android:layout_centerVertical="true" android:id="@id/upomp_lthj_pin_edit"/>
+     </RelativeLayout>
+   	 <RelativeLayout style="@style/upomp_lthj_input_layout" android:id="@id/upomp_lthj_pin_layout" android:visibility="gone">
+   	     <TextView style="@style/upomp_lthj_info_textview" android:text="@string/upomp_lthj_set_default" android:layout_centerVertical="true"/>
+         <CheckBox android:layout_width="wrap_content" android:layout_alignParentRight="true" android:layout_height="wrap_content" android:checked="true" android:layout_centerVertical="true" android:id="@id/upomp_lthj_default_checkbox"/>
+     </RelativeLayout>
+		<com.unionpay.upomp.lthj.widget.ValidateCodeView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@id/upomp_lthj_validatecode_layout"
+		    android:visibility="gone" android:layout_marginBottom="@dimen/upomp_lthj_margin_top"/>
+     <Button style="@style/upomp_lthj_button_big_single" android:text="@string/upomp_lthj_ok" android:id="@id/upomp_lthj_button_ok"/>
+</LinearLayout>
+</ScrollView>

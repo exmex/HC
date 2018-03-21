@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/big_window_layout"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:background="@drawable/ks_float_bg" >
+
+        <RelativeLayout
+            android:id="@+id/float_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/ks_entry_input_padding"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/float_account_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ks_account"
+                android:gravity="center"
+                android:text="@string/ks_account"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/ks_entry_tips" />
+            
+            <ImageView
+                android:id="@+id/float_account_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/float_account_logo"
+                android:src="@drawable/ks_tag"
+                android:visibility="gone">
+            </ImageView>
+            
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/float_hide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/ks_entry_input_padding"
+            android:drawableTop="@drawable/ks_hide"
+            android:gravity="center"
+            android:text="@string/ks_hide"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/ks_entry_tips" />
+
+        <TextView
+            android:id="@+id/float_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/ks_entry_input_padding"
+            android:drawableTop="@drawable/ks_service"
+            android:gravity="center"
+            android:text="@string/ks_service"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/ks_entry_tips" />
+
+        <TextView
+            android:id="@+id/float_forum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/ks_entry_input_padding"
+            android:drawableTop="@drawable/ks_forum"
+            android:gravity="center"
+            android:text="@string/ks_forum"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/ks_entry_tips" />
+    </RelativeLayout>

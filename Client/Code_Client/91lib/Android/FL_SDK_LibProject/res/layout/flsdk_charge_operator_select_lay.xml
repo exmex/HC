@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 运营商选择布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/flsdk_style_c2c2c2_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/flsdk_paycenter_select_paytype"
+        android:visibility="visible" />
+
+    <RadioGroup
+        android:id="@+id/operator_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="fill_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <RadioButton
+            android:id="@+id/operator_yd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@drawable/flsdk_checkbox_bg"
+            android:text="@string/flsdk_paycenter_card_type_cnmobile" />
+
+        <RadioButton
+            android:id="@+id/operator_lt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@drawable/flsdk_checkbox_bg"
+            android:text="@string/flsdk_paycenter_card_type_cnunicom" />
+
+        <RadioButton
+            android:id="@+id/operator_dx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@drawable/flsdk_checkbox_bg"
+            android:text="@string/flsdk_paycenter_card_type_cncdma" />
+    </RadioGroup>
+
+</LinearLayout>

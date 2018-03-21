@@ -1,0 +1,119 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="left|top"
+        android:layout_margin="5dp"
+        android:background="@drawable/gamehall_popup_detail_bg_black"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/gamehall_feedback_title_bg" >
+
+            <ImageView
+                android:id="@+id/gamehall_card_button_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:clickable="true"
+                android:paddingLeft="8dp"
+                android:src="@drawable/gamehall_feedback_back_selector" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/gamehall_card_title"
+                android:textColor="@android:color/white"
+                android:textSize="18dp" />
+        </FrameLayout>
+
+        <RadioGroup
+            android:id="@+id/gamehall_card_group"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                style="@style/popup_content_port_menu_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/gamehall_feedback_left_selector"
+                android:text="@string/gamehall_card_radio_left"
+                android:textSize="14dp" />
+
+            <RadioButton
+                style="@style/popup_content_port_menu_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/gamehall_feedback_right_selector"
+                android:text="@string/gamehall_card_radio_right"
+                android:textColor="@android:color/white"
+                android:textSize="14dp" />
+        </RadioGroup>
+
+        <FrameLayout
+            android:id="@+id/gamehall_card_tabContent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <FrameLayout
+                android:id="@+id/gamehall_card_left"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/gamehall_card_list_left"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:divider="@drawable/gamehall_menu_split_landscape"
+                    android:listSelector="@android:color/transparent" >
+                </ListView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/gamehall_card_right"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="gone" >
+
+                <ListView
+                    android:id="@+id/gamehall_card_list_right"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:divider="@drawable/gamehall_menu_split_landscape"
+                    android:listSelector="@android:color/transparent" >
+                </ListView>
+            </FrameLayout>
+
+            <include
+                android:id="@+id/gamehall_card_list_loading"
+                layout="@layout/gamehall_loading_view"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/gamehall_card_nonet"
+                layout="@layout/gamehall_nonet_page"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/gamehall_card_nodata"
+                layout="@layout/gamehall_nodata_view"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

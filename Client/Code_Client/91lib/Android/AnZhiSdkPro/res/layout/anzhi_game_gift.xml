@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/lv_gift"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/anzhi_D6D6D6"
+        android:fadeScrollbars="true" />
+    
+    	
+    
+    <RelativeLayout
+        android:id="@+id/no_obtain_gift"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="76dp"
+            android:src="@drawable/anzhi_message_no" />
+
+        <TextView
+            android:id="@+id/tv_no_obtain_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:text="@string/anzhi_no_obtain_gift" />
+    </RelativeLayout>
+
+</RelativeLayout>

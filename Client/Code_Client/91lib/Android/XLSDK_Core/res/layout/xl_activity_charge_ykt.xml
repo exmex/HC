@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="none"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ECF4FA"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/xl_charge_title"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/xl_charge_back_button"
+                android:layout_width="50dp"
+                android:contentDescription="@null"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:src="@drawable/xl_charge_back" />
+        </RelativeLayout>
+
+        <!-- price info -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="22dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/xl_shape_window_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="34dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/xl_charge_channel"
+                    android:textColor="#5E7C93"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/xl_charge_channel_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/xl_ykt"
+                    android:textColor="#084D83"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#654321" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="34dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/xl_charge_rate"
+                    android:textColor="#5E7C93"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/xl_charge_rate_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#084D83"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xl_charge_shadow" >
+        </ImageView>
+        <!-- choose price -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F2FAFF"
+            android:orientation="vertical"
+            android:paddingBottom="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/xl_charge_ykt_way2Pay"
+                android:textColor="#5E7C93"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/xl_charge_yd_button"
+                android:layout_width="fill_parent"
+                android:layout_height="38dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/xl_charge_bank_btn_bg"
+                android:gravity="center"
+                android:tag="1"
+                android:text="@string/xl_yd"
+                android:textColor="#5E7C93"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/xl_charge_lt_button"
+                android:layout_width="fill_parent"
+                android:layout_height="38dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/xl_charge_bank_btn_bg"
+                android:gravity="center"
+                android:tag="2"
+                android:text="@string/xl_lt"
+                android:textColor="#5E7C93"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/xl_charge_dx_button"
+                android:layout_width="fill_parent"
+                android:layout_height="38dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/xl_charge_bank_btn_bg"
+                android:gravity="center"
+                android:tag="3"
+                android:text="@string/xl_dx"
+                android:textColor="#5E7C93"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

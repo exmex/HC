@@ -1,0 +1,222 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="NearMePayActivityBasicLinearLayout">
+        <item name="android:background">@drawable/nearmepay_center_background</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="NearMePayTitleBar">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">47dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/nearmepay_activity_title_bar</item>
+    </style>
+	<!-- NearMeWapPay Styles -->
+    <style name="NearMePayTitleBarText">
+        <item name="android:textSize">@dimen/nearmepay_title_big_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/nearmepay_title_text_color</item>
+        <item name="android:layout_marginLeft">75dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+     <style name="NearMePayActivityBasicBoldDivide">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/nearmepay_activity_bold_devide_line</item>
+    </style>
+    <style name="NearMePayActivityTitleButton">
+        <item name="android:background">@drawable/nearmepay_activity_title_button_selector</item>
+        <item name="android:layout_width">57dp</item>
+        <item name="android:layout_height">33dp</item>
+        <item name="android:textSize">@dimen/nearmepay_dialog_progress_text</item>
+        <item name="android:textColor">@color/nearmepay_button_color</item>
+        <item name="android:layout_marginRight">13dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="NearMePayDialogNoTitleBar" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/nearmepay_background_null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <style name="NearMePayMiniLoadingView">
+        <item name="android:indeterminateDrawable">@anim/nearmepay_mini_loading_animation</item>
+        <item name="android:minWidth">33dip</item>
+        <item name="android:maxWidth">33dip</item>
+        <item name="android:minHeight">33dip</item>
+        <item name="android:maxHeight">33dip</item>
+        <item name="android:layout_marginTop">13dp</item>
+    </style>
+    <style name="NearMePayToastView">
+        <item name="android:minWidth">34dip</item>
+        <item name="android:maxWidth">34dip</item>
+        <item name="android:minHeight">34dip</item>
+        <item name="android:maxHeight">34dip</item>
+        <item name="android:layout_marginTop">13dp</item>
+    </style>
+    
+    <style name="NearMePayDialogMsgAppearance">
+        <item name="android:textColor">@color/nearmepay_dialog_toast_text_color</item>
+        <item name="android:textSize">@dimen/nearmepay_dialog_msg_size</item>
+        <item name="android:layout_marginTop">@dimen/nearmepay_dialog_toast_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/nearmepay_dialog_toast_margin_bottom</item>
+        <item name="android:layout_marginLeft">@dimen/nearmepay_dialog_toast_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/nearmepay_dialog_toast_margin_right</item>
+    </style>
+    
+    <style name="NearMePayDialogContainer">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">13dp</item>
+        <item name="android:layout_marginRight">13dp</item>
+        <item name="android:layout_marginTop">80dp</item>
+        <item name="android:layout_marginBottom">80dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/nearmepay_dialog_button_bg</item>
+    </style>
+
+    <style name="NearMePayDialogTitle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">54dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="NearMePayDialogTitleText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:textSize">@dimen/nearmepay_title_big_size</item>
+        <item name="android:textColor">@color/nearmepay_elegant_title_black</item>
+        <item name="android:shadowColor">@color/nearmepay_title_shadowlight_color</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">0.1</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="NearMePayDialogContent">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="NearMePayDialogContentText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/nearmepay_text_black</item>
+        <item name="android:textSize">@dimen/nearmepay_dialog_text_size</item>
+        <item name="android:shadowColor">@color/nearmepay_title_shadowlight_color</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">0.1</item>
+        <item name="android:layout_marginLeft">@dimen/nearmepay_dialog_footer_margin</item>
+        <item name="android:layout_marginRight">@dimen/nearmepay_dialog_footer_margin</item>
+        <item name="android:layout_marginTop">@dimen/nearmepay_dialog_message_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/nearmepay_dialog_message_margin_bottom</item>
+    </style>
+
+    <style name="NearMePayDialogBottom">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">@dimen/nearmepay_dialog_footer_margin_bottom</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">@dimen/nearmepay_dialog_footer_margin</item>
+        <item name="android:paddingRight">@dimen/nearmepay_dialog_footer_margin</item>
+        
+    </style>
+
+     <style name="NearMePayButtonAppearance">
+        <item name="android:textColor">@color/nearmepay_dialog_text_color</item>
+        <item name="android:textSize">@dimen/nearmepay_dialog_button_size</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+        <item name="android:shadowColor">@color/nearmepay_dialog_text_shadow_color</item>
+        <item name="android:background">@drawable/nearmepay_activity_title_button_selector</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/nearmepay_dialog_botton_height</item>
+    </style>
+    
+     <style name="NearMePayDialogNoTitleBarNotFloat" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+     <style name="NearMePayActivityNotFloat">
+        <item name="android:windowBackground">@drawable/nearmepay_alpha</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@style/NearMePayAnimation</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+    </style>
+    <style name="NearMePayAnimation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+    
+    <style name="NearMePayToastTextAppearance">
+        <item name="android:textColor">@color/nearmepay_text_black</item>
+        <item name="android:textSize">@dimen/nearmepay_dialog_msg_size</item>
+    </style>
+
+</resources>

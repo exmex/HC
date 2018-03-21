@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/ks_bind_phone_windows_width"
+    android:layout_height="@dimen/ks_bind_phone_window_height"
+    android:minWidth="@dimen/ks_bind_phone_windows_width" >
+
+    <LinearLayout
+        android:id="@+id/ks_cust_toast_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="14dp"
+        android:background="@color/ks_cust_toast_bg_color"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ks_cust_toast_content_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:textSize="@dimen/ks_text_size_18" />
+
+        <TextView
+            android:id="@+id/ks_cust_toast_countdown_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/ks_gray"
+            android:textSize="@dimen/ks_text_size_16" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ks_cust_toast_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ks_toast_cust_close_btn_selector" />
+
+</RelativeLayout>

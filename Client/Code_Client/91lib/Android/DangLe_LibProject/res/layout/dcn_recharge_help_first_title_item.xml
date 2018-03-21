@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:minHeight="60dp"
+    android:background="@drawable/dcn_recharge_help_first_level_title_selector">
+
+    <TextView
+        android:id="@+id/dcn_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/dcn_light_black"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/dcn_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dcn_img_chapter_down_normal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/dcn_img_help_first_level_divider"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/TextColorWhite"
+    android:orientation="vertical" >
+<RelativeLayout
+        android:id="@+id/top_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/top_p"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="@string/title_protocol"
+            android:id="@+id/webtitle"
+            android:textColor="@color/TextColorWhite" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@+id/u2_back"
+            android:src="@drawable/top_line" />
+
+        <ImageButton
+            android:id="@+id/u2_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/close_top" />
+    </RelativeLayout>
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_protocal"
+        android:paddingLeft="3dp"
+		android:paddingRight="3dp"
+        android:background="@color/TextColorWhite"
+        android:layout_width="match_parent"
+        android:textColor="@color/TextColorGray"
+        android:layout_height="wrap_content"
+        android:text="@string/youaiprotocal" />
+	</ScrollView>
+</LinearLayout>

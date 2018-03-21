@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     style="@style/upomp_lthj_scrollview_big">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/upomp_lthj_layout_padding"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/upomp_lthj_hometradeinfo"/>
+    <LinearLayout style="@style/upomp_lthj_info_layout" android:orientation="vertical">
+       <com.unionpay.upomp.lthj.widget.LineFrameView android:id="@id/upomp_lthj_pay_state"
+           android:layout_width="fill_parent" android:layout_height="wrap_content"
+           android:src="@drawable/upomp_lthj_success_icon"
+           />
+       <ImageView android:background="@drawable/upomp_lthj_row_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@id/upomp_lthj_desc_line"/>
+       <com.unionpay.upomp.lthj.widget.LineFrameView android:id="@id/upomp_lthj_pay_desc"
+           android:layout_width="fill_parent" android:layout_height="wrap_content"
+           android:src="@drawable/upomp_lthj_desc_icon"
+           />
+    </LinearLayout>
+    
+<!-- 
+    <LinearLayout style="@style/upomp_lthj_info_layout" android:orientation="horizontal" android:id="@id/upomp_lthj_tradeinfolayout">
+        <RelativeLayout android:layout_height="fill_parent" android:layout_width="wrap_content" >
+            <ImageView style="@style/upomp_lthj_lineframe_icon" android:src="@drawable/upomp_lthj_order_icon"/>
+        </RelativeLayout>
+        <ImageView android:layout_height="fill_parent" android:layout_width="wrap_content" android:background="@drawable/upomp_lthj_vertical_line"/>
+        <TableLayout
+        android:id="@id/upomp_lthj_tableLayout"
+        style="@style/upomp_lthj_tablelayout" >
+        <TableRow style="@style/upomp_lthj_tablerow" >
+            <TextView style="@style/upomp_lthj_info_textview" android:text="商户名称  " />
+            <TextView style="@style/upomp_lthj_info_textview" android:id="@id/upomp_lthj_merchant_tv"/>
+        </TableRow>
+        <TableRow style="@style/upomp_lthj_tablerow" >
+            <TextView style="@style/upomp_lthj_info_textview" android:text="应付金额  " />
+            <TextView style="@style/upomp_lthj_info_textview" android:textColor="@drawable/upomp_lthj_red" android:id="@id/upomp_lthj_orderamt_tv"/>
+        </TableRow>
+        <TableRow style="@style/upomp_lthj_tablerow" android:id="@id/upomp_lthj_orderno_row">
+            <TextView style="@style/upomp_lthj_info_textview" android:text="订单编号  " />
+            <TextView style="@style/upomp_lthj_info_textview" android:id="@id/upomp_lthj_orderno_tv"/>
+        </TableRow>
+        <TableRow style="@style/upomp_lthj_tablerow" android:id="@id/upomp_lthj_trantime_row">
+            <TextView style="@style/upomp_lthj_info_textview" android:text="交易时间  " />
+            <TextView style="@style/upomp_lthj_info_textview" android:id="@id/upomp_lthj_ordertime_tv"/>
+        </TableRow>
+        <TableRow style="@style/upomp_lthj_tablerow" >
+            <TextView style="@style/upomp_lthj_info_textview" android:text="交易流水" />
+            <TextView style="@style/upomp_lthj_info_textview" android:id="@id/upomp_lthj_cupsqid_tv"/>
+        </TableRow>
+    </TableLayout>
+    </LinearLayout> -->
+     <Button style="@style/upomp_lthj_button_big_single" android:text="@string/upomp_lthj_next" android:id="@id/upomp_lthj_next_btn"/>
+
+</LinearLayout>
+</ScrollView>

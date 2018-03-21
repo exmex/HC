@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@android:color/white"
+    android:orientation="vertical" >
+
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_70"
+        android:src="@drawable/anzhi_unbind_fail" />
+    
+    
+    <TextView
+        android:id="@+id/tv_account_find_fail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_50"
+      	android:layout_marginLeft="@dimen/size_20"
+      	android:layout_marginRight="@dimen/size_20"
+      	android:textColor="@color/anzhi_757575"
+        android:text="@string/anzhi_findAccount_fail" />
+
+    <TextView
+        android:id="@+id/tv_account_find_fail_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginRight="@dimen/size_20"
+        android:textColor="@color/anzhi_757575"
+        android:autoLink="phone"
+        android:text="@string/anzhi_telnum" />
+
+    <TextView
+        android:id="@+id/tv_account_find_fail_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/anzhi_757575"
+      	android:layout_marginLeft="@dimen/size_20"
+      	android:layout_marginRight="@dimen/size_20"
+        android:text="@string/anzhi_service_time_find_psw" />
+
+</LinearLayout>

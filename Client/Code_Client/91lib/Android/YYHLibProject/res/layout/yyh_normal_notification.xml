@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="30dip"
+    android:background="@drawable/yyh_notifydialog_bg2"
+    android:gravity="center"
+    android:padding="1px" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/yyh_normal_notifydialog3"
+        android:gravity="center"
+        android:padding="2dip" >
+
+        <Button
+            android:id="@+id/yyh_btncancel"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="27dip"
+            android:background="@drawable/yyh_notifydialog_close_selector" />
+
+        <TextView
+            android:id="@+id/yyh_tvtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/yyh_btncancel"
+            android:layout_centerHorizontal="true"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:id="@+id/yyh_svtextview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/yyh_tvtitle"
+            android:layout_marginBottom="100dip"
+            android:layout_marginTop="10dp"
+            android:scrollbarStyle="outsideOverlay"  >
+
+            <TextView
+                android:id="@+id/yyh_tvcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:lineSpacingExtra="3dp"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+        </ScrollView>
+
+        <Button
+            android:id="@+id/yyh_btnknown"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dip"
+            android:background="@drawable/yyh_notifydialog_btn_known_selector" />
+        <CheckBox
+            android:id="@+id/yyh_ckbnomorealert"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_above="@id/yyh_btnknown"
+            android:layout_alignLeft="@id/yyh_btnknown"
+            android:button="@null"
+            android:drawableLeft="@drawable/yyh_notifydialog_checkbox_selector"
+            android:drawablePadding="4dip"
+            android:gravity="center_vertical"
+            android:text="@string/yyh_dialog_now_show"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout><!--
+<ScrollView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+</ScrollView>
+-->

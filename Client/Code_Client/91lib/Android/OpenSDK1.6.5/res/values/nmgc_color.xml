@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<color name="colorline_area_1">#95cc00</color>
+    <color name="colorline_area_2">#ffbf2e</color>
+    <color name="colorline_area_3">#ff3f3f</color>
+    <color name="colorline_area_4">#2eb4e7</color>
+    <color name="colorline_area_5">#a564cb</color>
+    <color name="transparent">#00000000</color>
+    <color name="nmgc_kebi_line_color">#464a4a</color>
+    <!-- auto_login_dialog_color -->
+    <color name="nmgc_auto_login_dialog_text_color_1">#585858</color>
+</resources>

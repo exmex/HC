@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+   >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="148dp"
+        android:layout_marginTop="@dimen/size_20"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/ll_anzhi_aacount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_50"
+            android:layout_marginTop="@dimen/size_20" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/anzhi_account_tv" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_50"
+            android:layout_below="@id/ll_anzhi_aacount"
+            android:layout_marginTop="@dimen/size_20" >
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:progressDrawable="@drawable/sdk_loading" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                
+                android:layout_marginLeft="@dimen/size_16"
+                android:text="@string/anzhi_tv_logining" />
+
+          
+
+        </LinearLayout>
+        
+          <TextView
+              android:layout_alignParentBottom="true"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="@dimen/size_20"
+              android:layout_marginBottom="@dimen/size_20"
+                android:id="@+id/tv_login_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/anzhi_login_cancel" />
+    </RelativeLayout>
+
+</LinearLayout>
+</RelativeLayout>

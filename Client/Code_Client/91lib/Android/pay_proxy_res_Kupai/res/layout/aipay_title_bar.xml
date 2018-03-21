@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/welcome_page"
+    android:layout_width="fill_parent" 
+    android:layout_height="50dp"
+    android:background="@drawable/aipay_titlebar">
+    
+    <ImageView android:id="@+id/iv_leftbutton_aipay"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/aipay_back_selector"
+        android:contentDescription="@null"
+        android:visibility="gone"/>
+      
+    <ImageView android:id="@+id/iv_title_aipay"
+        android:layout_width="130dp"
+        android:layout_height="41dp"
+        android:src="@drawable/aipay_ic_logo"
+        android:scaleType="fitXY"
+        android:layout_centerInParent="true"
+        android:contentDescription="@null"
+        android:visibility="gone"/>	
+        
+    <TextView android:id="@+id/tv_title_aipay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="18sp"
+        android:textColor="#868686"
+        android:visibility="gone"/>
+          
+    <ImageView
+ 		android:id="@+id/iv_rightbutton_aipay" 
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"
+        android:contentDescription="@null"
+        android:visibility="gone"/>	
+</RelativeLayout>

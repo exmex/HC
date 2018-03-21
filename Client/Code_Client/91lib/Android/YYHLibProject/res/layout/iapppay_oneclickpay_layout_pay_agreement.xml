@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@null"
+    android:orientation="vertical" >
+
+    
+    <include
+	        android:id="@+id/title_pay"
+	        layout="@layout/iapppay_oneclickpay_layout_title" />
+
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+    	android:layout_height="@dimen/iapppay_protel_actionbar_heigth"
+    	android:orientation="horizontal"
+	    android:background="@color/iapppay_bg_title"
+	    android:paddingRight="10dp"
+	    >
+	    
+	    <TextView 
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="@string/protel"
+    		android:textColor="@color/white"
+    		android:textSize="@dimen/text_size_20"
+    		android:layout_centerInParent="true"
+	    />
+
+	    <ImageView
+	        	android:id="@+id/close_protel"
+	            android:layout_height="25dp"
+	            android:layout_width="25dp"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            android:contentDescription="@string/iapppay_img"
+	            android:src="@drawable/iapppay_oneclickpay_bg_close_button"
+	            android:scaleType="fitXY" />
+	    
+	</RelativeLayout>
+
+
+    <WebView
+        android:id="@+id/wv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+</LinearLayout>

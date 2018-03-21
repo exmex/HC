@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/dk_layout_payment_dialog_extend" 
+    android:layout_width="320dp" 
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp" >
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp">
+        
+        <TextView
+            android:textColor="#333333"
+            android:textSize="@dimen/text_size_16_sp"
+            android:id="@+id/dk_tv_dialog_all_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dk_tip_pay_dialog_all_amount" />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp">
+        
+        <TextView 
+            android:id="@+id/dk_tv_dialog_good_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:textSize="@dimen/text_size_16_sp"
+            android:text="@string/dk_tip_pay_dialog_good_price"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp">
+        
+        <TextView 
+            android:id="@+id/dk_tv_dialog_kubi_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:textSize="@dimen/text_size_16_sp"
+            android:text="@string/dk_tip_pay_dialog_kubi_save"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp">
+        
+        <TextView 
+            android:id="@+id/dk_tv_dialog_is_not_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:textSize="@dimen/text_size_16_sp"
+            android:text="@string/dk_tip_is_not_pay"/>
+    </LinearLayout>
+</LinearLayout>

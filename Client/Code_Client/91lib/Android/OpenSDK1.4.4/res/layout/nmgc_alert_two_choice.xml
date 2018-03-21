@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/nmgc_lg_width"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nmgc_alert_title_border" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/nmgc_lg_x_margin_left"
+            android:contentDescription="@string/nmgc_global_title"
+            android:src="@drawable/nmgc_x"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/nmgc_login_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/nmgc_alert_title"
+            android:text="@string/nmgc_setting_title_changehead"
+            android:textSize="@dimen/nmgc_login_title_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nmgc_alert_content_border"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nmgc_alert_1"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:paddingBottom="8dp"
+            android:gravity="center"
+            android:visibility="visible"
+            android:orientation="vertical" >
+            <TextView 
+                style="@style/nmgc_common_text"
+                android:id="@+id/nmgc_alert_two_choice1"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/nmgc_setting_list_item_height"
+                android:text="@string/nmgc_setting_changehead_1"
+                android:textSize="@dimen/nmgc_lg_button_text_size"
+                android:background="@drawable/nmgc_item_middle_no_bg_selector"/>
+            <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/nmgc_item_divider_dotted" />
+            <TextView 
+                style="@style/nmgc_common_text"
+                android:id="@+id/nmgc_alert_two_choice2"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/nmgc_setting_list_item_height"
+                android:text="@string/nmgc_setting_changehead_2"
+                android:textSize="@dimen/nmgc_lg_button_text_size"
+                android:background="@drawable/nmgc_item_middle_no_bg_selector"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

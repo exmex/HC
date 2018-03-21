@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="0dip" >
+
+     
+    <LinearLayout
+	    android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_marginTop="@dimen/line_margin_12"
+	    android:orientation="horizontal" >
+    <TextView
+        style="@style/edit_common_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pay_amount_tip"
+        android:textColor="#303030"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/pay_amount"
+        style="@style/edit_common_style"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pay_amount"
+        android:textColor="#fe6700"
+        android:textSize="16sp" />
+    </LinearLayout>
+    
+    
+    <TextView 
+        android:layout_marginTop="7dp"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#d2dbe6"
+        />
+    
+    
+    <!--银行卡固定信息区域-->
+    <!-- <LinearLayout android:layout_width="fill_parent"
+                            android:background="@color/white"
+        android:layout_height="58dp"
+        android:orientation="horizontal"
+          		android:layout_marginTop="@dimen/line_margin"
+        android:padding="0dip">
+  	    <ImageView
+  	        	android:id="@+id/bank_ic"
+  	        	android:layout_marginLeft="8dp"
+  	            android:layout_marginTop="8dp"
+	            android:layout_height="42dp"
+	            android:layout_width="42dp"
+	            android:contentDescription="@string/iapppay_img"
+	            android:src="@drawable/iapppay_oneclickpay_ic_gongshang"
+	            android:scaleType="fitXY" />
+  	    
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="8dp"
+			android:layout_gravity="center"
+			android:orientation="vertical">
+		  <TextView
+		        android:id="@+id/bank_name"
+		        style="@style/edit_common_style"
+		        android:gravity="right"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/card_no"
+		        android:textColor="@color/black"
+		        android:textSize="@dimen/text_size_15" />
+	     <TextView
+	        android:id="@+id/card_no"
+	        style="@style/edit_common_style"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/black"
+	               android:text="@string/card_no"
+	        android:textSize="@dimen/text_size_15" />	
+	    </LinearLayout>
+    </LinearLayout>   -->
+    
+    
+    
+    
+    <com.iapppay.fastpay.ui.BankCardInfoLinearLayout
+        android:id="@+id/bank_card_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        />
+    
+    
+    
+</LinearLayout>

@@ -1,0 +1,14 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000"
+    android:orientation="vertical" >
+
+    <include layout="@layout/sdk37wanwan_pay_top_bar" />
+
+    <com.cyouwanwan.sdk.view.ProgressWebView
+        android:id="@+id/sdk37wanwan_webView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

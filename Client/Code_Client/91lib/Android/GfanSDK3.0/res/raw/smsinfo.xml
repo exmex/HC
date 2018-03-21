@@ -1,0 +1,19 @@
+<response updatetime="" spcustom="4006-400-401">
+	<sp sendsms="010" companyid="00" disablearea="" money="1.00" spname="联动"
+		merId="5753" sendcode="1065800810" />
+	<sp sendsms="020" companyid="00" disablearea="" money="2.00" spname="联动"
+		merId="5753" sendcode="1065800810" />
+	<sp sendsms="050" companyid="00" disablearea="" money="5.00" spname="联动"
+		merId="5753" sendcode="1065800810" />
+	<sp sendsms="100" companyid="00" disablearea="" money="10.00"
+		spname="联动" merId="5753" sendcode="1065800810" />
+	<sp sendsms="150" companyid="00" disablearea="" money="15.00"
+		spname="联动" merId="5753" sendcode="1065800810" />
+	<sp sendsms="200" companyid="00" disablearea="" money="20.00"
+		spname="联动" merId="5753" sendcode="1065800810" />
+	<sp sendsms="X303*" companyid="00" disablearea="" money="1.00"
+		spname="北纬" merId="5753" sendcode="10661098" />
+	<sp sendsms="6 308*" companyid="01" disablearea="" money="2.00"
+		spname="北纬" merId="5753" sendcode="10669516" />
+	<sp sendsms="YXG" companyid="03" disablearea="" money="1.00" spname="真石" merId="" sendcode="106601412004" />
+</response>

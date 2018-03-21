@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF" >
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="@dimen/size_5"
+	    
+	    android:orientation="vertical"
+	     >
+    
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/iv_header"
+        android:text="@string/anzhi_test"
+        android:textColor="@color/anzhi_494949"
+        android:textSize="@dimen/font_14" />
+
+  
+
+    <TextView
+         android:layout_marginTop="5dp"
+        android:id="@+id/tv_use_range"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+          android:text="@string/anzhi_test"
+        android:textSize="@dimen/size_14"
+             android:textColor="@color/anzhi_EB9100"
+        android:layout_toRightOf="@id/iv_header"
+        />
+
+    <TextView
+         android:layout_marginTop="5dp"
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_use_range"
+        android:layout_toRightOf="@id/iv_header"
+        android:text="@string/anzhi_test"
+        android:textColor="@color/anzhi_E3E3E3"
+        android:textSize="@dimen/font_10" />
+    
+    
+</LinearLayout>
+    <Button
+        android:id="@+id/bt_download"
+          android:layout_width="@dimen/size_80"
+       android:layout_alignParentRight="true"
+        android:layout_height="@dimen/size_35"
+        android:layout_centerVertical="true"
+       
+        android:background="@drawable/anzhi_button_bg_green"
+        android:text="@string/anzhi_copy"
+         android:layout_marginRight="5dip"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_18"
+           
+       />
+
+</RelativeLayout>

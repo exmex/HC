@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gamehall_mine_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gamehall_home_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/gamehall_header_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gamehall_gamelistitem_bg"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|left"
+            android:paddingBottom="3dip"
+            android:paddingLeft="8dip"
+            android:text="我的游戏"
+            android:textColor="@color/txt_white"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/mine_network_error"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/game_detail_bg"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/gamehall_netpage_warning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="10dip"
+                    android:src="@drawable/gamehall_icon_warning1" />
+
+                <TextView
+                    android:id="@+id/gamehall_netpage_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/gamehall_netpage_warning"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="10dip"
+                    android:text="您的网络不给力，请重新加载"
+                    android:textColor="#7E7E7E"
+                    android:textSize="14dp" />
+
+                <Button
+                    android:id="@+id/gamehall_netpage_retry_btn"
+                    android:layout_width="114dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/gamehall_netpage_text"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dip"
+                    android:background="@drawable/gamehall_button4_selector1"
+                    android:text="再试一次"
+                    android:textColor="@color/txt_white"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+
+            <!-- Top -->
+
+            <include
+                android:id="@+id/gamehall_mine_top_view"
+                layout="@layout/gamehall_mine_top" />
+
+            <!-- 我的游戏 -->
+
+            <RelativeLayout
+                android:id="@+id/played_games_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="118dp"
+                android:background="@drawable/gamehall_mine_gridview_bg"
+                android:gravity="center_vertical" >
+
+                <include
+                    android:id="@+id/played_games_progress_view"
+                    layout="@layout/gamehall_loading_view"
+                    android:visibility="gone" />
+
+                <GridView
+                    android:id="@+id/played_games_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:columnWidth="88dp"
+                    android:numColumns="4"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="4dip" >
+                </GridView>
+            </RelativeLayout>
+
+            <!-- 热门游戏 -->
+
+            <LinearLayout
+                android:id="@+id/hot_games_label"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gamehall_game_detail_split"
+                android:gravity="center"
+                android:paddingBottom="2dip"
+                android:paddingTop="2dip" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|left"
+                    android:paddingBottom="3dip"
+                    android:paddingLeft="8dip"
+                    android:paddingTop="3dip"
+                    android:text="热门游戏"
+                    android:textColor="@color/txt_white"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/hot_games_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="118dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/gamehall_mine_gridview_bg" >
+
+                <include
+                    android:id="@+id/hot_games_progress_view"
+                    layout="@layout/gamehall_loading_view"
+                    android:visibility="gone" />
+
+                <GridView
+                    android:id="@+id/hot_games_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:columnWidth="88dp"
+                    android:numColumns="4"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="4dip" >
+                </GridView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/standalone_games_label"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gamehall_game_detail_split"
+                android:gravity="center"
+                android:paddingBottom="2dip"
+                android:paddingTop="2dip"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/standalone_games_label_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|left"
+                    android:paddingBottom="3dip"
+                    android:paddingLeft="8dip"
+                    android:paddingTop="3dip"
+                    android:text="精品单机"
+                    android:textColor="@color/txt_white"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/standalone_games_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="118dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/gamehall_mine_gridview_bg"
+                android:visibility="gone" >
+
+                <include
+                    android:id="@+id/standalone_games_progress_view"
+                    layout="@layout/gamehall_loading_view"
+                    android:visibility="gone" />
+
+                <GridView
+                    android:id="@+id/standalone_games_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:columnWidth="88dp"
+                    android:numColumns="4"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="4dip" >
+                </GridView>
+            </RelativeLayout>
+
+            <!-- 按钮 -->
+
+            <Button
+                android:id="@+id/mine_load_more_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/gamehall_button2_selector1"
+                android:paddingBottom="12dip"
+                android:paddingLeft="24dip"
+                android:paddingRight="24dip"
+                android:paddingTop="12dip"
+                android:text="联机获取更多单机游戏"
+                android:textColor="@color/txt_white"
+                android:textSize="18dp"
+                android:visibility="gone" />
+
+            <!-- 按钮 -->
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

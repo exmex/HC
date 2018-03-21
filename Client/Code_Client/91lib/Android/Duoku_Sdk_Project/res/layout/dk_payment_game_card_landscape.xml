@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp">
+        
+        <!-- The left region -->
+        <RelativeLayout 
+            android:layout_width="156dp"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:background="@drawable/dk_landscape_bg_info">
+            
+            <!-- The game card region -->
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+            	android:layout_marginTop="12dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_above="@+id/dk_layout_baidu_logo">
+                
+                <ScrollView 
+                    android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                style="@style/payment_scrollview_style">
+		                
+	                <LinearLayout 
+	                    android:id="@+id/dk_layout_game_card_list"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:paddingLeft="8dp"
+	                    android:paddingRight="8dp"
+	                    android:paddingBottom="8dp"
+	                    android:orientation="vertical">
+	                    
+	                </LinearLayout>
+	            </ScrollView>
+             </LinearLayout>
+             <!-- The game card region end -->
+                
+             <!-- The bottom logo region -->
+             <LinearLayout 
+                 android:id="@+id/dk_layout_baidu_logo"
+                 android:layout_width="fill_parent"
+                 android:layout_height="54dp"
+                 android:orientation="vertical"
+                 android:gravity="center"
+                 android:layout_alignParentBottom="true">
+                    
+             	<ImageView
+			        android:id="@+id/dk_image_view_divider_bottom"
+			        android:layout_width="fill_parent"
+			        android:layout_height="2px"
+			        android:background="@drawable/dk_divider"/>
+             
+             	<ImageView
+		            android:layout_width="66dp"
+		            android:layout_height="22dp"
+		            android:layout_marginTop="4dp"
+		            android:background="@drawable/dk_logo_baidu" />
+                    
+                    <TextView 
+				        android:id="@+id/tv_customer_number"
+				        android:layout_width="fill_parent"
+				        android:layout_height="fill_parent"
+				        android:layout_marginTop="4dp"
+				        android:textColor="#838383"
+				        android:textSize="14sp"
+				        android:gravity="center_horizontal|center_vertical"
+				        android:layout_gravity="center_horizontal"
+				        android:text="@string/dk_customer_service_number" />
+            </LinearLayout>
+            <!-- The bottom logo region end -->
+        </RelativeLayout>
+        <!-- The left region end -->
+        
+        <!-- The right region -->
+        <ScrollView 
+            android:id="@+id/dk_scroll_view_card"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fadeScrollbars="false"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbarThumbVertical="@drawable/dk_scrollbar_gray">
+            
+            <LinearLayout
+	            android:id="@+id/dk_layout_payment_mode"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:paddingTop="12dp"
+                android:paddingRight="4dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp" >
+	            
+	            <LinearLayout 
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal">
+	                
+	                <TextView 
+	                    android:id="@+id/dk_tv_tip_select_title"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:textColor="#333333"
+		                android:textSize="@dimen/text_size_14_sp"
+		                android:text="@string/dk_current_consume"/>
+	                
+	                <TextView 
+	                    android:id="@+id/dk_tv_tip_select_content"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textColor="#ff3300"
+	                    android:textSize="@dimen/text_size_14_sp" />
+	            </LinearLayout>
+	            
+	            <LinearLayout
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal">
+	                
+	                <TextView 
+	                    android:id="@+id/dk_tv_tip_kubi_pay_info"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textColor="#666666"
+	                    android:layout_marginTop="4dp"
+	                    android:textSize="@dimen/text_size_12_sp"
+	                    android:text="@string/dk_tip_kubi_pay_info"/>
+		        </LinearLayout>
+	            
+	            <LinearLayout 
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal"
+	                android:layout_marginTop="8dp"
+	                android:visibility="gone">
+	                
+	                <TextView 
+	                    android:id="@+id/dk_tv_tip_other_select_title"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:textColor="#333333"
+		                android:textSize="@dimen/text_size_14_sp"
+		                android:text="@string/dk_pay_mode_select"/>
+	                
+	            </LinearLayout>
+	            
+	            <LinearLayout 
+	                android:id="@+id/dk_layout_amout_select_panel"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical"
+	                android:layout_marginTop="8dp"
+	                android:layout_marginLeft="-8dp">
+	                
+	                <com.duoku.platform.view.DKFlowLayout
+	                    android:id="@+id/dk_layout_line_feed_panel"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="8dp"
+	                    android:focusable="true"
+	                    android:focusableInTouchMode="true">
+	                    
+	                </com.duoku.platform.view.DKFlowLayout>
+	            </LinearLayout>
+	            
+	            <LinearLayout
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal"
+		            android:layout_marginTop="12dp" >
+	
+		            <EditText 
+		                android:id="@+id/dk_et_card_number"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="36dp"
+	                    android:hint="@string/dk_tip_card_number_hint"
+	                    android:gravity="center_vertical"
+	                    android:inputType="text"
+	                    android:textColor="#333333"
+	                    android:focusable="true"
+	                    android:focusableInTouchMode="true"
+	                    android:textSize="@dimen/text_size_14_sp"
+	                    android:background="@drawable/dk_payment_edittext_selector">
+	                 </EditText>
+		        </LinearLayout>
+	            
+	            <LinearLayout
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal"
+		            android:layout_marginTop="8dp" >
+		            
+	                <EditText 
+	                    android:id="@+id/dk_et_card_password"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="36dp"
+	                    android:hint="@string/dk_tip_card_password_hint"
+	                    android:gravity="center_vertical"
+	                    android:textColor="#333333"
+	                    android:singleLine="true" 
+	                    android:textSize="@dimen/text_size_14_sp"
+	                    android:background="@drawable/dk_payment_edittext_selector"/>
+		        </LinearLayout>
+		        
+	            <LinearLayout
+	                android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal"
+		            android:layout_marginTop="12dp" >
+	                
+	                <Button
+	                    android:id="@+id/dk_btn_game_card_pay"
+	                    android:layout_width="0dp"
+	                    android:layout_height="36dp"
+	                    android:gravity="center"
+	                    android:textColor="#ffffff"
+	                    android:layout_weight="1"
+	                    android:text="@string/dk_btn_string_pay"
+	                    android:textSize="@dimen/text_size_16_sp"
+	                    android:background="@drawable/dk_payment_btn_pay_selector" />
+	             </LinearLayout>
+	             
+	            <LinearLayout
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal"
+		            android:layout_marginTop="4dp"
+		            android:layout_marginBottom="12dp">
+	                
+	                <TextView 
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textColor="#ff3300"
+	                    android:visibility="gone"
+	                    android:textSize="@dimen/text_size_10_sp"
+	                    android:text="@string/dk_tip_card_info_title"/>
+	                
+	                <TextView 
+	                    android:id="@+id/dk_tv_tip_card_info"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textColor="#666666"
+	                    android:textSize="@dimen/text_size_12_sp"
+	                    android:text="@string/dk_tip_card_info_content"/>
+		        </LinearLayout>
+	        </LinearLayout>
+        </ScrollView>
+        <!-- The right region end -->
+        </LinearLayout>
+</RelativeLayout>

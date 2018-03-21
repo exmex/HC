@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/gamehall_checkbox_selected_press" android:state_checked="true"/>
+    <!-- checked -->
+
+    <item android:drawable="@drawable/gamehall_checkbox_unselect" android:state_checked="false"/>
+    <!-- default -->
+
+</selector>

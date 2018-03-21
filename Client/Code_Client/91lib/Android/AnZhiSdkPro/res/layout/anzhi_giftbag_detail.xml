@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="@dimen/size_5"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/size_5"
+            android:layout_marginTop="5dp"
+            android:text="@string/anzhi_test"
+            android:textColor="@color/anzhi_494949"
+            android:textSize="@dimen/font_16" />
+
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginLeft="@dimen/size_5"
+            android:layout_marginTop="2dp"
+            android:text="@string/anzhi_gift_desc"
+            android:textColor="@color/red"
+            android:textSize="@dimen/font_12" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_num"
+            android:layout_marginLeft="@dimen/size_5"
+            android:layout_marginTop="2dp"
+            android:paddingBottom="5dp"
+            android:text="@string/anzhi_gift_end_time"
+            android:textColor="@color/anzhi_E3E3E3"
+            android:textSize="@dimen/font_12" />
+
+        <Button
+            android:id="@+id/bt_gift_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_alignParentRight="true"           
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size_20"
+            android:background="@drawable/anzhi_button_bg_green"
+            android:text="@string/anzhi_test"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:id="@+id/tv_gift_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+             android:gravity="center"
+  			      android:paddingLeft="10dp"
+            android:layout_marginRight="@dimen/size_20"
+             android:text="@string/anzhi_test"
+            android:textSize="@dimen/font_14"
+            android:visibility="gone" />
+       
+
+        <View
+
+            android:id="@+id/divider"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/anzhi_D6D6D6" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/anzhi_D6D6D6" />
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/rl_title"
+        android:fadeScrollbars="true"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:scrollbarStyle="outsideOverlay" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_top"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:maxHeight="3dip"
+        android:minHeight="3dip"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/errorLay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/errerIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/anzhi_prompt" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/errerIv"
+            android:gravity="center_horizontal"
+            android:text="@string/anzhi_pageloadfailandback" />
+
+        <Button
+            android:id="@+id/retryBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/anzhi_refresh" />
+    </RelativeLayout>
+
+</RelativeLayout>

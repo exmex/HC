@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white" >
+
+    <ImageView
+        android:id="@+id/username_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:src="@drawable/pu_username"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/delete_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/username_iv"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/username_iv"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:src="@drawable/btn_close_normal" />
+
+    <TextView
+        android:id="@+id/username_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/delete_iv"
+        android:paddingLeft="10dip"
+        android:singleLine="true"
+        android:textColor="#ff526371"
+        android:textSize="@dimen/btn_text_size" />
+
+</RelativeLayout>

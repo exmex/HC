@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@color/white">
+    
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginLeft="13dp">
+        <TextView android:id="@+id/aipay_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:textColor="#303030"
+            android:textSize="13sp"
+            android:layout_marginRight="19dp"
+            android:text="用户名"/>
+        
+        <EditText android:id="@+id/aiapy_name_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/aipay_name_tv"
+            android:paddingLeft="2dp"
+            android:gravity="center_vertical"
+            android:hint="6~20位字母或数字"
+            android:textColor="#b5b5b5"
+            android:textSize="12sp"
+            android:maxLength="20"
+            android:background="@null"/>
+        
+        <ImageView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/aipay_name_tv"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/aipay_input"
+            android:contentDescription="@null"/>
+    </RelativeLayout>
+    
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginBottom="12dp">
+        <TextView android:id="@+id/aipay_pwd_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:textColor="#303030"
+            android:textSize="13sp"
+            android:layout_marginRight="19dp"
+            android:text="密    码"/>
+                     
+        <EditText android:id="@+id/aiapy_password_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/aipay_pwd_tv"
+            android:paddingLeft="2dp"
+            android:layout_gravity="center_vertical"
+            android:inputType="textPassword"
+            android:hint="6~20位字母或数字"
+            android:textColor="#b5b5b5"
+            android:textSize="12sp"
+            android:maxLength="20"
+            android:background="@null"/>
+        
+        <ImageView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/aipay_pwd_tv"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/aipay_input"
+            android:contentDescription="@null"/>
+    </RelativeLayout>
+    
+    <RelativeLayout android:id="@+id/aipay_extra_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginBottom="12dp"
+        android:visibility="gone">
+        
+        <CheckedTextView android:id="@+id/aipay_showpwd_ctv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:checked="false"
+            android:textColor="#8a8a8a"
+            android:textSize="13sp"
+            android:text="显示密码"
+            android:drawablePadding="12dp"
+            android:drawableLeft="@drawable/aipay_checkbox_selector"/>
+        
+        <TextView android:id="@+id/aipay_protol_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/aipay_blue"
+            android:textSize="13sp"
+            android:text="同意服务协议"/>
+        
+        <CheckedTextView android:id="@+id/aipay_protol_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@+id/aipay_protol_tv"
+            android:checkMark="@drawable/aipay_checkbox_selector"
+            android:checked="true"/>      
+    </RelativeLayout>
+    
+</LinearLayout>

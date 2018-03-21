@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 修改资料-竖屏 -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <include layout="@layout/flsdk_base_bg_layout_port" />
+
+    <LinearLayout
+        style="@style/flsdk_style_body_lay_port"
+        android:orientation="vertical"
+        android:padding="0.0dip" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6.0dip"
+            android:layout_marginRight="6.0dip"
+            android:onClick="onEditIconClicked"
+            android:paddingBottom="4.0dip"
+            android:paddingTop="4.0dip" >
+
+            <ImageView
+                android:id="@+id/info_icon"
+                android:layout_width="60.0dip"
+                android:layout_height="60.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:background="@drawable/flsdk_user_icon_default"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/info_right_arrow"
+                style="@style/flsdk_style_494e54_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableRight="@drawable/flsdk_account_manager_arrow"
+                android:paddingLeft="4.0dip"
+                android:paddingRight="14.0dip"
+                android:text="@string/info_editinfo_change_face" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4.0dip"
+            android:background="@drawable/flsdk_account_line" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6.0dip"
+            android:layout_marginRight="6.0dip"
+            android:layout_marginTop="10.0dip"
+            android:paddingBottom="4.0dip"
+            android:paddingTop="4.0dip" >
+
+            <TextView
+                android:id="@+id/info_name_tx"
+                style="@style/flsdk_style_494e54_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/info_editinfo_change_name" />
+
+            <EditText
+                android:id="@+id/flsdk_base_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14.0dip"
+                android:layout_toRightOf="@+id/info_name_tx" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14.0dip"
+            android:background="@drawable/flsdk_account_line" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6.0dip"
+            android:layout_marginRight="6.0dip"
+            android:layout_marginTop="10.0dip"
+            android:paddingBottom="4.0dip"
+            android:paddingTop="4.0dip" >
+
+            <TextView
+                android:id="@+id/info_gender_tx"
+                style="@style/flsdk_style_494e54_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/info_editinfo_change_gender" />
+
+            <RadioGroup
+                android:id="@+id/info_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14.0dip"
+                android:layout_toRightOf="@+id/info_gender_tx"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/info_gender_male"
+                    style="@style/flsdk_style_494e54_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="14.0dip"
+                    android:button="@drawable/flsdk_edit_info_sex_male"
+                    android:text="@string/info_editinfo_change_gender_man" />
+
+                <RadioButton
+                    android:id="@+id/info_gender_female"
+                    style="@style/flsdk_style_494e54_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16.0dip"
+                    android:button="@drawable/flsdk_edit_info_sex_female"
+                    android:text="@string/info_editinfo_change_gender_women" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14.0dip"
+            android:background="@drawable/flsdk_account_line" />
+    </LinearLayout>
+
+    <include layout="@layout/flsdk_base_loading_layout" />
+
+</merge>

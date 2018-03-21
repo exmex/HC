@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nearme.gamecenter.open.core.smallboy.FloatRelativeLayoutView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >        
+        	
+        
+        <ImageView 
+            android:layout_width="@dimen/float_view_width"
+        	android:layout_height="@dimen/float_view_width" 
+        	android:id="@+id/keke_bubble"
+        	android:background="@drawable/nmgc_kebi_sprite" 
+        	android:layout_marginTop="@dimen/bubble_view_width"      	
+            />
+
+         <TextView
+             android:id="@+id/bubble_message_count"
+             style="@style/nmgc_common_text"
+             android:layout_width="@dimen/bubble_view_width"
+             android:layout_height="@dimen/bubble_view_width"
+             android:layout_alignLeft="@id/keke_bubble"
+             android:layout_marginLeft="@dimen/bubble_view_margin_left"
+             android:layout_alignBottom="@id/keke_bubble"
+             android:layout_marginBottom="@dimen/bubble_view_margin_left"
+             android:background="@drawable/keke_bubble"
+             android:text="@string/keke_msg_count0"
+             android:textColor="#ffffffff"
+             android:textSize="@dimen/keke_bubble_text_size"
+             android:visibility="gone" />       
+    </RelativeLayout>
+    
+
+</com.nearme.gamecenter.open.core.smallboy.FloatRelativeLayoutView>

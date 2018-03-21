@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/sdk37wanwan_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:orientation="vertical" >
+
+        <include layout="@layout/sdk37wanwan_login_top_bar" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/sdk37wanwan_topbar"
+        android:layout_marginBottom="@dimen/dimen_h_20dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/sdk37wanwan_login_error_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/dimen_h_13dp"
+            android:layout_marginTop="@dimen/dimen_h_13dp"
+            android:gravity="center"
+            android:text="@string/sdk37wanwan_ifyouhaveid"
+            android:textColor="#ff4800" />
+
+        <AutoCompleteTextView
+            android:id="@+id/sdk37wanwan_login_username"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_h_53dp"
+            android:layout_below="@+id/sdk37wanwan_login_error_textview"
+            android:layout_marginLeft="@dimen/dimen_input_margin"
+            android:layout_marginRight="@dimen/dimen_input_margin"
+            android:background="@drawable/sdk37wanwan_username"
+            android:drawableLeft="@drawable/sdk37wanwan_ren"
+            android:drawablePadding="@dimen/dimen_6dp"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:hint="@string/sdk37wanwan_username_hint"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="@dimen/dimen_w_13dp"
+            android:paddingTop="@dimen/dimen_h_3dp"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:imeOptions="actionNext"
+            android:textColorHint="#bfbfbf" />
+
+        <EditText
+            android:id="@+id/sdk37wanwan_login_password"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_h_53dp"
+            android:layout_below="@+id/sdk37wanwan_login_username"
+            android:layout_marginLeft="@dimen/dimen_input_margin"
+            android:layout_marginRight="@dimen/dimen_input_margin"
+            android:background="@drawable/sdk37wanwan_password"
+            android:drawableLeft="@drawable/sdk37wanwan_suo"
+            android:drawablePadding="@dimen/dimen_6dp"
+            android:hint="@string/sdk37wanwan_password_hint"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/dimen_w_13dp"
+            android:singleLine="true"
+            android:maxLength="50"
+            android:textColor="#646464"
+            android:textColorHint="#bfbfbf" />
+
+        <CheckBox
+            android:id="@+id/sdk37wanwan_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sdk37wanwan_login_password"
+            android:layout_marginLeft="@dimen/dimen_input_margin"
+            android:layout_marginTop="@dimen/dimen_h_13dp"
+            android:button="@drawable/sdk37wanwan_checkbox_selector"
+            android:checked="true"
+            android:text="@string/sdk37wanwan_autologin"
+            android:textColor="#a4a4a4"
+            android:textSize="@dimen/dimen_16sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sdk37wanwan_checkbox"
+            android:layout_marginLeft="@dimen/dimen_input_margin"
+            android:layout_marginRight="@dimen/dimen_input_margin"
+            android:layout_marginTop="@dimen/dimen_h_13dp"
+            android:layout_marginBottom="@dimen/dimen_h_13dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/sdk37wanwan_login_btn"
+                android:layout_width="@dimen/dimen_w_140dp"
+                android:layout_height="@dimen/dimen_h_48dp"
+                android:layout_marginRight="@dimen/dimen_w_13dp"
+                android:layout_weight="1"
+                android:background="@drawable/sdk37wanwan_login_selector"
+                android:text="@string/sdk37wanwan_login"
+                android:textSize="@dimen/dimen_20sp" />
+
+            <Button
+                android:id="@+id/sdk37wanwan_to_register_btn"
+                android:layout_width="@dimen/dimen_w_140dp"
+                android:layout_height="@dimen/dimen_h_48dp"
+                android:layout_marginLeft="@dimen/dimen_w_13dp"
+                android:layout_weight="1"
+                android:background="@drawable/sdk37wanwan_register_selector"
+                android:text="@string/sdk37wanwan_register"
+                android:textColor="#646464"
+                android:textSize="@dimen/dimen_20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

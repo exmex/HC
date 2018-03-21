@@ -1,0 +1,46 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+    <style name="button_font" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="line_font" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/line_font_color</item>
+    </style>
+
+    <style name="head_title" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="main_font" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/main_font_color</item>
+    </style>
+
+    <style name="list_font" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/list_font_color</item>
+    </style>
+
+    <style name="input_font" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/input_font_color</item>
+    </style>
+    
+    <style name="red_font" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/font_red</item>
+    </style>
+
+    <style name="mystyle" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/check_state</item>
+        <item name="android:paddingLeft">2dip</item>
+        <item name="android:maxHeight">10.0dip</item>
+    </style>
+
+</resources>

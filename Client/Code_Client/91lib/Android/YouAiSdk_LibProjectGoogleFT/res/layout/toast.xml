@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toast_layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="120dp"
+    android:alpha="100"
+    android:background="@drawable/popu_banner_bg"
+    android:orientation="horizontal"
+    android:gravity="center"
+    
+    android:padding="2dp" >
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/TextColorWhite"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+
+</LinearLayout>

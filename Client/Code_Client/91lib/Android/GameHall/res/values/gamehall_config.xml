@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+		当前工程中使用了两个ContentProvider，为防止冲突，不同的游戏需要为这两个provider指定特定的android:authorities;
+		在这里直接使用packageName来唯一标识;
+		比如,你的游戏packageName是:com.example.testgame_wyx
+		那么：
+		gamehall_authorities_download，请配置为: com.example.testgame_wyx.providers.downloadprovider
+		gamehall_authorities_playedgame，请配置为: com.example.testgame_wyx.providers.playedgameprovider
+    -->
+    <string name="gamehall_authorities_download">com.nuclear.dragonb.platform.sina_wyx.providers.downloadprovider</string>
+    <string name="gamehall_authorities_playedgame">com.nuclear.dragonb.platform.sina_wyx.providers.playedgameprovider</string>
+
+</resources>

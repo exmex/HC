@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    
+    <RelativeLayout
+        android:id="@+id/dk_layout_suspension_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dk_suspension_window_bg_left">
+
+    	<ImageView
+	        android:id="@+id/dk_iv_user_account"
+	        android:layout_width="32dp"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_centerHorizontal="true"
+	        android:src="@drawable/dk_icon_user_account_normal" />
+
+    	<ImageView
+    	    android:id="@+id/dk_iv_prefecture"
+    	    android:layout_width="32dp"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginLeft="6dp"
+    	    android:layout_centerVertical="true"
+    	    android:layout_toRightOf="@+id/dk_iv_user_account"
+    	    android:src="@drawable/dk_icon_prefecture_normal" />
+    
+    </RelativeLayout>
+</RelativeLayout>

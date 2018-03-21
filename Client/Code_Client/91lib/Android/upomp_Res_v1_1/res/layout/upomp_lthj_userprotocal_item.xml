@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+	style="@style/upomp_lthj_layout_width_height_fw" >
+	<LinearLayout android:orientation="vertical" style="@style/upomp_lthj_layout_width_height_fw">
+		<TextView android:id="@id/upomp_lthj_userprotocol_title" style="@style/upomp_lthj_info_textview" android:textSize="@dimen/upomp_lthj_lineframe_textsize"
+			/>
+		<TextView android:id="@id/upomp_lthj_userprotocol_content" style="@style/upomp_lthj_info_textview" android:textColor="@drawable/upomp_lthj_text_black" android:textSize="@dimen/upomp_lthj_small_button_textsize"
+			android:visibility="gone"/>
+	</LinearLayout>
+</LinearLayout>
+

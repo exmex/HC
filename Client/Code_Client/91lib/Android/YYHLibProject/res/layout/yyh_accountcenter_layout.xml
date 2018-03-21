@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:background="#ededed"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/yyh_center_tv_shouye"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/yyh_shouye"
+                android:textColor="#2d3340"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/yyh_center_tv_huodong"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/yyh_huodong"
+                android:textColor="#2d3340"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/yyh_center_tv_tips"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/yyh_jinnang"
+                android:textColor="#2d3340"
+                android:textSize="16dip" />
+            <TextView
+                android:id="@+id/yyh_center_tv_pay"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/yyh_toolbar_pay"
+                android:textColor="#2d3340"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/yyh_center_tv_jingpin"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/yyh_jingpin"
+                android:textColor="#2d3340"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/yyh_center_tv_about"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/yyh_kefu"
+                android:textColor="#2d3340"
+                android:textSize="16dip" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="2dip"
+                android:background="#c7c6c6" />
+
+            <ImageView
+                android:id="@+id/yyh_center_cursor"
+                android:layout_width="fill_parent"
+                android:layout_height="3dip"
+                android:background="@null"
+                android:scaleType="matrix"
+                android:src="@drawable/yyh_cursor" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/yyh_center_pagercontainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#f9f9f9"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

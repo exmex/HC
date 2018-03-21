@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="action_settings">设置</string>
+    <string name="hello_world">测试</string>
+	<string name="app_id">784648171579055</string>
+    
+    
+	
+	<string name="remote_call_failed">访问服务器失败</string>
+	 
+	<string name="permission_not_granted">没有权限做操作</string>
+    <string name="ok">OK</string>
+    <string name="success">成功</string>
+    <string name="error">错误</string>
+	
+	<string name="confirm_install_hint">"安装提示"</string>	
+	<string name="confirm_install">"为保证您的交易安全，需要您安装支付宝安全支付服务，才能进行付款。\n\n点击确定，立即安装。"</string>
+	<string name="ensure">"確定"</string>
+	<string name="cancel">"取消"</string>
+	<string name="check_sign_failed">您的订单信息已被非法篡改。</string> 
+	<string name="SystemErr">系統內存不足，請關閉其他應用。</string> 	
+	 <string-array name="control" >  
+        <item>通行證管理</item>  
+        <item>遊戲官網</item>  
+        <item>切換用戶</item>  
+    </string-array>  
+	
+	 
+	<!-- 有爱字符 -->
+	<string name="title_back">返回</string>
+	<string name="title_login">登 入</string>
+	<string name="title_ok">确定</string>
+    <string name="title_change_pass">修改密碼</string>
+    <string name="nowpass">原密码:</string>
+    <string name="newpass">新密码:</string>
+    <string name="newpassagain">新密码:</string>
+    <string name="inputold">输入原密码</string>
+    <string name="inputnew">輸入舊密碼</string>
+    <string name="change_pass">修改密码</string>
+    <string name="title_man">賬號中心</string>
+    <string name="sub_title_userman">通行證管理</string>
+	<string name="sub_title_bbs">遊戲官網</string>
+	<string name="sub_title_logout">註銷</string>
+	<string name="select_pay">選擇充值方式</string>
+	<string name="payali">快捷支付</string>
+	<string name="paytencent">財付通</string>
+	<string name="payyinlian">銀行卡</string>
+	<string name="title_register">註冊</string>
+	<string name="regist_name">賬號：</string>
+	<string name="regist_pass">密碼：</string>
+	<string name="regist_email">郵箱：</string>
+	<string name="regist_tv">您可以輸入郵箱、字母/數字作爲通行證賬號，\n也可以使用系統爲您默認分配的賬號</string>
+	<string name="user_delete">刪除</string>
+	<string name="user_loined">本機已登入賬號</string>
+	
+	<string name="user_account">賬 號：</string>
+	<string name="user_password">密 碼：</string>
+	<string name="logout">註銷</string>
+	<string name="user_other_login">其他用戶登入</string>
+	<string name="user_forgetpass">忘記密碼</string>
+	<string name="user_findpass">點擊這裏找回</string>
+	<string name="close">關閉</string>
+	<string name="user_other_account">您現在正使用第三方賬號登錄，系統給您生成賬號，修改帐号密码,方便您下次使用帐号进行登入</string>
+	<string name="user_rebang">註冊綁定</string>
+	<string name="user_bang">綁定</string>
+	<string name="pay_web">網銀支付</string>
+	<string name="pay_chongcard">充值卡</string>
+	<string name="use_protocol">已经阅读并同意</string>
+	<string name="rightbtn">右按鈕</string>
+	<string name="choosewrite">選填</string>
+	<string name="user_email">郵 箱 ：</string>
+	<string name="registerpass">密 碼：</string>
+	<string name="writelimit">6-12个字母或數字</string>
+	<string name="payproduct">訂購商品</string>
+	<string name="payprice">充值金額</string>
+	<string name="payprompt">温馨提示：1元人民币对应10钻石</string>
+	<string name="custom_phone">客服热线</string>
+	<string name="custom_time">服务时间：10:00-22:00</string>
+	<string name="youaiweb">官方网站：www.mxhzw.com</string>
+	<string name="userreadpro">我已经阅读并统一遵守夢想海賊王服务器条款</string>
+	<string name="findpasschoose">必填 找回密碼</string>
+	
+	
+	
+    
+    <string name="loading">加載中...</string>
+	<string name="nothaveaccount">您還沒有登入過賬號</string>
+	<string name="initfailinner">初始化失敗</string>
+	<string name="initfailtryagain">初始化失敗 重新初始化中</string>
+	<string name="netwarning">網絡異常</string>
+	<string name="warning">提示</string>
+	<string name="bindsuccess">注册绑定成功</string>
+	<string name="logoutsuccess">注销成功</string>
+	<string name="logouneedre">遊戲內部註銷賬號需要重新啓動遊戲\n</string>
+	<string name="namenull">账号不能为空</string>
+	<string name="passwordnull">密码不能为空</string>
+	<string name="emailnull">邮箱不能为空</string>
+	<string name="nameerr">账号格式不正确</string>
+	<string name="passworderr">密码格式不正确</string>
+	<string name="mailerr">邮箱格式不正确</string>
+	<string name="registererr">注册失败</string>
+	<string name="registeryes">注册成功</string>
+	<string name="loginfailnet">網絡異常 登录失败</string>
+	<string name="registfailnet">網絡異常 註冊失败</string>
+	<string name="welcome">歡迎您回来</string>
+	<string name="errbind">網絡异常 绑定失败</string>
+	<string name="binderr">绑定失败</string>
+	<string name="bindneterr">网络异常 绑定失败</string>
+	<string name="paygame">充值游戏</string>
+	<string name="payuser">充值帐号</string>
+	<string name="buything">订购商品</string>
+	<string name="tryuser">游客</string>
+	<string name="paymoney">充值金额</string>
+	<string name="paything">钻石</string>
+	<string name="helpphone">客服热线</string>
+	<string name="nettryerr">网络异常，请重试</string>
+	<string name="httperr">网络访问异常</string>
+	<string name="paynow">正在支付</string>
+	<string name="yuan">元</string>
+	<string name="account">账号</string>
+	<string name="initpassword">系统为您設置的初始密碼：</string>
+	<string name="passwordcgeok">密碼修改成功</string>
+	<string name="passwordcgeerr">密碼修改失敗</string>
+	<string name="controlpassword">修改密碼</string>
+	<string name="controlwebsite">社區官網</string>
+	<string name="controluser">切換用戶</string>
+	<string name="controlfeedback">建議反饋</string>
+	<string name="startgame">正在登录</string>
+	<string name="loginsuccess">登录成功</string>
+	<string name="loginfail">登录失败</string>
+    <string name="login">登录</string>
+    <string name="sdk_small_login">登录</string>
+    <string name="sdk_register">注册</string>
+    <string name="sdk_small_reg">注册</string>
+    <string name="sdk_login">登录</string>
+   
+   <string name="sdk_guest_btn_bd_off">立即绑定</string>
+   <string name="sdk_guest_btn_nobd_off">以后绑定</string>
+    <string name="fast_login">快速登录</string>
+	<string name="youaiprotocal"></string>
+	<string name="officialweb">官网</string>
+    <string name="facebookfen">粉丝团</string>	
+    <string name="totry">试玩</string>
+    <string name="u2_protocol">使用條款和隱私政策</string>
+    <string name="title_protocol">條款和隱私政策</string>
+    <string name="intogame">登陆</string>
+    <string name="ensuresafe">为保障账号安全，请绑定账号</string>
+    <string name="binduser">绑定账号</string>
+    <string name="nowaccount">账号:</string>
+    <string name="changeuser">切换账号</string>
+    <string name="app_dev">原子弹</string>
+    <string name="findpass">找回密码</string>
+    <string name="hint_account">6-20 字符</string>
+    <string name="hint_email">请输入邮箱地址</string>
+    <string name="read_protocal">请您阅读并同意本协议</string>
+    <string name="protocal">《游戏协议》</string>
+    <string name="pass">密码</string>
+    <string name="pass_hint">密码</string>
+    <string name="guest_notice">您当前的账号为游客账号，请绑定账号</string>
+</resources>

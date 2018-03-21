@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="56.0dip"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="44.0dip"
+    android:background="@drawable/flsdk_charge_info_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/flsdk_charge_game_name"
+        style="@style/flsdk_style_2b261c_14"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70.0dip"
+        android:padding="2.0dip"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/flsdk_charge_money_amount"
+        style="@style/flsdk_style_2b261c_14"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70.0dip"
+        android:layout_marginTop="2.0dip"
+        android:padding="2.0dip"
+        android:singleLine="true" />
+
+</LinearLayout>

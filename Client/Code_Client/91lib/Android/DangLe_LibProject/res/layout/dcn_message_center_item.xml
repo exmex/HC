@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@android:color/white"
+    android:paddingRight="5dp">
+    
+    <TextView
+        android:id="@+id/dcn_msg_left_flag"
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:background="@color/dcn_ucenter_msg_unread"/>
+
+    <RelativeLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="70dp"
+		android:paddingTop="5dp"
+		android:paddingBottom="5dp">
+		<ImageView
+			android:id="@+id/dcn_user_image"
+			android:layout_width="60dp"
+			android:layout_height="60dp"
+			android:background="@drawable/dcn_icon_user"
+			android:layout_marginRight="10dp"
+			android:layout_marginLeft="10dp" />
+	    <RelativeLayout
+	        android:orientation="vertical"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_toRightOf="@id/dcn_user_image">
+	        <RelativeLayout
+	            android:id="@+id/dcn_title_and_tiem"
+	            android:orientation="horizontal"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content">
+	
+	            <TextView
+	                android:id="@+id/dcn_msg_title"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="@color/dcn_black"
+	                android:textSize="14sp"
+	                android:singleLine="true" />
+	            <TextView
+	                android:id="@+id/dcn_msg_time"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingRight="10dp"
+	                android:layout_alignParentRight="true"
+	                android:singleLine="true"
+	                android:textColor="@color/dcn_ucenter_info_text"
+	                android:textSize="12sp" />
+            </RelativeLayout>
+
+           
+            <TextView
+                android:id="@+id/dcn_msg_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dcn_title_and_tiem"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:singleLine="false"
+                android:textColor="@color/dcn_ucenter_info_text"
+                android:textSize="13sp" />
+
+	    </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

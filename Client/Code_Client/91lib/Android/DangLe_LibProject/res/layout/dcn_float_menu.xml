@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.downjoy.widget.floating.FloatMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/dcn_floating_menu_bg" >
+
+    <!-- 消息+充值 -->
+
+    <LinearLayout
+        android:id="@+id/dcn_float_menu_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dcn_float_menu_margin_top"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/dcn_message_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true" >
+
+            <!-- 消息按钮 -->
+
+            <ImageView
+                android:id="@+id/dcn_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:duplicateParentState="true"
+                android:src="@drawable/dcn_floating_menu_message_selector" />
+
+            <TextView
+                android:id="@+id/dcn_message_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-10dp"
+                android:layout_toRightOf="@+id/dcn_message"
+                android:background="@drawable/dcn_badge_number_bg"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/dcn_float_memu_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dcn_message"
+                android:layout_centerHorizontal="true"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:text="@string/dcn_float_menu_message" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/dcn_charge"
+                style="@style/dcn_float_memu_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawableTop="@drawable/dcn_floating_menu_recharge_selector"
+                android:text="@string/dcn_float_menu_charge" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/dcn_float_menu_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dcn_float_menu_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-10dp"
+        android:background="@drawable/dcn_float_menu_center_bg" >
+
+        <TextView
+            android:id="@+id/dcn_ucenter"
+            style="@style/dcn_float_memu_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/dcn_floating_menu_center_selector"
+            android:text="@string/dcn_float_menu_ucenter" />
+    </FrameLayout>
+
+    <!-- 论坛和专区 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dcn_float_menu_center"
+        android:orientation="horizontal"
+        android:layout_marginTop="-10dp"
+        android:paddingBottom="@dimen/dcn_float_menu_margin_bottom" >
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/dcn_forum"
+                style="@style/dcn_float_memu_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawableTop="@drawable/dcn_floating_menu_forum_selector"
+                android:text="@string/dcn_float_menu_forum" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/dcn_prefeture"
+                style="@style/dcn_float_memu_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawableTop="@drawable/dcn_floating_menu_prefecture_selector"
+                android:text="@string/dcn_float_menu_prefecture" />
+        </FrameLayout>
+    </LinearLayout>
+
+</com.downjoy.widget.floating.FloatMenuLayout>

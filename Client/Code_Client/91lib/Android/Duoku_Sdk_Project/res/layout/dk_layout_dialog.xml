@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/parent_panel" 
+    android:layout_width="250dip" 
+    android:layout_height="fill_parent" 
+    android:orientation="vertical" >
+    
+	<LinearLayout 
+	    android:id="@+id/topPanel" 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="54dp" 
+	    android:orientation="vertical"
+	    android:background="@drawable/dk_top_dialog">
+	    		    
+	    <!-- title -->
+		<TextView 
+			android:id="@+id/dialog_title"
+			android:singleLine="true" 
+		    android:textSize="18sp"
+		    android:textColor="@color/dk_color_333333"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="fill_parent" 
+		    android:paddingTop="8dp"
+		    android:paddingBottom="8dp"
+		    android:gravity="center"
+		    android:layout_marginTop="2dp"/> 
+
+	</LinearLayout>
+    
+ 		
+	<ScrollView android:id="@+id/scrollView" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:background="@drawable/dk_middle_dialog"
+	    >
+			
+		<LinearLayout android:id="@+id/content" 
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:orientation="vertical"
+		    android:layout_marginBottom="24dp">
+		    
+		    <!-- 在代码中动态添加布局元素 -->
+		</LinearLayout>
+	</ScrollView>
+	
+	<LinearLayout android:id="@+id/buttonPanel" 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:background="@drawable/dk_bottom_dialog"
+	    >
+ 		 
+ 		<FrameLayout android:layout_width="fill_parent"
+ 		    android:layout_height="wrap_content"
+ 		    android:layout_marginBottom="16dp"
+ 		    
+ 		    >
+			<LinearLayout
+			    android:id="@+id/dk_two_button"
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content" 
+			    android:orientation="horizontal"
+			    android:visibility="visible"
+			    >
+	  			<View android:layout_width="8dip" 
+	  			    android:layout_height="36dip"
+	  			    />
+	  			<Button android:id="@+id/dk_button_left"
+	  			    android:layout_width="0dp"
+	  			    android:layout_height="36dip"
+	  			    android:layout_weight="1"
+	  			    android:background="@drawable/dk_btn_small_blue_selector"
+	  			    android:textColor="@color/dk_gamesdk_white"
+	  			    android:textSize="14sp"
+					android:text="@string/dk_userlogin_forgetpwd_confirm"	  			    
+	  			    />
+	  			<View android:layout_width="8dip" 
+	  			    android:layout_height="36dip"
+	  			    />
+				<Button android:id="@+id/dK_button_right"
+	  			    android:layout_width="0dp"
+	  			    android:layout_height="36dip"
+	  			    android:layout_weight="1"
+	  			    android:background="@drawable/dk_btn_small_gray_selector"
+	  			    android:textColor="@color/dk_color_333333"
+	  			    android:textSize="14sp"
+	  			    android:text="@string/dk_cancel"
+	  			    />
+				<View android:layout_width="8dip" 
+				    android:layout_height="36dip"/>
+				
+		</LinearLayout>
+		<LinearLayout
+		    	android:id="@+id/dk_one_button" 
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content" 
+			    android:orientation="horizontal"
+			    android:visibility="gone">
+		    <View android:layout_width="8dip" 
+	  			    android:layout_height="36dip"
+	  			    />
+		    <Button android:id="@+id/dk_button_ok"
+	  			    android:layout_width="wrap_content"
+	  			    android:layout_height="36dip"
+	  			    android:layout_weight="1"
+	  			    android:background="@drawable/dk_login_btn_selector"
+	  			    android:textColor="@color/dk_gamesdk_white"
+	  			    android:textSize="14sp"
+	  			    android:text="@string/dk_confirm"
+	  			    />
+		    <View android:layout_width="8dip" 
+				    android:layout_height="36dip"/>
+		</LinearLayout>
+		
+	</FrameLayout>
+	</LinearLayout>
+</LinearLayout>

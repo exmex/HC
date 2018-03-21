@@ -1,0 +1,77 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:background="@drawable/gamehall_popup_detail_bg_black" 
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/gamehall_feedback_title_bg" >
+
+            <ImageButton
+                android:id="@+id/gamehall_universal_activity_backbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/gamehall_feedback_back_selector" />
+
+            <TextView
+                android:id="@+id/gamehall_universal_activity_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/gamehall_systemmessage_title"
+                android:textColor="@color/txt_white"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp" >
+
+            <TextView
+                android:id="@+id/gamehall_systemmessage_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:ellipsize="none"
+                android:maxLength="8"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/gamehall_systemmessage_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="1dp"
+                android:textColor="@color/gamehall_common_desc"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/gamehall_systemmessage_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gamehall_systemmessage_title"
+                android:layout_marginTop="15dp"
+                android:textSize="14dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

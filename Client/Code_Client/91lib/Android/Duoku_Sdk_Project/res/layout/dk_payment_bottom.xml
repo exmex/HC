@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dk_layout_baidu_logo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal">
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="66dp"
+            android:layout_height="22dp"
+            android:background="@drawable/dk_logo_baidu" />
+        
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/tv_customer_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        android:textColor="#838383"
+        android:textSize="@dimen/text_size_14_sp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/dk_customer_service_number" />
+    
+</LinearLayout>

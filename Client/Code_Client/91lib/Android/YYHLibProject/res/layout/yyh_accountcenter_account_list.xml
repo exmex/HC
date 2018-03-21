@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/yyh_login_dialog_layout_parent_width"
+    android:layout_height="wrap_content"
+    android:background="@drawable/yyh_sdk_dialog_rect_cir" >
+
+    <TextView
+        android:id="@+id/tv_head"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:gravity="center"
+        android:text="@string/yyh_switch_account"
+        android:textColor="#ffffff"
+        android:background="@drawable/yyh_sdk_dialog_rect_cir_title"
+        android:textSize="16dip" />
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_below="@id/tv_head"
+        android:background="@color/yyh_d_1" 
+        android:layout_marginBottom="5dip"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_sub_accounts"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:layout_below="@id/v_line"
+        android:visibility="visible" >
+
+        <ListView
+            android:id="@+id/lv_account_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/v_shape_under_listview"
+            android:divider="@null"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/v_shape_under_listview"
+            android:gravity="center"
+            android:text="@string/yyh_sub_account_msg" />
+
+        <!--
+             <TextView
+            android:id="@+id/tv_register_sub_account_tip"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dip"
+            android:layout_toLeftOf="@+id/tv_btn_register_sub_account"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:text="@string/yyh_switch_account_register_tip" />
+        -->
+
+        <TextView
+            android:id="@+id/tv_btn_register_sub_account"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="3dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/yyh_button_slector_register_cell"
+            android:gravity="center"
+            android:text="@string/yyh_switch_account_register_new"
+            android:textColor="@color/yyh_a_1"
+            android:textSize="16dip" />
+
+        <View
+            android:id="@+id/v_shape_under_listview"
+            android:layout_width="match_parent"
+            android:layout_height="5dip"
+            android:layout_marginBottom="5dip"
+            android:layout_above="@id/tv_btn_register_sub_account"
+            android:background="@drawable/yyh_rect_below_listview" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_create_sub_accounts"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:layout_below="@id/v_line"
+        android:paddingTop="20dip"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/et_sub_acc_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_margin="10dip"
+            android:background="@drawable/yyh_edittext_bg_selector"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dip"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/tv_btn_sub_create_login"
+            android:layout_width="170dip"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/et_sub_acc_nickname"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/yyh_button_slector_register_cell"
+            android:gravity="center"
+            android:text="@string/yyh_login_dialog_layout_normal_register_login"
+            android:textColor="#ffffff"
+            android:textSize="16dip" />
+
+        <TextView
+            android:id="@+id/tv_btn_sub_cancel"
+            android:layout_width="100dip"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/et_sub_acc_nickname"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/yyh_sdk_c2_sl"
+            android:gravity="center"
+            android:text="@string/yyh_header_back"
+            android:textColor="#ffffff"
+            android:textSize="16dip" />
+    </RelativeLayout>
+
+</RelativeLayout>

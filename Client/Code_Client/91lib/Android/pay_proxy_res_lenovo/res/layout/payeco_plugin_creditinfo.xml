@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/payeco_orderDetailLayout"
+    style="@style/payeco_applicationBgStyle"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="20.0dip"
+    android:paddingLeft="10.0dip"
+    android:paddingRight="10.0dip"
+    android:paddingTop="10.0dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/payeco_close_creditInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="2.0dip"
+            android:text="@string/payeco_close_line"
+            android:textColor="@color/payeco_titleTextColor"
+            android:textSize="@dimen/payeco_normal_textsize" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:text="@string/payeco_validate_cvn2_detail"
+            android:textColor="@color/payeco_textColorBlack"
+            android:textSize="@dimen/payeco_small_textsize" />
+    </LinearLayout>
+
+</ScrollView>

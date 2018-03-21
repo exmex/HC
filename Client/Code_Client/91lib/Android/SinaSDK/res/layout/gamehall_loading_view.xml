@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <ProgressBar
+            android:layout_width="106dip"
+            android:layout_height="106dip"
+            android:layout_gravity="center"
+            android:indeterminate="false"
+            android:indeterminateDrawable="@drawable/gamehall_loading_progress2" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="center"
+            android:src="@drawable/gamehall_icon2" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/gamehall_loading"
+        android:textColor="@color/txt_white"
+        android:textSize="16sp" 
+        android:layout_marginTop="40dip"
+        />
+
+</LinearLayout>

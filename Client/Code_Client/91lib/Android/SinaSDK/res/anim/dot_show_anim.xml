@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shareInterpolator="false"
+    android:zAdjustment="top">
+
+    <scale
+        android:duration="400"
+        android:fromXScale="1.0"
+        android:fromYScale="1.0"
+        android:interpolator="@android:anim/accelerate_interpolator"
+        android:pivotX="50.0%"
+        android:pivotY="50.0%"
+        android:toXScale="1.2"
+        android:toYScale="1.2"
+        android:repeatMode="restart"
+        android:repeatCount="3"
+         />
+
+</set>

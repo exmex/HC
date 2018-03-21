@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="payeco_app_name">易联移动支付</string>
+	<string name="payeco"><br>易联支付</br></string>
+	<string name="payeco_loading">"正在提交，请稍候&#8230;"</string>
+	<string name="payeco_submiting">"正在提交&#8230;"</string>
+	<string name="payeco_error_pan">"请输入正确的银行卡号"</string>
+	<string name="payeco_error_pin">"请输入正确的银行卡密码"</string>
+	<string name="payeco_error_cvn2">"请输入正确的CVN2"</string>
+	<string name="payeco_error_mobliemac">"请输入正确的短信验证码"</string>
+	<string name="payeco_error_riskcontrol">
+		"请输入<xliff:g id="riskValue">%1$s</xliff:g>"
+	</string>
+	<string name="payeco_error_idNum">"请输入正确的证件号码"</string>
+	<string name="payeco_error_moblieNum">"请输入正确的手机号码"</string>
+	<string name="payeco_prompt">"提示"</string>
+	<string name="payeco_networkError">"没有网络连接，请检查网络设置"</string>
+	<string name="payeco_support_bank"><u>"支持的银行列表"</u></string>
+	<string name="payeco_order_detail">"订单详情"</string>
+	<string name="payeco_order_detail_orderId">"订单编号:"</string>
+	<string name="payeco_order_detail_orderDesc">"商品描述:"</string>
+	<string name="payeco_order_detail_orderAmt">"支付金额:"</string>
+	<string name="payeco_amount">
+		"￥<xliff:g id="amt">%1$s</xliff:g>"
+	</string>
+	
+	<string name="payeco_order_detail_merchantName">"商户名称:"</string>
+	<string name="payeco_order_detail_orderTime">"交易时间:"</string>
+	<string name="payeco_pay_detail">"交易详情"</string>
+	<string name="payeco_back_merchant">"关\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020闭"</string>
+	<string name="payeco_exit_pay">"退出支付"</string>
+	<string name="payeco_re_toPay">"再次提交"</string>
+	<string name="payeco_pay_state">"交易结果:"</string>
+	<string name="payeco_payfail_desc">"失败原因:"</string>
+	<string name="payeco_pay_state_success">支付成功</string>
+	<string name="payeco_pay_state_fail">"支付失败"</string>
+	<string name="payeco_error_http_unknow_error">"网络连接异常，请检查网络设置。"</string>
+
+	<string name="payeco_confirm">"确\u0020\u0020\u0020\u0020认"</string>
+	<string name="payeco_cancel">"取\u0020\u0020\u0020\u0020消"</string>
+	<string name="payeco_commint_pay">"提交付款"</string>
+	<string name="payeco_confirm_pay">"确认付款"</string>
+	
+	<string name="payeco_pay_panType">"选择卡种:"</string>
+	<string name="payeco_panType_debit">"储蓄卡"</string>
+	<string name="payeco_panType_credit">"信用卡"</string>
+	<string name="payeco_usecqp_tips">"一键支付，免输密码"</string>
+	<string name="payeco_pay_pan">"银行卡号:"</string>
+	<string name="payeco_pay_oldpan">"您的银行卡号:"</string>
+	<string name="payeco_pay_debit_hint">"输入储蓄卡卡号"</string>
+	<string name="payeco_pay_credit_hint">"输入信用卡卡号"</string>
+	<string name="payeco_pay_debit_credit_hint">"输入储蓄卡或信用卡卡号"</string>
+	<string name="payeco_pay_pin">"银行卡密码:"</string>
+	<string name="payeco_pay_pin_hint">"输入银行卡密码"</string>
+	<string name="payeco_pay_validate">"有效期:"
+	</string>
+	<string name="payeco_pay_cvn2">"C\u0020V\u0020N2:"
+	</string>
+	<string name="payeco_pay_cvn2_hint">"卡背面最后三位数字"</string>
+	<string name="payeco_pay_credit_info">"<u>什么是有效期和CVN2</u>"</string>
+	<string name="payeco_validate_cvn2_detail">"CVN2代码是印在信用卡背面签名栏最后的3位数代码。我们需要这个代码做位确保客户安全。如果您找不到此代码或者此代码难以辨认，请与信用卡发卡银行联络。\n\n有效期是卡正面上带有 /的四位数字 ，格式为：月/年\u0020\u0020例：12/15，则有效期为2015年12月。如果有两组有效期，就看Valid Thru后面的数字为到期日。"</string>
+
+	<string name="payeco_pay_username">"真实姓名:"</string>
+
+	<string name="payeco_pay_idType">"证件类型:"</string>
+	<string name="payeco_pay_idtype_prompt">"选择证件类型"</string>
+
+	<string name="payeco_pay_idNum">"证件号码:"</string>
+
+	<string name="payeco_pay_bank_address">"开户行地区:"</string>
+	<string name="payeco_select_province">"请选择省份"</string>
+	<string name="payeco_select_city">"请选择市"</string>
+
+	<string name="payeco_pay_result_title">"交易结果"</string>
+	<string name="payeco_pay_benifitName">"受益人:"</string>
+	
+	<string name="payeco_pay_photoDesc">"照片描述:"</string>
+	<string name="payeco_pay_address">"户籍地址:"</string>
+	<string name="payeco_pay_yixiantong">"一线通标志:"</string>
+	<string name="payeco_takepickture_tips">"银联安全提示：为保障您的支付安全，请拍摄本人身份证照片，以进行验证"</string>
+	<string name="payeco_pay_idcard_photo">"请拍摄身份证原件照片"</string>
+	<string name="payeco_get_photo_fail">"获取照片数据失败，请检查相机设置或者存储卡空间是否足够"</string>
+	<string name="payeco_scale_picture">"正在压缩并显示照片&#8230;"</string>
+	<string name="payeco_pay_bindMobileNum">"手机号码:"</string>
+	<string name="payeco_pay_mobileMac">"短信码:"</string>
+	<string name="payeco_pay_regetmobilemac">"重新获取"</string>
+	<string name="payeco_pay_reget_success">"短信验证码已发送"</string>
+	
+	<!-- 密码键盘 -->
+	
+	<string name="payeco_keyboard">"密\u0020\u0020码\u0020\u0020键\u0020\u0020盘"</string>
+	<string name="payeco_keyboard_tips">"密码键盘采用银联标准加密技术加密传输，保证密码输入安全。"</string>
+	<string name="payeco_keyboard_digital">"数字"</string>
+	<string name="payeco_keyboard_character">"字母"</string>
+	<string name="payeco_keyboard_symbol">"符号"</string>
+	<string name="payeco_keyboard_confirm">"确\u0020\u0020\u0020\u0020定"</string>
+	<string name="payeco_keyboard_delete">"回\u0020\u0020退"</string>
+	<string name="payeco_keyboard_edit_hint">"请输入密码"</string>
+	<string name="payeco_keyboard_next">"下一页"</string>
+	<string name="payeco_keyboard_pre">"上一页"</string>
+
+	<!-- 退出对话框 -->
+	<string name="payeco_exit_app_msg">"支付未完成，确定退出支付？"</string>
+	
+	<!-- 风控 -->
+	<string name="payeco_no_sdcard">"没有找到存储卡"</string>
+	<string name="payeco_get_mobilemac_fail">"获取短信验证码失败，<xliff:g id="failDesc">%1$s</xliff:g>，重新获取"</string>
+	
+	<!-- 认证快付 -->
+	<string name="payeco_close">"返\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020回"</string>
+	<string name="payeco_close_line">"<u>返\u0020回"</u></string>
+	<string name="payeco_next">"下\u0020一\u0020步"</string>
+	<string name="payeco_back">"上\u0020一\u0020步"</string>
+	<string name="payeco_open_cpq">"同意开通认证快付协议"</string>
+	<string name="payeco_read_cpq_protocol"><u>阅读</u></string>
+	<string name="payeco_cpq_tips">提醒：下次用该银行卡支付不用输入密码，支付更快捷！</string>
+	<string name="payeco_changeCard">"换卡"</string>
+	<string name="payeco_cardType_tip">"对不起，暂时不支持您所使用的银行卡类型"</string>
+	
+
+	<!-- 支付结果-->
+    <string name="payeco_plugin_pay_success">"支付成功"</string>
+    <string name="payeco_plugin_pay_fail">"支付失败"</string>
+    <string name="payeco_plugin_pay_cancel">"支付取消"</string>
+    <string name="payeco_plugin_pay_wait_manualrisk">"订单支付状态未更新，为了您的交易安全，银联系统需要验证您的身份信息。"</string>
+	<string name="payeco_plugin_pay_exception">"支付插件异常，请重新支付。"</string>
+	
+	<!-- 进度条 -->
+	<string name="payeco_plugin_step_1">填资料</string>
+	<string name="payeco_plugin_step_2">认证中</string>
+	<string name="payeco_plugin_free_auth">免认证</string>
+	<string name="payeco_plugin_step_3">完成</string>
+</resources>
+

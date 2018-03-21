@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <CheckBox
+        android:id="@+id/flsdk_register_protocal_checkbox"
+        android:layout_width="28.0dip"
+        android:layout_height="28.0dip"
+        android:layout_marginRight="14.0dip"
+        android:button="@drawable/flsdk_checkbox_bg"
+        android:checked="true" />
+
+    <TextView
+        android:id="@+id/flsdk_register_protocal_text"
+        style="@style/flsdk_style_c2c2c2_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF14D3ED17C5C2EE005565A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF14D3EC17C5C2EE005565A8 /* UIKit.framework */; };
+		CF14D3EF17C5C2EE005565A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF14D3EE17C5C2EE005565A8 /* Foundation.framework */; };
+		CF14D3F117C5C2EE005565A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF14D3F017C5C2EE005565A8 /* CoreGraphics.framework */; };
+		CF14D3F317C5C2EE005565A8 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF14D3F217C5C2EE005565A8 /* GLKit.framework */; };
+		CF14D3F517C5C2EE005565A8 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF14D3F417C5C2EE005565A8 /* OpenGLES.framework */; };
+		CF14D3FB17C5C2EE005565A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF14D3F917C5C2EE005565A8 /* InfoPlist.strings */; };
+		CF14D3FD17C5C2EE005565A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D3FC17C5C2EE005565A8 /* main.m */; };
+		CF14D40117C5C2EE005565A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D40017C5C2EE005565A8 /* AppDelegate.m */; };
+		CF14D40317C5C2EE005565A8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CF14D40217C5C2EE005565A8 /* Default.png */; };
+		CF14D40517C5C2EE005565A8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF14D40417C5C2EE005565A8 /* Default@2x.png */; };
+		CF14D40717C5C2EF005565A8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF14D40617C5C2EF005565A8 /* Default-568h@2x.png */; };
+		CF14D40917C5C2EF005565A8 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = CF14D40817C5C2EF005565A8 /* Shader.fsh */; };
+		CF14D40B17C5C2EF005565A8 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = CF14D40A17C5C2EF005565A8 /* Shader.vsh */; };
+		CF14D40E17C5C2EF005565A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D40D17C5C2EF005565A8 /* ViewController.m */; };
+		CF9B1B5417D6DBA8003ED336 /* com4lovesBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CF9B1B5317D6DBA8003ED336 /* com4lovesBundle.bundle */; };
+		CFA4801E17C5E33600B6C7CA /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF14D40F17C5C2EF005565A8 /* ViewController_iPhone.xib */; };
+		CFA4801F17C5E33600B6C7CA /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF14D41217C5C2EF005565A8 /* ViewController_iPad.xib */; };
+		CFB9B00B17EFFC260024D06C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D3FC17C5C2EE005565A8 /* main.m */; };
+		CFB9B00C17EFFC260024D06C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D40017C5C2EE005565A8 /* AppDelegate.m */; };
+		CFB9B00D17EFFC260024D06C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF14D40D17C5C2EF005565A8 /* ViewController.m */; };
+		CFB9B00F17EFFC260024D06C /* libcom4lovesSDKselfPay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB9B00417EFF8B30024D06C /* libcom4lovesSDKselfPay.a */; };
+		CFB9B01017EFFC260024D06C /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF93A06817CB55B000A7DB25 /* libssl.a */; };
+		CFB9B01117EFFC260024D06C /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF93A06717CB55B000A7DB25 /* libcrypto.a */; };
+		CFB9B01217EFFC260024D06C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFDF5BD217C7065F0060562B /* StoreKit.framework */; };
+		CFB9B01317EFFC260024D06C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF14D3EC17C5C2EE005565A8 /* UIKit.framework */; };
+		CFB9B01417EFFC260024D06C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF14D3EE17C5C2EE005565A8 /* Foundation.framework */; };
+		CFB9B01517EFFC260024D06C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF14D3F017C5C2EE005565A8 /* CoreGraphics.framework */; };
+		CFB9B01617EFFC260024D06C /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF14D3F217C5C2EE005565A8 /* GLKit.framework */; };
+		CFB9B01717EFFC260024D06C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF14D3F417C5C2EE005565A8 /* OpenGLES.framework */; };
+		CFB9B01917EFFC260024D06C /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF14D40F17C5C2EF005565A8 /* ViewController_iPhone.xib */; };
+		CFB9B01A17EFFC260024D06C /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF14D41217C5C2EF005565A8 /* ViewController_iPad.xib */; };
+		CFB9B01B17EFFC260024D06C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF14D3F917C5C2EE005565A8 /* InfoPlist.strings */; };
+		CFB9B01C17EFFC260024D06C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CF14D40217C5C2EE005565A8 /* Default.png */; };
+		CFB9B01D17EFFC260024D06C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF14D40417C5C2EE005565A8 /* Default@2x.png */; };
+		CFB9B01F17EFFC260024D06C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF14D40617C5C2EF005565A8 /* Default-568h@2x.png */; };
+		CFB9B02017EFFC260024D06C /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = CF14D40817C5C2EF005565A8 /* Shader.fsh */; };
+		CFB9B02117EFFC260024D06C /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = CF14D40A17C5C2EF005565A8 /* Shader.vsh */; };
+		CFB9B02817EFFC980024D06C /* libcom4lovesSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB9B02717EFFC980024D06C /* libcom4lovesSDK.a */; };
+		CFC8EDA017F2F0BD0059CB9B /* com4lovesBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CFC8ED9F17F2F0BD0059CB9B /* com4lovesBundle.bundle */; };
+		CFDF5BD317C7065F0060562B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFDF5BD217C7065F0060562B /* StoreKit.framework */; };
+		CFFD9CB617E6DFCB0029A304 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF93A06717CB55B000A7DB25 /* libcrypto.a */; };
+		CFFD9CB717E6DFCE0029A304 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF93A06817CB55B000A7DB25 /* libssl.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CF14D3E917C5C2EE005565A8 /* com4lovesDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = com4lovesDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF14D3EC17C5C2EE005565A8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CF14D3EE17C5C2EE005565A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CF14D3F017C5C2EE005565A8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CF14D3F217C5C2EE005565A8 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		CF14D3F417C5C2EE005565A8 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		CF14D3F817C5C2EE005565A8 /* com4lovesDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "com4lovesDemo-Info.plist"; sourceTree = "<group>"; };
+		CF14D3FA17C5C2EE005565A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CF14D3FC17C5C2EE005565A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF14D3FE17C5C2EE005565A8 /* com4lovesDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "com4lovesDemo-Prefix.pch"; sourceTree = "<group>"; };
+		CF14D3FF17C5C2EE005565A8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CF14D40017C5C2EE005565A8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CF14D40217C5C2EE005565A8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CF14D40417C5C2EE005565A8 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CF14D40617C5C2EF005565A8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CF14D40817C5C2EF005565A8 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		CF14D40A17C5C2EF005565A8 /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		CF14D40C17C5C2EF005565A8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CF14D40D17C5C2EF005565A8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CF14D41017C5C2EF005565A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		CF14D41317C5C2EF005565A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		CF93A06717CB55B000A7DB25 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "../ios-openssl-master/lib/libcrypto.a"; sourceTree = "<group>"; };
+		CF93A06817CB55B000A7DB25 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "../ios-openssl-master/lib/libssl.a"; sourceTree = "<group>"; };
+		CF9B1B5317D6DBA8003ED336 /* com4lovesBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; name = com4lovesBundle.bundle; path = "/Users/fish/Library/Developer/Xcode/DerivedData/Demo-eynpmnzsnmzwswbxzrqkcifmvucu/Build/Products/Debug-iphoneos/com4lovesBundle.bundle"; sourceTree = "<absolute>"; };
+		CFB9B00417EFF8B30024D06C /* libcom4lovesSDKselfPay.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcom4lovesSDKselfPay.a; path = "../../../../../Library/Developer/Xcode/DerivedData/Demo-ebbegkwfkjwllsaprtvvgstrwkop/Build/Products/Debug-iphoneos/libcom4lovesSDKselfPay.a"; sourceTree = "<group>"; };
+		CFB9B02517EFFC260024D06C /* com4lovesDemoSelfPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = com4lovesDemoSelfPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFB9B02617EFFC260024D06C /* com4lovesDemoSelfPay-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "com4lovesDemoSelfPay-Info.plist"; path = "/Users/fish/Documents/svn_mac/Code_Client/com4lovesSDK/com4lovesDemo/com4lovesDemoSelfPay-Info.plist"; sourceTree = "<absolute>"; };
+		CFB9B02717EFFC980024D06C /* libcom4lovesSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcom4lovesSDK.a; path = "../../../../../Library/Developer/Xcode/DerivedData/Demo-ebbegkwfkjwllsaprtvvgstrwkop/Build/Products/Debug-iphoneos/libcom4lovesSDK.a"; sourceTree = "<group>"; };
+		CFC8ED9F17F2F0BD0059CB9B /* com4lovesBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; name = com4lovesBundle.bundle; path = "/Users/fish/Library/Developer/Xcode/DerivedData/Demo-ebbegkwfkjwllsaprtvvgstrwkop/Build/Products/Debug-iphoneos/com4lovesBundle.bundle"; sourceTree = "<absolute>"; };
+		CFDF5BD217C7065F0060562B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF14D3E617C5C2EE005565A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFFD9CB717E6DFCE0029A304 /* libssl.a in Frameworks */,
+				CFB9B02817EFFC980024D06C /* libcom4lovesSDK.a in Frameworks */,
+				CFFD9CB617E6DFCB0029A304 /* libcrypto.a in Frameworks */,
+				CFDF5BD317C7065F0060562B /* StoreKit.framework in Frameworks */,
+				CF14D3ED17C5C2EE005565A8 /* UIKit.framework in Frameworks */,
+				CF14D3EF17C5C2EE005565A8 /* Foundation.framework in Frameworks */,
+				CF14D3F117C5C2EE005565A8 /* CoreGraphics.framework in Frameworks */,
+				CF14D3F317C5C2EE005565A8 /* GLKit.framework in Frameworks */,
+				CF14D3F517C5C2EE005565A8 /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFB9B00E17EFFC260024D06C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB9B00F17EFFC260024D06C /* libcom4lovesSDKselfPay.a in Frameworks */,
+				CFB9B01017EFFC260024D06C /* libssl.a in Frameworks */,
+				CFB9B01117EFFC260024D06C /* libcrypto.a in Frameworks */,
+				CFB9B01217EFFC260024D06C /* StoreKit.framework in Frameworks */,
+				CFB9B01317EFFC260024D06C /* UIKit.framework in Frameworks */,
+				CFB9B01417EFFC260024D06C /* Foundation.framework in Frameworks */,
+				CFB9B01517EFFC260024D06C /* CoreGraphics.framework in Frameworks */,
+				CFB9B01617EFFC260024D06C /* GLKit.framework in Frameworks */,
+				CFB9B01717EFFC260024D06C /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF14D3E017C5C2EE005565A8 = {
+			isa = PBXGroup;
+			children = (
+				CFC8ED9F17F2F0BD0059CB9B /* com4lovesBundle.bundle */,
+				CFB9B02717EFFC980024D06C /* libcom4lovesSDK.a */,
+				CFB9B00417EFF8B30024D06C /* libcom4lovesSDKselfPay.a */,
+				CF9B1B5317D6DBA8003ED336 /* com4lovesBundle.bundle */,
+				CF93A06717CB55B000A7DB25 /* libcrypto.a */,
+				CF93A06817CB55B000A7DB25 /* libssl.a */,
+				CFDF5BD217C7065F0060562B /* StoreKit.framework */,
+				CF14D3F617C5C2EE005565A8 /* com4lovesDemo */,
+				CF14D3EB17C5C2EE005565A8 /* Frameworks */,
+				CF14D3EA17C5C2EE005565A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF14D3EA17C5C2EE005565A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF14D3E917C5C2EE005565A8 /* com4lovesDemo.app */,
+				CFB9B02517EFFC260024D06C /* com4lovesDemoSelfPay.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF14D3EB17C5C2EE005565A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF14D3EC17C5C2EE005565A8 /* UIKit.framework */,
+				CF14D3EE17C5C2EE005565A8 /* Foundation.framework */,
+				CF14D3F017C5C2EE005565A8 /* CoreGraphics.framework */,
+				CF14D3F217C5C2EE005565A8 /* GLKit.framework */,
+				CF14D3F417C5C2EE005565A8 /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF14D3F617C5C2EE005565A8 /* com4lovesDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CF14D3FF17C5C2EE005565A8 /* AppDelegate.h */,
+				CF14D40017C5C2EE005565A8 /* AppDelegate.m */,
+				CF14D40817C5C2EF005565A8 /* Shader.fsh */,
+				CF14D40A17C5C2EF005565A8 /* Shader.vsh */,
+				CF14D40C17C5C2EF005565A8 /* ViewController.h */,
+				CF14D40D17C5C2EF005565A8 /* ViewController.m */,
+				CF14D40F17C5C2EF005565A8 /* ViewController_iPhone.xib */,
+				CF14D41217C5C2EF005565A8 /* ViewController_iPad.xib */,
+				CF14D3F717C5C2EE005565A8 /* Supporting Files */,
+			);
+			path = com4lovesDemo;
+			sourceTree = "<group>";
+		};
+		CF14D3F717C5C2EE005565A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFB9B02617EFFC260024D06C /* com4lovesDemoSelfPay-Info.plist */,
+				CF14D3F817C5C2EE005565A8 /* com4lovesDemo-Info.plist */,
+				CF14D3F917C5C2EE005565A8 /* InfoPlist.strings */,
+				CF14D3FC17C5C2EE005565A8 /* main.m */,
+				CF14D3FE17C5C2EE005565A8 /* com4lovesDemo-Prefix.pch */,
+				CF14D40217C5C2EE005565A8 /* Default.png */,
+				CF14D40417C5C2EE005565A8 /* Default@2x.png */,
+				CF14D40617C5C2EF005565A8 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF14D3E817C5C2EE005565A8 /* com4lovesDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF14D41717C5C2EF005565A8 /* Build configuration list for PBXNativeTarget "com4lovesDemo" */;
+			buildPhases = (
+				CF14D3E517C5C2EE005565A8 /* Sources */,
+				CF14D3E617C5C2EE005565A8 /* Frameworks */,
+				CF14D3E717C5C2EE005565A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = com4lovesDemo;
+			productName = com4lovesDemo;
+			productReference = CF14D3E917C5C2EE005565A8 /* com4lovesDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CFB9B00917EFFC260024D06C /* com4lovesDemoSelfPay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFB9B02217EFFC260024D06C /* Build configuration list for PBXNativeTarget "com4lovesDemoSelfPay" */;
+			buildPhases = (
+				CFB9B00A17EFFC260024D06C /* Sources */,
+				CFB9B00E17EFFC260024D06C /* Frameworks */,
+				CFB9B01817EFFC260024D06C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = com4lovesDemoSelfPay;
+			productName = com4lovesDemo;
+			productReference = CFB9B02517EFFC260024D06C /* com4lovesDemoSelfPay.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF14D3E117C5C2EE005565A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = com4loves;
+			};
+			buildConfigurationList = CF14D3E417C5C2EE005565A8 /* Build configuration list for PBXProject "com4lovesDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF14D3E017C5C2EE005565A8;
+			productRefGroup = CF14D3EA17C5C2EE005565A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF14D3E817C5C2EE005565A8 /* com4lovesDemo */,
+				CFB9B00917EFFC260024D06C /* com4lovesDemoSelfPay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF14D3E717C5C2EE005565A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFA4801E17C5E33600B6C7CA /* ViewController_iPhone.xib in Resources */,
+				CFA4801F17C5E33600B6C7CA /* ViewController_iPad.xib in Resources */,
+				CF14D3FB17C5C2EE005565A8 /* InfoPlist.strings in Resources */,
+				CF14D40317C5C2EE005565A8 /* Default.png in Resources */,
+				CF14D40517C5C2EE005565A8 /* Default@2x.png in Resources */,
+				CF9B1B5417D6DBA8003ED336 /* com4lovesBundle.bundle in Resources */,
+				CF14D40717C5C2EF005565A8 /* Default-568h@2x.png in Resources */,
+				CF14D40917C5C2EF005565A8 /* Shader.fsh in Resources */,
+				CF14D40B17C5C2EF005565A8 /* Shader.vsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFB9B01817EFFC260024D06C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB9B01917EFFC260024D06C /* ViewController_iPhone.xib in Resources */,
+				CFB9B01A17EFFC260024D06C /* ViewController_iPad.xib in Resources */,
+				CFB9B01B17EFFC260024D06C /* InfoPlist.strings in Resources */,
+				CFB9B01C17EFFC260024D06C /* Default.png in Resources */,
+				CFB9B01D17EFFC260024D06C /* Default@2x.png in Resources */,
+				CFB9B01F17EFFC260024D06C /* Default-568h@2x.png in Resources */,
+				CFB9B02017EFFC260024D06C /* Shader.fsh in Resources */,
+				CFB9B02117EFFC260024D06C /* Shader.vsh in Resources */,
+				CFC8EDA017F2F0BD0059CB9B /* com4lovesBundle.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF14D3E517C5C2EE005565A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF14D3FD17C5C2EE005565A8 /* main.m in Sources */,
+				CF14D40117C5C2EE005565A8 /* AppDelegate.m in Sources */,
+				CF14D40E17C5C2EF005565A8 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFB9B00A17EFFC260024D06C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB9B00B17EFFC260024D06C /* main.m in Sources */,
+				CFB9B00C17EFFC260024D06C /* AppDelegate.m in Sources */,
+				CFB9B00D17EFFC260024D06C /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CF14D3F917C5C2EE005565A8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF14D3FA17C5C2EE005565A8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CF14D40F17C5C2EF005565A8 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF14D41017C5C2EF005565A8 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		CF14D41217C5C2EF005565A8 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF14D41317C5C2EF005565A8 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF14D41517C5C2EF005565A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF14D41617C5C2EF005565A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF14D41817C5C2EF005565A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../../Library/Developer/Xcode/DerivedData/Demo-ebbegkwfkjwllsaprtvvgstrwkop/Build/Products/Debug-iphoneos\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "com4lovesDemo/com4lovesDemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../com4lovesSDK\"";
+				INFOPLIST_FILE = "com4lovesDemo/com4lovesDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../ios-openssl-master/lib\"",
+					"\"$(SRCROOT)/../../../../../Library/Developer/Xcode/DerivedData/Demo-ebbegkwfkjwllsaprtvvgstrwkop/Build/Products/Debug-iphoneos\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CF14D41917C5C2EF005565A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../../Library/Developer/Xcode/DerivedData/Demo-ebbegkwfkjwllsaprtvvgstrwkop/Build/Products/Debug-iphoneos\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "com4lovesDemo/com4lovesDemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../com4lovesSDK\"";
+				INFOPLIST_FILE = "com4lovesDemo/com4lovesDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../ios-openssl-master/lib\"",
+					"\"$(SRCROOT)/../../../../../Library/Developer/Xcode/DerivedData/Demo-ebbegkwfkjwllsaprtvvgstrwkop/Build/Products/Debug-iphoneos\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CFB9B02317EFFC260024D06C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../../Library/Developer/Xcode/DerivedData/Demo-ebbegkwfkjwllsaprtvvgstrwkop/Build/Products/Debug-iphoneos\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "com4lovesDemo/com4lovesDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					C4L_SELFPAY,
+				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../com4lovesSDK\"";
+				INFOPLIST_FILE = "com4lovesDemoSelfPay-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../ios-openssl-master/lib\"",
+					"\"$(SRCROOT)/../../../../../Library/Developer/Xcode/DerivedData/Demo-ebbegkwfkjwllsaprtvvgstrwkop/Build/Products/Debug-iphoneos\"",
+				);
+				PRODUCT_NAME = com4lovesDemoSelfPay;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CFB9B02417EFFC260024D06C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../../Library/Developer/Xcode/DerivedData/Demo-ebbegkwfkjwllsaprtvvgstrwkop/Build/Products/Debug-iphoneos\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "com4lovesDemo/com4lovesDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = C4L_SELFPAY;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../com4lovesSDK\"";
+				INFOPLIST_FILE = "com4lovesDemoSelfPay-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../ios-openssl-master/lib\"",
+					"\"$(SRCROOT)/../../../../../Library/Developer/Xcode/DerivedData/Demo-ebbegkwfkjwllsaprtvvgstrwkop/Build/Products/Debug-iphoneos\"",
+				);
+				PRODUCT_NAME = com4lovesDemoSelfPay;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF14D3E417C5C2EE005565A8 /* Build configuration list for PBXProject "com4lovesDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF14D41517C5C2EF005565A8 /* Debug */,
+				CF14D41617C5C2EF005565A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF14D41717C5C2EF005565A8 /* Build configuration list for PBXNativeTarget "com4lovesDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF14D41817C5C2EF005565A8 /* Debug */,
+				CF14D41917C5C2EF005565A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFB9B02217EFFC260024D06C /* Build configuration list for PBXNativeTarget "com4lovesDemoSelfPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFB9B02317EFFC260024D06C /* Debug */,
+				CFB9B02417EFFC260024D06C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF14D3E117C5C2EE005565A8 /* Project object */;
+}

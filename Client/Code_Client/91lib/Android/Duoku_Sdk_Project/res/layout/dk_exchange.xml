@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/dk_gamesdk_white" >
+
+        <RelativeLayout
+            android:id="@+id/exchange_tabview"
+            android:layout_width="fill_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/dk_bg_ab_recharge"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/exchange_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/dk_user_fastcharge_back_selector"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/exchange_text"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/dk_kubi_exchange"
+                android:textColor="@android:color/white"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+            
+            <ImageView
+                android:id="@+id/exchange_chargeback2game"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/dk_user_fastcharge_back2game_selector"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:background="@drawable/dk_bg_accbar" 
+            android:orientation="horizontal">
+             <!-- add person info -->
+			 <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" 
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dk_icon_person" />
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/dk_exchange_username"
+                    android:textColor="@color/dk_gamesdk_black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <!-- end -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="32dp"
+                android:orientation="horizontal" 
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dk_ic_coins" />
+
+                <TextView
+                    android:id="@+id/exchange_remainkubi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/dk_xkubi"
+                    android:textColor="@color/dk_gamesdk_black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/exchange_tipinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/dk_exchange_fulltip"
+            android:textColor="@color/dk_gamesdk_orange"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/dk_gamesdk_black"
+                android:text="@string/dk_input_exchange_money2" />
+
+            <TextView
+                android:id="@+id/exchange_ratio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="12sp"         
+                android:textColor="@color/dk_gamesdk_orange"
+                android:text="@string/dk_ratio_kubi" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/exchange_edit_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/dk_editview_normal"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/exchange_amount"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@color/dk_gamesdk_white"
+                android:gravity="center_vertical"
+                android:numeric="integer"
+                android:maxLength="9"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/dk_color_d0d0d0" />
+
+            <TextView
+                android:id="@+id/exchange_editview_gamebi_uint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:text="@string/dk_youxibi"
+                android:textColor="@color/dk_gamesdk_black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/exchange_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/dk_gamesdk_orange_button_selector"
+            android:text="@string/dk_exchange"
+            android:textColor="@color/dk_gamesdk_yellow"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/dk_custom_service"
+            android:textColor="@color/dk_gamesdk_black"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/exchange_button_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dk_transparent"
+            android:text="@string/dk_custom_service_dialnum"
+            android:textColor="@color/dk_gamesdk_orange"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

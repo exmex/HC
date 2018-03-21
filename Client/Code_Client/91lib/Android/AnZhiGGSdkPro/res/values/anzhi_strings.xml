@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">安智用户中心</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">UserCenter</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="update">更新</string>
+    <string name="update_msg">发现新版本，是否更新?</string>
+    <string name="downloading">"正在下载"</string>
+    <string name="download_failed_msg">下载失败，请检查您的网络</string>
+    <string name="star_mo_jie">摩羯座</string>
+    <string name="star_shuiping">水瓶座</string>
+    <string name="star_shuangyu">双鱼座</string>
+    <string name="star_baiyang">白羊座</string>
+    <string name="star_jinniu">金牛座</string>
+    <string name="star_shuangzi">双子座</string>
+    <string name="star_juxie">巨蟹座</string>
+    <string name="star_shizi">狮子座</string>
+    <string name="star_chunv">处女座</string>
+    <string name="star_tianping">天平座</string>
+    <string name="star_tianxie">天蝎座</string>
+    <string name="star_sheshou">射手座</string>
+    <string name="title_safe">账号安全绑定</string>
+    <string name="title_currency">安智币</string>
+    <string name="title_bind_email">绑定邮箱</string>
+    <string name="title_bind_tel">绑定手机</string>
+    <string name="title_currency_history">充值记录</string>
+    <string name="title_consum_history">消费记录</string>
+    <string name="title_feedback">用户反馈</string>
+    <string name="title_findpwd">找回密码</string>
+    <string name="title_login">安智账号登录</string>
+    <string name="title_set_paypwd">设置支付密码</string>
+    <string name="title_clear_paypwd">清除支付密码</string>
+    <string name="title_register">注册</string>
+    <string name="title_unbind_email">解绑邮箱</string>
+    <string name="title_unbind_tel">解绑手机</string>
+    <string name="title_nick">呢称</string>
+    <string name="title_qq">QQ</string>
+    <string name="title_star">星座</string>
+    <string name="title_user_center">用户中心</string>
+    <string name="title_user_info">用户信息</string>
+    <string name="title_pay_center">安智支付中心</string>
+    <string name="open_camera">打开相机</string>
+    <string name="open_pic">打开相册</string>
+    <string name="header_dialog_title">请选择操作</string>
+    <string name="header_icon_size_error">上传头像不得超过3M</string>
+    <string name="title_official_login">游戏官方账号登录</string>
+    <!-- 登录 注册 -->
+    <string name="user_pwd_null">用户名或密码为空</string>
+    <string name="username_failed">您目前的网络不稳定，请稍候再试</string>
+    <string name="user_reg_success">注册成功</string>
+    <string name="user_logout_msg">是否要退出登录?</string>
+    <string name="user_email_null">请输入邮箱！</string>
+    <string name="user_email_error">邮箱格式不正确！</string>
+    <string name="user_name_error">账号长度为3-15位字符或数字！</string>
+    <string name="user_name_error1">账号不合法！</string>
+    <string name="user_anzhi_protocol_msg">您必须同意并遵守安智实诚协议，才能完成注册！</string>
+    <string name="user_pwd_error">密码为6~16位字母或数字!</string>
+    <string name="user_auth_code_txt">请输入6位验证码!</string>
+    <string name="user_pwd_is_null">密码不能为空!</string>
+    <string name="user_pwd_no_same">密码两次输入不一致!</string>
+    <string name="user_tel_txt">请输入手机号码!</string>
+    <string name="user_tel_error">您输入的手机号码有误！</string>
+    <string name="user_login_error">登录失败</string>
+    
+    
+    <!-- 绑定，解绑手机/邮箱 -->
+    <string name="bind_txt">立即绑定</string>
+    <string name="unbind_txt">解除绑定</string>
+    <string name="cannot_unbind_msg">当前账号已处于登陆状态，无法解绑！</string>
+    <string name="bind_safe_level1">高风险</string>
+    <string name="bind_safe_level2">有风险</string>
+    <string name="bind_safe_level3">安全</string>
+    <string name="get_authcode_txt">获取验证码 </string>
+    <string name="get_authcode_waiting_txt">"<xliff:g id="FILE">%s</xliff:g>秒重新获取 "</string>
+    
+    <!-- 设置支付密码 -->
+    <string name="has_setted">已设置</string>
+    <string name="no_has_setted">未设置</string>
+    
+    <!-- 支付 -->
+    <string name="pay_dialog_msg">您将使用手机支付</string>
+    
+    
+    <string name="register_reader"><u>我已经阅读并同意遵守安智市场协议</u></string>
+    <string name="register_treat_title">安智服务条款</string>
+    <string name="register_treat">""</string>
+    
+    <string name="anzhi_bind_phone">绑定手机：</string>
+    <string name="anzhi_bind_email">绑定邮箱：</string>
+    <string name="anzhi_three_youhui_tequan">三大优惠特权</string>
+    <string name="anzhi_bindphone_for_findpwd">绑定手机邮箱方便找回密码</string>
+    <string name="anzhi_precedence_get_giftbag">优先领取礼包</string>
+    <string name="anzhi_precedence_experience_hotgames">优先体验最热游戏</string>
+    <string name="anzhi_current_notbind_email">当前未绑定邮箱</string>
+    <string name="anzhi_current_notbind_phone">当前未绑定手机</string>
+    
+	<string name="anzhi_select_date_of_birth">请选择您的出生日期</string>
+	<string name="anzhi_modify_paypwd">修改支付密码</string>
+	<string name="anzhi_anzhicurrency_pay">安智币充值</string>
+	
+	<string name="anzhi_clearpwd_prompt">1.当您清除支付密码后，支付订单时，将无需输入支付密码"</string>
+	<string name="anzhi_forgetpwd_prompt">2.当您忘记支付密码时，可以通过清除支付密码后，再次设置支付密码</string>
+	<string name="anzhi_friendly_prompt">温馨提示</string>
+	<string name="anzhi_clear_atonce">立即清除</string>
+	<string name="anzhi_input_paypwd">请输入支付密码</string>
+	<string name="anzhi_confirm_paypwd">确认支付密码：</string>
+	<string name="anzhi_input_six_validatecode">请输入6位验证码</string>
+	<string name="anzhi_validatecode">验证码:</string>
+	<string name="anzhi_input_telnumber">请输入手机号码</string>
+	<string name="anzhi_telnumber">手机号:</string>
+	<string name="anzhi_validatephone_for_setuppaypwd">2.设置支付密码，需要先验证您的手机</string>
+	<string name="anzhi_setuppaypwd_prompt">1.设置支付密码后，每次支付时，都会提示您输入支付密码，确保您的支付安全</string>
+	<string name="anzhi_setup_atonce">立即设置</string>
+	<string name="anzhi_confirm_pwd">确认密码:</string>
+	<string name="anzhi_paypwd">支付密码:</string>
+	<string name="anzhi_friendlyprompt_one_withemail">1.请确认您的邮箱能够正常收到邮件</string>
+	<string name="anzhi_friendlyprompt_one_withphone">1.请确认您的手机能够正常收到短信</string>
+	<string name="anzhi_friendlyprompt_two">2.点击获取验证码，您将收到6位数字的验证码</string> 
+	<string name="anzhi_friendylyprompt_three">3.验证码一次有效，以最后接收的验证码为准</string> 
+	<string name="anzhi_save">保存</string> 
+	<string name="anzhi_inputpwd_again">请再次输入密码</string> 
+	<string name="anzhi_above_sixnumberorword">6位数以上的字母或数字</string> 
+	<string name="anzhi_newpwd">新密码:</string> 
+	<string name="anzhi_input_email">请输入邮箱</string> 
+	<string name="anzhi_email">邮箱:</string> 
+	<string name="anzhi_login_userotheraccount">使用其它账号登录</string> 
+	<string name="anzhi_login">登录</string> 
+	<string name="anzhi_sixtosixteen_wordornumber">6~16位字母或数字</string> 
+	<string name="anzhi_pwd">密码:</string> 
+	<string name="anzhi_usernameorteloremail">用户名/手机/邮箱</string> 
+	<string name="anzhi_account">账号:</string> 
+	<string name="anzhi_account_length">账号长度为3-15位字母或数字</string> 
+	<string name="anzhi_username">用户名:</string> 
+	<string name="anzhi_register_prompt">您可以输入字母/数字作为安智帐号，也可以使用系统为您默认分配的帐号。</string> 
+	<string name="anzhi_input_gameofficialaccount">请输入游戏官方账号</string> 
+	<string name="anzhi_registerbyphone">手机注册</string> 
+	<string name="anzhi_registerquickly">快速注册</string> 
+	<string name="anzhi_findbyemail">邮箱找回</string> 
+	<string name="anzhi_findbyphone">手机找回</string> 
+	<string name="anzhi_mobilephone">手机:</string> 
+	<string name="anzhi_loginout_account">退出账号</string> 
+	<string name="anzhi_safelevel">安全级别：</string> 
+	<string name="anzhi_account_safebind">账号安全绑定</string> 
+	<string name="anzhi_account_balance">余额：0安智币</string> 
+	<string name="anzhi_personaldata">个人资料</string> 
+	<string name="anzhi_mycollection">我的收藏</string> 
+	<string name="anzhi_bindemail_atonce">立即绑定邮箱</string> 
+	<string name="anzhi_bindphone_atonce">立即绑定手机</string> 
+	<string name="anzhi_notbindemail_perniciousness">您尚未绑定邮箱，忘记密码或账号不慎被盗时将无法通过邮箱找回密码</string> 
+	<string name="anzhi_notbindphone_perniciousness">您尚未绑定手机，忘记密码或账号不慎被盗时将无法通过手机找回密码</string> 
+	<string name="anzhi_highdanger">高风险</string> 
+	<string name="anzhi_account_safelevel">帐号安全级别：</string> 
+	<string name="anzhi_input_nickname">请输入昵称</string> 
+	<string name="anzhi_nickname">昵称:</string> 
+	<string name="anzhi_input_QQ">请输入QQ</string> 
+	<string name="anzhi_QQ">QQ:</string> 
+	<string name="anzhi_star">星座：</string> 
+	<string name="anzhi_birthday">生日：</string> 
+	<string name="anzhi_area">地区：</string> 
+	<string name="anzhi_sex">性别：</string> 
+	<string name="anzhi_headphoto">头像</string> 
+	<string name="anzhi_pageloadfailandback">页面加载失败,点击返回</string> 
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     style="@style/upomp_lthj_scrollview_big">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/upomp_lthj_layout_padding"
+    android:orientation="vertical" >
+    <LinearLayout style="@style/upomp_lthj_info_layout" android:orientation="vertical">
+       <com.unionpay.upomp.lthj.widget.LineFrameView 
+           android:layout_width="fill_parent" android:layout_height="wrap_content"
+           android:src="@drawable/upomp_lthj_user_icon"
+           android:hint="@string/upomp_lthj_username"
+           android:id="@id/upomp_lthj_username_view"
+           />
+       <ImageView style="@style/upomp_lthj_rowline"/>
+       <com.unionpay.upomp.lthj.widget.LineFrameView 
+           android:layout_width="fill_parent" android:layout_height="wrap_content"
+           android:src="@drawable/upomp_lthj_shield_icon"
+           android:hint="@string/upomp_lthj_welcome_word"
+           android:id="@id/upomp_lthj_welcome_view"
+           />
+       <ImageView style="@style/upomp_lthj_rowline"/>
+       <com.unionpay.upomp.lthj.widget.LineFrameView 
+           android:layout_width="fill_parent" android:layout_height="wrap_content"
+           android:src="@drawable/upomp_lthj_mobile_icon"
+           android:hint="@string/upomp_lthj_mobile"
+           android:id="@id/upomp_lthj_mobile_number_view"
+           />
+       <ImageView style="@style/upomp_lthj_rowline"/>
+       <com.unionpay.upomp.lthj.widget.LineFrameView 
+           android:layout_width="fill_parent" android:layout_height="wrap_content"
+           android:src="@drawable/upomp_lthj_card_icon"
+           android:hint="@string/upomp_lthj_bind_num"
+           android:id="@id/upomp_lthj_bind_number_view"
+           />
+    </LinearLayout>
+   	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" >
+
+   		<Button style="@style/upomp_lthj_button_light_blue" android:id="@id/upomp_lthj_button_change_pwd"
+   		    android:layout_weight="1.0" android:layout_marginRight="10dip" android:text="@string/upomp_lthj_change_pwd"/>
+    	<Button style="@style/upomp_lthj_button_light_blue" android:id="@id/upomp_lthj_button_change_mobile"
+    	     android:layout_weight="1.0" android:layout_marginLeft="10dip" android:text="@string/upomp_lthj_change_mobile"/>
+    </LinearLayout>
+    <Button style="@style/upomp_lthj_button_light_blue" android:id="@id/upomp_lthj_button_bankcard_manage"
+    	     android:text="@string/upomp_lthj_backcard_manage"/>
+</LinearLayout>
+</ScrollView>

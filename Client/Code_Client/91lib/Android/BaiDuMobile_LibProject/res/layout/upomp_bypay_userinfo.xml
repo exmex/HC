@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/rl_uerinfo" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:orientation="vertical"
+	android:layout_marginLeft="5dip"  android:layout_marginRight="5dip">
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_marginLeft="5dip"  >
+		<TextView android:id="@+id/tv_userinfo" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:gravity="left|center_vertical"
+			android:textColor="@android:color/primary_text_dark" android:textSize="15sp" />
+	</ScrollView>
+</RelativeLayout>

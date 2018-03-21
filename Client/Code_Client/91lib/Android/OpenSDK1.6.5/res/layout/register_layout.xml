@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/view_layout_width"
+    android:layout_height="@dimen/view_layout_height"
+    android:layout_gravity="center"
+    android:background="@drawable/regist_background"
+    android:orientation="vertical">
+    
+    <include 
+        android:id="@+id/keke_account_title"
+        layout="@layout/keke_title_area"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:background="@android:color/transparent"
+    	android:id="@+id/regist_layout_root"
+    	android:orientation="vertical"
+    	android:visibility="visible">
+
+    <RelativeLayout 
+        android:id="@+id/account_type_root"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/regist_type_height">
+        
+         <LinearLayout
+        	android:id="@+id/linearLayout1"
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:baselineAligned="false"
+        	android:gravity="center_vertical">
+        
+        	<RelativeLayout 
+            	android:id="@+id/usr_name_reg_type"
+            	android:layout_width="fill_parent"
+            	android:layout_height="fill_parent"
+            	android:layout_weight="1.0">
+            
+            	<TextView
+            		android:id="@+id/usr_name_reg"
+            		android:layout_width="fill_parent"
+            		android:layout_height="fill_parent"
+            		android:gravity="center"
+            		android:text="@string/regist_with_usr_name"
+            		android:textColor="#494949"
+            		android:textSize="@dimen/px50_text_size" />
+        		<ImageView 
+            		android:id="@+id/usr_name_reg_hint_line"
+            		android:layout_width="@dimen/regist_type_select_line_len"
+            		android:layout_height="wrap_content"
+            		android:layout_alignParentBottom="true"
+                	android:layout_centerHorizontal="true"
+                	android:contentDescription="@null"
+                	android:scaleType="fitXY"
+                	android:background="@drawable/keke_selected_green_line"/>
+        	</RelativeLayout>
+        
+        	<RelativeLayout 
+            	android:id="@+id/phone_num_reg_type"
+            	android:layout_width="match_parent"
+            	android:layout_height="match_parent"
+            	android:layout_weight="1.0">
+            
+            	<TextView
+            		android:id="@+id/phone_num_reg"
+            		android:layout_width="match_parent"
+            		android:layout_height="match_parent"
+            		android:gravity="center"
+            		android:text="@string/regist_with_phone"
+            		android:textColor="#494949"
+            		android:textSize="@dimen/px50_text_size" />
+        		<ImageView 
+            		android:id="@+id/phone_num_reg_hint_line"
+            		android:layout_width="@dimen/regist_type_select_line_len"
+            		android:layout_height="wrap_content"
+            		android:layout_alignParentBottom="true"
+                	android:layout_centerHorizontal="true"
+                	android:contentDescription="@null"
+                	android:scaleType="fitXY"
+                	android:background="@drawable/keke_selected_green_line"
+                	android:visibility="invisible"/>
+        	</RelativeLayout>
+  
+    </LinearLayout>
+         <ImageView 
+        android:id="@+id/regist_type_under_line"
+        android:layout_width="@dimen/regist_divide_line_len"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@null"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/keke_green_line"/>
+        
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vPager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:background="@android:color/transparent"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+    </LinearLayout>
+    
+    
+    <!-- fengexian -->
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:background="@android:color/transparent"
+    	android:orientation="vertical" 
+    	android:id="@+id/success_hint_root"
+    	android:visibility="gone">
+        
+         <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <RelativeLayout
+            android:id="@+id/success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_successfully_text_margin_top"
+            android:layout_centerHorizontal="true" >
+
+            <ImageView
+                android:id="@+id/success_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/success_hint" />
+
+            <TextView
+                android:id="@+id/regist_success"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:layout_toRightOf="@id/success_hint"
+                android:text="@string/regist_success"
+                android:textColor="#494949"
+                android:textSize="@dimen/px70_text_size" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/remember_ur_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/success"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/remember_keke_account_text_margin_top"
+            android:text="@string/resigt_success_hint"
+            android:textColor="#494949"
+            android:textSize="@dimen/px45_text_size" />
+
+        <TextView
+            android:id="@+id/keke_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/remember_ur_account"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/keke_name_margin_top"
+            android:text="@string/nmgc_kebi_account_pre"
+            android:textColor="#494949"
+            android:textSize="@dimen/px50_text_size" />
+
+        <Button
+            android:id="@+id/start_game"
+            android:layout_width="@dimen/login_btn_width"
+            android:layout_height="@dimen/login_btn_height"
+            android:layout_below="@id/keke_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/login_successfully_text_margin_top"
+            android:background="@drawable/keke_regist_btn_selector"
+            android:text="@string/start_game"
+            android:textColor="#f7f7f7"
+            
+            android:textSize="@dimen/px50_text_size" />
+
+    </RelativeLayout>
+        
+    </LinearLayout>
+    
+</LinearLayout>

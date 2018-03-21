@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_background_color"
+    android:scrollbars="none" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/reg_auto_info_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/sogou_reg_express_body_info" />
+
+        <RelativeLayout
+            android:id="@+id/line_forget_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_auto_info_tv"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/regist_express_agree_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/select_press"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <TextView
+                    android:id="@+id/regist_express_agree_text"
+                    style="@style/main_font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dip"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="@string/agree"
+                    android:textSize="17sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/line_regist_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_forget_password"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/reg_express_submit_btn"
+                style="@style/button_font"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="35dip"
+                android:layout_marginTop="18dip"
+                android:background="@drawable/button_red_press"
+                android:text="@string/login_btn_label" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="txt_white">#FFFFFF</color>
+    <color name="txt_black">#000000</color>
+    
+   	<!--帐户管理-->
+   	<color name="gamehall_account_label">#000</color>
+   	
+   	<color name="gamehall_account_register_nor">#5fb200</color>
+   	<color name="gamehall_account_register_sel">#7fcc1f</color>
+   	
+   	<color name="gamehall_account_reset_nor">#808080</color>
+   	<color name="gamehall_account_reset_sel">#b3b3b3</color>
+   	
+   	<!-- 登录中 -->
+   	<color name="gamehall_account_loading_label">#808080</color>
+   	<color name="gamehall_account_loading_username">#7fcc1f</color>
+   	
+   	<!-- 登录-验证码 -->
+   	<color name="gamehall_login_verify_label">#808080</color>
+   	<color name="gamehall_login_verify_reget_nor">#808080</color>
+   	<color name="gamehall_login_verify_reget_sel">#b3b3b3</color>
+   	
+   	<!-- 注册 -->
+   	<color name="gamehall_register_tab_nor">#808080</color>
+   	<color name="gamehall_register_tab_sel">#4c9f02</color>
+   	
+   	<color name="gamehall_register_error_title">#f2f2f2</color>
+   	<color name="gamehall_register_error_split">#c7c7c7</color>
+   	
+   	<color name="gamehall_register_error_info">#df2029</color>
+   	<color name="gamehall_register_error_bg">#cccccc</color>
+   	
+   	<!-- 活动列表-开始时间 -->
+   	<color name="gamehall_common_desc">#999999</color>
+   	
+   	<color name="gamehall_network_error">#7E7E7E</color>
+   	
+</resources>

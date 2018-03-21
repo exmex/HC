@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_result_id"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ebpay_result_bg"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <RelativeLayout
+        android:id="@+id/pay_result_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/pay_result"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:paddingLeft="@dimen/ebpay_line_margin_10"
+            android:textColor="@color/ebpay_white"
+            android:textSize="@dimen/ebpay_text_size_20" />
+
+        <ImageView
+            android:id="@+id/wait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/pay_result"
+            android:contentDescription="@string/ebpay_img"
+            android:scaleType="fitCenter"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/remind_area"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ebpay_line_margin_15"
+                android:background="@color/ebpay_white"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/remind"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ECEAEA"
+                    android:padding="10dp"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/ebpay_text_size_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/ebpay_line_margin_10"
+                android:background="@color/ebpay_white"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:id="@+id/error_warn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ECEAEA"
+                    android:padding="10dp"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/ebpay_text_size_15" />
+
+                <TableLayout
+                    android:id="@+id/order_table"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ECEAEA"
+                    android:padding="10dp" >
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/goods_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".3"
+                            android:text="@string/ebpay_goods_name"
+                            android:textColor="#333333"
+                            android:textSize="@dimen/ebpay_text_size_15" />
+
+                        <com.baidu.android.pay.view.MarqueeTextView
+                            android:id="@+id/goods"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".7"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:singleLine="true"
+                            android:textColor="#333333"
+                            android:textSize="@dimen/ebpay_text_size_15" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/company_name_row"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/company_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".3"
+                            android:text="@string/ebpay_sp_name"
+                            android:textColor="#333333"
+                            android:textSize="@dimen/ebpay_text_size_15" />
+
+                        <com.baidu.android.pay.view.MarqueeTextView
+                            android:id="@+id/company"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".7"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:singleLine="true"
+                            android:textColor="#333333"
+                            android:textSize="@dimen/ebpay_text_size_15" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/order_no_row"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/order_no"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".3"
+                            android:text="@string/ebpay_order_no"
+                            android:textColor="#333333"
+                            android:textSize="@dimen/ebpay_text_size_15" />
+
+                        <com.baidu.android.pay.view.MarqueeTextView
+                            android:id="@+id/order"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".7"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:singleLine="true"
+                            android:textColor="#333333"
+                            android:textSize="@dimen/ebpay_text_size_15" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/price_tip"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".3"
+                            android:text="@string/ebpay_price_tip"
+                            android:textColor="#333333"
+                            android:textSize="@dimen/ebpay_text_size_15" />
+
+                        <com.baidu.android.pay.view.MarqueeTextView
+                            android:id="@+id/price"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".7"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:singleLine="true"
+                            android:textColor="#333333"
+                            android:textSize="@dimen/ebpay_text_size_15" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/ebpay_shape_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" >
+
+                <Button
+                    android:id="@+id/pay_success_bt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ebpay_bg_back_shell"
+                    android:text="@string/ebpay_back_seller"
+                    android:textColor="@color/ebpay_black"
+                    android:textSize="@dimen/ebpay_text_size_15" />
+
+                <Button
+                    android:id="@+id/select_paytype_bt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ebpay_bg_focus_left"
+                    android:text="@string/ebpay_select_pay_type"
+                    android:textColor="@color/ebpay_black"
+                    android:textSize="@dimen/ebpay_text_size_15" />
+                <Button
+                    android:id="@+id/repay_bt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ebpay_bg_focus_right"
+                    android:text="@string/ebpay_repay_lable"
+                    android:textColor="@color/ebpay_black"
+                    android:textSize="@dimen/ebpay_text_size_15" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

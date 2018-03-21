@@ -1,0 +1,52 @@
+ 需要在您的游戏工程AndroidManifest.xml文件的相应位置加入如下配置：
+
+  1. 在<manifest></manifest>里面加入相关权限：
+       
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.SEND_SMS"/>
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+	<uses-permission android:name="android.permission.CALL_PHONE" />   
+        <uses-permission android:name="android.permission.GET_TASKS" />
+        <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+      
+   2. 在<application></application>里面加入相关的activity,service和receiver:
+      
+	  <activity android:name="com.nd.commplatform.activity.SNSControlCenterActivity"
+			android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:windowSoftInputMode="adjustPan"
+			android:windowBackground="@null"
+			android:launchMode="singleTask"/>
+
+	  <activity android:name="com.nd.commplatform.activity.SNSLoginActivity"
+		        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:windowSoftInputMode="adjustPan"
+			android:windowBackground="@null"
+			android:launchMode="singleTask"/>
+		 
+          <activity android:name="com.nd.commplatform.activity.SNSAppPromotionActivity"
+		        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+			android:windowSoftInputMode="adjustPan"
+                        android:theme="@android:style/Theme.NoTitleBar"
+			android:windowBackground="@null"/>	
+			
+		
+	  <service  android:name="com.nd.commplatform.service.NdDownloadService"
+		        android:process=":com.nd.commplatform.download"
+		        android:enabled="true"
+                        android:exported="false"/>
+
+	  <receiver android:name="com.nd.commplatform.versionupdate.ND2VersionUpdateNotify"
+			android:process="android.intent.nd.sns.commplatform.versionupdate"                                               android:exported="false"/>
+
+	  <service android:name="com.nd.commplatform.versionupdate.ND2VersionUpdateService"
+			android:process="android.intent.nd.sns.commplatform.versionupdate"                                               android:exported="false"/>
+			
+	  <service  android:name="com.nd.commplatform.service.NdNewMessageNotification"
+		        android:enabled="true"
+                        android:exported="false"/>

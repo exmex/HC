@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/com_lenovo_lsf_title" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:clickable="true"
+            android:background="#00000000"
+            android:src="@drawable/com_lenovo_lsf_title_back" />
+        
+        <!-- 加入第三方用户名显示 -->
+        <TextView
+            android:id="@+id/title_appname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:clickable="true"
+            android:textSize="20sp" 
+            android:visibility="gone"/>
+        <!-- 加入第三方用户名显示分割线 -->
+        <ImageButton
+            android:id="@+id/appname_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="3dp"
+            android:clickable="true"
+            android:background="#00000000"
+            android:src="@drawable/com_lenovo_lsf_title_line" 
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/com_lenovo_lsf_ui_name"
+            android:textColor="#ffffff"
+            android:clickable="true"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/title_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="18dp"
+        android:adjustViewBounds="true"
+        android:background="#00000000"
+        android:visibility="gone"
+        android:src="@drawable/com_lenovo_lsf_title_setting" />
+
+</RelativeLayout>

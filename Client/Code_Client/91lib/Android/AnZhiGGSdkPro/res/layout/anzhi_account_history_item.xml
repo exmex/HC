@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="@drawable/anzhi_select_item"
+    >
+
+    <TextView
+        android:id="@+id/tv_user_account"
+        android:layout_width="wrap_content"
+        android:layout_height="60dip"
+        android:paddingLeft="10dip"
+        android:textColor="@android:color/black"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/font_18"
+        android:text="anzhi009"
+        android:layout_weight="1"
+/>
+    <ImageButton
+        android:id="@+id/ib_account_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/anzhi_delete" 
+        android:layout_marginRight="10dip"/>
+
+</LinearLayout>
+

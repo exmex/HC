@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/rl_loading_dialog" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" android:orientation="vertical">
+	<RelativeLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_loading_bg"
+		>
+		<RelativeLayout android:id="@+id/rl_image_dialog"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true" android:layout_marginTop="15dip">
+			<ImageView android:id="@+id/iv_loading_dialog"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:background="@drawable/upomp_bypay_loading_dialog" />
+		</RelativeLayout>
+		<RelativeLayout android:id="@+id/rl_progress_dialog"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_below="@+id/rl_image_dialog" android:layout_marginTop="30dip"
+			android:layout_centerHorizontal="true">
+			<ProgressBar android:id="@+id/p_loading_dialog"
+				android:layout_width="30dip" android:layout_height="30dip"
+				android:indeterminateDrawable="@drawable/upomp_bypay_progress"
+				android:layout_centerVertical="true" />
+			<TextView android:id="@+id/tv_loading_dialog"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/p_loading_dialog"
+				android:layout_centerVertical="true" android:layout_marginLeft="15dip"
+				android:textSize="15sp" android:text="@string/text6" android:textColor="#000000"
+				style="@android:style/TextAppearance" />
+		</RelativeLayout>
+		<RelativeLayout android:layout_below="@+id/rl_progress_dialog"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_marginTop="10dip" android:layout_centerHorizontal="true" >
+			<Button android:id="@+id/btn_loading_dialog"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:background="@drawable/upomp_bypay_btn_esc" android:text="@string/upomp_bypay_cancel"
+				android:textColor="#ffffff" android:textSize="20dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+
+		</RelativeLayout>
+	</RelativeLayout>
+</RelativeLayout>

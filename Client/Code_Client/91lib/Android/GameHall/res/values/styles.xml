@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="@android:style/Theme.Light"></style>
+
+    <style name="AppDialog" parent="@android:style/Theme.Dialog"></style>
+    <!-- 主界面底部菜单 -->
+    <style name="main_tab_bottom">
+        <item name="android:textSize">@dimen/bottom_tab_font_size</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:background">@drawable/gamehall_tab_item_nor_bg</item>
+        <item name="android:paddingTop">@dimen/top_tab_padding_up</item>
+        <item name="android:paddingBottom">@dimen/bottom_tab_padding_up</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">@dimen/bottom_tab_padding_drawable</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="main_tab_top">
+        <item name="android:textSize">15dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="main_tab_bottom_one" parent="@style/main_tab_bottom">
+        <item name="android:background">@drawable/gamehall_tab_item_one_bg</item>
+    </style>
+
+    <style name="main_tab_bottom_four" parent="@style/main_tab_bottom">
+        <item name="android:background">@drawable/gamehall_tab_item_four_bg</item>
+    </style>
+
+    <!-- tab滑屏导航 -->
+    <style name="PagerTitleStrip">
+        <item name="android:textAppearance">@style/PagerTitleStripTextAppearance</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:background">@drawable/gamehall_tab_bg</item>
+    </style>
+
+    <style name="PagerTitleStripTextAppearance">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="Dialog" parent="@style/AppDialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="DialogText">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="DialogText.Title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- 主页按钮 -->
+    <style name="HomeButton">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">20dp</item>
+    </style>
+
+    <!-- Title 返回按钮样式 -->
+    <style name="title_back_btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/gamehall_title_back_btn</item>
+    </style>
+
+    <!-- Title 通用按钮样式 -->
+    <style name="title_common_btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/gamehall_button1_selector1</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">#CACACA</item>
+    </style>
+    <!--  -->
+    <style name="install_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/gamehall_button2_selector1</item>
+        <item name="android:paddingBottom">12dip</item>
+        <item name="android:paddingTop">12dip</item>
+        <item name="android:paddingRight">24dip</item>
+        <item name="android:paddingLeft">24dip</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/txt_white</item>
+    </style>
+
+    <!-- Title 通用文本样式 -->
+    <style name="title_common_text">
+        <item name="android:layout_width">100dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@drawable/gamehall_common_title_selector</item>
+    </style>
+
+    <!-- Title 设置按钮样式 -->
+    <style name="title_setting_btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="gamehall_common_dialog" parent="@style/AppDialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/gamehall_window_small</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="gamehall_account_dialog" parent="@style/AppDialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@drawable/gamehall_login_bg</item>
+    </style>
+</resources>

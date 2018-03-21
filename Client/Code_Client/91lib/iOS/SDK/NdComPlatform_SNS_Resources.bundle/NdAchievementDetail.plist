@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NdCtrls</key>
+	<dict>
+		<key>imgHead</key>
+		<dict>
+			<key>type</key>
+			<string>imageView</string>
+			<key>cornerRadius</key>
+			<string>8</string>
+			<key>rect</key>
+			<string>{{10,15},{55,55}}</string>
+		</dict>
+		<key>labelName</key>
+		<dict>
+			<key>type</key>
+			<string>label</string>
+			<key>fontSize</key>
+			<string>18</string>
+			<key>autoResizeFlag</key>
+			<string>1,2,4,8</string>
+			<key>rect</key>
+			<string>{{75,15},{0,25}}</string>
+			<key>bottomRightMargin</key>
+			<string>{10,0}</string>
+		</dict>
+		<key>labelTip</key>
+		<dict>
+			<key>type</key>
+			<string>label</string>
+			<key>fontSize</key>
+			<string>16</string>
+			<key>autoResizeFlag</key>
+			<string>1,2,4,8</string>
+			<key>rect</key>
+			<string>{{75,45},{0,35}}</string>
+			<key>bottomRightMargin</key>
+			<string>{10,0}</string>
+		</dict>
+	</dict>
+	<key>NdExtent</key>
+	<dict>
+		<key>heightDependOrder</key>
+		<string>labelName,labelTip</string>
+	</dict>
+	<key>NdView</key>
+	<dict>
+		<key>rect</key>
+		<string>{{0,0},{320,88}}</string>
+	</dict>
+</dict>
+</plist>

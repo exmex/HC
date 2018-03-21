@@ -1,0 +1,7 @@
+
+class CCTouchDispatcher : public CCObject
+{
+    bool isDispatchEvents(void);
+    void setDispatchEvents(bool bDispatchEvents);
+	CCTouchHandler* findHandler(CCTouchDelegate *pDelegate);
+};

@@ -1,0 +1,30 @@
+class CCHTMLLabel : public CCNode
+{
+public:
+	static CCHTMLLabel* create();
+	static CCHTMLLabel* createWithString(const char* utf8_str, const CCSize& preferred_size, const char* font_alias = DFONT_DEFAULT_FONTALIAS);
+	bool initWithString(const char* utf8_str, const CCSize& preferred_size, const char* font_alias = DFONT_DEFAULT_FONTALIAS);
+
+	// from CCLabelProtocol
+	virtual void setString(const char *utf8_str);
+	virtual const char* getString(void);
+
+	// append string, faster if you only add additional string to tail
+	virtual void appendString(const char *utf8_str);
+
+	// from CCLayer
+	virtual void draw();
+
+	void registerListener(void* target, IRichEventHandler* listener);
+	void removeListener(void* target);
+
+	void registerLuaClickListener(LUA_FUNCTION click_handle);
+
+	void registerLuaMovedListener(LUA_FUNCTION moved_handle);
+	
+	void removeLuaListener(LUA_FUNCTION handle);
+
+
+	CCHTMLLabel();
+	virtual ~CCHTMLLabel();
+};

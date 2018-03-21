@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">賽亞人工作室</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    
+    
+	<string name="activity_remote_service_binding">AppDemo4</string>
+	<string name="remote_call_failed">Failure calling remote service</string>
+       
+	<string name="partnerHint">"partner"</string>
+	<string name="sellerHint">"seller"</string>
+	<string name="out_trade_noHint">"out_trade_no"</string>
+	<string name="subjectHint">"subject"</string>
+	<string name="bodyHint">"body"</string>
+	<string name="total_feeHint">"total_fee"</string>
+	<string name="notify_urlHint">"notify_url"</string>
+	<string name="charsetHint">"charset"</string>
+	<string name="signTypeHint">"signType"</string>
+	
+	<string name="confirm_install_hint">"安裝提示"</string>	
+	<string name="confirm_install">"為保障您的交易安全，請安裝支付寶安全支付服務才能進行付款。\n\n點擊確定，立刻安裝。"</string>
+	<string name="ensure">"確定"</string>
+	<string name="cancel">"取消"</string>
+	<string name="check_sign_failed">您的訂單訊息遭到非法竄改</string> 
+	
+	
+	 <string-array name="control" >  
+        <item>通行證管理</item>  
+        <item>遊戲官網</item>  
+        <item>切換用戶</item>  
+    </string-array>  
+	
+	<!-- FB -->
+	<string name="app_id">303786869771101</string>
+	
+	<!-- 有爱字符 -->
+	<string name="title_top">賽亞人工作室社區</string>
+	<string name="title_youai">賽亞人工作室</string>
+	<string name="title_webviwe">賽亞人工作室</string>
+	<string name="title_back">返回</string>
+	<string name="title_login">登 入</string>
+	<string name="title_ok">完成</string>
+    <string name="title_change_pass">修改密碼</string>
+    <string name="nowpass">原密碼:</string>
+    <string name="newpass">新密碼:</string>
+    <string name="inputold">輸入原密碼</string>
+    <string name="inputnew">輸入舊密碼</string>
+    <string name="change_pass">修改密碼</string>
+    <string name="title_man">帳號中心</string>
+    <string name="sub_title_userman">通行證管理</string>
+	<string name="sub_title_bbs">遊戲官網</string>
+	<string name="sub_title_logout">註銷</string>
+	<string name="select_pay">選擇儲值方式</string>
+	<string name="payali">快捷支付</string>
+	<string name="paytencent">財付通</string>
+	<string name="payyinlian">儲值卡</string>
+	<string name="title_register">註冊</string>
+	<string name="regist_name">帳 號：</string>
+	<string name="regist_pass">密 碼：</string>
+	<string name="regist_email">E-Mail：</string>
+	<string name="regist_tv">您可以輸入電子信箱、字母/數字做為通行證帳號，\n也可以使用系統為您預設分配的帳號</string>
+	<string name="user_delete">刪除</string>
+	<string name="user_loined">本機已登入賬號</string>
+	<string name="startgame">啓動遊戲</string>
+	
+	<string name="user_account">賬 號：</string>
+	<string name="user_password">密 碼：</string>
+	<string name="logout">註銷</string>
+	<string name="user_other_login">其他用戶登入</string>
+	<string name="user_forgetpass">忘記密碼</string>
+	<string name="user_findpass">點擊這裏找回</string>
+	<string name="close">關閉</string>
+	<string name="user_other_account">您現在正在使用第三方帳號登入，我們給您提供了一個帳號。點擊修改密碼可修改帳號密碼，方便您下次使用帳號進行登入</string>
+	<string name="user_rebang">註冊綁定</string>
+	<string name="user_bang">綁定</string>
+	<string name="pay_web">網銀支付</string>
+	<string name="pay_chongcard">充值卡</string>
+	<string name="use_protocol">使用條款</string>
+	<string name="rightbtn">右按鈕</string>
+	<string name="choosewrite">選填</string>
+	<string name="user_email">郵 箱 ：</string>
+	<string name="registerpass">密 碼：</string>
+	<string name="writelimit">6-12个字母或數字</string>
+	<string name="payuser">充值賬號</string>
+	<string name="payproduct">訂購商品</string>
+	<string name="payprice">充值金額</string>
+	<string name="paygame">充值遊戲</string>
+	<string name="paything">訂購商品</string>
+	<string name="payprompt">温馨提示：1元人民币对应10钻石</string>
+	<string name="custom_phone">客服热线</string>
+	<string name="custom_time">服务时间：10:00-22:00</string>
+	<string name="youaiweb">官方网站：https://www.facebook.com/NCDragon</string>
+	<string name="userreadpro">我已经阅读并统一遵守超級七龍珠服务器条款</string>
+	<string name="findpasschoose">選填 找回密碼</string>
+</resources>

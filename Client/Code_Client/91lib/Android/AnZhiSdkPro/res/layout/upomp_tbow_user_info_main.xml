@@ -1,0 +1,974 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_user_info_main"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/anzhi_c00000000" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/user_main"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/layout_user_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible" >
+
+                <RelativeLayout
+                    android:id="@+id/layout_tv_welcome_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/upomp_tbow_user_title_bg1"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/tv_welcome_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:gravity="left"
+                        android:text="@string/yl_sdsd"
+                        android:textColor="@color/anzhi_cFFFF0000"
+                        android:textSize="15.0sp" >
+                    </TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_tv_welcome_text"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/img_exclamation_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:background="@drawable/upomp_tbow_user_title_icon" >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/tv_tip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15.0dip"
+                        android:layout_toRightOf="@+id/img_exclamation_point"
+                        android:text="@string/yl_long_text1"
+                        android:textColor="@color/anzhi_cFF000000" >
+                    </TextView>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!-- 3个标题头 ：我的信息，修改密码，更改手机号码 -->
+
+            <LinearLayout
+                android:id="@+id/tbow_info_title_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_user_info"
+                android:layout_marginTop="0.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_title_myinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/upomp_tbow_btn_sub1"
+                    android:text="@string/yl_my_info"
+                    android:textColor="@color/anzhi_cFFFFFFFF"
+                    android:textSize="14.0sp" >
+                </Button>
+
+                <Button
+                    android:id="@+id/btn_title_changepass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/upomp_tbow_btn_sub2"
+                    android:text="@string/yl_change_psw"
+                    android:textColor="@color/anzhi_cFFFFFFFF"
+                    android:textSize="14.0sp" >
+                </Button>
+
+                <Button
+                    android:id="@+id/btn_title_change_phone_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/upomp_tbow_btn_sub3"
+                    android:text="@string/yl_change_tel_num"
+                    android:textColor="@color/anzhi_cFFFFFFFF"
+                    android:textSize="14.0sp" >
+                </Button>
+            </LinearLayout>
+
+            <!-- 个人信息 -->
+
+            <RelativeLayout
+                android:id="@+id/layout_userinfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tbow_info_title_btn"
+                android:visibility="visible" >
+
+                <RelativeLayout
+                    android:id="@+id/layout_user"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_marginTop="3.0dip"
+                    android:background="@drawable/upomp_tbow_card_info_title" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40.0dip"
+                        android:layout_marginLeft="10.0dip"
+                        android:gravity="center"
+                        android:text="@string/yl_private_info"
+                        android:textColor="@color/anzhi_cFFFFFFFF"
+                        android:textSize="20.0sp" >
+                    </TextView>
+                </RelativeLayout>
+                <!-- 显示用户账户名，号码和邮箱的部分 -->
+
+                <RelativeLayout
+                    android:id="@+id/layout_user_info_shown"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_userinfo"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@drawable/upomp_tbow_card_info_bg" >
+
+                    <RelativeLayout
+                        android:id="@+id/layout_in_userinfo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3.0dip" >
+
+                        <RelativeLayout
+                            android:id="@+id/layout_tv_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true" >
+
+                            <TextView
+                                android:id="@+id/tv_username"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10.0dip"
+                                android:text="@string/yl_user_info"
+                                android:textColor="@color/anzhi_cFF000000"
+                                android:textSize="15.0sp" >
+                            </TextView>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layout_tv_real_username"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginRight="5.0dip"
+                            android:layout_toRightOf="@+id/layout_tv_username" >
+
+                            <TextView
+                                android:id="@+id/tv_real_username"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/anzhi_cFF000000"
+                                android:textSize="15.0sp" >
+                            </TextView>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_phonenum"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layout_in_userinfo"
+                        android:layout_marginTop="3.0dip" >
+
+                        <RelativeLayout
+                            android:id="@+id/layout_tv_phonenum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true" >
+
+                            <TextView
+                                android:id="@+id/tv_phonenum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10.0dip"
+                                android:text="@string/yl_tel_num"
+                                android:textColor="@color/anzhi_cFF000000"
+                                android:textSize="15.0sp" >
+                            </TextView>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layout_tv_real_phonenum"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginRight="5.0dip"
+                            android:layout_toRightOf="@+id/layout_tv_phonenum" >
+
+                            <TextView
+                                android:id="@+id/tv_real_phonenum"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/anzhi_cFFFF0000"
+                                android:textSize="15.0sp" >
+                            </TextView>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_mail"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layout_phonenum"
+                        android:layout_marginTop="3.0dip" >
+
+                        <RelativeLayout
+                            android:id="@+id/layout_tv_mail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true" >
+
+                            <TextView
+                                android:id="@+id/tv_mail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10.0dip"
+                                android:text="@string/yl_mail_adress"
+                                android:textColor="@color/anzhi_cFF000000"
+                                android:textSize="15.0sp" >
+                            </TextView>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layout_tv_real_mail"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginRight="5.0dip"
+                            android:layout_toRightOf="@+id/layout_tv_mail" >
+
+                            <TextView
+                                android:id="@+id/tv_real_mail"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/anzhi_cFF000000"
+                                android:textSize="15.0sp" >
+                            </TextView>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <!-- 用户信息背景最下面的图片 -->
+
+                <RelativeLayout
+                    android:id="@+id/layout_bot_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_user_info_shown"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@drawable/upomp_tbow_card_info_bot" >
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!-- 修改密码界面 -->
+
+            <RelativeLayout
+                android:id="@+id/layout_userchangepass"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tbow_info_title_btn"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:id="@+id/layout_oldpass"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_user_info"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_marginTop="3.0dip"
+                    android:background="@drawable/upomp_tbow_checkbox" >
+
+                    <RelativeLayout
+                        android:id="@+id/layout_tv_oldpass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true" >
+
+                        <TextView
+                            android:id="@+id/tv_oldpass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0dip"
+                            android:gravity="center"
+                            android:text="@string/yl_old_psw"
+                            android:textColor="@color/anzhi_cFF000000"
+                            android:textSize="15.0sp" >
+                        </TextView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_btn_oldpass"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_toRightOf="@+id/layout_tv_oldpass"
+                         >
+
+                        <Button
+                            android:id="@+id/btn_oldpass"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40.0dip"
+                            android:background="@color/anzhi_c00000000"
+                            android:gravity="left|center_vertical"
+                            android:hint="@string/yl_old_psw1"
+                            android:textColor="@color/anzhi_cFF000000" >
+                        </Button>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_newpass"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_oldpass"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_marginTop="3.0dip"
+                    android:background="@drawable/upomp_tbow_checkbox" >
+
+                    <RelativeLayout
+                        android:id="@+id/layout_tv_newpass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true" >
+
+                        <TextView
+                            android:id="@+id/tv_newpass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40.0dip"
+                            android:layout_marginLeft="10.0dip"
+                            android:gravity="center"
+                            android:text="@string/yl_new_psw2"
+                            android:textColor="@color/anzhi_cFF000000"
+                            android:textSize="15.0sp" >
+                        </TextView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_btn_newpass"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_toRightOf="@+id/layout_tv_newpass" >
+
+                        <Button
+                            android:id="@+id/btn_newpass"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40.0dip"
+                            android:background="@color/anzhi_c00000000"
+                            android:gravity="left|center_vertical"
+                            android:hint="@string/yl_6_chars"
+                            android:textColor="@color/anzhi_cFF000000" >
+                        </Button>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layou_newpass_again"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_newpass"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_marginTop="3.0dip"
+                    android:background="@drawable/upomp_tbow_checkbox" >
+
+                    <RelativeLayout
+                        android:id="@+id/layou_tv_newpass_again"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true" >
+
+                        <TextView
+                            android:id="@+id/tv_newpass_again"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40.0dip"
+                            android:layout_marginLeft="10.0dip"
+                            android:gravity="center"
+                            android:text="@string/yl_queren_new_psw"
+                            android:textColor="@color/anzhi_cFF000000"
+                            android:textSize="15.0sp" >
+                        </TextView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layou_btn_newpass_again"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_toRightOf="@+id/layou_tv_newpass_again" >
+
+                        <Button
+                            android:id="@+id/btn_newpass_again"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40.0dip"
+                            android:background="@color/anzhi_c00000000"
+                            android:gravity="left|center_vertical"
+                            android:layout_centerVertical="true"
+                            android:hint="@string/yl_6_12_char"
+                            android:textColor="@color/anzhi_cFF000000" >
+                        </Button>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layou_phonenum_changepass"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layou_newpass_again"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_marginTop="3.0dip"
+                    android:background="@drawable/upomp_tbow_checkbox" >
+
+                    <RelativeLayout
+                        android:id="@+id/layou_tv_phonenum_changepass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true" >
+
+                        <TextView
+                            android:id="@+id/tv_phonenum_changepass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40.0dip"
+                            android:layout_marginLeft="10.0dip"
+                            android:gravity="center"
+                            android:text="@string/yl_new_tel_num"
+                            android:textColor="@color/anzhi_cFF000000"
+                            android:textSize="15.0sp" >
+                        </TextView>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+                    
+                    
+                <RelativeLayout
+                    android:id="@+id/layout_shortmessage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layou_phonenum_changepass"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_marginTop="3.0dip"
+                    android:background="@drawable/upomp_tbow_checkbox" >
+
+                    <RelativeLayout
+                        android:id="@+id/layout_tv_shortmessage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true" >
+
+                        <TextView
+                            android:id="@+id/tv_shortmessage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40.0dip"
+                            android:layout_marginLeft="10.0dip"
+                            android:gravity="center"
+                            android:text="@string/yl_mail_name1"
+                            android:textColor="@color/anzhi_cFF000000"
+                            android:textSize="15.0sp" >
+                        </TextView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_et_shortmessage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="0.0dip"
+                        android:layout_toRightOf="@+id/layout_tv_shortmessage" >
+
+                        <EditText
+                            android:id="@+id/et_shortmessage_changepass"
+                            android:layout_width="130.0dip"
+                            android:layout_height="40.0dip"
+                            android:background="@color/anzhi_c00000000"
+                            android:hint="@string/yl_six_smail_yanzheng"
+                            android:maxLength="6"
+                            android:numeric="integer" android:inputType="phone" android:digits="0123456789"
+                            android:singleLine="true"
+                            android:textColor="@color/anzhi_cFF000000"
+                            android:textSize="15.0sp" >
+                        </EditText>
+
+                        <Button
+                            android:id="@+id/btn_getshortmessage_changepass"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40.0dip"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_toRightOf="@+id/et_shortmessage_changepass"
+                            android:background="@drawable/upomp_tbow_input_btn4"
+                            android:text="@string/yl_get"
+                            android:textColor="@color/anzhi_cFF000000"
+                            android:textSize="15.0sp" >
+                        </Button>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_btn_confirm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_shortmessage"
+                    android:layout_marginTop="20.0dip"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/btn_confirm_changepass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginLeft="15.0dip"
+                        android:background="@drawable/upomp_tbow_btn_enter"
+                        android:text="@string/yl_is_ok"
+                        android:textColor="@color/anzhi_cFFFFFFFF"
+                        android:textSize="20.0sp" >
+                    </Button>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!-- 更改手机号码界面 -->
+
+            <RelativeLayout
+                android:id="@+id/layout_changephone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tbow_info_title_btn"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:id="@+id/layout_edit_phone_num"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_user_info"
+                    android:layout_marginTop="5.0dip" >
+
+                    <RelativeLayout
+                        android:id="@+id/layout_username"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:layout_marginRight="15.0dip"
+                        android:layout_marginTop="3.0dip"
+                        android:background="@drawable/upomp_tbow_checkbox" >
+
+                        <RelativeLayout
+                            android:id="@+id/layout_tv_username"
+                            style="@style/RelativeLayout_Text"
+                            android:layout_centerVertical="true" >
+
+                            <TextView
+                                android:id="@+id/tv_username"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10.0dip"
+                                android:layout_alignParentRight="true"
+                                android:text="@string/yl_user_name1"
+                                android:textColor="@color/anzhi_cFF000000"
+                                android:textSize="15.0sp" >
+                            </TextView>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layout_tv_real_username"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginRight="5.0dip"
+                            android:layout_toRightOf="@+id/layout_tv_username" >
+
+                            <TextView
+                                android:id="@+id/tv_real_username_phonenum"
+                                android:layout_width="fill_parent"
+                                android:layout_height="40.0dip"
+                                android:gravity="left|center_vertical"
+                                android:textColor="@color/anzhi_cFF000000"
+                                android:textSize="15.0sp" >
+                            </TextView>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                    android:id="@+id/layout_changephonenum"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_username"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_marginTop="3.0dip"
+                    android:background="@drawable/upomp_tbow_checkbox" >
+
+                    <RelativeLayout
+                        android:id="@+id/layout_tv_pass_changephonemum"
+                        style="@style/RelativeLayout_Text"
+                        android:layout_centerVertical="true" >
+
+                        <TextView
+                            android:id="@+id/tv_pass_changephonemum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40.0dip"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:text="@string/yl_psw1"
+                            android:textColor="@color/anzhi_cFF000000"
+                            android:textSize="15.0sp" >
+                        </TextView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_btn_pass_changephonemum"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_toRightOf="@+id/layout_tv_pass_changephonemum" >
+
+                        <Button
+                            android:id="@+id/btn_pass_changephonemum"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40.0dip"
+                            android:background="@color/anzhi_c00000000"
+                            android:gravity="left|center_vertical"
+                            android:hint="@string/yl_6_chars"
+                            android:textColor="@color/anzhi_cFF000000" >
+                        </Button>
+                    </RelativeLayout>
+                </RelativeLayout>
+                        
+                        
+                        <!-- 已注册手机号 -->
+                        
+                    <RelativeLayout
+                        android:id="@+id/layout_phone_num"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layout_changephonenum"
+                        android:layout_marginLeft="15.0dip"
+                        android:layout_marginRight="15.0dip"
+                        android:layout_marginTop="3.0dip"
+                        android:background="@drawable/upomp_tbow_checkbox"
+                         >
+
+                        <RelativeLayout
+                            android:id="@+id/layout_tv_register_phone_num"
+                            style="@style/RelativeLayout_Text"
+                            android:layout_centerVertical="true" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="40.0dip"
+                                android:layout_marginLeft="10.0dip"
+                                android:gravity="center"
+                                android:layout_alignParentRight="true"
+                                android:textColor="@color/anzhi_cFF000000"
+                                android:text="@string/yl_yizhuce_tel"
+                                android:textSize="15.0sp" >
+                            </TextView>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layout_tv_real_oldphone_num"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginRight="5.0dip"
+                            android:layout_toRightOf="@+id/layout_tv_register_phone_num" >
+
+                            <TextView
+                                android:id="@+id/tv_real_oldphone_num"
+                                android:layout_width="fill_parent"
+                                android:layout_height="40.0dip"
+                                android:background="@color/anzhi_c00000000"
+                                android:singleLine="true"
+                                android:textColor="@color/anzhi_cFFFF0000"
+                                android:gravity="left|center_vertical"
+                                android:textSize="15.0sp" >
+                            </TextView>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_oldphone_num"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layout_phone_num"
+                        android:layout_marginLeft="15.0dip"
+                        android:layout_marginRight="15.0dip"
+                        android:layout_marginTop="3.0dip"
+                        android:background="@drawable/upomp_tbow_checkbox" >
+
+                        <RelativeLayout
+                            android:id="@+id/layout_tv_oldphone_num"
+                            style="@style/RelativeLayout_Text"
+                            android:layout_centerVertical="true" >
+
+                            <TextView
+                                android:id="@+id/tv_oldphone_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40.0dip"
+                                android:layout_marginLeft="10.0dip"
+                                android:gravity="center"
+                                android:text="@string/yl_old_tel_num"
+                                android:layout_alignParentRight="true"
+                                android:textColor="@color/anzhi_cFF000000"
+                                android:textSize="15.0sp" >
+                            </TextView>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layout_et_oldphone_num"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginRight="5.0dip"
+                            android:layout_toRightOf="@+id/layout_tv_oldphone_num" >
+
+                            <EditText
+                                android:id="@+id/et_oldphone_num"
+                                android:layout_width="fill_parent"
+                                android:layout_height="40.0dip"
+                                android:background="@color/anzhi_c00000000"
+                                android:hint="@string/yl_old_tel_num04"
+                                android:maxLength="11"
+                                android:numeric="integer" android:inputType="phone" android:digits="0123456789"
+                                android:singleLine="true"
+                                android:textColor="@color/anzhi_cFF000000"
+                                android:textSize="15.0sp" >
+                            </EditText>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_newphone_num"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layout_oldphone_num"
+                        android:layout_marginLeft="15.0dip"
+                        android:layout_marginRight="15.0dip"
+                        android:layout_marginTop="3.0dip"
+                        android:background="@drawable/upomp_tbow_checkbox" >
+
+                        <RelativeLayout
+                            android:id="@+id/layout_tv_newphone_num"
+                            style="@style/RelativeLayout_Text"
+                            android:layout_centerVertical="true" >
+
+                            <TextView
+                                android:id="@+id/tv_newphone_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40.0dip"
+                                android:layout_marginLeft="10.0dip"
+                                android:gravity="center"
+                                android:text="@string/yl_new_tel_num04"
+                                android:layout_alignParentRight="true"
+                                android:textColor="@color/anzhi_cFF000000"
+                                android:textSize="15.0sp" >
+                            </TextView>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layout_et_newphone_num"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginRight="5.0dip"
+                            android:layout_toRightOf="@+id/layout_tv_newphone_num" >
+
+                            <EditText
+                                android:id="@+id/et_newphone_num"
+                                android:layout_width="fill_parent"
+                                android:layout_height="40.0dip"
+                                android:background="@color/anzhi_c00000000"
+                                android:hint="@string/yl_new_tel_num03"
+                                android:maxLength="11"
+                                android:numeric="integer" android:inputType="phone" android:digits="0123456789"
+                                android:singleLine="true"
+                                android:textColor="@color/anzhi_cFF000000"
+                                android:textSize="15.0sp" >
+                            </EditText>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_shortmessage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layout_newphone_num"
+                        android:layout_marginLeft="15.0dip"
+                        android:layout_marginRight="15.0dip"
+                        android:layout_marginTop="3.0dip"
+                        android:background="@drawable/upomp_tbow_checkbox" >
+
+                        <RelativeLayout
+                            android:id="@+id/layout_tv_shortmessage"
+                            style="@style/RelativeLayout_Text"
+                            android:layout_centerVertical="true" >
+
+                            <TextView
+                                android:id="@+id/tv_shortmessage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40.0dip"
+                                android:layout_marginLeft="10.0dip"
+                                android:gravity="center"
+                                android:text="@string/yl_mail_name1"
+                                android:layout_alignParentRight="true"
+                                android:textColor="@color/anzhi_cFF000000"
+                                android:textSize="15.0sp" >
+                            </TextView>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layout_et_shortmessage"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginRight="0.0dip"
+                            android:layout_toRightOf="@+id/layout_tv_shortmessage" >
+
+                            <EditText
+                                android:id="@+id/et_shortmessage_changephonenum"
+                                android:layout_width="120.0dip"
+                                android:layout_height="40.0dip"
+                                android:background="@color/anzhi_c00000000"
+                                android:hint="@string/yl_six_smail_yanzheng"
+                                android:maxLength="6"
+                                android:numeric="integer" android:inputType="phone" android:digits="0123456789"
+                                android:singleLine="true"
+                                android:textColor="@color/anzhi_cFF000000"
+                                android:textSize="15.0sp" >
+                            </EditText>
+
+                            <Button
+                                android:id="@+id/btn_getshortmessage_phonenum"
+                                android:layout_width="fill_parent"
+                                android:layout_height="40.0dip"
+                                android:layout_marginLeft="5.0dip"
+                                android:layout_toRightOf="@+id/et_shortmessage_changephonenum"
+                                android:background="@drawable/upomp_tbow_input_btn4"
+                                android:text="@string/yl_get"
+                                android:textColor="@color/anzhi_cFF000000"
+                                android:textSize="15.0sp" >
+                            </Button>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_bottom_two_buttons"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_edit_phone_num"
+                    android:layout_marginTop="20.0dip"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/btn_confirm_phonenum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:background="@drawable/upomp_tbow_btn_enter"
+                        android:gravity="center"
+                        android:text="@string/yl_is_ok"
+                        android:textColor="@color/anzhi_cFFFFFFFF"
+                        android:textSize="20.0sp" >
+                    </Button>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/bottom_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_bottom_two_buttons"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_marginRight="12.0dip"
+                    android:layout_marginTop="10.0dip" >
+
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/upomp_tbow_tips_title"
+                        android:textColor="@color/anzhi_cFF000000" >
+                    </ImageView>
+				<ImageView
+						android:id="@+id/imageView_tbow_pay_tips_title_youqingtishi"
+						android:background="@drawable/upomp_tbow_tips_title2"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_below="@+id/img"
+						>
+					</ImageView>
+                    <RelativeLayout
+                        android:id="@+id/layout_tv_tip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView_tbow_pay_tips_title_youqingtishi"
+                        android:background="@drawable/upomp_tbow_tips_bg" >
+
+                        <TextView
+                            android:id="@+id/tv_tip"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_marginRight="10.0dip"
+                            android:text="@string/yl_longtxt"
+                            android:textColor="@color/anzhi_cFF666666"
+                            android:textSize="14.0sp" >
+                        </TextView>
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/img_bg_bottom"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layout_tv_tip"
+                        android:background="@drawable/upomp_tbow_tips_bot"
+                        android:textColor="@color/anzhi_cFF000000" >
+                    </ImageView>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

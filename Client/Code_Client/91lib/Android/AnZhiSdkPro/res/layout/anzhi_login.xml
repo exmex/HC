@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+      >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/line1"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/size_48"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_marginRight="@dimen/size_10"
+                android:layout_marginTop="@dimen/size_10"
+                android:background="@drawable/anzhi_input_normal" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/size_48"
+                    android:background="@android:color/white" >
+
+                    <TextView
+                        android:id="@+id/nam_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/size_10"
+                        android:text="@string/anzhi_account"
+                        android:textColor="@color/anzhi_494949"
+                        android:textSize="@dimen/font_18" />
+
+                    <RelativeLayout
+                        android:id="@+id/imageView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/size_10"
+                        android:background="@drawable/anzhi_button_bg_gray"
+                        android:visibility="gone" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="1dip"
+                            android:src="@drawable/anzhi_qietu_android_22" />
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/edit_user"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/size_48"
+                        android:layout_margin="5dip"
+                        android:layout_toLeftOf="@id/imageView11"
+                        android:layout_toRightOf="@id/nam_TV"
+                        android:background="@null"
+                        android:completionThreshold="1"
+                        android:cursorVisible="true"
+                        android:hint="@string/anzhi_usernameorteloremail"
+                        android:singleLine="true"
+                        android:textColor="@color/anzhi_494949"
+                        android:textColorHint="@color/anzhi_d0d0d0"
+                        android:textSize="@dimen/font_18" >
+                    </EditText>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/iv_account_delete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="@dimen/size_10"
+                            android:padding="@dimen/size_8"
+                            android:src="@drawable/anzhi_clear_account"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/btn_select_user"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dip"
+                            android:background="@drawable/anzhi_select_user"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/size_48"
+                android:layout_marginBottom="@dimen/size_10"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_marginRight="@dimen/size_10"
+                android:layout_marginTop="@dimen/size_10"
+                android:background="@drawable/anzhi_input_normal" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/size_48"
+                    android:background="@android:color/white" >
+
+                    <TextView
+                        android:id="@+id/pwd_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/size_10"
+                        android:text="@string/anzhi_pwd"
+                        android:textColor="@color/anzhi_494949"
+                        android:textSize="@dimen/font_18" />
+
+                    <EditText
+                        android:id="@+id/edit_pwd"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/size_48"
+                        android:layout_margin="5dip"
+                        android:layout_toRightOf="@id/pwd_TV"
+                        android:background="@null"
+                        android:hint="@string/anzhi_sixtosixteen_wordornumber"
+                        android:inputType="textPassword"
+                        android:maxLength="16"
+                        android:paddingRight="5dip"
+                        android:singleLine="true"
+                        android:textColor="@color/anzhi_494949"
+                        android:textColorHint="@color/anzhi_d0d0d0"
+                        android:textSize="@dimen/font_18" >
+                    </EditText>
+
+                    <ImageView
+                        android:id="@+id/iv_pwd_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/size_8"
+                        android:padding="@dimen/size_10"
+                        android:src="@drawable/anzhi_clear_account"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/guanggao_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_10" >
+
+                <CheckBox
+                    android:id="@+id/cb_auto_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/anzhi_checkbox_false"
+                    android:button="@drawable/anzhi_checkbox"
+                    android:checked="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_toRightOf="@+id/cb_auto_login"
+                    android:text="@string/anzhi_auto_login"
+                    android:textColor="@color/anzhi_9B9B9B"
+                    android:textSize="@dimen/font_16" />
+
+                <TextView
+                    android:id="@+id/reg_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/title_find_account_or_pwd"
+                    android:textColor="@color/anzhi_EB9100"
+                    android:textSize="@dimen/font_16" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/right_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_5"
+                android:layout_marginRight="@dimen/size_5"
+                android:layout_marginTop="@dimen/size_5" >
+
+                <Button
+                    android:id="@+id/btn_register"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/size_40"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/anzhi_button_bg_orange"
+                    android:text="@string/anzhi_register_quick"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_18" />
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/size_40"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/anzhi_button_bg_green"
+                    android:text="@string/anzhi_login"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_18" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="@dimen/size_20"
+                android:gravity="center" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/anzhi_quick_login"
+                        android:textColor="@color/anzhi_EB9100"
+                        android:textSize="@dimen/font_18" />
+
+                    <ImageButton
+                        android:id="@+id/btn_qq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size_20"
+                        android:background="@color/transparent"
+                        android:src="@drawable/anzhi_login_qq_bg" />
+                    <!-- android:background="@drawable/anzhi_login_qq_bg" -->
+
+                    <ImageButton
+                        android:id="@+id/btn_weibo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:background="@color/transparent"
+                        android:src="@drawable/anzhi_login_weibo_bg" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_register_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/size_20"
+                    android:text="@string/anzhi_registerbyusername"
+                    android:textColor="@color/anzhi_EB9100"
+                    android:textSize="@dimen/font_18"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="20dp" >
+
+                <Button
+                    android:id="@+id/official"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/anzhi_login_offical_bg" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_10"
+            android:layout_marginLeft="@dimen/size_10"
+            android:layout_marginRight="@dimen/size_10"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/anzhi_textview_normal"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="@string/anzhi_help_customer"
+                android:textColor="@color/anzhi_757575"
+                android:textSize="@dimen/font_12" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:autoLink="phone"
+                android:background="@drawable/anzhi_textview_normal_b"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="@string/anzhi_service_tel_3_2"
+                android:textColor="@color/anzhi_757575"
+                android:textSize="@dimen/font_12" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

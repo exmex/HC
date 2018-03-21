@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gamehall_gamelistitem_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/gamehall_headerview" />
+
+    <ListView
+        android:id="@+id/gamehall_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/gamehall_seperator1"
+        android:listSelector="@android:color/transparent"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/progressView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gamehall_home_bg"
+        android:gravity="center"
+        android:visibility="visible" >
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar.Small.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dip"
+            android:text="@string/gamehall_loadmore"
+            android:textColor="@color/txt_white"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+</LinearLayout>

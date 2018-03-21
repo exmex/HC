@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_popup_window"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/anzhi_sdk_btn_back_right"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/linear_1"
+       
+        style="@style/anzhi_float_menu_item" >
+
+        <RelativeLayout
+            android:id="@+id/anzhi_image_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/image_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/anzhi_game" />
+
+            <TextView
+                android:id="@+id/message_txt_1"
+                style="@style/anzhi_float_menu_update"
+                android:layout_alignRight="@id/image_1"
+                android:layout_alignTop="@id/image_1"
+                android:background="@drawable/anzhi_remind"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/anzhi_imagetxt_01"
+            style="@style/anzhi_float_menu_tv"
+            android:text="@string/anzhi_game_center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_2"
+        style="@style/anzhi_float_menu_item" >
+
+        <RelativeLayout
+            android:id="@+id/anzhi_image_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             >
+
+            <ImageView
+                android:id="@+id/image_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/anzhi_message" />
+
+            <TextView
+                android:id="@+id/message_txt_2"
+                style="@style/anzhi_float_menu_update"
+                android:layout_alignRight="@id/image_2"
+                android:layout_alignTop="@id/image_2"
+                android:background="@drawable/anzhi_remind"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/anzhi_imagetxt_02"
+            style="@style/anzhi_float_menu_tv"
+            android:text="@string/title_message" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_3"
+        style="@style/anzhi_float_menu_item" >
+
+        <RelativeLayout
+            android:id="@+id/anzhi_image_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             >
+
+            <ImageView
+                android:id="@+id/image_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/anzhi_personal" />
+
+            <TextView
+                android:id="@+id/message_txt_3"
+                style="@style/anzhi_float_menu_update"
+                android:layout_alignRight="@id/image_3"
+                android:layout_alignTop="@id/image_3"
+                android:background="@drawable/anzhi_remind"
+                android:textSize="7sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/anzhi_imagetxt_03"
+            style="@style/anzhi_float_menu_tv"
+            android:text="@string/anzhi_personal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_4"
+        style="@style/anzhi_float_menu_item" >
+
+        <RelativeLayout
+            android:id="@+id/anzhi_image_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/image_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:background="@drawable/anzhi_uservice"/>
+
+            <TextView
+                android:id="@+id/message_txt_4"
+                style="@style/anzhi_float_menu_update"
+                android:layout_alignRight="@id/image_4"
+                android:layout_alignTop="@id/image_4"
+                android:background="@drawable/anzhi_remind"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/anzhi_imagetxt_04"
+            style="@style/anzhi_float_menu_tv"
+            android:text="@string/anzhi_userver" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_5"
+        style="@style/anzhi_float_menu_item" >
+
+        <RelativeLayout
+            android:id="@+id/anzhi_image_05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/image_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/anzhi_forum" />
+
+            <TextView
+                android:id="@+id/message_txt_5"
+                style="@style/anzhi_float_menu_update"
+                android:layout_alignRight="@id/image_5"
+                android:layout_alignTop="@id/image_5"
+                android:background="@drawable/anzhi_remind"
+                
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/anzhi_imagetxt_05"
+            style="@style/anzhi_float_menu_tv"
+            android:text="@string/anzhi_msg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_6"
+        style="@style/anzhi_float_menu_item"
+ >
+
+        <RelativeLayout
+            android:id="@+id/anzhi_image_06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             >
+
+            <ImageView
+                android:id="@+id/image_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:background="@drawable/anzhi_gift"/>
+
+            <TextView
+                android:id="@+id/message_txt_6"
+                style="@style/anzhi_float_menu_update"
+                android:layout_alignRight="@id/image_6"
+                android:layout_alignTop="@id/image_6"
+                android:background="@drawable/anzhi_remind"              
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/anzhi_imagetxt_06"
+            style="@style/anzhi_float_menu_tv"
+            android:text="@string/anzhi_giftbag" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<resources>
+
+    <string name="flsdk_app_name">GameHelper</string>
+    <string name="flsdk_hello_world">Hello world!</string>
+    <string name="flsdk_menu_settings">Settings</string>
+    <!-- band -->
+    <string name="flsdk_login_account_hint_text">请输入帐号</string>
+    <string name="flsdk_verify_count_down_btn_text">重新获取验证码</string>
+    <!-- base_loading_layout -->
+    <string name="flsdk_loading_error_image_text">出错了,请返回重新加载</string>
+    
+    <string name="flsdk_back_btn_text">返回</string>
+    
+    <!-- 支付相关 -->
+    <string name="flsdk_pay_btn_text">立即支付</string>
+    <string name="flsdk_paycenter_select_paytype">请选择充值方式:</string>
+    <string name="flsdk_paycenter_note">温馨提示：充值的时候请根据充值金额选择合适面额的充值卡，以免造成充值失败或充值卡资金损失</string>
+      <string name="flsdk_paycenter_input_card_number">请输入充值卡号</string>
+    <string name="flsdk_paycenter_input_card_password">请输入充值卡密码</string>
+    <string name="flsdk_paycenter_card_type_cnmobile">移动卡</string>
+    <string name="flsdk_paycenter_card_type_cnunicom">联通卡</string>
+    <string name="flsdk_paycenter_card_type_cncdma">电信卡</string>
+    <string name="flsdk_paycenter_pay_type_alipay">支付宝</string>
+    <string name="flsdk_charge_type_phonecard">手机充值卡</string>
+    <string name="flsdk_charge_type_gamecard">游戏充值卡</string>
+    <string name="flsdk_charge_type_union">银联</string>
+    <string name="flsdk_charge_type_mo9">先玩后付</string>
+    
+    <!-- 三方登录相关 -->
+    <string name="flsdk_third_sina_switch_btn_text">切换账户</string>
+    <string name="flsdk_third_sina_current_account">当前账户</string>
+    <string name="flsdk_third_sina_auth_text">飞流游戏中心将获得以下权限：</string>
+    <string name="flsdk_third_sina_auth_getinfo">获得你的个人信息，好友关系</string>
+    <string name="flsdk_third_sina_auth_shareinfo">分享内容到你的微博</string>
+    <string name="flsdk_third_sina_auth_getcomment">获得你的评论</string>
+    <string name="flsdk_third_sina_auth">授权</string>
+    <string name="flsdk_third_sina_auth_cancel">取消</string>
+    <string name="flsdk_third_title">第三方帐户：</string>
+    
+    <!-- 功能相关 -->
+    <string name="flsdk_announce_btn">公告</string>
+    <string name="flsdk_custom_btn">客服</string>
+    <string name="flsdk_promot_btn">邀请好友</string>
+    <string name="flsdk_promot_input">输入邀请码</string>
+    <string name="flsdk_account_center">账号管理</string>
+    <string name="flsdk_login_text">登录飞流账号</string>
+    <string name="flsdk_verify_fail">获取验证码失败?</string>
+    <string name="flsdk_verify_again">重新获取验证码</string>
+    <string name="flsdk_resetpwd_new_pwd_tip">密码为6-20个字母、数字</string>
+   
+    <string name="flsdk_register_account_tip">帐号为4-20位中/英文、数字</string>
+    <string name="flsdk_register_new_pwd_tip">密码为6-20个字母、数字</string> 
+    <string name="flsdk_account_name_text">该帐号已被使用，您可以选择：</string> 
+    <string name="flsdk_account_register">注册</string> 
+    <string name="flsdk_account_register_auto_loginname">随机</string> 
+    <string name="flsdk_manager_account_editpwd">修改密码</string>
+    <string name="flsdk_manager_account_band_hide">设置帐号</string>
+    <string name="flsdk_manager_account_logout">注销登录</string>
+    <string name="flsdk_manager_account_level">帐号安全级别</string>
+    <string name="flsdk_manager_account_band">绑定手机/邮箱</string>
+    <string name="flsdk_manager_account_band_tips">当您忘记账号密码时，可通过手机/邮箱找回密码，从而降低您的损失。</string>
+    <string name="flsdk_manager_account_remember_password">记住密码</string>
+    <string name="flsdk_login_btn">登录</string>
+    <string name="flsdk_more">更多</string>
+    <string name="flsdk_account_bind_hint">温馨提示：未绑定帐号的用户请联系客服求助</string>
+    <string name="post_content_hint">文明发言，注意和谐哦</string>
+    <string name="info_editinfo">编辑资料</string>
+    <string name="info_editinfo_change_face">修改头像</string>
+    <string name="info_editinfo_change_name">姓名</string>
+    <string name="info_editinfo_change_gender">性别</string>
+    <string name="info_editinfo_change_gender_man">男</string>
+    <string name="info_editinfo_change_gender_women">女</string>
+    <string name="flsdk_login_rember_text">记住密码</string>
+
+    <!-- begin -->
+    <string name="flsdk_game_html_template_begin">
+		<![CDATA[
+			<!DOCTYPE html>
+			<html>
+			<head>
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+			<meta charset="utf-8">
+			<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+			<meta content="telephone=no" name="format-detection">
+			<style type="text/css">
+			html,body,div,ul,li,img{ margin:0; padding:0;}
+			body img{max-width:90%;}
+			body{padding:10px;}
+			</style>
+			<body>
+		]]>
+    </string>
+
+    <!-- end -->
+    <string name="flsdk_game_html_template_end">
+		<![CDATA[
+	    	</body></html>
+	    ]]>
+    </string>
+
+</resources>

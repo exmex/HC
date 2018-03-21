@@ -1,0 +1,248 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/forget_password"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <RelativeLayout
+        android:id="@+id/fp_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pp_title_bg" >
+
+        <ImageView
+            android:id="@+id/fp_back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/back_margin_left"
+            android:src="@drawable/pp_btn_back_selector" />
+
+        <TextView
+            android:id="@+id/fp_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_text_size" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/fp_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fp_title"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/pu_input_bg"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/fp_username_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dip"
+                        android:paddingLeft="10dip"
+                        android:paddingTop="10dip"
+                        android:src="@drawable/pu_username" />
+
+                    <EditText
+                        android:id="@+id/fp_username_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/fp_username_iv"
+                        android:layout_alignTop="@id/fp_username_iv"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/fp_username_iv"
+                        android:background="@null"
+                        android:paddingLeft="10dip"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:textSize="@dimen/btn_text_size" />
+
+                    <ImageView
+                        android:id="@+id/fp_arrow_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/fp_username_iv"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@id/fp_username_iv"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dip"
+                        android:src="@drawable/pu_arrow" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pu_input_divider"
+                    android:orientation="horizontal" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dip"
+                        android:src="@drawable/pu_username"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/fp_phone_number_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:inputType="phone"
+                        android:paddingLeft="10dip"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:textSize="@dimen/btn_text_size" />
+
+                    <Button
+                        android:id="@+id/fp_get_verify_code_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dip"
+                        android:background="@drawable/pu_btn_small_selector"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/tv_text_size" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pu_input_divider"
+                    android:orientation="horizontal" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dip"
+                        android:src="@drawable/pu_password"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/fp_verify_code_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:inputType="number"
+                        android:paddingLeft="10dip"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:textSize="@dimen/btn_text_size" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fp_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fp_account"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/pu_input_bg"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dip"
+                        android:src="@drawable/pu_password"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/fp_password_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:inputType="textPassword"
+                        android:paddingLeft="10dip"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:textSize="@dimen/btn_text_size" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pu_input_divider"
+                    android:orientation="horizontal" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dip"
+                        android:src="@drawable/pu_password"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/fp_confirm_password_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:inputType="textPassword"
+                        android:paddingLeft="10dip"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:textSize="@dimen/btn_text_size" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/fp_verify_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fp_password"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/pu_btn_selector"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/btn_text_size" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

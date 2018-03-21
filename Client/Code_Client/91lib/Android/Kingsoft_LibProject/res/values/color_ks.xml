@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="ks_entry_txt">#77787d</color>
+    <color name="ks_entry_hint">#c3c3c3</color>
+    <color name="ks_light_blue">#3584d8</color>
+    <color name="ks_gray">#888888</color>
+    <color name="ks_cust_toast_bg_color">#EEEEED</color>
+    <color name="ks_bule_line_light">#7cafe6</color>
+    <color name="ks_blue_line_heave">#195da5</color>
+    <color name="ks_account_title_text">#9b9b9b</color>
+    <color name="ks_reg_checkbox">#7d7d7d</color>
+    <color name="ks_account_time_txt">#80858a</color>
+    <color name="ks_white">#ffffff</color>
+    <color name="ks_cm_title_line_orange">#E9640D</color>
+    <color name="ks_cm_dark_blue">#4F76A0</color>
+    <color name="ks_cm_text_shadow_color">#ff000fff</color>
+    <color name="ks_cm_button_shadow_color">#33000000</color>
+    <color name="ks_cm_title_bg_color">#31363C</color>
+    <color name="ks_cm_edit_text_bg_color">#3B454E</color>
+    <color name="ks_cm_edit_text_icon_bg_color">#24292F</color>
+    <color name="ks_cm_edit_text_hint_text_color">#80858A</color>
+    <drawable name="ks_cm_normal_item">#3b454e</drawable>
+    <drawable name="ks_cm_selected_item">#24292f</drawable>
+    
+    <drawable name="ks_cm_normal_window_icon_bg_color">#00000000</drawable>
+    <drawable name="ks_cm_selected_window_icon_bg_color">#E9640D</drawable>
+
+</resources>

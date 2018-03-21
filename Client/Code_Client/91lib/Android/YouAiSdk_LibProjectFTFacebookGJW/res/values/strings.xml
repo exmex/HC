@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="action_settings">设置</string>
+    <string name="hello_world">测试</string>
+	<string name="app_id">784648171579055</string>
+    
+    
+	
+	<string name="remote_call_failed">訪問服務器失敗</string>
+	 
+	<string name="permission_not_granted">沒有權限做操作</string>
+    <string name="ok">OK</string>
+    <string name="success">成功</string>
+    <string name="error">錯誤</string>
+	
+	<string name="confirm_install_hint">"安裝提示"</string>	
+	<string name="confirm_install">"為保證您的交易安全，需要您安裝支付寶安全支付服務，才能進行付款。\n\n點擊確定，立即安裝。"</string>
+	<string name="ensure">"確定"</string>
+	<string name="cancel">"取消"</string>
+	<string name="check_sign_failed">您的訂單信息已被非法篡改。</string> 
+		
+	 <string-array name="control" >  
+        <item>通行證管理</item>  
+        <item>遊戲官網</item>  
+        <item>切換用戶</item>  
+    </string-array>  
+	
+	 
+	<!-- 有爱字符 -->
+	<string name="title_back">返回</string>
+	<string name="title_login">登 入</string>
+	<string name="title_ok">完成</string>
+    <string name="title_change_pass">修改密碼</string>
+    <string name="nowpass">原密码:</string>
+    <string name="newpass">新密码:</string>
+    <string name="newpassagain">新密码:</string>
+    <string name="inputold">输入原密码</string>
+    <string name="inputnew">輸入舊密碼</string>
+    <string name="change_pass">修改密碼</string>
+    <string name="title_man">賬號中心</string>
+    <string name="sub_title_userman">通行證管理</string>
+	<string name="sub_title_bbs">遊戲官網</string>
+	<string name="sub_title_logout">註銷</string>
+	<string name="select_pay">選擇充值方式</string>
+	<string name="payali">快捷支付</string>
+	<string name="paytencent">財付通</string>
+	<string name="payyinlian">銀行卡</string>
+	<string name="title_register">註冊</string>
+	<string name="regist_name">賬號：</string>
+	<string name="regist_pass">密碼：</string>
+	<string name="regist_email">郵箱：</string>
+	<string name="regist_tv">您可以輸入郵箱、字母/數字作爲通行證賬號，\n也可以使用系統爲您默認分配的賬號</string>
+	<string name="user_delete">刪除</string>
+	<string name="user_loined">本機已登入賬號</string>
+	
+	<string name="user_account">賬 號：</string>
+	<string name="user_password">密 碼：</string>
+	<string name="logout">註銷</string>
+	<string name="user_other_login">其他用戶登入</string>
+	<string name="user_forgetpass">忘記密碼</string>
+	<string name="user_findpass">點擊這裏找回</string>
+	<string name="close">關閉</string>
+	<string name="user_other_account">您現在正使用第三方賬號登錄，系統給您生成賬號，修改帐号密码,方便您下次使用帐号进行登入</string>
+	<string name="user_rebang">註冊綁定</string>
+	<string name="user_bang">綁定</string>
+	<string name="pay_web">網銀支付</string>
+	<string name="pay_chongcard">儲值卡</string>
+	<string name="use_protocol">已经阅读并同意</string>
+	<string name="rightbtn">右按鈕</string>
+	<string name="choosewrite">選填</string>
+	<string name="user_email">郵 箱 ：</string>
+	<string name="registerpass">密 碼：</string>
+	<string name="writelimit">6-12个字母或數字</string>
+	<string name="payproduct">訂購商品</string>
+	<string name="payprice">充值金額</string>
+	<string name="payprompt">温馨提示：1元人民币对应10钻石</string>
+	<string name="custom_phone">客服热线</string>
+	<string name="custom_time">服务时间：10:00-22:00</string>
+	<string name="youaiweb">官方网站：</string>
+	<string name="userreadpro">我已经阅读并统一遵守全民掛機王服务器条款</string>
+	<string name="findpasschoose">必填 找回密碼</string>
+	
+	
+	
+    
+    <string name="loading">Loading...</string>
+	<string name="nothaveaccount">You have not login account </string>
+	<string name="initfailinner">Failed to initialize </string>
+	<string name="initfailtryagain">Failed to initialize To initialize </string>
+	<string name="netwarning">Network anomalies</string>
+	<string name="warning">prompt </string>
+	<string name="bindsuccess">Registered binding success </string>
+	<string name="logoutsuccess">Cancellation of success </string>
+	<string name="logouneedre">Game internal cancellation of account need to restart the game \n</string>
+	<string name="namenull">Account cannot be empty </string>
+	<string name="passwordnull">Password cannot be empty </string>
+	<string name="emailnull">Email cannot be empty</string>
+	<string name="nameerr">Account number format is not correct </string>
+	<string name="passworderr">Password format is not correct </string>
+	<string name="mailerr">Email address format is not correct</string>
+	<string name="registererr">Registration failed </string>
+	<string name="registeryes">Registered successfully </string>
+	<string name="loginfailnet">Abnormal network login fails</string>
+	<string name="registfailnet">Abnormal network login fails </string>
+	<string name="welcome">You are welcome to come back</string>
+	<string name="errbind">Network anomaly bound to fail </string>
+	<string name="binderr">Binding failure </string>
+	<string name="bindneterr">Network anomaly bound to fail </string>
+	<string name="paygame">充值游戏</string>
+	<string name="payuser">充值帐号</string>
+	<string name="buything">订购商品</string>
+	<string name="tryuser">游客</string>
+	<string name="paymoney">充值金额</string>
+	<string name="paything">钻石</string>
+	<string name="helpphone">客服热线</string>
+	<string name="nettryerr">网络异常，请重试</string>
+	<string name="httperr">网络访问异常</string>
+	<string name="paynow">正在支付</string>
+	<string name="yuan">元</string>
+	<string name="account">賬號</string>
+	<string name="initpassword">系统为您設置的初始密碼：</string>
+	<string name="passwordcgeok">密碼修改成功</string>
+	<string name="passwordcgeerr">密碼修改失敗</string>
+	<string name="controlpassword">修改密碼</string>
+	<string name="controlwebsite">社區官網</string>
+	<string name="controluser">切換用戶</string>
+	<string name="controlfeedback">建議反饋</string>
+	<string name="startgame">正在登录</string>
+	<string name="loginsuccess">登录成功</string>
+	<string name="loginfail">登录失败</string>
+
+	<string name="youaiprotocal">
+臺灣小熊互動有限公司（以下簡稱小熊互動）為保障您個人資料之安全性，特針對您個人的隱私權擬定「個人資料暨隱私權保護政策」聲明（Privacy Policy，下簡稱隱私權政策），讓您瞭解小熊互動對於您的隱私權之尊重與保護，並告訴您有關您個人資料之相關資訊。
+本政策讓您瞭解小熊互動在蒐集您的個人資料時：\n
+1.	本公司的名稱。\n
+2.	蒐集之目的。\n
+3.	個人資料之類別。\n
+4.	個人資料利用之期間、地區、對象及方式。\n
+5.	您得行使之權利及方式。\n
+6.	若您無法提供完整的個人資料時，不提供將對您權益之影響。\n
+7.	個人資料的安全維護。\n
+請您詳細閱讀小熊互動「隱私權政策」。\n
+一、適用範圍\n
+小熊互動「隱私權政策」適用於您在小熊互動網站內與其所附屬之網站活動時，所涉及的個人資料蒐集、處理、利用、國際傳遞以及保護措施。但不適用於經小熊互動網站而連結至第三人經營的網站或網頁。不限於小熊互動與旗下產品網頁。\n
+二、資料蒐集之目的及類別 \n
+根據小熊互動所提供不同服務目的，小熊互動可能蒐集您的個人資料類別及情形如下：\n
+（一） 加入會員\n
+當您申請加入會員時，您將會被要求填寫一份您的個人資料，包括電子信箱相關資料，並設定您的帳號密碼，以便您日後登入使用會員的各項服務。\n
+（二） 線上交易\n
+如您選擇使用線上交易服務，將會依照你提出的線上交易形態，蒐集您所填寫的訂單相關資料，以確保您完成付款、儲值消費服務。\n
+（三） 線上活動\n
+您若因參加小熊互動舉辦之線上活動或網路調查而提供個人資料、會員帳號或密碼時，亦將一併受到隱私權政策之保護。\n
+（四） 瀏覽網頁\n
+當您於小熊互動站內或其附屬網站中瀏覽或查詢時，小熊互動伺服器將自動紀錄您使用連線之IP位置、時間及瀏覽相關記錄。這些資料僅供作流量統計分析及網路服務優化，以便於改善小熊互動的服務品質，這些資料僅作為總量上的分析，不會和特定個人相連繫。\n
+（五） 其他\n
+除了您直接提供的個人資料之外，您也可能在小熊互動合作廠商處主動提供個人資料，並在您同意或為履行契約目的前提下，將您的個人資料提供給小熊互動。這些資料只會在您同意或為履行契約的服務範圍內利用及處理，不會用於其他用途。\n
+三、資料利用之期間、地區、對象及方式\n
+（一） 利用期間\n
+除法令另有規定者外，將於你使用小熊互動網站內與其所附屬網站服務完畢或至您提出停止使用之請求為止。參加活動者之個人資料使用自活動參與者授權參與活動起始日至活動結束後3個月。活動得獎者之個人資料最長保存1年，屆時銷毀，不作他用。\n
+（二） 利用地區\n
+台灣地區及提供小熊互動網站內與其所附屬網站服務之地區，並不會移轉至以外地區。\n
+（三） 利用對象\n
+除法令另有規定者外，將僅供你同意之服務目的及小熊互動內部在相關連之範圍內使用，不會任意將您提供的個人資料轉供其他第三人或移作其他目的使用。但基於履行契約目的，將提供相關資料予協辦單位或合作廠商，以完成履行契約義務。\n
+（四） 利用方式\n
+1.	會員資料\n
+您在加入會員時所填寫的資料，小熊互動將會進行e-mail驗證，並作為分析您個人在站上與消費行為，以作為將來提供會員所需之詳盡資料以及作為設計會員活動時之依據。\n
+2.	線上交易\n
+如您選擇使用線上交易服務，將會依照你提出的線上交易形態，蒐集您所填寫的訂單相關資料，以確保您完成付款、儲值或物流等消費服務。\n
+3.	線上活動及調查\n
+您若因參加小熊互動舉辦之線上活動或網路調查所留下的個人資料，僅供該次活動或調查使用。這些資料將於活動或調查結束後銷毀。這些資料將於活動或調查結束後一定時間內銷毀。\n
+4.	統計與分析\n
+小熊互動可能針對您加入會員時所填寫的資料，以及站內瀏覽時伺服器所產生的紀錄，將不定期進行總體會員行為分析與統計，不會針對個人行為進行分析。\n
+四、您得行使的權利及方式\n
+（一） 您就您的個人資料得向小熊互動以書面請求行使以下權利：\n
+1.	查詢或請求閱覽。\n
+2.	請求補充或更正。\n
+3.	請求停止蒐集、處理或利用。\n
+4.	請求刪除。\n
+（二） 權利限制\n
+以上權利，若因您不符合小熊互動申請程序或法令另有規定時，將會受到限制。\n
+（三） 權利行使之方式\n
+上開權利之申請，應填具申請文件，小熊互動得向您請求提出可茲確認之身分證明文件。若委託他人代為申請者，並應出具委任書，且提供本人及代理人之身分證明文件。\n
+五、若您無法提供完整的個人資料時，不提供將對您權益之影響\n
+若您無法提供完整且確實的個人資料，將影響小熊互動和您的聯繫、完成交易、提供服務、身份驗證或處理消費、交易或客訴問題。建議您應提供完整的個人資料及隨時更新。若因您未提供完整且確實個人資料，造成對您及第三人發生損害時，您應負擔一切責任，如造成小熊互動的損失時，小熊互動有權向您請求損害賠償。\n
+六、個人資料安全維護\n
+關於您的個人資料檔案，小熊互動將採行適當之安全措施，並盡力以合理之技術及措施，依相關法令辦理安全維護事項，防止您的個人資料被竊取、竄改、毀損、滅失或洩漏。\n
+七、隱私權政策的修改\n
+小熊互動有權自行修訂隱私權政策，相關修正規定將會公告於本網站，請您密切注意以保障個人權益。當您於隱私權政策任何修改或變更後繼續使用小熊互動網站與其所附屬之網站服務，表示您已閱讀、瞭解並同意接受隱私權政策修改或變更後之內容。\n
+如果您不同意本隱私權政策，請您立即停止使用小熊互動網站與其所附屬之網站服務。\n
+八、看法與建議\n
+您如果對於小熊互動隱私權政策或與個人資料有關之相關事項有任何意見或疑問，請透過客服郵箱與我們聯繫。\n
+	    
+	</string>
+	<string name="officialweb">官网</string>
+    <string name="facebookfen">粉丝团</string>	
+    <string name="totry">試玩</string>
+    <string name="u2_protocol">使用條款和隱私政策</string>
+    <string name="title_protocol">條款和隱私政策</string>
+    <string name="intogame">進入遊戲</string>
+    <string name="ensuresafe">爲保障賬號安全，請綁定賬號</string>
+    <string name="binduser">綁定賬號</string>
+    <string name="nowaccount">賬號:</string>
+    <string name="changeuser">切換賬號</string>
+    <string name="app_dev">小熊娛樂平臺</string>
+    <string name="findpass">找回密碼</string>
+</resources>

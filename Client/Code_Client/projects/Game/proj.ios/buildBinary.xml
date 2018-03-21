@@ -1,0 +1,20 @@
+<project default="Hero" name="Hero">
+    <property name="code.path" value="/bamboo_agent/xml-data/build-dir/HERO-HEROPRODUCTIONIOSCLIENTBINARY-JOB1/projects/hero/proj.ios"/>
+
+	<path id="jsch.path">
+        <pathelement location="lib/jsch-0.1.45.jar" />
+	</path>
+	
+    <target name="distribution">
+        <exec executable="sh" failonerror="true">
+            <arg value="${code.path}/AutoBuildShell/iosDistribution.sh"/>
+            <arg value="${code.path}"/>
+            <arg value="${targetName}"/>
+            <arg value="${rsyncPath}"/>
+            <arg value="${versionNumber}"/>
+            <arg value="${typeFlag}"/>
+            <arg value="${isSave}"/>
+        </exec>
+    </target>
+
+</project>

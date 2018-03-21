@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@android:color/transparent" android:state_pressed="false"/>
+    <item android:drawable="@color/payeco_textColorYellow" android:state_pressed="true"/>
+
+</selector>

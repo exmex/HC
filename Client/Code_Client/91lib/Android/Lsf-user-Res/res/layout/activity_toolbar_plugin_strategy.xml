@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical" >
+
+  <RelativeLayout
+    android:id="@+id/relativelayout_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/com_lenovo_toolbar_title_bg" >
+
+    <Button
+      android:id="@+id/com_lenove_tactful_back_bt_id"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/com_lenovo_toolbar_title_return" />
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:layout_toRightOf="@+id/com_lenove_tactful_back_bt_id"
+      android:text="@string/com_lenovo_toolbar_label_strategy"
+      android:textColor="#FF333333" />
+  </RelativeLayout>
+
+  <ProgressBar
+    android:id="@+id/progress"
+    style="@android:style/Widget.ProgressBar.Horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="5dp"
+    android:max="100"
+    android:visibility="gone" />
+
+  <WebView
+    android:id="@+id/com_lenove_tactful_back_webview_id"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_below="@+id/relativelayout_id" />
+
+</LinearLayout>

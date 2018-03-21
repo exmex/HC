@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NdView</key>
+	<dict>
+		<key>bgColor</key>
+		<string>0,0,0,0</string>
+	</dict>
+	<key>NdCtrls</key>
+	<dict>
+		<key>labelTip</key>
+		<dict>
+			<key>type</key>
+			<string>label</string>
+			<key>fontSize</key>
+			<string>15</string>
+			<key>boldFont</key>
+			<string>1</string>
+			<key>autoResizeFlag</key>
+			<string>1,2,4,8</string>
+			<key>rect</key>
+			<string>{{4,8},{0,20}}</string>
+			<key>bottomRightMargin</key>
+			<string>{4,0}</string>
+			<key>content</key>
+			<string>m12345678 已绑定133*****123</string>
+			<key>align</key>
+			<string>center</string>
+			<key>lineNum</key>
+			<string>1</string>
+			<key>lineBreakMode</key>
+			<string>5</string>
+			<key>textColor</key>
+			<string>1,1,1,1</string>
+		</dict>
+		<key>smsVerifyView</key>
+		<dict>
+			<key>type</key>
+			<string>view</string>
+			<key>viewType</key>
+			<string>NdSMSVerifyView</string>
+			<key>autoResizeFlag</key>
+			<string>1,2,4,8</string>
+			<key>rect</key>
+			<string>{{0,30},{200,230}}</string>
+			<key>bottomRightMargin</key>
+			<string>{0,0}</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_normal">#fffafafa</color>
+    <color name="black">#ff000000</color>
+    <color name="black_transparent">#8f000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="white_half_trans">#30ffffff</color>
+    <color name="white_half_trans77">#77ffffff</color>
+    <color name="gray">#dddddddd</color>
+    <color name="light_gray">#ffeaeaea</color>
+    <color name="transparent">#00000000</color>
+    <color name="translucent_background">#60000000</color>
+    <color name="orange">#fffcb435</color>
+    <color name="darkorange">#fff4a51a</color>
+    <color name="orange_alipay">#fffc8922</color>
+    <color name="darkorange_alipay">#fff1780b</color>
+    <color name="blue">#ff20a3ff</color>
+    <color name="darkblue">#ff1c8ede</color>
+    <color name="cyan">#ff20ddff</color>
+    <color name="darkcyan">#ff1cc0de</color>
+    <color name="green">#ff65cd37</color>
+    <color name="darkgreen">#ff4cbc1b</color>
+    <color name="red">#ffff5652</color>
+    <color name="darkred">#fff44743</color>
+    <color name="purple">#ffb872d9</color>
+    <color name="darkpurple">#ff9f63bc</color>
+    <color name="line_gray">#ffededed</color>
+
+      
+    <color name="iapppay_black_transparent">#8f000000</color>
+    <color name="iapppay_white_half_trans">#30ffffff</color>
+    <color name="iapppay_light_gray">#eaeaea</color>
+    <color name="iapppay_darkorange">#f4a51a</color>
+    <color name="iapppay_bg_error_red">#f43c1c</color>
+    <color name="iapppay_line_gray">#EDEDED</color>
+    <color name="iapppay_white">#ffffff</color>
+    <color name="iapppay_black">#ff000000</color>
+    <color name="iapppay_gray">#f2f2f2</color>
+    <color name="iapppay_red">#ff5652</color>
+    <color name="iapppay_transparent">#00000000</color>
+    <color name="iapppay_translucent_background">#60000000</color>
+    
+    
+    <!-- 框架 -->
+    <color name="iapppay_bg_title">#1E2331</color>  
+    <color name="iapppay_bg_title_line">#F2B72B</color>  
+    <color name="iapppay_bg_content">#DDDDDD</color>  
+    <color name="iapppay_bg_card_info">#ECF7FF</color> 
+    <color name="iapppay_bg_edit_border">#208BCD</color> 
+
+    <color name="iapppay_bg_text_common">#333333</color>  
+    <color name="iapppay_bg_text_protel">#1B66A5</color> 
+    <color name="iapppay_bg_text_toast">#AEAEAE</color> 
+    <color name="iapppay_bg_text_important">#E66904</color> 
+    
+    <!-- 键盘 -->
+    <color name="iapppay_kb_bg">#1E2331</color>  
+    <color name="iapppay_kb_title">#D7D7D7</color>  
+    <color name="iapppay_kb_text">#333333</color>   
+    <color name="iapppay_kb_sure_bt">#208bcd</color>       
+    <color name="iapppay_kb_comm_bt">#a8baca</color>         
+    <color name="iapppay_kb_key">#d4dee8</color>    
+    
+    <!-- 呼叫等待 -->
+    <color name="iapppay_call_waiting_tip">#ECF7FF</color>  
+    <color name="iapppay_call_waiting_confirm">#DDDDDD</color>  
+    <color name="iapppay_call_waiting_service">#D1D1D1</color>   
+    
+    
+    <color name="iapppay_description_tip">#8a8a8a</color>
+     
+
+    
+</resources>

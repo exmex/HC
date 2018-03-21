@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/keke_title_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/keke_title_content_root"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/login_keke_title_height"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/account_title_bar_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/login_keke_back_bar_margin_left"
+            android:layout_marginTop="@dimen/login_keke_back_bar_margin_top"
+            android:background="@drawable/back_hint_bar"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/account_title_bar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/login_keke_text_margin_left"
+            android:layout_toRightOf="@id/account_title_bar_icon"
+            android:ellipsize="end"
+            android:shadowColor="#ffffff"
+            android:shadowRadius="1"
+            android:singleLine="true"
+            android:text="@string/keke_account_regist"
+            android:textColor="#494a4a"
+            android:textSize="@dimen/px55_text_size" />
+
+        <ImageView
+            android:id="@+id/login_keke_account_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/login_keke_account_bar_margin_parent_right"
+            android:background="@drawable/login_keke_hint_bar"
+            android:contentDescription="@null" />
+
+        <LinearLayout
+            android:id="@+id/text_and_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/login_title_margin_ringt"
+            android:layout_toLeftOf="@+id/login_keke_account_bar"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/login_keke_account_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/keke_account_login"
+                android:textColor="#494949"
+                android:textSize="@dimen/px39_text_size" />
+
+            <ImageView
+                android:id="@+id/login_keke_account_text_line"
+                android:layout_width="@dimen/login_keke_account_line_len"
+                android:layout_height="1.2dp"
+                android:layout_alignLeft="@id/login_keke_account_text"
+                android:layout_alignRight="@id/login_keke_account_text"
+                android:layout_below="@id/login_keke_account_text"
+                android:background="@drawable/account_login_forget_password_bottom_line" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

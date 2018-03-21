@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+    
+	<RelativeLayout
+        android:id="@+id/dk_login_title"
+        android:layout_height="56dp"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_vertical" 
+        android:background="@drawable/dk_top_dialog_new">
+
+        <ImageView
+            android:id="@+id/dk_logo"
+            android:layout_width="54dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/dk_logo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="66dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/dk_logo_actionbar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="@string/dk_login_duoku_title_text"
+                android:textColor="@color/dk_gamesdk_white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+	
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="8dp"
+        android:background="@drawable/dk_shadow_file"
+        android:layout_gravity="bottom"/>
+</FrameLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="yyh_transparent">#fcfcfc</drawable>
+    <drawable name="yyh_cursor_color">#000000</drawable>
+
+    <color name="yyh_center_selected">#1588fe</color>
+    <color name="yyh_center_unselected">#2d3340</color>
+    <color name="yyh_header_btn_unpressed">#00ffffff</color>
+    <color name="yyh_header_btn_pressed">#e0e0e0</color>
+    <color name="yyh_header_bg">#000000</color>
+    <color name="yyh_a_1">#ffffff</color>
+    <color name="yyh_c_3">#1588fe</color>
+    <color name="yyh_c_1">#ebebeb</color>
+    <color name="yyh_c_2">#f69b0f</color>
+    <color name="yyh_b_1">#f7f7f7</color>
+    <color name="yyh_d_1">#cacaca</color>
+    <color name="yyh_gray_8">#888888</color>
+    <color name="yyh_tips_gray">#909090</color>
+    <color name="yyh_sdk_open">#95a5a6</color>
+    <color name="yyh_windowbg_dialog">#00000000</color>
+    <color name="yyh_pressed">#5a000000</color>
+    <color name="yyh_hint_color">#999999</color>
+    <color name="yyh_xiazai">#4cc9b6</color>
+    <color name="yyh_dakai">#eeeeee</color>
+    <color name="yyh_dakai_text">#333333</color>
+    <color name="yyh_pay_detail_tag_textcolor">#1588fe</color>
+    <color name="yyh_pay_detail_real_textcolor">#1588fe</color>
+
+</resources>

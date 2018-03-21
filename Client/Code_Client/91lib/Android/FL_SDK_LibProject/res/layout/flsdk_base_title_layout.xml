@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:background="@drawable/flsdk_title_bg" />
+
+    <Button
+        android:id="@+id/flsdk_title_btn"
+        style="@style/flsdk_style_ffffff_14"
+        android:layout_width="56.0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginTop="8.0dip"
+        android:background="@drawable/flsdk_title_back_bg"
+        android:onClick="backClick"
+        android:text="@string/flsdk_back_btn_text" />
+
+    <TextView
+        android:id="@+id/flsdk_title_text"
+        style="@style/flsdk_style_2b261c_18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8.0dip" />
+
+    <Button
+        android:id="@+id/flsdk_title_right_btn"
+        style="@style/flsdk_style_ffffff_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="8.0dip"
+        android:layout_marginTop="6.0dip"
+        android:background="@drawable/flsdk_title_right_bg"
+        android:gravity="center"
+        android:onClick="rightClick"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip"
+        android:visibility="gone" />
+
+</merge>

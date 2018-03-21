@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="@dimen/aipay_margin_vertical"
+    android:layout_marginBottom="@dimen/aipay_margin_vertical"
+    android:layout_marginRight="@dimen/aipay_margin_horizontal"
+    android:layout_marginLeft="@dimen/aipay_margin_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/aipay_bg">
+    
+    <include android:id="@+id/v_title_aipay"
+        layout="@layout/aipay_title_bar" />
+    
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbarThumbVertical="@drawable/aipay_scrollbar"
+        android:fadingEdge="none"
+        android:layout_marginBottom="5dp">
+    
+     <LinearLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:background="@color/white"
+         android:orientation="vertical">
+         
+		   <TextView
+		       android:id="@+id/pay_select_type"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:layout_marginLeft="17dp"
+		  	   android:layout_marginRight="17dp"
+		       android:layout_marginTop="25dp"
+		       android:layout_marginBottom="7dp"
+		       android:text="@string/aipay_no_card_pay_tip1"
+		       android:textColor="@color/aipay_grey"
+		       android:textSize="13sp" />
+		   
+		    <!--<View android:id="@+id/v_divide_name_aipay"
+		        android:layout_width="match_parent"
+		        android:layout_marginLeft="17dp"
+		        android:layout_marginRight="17dp"
+		        android:layout_height="1dp"
+		        android:background="#d2dbe6"/>-->
+		
+		   <LinearLayout
+		       android:layout_width="match_parent"
+		       android:layout_height="wrap_content"
+		       android:layout_marginLeft="17dp"
+		  	   android:layout_marginRight="17dp"
+		       android:orientation="vertical">
+		
+		       <RelativeLayout
+		           android:id="@+id/operatorLayout"
+		           android:layout_width="fill_parent"
+		           android:layout_height="wrap_content"
+		           android:layout_marginTop="23dp">
+		           
+		           <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_centerVertical="true"
+			            android:layout_alignParentLeft="true"
+			            android:layout_marginLeft="4dp"
+			            android:text="@string/aipay_operator"
+			            android:textColor="@color/aipay_grey_light"
+			            android:textSize="12sp" />
+		
+		           <TextView
+		               android:id="@+id/keyType"
+		               android:layout_width="wrap_content"
+		               android:layout_height="wrap_content"
+		               android:layout_centerVertical="true"
+		               android:layout_alignParentRight="true"
+		               android:layout_marginRight="4dp"
+		               android:textColor="@color/aipay_black_1"
+		               android:drawableRight="@drawable/aipay_arrow"
+		               android:drawablePadding="4dp"
+		               android:textSize="16sp"
+		               android:text="移动卡" />
+		
+		           <ImageView
+		               android:id="@+id/v_guider"
+		               android:layout_width="match_parent"
+		               android:layout_height="wrap_content"
+		               android:scaleType="fitXY"
+		               android:layout_marginTop="9dp"
+		               android:layout_below="@+id/keyType"
+		               android:src="@drawable/aipay_input" 
+		               android:contentDescription="@null"/>
+		       </RelativeLayout>
+		       
+		       <RelativeLayout
+		           android:id="@+id/faceValueLayout"
+		           android:layout_width="fill_parent"
+		           android:layout_height="wrap_content"
+		           android:layout_marginTop="23dp">
+		           
+		           <TextView
+		            	android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_centerVertical="true"
+			            android:layout_alignParentLeft="true"
+			            android:layout_marginLeft="4dp"
+			            android:textColor="@color/aipay_grey_light"
+			            android:textSize="12sp" 
+		            	android:text="@string/aipay_operator_value" />
+		
+		           <TextView
+		               android:id="@+id/faceValue"
+		               android:layout_width="wrap_content"
+		               android:layout_height="wrap_content"
+		               android:layout_centerVertical="true"
+		               android:layout_alignParentRight="true"
+		               android:layout_marginRight="4dp"
+		               android:textColor="@color/aipay_black_1"
+		               android:drawableRight="@drawable/aipay_arrow"
+		               android:drawablePadding="4dp"
+		               android:textSize="16sp" />
+		
+		           <ImageView
+		               android:layout_width="match_parent"
+		               android:layout_height="wrap_content"
+		               android:scaleType="fitXY"
+		               android:layout_marginTop="9dp"
+		               android:layout_below="@+id/faceValue"
+		               android:src="@drawable/aipay_input" 
+		               android:contentDescription="@null"/>
+		       </RelativeLayout>
+		       
+		       <RelativeLayout
+		    	   android:id="@+id/game_card_layout"
+		           android:layout_width="fill_parent"
+		           android:layout_height="wrap_content"
+		           android:layout_marginTop="23dp"
+		           android:visibility="gone">
+		           
+			   		<EditText 
+			   		    android:id="@+id/game_card_value"
+			   		    android:layout_width="match_parent"
+			   		    android:layout_height="wrap_content"
+			   		    android:hint="@string/aipay_card_value_hint"
+			   		    android:textSize="16sp"
+			   		    android:background="@null"
+			   		    android:textColor="@color/aipay_black_1"
+			   		    android:textColorHint="@color/aipay_grey_light"
+			   		    android:layout_marginRight="6dp"
+			   		    android:imeOptions="flagNoExtractUi"
+			   		    android:maxLength="5"
+			   		    android:inputType="number"
+			   		    android:layout_centerVertical="true"
+			   		    android:enabled="true"
+			            android:focusable="true"
+			            android:focusableInTouchMode="true"/> 
+			   		    
+		    		<Button 
+		    		    android:id="@+id/btn_clear_value"
+				        android:layout_width="18dp"
+				        android:layout_height="18dp"
+				        android:layout_centerVertical="true"
+				        android:layout_alignParentRight="true"
+				        android:visibility="gone"
+				        android:background="@drawable/aipay_del_selector"/>
+		    		
+		    		<ImageView android:layout_width="match_parent"
+		    		    android:layout_height="wrap_content"
+		    		    android:layout_marginTop="6dp"
+		    		    android:background="@drawable/aipay_input"
+		    		    android:layout_below="@+id/game_card_value"
+		    		    android:contentDescription="@null"/>
+		    	</RelativeLayout>
+	   	</LinearLayout>
+
+	   <LinearLayout
+	       android:id="@+id/pay_card_area"
+	       android:layout_width="match_parent"
+	       android:layout_height="wrap_content"
+	       android:layout_marginLeft="17dp"
+	  	   android:layout_marginRight="17dp"
+	       android:layout_marginTop="40dp"
+	       android:gravity="center_vertical"
+	       android:orientation="vertical" >
+	       
+	       <TextView
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:layout_marginBottom="7dp"
+		       android:text="@string/aipay_no_card_pay_tip2"
+		       android:textColor="@color/aipay_grey"
+		       android:textSize="13sp" />
+		   
+		    <!--  <View 
+		        android:layout_width="match_parent"
+		        android:layout_height="1dp"
+		        android:background="#d2dbe6"/>-->
+		
+	       <RelativeLayout 
+	           android:layout_width="fill_parent"
+	           android:layout_height="wrap_content"
+	           android:layout_marginTop="23dp">
+		    		
+	           <EditText 
+		   		    android:id="@+id/pay_no"
+		   		    android:layout_width="match_parent"
+		   		    android:layout_height="wrap_content"
+		   		    android:hint="@string/aipay_cardno_hint"
+		   		    android:textSize="16sp"
+		   		    android:background="@null"
+		   		    android:textColor="@color/aipay_black_1"
+		   		    android:textColorHint="@color/aipay_grey_light"
+		   		    android:layout_marginRight="6dp"
+		   		    android:inputType="text"
+		   		    android:imeOptions="actionNext|flagNoExtractUi"
+		   		    android:longClickable="false"
+		            android:ellipsize="end"
+		   		    android:layout_centerVertical="true"/> 
+	    		<Button 
+	    		    android:id="@+id/btn_clear_no"
+			        android:layout_width="18dp"
+			        android:layout_height="18dp"
+			        android:layout_centerVertical="true"
+			        android:layout_alignParentRight="true"
+			        android:visibility="gone"
+			        android:background="@drawable/aipay_del_selector"/>
+	    		
+	    		<ImageView android:id="@+id/iv_input_aipay"
+	    		    android:layout_width="match_parent"
+	    		    android:layout_height="wrap_content"
+	    		    android:layout_marginTop="6dp"
+	    		    android:background="@drawable/aipay_input"
+	    		    android:layout_below="@+id/pay_no"
+	    		    android:contentDescription="@null"/>
+	       </RelativeLayout>
+	       
+	       <TextView android:id="@+id/tv_no_err_tips_aipay"
+    		    android:layout_width="match_parent"
+    		    android:layout_height="wrap_content"
+    		    android:layout_marginTop="4dp"
+    		    android:text="卡号格式不对，请检查并重新输入"
+    		    android:textColor="@color/aipay_red"
+    		    android:textSize="12sp"
+    		    android:visibility="gone"/>
+	       
+	       <RelativeLayout 
+	           android:layout_width="fill_parent"
+	           android:layout_height="wrap_content"
+	           android:layout_marginTop="23dp">
+		    		
+	           <EditText 
+		   		    android:id="@+id/pay_pass"
+		   		    android:layout_width="match_parent"
+		   		    android:layout_height="wrap_content"
+		   		    android:hint="@string/aipay_cardpass_hint"
+		   		    android:textSize="16sp"
+		   		    android:background="@null"
+		   		    android:textColor="@color/aipay_black_1"
+		   		    android:textColorHint="@color/aipay_grey_light"
+		   		    android:layout_marginRight="6dp"
+		   		    android:inputType="text"
+		   		    android:imeOptions="actionDone|flagNoExtractUi"
+		   		    android:longClickable="false"
+		            android:ellipsize="end"
+		   		    android:layout_centerVertical="true"/> 
+	    		<Button 
+	    		    android:id="@+id/btn_clear_pass"
+			        android:layout_width="18dp"
+			        android:layout_height="18dp"
+			        android:layout_centerVertical="true"
+			        android:layout_alignParentRight="true"
+			        android:visibility="gone"
+			        android:background="@drawable/aipay_del_selector"/>
+	    		
+	    		<ImageView android:id="@+id/iv_pwd_input_aipay"
+	    		    android:layout_width="match_parent"
+	    		    android:layout_height="wrap_content"
+	    		    android:layout_marginTop="6dp"
+	    		    android:background="@drawable/aipay_input"
+	    		    android:layout_below="@+id/pay_pass"
+	    		    android:contentDescription="@null"/>
+	       </RelativeLayout>
+	       
+	       <TextView android:id="@+id/tv_pwd_err_tips_aipay"
+    		    android:layout_width="match_parent"
+    		    android:layout_height="wrap_content"
+    		    android:layout_marginTop="4dp"
+    		    android:textColor="@color/aipay_red"
+    		    android:textSize="12sp"
+    		    android:text="密码错误，请检查并重新输入"
+    		    android:visibility="gone"/>
+	   </LinearLayout>
+	   
+	  	<Button 
+		    android:id="@+id/btn_submit"
+		    android:layout_width="fill_parent"
+		    android:layout_height="43dp"
+		    android:layout_marginLeft="17dp"
+		    android:layout_marginRight="17dp"
+		    android:layout_marginTop="25dp"
+		    android:background="@drawable/aipay_bg_confrim_selector"
+		    android:textSize="16sp"
+		    android:textColor="@color/white"
+		    android:text="@string/aipay_charge_submit"/>
+	  	
+	 	<TextView
+	 	    android:id="@+id/tv_tips"
+	        android:layout_width="fill_parent"
+	       	android:layout_height="wrap_content"
+	       	android:layout_marginLeft="17dp"
+		    android:layout_marginRight="17dp"
+		    android:layout_marginTop="14dp"
+	        android:gravity="center_vertical"
+	        android:text="@string/aipay_game_card_store_tips"
+	        android:textColor="@color/aipay_orange"
+	        android:textSize="12sp" /> 	
+	</LinearLayout>
+	</ScrollView>
+</LinearLayout>

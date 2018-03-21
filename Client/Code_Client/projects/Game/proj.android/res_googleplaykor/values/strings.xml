@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_id">784648171579055</string>
+    <string name="app_name">Guardians of the Ancientt-KER</string>
+    <string name="dummy_button">Dota</string>
+    <string name="dummy_content"></string>
+    <string name="fbadsapp_id">784648171579055</string>
+    <string name="fbloginapp_id">784648171579055</string>
+    <string name="xm_app_id">311262009037242</string>
+	<string name="inmobiId"></string>
+    <string name="charboostId">5492a13843150f7b8e554418</string>
+    <string name="charboostSign">c6d270145cf9554af4990d3e11539e3dd6f0fb1a</string>
+    <string name="app_exit_title">Guardians of the Ancientt-KER</string>
+    <string name="app_exit_msg">Are you sure you quit the game?</string>
+    <string name="app_dlg_title">prompt </string>
+    <string name="app_dlg_newwork_notok_msg">The network connection is not network is connected, please check your mobile phone network!</string>
+    <string name="app_dlg_externalstorage_notok_msg">External storage is not available, please check your SD card is properly installed!</string>
+    <string name="app_dlg_externalstorage_nofreespace_msg">External storage space is insufficient, please release SD card storage space! </string>
+    <string name="assets_unzip_msg">First run extract resources </string>
+    <string name="starting_game">Starting the game </string>
+    <string name="data_format_error">Query exception: the json data error</string>
+    <string name="sdk_init">initing platform</string>
+
+    <!-- begin 谷歌 -->
+    <string name="paygoodserr">I am sorry, stored value fails, please contact customer service</string>
+    <string name="paygoodsok">Stored value success </string>
+    <string name="payok">Pay for success </string>
+    <string name="paynotsuport">Google does not support service, do not pay</string>
+    <string name="payggerr">Google service is abnormal</string>
+    <string name="payerr">Pay for failure</string>
+    <string name="purchase_canceled">For cancellation </string>
+    <string name="gginiterr">Google Play failed to initiate the Google Play, the current unable to pay, please make sure your area supports Google Play try again to pay or restart the game！</string>
+    <!-- 谷歌 -->
+    <string name="gotoback">return</string>
+    <string name="startgamea">Starting the game.</string>
+    <string name="startgameb">Starting the game..</string>
+    <string name="startgamec">Starting the game...</string>
+    <string name="iccom4love"></string>
+    <string name="startgame">Starting the game</string>
+    <string name="initfail">Failed to initialize Please restart</string>
+    <string name="loginsuccess">Login successfully </string>
+    <string name="loginfail">Login Failure</string>
+    <string name="oktxt">Enter</string>
+    <string name="screenshot">Are screenshots</string>
+    <string name="logining">landing</string>
+    <string name="logined">Have landed</string>
+    <string name="logined">Login failed</string>
+    <string name="unzipwait">Unzip the resources, do not need to flow, please later</string>
+    <string name="clearold">Remove old local directory, please later</string>
+    <string name="updatebig">Need to enforce version update, please download the new version</string>
+    <string name="share">share </string>
+    <string name="pressshare">Then share a screenshot</string>
+    <string name="downloadapk">Is to download the latest software, take a long time, whether to switch the background download? </string>
+    <string name="downsuccess">Download successful</string>
+    <string name="downfail">Insufficient storage space in Download failed</string>
+    <string name="downspeed">Download speed </string>
+    <string name="downprogress">Download progress </string>
+    <string name="downsize">Download flow </string>
+    <string name="downwaring">Is to download the latest version of the installation package, take a long time, whether to switch the background download? </string>
+    <string name="wxnotinstall">You haven not installed the WeChat\n</string>
+    <string name="download">download</string>
+    <string name="nonetwork">There is no network available </string>
+    <string name="opennetwork">Please open the GPRS or WIFI Internet connection </string>
+    <string name="mycard_billing">Mycard+小额付費</string>
+    <string name="mycard_ingame">Mycard+點數卡</string>
+    <string name="mycard_member">MyCard+會員扣點</string>
+    <string name="gash">GASH</string>
+    <string name="google">Google</string>
+    <string name="fb">facebook</string>
+    <string name="text_paused_cellular">Would you like to enable downloading over cellular connections? Depending on your data plan, this may cost you money.</string>
+    <string name="text_paused_cellular_2">If you choose not to enable downloading over cellular connections, the download will automatically resume when wi-fi is available.</string>
+    <string name="text_button_resume_cellular">Resume download</string>
+    <string name="text_button_wifi_settings">Wi-Fi settings</string>
+    <string name="text_verifying_download">Verifying Download</string>
+    <string name="text_validation_complete">XAPK File Validation Complete.  Select OK to start the movie.</string>
+    <string name="text_validation_failed">XAPK File Validation Failed.</string>
+    <string name="text_button_pause">Pause Download</string>
+    <string name="text_button_resume">Resume Download</string>
+    <string name="text_button_cancel">Cancel</string>
+    <string name="text_button_cancel_verify">Cancel Verification</string>
+
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/TextColorBlack"
+    android:orientation="horizontal"
+    >
+
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:textColor="@color/TextColorWhite"
+		    android:layout_marginLeft="10dp"
+		    android:text="@string/title_top" />
+
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:layout_below="@+id/toptitle"
+         android:id="@+id/u2_title_bar_layout"
+         android:layout_width="fill_parent"
+         android:background="@drawable/title_bg"
+        android:layout_height="42dp">
+        <!-- 左按钮 -->
+
+        <Button
+            android:id="@+id/u2_back"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:textColor="@color/TextColorWhite"
+            android:gravity="center"
+            android:text="@string/title_back"
+            android:background="@drawable/titlebt_bg"
+            android:textSize="16sp" >
+        </Button>
+
+        <!-- 标题 -->
+
+        <TextView
+            android:id="@+id/webtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+             android:textSize="22sp"
+            android:textColor="@color/TextColorWhite"
+            android:text="@string/title_youai" >
+        </TextView>
+
+        <!-- 右按钮 -->
+
+        <Button
+            android:id="@+id/u2_title_bar_button_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dip"
+            android:gravity="center"
+            android:text="@string/title_ok"
+            android:visibility="gone"
+            android:background="@drawable/titlebt_bg"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16sp"
+             >
+        </Button>
+    </RelativeLayout>
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

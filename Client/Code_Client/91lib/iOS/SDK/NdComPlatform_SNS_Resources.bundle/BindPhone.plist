@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NdCtrls</key>
+	<dict>
+		<key>labelPhone</key>
+		<dict>
+			<key>type</key>
+			<string>label</string>
+			<key>autoResizeFlag</key>
+			<string>1,2,4,8</string>
+			<key>rect</key>
+			<string>{{10,65},{300,20}}</string>
+			<key>bottomRightMargin</key>
+			<string>{10,0}</string>
+			<key>align</key>
+			<string>center</string>
+			<key>fontSize</key>
+			<string>18</string>
+			<key>content</key>
+			<string>请输入您本机的手机号码：</string>
+			<key>textColor</key>
+			<string>1,1,1,1</string>
+		</dict>
+		<key>labelHint</key>
+		<dict>
+			<key>type</key>
+			<string>label</string>
+			<key>autoResizeFlag</key>
+			<string>1,2,4,8</string>
+			<key>rect</key>
+			<string>{{10,160},{300,100}}</string>
+			<key>bottomRightMargin</key>
+			<string>{10,0}</string>
+			<key>fontSize</key>
+			<string>14</string>
+			<key>content</key>
+			<string>您尚未绑定手机号，请输入您本机手机号码，系统将会给自己发送一条短信以完成绑定。
+绑定过程，除运营商收取一条短信费用外,不收取其他任何费用。</string>
+			<key>textColor</key>
+			<string>1,1,1,1</string>
+			<key>align</key>
+			<string>center</string>
+		</dict>
+		<key>tfPhone</key>
+		<dict>
+			<key>type</key>
+			<string>textField</string>
+			<key>autoResizeFlag</key>
+			<string>1,2,4,8</string>
+			<key>rect</key>
+			<string>{{10,100},{300,30}}</string>
+			<key>bottomRightMargin</key>
+			<string>{10,0}</string>
+		</dict>
+	</dict>
+	<key>NdView</key>
+	<dict>
+		<key>bgColor</key>
+		<string>0,0,0,0</string>
+	</dict>
+</dict>
+</plist>

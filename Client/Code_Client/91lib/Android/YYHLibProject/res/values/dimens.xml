@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="yyh_dialog_width">350dip</dimen>
+    <dimen name="yyh_dialog_width_fu">-350dip</dimen>
+    <dimen name="yyh_dialog_content_height">200dip</dimen>
+    <dimen name="yyh_dialog_inputframe_width">280dip</dimen>
+    <dimen name="yyh_btn_width">100dip</dimen>
+    <dimen name="yyh_btn_height">30dip</dimen>
+    <dimen name="yyh_center_item_width">300dip</dimen>
+    <dimen name="yyh_center_item_height">70dip</dimen>
+    <dimen name="yyh_center_item_content_height">100dip</dimen>
+    <dimen name="yyh_dialog_loginarea_margintop">6dip</dimen>
+    <dimen name="yyh_center_item_small_content_height">60dip</dimen>
+    <dimen name="yyh_weibosdk_dialog_left_margin">30dp</dimen>
+    <dimen name="yyh_weibosdk_dialog_top_margin">30dp</dimen>
+    <dimen name="yyh_weibosdk_dialog_right_margin">30dp</dimen>
+	<dimen name="yyh_weibosdk_dialog_bottom_margin">15dp</dimen>
+	<dimen name="yyh_notifydialog_personal_width">300dp</dimen>
+	<dimen name="yyh_notifydialog_personal_height">100dp</dimen>
+	<dimen name="yyh_login_dialog_layout_parent_width">300dp</dimen>
+	<dimen name="yyh_login_dialog_layout_head_height">40dp</dimen>
+	<dimen name="yyh_login_dialog_layout_text_size">14dip</dimen>
+	<dimen name="yyh_login_dialog_layout_text_size_tv">14dip</dimen>
+	<dimen name="yyh_login_dialog_layout_content_height">120dp</dimen>
+	<dimen name="yyh_login_dialog_layout_content_padding_lr">25dp</dimen>
+	<dimen name="yyh_login_dialog_layout_content_vertical_space">8dip</dimen>
+	<dimen name="yyh_login_dialog_layout_content_edittext_height">40dp</dimen>
+	<dimen name="yyh_login_dialog_layout_footer_height">40dp</dimen>
+	<dimen name="yyh_account_switch_heigth">70dp</dimen>
+	<dimen name="yyh_toolbar_items_margin">8dp</dimen>
+	<dimen name="yyh_shouye_msg_bottom">-3dip</dimen>
+	<dimen name="yyh_pay_detail_tag_textsize">14dip</dimen>
+	<dimen name="yyh_pay_detail_tag_margintop">5dip</dimen>
+	<dimen name="yyh_pay_detail_real_textsize">14dip</dimen>
+</resources>

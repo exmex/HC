@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splashLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/black" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true" >
+
+            <ImageView
+                android:id="@+id/imageViewBack"
+                android:layout_width="852.0dip"
+                android:layout_height="1136.0dip"
+                android:adjustViewBounds="true"
+                android:contentDescription="@android:string/untitled"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sdk_backgroud" />
+
+            <ImageView
+                android:id="@+id/ImageViewTxwy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/imageViewBack"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="6.0dip"
+                android:contentDescription="@android:string/untitled"
+                android:scaleType="matrix"
+                android:src="@drawable/sdk_guaji" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingBottom="20.0dip" >
+
+                <ImageView
+                    android:id="@+id/imageLogo"
+                    android:layout_width="120.0dip"
+                    android:layout_height="120.0dip"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@android:string/untitled"
+                    android:maxHeight="120.0dip"
+                    android:maxWidth="120.0dip"
+                    android:minHeight="120.0dip"
+                    android:minWidth="120.0dip"
+                    android:src="@drawable/sdk_logo_default" />
+
+                <Button
+                    android:id="@+id/btnFBLogin"
+                    android:layout_width="275.0dip"
+                    android:layout_height="61.0dip"
+                    android:layout_alignBaseline="@+id/btnQQLogin"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/sdk_facebook_login_selector"
+                    android:contentDescription="@android:string/untitled"
+                    android:onClick="onFBLoginClick" />
+
+                <Button
+                    android:id="@+id/btnQQLogin"
+                    android:layout_width="275.0dip"
+                    android:layout_height="61.0dip"
+                    android:layout_below="@id/imageLogo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20.0dip"
+                    android:visibility="invisible"
+                    android:background="@drawable/sdk_qq_login"
+                    android:contentDescription="@android:string/untitled"
+                    android:onClick="onQQLoginClick" />
+
+                <Button
+                    android:id="@+id/btnGoogleLogin"
+                    android:layout_width="275.0dip"
+                    android:layout_height="61.0dip"
+                    android:layout_below="@id/btnQQLogin"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/sdk_google_login_selector"
+                    android:contentDescription="@android:string/untitled"
+                    android:onClick="onGoogleLoginClick" />
+
+                <ImageView
+                    android:id="@+id/SplashLine"
+                    android:layout_width="273.0dip"
+                    android:layout_height="8.0dip"
+                    android:layout_below="@id/btnGoogleLogin"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-25.0dip"
+                    android:src="@drawable/sdk_line" />
+
+                <Button
+                    android:id="@+id/btnTxwyLogin"
+                    android:layout_width="225.0dip"
+                    android:layout_height="38.0dip"
+                    android:layout_below="@id/btnGoogleLogin"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="39.0dip"
+                    android:background="@drawable/sdk_guaji_login"
+                    android:contentDescription="@android:string/untitled"
+                    android:onClick="onTxwyLoginClick" />
+
+                <Button
+                    android:id="@+id/btnTxwyGuest"
+                    android:layout_width="225.0dip"
+                    android:layout_height="38.0dip"
+                    android:layout_below="@id/btnTxwyLogin"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="14.0dip"
+                    android:background="@drawable/sdk_guest_shiwan"
+                    android:contentDescription="@android:string/untitled"
+                    android:onClick="onTxwyGuestClick" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

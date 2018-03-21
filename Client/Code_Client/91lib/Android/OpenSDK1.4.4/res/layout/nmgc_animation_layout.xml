@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nearme.gamecenter.open.core.view.MyLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <ImageView
+        android:id="@+id/nmgc_animation_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</com.nearme.gamecenter.open.core.view.MyLinearLayout>

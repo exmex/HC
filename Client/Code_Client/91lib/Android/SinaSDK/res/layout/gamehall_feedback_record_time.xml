@@ -1,0 +1,13 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:id="@+id/gamehall_feedback_record_item_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gamehall_feedback_record_time"
+        android:layout_gravity="center_horizontal" 
+        android:textSize="9dp"
+        android:textColor="@android:color/white"
+        android:text="02-11 22:22" />
+
+</merge>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:padding="@dimen/upomp_lthj_num_sign_keyboard_padding">
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+		<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize" android:textColor="@drawable/upomp_lthj_text_black"
+			android:id="@id/upomp_lthj_keyboard_button_sign1" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:layout_weight="1.0" android:background="@drawable/upomp_lthj_keybtn"/>
+		<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize" android:textColor="@drawable/upomp_lthj_text_black"
+			android:id="@id/upomp_lthj_keyboard_button_sign2" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:layout_weight="1.0" android:background="@drawable/upomp_lthj_keybtn"/>
+		<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize" android:textColor="@drawable/upomp_lthj_text_black"
+			android:id="@id/upomp_lthj_keyboard_button_sign3" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:layout_weight="1.0" android:background="@drawable/upomp_lthj_keybtn"/>
+		<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize" android:textColor="@drawable/upomp_lthj_text_black"
+			android:id="@id/upomp_lthj_keyboard_button_sign4" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:layout_weight="1.0" android:background="@drawable/upomp_lthj_keybtn"/>
+	</LinearLayout>
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+		<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize" android:textColor="@drawable/upomp_lthj_text_black"
+			android:id="@id/upomp_lthj_keyboard_button_sign5" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:layout_weight="1.0" android:background="@drawable/upomp_lthj_keybtn"/>
+		<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize" android:textColor="@drawable/upomp_lthj_text_black"
+			android:id="@id/upomp_lthj_keyboard_button_sign6" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:layout_weight="1.0" android:background="@drawable/upomp_lthj_keybtn"/>
+		<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize" android:textColor="@drawable/upomp_lthj_text_black"
+			android:id="@id/upomp_lthj_keyboard_button_sign7" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:layout_weight="1.0" android:background="@drawable/upomp_lthj_keybtn"/>
+		<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize" android:textColor="@drawable/upomp_lthj_text_black"
+			android:id="@id/upomp_lthj_keyboard_button_sign8" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:layout_weight="1.0" android:background="@drawable/upomp_lthj_keybtn"/>
+	</LinearLayout>
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+			<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize" android:textColor="@drawable/upomp_lthj_text_black"
+				android:id="@id/upomp_lthj_keyboard_button_sign9" android:layout_width="fill_parent"
+				android:layout_height="fill_parent" android:layout_weight="1.0" android:background="@drawable/upomp_lthj_keybtn"/>
+			<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize" android:textColor="@drawable/upomp_lthj_text_black"
+				android:id="@id/upomp_lthj_keyboard_button_sign10" android:layout_width="fill_parent"
+				android:layout_height="fill_parent" android:layout_weight="1.0" android:background="@drawable/upomp_lthj_keybtn"/>
+			<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize" android:textColor="@drawable/upomp_lthj_text_black"
+				android:id="@id/upomp_lthj_keyboard_button_signnext" android:layout_width="fill_parent"
+				android:layout_height="fill_parent" android:layout_weight="1.0" android:background="@drawable/upomp_lthj_keybtn"
+				android:text="下一页"/>
+			
+			<Button android:id="@id/upomp_lthj_keyboard_buttonC" android:text="清除" android:textColor="@drawable/upomp_lthj_text_black"
+				android:layout_width="fill_parent" android:textSize="@dimen/upomp_lthj_keyboard_fontsize"
+				android:layout_height="fill_parent" android:layout_weight="1.0" android:background="@drawable/upomp_lthj_keybtn"/>
+	</LinearLayout>
+</LinearLayout>

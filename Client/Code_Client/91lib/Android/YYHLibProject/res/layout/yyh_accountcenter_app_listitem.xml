@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/yyh_center_applistitem"
+    android:layout_width="fill_parent"
+    android:layout_height="80dip"
+    android:background="@drawable/yyh_app_item_selector" >
+
+    <LinearLayout
+        android:id="@+id/yyh_center_imgcontainer"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_alignParentLeft="true"
+        android:animateLayoutChanges="true"
+        android:gravity="center" >
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/yyh_center_appicon"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@drawable/yyh_ic_icon"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@+id/yyh_center_downloadbtn_container"
+        android:layout_toRightOf="@id/yyh_center_imgcontainer"
+        android:orientation="vertical"
+        android:paddingTop="3dip" >
+
+        <TextView
+            android:id="@+id/yyh_center_apptitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:layout_weight="1"
+            android:text="1123456"
+            android:textColor="#000000"
+            android:textSize="16dip" />
+
+        <TextView
+            android:id="@+id/yyh_center_appsize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1123456"
+            android:textColor="#888888"
+            android:textSize="12dip" />
+
+        <TextView
+            android:id="@+id/yyh_center_appcontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:singleLine="true"
+            android:text="1123456"
+            android:textColor="#888888"
+            android:textSize="12dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/yyh_center_downloadbtn_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="13dip" >
+
+        <!--
+             <Button
+            android:id="@+id/yyh_center_btn_app_download"
+            android:layout_width="70dip"
+            android:layout_height="30dip"
+            android:background="@drawable/yyh_button_slector_register_cell"
+            android:text="@string/yyh_lijixiazai"
+            android:textColor="#ffffff" 
+            android:textSize="12sp"
+            />
+        -->
+
+        <TextView
+            android:id="@+id/yyh_center_btn_app_download"
+            android:layout_width="60dip"
+            android:layout_height="30dip"
+            android:layout_marginRight="15dip"
+            android:background="@color/yyh_xiazai"
+            android:drawablePadding="3dip"
+            android:gravity="center"
+            android:text="@string/yyh_lijixiazai"
+            android:textColor="@color/yyh_a_1"
+            android:textSize="14dip" />
+    </LinearLayout>
+
+</RelativeLayout>

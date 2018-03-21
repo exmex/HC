@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/DetailInfoItemCanvas" android:layout_width="fill_parent"
+	android:layout_height="80dip"
+	android:paddingLeft="8dip"
+	android:paddingRight="8dip">
+
+	<TextView android:id="@+id/subject" android:layout_width="70dip"
+		android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+		android:gravity="left"
+		android:singleLine="true" android:textColor="@color/TextColorBlack">
+	</TextView>
+
+	<TextView android:id="@+id/price" android:layout_width="50dip"
+		android:layout_height="wrap_content" 
+		android:textColor="@color/TextColorBlack"
+		android:gravity="center"
+		android:layout_alignParentRight="true">
+	</TextView>
+
+	<TextView android:id="@+id/body" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:paddingLeft="10dip"
+		android:paddingRight="15dip" android:textColor="@color/TextColorBlack"
+		android:layout_toRightOf="@+id/subject" android:layout_toLeftOf="@+id/price">
+	</TextView>
+
+</RelativeLayout>

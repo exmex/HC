@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:text="选完服，进入游戏~" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/money_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="请输入金额,单位元"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/start_pay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="开始支付" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="注销账号" />
+
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="退出游戏" />
+    </LinearLayout>
+
+</LinearLayout>

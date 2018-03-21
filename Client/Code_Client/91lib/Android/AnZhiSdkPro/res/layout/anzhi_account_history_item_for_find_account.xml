@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/size_58"
+    android:layout_centerVertical="true"
+    android:background="@drawable/anzhi_account_list_item_selector" >
+
+    <TextView
+        android:id="@+id/tv_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:layout_marginLeft="@dimen/size_10"
+        android:textColor="@color/anzhi_494949"
+        android:textSize="@dimen/font_18" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/anzhi_arrow_right" />
+
+</RelativeLayout>

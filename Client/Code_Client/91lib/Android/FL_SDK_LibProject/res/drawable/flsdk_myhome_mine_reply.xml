@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 我的主页-我的回复 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/flsdk_myhome_mine_reply_check" android:state_checked="true" android:state_enabled="true"/>
+    <item android:drawable="@drawable/flsdk_myhome_mine_reply_normal" android:state_checked="false" android:state_enabled="true"/>
+
+</selector>

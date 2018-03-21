@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dcn_white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:background="@drawable/dcn_action_bar_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dcn_title_height">
+
+            <LinearLayout
+                android:id="@+id/dcn_trading_record_back"
+                android:orientation="horizontal"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:background="@drawable/dcn_back_btn_selector">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dcn_back_ic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dcn_action_xiala"
+                android:layout_centerInParent="true"
+                android:background="@drawable/dcn_back_btn_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:textColor="@color/dcn_ucenter_navi_text_color_pressed"
+                    android:text="@string/dcn_trading_record" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/dcn_action_xiala"
+                    android:src="@drawable/dcn_action_bar_xiala" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/dcn_grey" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/dcn_trading_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/dcn_grey"
+                android:dividerHeight="1px"
+                android:cacheColorHint="@android:color/transparent"
+                android:listSelector="@android:color/transparent" />
+
+            <TextView
+                android:id="@+id/dcn_no_pay_record"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textSize="16sp"
+                android:textColor="@color/dcn_black"
+                android:text="@string/dcn_no_message" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

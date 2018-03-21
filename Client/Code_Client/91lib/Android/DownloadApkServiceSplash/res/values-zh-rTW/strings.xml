@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">龍珠大亂鬥</string>
+	<string name="warning">提示</string>
+	<string name="downloadapk">下载新版安装包</string>
+	<string name="ok">後台更新</string>
+	<string name="downwaring">下载提示</string>
+	<string name="downprogress">下载进度</string>
+	<string name="downspeed">下载速度</string>
+	<string name="downfail">下载失败</string>
+	<string name="downsuccess">下载成功</string>
+	<string name="startgame">开始启动游戏</string>
+	<string name="startdownload">开始下载</string>
+	<string name="downloading">下载中</string>
+	<string name="loading">加载中</string>
+	<string name="downtxt">正在升級到加強版，請勿取消下載</string>
+</resources>

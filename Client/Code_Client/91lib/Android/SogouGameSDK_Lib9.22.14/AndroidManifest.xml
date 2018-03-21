@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sogou.gamecenter.sdk"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.sogou.gamecenter.sdk.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="com.sogou.gamecenter.sdk.SogouLoginActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowBackground="@null"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.sogou.gamecenter.sdk.SogouRegActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"           
+            android:launchMode="singleTask"
+             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowBackground="@null"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.sogou.gamecenter.sdk.SogouLoginPerfectActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"            
+            android:windowBackground="@null"
+            android:windowSoftInputMode="adjustPan|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.sogou.gamecenter.sdk.SogouPayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowBackground="@null"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.sogou.gamecenter.sdk.SogouAliPayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowBackground="@null"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" >
+
+        </activity>
+        <activity
+            android:name="com.sogou.gamecenter.sdk.SogouCardPayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowBackground="@null"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" >
+
+        </activity>
+        <activity
+            android:name="com.sogou.gamecenter.sdk.SogouMessagePayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowBackground="@null"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" >
+
+        </activity>
+        <activity
+            android:name="com.sogou.gamecenter.sdk.SogouAgreeActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowBackground="@null"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" >
+
+        </activity>
+        <activity
+            android:name="com.sogou.gamecenter.sdk.SogouThirdLoginActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowBackground="@null"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" >
+
+        </activity>
+        <activity
+            android:name="com.sogou.gamecenter.sdk.SogouAliBankPayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowBackground="@null"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" >
+
+        </activity>
+
+        <!-- 渠道号 -->
+        <meta-data
+            android:name="channel"
+            android:value="10000" />
+
+        <activity
+            android:name="com.sogou.gamecenter.sdk.SogouFeedBackActivity"
+            android:label="@string/title_activity_feed_back" >
+        </activity>
+        <activity
+            android:name="com.sogou.gamecenter.sdk.SogouFeedBackRecordActivity"
+            android:label="@string/title_activity_sogou_feed_back_record" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sogou.gamecenter.sdk.BaseListActivity" />
+        </activity>
+    </application>
+
+</manifest>

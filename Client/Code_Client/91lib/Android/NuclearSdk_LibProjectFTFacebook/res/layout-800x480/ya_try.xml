@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/u2_account_login_layout_portrait"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    
+	<RelativeLayout
+        android:id="@+id/top_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:background="@drawable/top_p"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/title_top"
+            android:textColor="@color/TextColorWhite" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_toLeftOf="@+id/u2_title_bar_button_left"
+            android:src="@drawable/top_line" />
+
+        <ImageButton
+            android:id="@+id/u2_title_bar_button_left"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/close_top" />
+    </RelativeLayout>
+    
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/top_lv"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/charge_none_round"
+                android:orientation="vertical" >
+
+            <RelativeLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="50dp" >
+			<TextView
+                android:id="@+id/tv_tryuser"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/nowaccount"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/TextColorGray" />
+			<TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/tv_changeuser"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:text="@string/changeuser"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/TextColorBlue" />
+			</RelativeLayout>
+			
+            </LinearLayout>
+			<Button
+                    android:id="@+id/intogame"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/intogame_bt_bg"
+                    android:text="@string/intogame"
+                    android:textColor="@color/TextColorWhite"
+                    android:textSize="20sp" />
+			<Button
+                    android:id="@+id/u2_try_bind"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/login_bt_bg"
+                    android:text="@string/binduser"
+                    android:textColor="@color/TextColorWhite"
+                    android:textSize="20sp" >
+                </Button>
+                
+            <TextView
+                android:id="@+id/warningsafe"
+                android:layout_width="wrap_content"
+                android:textColor="@color/TextColorGray"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/ensuresafe"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+        
+         <ProgressBar
+                android:id="@+id/loadingbar"
+                android:visibility="invisible"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+</RelativeLayout>

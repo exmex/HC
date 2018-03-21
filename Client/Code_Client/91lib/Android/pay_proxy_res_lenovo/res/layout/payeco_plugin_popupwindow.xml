@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/payeco_plugin_pop_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/payeco_popupwindow_prompt_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/payeco_popupwindow_prompt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:gravity="center_vertical"
+            android:paddingBottom="10.0dip"
+            android:paddingTop="10.0dip"
+            android:textColor="@color/payeco_textColorBlack"
+            android:textSize="@dimen/payeco_middle_textsize" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/payeco_textColorYellow" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/payeco_popupwindow_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="#C4C4C4"
+        android:dividerHeight="1.0dip"
+        android:listSelector="@android:color/transparent" />
+
+</LinearLayout>

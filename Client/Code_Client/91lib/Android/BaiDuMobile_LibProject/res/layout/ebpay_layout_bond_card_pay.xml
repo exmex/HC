@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:orientation="vertical">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="@dimen/ebpay_text_size_18"
+       	android:textColor="@color/ebpay_text_333333"
+        android:text="@string/ebpay_choose_bank_pay" />
+    
+	<RelativeLayout
+	    android:id="@+id/fist_card_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/ebpay_bg_round_area"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <com.baidu.android.pay.view.RemoteImageView
+            android:id="@+id/first_card_img" 
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+		<TextView
+	        android:id="@+id/tv_first_card"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/first_card_img"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="10dp"
+	        android:ellipsize="end"
+	        android:singleLine="true"
+	        android:textSize="@dimen/ebpay_text_size_15"
+        	android:textColor="@color/ebpay_text_333333"
+	        android:text="@string/ebpay_pay_mode_surplus" />
+		<View 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/ebpay_guide_icon"
+		    android:layout_alignParentBottom="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginBottom="2dp"
+		    android:layout_marginRight="2dp"/>
+    </RelativeLayout>
+
+   <LinearLayout
+        android:id="@+id/pay_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+    	android:paddingRight="5dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@null" >
+
+            <EditText
+                android:id="@+id/pay_pass"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/ebpay_bg_edit_seletor"
+                android:drawableLeft="@drawable/ebpay_shape_line_gray"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:hint="@string/ebpay_pay_pass_bfb"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:paddingLeft="43dp" />
+
+            <View
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_alignLeft="@+id/pay_pass"
+                android:layout_margin="10dp"
+                android:background="@drawable/ebpay_ic_pwd" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical" >
+
+            <Button
+                android:id="@+id/get_sms_code"
+                android:layout_width="160dp"
+                android:layout_height="43dp"
+                android:background="@drawable/ebpay_bg_send_sms"
+                android:drawableLeft="@drawable/ebpay_ic_airplane"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:onClick="getSmsCode"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:singleLine="true"
+                android:text="@string/ebpay_get_sms_code"
+                android:textColor="@color/ebpay_black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/sms_code"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/ebpay_bg_edit_seletor"
+                android:hint="@string/ebpay_input_sms_code"
+                android:maxLength="8"
+                android:numeric="integer"
+                android:paddingLeft="10dp"
+                android:singleLine="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

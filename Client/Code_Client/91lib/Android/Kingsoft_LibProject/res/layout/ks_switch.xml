@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ks_switch_layout_height" >
+    <LinearLayout
+        android:layout_width="@dimen/ks_entry_width"
+        android:layout_height="@dimen/ks_switch_layout_height"
+        android:background="@drawable/ks_bg"
+        android:orientation="vertical"
+        android:id="@+id/switch_layout"
+         >
+        <TextView
+            android:id="@+id/entry_layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:drawablePadding="@dimen/ks_entry_padding"
+            android:gravity="center"
+            android:text="@string/ks_switch_title"
+            android:textStyle="bold"
+            android:textColor="@color/ks_entry_txt"
+            android:textSize="@dimen/ks_entry_txt" />
+
+        <ListView
+            android:id="@+id/switchaccount_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:listSelector="@android:color/transparent"
+            android:fadingEdge="none"
+            android:scrollbars="none" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/entry_loading"
+        android:layout_width="@dimen/ks_entry_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ks_loading_height"
+            android:background="@drawable/ks_loading_top"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/ks_loading_padding"
+            android:paddingRight="@dimen/ks_loading_padding"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:text="@string/ks_loading_user"
+                android:textColor="@color/ks_entry_txt"
+                android:textSize="@dimen/ks_entry_txt" />
+
+            <TextView
+                android:id="@+id/entry_loading_usr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/ks_entry_txt"
+                android:textSize="@dimen/ks_entry_txt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ks_loading_height"
+            android:background="@drawable/ks_loading_bottom"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp" >
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="@dimen/ks_entry_padding"
+                android:background="@drawable/ks_loading_halo"
+                android:indeterminateDrawable="@drawable/ks_progress" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/ks_loading"
+                android:textColor="@color/ks_entry_txt"
+                android:textSize="@dimen/ks_entry_txt" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

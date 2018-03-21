@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="regist_keke_margin_left">28.17dp</dimen>
+    <dimen name="regist_keke_margin_top">19.83dp</dimen>
+    <dimen name="login_keke_back_bar_margin_left">16.5dp</dimen>
+    <dimen name="login_keke_back_bar_margin_top">22.83dp</dimen>
+    <dimen name="login_keke_text_margin_left">12.17dp</dimen>
+    <dimen name="login_keke_title_height">43.5dp</dimen>
+    <dimen name="usr_name_input_margin_top">30.5dp</dimen>
+    <dimen name="psw_input_margin_top">13.17dp</dimen>
+    <dimen name="forget_psw_margin_top">7.83dp</dimen>
+    <dimen name="login_btn_margin_top">56.83dp</dimen>
+    <dimen name="input_area_height">37.5dp</dimen>
+    <dimen name="input_area_width">291.83dp</dimen>
+    <dimen name="login_btn_height">50.5dp</dimen>
+    <dimen name="login_btn_width">202.83dp</dimen>
+    <dimen name="login_title_margin_ringt">3.83dp</dimen>
+    
+    
+    <dimen name="regist_type_height">35.17dp</dimen>
+    <dimen name="regist_type_select_line_len">93.17dp</dimen>
+    <dimen name="regist_divide_line_len">305.83dp</dimen>
+    <dimen name="phone_num_margin_top">10dp</dimen>
+    <dimen name="phone_num_input_area_height">38.17dp</dimen>
+    <dimen name="phone_num_input_area_width">188.83dp</dimen>
+    <dimen name="get_verify_code_btn_margin_left">8.83dp</dimen>
+    <dimen name="get_verify_code_btn_width">87.83dp</dimen>
+    <dimen name="verify_code_input_area_margin_top">10dp</dimen>
+    <dimen name="phone_regist_pwd_margin_top">11.17dp</dimen>
+    <dimen name="phone_regist_btn_margin_top">13dp</dimen>
+    <dimen name="login_keke_account_line_len">67.5dp</dimen>
+    <dimen name="login_keke_account_bar_margin_parent_right">16.17dp</dimen>
+    <dimen name="login_keke_account_text_margin_parent_right">27.5dp</dimen>
+    <dimen name="general_input_width">291.83dp</dimen>
+    
+    
+    <dimen name="usr_regist_margin_top">15.83dp</dimen>
+    <dimen name="usr_psw_margin_top">13.17dp</dimen>
+    <dimen name="usr_regist_btn">33.83dp</dimen>
+    
+    <dimen name="login_successfully_text_margin_left">101.17dp</dimen>
+    <dimen name="login_successfully_text_margin_top">28dp</dimen>
+    <dimen name="remember_keke_account_text_margin_top">23dp</dimen>
+    <dimen name="keke_name_margin_top">20dp</dimen>
+    <dimen name="start_game_btn_margin_top">26.5dp</dimen>
+    
+    <dimen name="keke_input_box_margin_left">22.5dp</dimen>
+    <dimen name="regist_login_btn_margin_left">67.5dp</dimen>
+    <dimen name="view_layout_width">336.83dp</dimen>
+    <dimen name="view_layout_height">309.83dp</dimen>
+    <dimen name="account_login_box_margin_left">53dp</dimen>
+    
+</resources>

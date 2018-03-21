@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+     style="@style/upomp_lthj_input_layout" >
+	<EditText style="@style/upomp_lthj_input_edittext" 
+      android:layout_centerVertical="true" android:id="@id/upomp_lthj_validatecode_edit" android:inputType="phone" android:maxLength="4"/>
+	<LinearLayout android:layout_width="@dimen/upomp_lthj_imgViewCheck_width" android:layout_height="@dimen/upomp_lthj_imgViewCheck_height" android:layout_marginRight="@dimen/upomp_lthj_pad_right" android:gravity="center"
+	    android:layout_centerVertical="true" android:layout_alignParentRight="true">
+		<ImageView android:id="@id/upomp_lthj_validatecode_img" android:layout_width="@dimen/upomp_lthj_imgViewCheck_width" android:layout_height="@dimen/upomp_lthj_imgViewCheck_height"
+			android:visibility="gone"/>
+		<ProgressBar android:id="@id/upomp_lthj_validatecode_progress" android:layout_width="@dimen/upomp_lthj_progressBar_size" android:layout_height="@dimen/upomp_lthj_progressBar_size"
+	       android:indeterminateDrawable="@drawable/upomp_lthj_progressbar"/>
+		<Button style="@style/upomp_lthj_verifycode_btn" android:id="@id/upomp_lthj_get_imgcode" android:visibility="gone"/>	
+	</LinearLayout>
+</RelativeLayout>

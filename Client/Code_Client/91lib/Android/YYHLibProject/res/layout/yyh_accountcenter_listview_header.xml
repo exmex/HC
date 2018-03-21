@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ListView的头部 -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="40dip"
+    android:background="#ffffff" >
+
+    <!-- 内容 -->
+
+    <RelativeLayout
+        android:id="@+id/head_contentLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip" >
+
+        <!-- 提示、最近更新 -->
+
+        <LinearLayout
+            android:id="@+id/yyh_update_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <!-- 提示 -->
+
+            <TextView
+                android:id="@+id/yyh_center_tv_update_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yyh_xialashuaxin"
+                android:textSize="15dp" />
+
+            <!-- 最近更新 -->
+
+            <TextView
+                android:id="@+id/yyh_center_tv_lastupdatetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yyh_shangcigengxin"
+                android:textSize="12dp" />
+        </LinearLayout>
+        <!-- 箭头图像、进度条 -->
+
+        <LinearLayout
+            android:layout_width="60dip"
+            android:layout_height="40dip"
+            android:layout_marginRight="10dip"
+            android:layout_toLeftOf="@+id/yyh_update_tips"
+            android:gravity="center_vertical|center_horizontal" >
+
+            <!-- 箭头 -->
+
+            <ImageView
+                android:id="@+id/yyh_center_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/yyh_arrow_down" />
+            <!-- 进度条 -->
+
+
+            <!--
+        <ImageView
+        android:id="@+id/yyh_dialog_loadingImageView"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:layout_marginLeft="4dip"
+        android:background="@anim/yyh_progressbar_loading" />
+            -->
+
+
+            <!--
+                 <ProgressBar
+                android:id="@+id/yyh_center_progressbar"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:layout_margin="0dip"
+                android:padding="0dip"
+                android:visibility="gone" />
+            -->
+
+            <ImageView
+                android:id="@+id/yyh_center_progressbar"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:background="@anim/yyh_progressbar_loading"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

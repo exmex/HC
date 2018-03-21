@@ -1,0 +1,34 @@
+<resources>
+    
+    <style name="Theme.PageIndicatorDefaults" parent="android:Theme">
+        <item name="vpiIconPageIndicatorStyle">@style/Widget.IconPageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicator</item>
+    </style>
+    
+    <style name="Widget">
+    </style>
+
+    <style name="Widget.IconPageIndicator" parent="Widget">
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+    </style>
+
+    <style name="Widget.TabPageIndicator" parent="Widget">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/gamehall_tab_indicator</item>
+        <item name="android:paddingLeft">22dip</item>
+        <item name="android:paddingRight">22dip</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.TabPageIndicator</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    
+    <style name="TextAppearance.TabPageIndicator" parent="Widget">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/gamehall_dark_theme</item>
+    </style>
+    
+    
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "core">
+      <FileRef
+         location = "group:../../Code_Core/scripting/lua/proj.ios/liblua/liblua.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../Code_Core/jsoncpp-src-0.5.0/makefiles/iOS/JsonCpp/JsonCpp.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../Code_Core/cocos2dx/proj.ios/cocos2dx.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../Code_Core/core/proj.ios/core/core.xcodeproj">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:../com4lovesSDK/com4lovesSDK.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../libOS/iOS/libOS/libOS.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../91lib/iOS/lib91/lib91.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:Game/Game.xcodeproj">
+   </FileRef>
+</Workspace>

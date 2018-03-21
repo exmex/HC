@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="@dimen/ks_entry_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ks_bg"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/ks_entry_padding"
+        android:paddingBottom="@dimen/ks_entry_padding"
+        android:paddingLeft="@dimen/ks_entry_padding_mid"
+        android:paddingRight="@dimen/ks_entry_padding_mid" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/ks_window_padding" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ks_tips_close"
+                android:textColor="@color/ks_entry_txt"
+                android:textSize="@dimen/ks_entry_txt" />
+
+            <TextView
+                android:id="@+id/retrieve_psw_website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ks_entry_padding"
+                android:text="@string/ks_tips_restart"
+                android:textColor="@color/ks_gray"
+                android:textSize="@dimen/ks_entry_tips" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/ks_entry_padding"
+            android:background="@drawable/ks_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/window_tips_ok"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ks_entry_btn_height"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:text="@string/ks_tips_ok"
+                android:textColor="@color/ks_entry_txt"
+                android:textSize="@dimen/ks_psw_txt" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ks_line" />
+
+            <Button
+                android:id="@+id/window_tips_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ks_entry_btn_height"
+                android:layout_marginLeft="@dimen/ks_entry_padding"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:text="@string/ks_tips_cancel"
+                android:textColor="@color/ks_light_blue"
+                android:textSize="@dimen/ks_psw_txt" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

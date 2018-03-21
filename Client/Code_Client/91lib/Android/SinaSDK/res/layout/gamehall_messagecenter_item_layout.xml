@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gamehall_mine_selector"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/unreadreddot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:src="@drawable/gamehall_unreadmsg_dot" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/unreadreddot"
+            android:ellipsize="none"
+            android:maxLength="8"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/title"
+            android:layout_below="@id/title"
+            android:ellipsize="end"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:textColor="#999997"
+            android:textSize="15dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/title"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:textColor="#999997"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_weight="0.1"
+        android:id="@+id/go"
+        android:layout_gravity="right|center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp"
+        android:background="@drawable/gamehall_mine_go"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+</LinearLayout>

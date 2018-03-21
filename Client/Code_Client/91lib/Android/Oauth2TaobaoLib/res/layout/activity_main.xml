@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <Button
+        android:id="@+id/auth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="onOauth"
+        android:text="淘宝认证OAUTH2.0" />
+
+    
+
+    <TextView
+        android:id="@+id/show"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/auth"
+        android:layout_marginLeft="10dp" />
+
+    <Button
+        android:id="@+id/apiCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+           android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/auth"
+        android:text="注销"
+        android:visibility="invisible" />
+
+</RelativeLayout>

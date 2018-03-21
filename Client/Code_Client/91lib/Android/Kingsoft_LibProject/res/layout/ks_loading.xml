@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ks_loading"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/ks_bg"
+    android:gravity="center"
+    android:minHeight="80dp"
+    android:minWidth="80dp"
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/ks_loading_halo"
+        android:indeterminateDrawable="@drawable/ks_progress" />
+
+</LinearLayout>

@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="80dip" 
+            android:layout_marginTop="10dip"
+            >
+
+            <ImageView
+                android:id="@+id/yyh_center_logo"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="30dip"
+                android:layout_marginTop="10dip"
+                android:src="@drawable/yyh_logo" />
+
+            <TextView
+                android:id="@+id/yyh_center_lastlogin_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/yyh_center_logo"
+                android:layout_toRightOf="@id/yyh_center_logo"
+                android:text="abcd"
+                android:textColor="#ababab"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/yyh_center_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/yyh_center_lastlogin_time"
+                android:layout_toRightOf="@id/yyh_center_logo"
+                android:text="abcd"
+                android:textColor="#2d3340"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/yyh_center_openid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/yyh_center_username"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@id/yyh_center_username"
+                android:text="abcd"
+                android:textColor="#2d3340"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:gravity="top|center_horizontal"
+            android:orientation="vertical" >
+
+            <!-- 修改密码 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/yyh_frame_5"
+                android:orientation="vertical"
+                android:padding="0dip" >
+
+                <RelativeLayout
+                    android:id="@+id/yyh_center_changepsw_show"
+                    android:layout_width="@dimen/yyh_center_item_width"
+                    android:layout_height="@dimen/yyh_center_item_height" >
+
+                    <TextView
+                        android:id="@+id/yyh_textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/yyh_img_key"
+                        android:layout_marginLeft="15dip"
+                        android:layout_toRightOf="@+id/yyh_img_key"
+                        android:text=">修改"
+                        android:textColor="#354c82" />
+
+                    <ImageView
+                        android:id="@+id/yyh_img_key"
+                        android:layout_width="40dip"
+                        android:layout_height="50dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"
+                        android:background="@null"
+                        android:src="@drawable/yyh_key" />
+
+                    <TextView
+                        android:id="@+id/yyh_tv_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/yyh_textView1"
+                        android:layout_alignLeft="@id/yyh_textView1"
+                        android:gravity="left|center_vertical"
+                        android:text="修改密码"
+                        android:textColor="#2d3340"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <!-- 修改密码区域 -->
+
+                <LinearLayout
+                    android:id="@+id/yyh_center_changepsw_area"
+                    android:layout_width="@dimen/yyh_center_item_width"
+                    android:layout_height="@dimen/yyh_center_item_content_height"
+                    android:background="@drawable/yyh_frame_7"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <!-- 旧密码 -->
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/yyh_dialog_inputframe_width"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/yyh_frame_5"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/yyh_abc_1"
+                            android:layout_width="30dip"
+                            android:layout_height="fill_parent"
+                            android:paddingBottom="7dip"
+                            android:paddingLeft="7dip"
+                            android:paddingRight="7dip"
+                            android:paddingTop="7dip"
+                            android:src="@drawable/yyh_img_password" />
+
+                        <LinearLayout
+                            android:id="@+id/yyh_psw_switch_container"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:orientation="vertical" >
+
+                            <ToggleButton
+                                android:id="@+id/yyh_psw_switch"
+                                android:layout_width="25dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/yyh_pswswitch_selector"
+                                android:checked="true"
+                                android:textOff=""
+                                android:textOn="" />
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/yyh_password_old"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_alignTop="@id/yyh_abc_1"
+                            android:layout_toLeftOf="@id/yyh_psw_switch_container"
+                            android:layout_toRightOf="@id/yyh_abc_1"
+                            android:background="@null"
+                            android:hint="输入旧密码(6-18位)"
+                            android:inputType="textVisiblePassword"
+                            android:textColor="#8c8c8c"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                    <!-- 新密码 -->
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/yyh_dialog_inputframe_width"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/yyh_frame_3"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/yyh_abc_2"
+                            android:layout_width="30dip"
+                            android:layout_height="fill_parent"
+                            android:paddingBottom="7dip"
+                            android:paddingLeft="7dip"
+                            android:paddingRight="7dip"
+                            android:paddingTop="7dip"
+                            android:src="@drawable/yyh_img_password" />
+
+                        <EditText
+                            android:id="@+id/yyh_password_new"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignTop="@id/yyh_abc_2"
+                            android:layout_toRightOf="@id/yyh_abc_2"
+                            android:background="@null"
+                            android:hint="输入新密码(6-18位)"
+                            android:inputType="textVisiblePassword"
+                            android:textColor="#8c8c8c"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/yyh_center_btn_changepsw"
+                        android:layout_width="@dimen/yyh_btn_width"
+                        android:layout_height="@dimen/yyh_btn_height"
+                        android:layout_marginTop="5dip"
+                        android:background="@drawable/yyh_buttonselector_login"
+                        android:text="确认修改"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 绑定手机 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/yyh_frame_1"
+                android:orientation="vertical"
+                android:padding="0dip" >
+
+                <RelativeLayout
+                    android:id="@+id/yyh_center_bindphone_area_show"
+                    android:layout_width="@dimen/yyh_center_item_width"
+                    android:layout_height="@dimen/yyh_center_item_height" >
+
+                    <TextView
+                        android:id="@+id/yyh_center_bindphone_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/yyh_img_phone"
+                        android:layout_marginLeft="15dip"
+                        android:layout_toRightOf="@+id/yyh_img_phone"
+                        android:text=">立即绑定"
+                        android:textColor="#354c82" />
+
+                    <TextView
+                        android:id="@+id/yyh_tv_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/yyh_center_bindphone_msg"
+                        android:layout_alignLeft="@+id/yyh_center_bindphone_msg"
+                        android:gravity="left|center_vertical"
+                        android:text="手机绑定"
+                        android:textColor="#2d3340"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/yyh_img_phone"
+                        android:layout_width="40dip"
+                        android:layout_height="50dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"
+                        android:background="@null"
+                        android:src="@drawable/yyh_phone" />
+
+                    <TextView
+                        android:id="@+id/yyh_center_bindphone_msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/yyh_center_bindphone_state"
+                        android:layout_alignLeft="@+id/yyh_center_bindphone_state"
+                        android:text="您未绑定手机"
+                        android:textColor="#ababab"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+                <!-- 绑定手机区域 -->
+
+                <LinearLayout
+                    android:id="@+id/yyh_center_bindphone_area"
+                    android:layout_width="@dimen/yyh_center_item_width"
+                    android:layout_height="@dimen/yyh_center_item_content_height"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <!--
+                    显示绑定的手机号码 
+                    <RelativeLayout
+                        android:layout_width="@dimen/yyh_dialog_inputframe_width"
+                        android:layout_height="30dip"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/yyh_abc_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="绑定手机号:" />
+
+                        <TextView
+                            android:id="@+id/yyh_binded_phonenum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/yyh_abc_3"
+                            android:layout_toRightOf="@id/yyh_abc_3" />
+                    </RelativeLayout>
+                    -->
+
+
+                    <!-- 获取验证码 -->
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/yyh_dialog_inputframe_width"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/yyh_frame_5"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/yyh_abc_4"
+                            android:layout_width="5dip"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="5dip"
+                            android:background="#00ffffff" />
+
+                        <LinearLayout
+                            android:id="@+id/yyh_abc_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical" >
+
+                            <Button
+                                android:id="@+id/yyh_get_capture_phoneway"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/yyh_buttonselector_login"
+                                android:text="获取验证码"
+                                android:textColor="#ffffff"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/yyh_input_phonenum"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_alignTop="@id/yyh_abc_4"
+                            android:layout_toLeftOf="@id/yyh_abc_8"
+                            android:layout_toRightOf="@id/yyh_abc_4"
+                            android:background="@null"
+                            android:hint="输入手机号"
+                            android:inputType="phone"
+                            android:textColor="#bcbcbc"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                    <!-- 验证码 -->
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/yyh_dialog_inputframe_width"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/yyh_frame_3" >
+
+                        <ImageView
+                            android:id="@+id/yyh_abc_6"
+                            android:layout_width="5dip"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="5dip"
+                            android:background="#00ffffff" />
+
+                        <EditText
+                            android:id="@+id/yyh_capture_num_phoneway"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_alignTop="@id/yyh_abc_6"
+                            android:layout_toRightOf="@id/yyh_abc_6"
+                            android:background="@null"
+                            android:hint="输入验证码"
+                            android:inputType="text|number"
+                            android:maxLength="4"
+                            android:textColor="#8c8c8c"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/yyh_center_bindphone"
+                        android:layout_width="@dimen/yyh_btn_width"
+                        android:layout_height="@dimen/yyh_btn_height"
+                        android:layout_marginTop="5dip"
+                        android:background="@drawable/yyh_buttonselector_login"
+                        android:text="完成绑定"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 绑定邮箱 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/yyh_frame_4"
+                android:orientation="vertical"
+				android:paddingLeft="0dip"
+				android:paddingRight="0dip"                
+                >
+
+                <RelativeLayout
+                    android:id="@+id/yyh_center_bindemail_area_show"
+                    android:layout_width="@dimen/yyh_center_item_width"
+                    android:layout_height="@dimen/yyh_center_item_height" >
+
+                    <TextView
+                        android:id="@+id/yyh_center_bindemail_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/yyh_img_email"
+                        android:layout_marginLeft="15dip"
+                        android:layout_toRightOf="@+id/yyh_img_email"
+                        android:text=">立即绑定"
+                        android:textColor="#354c82" />
+
+                    <TextView
+                        android:id="@+id/yyh_center_bindemail_msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/yyh_center_bindemail_state"
+                        android:layout_alignLeft="@+id/yyh_center_bindemail_state"
+                        android:layout_centerVertical="true"
+                        android:text="您未绑定邮箱"
+                        android:textColor="#ababab"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/yyh_img_email"
+                        android:layout_width="40dip"
+                        android:layout_height="50dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"
+                        android:background="@null"
+                        android:src="@drawable/yyh_email" />
+
+                    <TextView
+                        android:id="@+id/yyh_tv_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/yyh_center_bindemail_msg"
+                        android:layout_alignLeft="@+id/yyh_center_bindemail_msg"
+                        android:gravity="left|center_vertical"
+                        android:text="邮箱绑定"
+                        android:textColor="#2d3340"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/yyh_center_bindemail_area"
+                    android:layout_width="@dimen/yyh_center_item_width"
+                    android:layout_height="@dimen/yyh_center_item_content_height"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <!--
+                    显示绑定的手机号码 
+                    <RelativeLayout
+                        android:layout_width="@dimen/yyh_dialog_inputframe_width"
+                        android:layout_height="30dip"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/yyh_abc_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="绑定手机号:" />
+
+                        <TextView
+                            android:id="@+id/yyh_binded_phonenum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/yyh_abc_3"
+                            android:layout_toRightOf="@id/yyh_abc_3" />
+                    </RelativeLayout>
+                    -->
+
+
+                    <!-- 获取验证码 -->
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/yyh_dialog_inputframe_width"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/yyh_frame_5"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/yyh_abc_5"
+                            android:layout_width="5dip"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="5dip"
+                            android:background="#00ffffff" />
+
+                        <LinearLayout
+                            android:id="@+id/yyh_abc_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical" >
+
+                            <Button
+                                android:id="@+id/yyh_center_getcapture_emailway"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/yyh_buttonselector_login"
+                                android:text="获取验证码"
+                                android:textColor="#ffffff"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/yyh_center_input_emailadd"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_alignTop="@id/yyh_abc_5"
+                            android:layout_toLeftOf="@id/yyh_abc_9"
+                            android:layout_toRightOf="@id/yyh_abc_5"
+                            android:background="@null"
+                            android:hint="输入邮箱地址"
+                            android:inputType="textEmailAddress"
+                            android:textColor="#bcbcbc"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                    <!-- 验证码 -->
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/yyh_dialog_inputframe_width"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/yyh_frame_3" >
+
+                        <ImageView
+                            android:id="@+id/yyh_abc_10"
+                            android:layout_width="5dip"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="5dip"
+                            android:background="#00ffffff" />
+
+                        <EditText
+                            android:id="@+id/yyh_capture_num_emailway"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_alignTop="@id/yyh_abc_10"
+                            android:layout_toRightOf="@id/yyh_abc_10"
+                            android:background="@null"
+                            android:hint="输入验证码"
+                            android:inputType="text|number"
+                            android:maxLength="4"
+                            android:textColor="#8c8c8c"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/yyh_center_bindemail"
+                        android:layout_width="@dimen/yyh_btn_width"
+                        android:layout_height="@dimen/yyh_btn_height"
+                        android:layout_marginTop="5dip"
+                        android:background="@drawable/yyh_buttonselector_login"
+                        android:text="完成绑定"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/yyh_rl_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dip" >
+
+        <ImageView
+            android:id="@+id/yyh_iv_icon_dollar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/yyh_sdk_money_icon" />
+
+        <TextView
+            android:id="@+id/yyh_tv_create_date"
+            android:layout_width="80dip"
+            android:layout_height="30dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/yyh_iv_icon_dollar"
+            android:gravity="center_vertical"
+            android:text="@string/yyh_date"
+            android:textColor="#535353"
+            android:textSize="14dip" />
+
+        <TextView
+            android:id="@+id/yyh_tv_how_much"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/yyh_tv_create_date"
+            android:gravity="center_vertical"
+            android:text="@string/yyh_how_much"
+            android:textColor="#535353"
+            android:textSize="14dip" />
+
+        <TextView
+            android:id="@+id/yyh_tv_view_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:drawableRight="@drawable/yyh_sdk_unfold"
+            android:gravity="center_vertical"
+            android:text="@string/yyh_record_detail"
+            android:textColor="#535353"
+            android:drawablePadding="5dip"
+            android:textSize="14dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/yyh_rl_item_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yyh_rl_item_title" 
+        android:layout_marginLeft="32dip"
+        android:visibility="visible"
+        android:paddingBottom="12dip">
+
+        <TextView
+            android:id="@+id/yyh_pay_time"
+            android:layout_width="85dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/yyh_pay_detail_tag_margintop"
+            android:text="@string/yyh_pay_jiaoyishijian"
+            android:textColor="@color/yyh_pay_detail_tag_textcolor"
+            android:textSize="@dimen/yyh_pay_detail_tag_textsize" />
+
+        <TextView
+            android:id="@+id/yyh_pay_time_real"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/yyh_pay_time"
+            android:layout_toRightOf="@id/yyh_pay_time"
+            android:text="@string/yyh_pay_jiaoyishijian"
+            android:textColor="@color/yyh_pay_detail_tag_textcolor"
+            android:textSize="@dimen/yyh_pay_detail_tag_textsize" />
+
+        <TextView
+            android:id="@+id/yyh_pay_transid"
+            android:layout_width="85dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yyh_pay_time"
+            android:layout_marginTop="@dimen/yyh_pay_detail_tag_margintop"
+            android:text="@string/yyh_pay_jiaoyiliushuihao"
+            android:textColor="@color/yyh_pay_detail_tag_textcolor"
+            android:textSize="@dimen/yyh_pay_detail_tag_textsize" />
+
+        <TextView
+            android:id="@+id/yyh_pay_transid_real"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/yyh_pay_transid"
+            android:layout_toRightOf="@id/yyh_pay_transid"
+            android:text="@string/yyh_pay_jiaoyiliushuihao"
+            android:textColor="@color/yyh_pay_detail_tag_textcolor"
+            android:textSize="@dimen/yyh_pay_detail_tag_textsize" />
+
+        <TextView
+            android:id="@+id/yyh_pay_amount"
+            android:layout_width="85dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yyh_pay_transid"
+            android:layout_marginTop="@dimen/yyh_pay_detail_tag_margintop"
+            android:text="@string/yyh_pay_jiaoyijine"
+            android:textColor="@color/yyh_pay_detail_tag_textcolor"
+            android:textSize="@dimen/yyh_pay_detail_tag_textsize" />
+
+        <TextView
+            android:id="@+id/yyh_pay_amount_real"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/yyh_pay_amount"
+            android:layout_toRightOf="@id/yyh_pay_amount"
+            android:text="@string/yyh_pay_jiaoyijine"
+            android:textColor="@color/yyh_pay_detail_tag_textcolor"
+            android:textSize="@dimen/yyh_pay_detail_tag_textsize" />
+
+        <TextView
+            android:id="@+id/yyh_pay_state"
+            android:layout_width="85dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yyh_pay_amount"
+            android:layout_marginTop="@dimen/yyh_pay_detail_tag_margintop"
+            android:text="@string/yyh_pay_jiaoyizhuangtai"
+            android:textColor="@color/yyh_pay_detail_tag_textcolor"
+            android:textSize="@dimen/yyh_pay_detail_tag_textsize" />
+
+        <TextView
+            android:id="@+id/yyh_pay_state_real"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/yyh_pay_state"
+            android:layout_toRightOf="@id/yyh_pay_state"
+            android:text="@string/yyh_pay_jiaoyizhuangtai"
+            android:textColor="@color/yyh_pay_detail_tag_textcolor"
+            android:textSize="@dimen/yyh_pay_detail_tag_textsize" />
+
+        <TextView
+            android:id="@+id/yyh_pay_appname"
+            android:layout_width="85dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yyh_pay_state"
+            android:layout_marginTop="@dimen/yyh_pay_detail_tag_margintop"
+            android:text="@string/yyh_pay_yingyongmingcheng"
+            android:textColor="@color/yyh_pay_detail_tag_textcolor"
+            android:textSize="@dimen/yyh_pay_detail_tag_textsize"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/yyh_pay_appname_real"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/yyh_pay_appname"
+            android:layout_toRightOf="@id/yyh_pay_appname"
+            android:text="@string/yyh_pay_yingyongmingcheng"
+            android:textColor="@color/yyh_pay_detail_tag_textcolor"
+            android:textSize="@dimen/yyh_pay_detail_tag_textsize" 
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/yyh_pay_paytype"
+            android:layout_width="85dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yyh_pay_appname"
+            android:layout_marginTop="@dimen/yyh_pay_detail_tag_margintop"
+            android:text="@string/yyh_pay_zhifufangshi"
+            android:textColor="@color/yyh_pay_detail_tag_textcolor"
+            android:textSize="@dimen/yyh_pay_detail_tag_textsize" />
+
+        <TextView
+            android:id="@+id/yyh_pay_paytype_real"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/yyh_pay_paytype"
+            android:layout_toRightOf="@id/yyh_pay_paytype"
+            android:text="@string/yyh_pay_zhifufangshi"
+            android:textColor="@color/yyh_pay_detail_tag_textcolor"
+            android:textSize="@dimen/yyh_pay_detail_tag_textsize" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_line_split"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_below="@id/yyh_rl_item_content"
+        android:background="#dcdcdc"
+        android:layout_marginLeft="32dip" />
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="yyh_dialog_width">300dip</dimen>
+    <dimen name="yyh_dialog_width_fu">-300dip</dimen>
+    <dimen name="yyh_dialog_content_height">150dip</dimen>
+    <dimen name="yyh_dialog_inputframe_width">240dip</dimen>
+    <dimen name="yyh_btn_width">100dip</dimen>
+    <dimen name="yyh_btn_height">30dip</dimen>
+    <dimen name="yyh_center_item_width">300dip</dimen>
+    <dimen name="yyh_center_item_height">100dip</dimen>
+    <dimen name="yyh_center_item_content_height">100dip</dimen>
+    <dimen name="yyh_dialog_loginarea_margintop">6dip</dimen>
+
+</resources>

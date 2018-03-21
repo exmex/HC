@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="aipay_signal_yuan">元</string>
+    <string name="aipay_price">应付%1$s酷币</string>
+    <string name="aipay_v_balance">酷币余额 %1$s酷币</string>
+    <string name="aipay_valid_code">验证码</string>
+    <string name="aipay_valid_code_sent">已向 %1$s 发送短信验证码</string>
+    <string name="aipay_pay_fail">支付失败，请重试。</string>
+    <string name="aipay_not_enough">酷币余额不足，请选择其他支付方式</string>
+    <string name="aipay_checking_conf">更新信息中&#8230;</string>
+    <string name="aipay_select_other">选择其他支付方式</string>
+    <string name="aipay_comfirm_submit">确认支付</string>
+    <string name="aipay_charge_submit">充值</string>
+    <string name="aipay_error_exit">快捷一键支付失败，请选择其他支付方式。</string>
+    <string name="aipay_predict_value">预计到账%1$s酷币</string>
+    <string name="aipay_predict_add">"，收取%1$s元手续费"</string>
+    <string name="aipay_total_price">"支付%1$s元"</string>
+    <string name="aipay_total_charges">"（含手续费%1$s元）"</string>
+    <string name="aipay_time_out">本次支付超出了正常交易时间，可能已经失败。</string>
+    <string name="aipay_select_value">请选择充值面额</string>
+    <string name="aipay_sms_value">面额</string>
+    <string name="aipay_sms_vbi">预计充值%1$s酷币</string>
+    <string name="aipay_sms_tip">确认支付后，系统将自动发短信，扣除相应话费并完成支付</string>
+    <string name="aipay_no_card_pay_tip1">请选择运营商和面额</string>
+    <string name="aipay_no_card_pay_tip2">请输入卡号和密码</string>
+    <string name="aipay_operator">运营商</string>
+    <string name="aipay_operator_value">面额</string>
+    <string name="aipay_card_no">卡号</string>
+    <string name="aipay_password">密码</string>
+    <string name="aipay_more_pay_type">更多支付方式</string>
+    <string name="aipay_v_store_type">酷币充值-选择充值方式</string>
+    <string name="aipay_v_about">关于酷币</string>
+    <string name="aipay_v_tips">提示:充值到账后，可用酷币支付订单</string>
+    <string name="aipay_v_store_suc">充值成功</string>
+    <string name="aipay_game_card_store_tips">温馨提示:请确保所选面额与卡实际面额一致,否则将可能导致充值失败、意外销卡或资金损失。</string>
+
+    <string name="getting_sms_info">正在获取短信支付信息...</string>
+	<string name="aipay_op_yidong">移动卡</string>
+	<string name="aipay_op_liantong">联通卡</string>
+	<string name="aipay_op_dianxin">电信卡</string>
+	<string name="ipay_logining">登录中&#8230;</string>
+	<string name="ipay_switch_account">切换账号</string>
+	<string name="ipay_login_lable">百度账号%1$s</string>
+	
+	<string name="aipay_v_balance_tip">剩余%1$s酷币</string>
+	<string name="aipay_balance_yuan">%1$s元</string>
+	<string name="aipay_pay_discount">%1$s折</string>
+	<string name="aipay_pay_value_error">请选择或填写充值金额</string>
+	<string name="aipay_vb_desc">在酷派合作的游戏、音乐、阅读等产品中通行使用。</string>
+	<string name="aipay_card_not_empty">卡号不能为空</string>
+	<string name="aipay_pwd_not_empty">密码不能为空</string>
+	<string name="aipay_card_invalid">卡号输入有误，请重新输入</string>
+	<string name="aipay_pwd_invalid">密码输入有误，请重新输入</string>
+	<string name="aipay_casrdno_pwd_invalid">卡号密码输入有误，请重新输入</string>
+	<string name="aipay_value_not_empty">面额不能为空</string>
+	<string name="aipay_value_not_enough">金额不足以支付商品</string>
+	<string name="aipay_value_invalid">充值面额无效</string>
+	<string name="aipay_gamecard_value_strict">游戏卡面额不能大于1000,请重新输入正确面额</string>
+	
+	
+	<string name="aipay_submit_cancle">取消</string>
+	<string name="aipay_subimt_sure">确定</string>
+	<string name="aipay_subimt_pay">确认支付</string>
+	<string name="aipay_exit">确认放弃本次支付？</string>
+	
+	<string name="aipay_shop_name">商户名称:</string>
+	<string name="aipay_app_name">应用名称:</string>
+	<string name="aipay_goods_name">商品名称:</string>
+	<string name="aipay_help_phone">客服电话：</string>
+	<string name="aipay_select_paytype">选择支付方式</string>
+	<string name="aipay_notice">公告:</string>
+	<string name="aipay_help_phone_no">400&#8211;8988&#8211;855</string>
+	<string name="aipay_tip">提示</string>
+	<string name="aipay_v_balance_laking">酷币余额不足，请前往充值</string>
+	<string name="aipay_v_balance_tips">酷币余额 %1$s币,应付%2$s酷币</string>
+	<string name="aipay_v_bfb_laking">百度钱包余额不足</string>
+	<string name="aipay_go_stote">去充值</string>
+	<string name="aipay_cardno_hint">请输入卡号</string>
+	<string name="aipay_cardpass_hint">请输入卡密码</string>
+	<string name="aipay_card_value_hint">请输入卡面额(元)</string>
+	
+    <string name="ebpay_paying">支付中&#8230;</string>
+    <string name="ebpay_img">Image</string>
+    <string name="ebpay_mode_surplus_assis">%1$s元</string>
+    
+    <!-- 支付界面 -->
+    <string name="aipay_aibei_need_pay">需要支付   %1$s %2$s </string>
+    
+    <!-- 账户界面 -->
+    <string name="aipay_balance_tip">余额: </string>
+    <string name="aipay_charge">充值酷币 </string>
+    <string name="aipay_register_for_balance">注册领取 </string>
+    <string name="aipay_register_for_acconut">注册或登录 </string>
+    <string name="aipay_register_tips">您有%s未消费，为方便以后付款和保护余款安全，您可注册酷派账号，我们将提供全面的账户安全机制。</string>
+    <string name="aipay_register_tips0">注册酷派用户，我们将为您提供更便捷的统一支付服务，更完善的资金安全保障服务。</string>
+    <string name="aipay_account">用户中心</string>
+    
+    <!-- 卡类支付界面 -->
+    <string name="aipay_cardpay_tips">支付商品%1$s元(含%2$s手续费).</string>
+    <string name="aipay_cardpay_payfee_tips">充值%1$s元,其中支付商品%2$s元(含%3$s元手续费),剩余%4$s元将充值%5$s酷币.</string>
+    <string name="aipay_cardpay_payfee_chargefee_tips">充值%1$s元,其中支付商品%2$s元(含%3$s元手续费),剩余%4$s元将充值%5$s酷币(其中%6$s元人民币是手续费).</string>	
+    <string name="aipay_cardpay_charge_tips">充值%1$s元,其中支付商品%2$s元,剩余%3$s元将充值%4$s酷币.</string>
+   	<string name="aipay_cardpay_chargefee_tips">充值%1$s元,其中支付商品%2$s元,剩余%3$s元将充值%4$s酷币(其中%5$s元人民币是手续费).</string>
+   	<string name="aipay_chargefeee_tips">充值%1$s元，其中充入%2$s酷币， 手续费 %3$s元   </string>
+   	
+    	
+    <string name="aipay_unit">酷币</string>
+    <string name="aipay_pay">酷币支付</string>
+    
+    <string name="aipay_convert">兑换比例</string>
+    <string name="aipay_exchange">1人民币 = 10酷币</string>
+    <string name="aipay_cryption">酷派信息版权所有</string>
+    <string name="aipay_version">kupad3.4.0</string>
+    <string name="aipay_copyright">Copyright©2014kupad.AllRights Reserved</string>
+    
+    <string name="aipay_about">关于酷派支付</string>
+    <string name="aipay_jifei">酷派信息</string>
+	         
+</resources>

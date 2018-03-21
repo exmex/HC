@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- 升级模块 -->
+	<string name="upgrade_notify_upgrade_label">have the latest software version </string>
+	<string name="upgrade_notify_upgrade_content">The latest software version is %s,please update</string>
+	<string name="upgrade_dialog_force_upgrade_title">Software updates</string>
+	<string name="upgrade_dialog_force_upgrade_label" formatted="false">If you do not update can not continue using the software, it is recommended to upgrade wifi environment.\nUpdate content：\n%s</string>
+	<string name="upgrade_update_now">Update</string>
+	<string name="upgrade_update_later">Cancel</string>
+	<string name="upgrade_dialog_upgrade_label" formatted="false">Proposed upgrade wifi environment.\nUpdate content：\n%s</string>
+	<string name="upgrade_notify_install_fail">%s installation fails</string>
+	<string name="upgrade_download_pause">Pause</string>
+	<string name="upgrade_download_resume">Continue</string>
+	<string name="upgrade_download_cancel">Cancel</string>
+	<string name="upgrade_dialog_download_ing">Downloading, please wait ...</string>
+	<string name="upgrade_dialog_download_pause">Download pause, click the button to continue download</string>
+	<string name="upgrade_dialog_download_fail">Network problems cause to download updates interruption, please wait to continue.  </string>
+	<string name="upgrade_maintain_title">Update maintenance</string>
+	<string name="upgrade_update_already">Your software version is the newest one, you do not need to update.</string>
+	<string name="upgrade_confirm">Confirm</string>
+	<string name="upgrade_update_checking">Acquiring update，please wait…</string>
+	<string name="upgrade_network_error">Network anomaly, please try again.</string>
+	<string name="upgrade_no_enough_space">Phone memory is not enough, delete the other files and try again</string>
+	<string name="upgrade_fail">Update failed</string>
+	<string name="upgrade_error_md5">Due to network instability, the download data is missing, please re-download.</string>
+	<string name="upgrade_retry">Re-download</string>
+	<string name="upgrade_no_sdcard">Did not find the SD card, can not loading image and upgrade</string>
+	<!-- 20130228新增 -->
+	<string name="upgrade_upgrade_size">Size of the update：%s</string>
+	<string name="upgrade_version">Version：%s</string>
+	<string name="upgrade_dialog_force_upgrade_title_fail">Update interrupt</string>
+</resources>
+

@@ -1,0 +1,9 @@
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@android:id/text1"
+    style="@style/appchina_pay_MySpinner"
+    android:singleLine="true"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:ellipsize="marquee" />

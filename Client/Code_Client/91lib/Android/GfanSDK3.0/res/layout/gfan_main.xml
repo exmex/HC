@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/username"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/primary_text_dark" />
+
+        <TextView
+            android:id="@+id/tv_uid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/uid"
+            android:textColor="@android:color/primary_text_dark_nodisable" />
+
+        <TextView
+            android:id="@+id/tv_runningNum"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/running_number"
+            android:textColor="@android:color/primary_text_dark" />
+
+        <TextView
+            android:id="@+id/tv_order_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/orderid"
+            android:textColor="@android:color/primary_text_dark_nodisable" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <Button
+            android:id="@+id/btn_generate_orderid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/generate_orderid" />
+
+        <EditText
+            android:id="@+id/et_order_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btn_generate_orderid"
+            android:gravity="center_vertical"
+            android:hint="@string/hint_order_id"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/btn_pay"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/et_order_id"
+            android:layout_marginTop="10dp"
+            android:text="@string/pay" />
+
+        <EditText
+            android:id="@+id/et_pay_value"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_order_id"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/btn_pay"
+            android:gravity="center_vertical"
+            android:hint="@string/hint_pay_value"
+            android:inputType="number"
+            android:textColor="@android:color/black" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/login" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/register" />
+        
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="注销" />
+
+        <Button
+            android:id="@+id/btn_charge"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/charge" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <Button
+            android:id="@+id/btn_game_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/game_login" />
+
+        <Button
+            android:id="@+id/btn_game_register"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/game_register" />
+
+        <Button
+            android:id="@+id/btn_new_role"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/new_role" />
+    </LinearLayout>
+    
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:paddingLeft="5dp"
+          android:paddingRight="5dp" >
+
+          <Button
+              android:id="@+id/btn_modfiy"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.02"
+              android:text="@string/user_modfiy" />
+
+ 		<Button
+              android:id="@+id/btn_isonekey"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.04"
+              android:text="是否游客账号" />
+      </LinearLayout>
+       <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:paddingLeft="5dp"
+          android:paddingRight="5dp"
+          android:visibility="gone" >
+
+          <Button
+              android:id="@+id/btn_share"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.04"
+              android:text="@string/game_share" />
+
+          <Button
+              android:id="@+id/btn_invite"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.02"
+              android:text="邀请论坛好友" />
+
+      </LinearLayout>
+  <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:paddingLeft="5dp"
+          android:paddingRight="5dp" 
+          android:visibility="gone">
+
+          <Button
+              android:id="@+id/btn_iftttdev"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.02"
+              android:text="启动开发者消息推送" />
+
+          <Button
+              android:id="@+id/btn_iftttdevstop"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.02"
+              android:text="停止开发者消息推送" />
+         
+
+      </LinearLayout>
+</LinearLayout>

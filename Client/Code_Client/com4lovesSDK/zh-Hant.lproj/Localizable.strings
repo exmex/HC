@@ -1,0 +1,103 @@
+/*
+ Localizable.strings
+ com4lovesSDK
+ 
+ Created by ljc on 13-12-12.
+ Copyright (c) 2013年 com4loves. All rights reserved.
+ */
+/* uialert 相关 */
+"notice" = "提醒";
+"cancel" = "取消";
+"ok" = "確定";
+"notice_changeuser"             = "程序内切换用户需重啟游戏！";
+"notice_restart"                = "程序內註銷需要重啟遊戲！";
+"notice_bindingok"              = "賬號已綁定成功！";
+"notice_modify_password_ok"     = "密碼修改成功";
+"notice_init_failed"            = "初始化失敗！";
+"notice_sign_error"             = "簽名錯誤！";
+"notice_alipay_notinstall"      = "您還沒有安裝支付寶快捷支付,請先安裝。";
+"notice_username_toolong"       = "用戶名不能超過12個字符！";
+"notice_username_tooshoot"      = "用戶名不能少於6個字符！";
+"notice_password_length"        = "密碼必須為6到12字符.！";
+"notice_email_toolong"          = "郵箱不能大於64個字符！";
+"notice_username_ilegl"         = "用戶名含有非法字符!！";
+"notice_password_ilegl"         = "密碼含有非法字符!！";
+"notice_email_ilegl"            = "郵箱格式非法!！";
+
+/*订单相关*/
+
+"order_faild"           = "訂單支付失敗";
+"order_success"         = "支付成功";
+"order_exception"       = "支付異常";
+"order_wait_result"     = "等待支付結果";
+"buy_faild"             = "購買失敗";
+
+
+/*界面相关*/
+
+"account"       = "賬號";
+"zuanshi"       = "鑽石";
+"defualt"       = "默認";
+"welcome"       = "歡迎來到龍珠的世界！";
+"register"      = "註冊";
+"close"         = "關閉";
+"binding"       = "綁定";
+"back"          = "返回";
+"finish"        = "完成";
+"register_bind" = "註冊綁定";
+"email_optional"= "選填";
+"viewtitle"     = "遊戲社區";
+
+/*   selfpayview.xib */
+"payview_laybel1" = "充值金額：              元";
+"payview_laybel2" = "充值遊戲：天天龍珠";
+"payview_laybel3" = "選擇充值方式";
+"payview_laybel4" = "網頁支付";
+"payview_laybel5" = "快捷支付";
+"payview_laybel6" = "財付通";
+"payview_laybel7" = "充值卡";
+
+/*   loginview.xib  */
+
+"loginview_login"           = "登錄";
+"loginview_account"         = "賬號:";
+"loginview_password"        = "密碼:";
+"loginview_register"        = "註冊:";
+"loginview_forget_password" = "忘記密碼?";
+"loginview_find_password"   = "點擊這裡找回";
+
+/*  webview.xib  */
+
+/*  registerview.xib  */
+
+"registerview_register"     = "註冊";
+"registerview_account"      = "賬號:";
+"registerview_password"     = "密碼:";
+"registerview_email"        = "郵箱:";
+"registerview_email_cint"   = "選填";
+"registerview_notice"       = "你可以輸入字母/數字作為通行證賬號,長度不超過12個字符。";
+
+/* accountmanager.xib  */
+
+"account_title"         = "通行證管理";
+"account_logout"        = "註銷";
+"account_center"        = "賬戶中心";
+"account_ourwebsite"    = "遊戲官網";
+"account_switchuser"    = "切換用戶";
+"account_feedback"      = "建議反饋";
+
+/*  accountcenter.xib  */
+"accountcenter_title"           = "賬戶中心";
+"accountcenter_account"         = "賬號：";
+"accountcenter_change_password" = "修改密碼";
+
+/*  changepassword.xib */
+"changepsd_title"   = "修改密碼";
+"changepsd_oldpsd"  = "原密碼：";
+"changepsd_newpsd"  = "新密碼：";
+
+/*  userlistview.xib */
+
+"userlist_title"    = "已有賬號登錄";
+"userlist_cancle"   = "取消";
+

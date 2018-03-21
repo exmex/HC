@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ks_login_mainlayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/ks_bg_cm_dialog"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/ks_common_cm_title_line_minview" />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fadingEdge="horizontal"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/ks_windows_account_layout"
+                android:layout_width="@dimen/ks_cm_login_layout_item_width"
+                android:layout_height="match_parent"
+                android:background="@drawable/ks_cm_window_icon_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:scaleType="center"
+                    android:src="@drawable/ks_cm_window_account_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ks_account_tab_label"
+                    android:textColor="@color/ks_cm_edit_text_hint_text_color"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ks_windows_forum_layout"
+                android:layout_width="@dimen/ks_cm_login_layout_item_width"
+                android:layout_height="match_parent"
+                android:background="@drawable/ks_cm_window_icon_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:scaleType="center"
+                    android:src="@drawable/ks_cm_window_forum_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ks_forum_tab_label"
+                    android:textColor="@color/ks_cm_edit_text_hint_text_color"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ks_windows_screenshot_layout"
+                android:layout_width="@dimen/ks_cm_login_layout_item_width"
+                android:layout_height="match_parent"
+                android:background="@drawable/ks_cm_window_icon_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/ks_windows_screenshot_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:scaleType="center"
+                    android:src="@drawable/ks_cm_window_screenshot_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ks_cm_screen_shot_label_txt"
+                    android:textColor="@color/ks_cm_edit_text_hint_text_color"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ks_windows_call_layout"
+                android:layout_width="@dimen/ks_cm_login_layout_item_width"
+                android:layout_height="match_parent"
+                android:background="@drawable/ks_cm_window_icon_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:scaleType="center"
+                    android:src="@drawable/ks_cm_window_call_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ks_service"
+                    android:textColor="@color/ks_cm_edit_text_hint_text_color"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ks_windows_hide_layout"
+                android:layout_width="@dimen/ks_cm_login_layout_item_width"
+                android:layout_height="match_parent"
+                android:background="@drawable/ks_cm_window_icon_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:scaleType="center"
+                    android:src="@drawable/ks_cm_window_hide_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ks_hide"
+                    android:textColor="@color/ks_cm_edit_text_hint_text_color"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white" >
+
+        <RelativeLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/size_48"
+            android:layout_marginBottom="@dimen/size_10"
+            android:layout_marginLeft="@dimen/size_10"
+            android:layout_marginRight="@dimen/size_10"
+            android:layout_marginTop="@dimen/size_10"
+            android:background="@drawable/anzhi_textview_normal" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/size_48"
+                android:layout_centerVertical="true"
+                android:background="@android:color/white" >
+
+                <TextView
+                    android:id="@+id/pwd_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/size_10"
+                    android:text="@string/anzhi_input_nickname"
+                    android:textColor="@color/anzhi_494949"
+                    android:textSize="@dimen/font_16" />
+
+                <EditText
+                    android:id="@+id/edit_nick"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dip"
+                    android:layout_toRightOf="@id/pwd_TV"
+                    android:background="@null"
+                    android:hint="@string/anzhi_nickname"
+                    android:maxLength="12"
+                    android:singleLine="true"
+                    android:cursorVisible="true"        
+                    android:textColor="@color/anzhi_494949"
+                    android:textColorHint="@color/anzhi_d0d0d0"
+                    android:textSize="@dimen/font_16" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/divider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/size_40"
+            android:layout_above="@+id/divider"
+            android:layout_marginLeft="@dimen/size_40"
+            android:layout_marginRight="@dimen/size_40"
+            android:background="@drawable/anzhi_button_bg_green"
+            android:text="@string/anzhi_save"
+            android:textColor="@color/anzhi_FFFFFF"
+            android:textSize="@dimen/font_18" />
+    </RelativeLayout>
+
+</RelativeLayout>

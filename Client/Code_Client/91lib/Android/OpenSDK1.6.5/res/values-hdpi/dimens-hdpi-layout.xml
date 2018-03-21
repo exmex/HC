@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- loading -->
+    <dimen name="nmgc_loading_border_height">101dp</dimen>
+    <dimen name="nmgc_loading_border_width">311dp</dimen>
+    <dimen name="nmgc_loading_progress_size">45.6dp</dimen>
+    <dimen name="nmgc_loading_spinner_left">73dp</dimen>
+    <dimen name="nmgc_loading_text_left">13dp</dimen>
+
+	<dimen name="nmgc_boy_dialog_width">200dp</dimen>
+	<dimen name="nmgc_boy_dialog_height">100dp</dimen>
+	<dimen name="nmgc_boy_width">50dp</dimen>
+	<dimen name="nmgc_boy_height">72dp</dimen>
+	
+	
+	<!-- dialog switch account start 197 232  -->
+    <dimen name="dialog_switch_account_height">265.82dp</dimen>
+    <dimen name="dialog_switch_account_height_three">339.15dp</dimen>
+    <dimen name="dialog_switch_account_icon_margin_left">23.33dp</dimen>
+    <dimen name="dialog_switch_account_item_height">52.33dp</dimen>
+    <dimen name="dialog_switch_account_Item_icon_height">46dp</dimen>
+    <dimen name="dialog_switch_account_Item_padding_left">9dp</dimen>
+	<dimen name="settings_head_icon_margint_top">2.5dp</dimen>
+	<dimen name="head_height">132.67dp</dimen>
+    <dimen name="head_text_margin_left">8.83dp</dimen>
+    <dimen name="head_text_account_margin_top">3dp</dimen>
+    <dimen name="dialog_switch_account_listview_height_big">220dp</dimen>
+    <dimen name="dialog_switch_account_listview_height_small">160dp</dimen>
+    <dimen name="dialog_switch_account_listview_other_btn_h">42dp</dimen>
+    <dimen name="dialog_switch_account_listview_other_btn_w">293dp</dimen>
+    <dimen name="dialog_switch_account_listview_other_btn_margin_top">20dp</dimen>
+    <dimen name="dialog_switch_account_listview_other_btn_margin_bottom">15dp</dimen>
+    <dimen name="keke_switch_account_orange_divider_width">308dp</dimen>
+    <dimen name="keke_user_name_width">140dp</dimen>
+    <dimen name="rem_psw_hint_drawable_padding_left">8dp</dimen>
+    <dimen name="keke_switch_account_list_width">316.5dp</dimen>
+    
+    <!-- dialog general start -->
+    <dimen name="dialog_title_bar_height">42.83dp</dimen>
+    <dimen name="dialog_width">310dp</dimen>
+    <dimen name="dialog_margin_left">0dp</dimen>
+    <dimen name="dialog_margin_right">0dp</dimen>
+    <dimen name="dialog_loading_height">135dp</dimen>
+    <dimen name="dialog_loading_width">310dp</dimen>
+    <dimen name="dialog_confirm_width">280dp</dimen>
+    
+    <dimen name="title_bar_height">51.83dp</dimen>
+    <dimen name="title_icon_margin_left">14.83dp</dimen>
+    <dimen name="title_bar_color_line_height">2.83dp</dimen>
+    <dimen name="title_top_divider">1.5dp</dimen>
+    
+    <!-- register -->
+    <dimen name="nmgc_reg_stepone_input_margin_top">34dp</dimen>
+    <dimen name="nmgc_reg_stepone_input_margin_left">20dp</dimen>
+    <dimen name="nmgc_reg_stepone_input_height">41dp</dimen>
+    <dimen name="nmgc_reg_stepone_input_text_margin_left">9dp</dimen>
+    <dimen name="nmgc_reg_stepone_button_height">41dp</dimen>
+    <dimen name="nmgc_reg_stepone_button_width">262dp</dimen>
+    
+    <!-- dialog improvement notify start -->
+    <dimen name="dialog_improvement_notify_height">161.67dp</dimen>
+    <dimen name="dialog_improvement_notify_btn_margin_top">124dp</dimen>
+    <dimen name="dialog_improvement_notify_text_margin_horizontal">15.67dp</dimen>
+    <dimen name="dialog_improvement_notify_text_margin_top">26dp</dimen>
+    <!-- dialog improvement notify end -->
+    
+    <!-- dialog confirm start -->
+    <dimen name="dialog_confirm_height">179.5dp</dimen>
+    <dimen name="dialog_confirm_content_margin_top">27.17dp</dimen>
+    <dimen name="dialog_confirm_content_height">137.17dp</dimen>
+    <dimen name="dialog_confirm_btn_width">115.83dp</dimen>
+    <dimen name="dialog_confirm_btn_height">36.5dp</dimen>
+    <dimen name="dialog_confirm_btn_margin_each">36.5dp</dimen>
+    <dimen name="dialog_confirm_btn_margin_top">79.17dp</dimen>
+    <!-- dialog confirm end -->
+    
+    <dimen name="nmgc_login_title_text_size">20sp</dimen>
+    <dimen name="nmgc_lg_input_text_size">17sp</dimen>
+    <dimen name="nmgc_lg_button_text_size">18sp</dimen>
+    <dimen name="nmgc_charge_index_text_size">15sp</dimen>
+    <dimen name="nmgc_reg_steptwo_count_text_size">13sp</dimen>
+	<dimen name="nmgc_fragment_search_record_item_text_size">16.67sp</dimen>
+	<dimen name="nmgc_setting_list_item_height">58dp</dimen>
+	
+	<dimen name="nmgc_boyclick_webview_width">331dp</dimen>
+	<dimen name="nmgc_boyclick_webview_height">285dp</dimen>
+	<dimen name="nmgc_x_width">14.33sp</dimen>
+	<dimen name="nmgc_x_height">14.33sp</dimen>
+	<dimen name="nmgc_x_margin_right">12.33dp</dimen>
+	<dimen name="nmgc_x_margin_top">16dp</dimen>
+	<dimen name="nmgc_switch_btn_width">62.33dp</dimen>
+	<dimen name="nmgc_switch_btn_height">25dp</dimen>
+	<dimen name="nmgc_switch_btn_margin_right">40dp</dimen>
+	<dimen name="nmgc_switch_btn_margin_top">7dp</dimen>
+	
+	<!-- auto login dialog -->
+    <dimen name="nmgc_auto_login_dialog_width">285.33dp</dimen>
+    <dimen name="nmgc_auto_login_dialog_height">216dp</dimen>
+    <dimen name="nmgc_auto_login_dialog_margin_top">19dp</dimen>
+    <dimen name="nmgc_auto_login_dialog_account_margin_left">26dp</dimen>
+    <dimen name="nmgc_auto_login_dialog_account_midle_line_margin_top">16dp</dimen>
+    <dimen name="nmgc_auto_login_dialog_loading_margin_top">30dp</dimen>
+    <dimen name="nmgc_auto_login_dialog_progress_margin_right">32.66dp</dimen>
+    <dimen name="nmgc_auto_login_dialog_progress_w_h">20.0dp</dimen>
+    
+    <!-- simple login and regist layout -->
+    <dimen name="nmgc_log_reg_width">335dp</dimen>
+    <dimen name="nmgc_log_reg_height">290dp</dimen>
+    <dimen name="keke_logo_margin_top">11dp</dimen>
+    <dimen name="keke_logo_margin_left">137dp</dimen>
+    <dimen name="keke_usr_name_input_margin_top">10dp</dimen>
+    <dimen name="keke_psw_input_margin_top">4.5dp</dimen>
+    <dimen name="keke_input_area_margin_left">18dp</dimen>
+    <dimen name="keke_input_area_height">40dp</dimen>
+    <dimen name="keke_rem_psw_margin_left">4dp</dimen>
+    <dimen name="keke_rem_psw_margin_top">7dp</dimen>
+    <dimen name="keke_forget_psw_margin_right">10dp</dimen>
+    <dimen name="keke_reg_btn_width">138dp</dimen>
+    <dimen name="keke_reg_btn_height">41dp</dimen>
+    <dimen name="keke_reg_btn_margin_top">8dp</dimen>
+    <dimen name="keke_reg_btn_margin_left">18dp</dimen>
+    <dimen name="keke_log_btn_margin_left">13dp</dimen>
+    <dimen name="keke_visitor_log_margin_top">13dp</dimen>
+    <dimen name="keke_visitor_log_width">290dp</dimen>
+    <dimen name="keke_visitor_log_height">43dp</dimen>
+    <dimen name="keke_auto_tv_padding_left">4dp</dimen>
+    <dimen name="keke_check_box_width">12dp</dimen>
+    
+    <dimen name="keke_delete_btn_width">93dp</dimen>
+    
+</resources>

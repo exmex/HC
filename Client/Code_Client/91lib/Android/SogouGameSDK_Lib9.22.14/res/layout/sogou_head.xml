@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="55dp"
+    android:background="@drawable/head"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/sogou_back_img_button"
+        android:layout_width="72dp"
+        android:layout_height="fill_parent"
+        android:background="@drawable/head_press"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/sogou_back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back"
+            android:baselineAlignBottom="true"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/sogou_back_img_line"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/sogou_back_img_button"
+        android:background="@drawable/vertical_line"
+         />
+
+    <TextView
+        android:id="@+id/sogou_logo_text"
+        style="@style/head_title"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/sogou_title_game" />
+
+    <LinearLayout
+        android:id="@+id/sogou_head_button_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal" >
+
+    </LinearLayout>
+
+</RelativeLayout>

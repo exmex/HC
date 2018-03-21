@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/switch_layout"
+        android:layout_width="@dimen/ks_cm_login_layout_width"
+        android:layout_height="@dimen/ks_cm_login_layout_height"
+        android:background="@drawable/ks_bg_cm_dialog"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+        <include layout="@layout/ks_common_cm_title_bar" />
+        <ListView
+            android:id="@+id/switchaccount_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:listSelector="@android:color/transparent"
+            android:fadingEdge="none"
+            android:layout_marginBottom="15dp"
+            android:scrollbars="none" />
+    </LinearLayout>
+     <include layout="@layout/ks_loading_view"/>
+</FrameLayout>

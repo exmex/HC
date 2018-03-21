@@ -1,0 +1,9 @@
+{
+	"CFBundleDevelopmentRegion" = English;
+	CFBundleExecutable = ATSMS;
+	CFBundleIdentifier = "com.91.ATSMS";
+	"CFBundleInfoDictionaryVersion" = "6.0";
+	CFBundlePackageType = FMWK;
+	CFBundleSignature = "????";
+	CFBundleVersion = 1000;
+}

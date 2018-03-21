@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/yyh_button_selector_register_cell_pressed_captcha_firstpage" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/yyh_button_selector_register_cell_normal_captcha_firstpage" android:state_pressed="false"></item>
+</selector>

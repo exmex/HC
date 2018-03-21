@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"  
+    android:scrollbars="none"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"> 
+    <RelativeLayout 
+        android:layout_below="@+id/toptitle"
+         android:id="@+id/u2_title_bar_layout"
+         android:layout_width="fill_parent"
+         android:background="@drawable/title_bg"
+        android:layout_height="42dp">
+        <!-- 左按钮 -->
+
+        <Button
+            android:id="@+id/u2_back"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:textColor="@color/appWhite"
+            android:gravity="center"
+            android:text="返回"
+            android:background="@drawable/titlebt_bg"
+            android:textSize="16sp" >
+        </Button>
+
+        <!-- 标题 -->
+
+        <TextView
+            android:id="@+id/webtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+             android:textSize="22sp"
+            android:textColor="@color/appWhite"
+            android:text="腳踏實地" >
+        </TextView>
+
+        
+    </RelativeLayout>
+    
+     <RelativeLayout
+            android:id="@+id/feedback_webrl"
+             android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:gravity="center_horizontal">
+
+         <WebView
+             android:id="@+id/webView1"
+             android:layout_width="match_parent"
+             android:scrollbars="vertical"
+             android:scrollbarStyle="outsideOverlay"
+             android:layout_height="match_parent"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+</LinearLayout>
+<!-- android:background="@drawable/thirdlogin_dialog_bg"   -->

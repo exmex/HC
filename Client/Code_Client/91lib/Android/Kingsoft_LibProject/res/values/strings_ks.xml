@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="ks_meta_data_invaild">请正确设置AndroidManifeset中的MeataData</string>
+    <string name="ks_login_title">金山账号登录</string>
+    <string name="ks_quick_login_title">快速游戏</string>
+    <string name="ks_aotu_login_title">自动登录</string>
+    <string name="ks_forget_psw_title">忘记密码</string>
+    <string name="ks_sign_in_title">金山账号注册</string>
+    <string name="ks_select_account_title">选择账号</string>
+    <string name="ks_back">返回</string>
+    <string name="ks_usr_account">账号：</string>
+    <string name="ks_usr_psw">密码：</string>
+    <string name="ks_login_btn">登录</string>
+    <string name="ks_signin">注册账号</string>
+    <string name="ks_signin_tip">还没有金山账号?马上注册>></string>
+    <string name="ks_switch_user">切换账号</string>
+    <string name="ks_signin_usr_hint1">请输入大于3位的账号</string>
+    <string name="ks_signin_psw_hint">请输入大于6位的密码</string>
+    <string name="ks_signin_usr_remind">*建议使用手机号，方便好记</string>
+    <string name="ks_signin_psw_remind">*必填</string>
+    <string name="ks_clause_cb">我已阅读并同意遵守</string>
+    <string name="ks_clause_tv">《金山服务条款》</string>
+    <string name="ks_clause_tip">请勾选已阅读《金山服务条款》</string>
+    <string name="ks_psw_differ">输入的密码不一致</string>
+    <string name="ks_quick_login">免注册快速登录</string>
+    <string name="ks_signin_success">注册成功</string>
+    <string name="ks_account_detail">用户账号列表</string>
+    <string name="ks_generate_tip_top">以下是系统为您生成的随机账号</string>
+    <string name="ks_generate_tip">*温馨提示:</string>
+    <string name="ks_generate_save_tip">建议截屏保存随机账号，避免忘记</string>
+    <string name="ks_login_success">登录成功</string>
+    <string name="ks_processing"></string>
+    <string name="ks_enter_name_processing"></string>
+    <string name="ks_network_invailable">当前网络不可用，请检查网络状态</string>
+    <string name="ks_enter_game">进入游戏</string>
+    <string name="ks_select_other_account">使用其他账号登录</string>
+    <string name="ks_usrname_pattern_error">格式错误，请使用字母开头的5-19位字母或数字</string>
+    <string name="ks_usrpsw_pattern_error">密码格式错误，请输入6~31位数字或字母</string>
+    <string name="ks_usrutk_wrong">账号已过期，请重新登录</string>
+    <string name="ks_err_unknown">未知错误，请重试</string>
+    <string name="ks_err_psw">密码格式错误，请输入6~31位数字或字母</string>
+    <string name="ks_err_reset_psw">用户名或密码错误，请重新输入</string>
+    <string name="ks_err_usrname_exist">用户名已存在</string>
+    <string name="ks_err_account_not_exist">用户名不存在</string>
+    <string name="ks_err_psw_over_time">密码输入错误次数过多</string>
+    <string name="ks_err_generate_fail">生成账号失败</string>
+    <string name="ks_err_generate_over_time">生成账号次数过多，请明天再试</string>
+    <string name="ks_err_generate_un_login">登录状态已过期，请重新输入密码进行登录</string>
+    <string name="ks_err_generate_err_param">参数错误</string>
+    <string name="ks_err_generate_usr_exist">用户已存在</string>
+    <string name="ks_err_generate_err_pin">验证码错误</string>
+    <string name="ks_err_generate_uid_not_exist">uid不存在</string>
+    <string name="ks_err_generate_err_sign_checkout">sign签名校验错误</string>
+    <string name="ks_err_generate_err_generate_fail">生成账号失败</string>
+    <string name="ks_err_generate_err_supplierid">supplier_id错误</string>
+    <string name="ks_err_generate_err_generate_over_time">超过一天最大生成账号次数</string>
+    <string name="ks_modify_psw_success">修改密码成功</string>
+    <string name="ks_modify_psw_failed">修改密码失败</string>
+    <string name="ks_not_read_clause_tv">您还没有阅读服务条款</string>
+    <string name="ks_save_and_enter_game">保存并进入游戏</string>
+    <string name="ks_account_security_tip">未设置</string>
+    <string name="ks_more_account_dialog_content">要切换账号？</string>
+    <string name="ks_more_account_cannot_delete">不能删除当前账号！</string>
+    <string name="ks_more_account_dialog_ok">确定</string>
+    <string name="ks_more_account_dialog_cancel">取消</string>
+    <string name="ks_record_charge_title">充值记录</string>
+    <string name="ks_modify_psw_title">密码修改</string>
+    <string name="ks_modify_psw_current_hint">当前密码</string>
+    <string name="ks_modify_psw_new_hint">新密码</string>
+    <string name="ks_modify_psw_ok_button_text">确定</string>
+    <string name="ks_account_module_title">账号中心</string>
+    <string name="ks_account_module_back_game">返回游戏</string>
+    <string name="ks_account_module_passport">账号：</string>
+    <string name="ks_account_module_modify_label">修改密码</string>
+    <string name="ks_account_module_security_label">账号安全</string>
+    <string name="ks_account_module_more_manage_label">多账号管理</string>
+    <string name="ks_account_module_charge_record_label">充值记录</string>
+    <string name="ks_account_module_auto_login_label">自动登录</string>
+    <string name="ks_account_module_auto_login_tip">默认开启，关闭后每次进入游戏时可以选择要登录的账号</string>
+    <string name="ks_more_manage_item_recent_game">最近登录游戏：</string>
+    <string name="ks_more_manage_item_passport">金山账号：</string>
+    <string name="ks_more_manage_title">多账号管理</string>
+    <string name="ks_more_manage_pop_select">选择</string>
+    <string name="ks_more_manage_pop_delete">删除</string>
+    <string name="ks_account_security_title">账号安全</string>
+    <string name="ks_account_tab_label">账号</string>
+    <string name="ks_news_tab_label">消息</string>
+    <string name="ks_forum_tab_label">论坛</string>
+    <string name="ks_packs_tab_label">礼包</string>
+    <string name="ks_help_tab_label">帮助</string>
+    <string name="ks_news_module_title">消息中心</string>
+    <string name="ks_news_module_back_game">返回游戏</string>
+    <string name="ks_news_module_delete">删除</string>
+    <string name="ks_news_module_finish">完成</string>
+    <string name="ks_packs_module_title">礼包</string>
+    <string name="ks_forum_module_title">论坛</string>
+    <string name="ks_help_module_title">帮助</string>
+
+    <!-- 1.2 -->
+    <string name="ks_entry_title">猎豹账号登录</string>
+    <string name="ks_entry_user">账号：</string>
+    <string name="ks_entry_psw">密码：</string>
+    <string name="ks_entry_user_hint">请输入账号</string>
+    <string name="ks_entry_psw_hint">请输入密码</string>
+    <string name="ks_entry_psw_hint1">请输入密码并牢记</string>
+    <string name="ks_entry_user_hint1">请输入账号并牢记</string>
+    <string name="ks_entry_register">注册</string>
+    <string name="ks_entry_login">立即体验</string>
+    <string name="ks_entry_login1">登录</string>
+    <string name="ks_entry_psw_forget">忘记密码？</string>
+    <string name="ks_entry_psw_change">修改密码</string>
+    <string name="ks_reg_title">猎豹账号注册</string>
+    <string name="ks_welcome_title">金山账号伴你畅游</string>
+    <string name="ks_checkbox_showpass">显示密码</string>
+    <string name="ks_checkbox_ksservice">同意金山服务协议</string>
+    <string name="ks_btn_register">确认注册</string>
+    <string name="ks_loading_user">金山账号：</string>
+    <string name="ks_loading">正在登录...</string>
+    <string name="ks_binding">正在绑定...</string>
+    <string name="ks_switch">账号切换</string>
+    <string name="ks_tips_ok">确认</string>
+    <string name="ks_tips_cancel">取消</string>
+    <string name="ks_tips_cancel_iam_busy">现在没空</string>
+    <string name="ks_tips_close">关闭悬浮图标</string>
+    <string name="ks_tips_restart">关闭后下次登录将重新开启</string>
+    <string name="ks_know">我知道了</string>
+    <string name="ks_psw_title">猎豹账号找回密码</string>
+    <string name="ks_psw_tips1">您可以访问我们的网站，找回密码</string>
+    <string name="ks_psw_tips2">您也可以通过以下方式联系我们：</string>
+    <string name="ks_service_title">客服联系方式</string>
+    <string name="ks_service_tel">客服电话：</string>
+    <string name="ks_service_web">客服网站：</string>
+    <string name="ks_window_tips">关闭悬浮窗</string>
+    <string name="ks_account">账户信息</string>
+    <string name="ks_nobind_account">绑定手机</string>
+    <string name="ks_account1">账号：</string>
+    <string name="ks_account_bind_phone_tips_head">登录更便捷安全,立即</string>
+    <string name="ks_account_bind_phone_tips_tail">绑定手机</string>
+    <string name="ks_hide">隐藏</string>
+    <string name="ks_service">客服</string>
+    <string name="ks_forum">论坛</string>
+    <string name="ks_binding_title">金山账号绑定</string>
+    <string name="ks_entry_gencctitle">正在生成</string>
+    <string name="ks_welcome_genccsuccess">生成成功</string>
+    <string name="ks_agree">同意</string>
+    <string name="ks_agreement">猎豹服务协议</string>
+    <string name="ks_confirm">注册并绑定</string>
+    <string name="ks_safe_tips_bind">绑定</string>
+    <string name="ks_change_psw">修改密码</string>
+    <string name="ks_ok_bind_now">立即绑定</string>
+    <string name="ks_bind_phone_request_tips">亲, 绑定个账号吧!</string>
+    <string name="ks_bind_phone_request_tips_2">确保账号安全，不被他人盗用</string>
+    <string name="ks_account_title">金山账号信息</string>
+    <string name="ks_switch_temp">绑定账号</string>
+    <string name="ks_binding_tips">立即绑定手机，完善账号</string>
+    <string name="ks_back_reg">返回账号注册</string>
+    <string name="ks_safe_tips">金山账号安全提示</string>
+    <string name="ks_safe_tips_title1">尚未绑定帐号，无法充值</string>
+    <string name="ks_safe_tips_title2">绑定帐号可以保障数据安全</string>
+    <string name="ks_safe_binding">给它绑定个账号</string>
+    <string name="ks_binding_success">绑定成功</string>
+    <string name="ks_reg_loading_success">注册成功</string>
+    <string name="ks_safe_binding_tips1">亲, 绑定个账号吧！</string>
+    <string name="ks_safe_binding_tips2">确保账户安全, 不被他人盗用</string>
+    <string name="ks_reg_loading_text">正在注册</string>
+    <string name="ks_continue_game">继续游戏</string>
+    <string name="ks_binding_now">立即绑定</string>
+    <string name="ks_binding_userexits">用户名已经存在</string>
+    <string name="ks_binding_usererrorparam">用户名格式错误</string>
+    <string name="ks_service_call">呼叫</string>
+    <string name="ks_switch_account_confirm">切换</string>
+    <string name="ks_switch_account_tips">切换账号会删除游戏记录</string>
+    <string name="ks_net_error">网络超时</string>
+    <string name="ks_smsfliter_str">金山网络帐号中心提醒您：您正在进行手机绑定激活操作，短信验证码为</string>
+    <string name="ks_service_phone_number">400-610-7777</string>
+    <!-- 金山SDK自定义输入框 -->
+    <string name="ks_commit_button_text_complete">完成</string>
+    <string name="ks_commit_button_text_next">下一步</string>
+
+    <!-- 金山支付页面相关文案 -->
+    <string name="ks_pay_dialog_alipay_title">提示</string>
+    <string name="ks_pay_dialog_alipay_contnet_paying">正在处理中</string>
+    <string name="ks_pay_result_alipay_success">支付成功</string>
+    <string name="ks_pay_result_alipay_fail">支付失败</string>
+    <string name="ks_pay_result_alipay_net_error">网络连接出错</string>
+    <string name="ks_pay_result_alipay_working">正在处理中</string>
+    <string name="ks_pay_result_alipay_unknow_error">未知错误</string>
+    <string name="ks_pay_result_alipay_cancel">支付已取消</string>
+
+    <!-- 金山SDK绑定TOAST相关文案 -->
+    <string name="ks_cust_toast_content_text_head">点我绑定手机</string>
+    <string name="ks_cust_toast_content_text_tail">,支付更安全</string>
+    <string name="ks_cust_toast_content_text_countdown">秒后自动跳过绑定</string>
+
+    <!-- 金山SDK登录提示TOAST相关文案 -->
+    <string name="ks_cust_toast_login_success">登录成功</string>
+    <!-- 金山一键登录相关 -->
+    <string name="ks_one_key_login_text_old">立即体验</string>
+    <string name="ks_one_key_login_text_info_reg_phone">自动登录中...</string>
+    <string name="ks_one_key_login_text">手机一键登录</string>
+    <string name="ks_one_key_login_text_tips">将发送短信验证身份</string>
+    <string name="ks_one_key_login_text_info_reg_phone_ing">手机号注册中...</string>
+    <string name="ks_one_key_login_text_info_reg_phone_fail">手机号注册异常\n转自动登录中...</string>
+    <string name="ks_one_key_login_text_info_reg_phone_no_sim">没有检测到手机卡\n转自动登录中...</string>
+    <string name="ks_one_key_login_sms_username_factor">手游帐号:</string>
+    <string name="ks_one_key_login_sms_psw_factor">密码:</string>
+    <string name="ks_one_key_login_sms_already_reg_factor">已绑定</string>
+    <string name="ks_one_key_login_text_info_find_history">账号已存在，寻找短信历史</string>
+    <string name="ks_binded_phonenum">已绑定手机%s</string>
+    <!-- 金山账号切换 -->
+    <string name="ks_switch_title">猎豹账号切换</string>
+    <string name="ks_delbtn_text">删除</string>
+    <string name="ks_additme_text">添加账号</string>
+
+    <!-- 金山截屏相关 -->
+    <string name="ks_screen_shot_success_toast">截屏成功，保存在：</string>
+    <string name="ks_screen_shot_fail_toast">截屏失败，请授权Root权限。</string>
+
+    <!-- CM版 一键注册页 -->
+    <string name="ks_cm_one_key_reg_random_account_text">一键注册</string>
+    <string name="ks_cm_use_another_account_login_text">使用其他账号登录</string>
+
+    <!-- CM版登录页 -->
+    <string name="ks_cm_login_username_hint">请输入账号</string>
+    <string name="ks_cm_login_password_hint">请输入密码</string>
+    <string name="ks_cm_login_find_password">忘记密码?</string>
+    <string name="ks_cm_logn_btn_text">登录</string>
+    <string name="ks_cm_reg_btn_text">注册</string>
+    
+    <string name="ks_cm_nobindphone_text">未绑定手机</string>
+    
+    <string name="ks_cm_screen_shot_label_txt">截图</string>
+
+    <string name="ks_cm_quit_game">退出游戏</string>
+    <string name="ks_cm_enter_bbs">进入论坛</string>
+    <string name="ks_cm_screen_shot_on">摇一摇截屏功能已打开</string>
+    <string name="ks_cm_screen_shot_off">摇一摇截屏功能已关闭</string>
+    <string name="ks_cm_screen_shot_error">打开摇一摇截屏功能错误！</string>
+</resources>

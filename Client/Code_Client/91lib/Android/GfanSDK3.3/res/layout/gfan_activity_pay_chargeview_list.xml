@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:gravity="center_horizontal"
+	android:background="@drawable/gfan_bg_border"  >
+    
+    <include android:id="@+id/top_bar_pay" 
+        layout="@layout/gfan_top_bar_pay" 
+        android:layout_alignParentTop="true" />
+    
+    <ListView 
+        android:id="@+id/payment_charge_lv"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:background="@color/white"
+        android:cacheColorHint="@color/white"
+        android:layout_below="@+id/top_bar_pay" />
+</RelativeLayout>

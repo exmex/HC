@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#cc000000">
+<FrameLayout
+	android:layout_centerInParent="true" 
+	android:layout_margin="10dp"
+	android:background="@drawable/appchina_pay_main_shape"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<RelativeLayout android:id="@+id/main_1"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<!-- 标题栏 -->
+		<RelativeLayout android:id="@+id/main_title_ly"
+			android:layout_width="fill_parent" android:layout_height="48dp"
+			android:background="@drawable/appchina_pay_title_bg"
+			android:layout_alignParentTop="true">
+			<!--  <ImageView android:layout_width="142dp"
+				android:layout_height="34dp" android:layout_centerInParent="true"
+				android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+				android:src="@drawable/appchina_pay_title" />-->
+			<TextView android:layout_width="wrap_content" android:id="@+id/main_title"
+			android:layout_height="34dp" android:layout_centerInParent="true"
+			android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+			android:textSize = "20sp" android:gravity="center_vertical"
+			android:textColor="#ffffff"
+			android:text="收银台" />
+		</RelativeLayout>
+		<!-- 底部菜单栏 -->
+		<LinearLayout android:id="@+id/main_menu"
+			android:layout_alignParentBottom="true" android:background="@drawable/appchina_pay_menu_bg"
+			android:orientation="horizontal" android:layout_width="fill_parent"
+			android:layout_height="48dp">
+			<RelativeLayout android:layout_weight="1"
+				android:id="@+id/main_menu1" android:clickable="true"
+				android:layout_height="48dp" android:layout_width="0dp">
+				<LinearLayout android:gravity="center_horizontal"
+					android:duplicateParentState="true" android:layout_width="wrap_content"
+					android:layout_centerInParent="true" android:layout_height="wrap_content"
+					android:orientation="vertical">
+					<ImageView android:layout_width="41dp"
+						android:duplicateParentState="true" android:layout_height="18dp"
+						android:src="@drawable/appchina_pay_menu1_selector" />
+					<TextView android:layout_width="wrap_content"
+						android:duplicateParentState="true"
+						android:textColor="@drawable/appchina_pay_menu_text_selector"
+						android:textSize="12sp" android:layout_height="wrap_content"
+						android:text="客服" />
+				</LinearLayout>
+			</RelativeLayout>
+			<RelativeLayout android:layout_weight="1"
+				android:id="@+id/main_menu2" android:clickable="true"
+				android:layout_height="48dp" android:layout_width="0dp">
+				<LinearLayout android:gravity="center_horizontal"
+					android:duplicateParentState="true" android:layout_width="wrap_content"
+					android:layout_centerInParent="true" android:layout_height="wrap_content"
+					android:orientation="vertical">
+					<ImageView android:layout_width="41dp"
+						android:duplicateParentState="true" android:layout_height="18dp"
+						android:src="@drawable/appchina_pay_menu2_selector" />
+					<TextView android:layout_width="wrap_content"
+						android:duplicateParentState="true"
+						android:textColor="@drawable/appchina_pay_menu_text_selector"
+						android:textSize="12sp" android:layout_height="wrap_content"
+						android:text="介绍" />
+				</LinearLayout>
+			</RelativeLayout>
+			<RelativeLayout android:layout_weight="1"
+				android:id="@+id/main_menu3" android:clickable="true"
+				android:layout_height="48dp" android:layout_width="0dp">
+				<LinearLayout android:gravity="center_horizontal"
+					android:duplicateParentState="true" android:layout_width="wrap_content"
+					android:layout_centerInParent="true" android:layout_height="wrap_content"
+					android:orientation="vertical">
+					<ImageView android:layout_width="41dp"
+						android:duplicateParentState="true" android:layout_height="18dp"
+						android:src="@drawable/appchina_pay_menu3_selector" />
+					<TextView android:layout_width="wrap_content"
+						android:duplicateParentState="true"
+						android:textColor="@drawable/appchina_pay_menu_text_selector"
+						android:textSize="12sp" android:layout_height="wrap_content"
+						android:text="消费记录" />
+				</LinearLayout>
+			</RelativeLayout>
+			<!--  RelativeLayout android:layout_weight="1"
+				android:id="@+id/main_menu4" android:clickable="true"
+				android:layout_height="48dp" android:layout_width="0dp">
+				<LinearLayout android:gravity="center_horizontal"
+					android:duplicateParentState="true" android:layout_width="wrap_content"
+					android:layout_centerInParent="true" android:layout_height="wrap_content"
+					android:orientation="vertical">
+					<ImageView android:id="@+id/main_menu4_bg1"
+						android:layout_width="41dp"
+						android:duplicateParentState="true" android:layout_height="18dp"
+						android:src="@drawable/appchina_pay_menu4_selector" />
+					<RelativeLayout android:id="@+id/main_menu4_bg2"
+						android:layout_width="41dp"
+						android:duplicateParentState="true" android:layout_height="18dp"
+						android:background="@drawable/appchina_pay_menu44_selector">
+						<TextView android:id="@+id/main_menu4_text"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:layout_alignParentTop="true"
+							android:layout_alignParentRight="true"
+							android:layout_marginRight="2dp"
+							android:textSize="10dp"
+							android:textColor="#ffffff" />
+					</RelativeLayout>
+					<TextView android:layout_width="wrap_content"
+						android:duplicateParentState="true"
+						android:textColor="@drawable/appchina_pay_menu_text_selector"
+						android:textSize="12sp" android:layout_height="wrap_content"
+						android:text="活动信息" />
+				</LinearLayout>
+			</RelativeLayout-->
+			<RelativeLayout android:layout_weight="1"
+				android:id="@+id/main_menu5" android:clickable="true"
+				android:layout_height="48dp" android:layout_width="0dp">
+				<LinearLayout android:gravity="center_horizontal"
+					android:duplicateParentState="true" android:layout_width="wrap_content"
+					android:layout_centerInParent="true" android:layout_height="wrap_content"
+					android:orientation="vertical">
+					<ImageView android:layout_width="41dp"
+						android:duplicateParentState="true" android:layout_height="18dp"
+						android:src="@drawable/appchina_pay_menu5_selector" />
+					<TextView android:layout_width="wrap_content"
+						android:duplicateParentState="true"
+						android:textColor="@drawable/appchina_pay_menu_text_selector"
+						android:textSize="12sp" android:layout_height="wrap_content"
+						android:text="退出支付" />
+				</LinearLayout>
+			</RelativeLayout>
+		</LinearLayout>
+		<!-- 主界面1 -->
+		<ScrollView android:id="@+id/tab1_ly" android:layout_above="@id/main_menu"
+			android:layout_below="@id/main_title_ly" android:layout_height="500dp"
+			android:layout_width="fill_parent">
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+				<!-- 用户信息栏 -->
+				<LinearLayout android:id="@+id/main_info_ly"
+					android:layout_alignParentTop="true" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp" android:orientation="vertical">
+					<RelativeLayout android:id="@+id/main_user_ly"
+						android:layout_width="fill_parent" android:paddingTop="3dp"
+						android:layout_height="wrap_content">
+						<!-- 未激活 -->
+						<ImageView android:id="@+id/main_user_off_img"
+							android:layout_marginLeft="12dp" android:layout_alignParentLeft="true"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:src="@drawable/appchina_pay_off_user" />
+						<TextView android:id="@+id/pay_user_active_btn"
+							android:layout_height="30dp" android:layout_marginLeft="12dp"
+							android:layout_toRightOf="@id/main_user_off_img"
+							android:textSize="15sp" android:text="@string/appchina_pay_useractive_link"
+							android:gravity="top|left" android:layout_width="70dp" />
+						<!-- 已激活 -->
+						<ImageView android:id="@+id/main_user_img"
+							android:layout_width="wrap_content" android:layout_marginLeft="12dp"
+							android:layout_alignParentLeft="true" android:layout_height="wrap_content"
+							android:visibility="gone" android:src="@drawable/appchina_pay_user" />
+						<TextView android:id="@+id/tv_username"
+							android:layout_toRightOf="@id/main_user_img"
+							android:layout_marginLeft="12dp" android:layout_width="120dp"
+							android:layout_height="wrap_content" android:ellipsize="end"
+							android:singleLine="true" style="@style/appchina_pay_text_16"
+							android:gravity="center_vertical|left" android:visibility="gone" />
+						<TextView android:id="@+id/pay_user_charge"
+							android:layout_alignParentRight="true"
+							android:layout_marginRight="5dp" android:layout_height="30dp"
+							android:textSize="15sp" android:text="@string/appchina_pay_usercharge_link"
+							android:visibility="gone" android:layout_width="48dp" />
+						<TextView android:id="@+id/tv_balance"
+							android:layout_toLeftOf="@id/pay_user_charge"
+							android:layout_marginLeft="12dp" android:layout_marginRight="5dp"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							style="@style/appchina_pay_text_highlight" android:text="0币"
+							android:visibility="gone" />
+					</RelativeLayout>
+					<!-- 商品栏 -->
+					<LinearLayout android:id="@+id/main_box"
+						android:orientation="vertical" android:background="@drawable/appchina_pay_box_shape"
+						android:layout_width="fill_parent" android:layout_height="wrap_content">
+						<!-- fee栏 -->
+						<RelativeLayout android:id="@+id/main_fee_ly"
+							android:layout_alignParentTop="true" android:layout_width="fill_parent"
+							android:layout_marginTop="5dp" android:layout_marginLeft="5dp"
+							android:layout_marginBottom="5dp" android:layout_marginRight="5dp"
+							android:layout_height="26dp" android:orientation="horizontal">
+							<TextView 
+								android:id="@+id/pay_fee_text"
+								android:layout_width="wrap_content"
+								android:layout_alignParentLeft="true"
+								android:layout_centerVertical="true" 
+								android:layout_height="wrap_content" android:text="@string/appchina_pay_pay_fee"
+								android:textSize="16sp"
+								android:textColor="#4e4e4e" />
+							<Spinner android:id="@+id/sp_fee" android:layout_width="fill_parent"
+								android:layout_height="wrap_content" android:background="@drawable/appchina_pay_main_dropdown_selector"
+								android:layout_toRightOf="@id/pay_fee_text"
+								android:layout_marginRight="3dp"
+								android:layout_centerVertical="true" android:drawSelectorOnTop="true"
+								android:prompt="@string/appchina_pay_spinner_promt_default"
+								style="@style/appchina_pay_MySpinner" />
+								
+						    <com.nduoa.nmarket.pay.nduoasecservice.adapter.ScrollForeverTextView
+							    android:id="@+id/tv_fee" android:visibility="gone"
+								style="@style/appchina_pay_text_highlight_16"
+								android:layout_centerVertical="true"
+								android:layout_alignParentRight="true"
+							    android:layout_width="170dp"
+							    android:layout_height="wrap_content"
+								android:ellipsize="marquee" 
+								android:marqueeRepeatLimit="marquee_forever"
+								android:scrollHorizontally="false"
+								android:maxLines="1"
+								android:singleLine="true"/>
+							<!--  <TextView android:id="@+id/tv_fee" android:visibility="gone"
+								android:layout_alignParentRight="true" android:layout_width="170dip"
+								android:layout_height="wrap_content"
+								android:layout_centerVertical="true" style="@style/appchina_pay_text_highlight_16" />-->
+						</RelativeLayout>
+						<View android:layout_marginBottom="5dp" android:layout_width="fill_parent"
+							android:layout_height="1px" android:background="#bfc3c6" />
+						<LinearLayout android:id="@+id/main_arrow"
+							android:clickable="true" android:orientation="vertical"
+							android:layout_width="fill_parent" android:layout_height="wrap_content">
+							<!-- 商品信息 -->
+							<RelativeLayout android:id="@+id/main_content_ly"
+								android:layout_width="fill_parent" android:layout_height="wrap_content"
+								android:layout_marginBottom="5dp" android:layout_marginLeft="5dp"
+								android:layout_marginRight="5dp">
+								<TextView android:id="@+id/tv_content_text"
+									android:layout_alignParentLeft="true" android:layout_width="wrap_content"
+									android:layout_height="wrap_content" android:text="@string/appchina_pay_pay_content"
+									android:textSize="16sp" android:textColor="#4e4e4e" />
+								<TextView android:id="@+id/tv_content"
+									android:layout_toRightOf="@id/tv_content_text"
+									android:layout_width="170dip" android:layout_height="wrap_content"
+									android:layout_toLeftOf="@+id/main_arrow_down" style="@style/appchina_pay_text_16" />
+								<ImageView android:id="@id/main_arrow_down"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:src="@drawable/appchina_pay_arrow_down"
+									android:layout_marginRight="3dp"
+									android:layout_centerVertical="true"
+									android:layout_alignParentRight="true" android:clickable="true" />
+							</RelativeLayout>
+							<!-- 收费项目 -->
+							<RelativeLayout android:id="@+id/main_chargepoint_ly"
+								android:layout_marginBottom="5dp" android:visibility="gone"
+								android:layout_width="fill_parent" android:layout_height="wrap_content"
+								android:layout_marginLeft="5dp" android:layout_marginRight="5dp">
+								<TextView android:id="@+id/tv_pay_name_text"
+									android:layout_alignParentLeft="true" android:layout_width="wrap_content"
+									android:layout_height="wrap_content" android:text="@string/appchina_pay_pay_name"
+									android:textSize="16sp" android:textColor="#4e4e4e" />
+								<TextView android:id="@+id/tv_pay_name"
+									android:layout_toRightOf="@id/tv_pay_name_text"
+									android:layout_width="170dip" android:layout_height="wrap_content"
+									style="@style/appchina_pay_text_16" />
+							</RelativeLayout>
+
+							<!-- 商户名称 -->
+							<RelativeLayout android:id="@+id/main_cp_ly"
+								android:visibility="gone" android:layout_width="fill_parent"
+								android:layout_height="wrap_content"
+								android:layout_marginBottom="5dp" android:layout_marginLeft="5dp"
+								android:layout_marginRight="5dp">
+								<TextView android:layout_alignParentLeft="true"
+									android:id="@+id/tv_cpname_text" android:layout_width="wrap_content"
+									android:layout_height="wrap_content" android:text="@string/appchina_pay_cp_name"
+									android:textSize="16sp" android:textColor="#4e4e4e" />
+								<TextView android:id="@+id/tv_cpname"
+									android:layout_toRightOf="@id/tv_cpname_text"
+									android:layout_width="170dp" android:layout_height="wrap_content"
+									style="@style/appchina_pay_text_16" />
+							</RelativeLayout>
+						</LinearLayout>
+					</LinearLayout>
+					<!-- 优惠栏 -->
+					<TextView android:id="@+id/main_more_info"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:gravity="right" android:visibility="gone" />
+					<!-- View android:id="@+id/main_divide2" android:layout_width="fill_parent" 
+						android:layout_marginTop="8dp" android:layout_height="1px" android:background="#488fd4" 
+						/ -->
+				</LinearLayout>
+				<LinearLayout android:id="@+id/main_pay_ly"
+					android:layout_below="@id/main_info_ly" android:layout_above="@id/main_menu"
+					android:orientation="vertical" android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+					<RelativeLayout android:id="@+id/money_ly"
+						android:layout_marginTop="5px" android:layout_width="fill_parent"
+						android:layout_height="wrap_content">
+						<TextView android:id="@+id/tv_pname"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:text="此次需付 :" android:layout_alignParentLeft="true"
+							android:layout_marginLeft="10dp" android:gravity="bottom"
+							android:layout_alignParentBottom="true" android:textSize="15sp"
+							android:textColor="#242b31" />
+						<TextView android:id="@+id/tv_price"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:gravity="bottom" android:layout_alignParentBottom="true"
+							android:layout_toRightOf="@id/tv_pname" android:textSize="18sp"
+							android:textColor="#00cc99" android:layout_marginLeft="5dp" />
+						<TextView android:id="@+id/tv_renminbi"
+							android:layout_width="60dp" android:layout_height="wrap_content"
+							android:text="人民币" android:layout_marginLeft="5dp"
+							android:gravity="bottom" android:layout_alignParentBottom="true"
+							android:layout_toRightOf="@id/tv_price" android:singleLine="true"
+							android:textSize="16sp" android:textColor="#242b31"
+							android:layout_marginRight="5dp" />
+					</RelativeLayout>
+					<!-- 动态按钮栏 -->
+					<LinearLayout android:id="@+id/pay_btn_ly"
+						android:visibility="gone" android:layout_marginBottom="8dp"
+						android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+						android:orientation="vertical" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" />
+					<TextView android:id="@+id/paytype"
+					    android:layout_marginLeft="10dp" 
+						android:layout_marginRight="10dp" android:layout_marginTop="5dp"
+						android:textColor="#242b31" android:textSize="13sp"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:text="请选择支付方式:" />
+					<com.nduoa.nmarket.pay.nduoasecservice.ui.MyGridView
+						android:layout_gravity="center_horizontal"
+						android:gravity="center_horizontal"
+						android:id="@+id/pay_grid" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:numColumns="auto_fit"
+						android:horizontalSpacing="8dp" android:verticalSpacing="8dp"
+						android:listSelector="@drawable/appchina_pay_grid_item_selector"
+						android:columnWidth="75dp"
+						android:layout_marginBottom="8dp" android:layout_marginLeft="10dp"
+						android:layout_marginRight="10dp" />
+					<LinearLayout
+						android:id="@+id/charge_ly"
+						android:layout_marginLeft="10dp"
+						android:layout_marginRight="10dp"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+					<TextView 
+						android:id="@+id/quick_charge_tip"
+						android:layout_marginTop="5dp"
+						android:textColor="#242b31" android:textSize="13sp"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:text="您也可以用其他方式充值到虚拟币账户再支付:" />
+					<RelativeLayout 
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content">
+						<TextView android:id="@+id/quick_charge"
+							android:layout_height="wrap_content"
+							android:layout_marginRight="10dp"
+							android:singleLine="true"
+							android:layout_alignParentRight="true"
+							android:textSize="15sp" android:text="@string/appchina_pay_usercharge_link2"
+							android:textColorLink="#2C5185"
+							android:clickable="true" 
+							android:background="@drawable/appchina_pay_link_text_selector" 
+							android:layout_marginBottom="10dp"
+							android:layout_width="wrap_content" />
+					</RelativeLayout>		
+					</LinearLayout>
+				</LinearLayout>
+			</RelativeLayout>
+		</ScrollView>
+
+		<!-- 副界面栏 -->
+		<LinearLayout android:id="@+id/tab2_ly"
+			android:layout_above="@id/main_menu" android:layout_width="fill_parent"
+			android:layout_below="@id/main_title_ly" android:layout_height="wrap_content"
+			android:orientation="vertical" android:visibility="gone" />
+		<LinearLayout android:id="@+id/main_cpinfo"
+			android:clickable="true" android:background="@drawable/appchina_pay_warn_sharp"
+			android:orientation="vertical" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp" android:padding="7dp"
+			android:layout_above="@id/main_menu" android:layout_marginBottom="7dp"
+			android:visibility="gone">
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<ImageView android:layout_width="25dp"
+					android:layout_height="25dp" android:src="@drawable/appchina_pay_cp_info" />
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="客服"
+					android:layout_marginLeft="5dp" android:textSize="15sp"
+					android:textColor="#ffd96a" />
+			</LinearLayout>
+			<View android:layout_width="fill_parent" android:layout_height="1px"
+				android:background="#8a8a8a" android:layout_marginTop="2dp"
+				android:layout_marginBottom="2dp" />
+			<LinearLayout android:id="@+id/main_cp_phone"
+				android:layout_width="wrap_content" android:orientation="horizontal"
+				android:visibility="gone" android:layout_height="wrap_content">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="电话: "
+					android:textColor="#ffffff" android:textSize="15sp" />
+				<TextView android:id="@+id/main_cp_phone_text"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:textColor="#ffffff" android:textSize="15sp" />
+			</LinearLayout>
+			<LinearLayout android:id="@+id/main_cp_email"
+				android:visibility="gone" android:layout_width="wrap_content"
+				android:orientation="horizontal" android:layout_height="wrap_content">
+				<TextView android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:textColor="#ffffff"
+					android:text="邮箱: " android:textSize="15sp" />
+				<TextView android:id="@+id/main_cp_email_text"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:textColor="#ffffff" android:textSize="15sp" />
+			</LinearLayout>
+			<LinearLayout android:id="@+id/main_cp_time"
+				android:visibility="gone" android:layout_width="wrap_content"
+				android:orientation="horizontal" android:layout_height="wrap_content">
+				<TextView android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:textColor="#ffffff"
+					android:text="服务时间: " android:textSize="15sp" />
+				<TextView android:id="@+id/main_cp_time_text"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:textColor="#ffffff" android:textSize="15sp" />
+			</LinearLayout>
+		</LinearLayout>
+	</RelativeLayout>
+	<LinearLayout android:id="@+id/main_2"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+	</LinearLayout>
+</FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text_size_25">25.0sp</dimen>
+    <dimen name="text_size_20">20.0sp</dimen>
+    <dimen name="text_size_15">15.0sp</dimen>
+    <dimen name="text_size_13">13.0sp</dimen>
+    <dimen name="text_size_11">11.0sp</dimen>
+
+
+    <dimen name="line_margin_20">20.0dip</dimen>
+    <dimen name="line_margin_12">12.0dip</dimen>
+    <dimen name="line_margin_10">10.0dip</dimen>
+    <dimen name="line_margin_15">15.0dip</dimen>
+    <dimen name="line_margin_8">8.0dip</dimen>
+
+    <dimen name="iapppay_line_margin_10">10dp</dimen>
+
+    
+    <!--框架定义-->
+    <dimen name="iapppay_title_heigth">50dp</dimen>
+    <dimen name="iapppay_title_img_heigth">45dp</dimen>
+    <dimen name="iapppay_title_logo_heigth">36dp</dimen>
+    <dimen name="iapppay_protel_actionbar_heigth">36dp</dimen>
+    <dimen name="iapppay_title_logo_width">173dp</dimen>
+    <dimen name="iapppay_title_line_heigth">1dp</dimen>
+  
+    <!--主界面定义-->
+    <dimen name="line_height">36.0dip</dimen>
+    <dimen name="line_margin">8.0dip</dimen>
+        
+    <dimen name="text_size_common">16.0sp</dimen>
+    <dimen name="text_size_important">20.0sp</dimen>
+    
+    <dimen name="iapppay_padding_small">10dp</dimen>
+     <dimen name="iapppay_padding_large">10dp</dimen>
+    
+
+   
+    
+    
+</resources>

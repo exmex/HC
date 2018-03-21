@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dcn_member_center_content"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dcn_ucenter_bg">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/dcn_content"
+        android:measureWithLargestChild="true">
+
+        <include
+            android:id="@+id/dcn_member_home"
+            layout="@layout/dcn_member_center_home" />
+        
+        <include
+            android:id="@+id/dcn_member_forum"
+            layout="@layout/dcn_member_center_forum"
+            android:visibility="gone"
+            />
+        
+        <include
+            android:id="@+id/dcn_member_prefecture"
+            layout="@layout/dcn_member_center_prefecture"
+            android:visibility="gone"/>
+
+        <include
+            android:id="@+id/dcn_more"
+            layout="@layout/dcn_more_main"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dcn_ucenter_navigationbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/dcn_ucenter_navigationbar_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/dcn_ucenter_home"
+            style="@style/dcn_ucenter_navigation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/dcn_ucenter_navi_home_selector"
+            android:gravity="center"
+            android:text="@string/dcn_home" />
+
+        <TextView
+            android:id="@+id/dcn_ucenter_forum"
+            style="@style/dcn_ucenter_navigation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/dcn_ucenter_navi_forum_selector"
+            android:gravity="center"
+            android:text="@string/dcn_forum" />
+
+        <TextView
+            android:id="@+id/dcn_ucenter_prefecture"
+            style="@style/dcn_ucenter_navigation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/dcn_ucenter_navi_prefecture_selector"
+            android:gravity="center"
+            android:text="@string/dcn_prefecture" />
+
+        <TextView
+            android:id="@+id/dcn_ucenter_more"
+            style="@style/dcn_ucenter_navigation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/dcn_ucenter_navi_more_selector"
+            android:gravity="center"
+            android:text="@string/dcn_more" />
+    </LinearLayout>
+
+</LinearLayout>

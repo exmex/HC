@@ -1,0 +1,19 @@
+<resources>
+
+    <dimen name="ebpay_line_height">40dp</dimen>
+    <dimen name="ebpay_line_margin_20">20dp</dimen>
+     <dimen name="ebpay_line_margin_18">18dp</dimen>
+    <dimen name="ebpay_line_margin_16">16dp</dimen>
+    <dimen name="ebpay_line_margin_10">10dp</dimen>
+    <dimen name="ebpay_line_margin_15">15dp</dimen>
+    <dimen name="ebpay_title_heigth">48dp</dimen>
+    <dimen name="ebpay_dimen_20dp">20dp</dimen>
+    <dimen name="ebpay_dimen_30dp">30dp</dimen>
+    
+    <dimen name="ebpay_text_size_25">25sp</dimen>
+    <dimen name="ebpay_text_size_20">20sp</dimen>
+    <dimen name="ebpay_text_size_18">18sp</dimen>
+    <dimen name="ebpay_text_size_16">16sp</dimen>
+    <dimen name="ebpay_text_size_15">15sp</dimen>
+    <dimen name="ebpay_text_size_13">13sp</dimen>
+</resources>

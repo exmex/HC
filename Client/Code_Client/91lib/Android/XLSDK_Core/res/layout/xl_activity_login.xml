@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f5f5f5"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="12.5dp"
+    android:paddingTop="5dp" >
+
+    <RelativeLayout
+        android:id="@+id/xl_login_area"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/xl_shape_window_bg"
+        android:orientation="vertical"
+        android:padding="3dp" >
+
+        <LinearLayout
+            android:id="@+id/xl_layout_1"
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/xl_shape_login_top"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:background="@color/xl_transparent"
+                android:text="@string/xl_username"
+                android:textColor="#595959"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/xl_transparent"
+                android:text="@string/xl_vertical_line"
+                android:textColor="#a9a9a9"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/xl_login_username_edittext"
+                android:layout_width="fill_parent"
+                android:layout_height="44dp"
+                android:background="@color/xl_transparent"
+                android:hint="@string/xl_username_input_hint"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textColorHint="#adadad"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/xl_login_pop_accounts_imageView"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:clickable="true"
+                android:contentDescription="@null"
+                android:src="@drawable/xl_selector_dropdown" >
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/xl_layout_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/xl_layout_1"
+            android:background="@color/xl_white"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/xl_line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/xl_layout_3"
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:layout_below="@id/xl_layout_2"
+            android:background="@drawable/xl_shape_login_bottom"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:background="@color/xl_transparent"
+                android:text="@string/xl_password"
+                android:textColor="#595959"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/xl_transparent"
+                android:text="@string/xl_vertical_line"
+                android:textColor="#a9a9a9"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/xl_login_password_edittext"
+                android:layout_width="fill_parent"
+                android:layout_height="44dp"
+                android:background="@color/xl_transparent"
+                android:hint="@string/xl_password_input_hint"
+                android:inputType="textPassword"
+                android:paddingBottom="10dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textColorHint="#adadad"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:contentDescription="@null"
+                android:src="@drawable/xl_selector_dropdown"
+                android:visibility="invisible" >
+            </ImageView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/xl_login_remember_password_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:button="@drawable/xl_selector_checkbox"
+            android:checked="true"
+            android:paddingLeft="14dp"
+            android:text="@string/xl_login_remember_password"
+            android:textColor="#595959"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/xl_login_forget_password_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/xl_forget_password"
+            android:textColor="#2b8eee"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/xl_login_register_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/xl_selector_button_white"
+            android:gravity="center"
+            android:text="@string/xl_register_right_now"
+            android:textColor="#3f3f3f"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/xl_login_login_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/xl_selector_button_blue"
+            android:gravity="center"
+            android:text="@string/xl_login"
+            android:textColor="#fffeff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

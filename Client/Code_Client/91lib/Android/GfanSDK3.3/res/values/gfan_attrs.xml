@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="archive_detail" type="id"></item>
+    <item name="show_detail" type="id"></item>
+
+</resources>

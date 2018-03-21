@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_background_color"
+    android:scrollbars="none" >    
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="28dip"
+            android:layout_marginRight="28dip"
+            android:layout_marginTop="7dip" >
+
+            <LinearLayout
+                android:id="@+id/input_area"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"                                          
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                     >
+
+                    <EditText
+                        android:id="@+id/reg_username"
+                        style="@style/input_font"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/input_background"
+                        android:hint="@string/reg_page_username_tips"
+                        android:paddingLeft="50dip"
+                        android:paddingRight="30dip"
+                        android:singleLine="true"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/sogou_username_tips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/username_tips"
+                        android:contentDescription="@string/reg_page_username_tips" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/reg_passpword"
+                        style="@style/input_font"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="15dip"
+                        android:background="@drawable/input_background"
+                        android:hint="@string/reg_page_password_tips"
+                        android:paddingLeft="50dip"
+                        android:paddingRight="30dip"
+                        android:password="true"
+                        android:singleLine="true"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/sogou_passsword_tips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/password_tips"
+                        android:contentDescription="@string/reg_page_username_tips" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/captcha"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"                
+                android:layout_below="@+id/input_area"
+                android:visibility="gone"
+                >
+                <EditText
+                    android:id="@+id/reg_captcha_input"
+                    style="@style/input_font"
+                    android:layout_width="fill_parent"                    
+                    android:layout_height="50dp"
+                    android:layout_marginRight="90dp"
+                    android:layout_centerVertical="true"                   
+                    android:layout_marginTop="15dip"
+                    android:background="@drawable/input_background"
+                    android:hint="@string/reg_page_captcha"
+                    android:singleLine="true"
+                    android:imeOptions="actionGo"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/sogou_captcha"
+                    android:layout_width="85dp"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:contentDescription="@string/reg_page_username_tips" 
+                    android:layout_alignTop="@+id/reg_captcha_input" />
+                
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/line_forget_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/captcha"               
+                android:layout_marginTop="5dip" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/regist_main_agree_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/select_press"
+                        android:clickable="true"
+                        android:focusable="true" />
+
+                    <TextView
+                        android:id="@+id/regist_main_agree_text"
+                        style="@style/main_font"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"                        
+                        android:background="@color/transparent"
+                        android:gravity="center"
+                        android:text="@string/agree"
+                        android:textSize="17sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/line_regist_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line_forget_password"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="8dip"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/reg_main_submit_btn"
+                    style="@style/button_font"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="35dip"                    
+                    android:background="@drawable/button_red_press"
+                    android:text="@string/reg_btn_label" />
+            </RelativeLayout>
+        </RelativeLayout>
+   
+
+</ScrollView>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+   
+    >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/upomp_lthj_logobar" >
+	<ImageView android:src="@drawable/upomp_lthj_logo"
+	    	android:layout_width="135dip"
+	   		android:layout_height="35dip"
+	     	android:scaleType="fitCenter"
+	     	android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/upomp_lthj_pad_right"
+            android:id="@id/upomp_lthj_about_btn"
+	     />
+        <Button
+            android:id="@id/upomp_lthj_homebackbutton"
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/upomp_lthj_pad_right"
+            android:textSize="@dimen/upomp_lthj_lineframe_textsize"
+            android:textColor="@drawable/upomp_lthj_white"
+            android:background="@drawable/upomp_lthj_button_blue"
+             />
+    </RelativeLayout>
+	<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/upomp_lthj_background">
+	    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" 
+	        android:paddingBottom="100dip" android:layout_alignParentBottom="true">
+	    	<ImageView style="@style/upomp_lthj_watermark" />
+	    </RelativeLayout>
+	    <LinearLayout
+	        android:id="@id/upomp_lthj_container"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:orientation="vertical"
+	        android:layout_above="@id/upomp_lthj_bottom_line">
+	    </LinearLayout>
+    	<ImageView android:id="@id/upomp_lthj_bottom_line" android:layout_width="fill_parent" android:layout_height="5dip" android:background="@drawable/upomp_lthj_bottom_line" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

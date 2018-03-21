@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- FL 充值方式 布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="fill_horizontal"
+    android:orientation="horizontal"
+    android:weightSum="4" >
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >            
+            <!-- alipay -->
+            <RelativeLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:onClick="onAlipayClick"
+		        android:padding="2.0dip" >
+		
+		        <ImageView
+		            android:id="@+id/flsdk_charge_type_icon1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerHorizontal="true"
+		            android:padding="8.0dip"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/flsdk_charge_main_alipay" />
+		
+		        <TextView
+		            android:id="@+id/flsdk_charge_type_name1"
+		            style="@style/flsdk_style_c2c2c2_14"
+		            android:layout_below="@+id/flsdk_charge_type_icon1"
+		            android:layout_centerHorizontal="true"
+		            android:text="@string/flsdk_paycenter_pay_type_alipay" />
+		    </RelativeLayout>
+		    
+            <!-- 银联支付-->
+		     <RelativeLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:onClick="onUnionPayClick"
+		        android:padding="2.0dip" >
+		
+		        <ImageView
+		            android:id="@+id/flsdk_charge_type_icon2"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerHorizontal="true"
+		            android:padding="8.0dip"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/flsdk_charge_main_unionpay" />
+		
+		        <TextView
+		            android:id="@+id/flsdk_charge_type_name2"
+		            style="@style/flsdk_style_c2c2c2_14"
+		            android:layout_below="@+id/flsdk_charge_type_icon2"
+		            android:layout_centerHorizontal="true"
+		            android:text="@string/flsdk_charge_type_union" />
+		    </RelativeLayout>
+            
+		    <!-- mo9支付-->
+		    <RelativeLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:onClick="onMo9PayClick"
+		        android:padding="2.0dip" >
+		
+		        <ImageView
+		            android:id="@+id/flsdk_charge_type_icon3"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerHorizontal="true"
+		            android:padding="8.0dip"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/flsdk_charge_main_mo9" />
+		
+		        <TextView
+		            android:id="@+id/flsdk_charge_type_name3"
+		            style="@style/flsdk_style_c2c2c2_14"
+		            android:layout_below="@+id/flsdk_charge_type_icon3"
+		            android:layout_centerHorizontal="true"
+		            android:text="@string/flsdk_charge_type_mo9" />
+		    </RelativeLayout>
+		    
+            
+            
+        </TableRow>
+        <!-- added by hanqingnan 20130726  -->
+		
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_span="2" >
+            
+            <!-- mobile card -->
+            <RelativeLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:onClick="onPhoneCardClick"
+		        android:padding="2.0dip" >
+		
+		        <ImageView
+		            android:id="@+id/flsdk_charge_type_icon4"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerHorizontal="true"
+		            android:padding="8.0dip"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/flsdk_charge_main_phone_card" />
+		
+		        <TextView
+		            android:id="@+id/flsdk_charge_type_name4"
+		            style="@style/flsdk_style_c2c2c2_14"
+		            android:layout_below="@+id/flsdk_charge_type_icon4"
+		            android:layout_centerHorizontal="true"
+		            android:text="@string/flsdk_charge_type_phonecard" />
+		    </RelativeLayout> 
+		   
+            <!-- game card -->
+            <RelativeLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:onClick="onGameCardClick"
+		        android:padding="2.0dip" >
+		
+		        <ImageView
+		            android:id="@+id/flsdk_charge_type_icon3"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerHorizontal="true"
+		            android:padding="8.0dip"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/flsdk_charge_main_game_card" />
+		
+		        <TextView
+		            android:id="@+id/flsdk_charge_type_name3"
+		            style="@style/flsdk_style_c2c2c2_14"
+		            android:layout_below="@+id/flsdk_charge_type_icon3"
+		            android:layout_centerHorizontal="true"
+		            android:text="@string/flsdk_charge_type_gamecard" />
+		    </RelativeLayout>
+		    
+		    
+		    <RelativeLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1">
+		    </RelativeLayout>
+		     
+        </TableRow>
+		
+    </TableLayout>
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/nmgc_quick_lg_width"
+    android:layout_height="@dimen/nmgc_quick_lg_height"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nmgc_alert_title_border" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/nmgc_lg_x_margin_left"
+            android:contentDescription="@string/nmgc_global_title"
+            android:src="@drawable/nmgc_x"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/nmgc_login_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/nmgc_quick_lg_title"
+            android:textSize="@dimen/nmgc_login_title_text_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/nmgc_alert_content_border"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/nmgc_login_part_margin_left"
+            android:layout_marginRight="@dimen/nmgc_login_part_margin_right"
+            android:clickable="true"
+            android:focusable="true" >
+
+            <TextView
+                style="@style/nmgc_common_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/nmgc_login_part1_name_margin_top"
+                android:layout_marginRight="@dimen/nmgc_login_part1_name_margin_top"
+                android:layout_marginTop="@dimen/nmgc_login_part1_name_margin_top"
+                android:gravity="left"
+                android:text="@string/nmgc_login_line1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/nmgc_login_part_margin_left"
+            android:layout_marginRight="@dimen/nmgc_login_part_margin_right"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center|top"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/nmgc_login_head_outer_height"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/nmgc_login_head_size"
+                    android:layout_height="@dimen/nmgc_login_head_size"
+                    android:src="@drawable/nmgc_default_avatar_male" />
+
+                <TextView
+                    android:id="@+id/nmgc_quicklogin_username"
+                    style="@style/nmgc_common_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/nmgc_login_name_margin_left"
+                    android:text="哈哈小妹" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/nmgc_login_part1_name_margin_top"
+                android:layout_marginRight="@dimen/nmgc_login_part1_name_margin_top"
+                android:layout_marginBottom="@dimen/nmgc_quick_lg_divider_bottom"
+                android:scaleType="fitXY"
+                android:src="@drawable/nmgc_loading_divider" />
+
+            <TextView
+                android:id="@+id/nmgc_quick_login_button"
+                style="@style/nmgc_login_button_text"
+                android:layout_width="@dimen/nmgc_quick_lg_button_width"
+                android:layout_height="@dimen/nmgc_quick_lg_button_height"
+                android:layout_marginBottom="@dimen/nmgc_login_button_margin_bottom"
+                android:background="@drawable/nmgc_button_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/nmgc_quick_login" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/nmgc_quick_login_other"
+            style="@style/nmgc_login_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/nmgc_login_button_margin_bottom"
+            android:text="@string/nmgc_quick_lg_other_account"
+            android:textColor="#3a8292"
+            android:textSize="@dimen/nmgc_quick_lg_other_szie" />
+    </LinearLayout>
+
+</LinearLayout>

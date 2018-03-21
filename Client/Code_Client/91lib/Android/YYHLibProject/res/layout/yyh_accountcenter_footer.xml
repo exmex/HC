@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="40dip"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/yyh_center_jingpin_btn_getmore"
+        android:layout_width="150dip"
+        android:layout_height="40dip"
+        android:background="@drawable/yyh_button_slector_register_cell"
+        android:text="@string/yyh_jiazaigengduo"
+        android:textColor="#ffffff"
+        android:textSize="13sp" />
+
+</LinearLayout>

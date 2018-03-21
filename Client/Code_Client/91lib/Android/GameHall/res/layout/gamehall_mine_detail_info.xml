@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dip" >
+
+    <RelativeLayout
+        android:id="@+id/mine_info_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:id="@+id/game_logo_outer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="14dip"
+            android:paddingRight="7dip"
+            android:paddingTop="14dip" >
+
+            <ImageView
+                android:id="@+id/game_logo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@drawable/gamehall_logo_default_80" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/game_logo_outer"
+            android:orientation="vertical"
+            android:paddingTop="10dip" >
+
+            <TextView
+                android:id="@+id/game_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fca429"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1dip"
+                android:text="最新活动:"
+                android:textColor="@color/txt_white"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/game_activity1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1dip"
+                android:text="1.4月12日新服开放"
+                android:textColor="@color/txt_white"
+                android:textSize="12dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                />
+
+            <TextView
+                android:id="@+id/game_activity2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.新春活动火热进行中"
+                android:textColor="@color/txt_white"
+                android:textSize="12dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                 />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/mine_game_start_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mine_info_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dip"
+        android:background="@drawable/gamehall_button2_selector1"
+        android:paddingBottom="4dip"
+        android:paddingLeft="16dip"
+        android:paddingRight="16dip"
+        android:paddingTop="4dip"
+        android:text="开始"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+</RelativeLayout>

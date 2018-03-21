@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+  
+
+        <ImageView
+            android:id="@id/imageLogo"
+            android:layout_width="120.0dip"
+            android:layout_height="120.0dip"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:contentDescription="@android:string/untitled"
+            android:maxHeight="120.0dip"
+            android:maxWidth="120.0dip"
+            android:minHeight="120.0dip"
+            android:minWidth="120.0dip"
+            android:src="@drawable/sdk_logo_default"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/RegForm"
+            android:layout_width="300.0dip"
+            android:layout_height="290.0dip"
+            android:layout_below="@id/imageLogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="#000" >
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_alignLeft="@+id/imageView3"
+                android:layout_alignTop="@+id/RegeditEmail"
+                android:src="@drawable/login_mail" />
+
+            <EditText
+                android:id="@+id/RegeditEmail"
+                android:layout_width="220dip"
+                android:layout_height="30dip"
+                android:layout_alignLeft="@+id/RegeditPassword"
+                android:layout_below="@+id/RegeditPassword"
+                android:layout_marginTop="16dp"
+                android:background="#00000000"
+                android:ems="10"
+                android:hint="@string/hint_email"
+                android:inputType="textEmailAddress"
+                android:textColor="#ff130c0e"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/reg_protal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView1"
+                android:layout_alignBottom="@+id/textView1"
+                android:layout_toRightOf="@+id/textView1"
+                android:text="@string/protocal"
+                android:textSize="12sp"
+                android:textColor="#333399" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/imageView3"
+                android:src="@drawable/sdk_logo_dota" />
+
+            <ImageView
+                android:id="@+id/reg_iv_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/imageView1"
+                android:layout_marginBottom="14dp"
+                android:layout_toLeftOf="@+id/imageView1"
+                android:src="@drawable/sdk_back" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="220dp"
+                android:layout_height="32dp"
+                android:layout_alignTop="@+id/RegeditUsername"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/login_account" />
+
+            <EditText
+                android:id="@+id/RegeditUsername"
+                android:layout_width="220dip"
+                android:layout_height="30dip"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/imageView1"
+                android:background="#00000000"
+                android:ems="10"
+                android:hint="@string/hint_account"
+                android:inputType="textPersonName"
+                android:textColor="#ff130c0e"
+                android:textSize="14sp" >
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/RegsignUpBtn"
+                android:layout_width="100dp"
+                android:layout_height="30.0dip"
+                android:layout_alignBaseline="@+id/RegsignInBtn"
+                android:layout_alignBottom="@+id/RegsignInBtn"
+                android:layout_alignRight="@+id/imageView4"
+                android:background="@drawable/sdk_register"
+                android:contentDescription="@android:string/untitled"
+                android:onClick="onRegClick"
+                android:text="@string/sdk_register" />
+
+            <Button
+                android:id="@+id/RegsignInBtn"
+                android:layout_width="100.0dip"
+                android:layout_height="30dip"
+                android:layout_marginTop="10dp"
+                android:layout_alignLeft="@+id/imageView2"
+                android:layout_below="@+id/textView1"
+                android:background="@drawable/sdk_small_login"
+                android:contentDescription="@android:string/untitled"
+                android:onClick="onLoginClick"
+                android:text="@string/sdk_small_login" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_below="@+id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:src="@drawable/login_pass" />
+
+            <EditText
+                android:id="@+id/RegeditPassword"
+                android:layout_width="220dip"
+                android:layout_height="30dip"
+                android:layout_alignBottom="@+id/imageView3"
+                android:layout_alignParentRight="true"
+                android:background="#00000000"
+                android:ems="10"
+                android:hint="@string/hint_account"
+                android:inputType="textPassword"
+                android:textColor="#ff130c0e"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/reg_cb_agree"
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:layout_above="@+id/RegsignInBtn"
+                android:layout_toRightOf="@+id/reg_iv_back"
+                android:background="@drawable/checkbox_background"
+                android:button="@drawable/checkbox"
+                android:checked="true" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView4"
+                android:layout_toRightOf="@+id/reg_cb_agree"
+                android:text="@string/read_protocal"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

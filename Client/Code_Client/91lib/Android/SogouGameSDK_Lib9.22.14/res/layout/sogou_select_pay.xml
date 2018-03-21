@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_background_color"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/main_background_color"
+        android:orientation="vertical" >
+
+        <include layout="@layout/sogou_head" />
+
+        <TextView
+            android:id="@+id/sogou_pay_select_account"
+            style="@style/main_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:text="@string/select_pay_account" />
+
+        <TextView
+            android:id="@+id/sogou_pay_method"
+            style="@style/main_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/select_pay_method" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top" >
+
+                <TableRow android:layout_marginTop="0dip" >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:id="@+id/sogou_pay_alipay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/pay_press"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center" >
+
+                            <ImageView
+                                android:id="@+id/sogou_pay_alipay_icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dip"
+                                android:src="@drawable/alipay" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/sogou_pay_alipay_title"
+                            style="@style/main_font"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/sogou_pay_alipay"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8dp"
+                            android:duplicateParentState="true"
+                            android:text="@string/select_pay_alipay" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="visible" >
+
+                        <RelativeLayout
+                            android:id="@+id/sogou_pay_messagepay_chinatelecom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/pay_press"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center" >
+
+                            <ImageView
+                                android:id="@+id/sogou_pay_messagepay_chinatelecom_yes_icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dip"
+                                android:gravity="center"
+                                android:src="@drawable/china_telecom" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/sogou_pay_messagepay_chinatelecom_title"
+                            style="@style/main_font"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/sogou_pay_messagepay_chinatelecom"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:singleLine="true"
+                            android:text="@string/select_pay_telcom" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:id="@+id/sogou_pay_messagepay_chinaunicom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/pay_press"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center" >
+
+                            <ImageView
+                                android:id="@+id/sogou_pay_messagepay_chinaunicom_icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dip"
+                                android:src="@drawable/china_unicom" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/sogou_pay_messagepay_chinaunicom_title"
+                            style="@style/main_font"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/sogou_pay_messagepay_chinaunicom"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:singleLine="true"
+                            android:text="@string/select_pay_unicom" />
+                    </RelativeLayout>
+                </TableRow>
+
+                <TableRow android:layout_marginTop="34dip" >
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:id="@+id/sogou_pay_messagepay_chinamobile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/pay_press"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center" >
+
+                            <ImageView
+                                android:id="@+id/sogou_pay_messagepay_chinamobile_icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dip"
+                                android:gravity="center"
+                                android:src="@drawable/china_mobile" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/sogou_pay_messagepay_chinamobile_title"
+                            style="@style/main_font"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/sogou_pay_messagepay_chinamobile"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:singleLine="true"
+                            android:text="@string/select_pay_mobile" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="visible" >
+
+                        <RelativeLayout
+                            android:id="@+id/sogou_pay_ali_wap"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:background="@drawable/pay_press"
+                            android:clickable="true"
+                            android:focusable="true" >
+
+                            <ImageView
+                                android:id="@+id/icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dip"
+                                android:src="@drawable/bank" />
+                        </RelativeLayout>
+                        <TextView
+                            android:id="@+id/sogou_pay_aliwap_title"
+                            style="@style/main_font"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/sogou_pay_ali_wap"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/select_pay_aliwap" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="invisible" >
+
+                        <RelativeLayout
+                            android:id="@+id/sogou_pay_messagepay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/pay_press"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center" >
+
+                            <ImageView
+                                android:id="@+id/sogou_pay_messagepay_icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dip"
+                                android:src="@drawable/message_pay" />
+                        </RelativeLayout>
+
+                        
+                    </RelativeLayout>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <!-- 如有任何问题请点击问题反馈<Button
+            android:id="@+id/sogou_select_pay_feedBackBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/button_red_press"
+            android:text="@string/sogou_feed_backBtn_label"
+            android:textColor="#FFFFFF"
+            android:textSize="22dip"
+            android:textStyle="bold" /> -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp">
+
+            <TextView
+                android:id="@+id/sogou_select_pay_feedBack_label"
+                style="@style/list_font"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:textColor="@drawable/link_text" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

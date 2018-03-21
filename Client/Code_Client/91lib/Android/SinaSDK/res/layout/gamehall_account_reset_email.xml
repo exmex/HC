@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/account_title_view"
+        android:layout_alignParentTop="true"
+        layout="@layout/gamehall_account_title" />
+    
+    <ImageView
+        android:id="@+id/logo_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/account_title_view"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="45dip"
+        android:src="@drawable/gamehall_account_reset_title" />
+
+    <TextView
+        android:id="@+id/title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_view"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="45dip"
+        android:gravity="center"
+        android:text="@string/gamehall_account_reset_email_title"
+        android:textColor="#4c9f02"
+        android:textSize="14dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_view"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/phone_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:textSize="14dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/phone_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gamehall_account_reset_email_method"
+            android:textColor="#333333"
+            android:textSize="14dp" >
+        </TextView>
+
+        <Button
+            android:id="@+id/phone_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+       	 	android:layout_marginRight="12dip"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/gamehall_login_btn_selector"
+            android:text="@string/gamehall_pwd_reset_number"
+            android:textColor="@color/txt_white"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</RelativeLayout>

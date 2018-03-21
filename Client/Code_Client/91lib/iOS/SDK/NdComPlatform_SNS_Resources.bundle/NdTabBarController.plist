@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>imageArray</key>
+	<array>
+		<dict>
+			<key>image</key>
+			<string>actionbar_personal01</string>
+			<key>pressImage</key>
+			<string>actionbar_personal02</string>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string>actionbar_friends01</string>
+			<key>pressImage</key>
+			<string>actionbar_friends02</string>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string>actionbar_apply01</string>
+			<key>pressImage</key>
+			<string>actionbar_apply02</string>
+		</dict>
+	</array>
+	<key>backgroundColor</key>
+	<string>0.922,0.922,0.922,1</string>
+	<key>rect</key>
+	<string>{{0,0},{0,36}}</string>
+	<key>onlyChangeHeight</key>
+	<string>1</string>
+</dict>
+</plist>

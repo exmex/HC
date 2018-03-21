@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ebpay_bg_item_area">
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true">
+	    <ImageView
+	        android:id="@+id/add_img"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:scaleType="fitCenter"
+	        android:layout_gravity="center_vertical"
+	        android:src="@drawable/ebpay_ic_add_card"/>
+	    <TextView
+	        android:id="@+id/tv_pay_type_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical"
+	        android:layout_marginLeft="10dp"
+	        android:text="@string/ebpay_add_card"
+	        android:textColor="@color/ebpay_text_333333"
+	        android:textSize="@dimen/ebpay_text_size_15"/>
+    </LinearLayout>
+</RelativeLayout>

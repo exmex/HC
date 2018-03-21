@@ -1,0 +1,20 @@
+
+class LoadResources: public cocos2d::CCObject
+{
+    static void load();
+     static float getProgress();
+     static  bool isEnd();
+      static  LoadResources *create(size_t len);
+      static LoadResources *create();
+     static void update();
+     static int getCode();
+     static int getStep();
+     static std::string getDes();
+     static  void releaseMemory();
+     static bool checkUpdate();
+    static bool isBinaryUpdated();
+    static bool isScriptChanged();
+     void insert(const char*param1);
+};
+
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 页面 -->
+    <string name="gamehall_pages">100,101,102,103,104</string>
+    
+    <!-- 栏目 -->
+    <string name="gamehall_columns_rmd">100</string>
+    
+    <string name="gamehall_columns_mine_top">100</string>
+    <string name="gamehall_columns_mine_bottom">101</string>
+    
+    <string name="gamehall_columns_detail">101</string>
+    
+    <!-- 位置 -->
+	<string name="gamehall_location_rmd">1000,1001,1002,1003,1004,1005,1006,1006,1008,1009,1010,1011,1012,1013,1014,1015</string>
+    <string name="gamehall_location_detail">1000,1001,1002,1004</string>
+    
+    <!-- 我的，顶部位置 -->
+    <!-- 
+    1000:开始大按钮
+    1001:第1个
+    1002:第2个
+    1003:第3个
+    1004:第4个
+    1005:更多按钮
+     -->
+    <string name="gamehall_location_mine_top">1000,1001,1002,1003,1004</string>
+    
+    <!-- 我的，底部位置 -->
+    <string name="gamehall_location_mine_bottom">1000,1001,1002,1003</string>
+</resources>

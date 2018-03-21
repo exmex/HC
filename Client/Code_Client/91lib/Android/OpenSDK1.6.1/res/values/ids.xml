@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- main tab activity start -->
+    <item name="main_tab_title_bar_icon" type="id"/>
+    <item name="main_tab_top_bar" type="id"/>
+    <item name="main_tab_mine_remind_icon" type="id"/>
+    <item name="main_tab_title_bar_text" type="id"/>
+    <item name="main_tab_title_bar_setting" type="id"/>
+    <item name="main_tab_title_bar_search" type="id"/>
+    <item name="main_tab_title_bar_download_manage" type="id"/>
+    <item name="main_tab_title_bar_download_area" type="id"/>
+    <item name="main_tab_title_bar_download_manage_root" type="id"/>
+    <item name="vistor_login_award_bg" type="id"/>
+    <item name="main_tab_welcome_title" type="id"/>
+    <!-- main tab activity end -->
+
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+	>
+	
+    
+    <TextView android:id="@+id/dk_dialog_text" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="@string/dk_tv_string_account_input"
+        android:textSize="14sp"
+        android:textColor="@color/dk_color_333333"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        />
+    
+	<EditText
+	    android:id="@+id/dk_find_pwd_username_edit"
+	    android:layout_height="36dp"
+	    android:layout_width="fill_parent"
+	    android:hint="@string/dk_et_string_account_or_phone"
+	    android:textSize="14sp"
+	    android:textColor="@color/dk_color_333333"
+	    android:layout_marginTop="8dp"
+	    android:layout_marginLeft="8dp"
+	    android:layout_marginRight="8dp"
+	    android:background="@drawable/dk_edittext_selector"
+	    android:visibility="visible"
+	    android:singleLine="true"/>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <Button
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="hideClick"
+        android:text="" />
+
+    <Button
+        android:layout_marginTop="50.0dip"
+        android:id="@+id/fldk_loginBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="loginClick"
+        android:text="@string/flsdk_login_btn" />
+
+    <com.fl.gamehelper.ui.widget.FunctionView
+        android:id="@+id/flsdk_functionview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

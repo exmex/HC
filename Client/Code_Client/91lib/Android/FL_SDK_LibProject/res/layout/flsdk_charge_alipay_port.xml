@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 支付宝充值竖屏 -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/flsdk_base_bg_layout_port" />
+
+    <include layout="@layout/flsdk_charge_info_lay" />
+
+    <LinearLayout style="@style/flsdk_style_charge_body_lay_port" >
+
+        <com.fl.gamehelper.ui.widget.BoldButton
+            android:id="@+id/flsdk_charge_alipay_btn"
+            style="@style/flsdk_style_btn_yellow"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8.0dip"
+            android:gravity="center"
+            android:onClick="alipayClick"
+            android:text="@string/flsdk_pay_btn_text" />
+    </LinearLayout>
+
+    <include layout="@layout/flsdk_base_loading_layout" />
+
+</merge>

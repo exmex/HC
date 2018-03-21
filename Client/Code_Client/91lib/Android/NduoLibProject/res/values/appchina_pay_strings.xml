@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+
+	<string name="appchina_pay_label_cardType">卡类型:</string>
+    <string name="appchina_pay_label_cardNum">充值面额:</string>
+    <string name="appchina_pay_label_cardSeq">充值卡号:</string>
+    <string name="appchina_pay_label_cardPass">充值密码:</string>
+    <string name="appchina_pay_btn_sure">确定</string>
+    <string name="appchina_pay_btn_now">立即查询</string>
+    <string name="appchina_pay_btn_back">返回</string>
+    <string name="appchina_pay_btn_cancel">取消</string>
+    <string name="appchina_pay_pay_password">交易密码：</string>
+    <string name="appchina_pay_error_password1">请输入密码</string>
+    <string name="appchina_pay_error_password2">密码只能是6~20个字符</string>
+    <string name="appchina_pay_error_password3">二次密码不匹配</string>
+    <string name="appchina_pay_error_password4">交易密码只能是数字或者字母</string>
+    <string name="appchina_pay_error_cardpassword">密码长度错误,请重新输入！</string>
+    <string name="appchina_pay_error_cardno">卡号长度错误,请重新输入！</string>
+    <string name="appchina_pay_error_pwd_to_cardno">卡号对应的密码错误，请重新输入！</string>
+    <string name="appchina_pay_input_price">输入的面额应大于支付金额</string>
+    <string name="appchina_pay_submit">提交</string>
+    <string name="appchina_pay_pay_password_setting">提交中，请稍候...</string>
+    <string name="appchina_pay_pay_password_succ">设置密码成功</string>
+    <string name="appchina_pay_register_succ">注册成功</string>
+    <string name="appchina_pay_pay_price">需要支付：</string>
+    <string name="appchina_pay_pay_content">商品信息：</string>
+    <string name="appchina_pay_pay_name">收费项目：</string>
+    <string name="appchina_pay_cp_name">商户名称：</string>
+    <string name="appchina_pay_pay_fee">原\u0020\u0020\u0020\u0020\u0020\u0020\u0020价：</string>
+    <string name="appchina_pay_pay_pay">支付方式：</string>
+    <string name="appchina_pay_btn_pay">    支  付    </string>
+    <string name="appchina_pay_pricing">正在处理中...</string>
+    <string name="appchina_pay_paying">正在支付中...</string>
+    <string name="appchina_pay_paying_confirm">正在支付确认中...</string>
+    <string name="appchina_pay_no_charge_history">您暂时还没有充值记录</string>
+    <string name="appchina_pay_no_consume_history">您暂时还没有消费记录</string>
+    <string name="appchina_pay_quering_charge_history">充值记录查询中，请稍候...</string>
+    <string name="appchina_pay_quering_consume_history">消费记录查询中，请稍候...</string>
+    <string name="appchina_pay_input_password">请输入交易密码</string>
+    <string name="appchina_pay_huafeika">话费卡充值</string>
+    <string name="appchina_pay_gameka">游戏点卡充值</string>
+    <string name="appchina_pay_paywap_title">网银充值</string>
+    <string name="appchina_pay_msgpay_title">话费余额充值</string>
+    <string name="appchina_pay_yuan">%s元</string>
+    <string name="appchina_pay_pleast_input_id">请输入卡号</string>
+    <string name="appchina_pay_pleast_input_pwd">请输入卡密码</string>
+    <string name="appchina_pay_pleast_input_deno">请输入卡面额</string>
+    <string name="appchina_pay_input_correct_deno">输入面额范围应为1~1000元</string>
+    <string name="appchina_pay_networking">网络连接中，请稍候...</string>
+    <string name="appchina_pay_card_charging">查询充值结果</string>
+    <string name="appchina_pay_card_charge_no_status">充值尚未到账，请稍候...</string>
+    <string name="appchina_pay_card_charge_succ">充值成功</string>
+    <string name="appchina_pay_network_unconnent">网络没有连接，请稍后再试！</string>
+    <string name="appchina_pay_wait_query">稍后查询</string>
+    <string name="appchina_pay_paypwd_tip">6~20个数字或字母</string>
+    <string name="appchina_pay_insert_sim">请插入sim卡再进行支付.</string>
+    <string name="appchina_pay_your_month">您已经包月，本次消费无需支付!</string>
+    <string name="appchina_pay_ReqSource">充值渠道  : </string>
+    <string name="appchina_pay_CardType">充值方式  : </string>
+    <string name="appchina_pay_CardNo">充值卡号  : </string>
+    <string name="appchina_pay_Balance">账户余额  : </string>
+    <string name="appchina_pay_PAmount">充值金额  : </string>
+    <string name="appchina_pay_ChargeTime">充值时间  : </string>
+    <string name="appchina_pay_Status">充值状态  : </string>
+    <string name="appchina_pay_ErrDesc">失败描述  : </string>
+    <string name="appchina_pay_no_tip">知道了，不再提示</string>
+    <string name="appchina_pay_query_title">我的业务</string>
+    <string name="appchina_pay_welcome_words">欢迎您开通移动支付账户，为了您的账户安全，请设置交易密码！</string>
+    <string name="appchina_pay_client_update">版本升级</string>
+    <string name="appchina_pay_important_update">已经有新版本啦，为了更好地体验安全支付服务，请先更新版本，谢谢！</string>
+    <string name="appchina_pay_client_title">安全支付</string>
+    <string name="appchina_pay_detail_waresname">商品名称  ：  </string>
+    <string name="appchina_pay_detail_price">金        额  ：  </string>
+    <string name="appchina_pay_detail_cpname">商家名称  ：  </string>
+    <string name="appchina_pay_detail_paytype">支付方式  ：  </string>
+    <string name="appchina_pay_detail_transid">交易流水号  ：  </string>
+    <string name="appchina_pay_detail_extransid">外部流水号  ：  </string>
+    <string name="appchina_pay_detail_time">交易时间  ：  </string>
+    <string name="appchina_pay_spinner_promt_default">请选择</string>
+    <string name="appchina_pay_recharge_no_thistype">暂未开通此类充值方式，请选择其它方式，谢谢！</string>
+    <string name="appchina_pay_check_user_loginpwd">系统检测到您的客户端发生异动，为了您的账户安全，请输入您的交易密码 ：</string>
+    <string name="appchina_pay_show_password">显示密码</string>
+    <string name="appchina_pay_set_pwd_question">在忘记密码时可以通过密保问题重设，请回答下面的密保问题：</string>
+    <string name="appchina_pay_ans_pwdq_tip">请输入密保答案</string>
+    <string name="appchina_pay_ans_pwdq_hint">请输入2~20个字符</string>
+    <string name="appchina_pay_ans_pwdq_errinfo">密保答案只能是2~20个字符</string>
+    <string name="appchina_pay_is_overdue">安全支付插件版本过低，无法进行支付，请下载最新版本</string>
+        <!-- init for update -->
+    <string name="appchina_pay_confirm_update">已经有新版本啦, 是否进行更新?</string>
+    
+        <!-- wap chr url -->
+    <string name="appchina_pay_point">.</string>
+    <string name="appchina_pay_money_unit">元</string>
+    <string name="appchina_pay_wcu_warn">充值金额单位:元(人民币)\n充值限度:最低0.01元, 最高100元</string>
+    <string name="appchina_pay_bank_name">银行名称: </string>
+    <string name="appchina_pay_recharge_amount">充值金额: </string>
+    <string name="appchina_pay_input_amount_null_error">输入的金额不能为空,请重新输入!</string>
+    <string name="appchina_pay_input_amount_small_error">输入金额范围为0.01~1000元,请重新输入!</string>
+    <string name="appchina_pay_input_amount_big_error">输入的金额不能超过100元,请重新输入!</string>
+    <string name="appchina_pay_input_amount_format_error">输入的金额不合法,请重新输入!</string>
+    <string name="appchina_pay_now_getting_wap_chr_url">正在连接中，请稍候...</string>
+    <string name="appchina_pay_go_wap_warn">将转到WAP,可能会产生流量，是否继续?</string>
+    <string name="appchina_pay_creditcard_warn">温馨提示:</string>
+    <string name="appchina_pay_card_charge_fail">充值失败</string>
+        <!-- card errMsg -->
+    <string name="appchina_pay_card_input_error">%1$s输入应为数字,请重新输入！</string>
+    
+    <string name="appchina_pay_usercharge">账户充值</string>
+    <string name="appchina_pay_querycharge">充值查询</string>
+    <string name="appchina_pay_queryconsume">消费查询</string>
+    <string name="appchina_pay_pay_not_enough">虚拟币余额不足!</string>
+    
+    <string name="appchina_pay_user_checking">正在验证虚拟币账户，请稍候...</string>
+    <string name="appchina_pay_yeepay_system_error">系统错误!</string>
+    <string name="appchina_pay_user_check_time_out">验证账户尚未完成，是否继续等待?</string>
+    
+    <!-- 获取密保问题 -->
+    <string name="appchina_pay_getting_questtionlist">正在获取密保问题列表,请稍侯...</string>
+    <!-- 设置设置交易密码和密保问题 -->
+    <string name="appchina_pay_no_paypwd_tips">检测到您未设置交易密码，为了您的账户安全，请设置交易密码！</string>
+    <string name="appchina_pay_no_pwdprt_tips">检测到您未设置密保问题，为了您的账户安全，请设置密保问题！</string>
+    <string name="appchina_pay_no_question_list">密保问题获取失败！</string>
+    <string name="appchina_pay_download_fail">下载失败，请稍候再试！</string>
+    
+    <!-- 绑定 -->
+    <string name="appchina_pay_binding_account">正在绑定账户，请稍候...</string>
+    <string name="appchina_pay_bind_account_time_out">绑定账户尚未完成，是否继续等待?</string>
+    <string name="appchina_pay_bind_system_error">系统侧错误!</string>
+    <string name="appchina_pay_bind_account_tip">您未绑定此账户，是否进行绑定?</string>
+    
+    <!-- 查询交易结果 -->
+    <string name="appchina_pay_querying_payresult">正在查询支付结果，请稍候...</string>
+    <string name="appchina_pay_query_payresult_time_out">未查到支付结果，是否继续查询?</string>
+    <string name="appchina_pay_query_system_error">系统侧错误!</string>
+    <string name="appchina_pay_pay_request_succ">支付请求已提交！</string>
+    
+    <!-- N多网 -->
+    <string name="appchina_pay_pay_phone_num">客服电话：</string>
+    
+    <string name="appchina_pay_zhangzhongfu_geting">正在跳转掌中付支付，请稍侯...</string>
+    
+    <!-- 用户激活 -->
+    <string name="appchina_pay_active_reg">注册</string>
+    <string name="appchina_pay_active_login">登录</string>
+    <string name="appchina_pay_active_cancel">取消</string>
+    <string name="appchina_pay_active_username_hint">请输入账号</string>
+    <string name="appchina_pay_active_pwd_hint">请输入密码</string>
+    <string name="appchina_pay_active_username_not_null">账号不可为空!</string>
+    <string name="appchina_pay_active_pwd_not_null">密码不可为空!</string>
+    <string name="appchina_pay_active_username_longer">账号长度为4-64字符!</string>
+    <string name="appchina_pay_active_pwd_longer">密码长度为6-64字符!</string>
+    <string name="appchina_pay_active_activing">正在登录中，请稍候...</string>
+    <string name="appchina_pay_active_reging">正在注册中，请稍候...</string>
+    <string name="appchina_pay_active_tip1">tip1</string>
+    <string name="appchina_pay_active_tip2">tip2</string>
+    <string name="appchina_pay_active_btn">注册/登录</string>
+    <string name="appchina_pay_active_alipay_charge">支付宝充值</string>
+    <string name="appchina_pay_active_shenzhoufu_charge">话费卡充值</string>
+    <string name="appchina_pay_active_zhenzhongfu_charge">网银充值</string>
+    <string name="appchina_pay_ali_recharge_warn">金额单位:元(人民币) \n最低充值限度:0.01元.</string>
+    <!-- 获取充值流水号 -->
+    <string name="appchina_pay_getting_chr_trans_id">正在获取充值流水号,请稍侯...</string>
+    <string name="appchina_pay_useractive_link"><a href="useractive">(登录)</a></string>
+    <string name="appchina_pay_usercharge_link"><a href="usercharge">(充币)</a></string>
+    <string name="appchina_pay_usercharge_link2"><a href="quickcharge">(立即充值)</a></string>
+    
+    <string name="appchina_pay_nduobi_account">请选择充值方式充值到虚拟币资金账户:</string>
+    
+    <string name="appchina_pay_is_exit">确定退出收银台?</string>
+    <string name="appchina_pay_nduobi_warn">为了保证您的交易安全，请先登录虚拟账户!</string>
+    <string name="appchina_pay_had_no_sd_card">请插入SD卡再进行支付.</string>
+    
+    <string name="appchina_pay_no_charge_type">暂无充值方式</string>
+    <string name="appchina_pay_no_activity_info">暂无活动信息</string>
+    <string name="appchina_pay_btn_close">关闭</string>
+    <string name="appchina_pay_no_help_info">暂无介绍信息</string>
+    <!-- 虚拟币 -->
+    <string name="appchina_pay_nduobi_paytip">您将使用虚拟币账户支付%1$s个%2$s\u0020（1元=%3$s）,请确认.</string>
+    <string name="appchina_pay_paytip">您将用话费卡进行支付,本次交易金额%1$s, 请选用%2$s面额的充值卡, 谢谢!</string>
+    <string name="appchina_pay_paytip2">您将用游戏点卡进行支付,本次交易金额%1$s, 谢谢!</string>
+	<string name="appchina_pay_card_tip">为防止充值失败、意外销卡，请仔细确认卡信息输入是否正确！</string>
+	<string name="appchina_pay_chargetip">您将用%1$s进行账户充值,换算比例:1元=%2$s.</string>
+	<string name="appchina_pay_chargetotal">实际到账金额:\u0020%1$s</string>
+	<string name="appchina_pay_card_wrantip">请确保您的卡面额与本次交易金额一致，否则将会导致支付失败或意外销卡！</string>
+</resources>

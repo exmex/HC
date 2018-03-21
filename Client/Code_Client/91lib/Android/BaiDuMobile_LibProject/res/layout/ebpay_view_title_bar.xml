@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+	<RelativeLayout
+	    android:background="@drawable/ebpay_title_bar_bg"
+	   	android:layout_width="fill_parent"
+	    android:layout_height="@dimen/ebpay_title_heigth" >
+	    <ImageView
+	        android:id="@+id/title_bar_logo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="10dp"
+	        android:contentDescription="@string/ebpay_img"
+	        android:scaleType="fitXY"
+	        android:src="@drawable/ebpay_ic_logo" />
+	    <com.baidu.android.pay.view.RemoteImageView
+	        android:id="@+id/title_bar_right_img"
+	        android:layout_width="35dp"
+	        android:layout_height="35dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="10dip"
+	        android:scaleType="fitXY"
+	        android:background="@drawable/ebpay_account_icon" />
+    	<Button
+        	android:id="@+id/btn_Login_or_reg"
+        	android:layout_width="70dp"
+        	android:layout_height="44dp"
+        	android:layout_alignParentRight="true"
+        	android:layout_alignParentTop="true"
+        	android:background="@drawable/ebpay_title_btn_selector"
+        	android:gravity="center"
+        	android:textColor="@color/ebpay_white"
+        	android:textSize="20sp"
+        	android:visibility="gone" />
+	</RelativeLayout>
+	
+	<com.baidu.android.pay.view.ColorLineView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="4dip"
+	    android:layout_alignParentBottom="true"/>
+</LinearLayout>

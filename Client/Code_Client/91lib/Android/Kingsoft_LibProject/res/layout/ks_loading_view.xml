@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ijinshan.ksmglogin.ui.view.LoadingStateView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ks_info_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/ks_bg_cm_dialog"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <include layout="@layout/ks_common_cm_title_line_minview" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="@dimen/ks_cm_one_key_reg_loading_min_height"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/ks_cm_one_key_reg_loading_padding_left_right"
+        android:paddingRight="@dimen/ks_cm_one_key_reg_loading_padding_left_right" >
+
+        <ProgressBar
+            android:id="@+id/ks_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@drawable/ks_cm_cycle_progress" />
+
+        <ImageView
+            android:id="@+id/ks_info_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:src="@drawable/ks_ic_right"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/ks_info_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ks_cm_one_key_reg_loading_margin_left"
+            android:text="@string/ks_one_key_login_text_info_reg_phone_fail"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/ks_text_size_16" />
+    </LinearLayout>
+
+</com.ijinshan.ksmglogin.ui.view.LoadingStateView>

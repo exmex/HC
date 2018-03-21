@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="vertical" android:layout_marginLeft="10dp"
+	android:layout_marginRight="10dp" android:background="@drawable/appchina_pay_main_shape">
+	<RelativeLayout android:id="@+id/main_title_ly"
+		android:layout_width="fill_parent" android:layout_height="48dp"
+		android:background="@drawable/appchina_pay_title_bg"
+		android:layout_alignParentTop="true">
+		<TextView android:layout_width="wrap_content" android:textSize="20sp" 
+			android:layout_height="34dp" android:layout_centerInParent="true"
+			android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+			android:text="短信扣费提示" />
+	</RelativeLayout>
+	<TextView android:id="@+id/ld_tip" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_marginTop="15dip"
+		android:layout_marginLeft="10dip" android:layout_marginRight="10dip"
+		android:text="@string/appchina_pay_welcome_words" style="@style/appchina_pay_text_highlight" />
+	<LinearLayout android:layout_width="fill_parent"
+		android:orientation="horizontal"
+		android:layout_height="wrap_content" android:paddingLeft="5px"
+		android:paddingRight="5px" android:layout_marginTop="20dip">
+		<Button android:id="@+id/ld_sure"
+			android:text="确认支付 " style="@style/appchina_pay_button_text_16"
+			android:layout_marginLeft="12px"
+			android:layout_weight="1" 
+			android:padding="5dp"
+			android:layout_width="0dp" android:layout_height="wrap_content"
+			android:background="@drawable/appchina_pay_by_button_selector" />
+		<Button android:id="@+id/ld_cancel" android:layout_marginLeft="8px"
+			android:layout_marginRight="12px" android:layout_width="0dp"
+			android:layout_weight="1"
+			android:padding="5dp"
+			android:layout_height="wrap_content" android:text="放弃交易"
+			style="@style/appchina_pay_button_text_16" android:background="@drawable/appchina_pay_by_button_selector" />
+	</LinearLayout>
+	<Button android:id="@+id/ld_replayed"
+		android:layout_marginTop="10dp"
+		android:layout_marginBottom="10dp"
+		android:layout_gravity="center_horizontal"
+		android:layout_width="wrap_content"
+		android:padding="5dp"
+		android:layout_height="wrap_content" android:text="已回复,查询结果"
+		style="@style/appchina_pay_button_text_16" android:background="@drawable/appchina_pay_by_button_selector" />
+</LinearLayout>
+

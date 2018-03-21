@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/black" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <ImageView
+                android:id="@+id/imageViewBack"
+                android:layout_width="852.0dip"
+                android:layout_height="1136.0dip"
+                android:adjustViewBounds="true"
+                android:contentDescription="@android:string/untitled"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sdk_backgroud" />
+            <ImageView
+                android:id="@+id/ImageViewTxwy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/imageViewBack"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="6.0dip"
+                android:contentDescription="@android:string/untitled"
+                android:scaleType="matrix"
+                android:src="@drawable/sdk_guaji" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingBottom="60.0dip" >
+
+                <RelativeLayout
+                    android:id="@+id/loginForm"
+                    android:layout_width="300.0dip"
+                    android:layout_height="340.0dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/imageLogo"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/login_background" >
+
+                    <ImageButton
+                        android:id="@+id/bt_dropdown"
+                        android:layout_width="30.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/editUsername"
+                        android:layout_alignRight="@+id/editUsername"
+                        android:layout_alignTop="@+id/editUsername"
+                        android:layout_marginRight="5.0dip"
+                        android:background="@null"
+                        android:src="@drawable/sdk_dropdown_selector" />
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/imageView2"
+                        android:layout_alignRight="@+id/editUsername"
+                        android:layout_below="@+id/imageView3"
+                        android:src="@drawable/login_account" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/registBtn"
+                        android:layout_below="@+id/bt_dropdown"
+                        android:layout_marginTop="25dp"
+                        android:src="@drawable/login_pass" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/sdk_logo_dota" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/editUsername"
+                        android:layout_width="200dip"
+                        android:layout_height="38dip"
+                        android:imeOptions="flagNoExtractUi"
+                        android:layout_alignRight="@+id/imageView2"
+                        android:layout_alignTop="@+id/imageView1"
+                        android:background="#00000000"
+                        android:ems="10"
+                        android:hint="@string/account"
+                        android:inputType="textPersonName"
+                        android:textColor="#ff130c0e" >
+
+                        <requestFocus />
+                    </AutoCompleteTextView>
+
+                    <EditText
+                        android:id="@+id/editPassword"
+                        style="\@style/txwy_editbox_style"
+                        android:layout_width="200dip"
+                        android:imeOptions="flagNoExtractUi"
+                        android:layout_height="36dip"
+                        android:layout_alignRight="@+id/imageView2"
+                        android:layout_alignTop="@+id/imageView2"
+                        android:background="#00000000"
+                        android:ems="10"
+                        android:hint="@string/pass"
+                        android:inputType="textPassword"
+                        android:textColor="#ff130c0e" />
+
+                    <Button
+                        android:id="@+id/registBtn"
+                        android:layout_width="120.0dip"
+                        android:layout_height="32.0dip"
+                        android:layout_alignBaseline="@+id/signBtn"
+                        android:layout_alignBottom="@+id/signBtn"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="28dp"
+                        android:background="@drawable/sdk_small_reg"
+                        android:contentDescription="@android:string/untitled"
+                        android:onClick="onRegClick"
+                        android:text="@string/sdk_small_reg"
+                        android:textColor="#fff" />
+
+                    <Button
+                        android:id="@+id/signBtn"
+                        android:layout_width="120dp"
+                        android:layout_height="32.0dip"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignRight="@+id/imageView2"
+                        android:background="@drawable/sdk_login"
+                        android:contentDescription="@android:string/untitled"
+                        android:onClick="onLoginClick"
+                        android:text="@string/sdk_login"
+                        android:textColor="#fff" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btnQQLogin"
+                    android:layout_width="110.0dip"
+                    android:layout_height="28.0dip"
+                    android:layout_below="@id/loginForm"
+                    android:layout_marginLeft="145.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/sdk_qqbutton"
+                    android:contentDescription="@android:string/untitled"
+                    android:onClick="onQQLoginClick"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btnSinaLogin"
+                    android:layout_width="110.0dip"
+                    android:layout_height="28.0dip"
+                    android:layout_below="@id/loginForm"
+                    android:layout_marginLeft="25.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/sdk_sinabutton"
+                    android:contentDescription="@android:string/untitled"
+                    android:onClick="onSinaLoginClick"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btnFacebook"
+                    android:layout_width="128.0dip"
+                    android:layout_height="36.0dip"
+                    android:layout_below="@id/loginForm"
+                    android:layout_marginLeft="3.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/sdk_facebook_selector"
+                    android:contentDescription="@android:string/untitled"
+                    android:onClick="onFBLoginClick"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btnGoogle"
+                    android:layout_width="128.0dip"
+                    android:layout_height="36.0dip"
+                    android:layout_below="@id/loginForm"
+                    android:layout_marginLeft="145.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/sdk_google_selector"
+                    android:contentDescription="@android:string/untitled"
+                    android:onClick="onGoogleLoginClick"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/login_main_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="30dp"
+                android:layout_toLeftOf="@+id/ImageViewTxwy"
+                android:src="@drawable/sdk_back" />
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/loadingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</FrameLayout>

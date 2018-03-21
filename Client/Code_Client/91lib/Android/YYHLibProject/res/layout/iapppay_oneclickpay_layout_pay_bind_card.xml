@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10.0dip"
+    android:paddingRight="10.0dip" >
+
+   
+    
+    <include
+	        layout="@layout/iapppay_oneclickpay_layout_orderinfo" />
+   
+        
+    <!-- 信用卡有效期 和CVV2-->
+    <LinearLayout
+        android:baselineAligned="false"
+        android:id="@+id/gp_credit_card_info" 
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginTop="@dimen/line_margin_15"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="8.0dip"
+            android:layout_weight="7.0"
+            android:gravity="center_vertical"
+            android:background="@drawable/iapppay_oneclickpay_bg_edit_seletor"
+            android:orientation="horizontal" >
+
+            <ImageView
+                style="@style/icon_common_style"
+                android:contentDescription="@string/iapppay_img"
+                android:src="@drawable/iapppay_oneclickpay_ic_valid_date" />
+
+            <TextView
+                android:id="@+id/validateTextView"
+                style="@style/edit_common_style"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:drawableLeft="@drawable/iapppay_oneclickpay_shape_line_gray"
+                android:drawablePadding="5.0dip"
+                android:hint="@string/valid_date"
+                android:maxLength="5" />
+        </LinearLayout>
+
+  
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="8.0dip"
+            android:layout_weight="9.0"
+            android:background="@color/white"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:contentDescription="@string/iapppay_img"               
+                style="@style/icon_common_style"
+                android:src="@drawable/iapppay_oneclickpay_ic_cvv2" />
+
+            <TextView
+                android:id="@+id/cvv2_id"
+                android:gravity="center"
+                style="@style/edit_common_style"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:drawableLeft="@drawable/iapppay_oneclickpay_shape_line_gray"
+                android:drawablePadding="5.0dip"
+                android:hint="@string/card_end_dim"
+                android:background="@drawable/iapppay_oneclickpay_bg_edit_seletor"
+                android:maxLength="3" />
+        </LinearLayout>
+    </LinearLayout>
+
+    
+    <!-- 借記卡銀行卡密碼-->
+    <LinearLayout
+        android:id="@+id/gp_card_password"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginTop="@dimen/line_margin_15"
+        android:background="@color/white"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:contentDescription="@string/iapppay_img"           
+            style="@style/icon_common_style"
+            android:src="@drawable/iapppay_oneclickpay_ic_mobile" />
+
+        <EditText
+            android:id="@+id/card_password"
+            style="@style/edit_common_style"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:drawableLeft="@drawable/iapppay_oneclickpay_shape_line_gray"
+            android:drawablePadding="5.0dip"
+            android:hint="@string/bank_bind_phone"
+            android:background="@drawable/iapppay_oneclickpay_bg_edit_seletor"      
+            android:inputType="number"/>
+    </LinearLayout>
+
+    <!-- 持卡人姓名-->
+    <LinearLayout
+        android:id="@+id/gp_card_holder_name"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginTop="@dimen/line_margin_15"
+        android:background="@color/white"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:contentDescription="@string/iapppay_img"            
+            style="@style/icon_common_style"
+            android:src="@drawable/iapppay_oneclickpay_ic_people" />
+
+        <EditText
+            android:id="@+id/ownerNameEditText"
+            style="@style/edit_common_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/iapppay_oneclickpay_shape_line_gray"
+            android:drawablePadding="5.0dip"
+            android:background="@drawable/iapppay_oneclickpay_bg_edit_seletor"
+            android:hint="@string/true_name" />
+    </LinearLayout>
+
+    <!-- 持卡人身份信息-->
+    <LinearLayout
+        android:id="@+id/gp_card_holder_identify"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginTop="@dimen/line_margin_15"
+                android:background="@color/white"
+        android:gravity="center_vertical" >
+
+  
+
+       <ImageView
+                 android:contentDescription="@string/iapppay_img"               
+                style="@style/icon_common_style"
+                android:src="@drawable/iapppay_oneclickpay_ic_identity" />
+
+        <EditText
+            android:id="@+id/identifyNumber"
+            style="@style/edit_common_style"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:drawableLeft="@drawable/iapppay_oneclickpay_shape_line_gray"
+            android:drawablePadding="5.0dip"
+            android:background="@drawable/iapppay_oneclickpay_bg_edit_seletor"
+            android:hint="@string/identity_no"
+            android:paddingLeft="10.0dip" />
+       
+                
+    </LinearLayout>
+
+     <!-- 持卡人手機號碼信息-->
+    <LinearLayout
+        android:id="@+id/gp_card_holder_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginTop="@dimen/line_margin_15"
+        android:background="@color/white"
+        android:gravity="center_vertical" >
+
+        <ImageView
+                 android:contentDescription="@string/iapppay_img"           
+            style="@style/icon_common_style"
+            android:src="@drawable/iapppay_oneclickpay_ic_mobile" />
+
+        <EditText
+            android:id="@+id/phoneNumber"
+            style="@style/edit_common_style"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:drawableLeft="@drawable/iapppay_oneclickpay_shape_line_gray"
+            android:drawablePadding="5.0dip"
+            android:hint="@string/bank_bind_phone"
+
+            android:inputType="number"
+            android:maxLength="11" />
+    </LinearLayout>
+
+    <!-- 持卡人手機號碼校驗-->
+    <LinearLayout
+        android:id="@+id/gp_card_holder_phone_valid"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginTop="@dimen/line_margin_15"
+        android:orientation="horizontal" >
+
+        
+        <EditText
+            android:id="@+id/smsCode"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/iapppay_oneclickpay_bg_edit_seletor"
+            android:hint="@string/input_sms_code"
+            android:maxLength="8"
+            android:paddingLeft="10.0dip"
+            android:inputType="number"
+            android:singleLine="true" />
+        
+        <Button
+            android:id="@+id/getSmsCodeButton"
+            android:layout_width="160.0dip"
+            android:layout_height="43.0dip"
+            android:background="@drawable/iapppay_oneclickpay_bg_send_sms"
+            android:drawableLeft="@drawable/iapppay_oneclickpay_ic_airplane"
+            android:drawablePadding="5.0dip"
+            android:gravity="center"
+            android:layout_marginLeft="10.0dip"
+            android:paddingLeft="7.0dip"
+            android:paddingRight="7.0dip"
+            android:singleLine="true"
+            android:text="@string/get_sms_code"
+            android:textColor="@color/black"
+            android:textSize="15.0sp" />
+
+    </LinearLayout>
+
+     <!-- 是否查看支付協議-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginTop="@dimen/line_margin_10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/protocolCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:button="@drawable/iapppay_oneclickpay_bg_checkbox_seletor"
+            android:clickable="true" />
+        <TextView
+            android:id="@+id/agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/protel"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_15"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+    
+     	
+    
+    <Button
+            android:id="@+id/payButton"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+   			android:layout_marginBottom="@dimen/line_margin_20"
+   			android:layout_marginTop="@dimen/line_margin_15"
+   			android:background="@drawable/iapppay_oneclickpay_bg_confrim_selector"
+ 			android:text="@string/submit_pay"
+   			android:textColor="@color/white"
+  		    android:textSize="@dimen/text_size_20" />
+</LinearLayout>

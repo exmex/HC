@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+  
+    android:background="@android:color/white" >
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingBottom="@dimen/size_20" >
+
+            <LinearLayout
+                android:id="@+id/linearlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_marginRight="@dimen/size_10"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/wodeshouchang_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/size_58"
+                    android:background="@drawable/anzhi_textview_normal"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/anzhi_shouchang" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/size_10"
+                        android:layout_toRightOf="@id/icon"
+                        android:text="@string/anzhi_mycollection"
+                        android:textColor="@color/anzhi_494949"
+                        android:textSize="@dimen/size_20" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/anzhi_arrow_right" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_view_user"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/size_58"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:background="@drawable/anzhi_textview_normal" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/size_58"
+                        android:layout_centerVertical="true"
+                        android:background="@android:color/white" >
+
+                        <ImageView
+                            android:id="@+id/icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/size_10"
+                            android:background="@drawable/anzhi_info" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/size_10"
+                            android:layout_toRightOf="@id/icon"
+                            android:text="@string/anzhi_personaldata"
+                            android:textColor="@color/anzhi_494949"
+                            android:textSize="@dimen/font_18" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/anzhi_arrow_right" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_currency"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/size_58"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:background="@drawable/anzhi_textview_normal" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/size_58"
+                        android:layout_centerVertical="true"
+                        android:background="@android:color/white" >
+
+                        <ImageView
+                            android:id="@+id/icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/size_10"
+                            android:background="@drawable/anzhi_anzhibi" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/size_10"
+                            android:layout_toRightOf="@id/icon"
+                            android:text="@string/title_currency"
+                            android:textColor="@color/anzhi_494949"
+                            android:textSize="@dimen/font_18" />
+
+                        <ImageView
+                            android:id="@+id/xxx_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/anzhi_arrow_right" />
+
+                        <TextView
+                            android:id="@+id/txt_currency"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/xxx_iv"
+                            android:text="@string/anzhi_account_balance" />
+                    </RelativeLayout>
+                    
+                </RelativeLayout>
+                
+                
+                   <RelativeLayout
+                    android:id="@+id/xiaofei_log_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/size_58"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:background="@drawable/anzhi_textview_normal" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/size_58"
+                        android:layout_centerVertical="true"
+                        android:background="@android:color/white" >
+
+                        <ImageView
+                            android:id="@+id/icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/size_10"
+                            android:background="@drawable/anzhi_anzhibi" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/size_10"
+                            android:layout_toRightOf="@id/icon"
+                            android:text="@string/title_consum_history"
+                            android:textColor="@color/anzhi_494949"
+                            android:textSize="@dimen/font_18" />
+
+                        <ImageView
+                            android:id="@+id/xxx_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/anzhi_arrow_right" />
+
+                        
+                    </RelativeLayout>
+                    
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_bind"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/size_58"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:background="@drawable/anzhi_textview_normal" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/size_58"
+                        android:layout_centerVertical="true"
+                        android:background="@android:color/white" >
+
+                        <ImageView
+                            android:id="@+id/icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/size_10"
+                            android:background="@drawable/anzhi_qie_tu" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/size_10"
+                            android:layout_toRightOf="@id/icon"
+                            android:text="@string/anzhi_account_safebind"
+                            android:textColor="@color/anzhi_494949"
+                            android:textSize="@dimen/font_18" />
+
+                        <ImageView
+                            android:id="@+id/xxx_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/anzhi_arrow_right" />
+
+                        <TextView
+                            android:id="@+id/txt_level"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/xxx_iv"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/txt_level"
+                            android:text="@string/anzhi_safelevel"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                
+                 <RelativeLayout
+                    android:id="@+id/layout_modifyPwd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/size_58"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:background="@drawable/anzhi_textview_normal" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/size_58"
+                        android:layout_centerVertical="true"
+                        android:background="@android:color/white" >
+
+                        <ImageView
+                            android:id="@+id/icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/size_10"
+                            android:background="@drawable/anzhi_modifypwd" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/size_10"
+                            android:layout_toRightOf="@id/icon"
+                            android:text="@string/anzhi_modifyPwd"
+                            android:textColor="@color/anzhi_494949"
+                            android:textSize="@dimen/font_18" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/anzhi_arrow_right" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                
+
+                <RelativeLayout
+                    android:id="@+id/layout_logout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/size_58"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:background="@drawable/anzhi_textview_normal" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/size_58"
+                        android:layout_centerVertical="true"
+                        android:background="@android:color/white" >
+
+                        <ImageView
+                            android:id="@+id/icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/size_10"
+                            android:background="@drawable/anzhi_modifypwd" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/size_10"
+                            android:layout_toRightOf="@id/icon"
+                            android:text="@string/anzhi_change_account"
+                            android:textColor="@color/anzhi_494949"
+                            android:textSize="@dimen/font_18" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/anzhi_arrow_right" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <!-- 以下两个显示只为测试使用，正式版中将不显示 -->
+
+                <TextView
+                    android:id="@+id/appkey_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" 
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/gamename_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" 
+                    android:visibility="gone"/>
+
+                <ExpandableListView
+                    android:id="@+id/expandableListView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                </ExpandableListView>
+
+            </LinearLayout>
+        </RelativeLayout>
+   
+</RelativeLayout>

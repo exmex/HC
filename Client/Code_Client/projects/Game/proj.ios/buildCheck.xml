@@ -1,0 +1,13 @@
+<project default="Hero" name="Hero">
+    <property name="code.path" value="/bamboo_agent/xml-data/build-dir/HERO-HEROPRODUCTIONCHECK-JOB1/"/>
+
+	<path id="jsch.path">
+        <pathelement location="lib/jsch-0.1.45.jar" />
+	</path>
+
+    <target name="isTestCheck">
+        <exec executable="php" failonerror="true">
+            <arg line="-f ${code.path}/AutoBuildShell/istest.php ${releaseType} ${isTest}" />
+        </exec>
+    </target>
+</project>

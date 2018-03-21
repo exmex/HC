@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <com.fl.gamehelper.ui.widget.BoldButton
+        android:id="@+id/flsdk_login_login_btn"
+        style="@style/flsdk_style_btn_yellow"
+        android:layout_width="120.0dip"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:onClick="loginClick"
+        android:text="@string/flsdk_login_btn" />
+
+    <TextView
+        android:id="@+id/flsdk_login_register_btn"
+        style="@style/flsdk_style_c2c2c2_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

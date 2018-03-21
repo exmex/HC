@@ -1,0 +1,7 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/nmgc_item_middle_bg_light" android:state_selected="true"/>
+    <item android:drawable="@drawable/nmgc_item_middle_bg_light" android:state_checked="true"/>
+    <item android:drawable="@drawable/nmgc_item_middle_bg_light" android:state_focused="true"/>
+    <item android:drawable="@drawable/nmgc_item_middle_bg_light" android:state_pressed="true"/>
+    <item android:drawable="@android:color/transparent"/>
+</selector>

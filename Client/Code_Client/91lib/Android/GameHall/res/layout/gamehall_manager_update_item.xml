@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gamehall_list_item_selector"
+    android:clickable="true"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp" >
+
+    <ImageView
+        android:id="@+id/manager_update_imageview_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+
+    <Button
+        android:id="@+id/manager_update_button_command"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="14dp"
+        android:background="@drawable/gamehall_manager_button_bg"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_toLeftOf="@id/manager_update_button_command"
+        android:layout_toRightOf="@id/manager_update_imageview_icon"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/manager_update_textview_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@android:color/white" />
+
+        <ProgressBar
+            android:id="@+id/manager_update_progressbar_pro"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/gamahall_manager_progress_height"
+            android:progressDrawable="@drawable/gamehall_progress_horizontal" />
+
+        <TextView
+            android:id="@+id/manager_update_textview_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textColor="#6d6d6d" />
+    </LinearLayout>
+
+</RelativeLayout>

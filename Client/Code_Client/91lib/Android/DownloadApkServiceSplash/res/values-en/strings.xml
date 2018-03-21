@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Dragonball</string>
+	<string name="warning">warning</string>
+	<string name="downloadapk">Download new version apk</string>
+	<string name="ok">minimum</string>
+	<string name="downwaring">download waring</string>
+	<string name="downprogress">download progress</string>
+	<string name="downspeed">download speed</string>
+	<string name="downloading">downloading</string>
+	<string name="downfail">download fail</string>
+	<string name="downsuccess">download success</string>
+	<string name="startgame">starting game</string>
+	<string name="startdownload">starting download</string>
+	<string name="downtxt">Download new version,Please don\'t stop download</string>
+	<string name="loading">loading</string>
+</resources>

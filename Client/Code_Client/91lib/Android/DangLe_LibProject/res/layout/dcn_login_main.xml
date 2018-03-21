@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dcn_pop_up_bg"
+        android:paddingBottom="10dp">
+
+        <RelativeLayout
+            android:id="@+id/dcn_title_layer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dcn_title_height">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/dcn_title"
+                android:src="@drawable/dcn_login_box_logo" />
+
+            <LinearLayout
+                android:id="@+id/dcn_exit"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/dcn_back_btn_selector"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dcn_popup_closed_selector" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/dcn_back"
+                android:visibility="gone"
+                android:gravity="center"
+                android:background="@drawable/dcn_back_btn_selector">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dcn_back_ic" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:paddingLeft="15dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:clickable="true"
+                android:background="@drawable/dcn_login_box_tips_bg"
+                android:id="@+id/dcn_error_layer">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/dcn_error_message"
+                    android:drawableLeft="@drawable/dcn_login_tips_warning_icon"
+                    android:textColor="@color/dcn_error_msg_color"
+                    android:textSize="18sp"
+                    android:text="@string/dcn_error_message_title" />
+
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/dcn_error_exit"
+                    android:background="@drawable/dcn_back_btn_selector"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dcn_tips_closed_selector" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dcn_login_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/dcn_content"
+            android:measureWithLargestChild="true">
+
+            <include
+                android:id="@+id/dcn_content_login"
+                layout="@layout/dcn_login" />
+
+            <include
+                android:id="@+id/dcn_content_select_register_method"
+                layout="@layout/dcn_select_register_method"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/dcn_content_register_by_name"
+                layout="@layout/dcn_register_by_name"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/dcn_content_register_by_phone"
+                layout="@layout/dcn_register_by_phone"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="vertical" android:layout_marginLeft="10dp"
+	android:layout_marginRight="10dp" android:background="@drawable/appchina_pay_main_shape">
+	<RelativeLayout android:id="@+id/main_title_ly"
+		android:layout_width="fill_parent" android:layout_height="48dp"
+		android:background="@drawable/appchina_pay_title_bg"
+		android:layout_alignParentTop="true">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="34dp" android:layout_centerInParent="true"
+			android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+			android:textSize = "20sp" android:gravity="center_vertical"
+			android:textColor="#ffffff"
+			android:text="收银台" />
+	</RelativeLayout>
+	<TextView android:id="@+id/dlg_tip"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_marginTop="15dp" android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		style="@style/appchina_pay_text_16" />
+	<TableLayout
+		android:layout_width="fill_parent" android:layout_height="60dip"
+		android:paddingLeft="5px" android:paddingRight="5px"
+		android:layout_marginTop="20dip">
+		<TableRow android:gravity="center">
+			<Button	android:id="@+id/dlg_sure" 
+				android:layout_marginLeft="12px" android:text="@string/appchina_pay_btn_sure" 
+				android:padding="5dp"
+				android:layout_width="80dp" 
+				style="@style/appchina_pay_button_text_16" 
+				android:layout_height="wrap_content" android:background="@drawable/appchina_pay_by_button_selector"/>
+			<View	android:layout_width="15dp" android:layout_height="0dp"/>
+			<Button	android:id="@+id/dlg_cancel" 
+				android:layout_marginLeft="8px" android:layout_marginRight="12px" 
+				android:padding="5dp"
+				android:layout_width="80dp" android:layout_height="wrap_content" 
+				android:text="@string/appchina_pay_btn_cancel" style="@style/appchina_pay_button_text_16" 
+				android:background="@drawable/appchina_pay_by_button_selector"/>
+		</TableRow>
+	</TableLayout>
+</LinearLayout>
+

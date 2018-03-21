@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 手机卡充值竖屏 -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/flsdk_base_bg_layout_port" />
+
+    <include layout="@layout/flsdk_charge_info_lay" />
+
+    <LinearLayout style="@style/flsdk_style_charge_body_lay_port" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_gravity="center_horizontal"
+            layout="@layout/flsdk_charge_operator_select_lay" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/flsdk_style_077df7_14"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4.0dip"
+                android:text="@string/flsdk_paycenter_note" />
+
+            <EditText
+                android:id="@+id/charge_card_account"
+                style="@style/flsdk_style_edittext_single_number"
+                android:layout_marginTop="8.0dip"
+                android:hint="@string/flsdk_paycenter_input_card_number" />
+
+            <EditText
+                android:id="@+id/charge_card_pwd"
+                style="@style/flsdk_style_edittext_single_number"
+                android:layout_marginTop="8.0dip"
+                android:hint="@string/flsdk_paycenter_input_card_password" />
+
+            <com.fl.gamehelper.ui.widget.BoldButton
+                android:id="@+id/flsdk_charge_pay_btn"
+                style="@style/flsdk_style_btn_yellow"
+                android:layout_marginTop="8.0dip"
+                android:gravity="center"
+                android:onClick="payClick"
+                android:text="@string/flsdk_pay_btn_text" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/flsdk_base_loading_layout" />
+
+</merge>

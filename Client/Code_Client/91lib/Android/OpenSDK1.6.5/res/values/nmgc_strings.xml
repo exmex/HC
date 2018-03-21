@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nmgc_global_title">温馨提示</string>
+    <string name="nmgc_global_loading_error_click">加载数据失败，点击重试</string>
+    <string name="nmgc_global_handing">正在处理…</string>
+    <string name="nmgc_global_ischeckorder">检查支付结果…</string>
+    <string name="nmgc_global_invalid_imei">非法的IMEI号，无法本机登录</string>
+    <string name="nmgc_global_islogin">正在登录…</string>
+    <string name="nmgc_global_cancel">取消</string>
+    <string name="nmgc_global_queding">确定</string>
+    
+    <string name="nmgc_global_errorstring_notlogin">用户未登录</string>
+    <string name="nmgc_global_alreadylogin">已经登录</string>
+    <string name="nmgc_global_networkerror">网络异常</string>
+    <string name="nmgc_loading_text">加载中\u2026</string>
+    <string name="nmgc_data_error">加载失败，点击屏幕重试</string>
+	<string name="nmgc_not_login">您还没有登录</string>
+	<string name="nmgc_user_balance_not_enough">USER_BALANCE_NOT_ENOUGH</string>
+	
+	<!-- notification -->
+	<string name="nmgc_notify_percentzero">0%</string>
+	<string name="nmgc_notify_title">下载%s:</string>
+	<string name="nmgc_notify_download_failure">网络原因,下载失败</string>
+	<string name="nmgc_download_game">%s已经开始下载,请到下载管理查看</string>
+	<string name="nmgc_welcome_text">欢迎您，%s</string>
+	<!-- boy click alert -->
+	<string name="nmgc_boy_alert_button1">游戏论坛</string>
+	<string name="nmgc_boy_alert_button2">活动中心</string>
+	<string name="nmgc_boy_alert_button3">个人资料</string>
+	
+	<!-- game download status -->
+    <string name="game_download_status_xiazai">下载</string>
+    <string name="game_download_status_dakai">打开</string>
+    <string name="game_download_status_jixu">继续</string>
+    <string name="game_download_status_update">更新</string>
+    <string name="game_download_status_install">安装</string>
+    <string name="game_download_status_prepare">等待中</string>
+    <string name="game_download_status_installing">安装中</string>
+    
+	<string name="switch_account_new">添加一个新帐号</string>
+	<string name="switch_account">切换帐号</string>
+	<string name="choice_account">选择帐号</string>
+	<string name="add_account">添加帐号</string>
+	<string name="switch_account_use_other">使用其他账号登录</string>
+	<string name="fragment_mine_user_account">帐号：%s</string>
+    <string name="fragment_mine_user_promotion">升级为正式帐号</string>
+    <string name="switch_account_visitor">游客登录</string>
+    <string name="switch_account_not_binded">未绑定密保信息</string>
+    
+    <!-- account_login -->
+    <string name="account_login_btn">登 录</string>
+    <string name="account_register_btn">注 册</string>
+    <string name="keke_account_login">登录可可号</string>
+    <string name="keke_account_regist">注册可可号</string>
+    <string name="get_verify_code">获取验证码</string>
+    <string name="regist_success">注册成功</string>
+    <string name="resigt_success_hint">您的可可号和密码将用于登录游戏，请牢记</string>
+    <string name="regist_with_usr_name">用户名注册</string>
+    <string name="regist_with_phone">手机号注册</string>
+    <string name="start_game">进入游戏</string>
+    <string name="usr_account">用户名：</string>
+    <string name="nick_name">2-12位汉字、字母、数字</string>
+    <string name="account_name">手机号、邮箱、用户名</string>
+    <string name="phone_num">手机号码：</string>
+    <string name="verify_code">验证码：</string>
+    <string name="nmgc_account">当前帐号：</string>
+    <string name="nmgc_password">密码：</string>
+    <string name="nmgc_rem_psw">记住密码</string>
+    <string name="nmgc_account_hint">手机号、邮箱、用户名</string>
+    <string name="nmgc_forget_password">忘记密码?</string>
+    <string name="nmgc_register_new_account">注册新帐号</string>
+    <string name="nmgc_register_visitor">使用游客帐号</string>
+    <string name="nmgc_account_login">登录帐号</string>
+    <string name="nmgc_changepwd_pwdhint">6–16位字母、数字</string>
+    <string name="nmgc_reg_phone_number_eleven">11位手机号码</string>
+    <string name="verify_code_num">4位验证码</string>
+    <string name="nmgc_lg_empty_hint">帐号和密码不能为空</string>
+    <string name="nmgc_login_hint1">请输入正确格式的帐号或密码</string>
+    <string name="nmgc_login_hint2">帐号或密码错误，请重新输入</string>
+    <string name="nmgc_global_loginretry">登录失败,请重试</string>
+    <string name="nmgc_onekey_lg_error">抱歉，网络原因登录失败，请重试</string>
+    <string name="nmgc_account_not_exist">账号不存在！</string>
+    <string name="nmgc_fast_reg">快速注册</string>
+    <string name="nmgc_usr_log">登录游戏</string>
+    <string name="nmgc_visitor_login">游客一键登录</string>
+    <string name="visitor_is_locked">本机游客帐号已升级为正式帐号，请输入密码登录</string>
+    <string name="delete_btn_width">277</string>
+    <string name="nmgc_register_name_error">请输入2—12位汉字、字母、数字的账号</string>
+    <string name="nmgc_register_pwd_error">请输入正确格式的密码</string>
+    <string name="nmgc_register_name_not_null">请输入账号</string>
+    <string name="nmgc_register_pwd_not_null">请输入密码</string>
+    <string name="nmgc_register_username_not_all_number">用户名不能为纯数字</string>
+    <string name="nmgc_reg_error_phone_number">请输入正确格式的手机号码</string>
+    <string name="nmgc_reg_empty_phone_number">请输入手机号码</string>
+    
+    <!-- bind dialog -->
+	<string name="nmgc_bind_dialog_content">绑定手机或邮箱能帮您在忘记密码时找回密码，现在绑定还将获得10元宝。</string>
+	<string name="nmgc_bind_dialog_title">绑定手机邮箱</string>
+	<string name="nmgc_bind_dialog_hint">绑定手机或邮箱能帮您在忘记密码时找回密码。</string>
+    
+    <string name="improvement_notify_title">完善信息</string>
+    <string name="improvement_notify_content">您目前是游客帐号，为了防止帐号丢失建议立即完善安全信息并绑定手机或邮箱</string>
+    <string name="fragment_btn_later">以后再说</string>
+    
+    <string name="nmgc_setting_title_changehead">修改头像</string>
+    <string name="nmgc_setting_changehead_1">新照片</string>
+    <string name="nmgc_setting_changehead_2">从相册中选</string>
+    
+    <string name="nmgc_password_has_changed">您的密码已被修改，请输入新密码登录。如非本人操作，请点击忘记密码找回。</string>
+    <string name="nmgc_thirty_days_not_login">您的帐号因长时间未登录，请重新输入密码确认身份。</string>
+    <string name="nmgc_login_on_different_devices">您的帐号经常在不同设备上登录，请重新输入密码确认身份。</string>
+    <string name="nmgc_account_abnormal">您的帐号可能存在异常行为，请重新输入密码确认身份。</string>
+    
+    <!-- kebi -->
+    <string name="nmgc_kebi_charge">充值</string>
+    <string name="nmgc_kebi_close">关闭</string>
+    <string name="nmgc_kebi_account_pre">可可号：</string>
+    <string name="nmgc_kebi_pre">可币余额：</string>
+    <string name="nmgc_kebi_charge_number">充值数量</string>
+    <string name="nmgc_kebi_complete">确定支付</string>
+    <string name="nmgc_kebi_not_enough">余额不足，点击充值</string>
+    <string name="nmgc_kebi_charge_failure">充值可币失败</string>
+    <string name="nmgc_kebi_charge_small">您充值的金额过小。</string>
+    <string name="nmgc_kebi">可币</string>
+    <string name="nmgc_kebi_goods">商品：</string>
+    <string name="nmgc_kebi_prices">价格：</string>
+    <string name="nmgc_kebi_charge_mini">最小支付0.01可币</string>
+    <string name="nmgc_kebi_charge_ok_hint">点击确定完成支付</string>
+    <string name="nmgc_kebi_charge_confirm">请重新确认支付金额</string>
+    
+    <!-- 浮标bubble -->
+    <string name="keke_max_msg_count">99</string>
+
+    <string name="keke_msg_count0">0</string>
+    
+    <!-- upgrade maintain -->
+    <string name="upgrade_maintain_info">11111</string>
+
+    <string name="keke_delete">删除</string>
+    <string name="keke_remember_psd">记住密码</string>
+    
+    <!-- 自动登录 -->
+    <string name="nmgc_auto_login_tips">自动登录中...</string>
+    <string name="nmgc_auto_login_current_account">当前账号:</string>
+    <string name="nmgc_auto_login_account_type">账号类型:</string>
+    <string name="nmgc_account_type_visitor">游客账户</string>
+    <string name="nmgc_account_type_normal">普通用户</string>
+</resources>

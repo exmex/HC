@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/nmgc_login_title_height"
+    android:background="@drawable/nmgc_global_title" >
+
+    <TextView
+        android:id="@+id/nmgc_topbar_title_left"
+        style="@style/nmgc_common_text"
+        android:layout_width="@dimen/nmgc_setting_title_button_width"
+        android:layout_height="@dimen/nmgc_setting_title_button_height"
+        android:background="@drawable/nmgc_setting_title_btn_background"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:layout_marginLeft="@dimen/nmgc_setting_title_bar_layout_margin"
+        android:text="@string/nmgc_global_cancel" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+        <TextView
+            android:id="@+id/nmgc_topbar_title_name"
+            style="@style/nmgc_login_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:text="@string/nmgc_setting_title" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nmgc_topbar_title_right"
+        style="@style/nmgc_common_text"
+        android:layout_width="@dimen/nmgc_setting_title_button_width"
+        android:layout_height="@dimen/nmgc_setting_title_button_height"
+        android:background="@drawable/nmgc_setting_title_btn_background"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:layout_marginRight="@dimen/nmgc_setting_title_bar_layout_margin"
+        android:text="@string/nmgc_global_save" />
+
+</RelativeLayout>

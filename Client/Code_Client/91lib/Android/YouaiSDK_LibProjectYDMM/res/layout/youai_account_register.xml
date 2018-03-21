@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/nd3_account_bind_register_layout"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" 
+	android:orientation ="vertical"
+	android:background="@drawable/u2_background"
+	android:fillViewport="true"
+	>
+	<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/TextColorBlack"
+    android:orientation="horizontal"
+    >
+
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:textColor="@color/TextColorWhite"
+		    android:layout_marginLeft="10dp"
+		    android:text="@string/title_top" />
+
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/u2_title_bar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/title_bg"
+        android:orientation="vertical" >
+
+        <!-- 左按钮 -->
+
+        <Button
+            android:id="@+id/u2_title_bar_button_left"
+           android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:gravity="center"
+            android:background="@drawable/titlebt_bg"
+            android:text="@string/title_back"
+              android:textColor="@color/TextColorWhite"
+            android:textSize="16sp" >
+        </Button>
+
+        <!-- 标题 -->
+
+        <TextView
+            android:id="@+id/u2_title_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="22sp"
+            android:textColor="@color/TextColorWhite"
+            android:text="@string/title_register" >
+        </TextView>
+
+        <!-- 右按钮 -->
+
+        <Button
+            android:id="@+id/u2_title_bar_button_right"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:gravity="center"
+            android:background="@drawable/titlebt_bg"
+            android:text="@string/title_ok"
+              android:textColor="@color/TextColorWhite"
+            android:textSize="16sp"
+            android:visibility="visible" >
+        </Button>
+    </RelativeLayout>
+    
+	<ScrollView
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		>
+     
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical"
+			>
+			   <TextView
+           android:layout_gravity="center_horizontal"
+           android:gravity="left"
+           android:layout_marginTop="15dp"
+           android:textColor="@color/TextColorWhite"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/regist_tv"
+           />
+			<!-- 通行证、密码、邮箱 -->
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:gravity="center_horizontal"
+				android:orientation ="vertical"
+				>
+				<!-- 分隔线 -->
+				<ImageView
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					>
+				</ImageView>
+						
+				<!-- 通行证 -->
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="50dp" 
+					android:layout_marginTop="12dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:orientation ="horizontal"
+					android:gravity="center_vertical"
+					android:background="@drawable/charge_none_round"		
+					>
+		
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/regist_name"
+						android:textColor="@color/TextColorWhite"
+						android:layout_marginLeft="10dp"
+						android:layout_marginRight="5dp"
+						style="@style/u2_option_text_style"
+						>
+					</TextView>
+		
+					<EditText
+						android:id="@+id/u2_account_register_nickname"
+						android:layout_width="fill_parent"
+						android:layout_height="match_parent"
+						android:singleLine="true"
+						android:maxLength="16"		
+						android:nextFocusDown="@+id/u2_account_register_password"
+						android:hint="6-16个字母或数字"
+						style="@style/u2_option_edittext_style"
+						>
+					</EditText>
+								
+				</LinearLayout>
+				
+				<!-- 分隔线 -->
+				<ImageView
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					>
+				</ImageView>
+						
+				<!-- 密码 -->
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="50dp" 
+					android:layout_marginTop="15dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:orientation ="horizontal"
+					android:gravity="center_vertical"
+					android:background="@drawable/charge_none_round"
+					>
+					
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/regist_pass"
+						android:textColor="@color/TextColorWhite"
+						android:layout_marginLeft="10dp"
+						android:layout_marginRight="5dp"
+						style="@style/u2_option_text_style"
+						>
+					</TextView>
+		
+					<EditText
+						android:id="@+id/u2_account_register_password"
+						android:layout_width="fill_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:nextFocusDown="@+id/u2_account_register_email"
+						android:singleLine="true"
+						android:password="true"
+						android:maxLength="12"
+						android:hint="6-12个字母或数字"
+						style="@style/u2_option_edittext_style"
+						>
+					</EditText>
+							
+					
+					
+					
+					
+				</LinearLayout>
+				
+				
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="50dp" 
+					android:orientation ="horizontal"
+					android:layout_marginTop="15dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:gravity="center_vertical"
+					android:background="@drawable/charge_none_round"
+					>
+					
+					<TextView
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:textColor="@color/TextColorWhite"
+						android:layout_marginLeft="10dp"
+						android:layout_marginRight="5dp"
+						style="@style/u2_option_text_style"
+					     android:text="@string/regist_email" >
+					</TextView>
+		
+					<AutoCompleteTextView
+						android:id="@+id/u2_account_register_email"
+						android:layout_width="fill_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:singleLine="true"
+						android:maxLength="64"
+						android:hint="选填 找回密码 "
+						style="@style/u2_option_edittext_style"
+						>
+					</AutoCompleteTextView>		
+						
+				</LinearLayout> 
+				    
+
+				<LinearLayout android:layout_width="wrap_content" 
+				    android:orientation="horizontal"
+				    android:layout_marginTop="15dp"
+				    android:visibility="gone"
+				    android:layout_height="wrap_content">
+				<CheckBox
+				    android:id="@+id/checkBox1"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:checked="true"
+				    android:button="@drawable/check_proto"
+				    />
+
+				<TextView
+				    android:id="@+id/textView1"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:textSize="13sp"
+				    android:text="我已经阅读并统一遵守有爱互动社区服务器条款"
+				    android:textAppearance="?android:attr/textAppearanceMedium" />
+				</LinearLayout>
+		
+		<ProgressBar
+	    android:id="@+id/precreatebar"
+	    style="?android:attr/progressBarStyleLarge"
+	    android:layout_gravity="center"
+	    android:visibility="invisible"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" />	
+			</LinearLayout>
+		
+			<!-- 使用条款 -->
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:orientation ="horizontal"
+				android:visibility="gone"	
+				>
+				
+				<CheckBox
+					android:id="@+id/nd3_account_bind_register_is_agree"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:button="@null"
+					android:checked="true"			
+					>
+				</CheckBox>
+		
+				<TextView
+					android:id="@+id/nd3_account_bind_register_agreement"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="使用条款"
+					>
+				</TextView>
+								
+			</LinearLayout>
+
+		</LinearLayout>
+			
+	</ScrollView>
+	
+	
+	
+	
+	<!-- 注册提示 -->
+
+	
+	
+	 
+</LinearLayout>

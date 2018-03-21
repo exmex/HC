@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="px50_text_size">50px</dimen>
+    <dimen name="px55_text_size">55px</dimen>
+    <dimen name="px45_text_size">45px</dimen>
+    <dimen name="px39_text_size">39px</dimen>
+    <dimen name="px70_text_size">70px</dimen>
+</resources>

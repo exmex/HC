@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splashLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_centerInParent="true" >
+
+
+            <ImageView
+                android:id="@+id/ImageViewTxwy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/imageViewBack"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="6.0dip"
+                android:contentDescription="@android:string/untitled"
+                android:scaleType="matrix"
+                android:src="@drawable/sdk_guaji" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_logo"
+                android:layout_centerInParent="true"
+                android:paddingBottom="20.0dip" >
+
+                <Button
+                    android:id="@+id/btnTxwyLogin"
+                    android:layout_width="225.0dip"
+                    android:layout_height="32.0dip"
+                    android:layout_below="@id/btnTxwyGuest"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20.0dip"
+                    android:background="@drawable/sdk_login_fast"
+                    android:contentDescription="@android:string/untitled"
+                    android:onClick="onTxwyLoginClick"
+                    android:text="@string/login"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/btnTxwyGuest"
+                    android:layout_width="225.0dip"
+                    android:layout_height="32.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/sdk_guest_shiwan_selector"
+                    android:contentDescription="@android:string/untitled"
+                    android:onClick="onTxwyGuestClick"
+                    android:text="@string/fast_login"
+                    android:textColor="#fff" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/image_logo"
+                android:layout_width="300.0dip"
+                android:layout_height="80.0dip"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@android:string/untitled"
+                android:src="@drawable/sdk_logo_dota" />
+
+            <Button
+                android:id="@+id/btnGoogleLogin"
+                android:layout_width="112.0dip"
+                android:layout_height="32.0dip"
+                android:layout_alignBaseline="@+id/btnFBLogin"
+                android:layout_alignBottom="@+id/btnFBLogin"
+                android:layout_alignRight="@+id/relativeLayout1"
+                android:background="@drawable/sdk_google_login_selector"
+                android:onClick="onGoogleLoginClick" />
+
+            <Button
+                android:id="@+id/btnFBLogin"
+                android:layout_width="110.0dip"
+                android:layout_height="32.0dip"
+                android:layout_alignLeft="@+id/relativeLayout1"
+                android:layout_below="@+id/relativeLayout1"
+                android:background="@drawable/sdk_facebook_login_selector"
+                android:contentDescription="@android:string/untitled"
+                android:onClick="onFBLoginClick" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>addReason</key>
+	<array>
+		<string>你好啊！</string>
+		<string>你好！很高兴认识你，做个朋友吧。</string>
+		<string>石头、剪刀、布，你输了，加我吧。</string>
+		<string>加你为好友有肉吃，快点加我吧！</string>
+		<string>这年头加好友还要输入验证信息，我容易嘛我。</string>
+		<string>给个面子吧，加人被拒99次了。</string>
+	</array>
+</dict>
+</plist>

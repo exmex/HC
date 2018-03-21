@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/dialog_close_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="right"
+        android:paddingRight="20dip"
+        android:paddingTop="5dip" >
+
+        <ImageButton
+            android:id="@+id/dialog_close_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gamehall_button3_selector1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dialog_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_close_view"
+        android:layout_marginTop="5dip"
+        android:paddingLeft="20dip"
+        android:text="@string/gamehall_dialog_install"
+        android:textColor="@color/txt_white"
+        android:textSize="16dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_text"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip" >
+
+        <Button
+            android:id="@+id/dialog_yes_btn"
+            style="@style/install_button"
+            android:layout_marginBottom="33dip"
+            android:layout_marginTop="33dip"
+            android:text="立即安装" />
+    </RelativeLayout>
+
+</RelativeLayout>

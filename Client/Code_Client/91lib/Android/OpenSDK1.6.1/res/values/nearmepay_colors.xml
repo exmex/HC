@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="nearmepay_title_text_color">#ff000000</color>
+    <color name="nearmepay_button_color">#535a5a</color>
+    <color name="nearmepay_dialog_text_shadow_color">#c4ffffff</color>
+    <color name="nearmepay_dialog_text_color">#535a5a</color>
+    <color name="nearmepay_elegant_title_black">#363636</color>
+    <color name="nearmepay_title_shadowlight_color">#dcdcdc</color>
+    <color name="nearmepay_text_black">#000000</color>
+    <color name="nearmepay_dialog_toast_text_color">#dfdfdf</color>
+    <color name="happy_color">#494949</color>
+	<color name="sad_color">#bf3434</color>
+    
+</resources>

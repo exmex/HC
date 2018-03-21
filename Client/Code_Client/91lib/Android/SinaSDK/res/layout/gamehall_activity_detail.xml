@@ -1,0 +1,54 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:background="@drawable/gamehall_popup_detail_bg_black"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/gamehall_feedback_title_bg" >
+
+            <ImageButton
+                android:id="@+id/title_backbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/gamehall_feedback_back_selector" />
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/txt_white"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="18dp" />
+
+            <ProgressBar
+                android:id="@+id/title_progress"
+                style="@android:style/Widget.ProgressBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/actlist"
+            layout="@layout/gamehall_activity_list" />
+    </LinearLayout>
+
+</FrameLayout>

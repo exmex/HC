@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/yyh_qiuqiu_bar"
+        android:layout_width="180dip"
+        android:layout_height="120dip"
+        android:layout_centerVertical="true"
+        android:background="@drawable/yyh_bar_0"
+        android:gravity="center"
+        android:visibility="visible"
+        android:padding="-10dip" >
+
+        <LinearLayout
+            android:id="@+id/ll_line_one"
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/yyh_qiuqiu_center"
+                android:layout_width="62dip"
+                android:layout_height="match_parent"
+                android:background="@drawable/yyh_qiuqiu_btn_bg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/yyh_toolbar_items_margin"
+                    android:drawablePadding="5dip"
+                    android:drawableTop="@drawable/yyh_qiuqiu_center_unpress"
+                    android:text="@string/yyh_toolbar_center"
+                    android:textColor="@color/yyh_a_1"
+                    android:textSize="10dip" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/yyh_qiuqiu_btn_bg"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/yyh_qiuqiu_pay"
+                android:layout_width="62dip"
+                android:layout_height="match_parent"
+                android:background="@drawable/yyh_qiuqiu_btn_bg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/yyh_toolbar_items_margin"
+                    android:drawablePadding="5dip"
+                    android:drawableTop="@drawable/yyh_qiuqiu_pay_unpress"
+                    android:text="@string/yyh_toolbar_pay"
+                    android:textColor="@color/yyh_a_1"
+                    android:textSize="10dip" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/yyh_qiuqiu_btn_bg" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/yyh_qiuqiu_active"
+                android:layout_width="62dip"
+                android:layout_height="match_parent"
+                android:background="@drawable/yyh_qiuqiu_btn_bg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/yyh_toolbar_items_margin"
+                    android:drawablePadding="5dip"
+                    android:drawableTop="@drawable/yyh_qiuqiu_active_unpress"
+                    android:text="@string/yyh_toolbar_active"
+                    android:textColor="@color/yyh_a_1"
+                    android:textSize="10dip" />
+
+                <ImageView
+                    android:id="@+id/yyh_qiuqiu_hot"
+                    android:layout_width="15dip"
+                    android:layout_height="15dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/yyh_burn"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/yyh_qiuqiu_btn_bg" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_line_two"
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:layout_below="@id/ll_line_one"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/yyh_qiuqiu_tip"
+                android:layout_width="62dip"
+                android:layout_height="match_parent"
+                android:background="@drawable/yyh_qiuqiu_btn_bg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="@dimen/yyh_toolbar_items_margin"
+                    android:drawablePadding="5dip"
+                    android:drawableTop="@drawable/yyh_qiuqiu_tip_unpress"
+                    android:text="@string/yyh_toolbar_tip"
+                    android:textColor="@color/yyh_a_1"
+                    android:textSize="10dip" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/yyh_qiuqiu_btn_bg" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/yyh_qiuqiu_boutique"
+                android:layout_width="62dip"
+                android:layout_height="match_parent"
+                android:background="@drawable/yyh_qiuqiu_btn_bg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="@dimen/yyh_toolbar_items_margin"
+                    android:drawablePadding="5dip"
+                    android:drawableTop="@drawable/yyh_qiuqiu_mainfeature_unpress"
+                    android:text="@string/yyh_toolbar_boutique"
+                    android:textColor="@color/yyh_a_1"
+                    android:textSize="10dip" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/yyh_qiuqiu_btn_bg" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/yyh_qiuqiu_help"
+                android:layout_width="62dip"
+                android:layout_height="match_parent"
+                android:background="@drawable/yyh_qiuqiu_btn_bg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="@dimen/yyh_toolbar_items_margin"
+                    android:drawablePadding="5dip"
+                    android:drawableTop="@drawable/yyh_qiuqiu_help_unpress"
+                    android:text="@string/yyh_toolbar_help"
+                    android:textColor="@color/yyh_a_1"
+                    android:textSize="10dip" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/yyh_qiuqiu_btn_bg" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/yyh_qiuqiu_lay"
+        android:layout_width="44dip"
+        android:layout_height="44dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" >
+
+        <TextView
+            android:id="@+id/yyh_qiuqiu_unread"
+            android:layout_width="21dip"
+            android:layout_height="21dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/yyh_unread_bg"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="9dip"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

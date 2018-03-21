@@ -1,0 +1,17 @@
+$#include "AnnouncementNewPage.h"
+#include "cocos-ext.h"
+#include "cocos2d.h"
+#include "CurlDownload.h"
+#include "SeverConsts.h"
+
+class AnnouncementNewPage
+{
+
+	AnnouncementNewPage();
+	~AnnouncementNewPage();
+	void startDown();
+	void downInternalAnnouncementFile();
+	void downloaded(const std::string& url,const std::string& filename);
+	static AnnouncementNewPage* getInstance();
+};
+

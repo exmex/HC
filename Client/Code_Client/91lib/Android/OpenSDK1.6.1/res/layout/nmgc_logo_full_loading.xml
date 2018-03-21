@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nmgc_logo_full_loading_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/nmgc_logo_loading_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_gravity="center" >
+        <ImageView
+            android:id="@+id/nmgc_logo_full_loading_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/nmgc_logo_loading_boy"
+            android:contentDescription="@string/nmgc_global_title"
+            android:layout_alignParentLeft="true"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/nmgc_logo_full_loading_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/nmgc_global_islogin"
+            android:textColor="#262626"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</LinearLayout>

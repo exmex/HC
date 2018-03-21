@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:paddingLeft="@dimen/upomp_lthj_keyboard_padding" android:paddingRight="@dimen/upomp_lthj_keyboard_padding">
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0"
+		>
+		<LinearLayout android:orientation="horizontal" style="@style/upomp_lthj_layout_width_height_ff" android:layout_weight="1.0">
+			<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize"
+				android:id="@id/upomp_lthj_keyboard_button_q"
+				android:layout_height="fill_parent" android:layout_width="fill_parent"
+				android:background="@drawable/upomp_lthj_keybtn"/>
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" style="@style/upomp_lthj_layout_width_height_ff" android:layout_weight="1.0"
+			>
+			<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize"
+				android:id="@id/upomp_lthj_keyboard_button_w" android:layout_height="fill_parent" android:layout_width="fill_parent" 
+				android:background="@drawable/upomp_lthj_keybtn"/>
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" style="@style/upomp_lthj_layout_width_height_ff" android:layout_weight="1.0"
+		 >
+			<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize"
+				android:id="@id/upomp_lthj_keyboard_button_e" android:layout_height="fill_parent" android:layout_width="fill_parent" 
+				android:background="@drawable/upomp_lthj_keybtn"/>
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" style="@style/upomp_lthj_layout_width_height_ff" android:layout_weight="1.0"
+			>
+			<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize"
+				android:id="@id/upomp_lthj_keyboard_button_r" android:layout_height="fill_parent" android:layout_width="fill_parent" 
+				android:background="@drawable/upomp_lthj_keybtn"/>
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" style="@style/upomp_lthj_layout_width_height_ff" android:layout_weight="1.0"
+			>
+			<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize"
+				android:id="@id/upomp_lthj_keyboard_button_t" android:layout_height="fill_parent" android:layout_width="fill_parent" 
+				android:background="@drawable/upomp_lthj_keybtn"/>
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" style="@style/upomp_lthj_layout_width_height_ff" android:layout_weight="1.0"
+			>
+			<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize"
+				android:id="@id/upomp_lthj_keyboard_button_y" android:layout_height="fill_parent" android:layout_width="fill_parent" 
+				android:background="@drawable/upomp_lthj_keybtn"/>
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" style="@style/upomp_lthj_layout_width_height_ff" android:layout_weight="1.0"
+			>
+			<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize"
+				android:id="@id/upomp_lthj_keyboard_button_u" android:layout_height="fill_parent" android:layout_width="fill_parent" 
+				android:background="@drawable/upomp_lthj_keybtn"/>
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" style="@style/upomp_lthj_layout_width_height_ff" android:layout_weight="1.0"
+			>
+			<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize"
+				android:id="@id/upomp_lthj_keyboard_button_i" android:layout_height="fill_parent" android:layout_width="fill_parent" 
+				android:background="@drawable/upomp_lthj_keybtn"/>
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" style="@style/upomp_lthj_layout_width_height_ff" android:layout_weight="1.0"
+		>
+			<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize"
+				android:id="@id/upomp_lthj_keyboard_button_o" android:layout_height="fill_parent" android:layout_width="fill_parent" 
+				android:background="@drawable/upomp_lthj_keybtn"/>
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" style="@style/upomp_lthj_layout_width_height_ff" android:layout_weight="1.0"
+			>
+			<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize"
+				android:id="@id/upomp_lthj_keyboard_button_p" android:layout_height="fill_parent" android:layout_width="fill_parent" 
+				android:background="@drawable/upomp_lthj_keybtn"/>
+		</LinearLayout>
+		
+	</LinearLayout>
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0"
+		android:layout_gravity="center_vertical">
+		<LinearLayout android:orientation="horizontal" style="@style/upomp_lthj_layout_width_height_ff" android:layout_weight="1.0"
+			>
+			<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize"
+				android:id="@id/upomp_lthj_keyboard_button_a" android:layout_height="fill_parent" android:layout_width="fill_parent" 
+				android:background="@drawable/upomp_lthj_keybtn"/>
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" style="@style/upomp_lthj_layout_width_height_ff" android:layout_weight="1.0"
+			>
+			<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize"
+				android:id="@id/upomp_lthj_keyboard_button_s" android:layout_height="fill_parent" android:layout_width="fill_parent" 
+				android:background="@drawable/upomp_lthj_keybtn"/>
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" style="@style/upomp_lthj_layout_width_height_ff" android:layout_weight="1.0"
+			>
+			<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize"
+				android:id="@id/upomp_lthj_keyboard_button_d" android:layout_height="fill_parent" android:layout_width="fill_parent" 
+				android:background="@drawable/upomp_lthj_keybtn"/>
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" style="@style/upomp_lthj_layout_width_height_ff" android:layout_weight="1.0"
+			>
+			<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize"
+				android:id="@id/upomp_lthj_keyboard_button_f" android:layout_height="fill_parent" android:layout_width="fill_parent" 
+				android:background="@drawable/upomp_lthj_keybtn"/>
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" style="@style/upomp_lthj_layout_width_height_ff" android:layout_weight="1.0"
+			>
+			<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize"
+				android:id="@id/upomp_lthj_keyboard_button_g" android:layout_height="fill_parent" android:layout_width="fill_parent" 
+				android:background="@drawable/upomp_lthj_keybtn"/>
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" style="@style/upomp_lthj_layout_width_height_ff" android:layout_weight="1.0"
+			>
+			<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize"
+				android:id="@id/upomp_lthj_keyboard_button_h" android:layout_height="fill_parent" android:layout_width="fill_parent" 
+				android:background="@drawable/upomp_lthj_keybtn"/>
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" style="@style/upomp_lthj_layout_width_height_ff" android:layout_weight="1.0"
+			>
+			<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize"
+				android:id="@id/upomp_lthj_keyboard_button_j" android:layout_height="fill_parent" android:layout_width="fill_parent" 
+				android:background="@drawable/upomp_lthj_keybtn"/>
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" style="@style/upomp_lthj_layout_width_height_ff" android:layout_weight="1.0"
+			>
+			<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize"
+				android:id="@id/upomp_lthj_keyboard_button_k" android:layout_height="fill_parent" android:layout_width="fill_parent" 
+				android:background="@drawable/upomp_lthj_keybtn"/>
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" style="@style/upomp_lthj_layout_width_height_ff" android:layout_weight="1.0"
+			>
+			<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize"
+				android:id="@id/upomp_lthj_keyboard_button_l" android:layout_height="fill_parent" android:layout_width="fill_parent" 
+				android:background="@drawable/upomp_lthj_keybtn"/>
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0"
+		>
+		<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize" android:text="shift"
+			android:id="@id/upomp_lthj_keyboard_button_shift" android:layout_width="wrap_content"
+			android:layout_height="fill_parent" android:background="@drawable/upomp_lthj_keybtn" android:paddingLeft="10dip" android:paddingRight="10dip"/>
+		<LinearLayout android:orientation="horizontal" style="@style/upomp_lthj_layout_width_height_ff" android:layout_weight="1.0">
+			<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize"
+				android:id="@id/upomp_lthj_keyboard_button_z" android:layout_height="fill_parent" android:layout_width="fill_parent" 
+				android:background="@drawable/upomp_lthj_keybtn"/>
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" style="@style/upomp_lthj_layout_width_height_ff" android:layout_weight="1.0">
+			<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize"
+				android:id="@id/upomp_lthj_keyboard_button_x" android:layout_height="fill_parent" android:layout_width="fill_parent" 
+				android:background="@drawable/upomp_lthj_keybtn"/>
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" style="@style/upomp_lthj_layout_width_height_ff" android:layout_weight="1.0">
+			<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize"
+				android:id="@id/upomp_lthj_keyboard_button_c" android:layout_height="fill_parent" android:layout_width="fill_parent" 
+				android:background="@drawable/upomp_lthj_keybtn"/>
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" style="@style/upomp_lthj_layout_width_height_ff" android:layout_weight="1.0">
+			<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize"
+				android:id="@id/upomp_lthj_keyboard_button_v" android:layout_height="fill_parent" android:layout_width="fill_parent" 
+				android:background="@drawable/upomp_lthj_keybtn"/>
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" style="@style/upomp_lthj_layout_width_height_ff" android:layout_weight="1.0">
+			<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize"
+				android:id="@id/upomp_lthj_keyboard_button_b" android:layout_height="fill_parent" android:layout_width="fill_parent" 
+				android:background="@drawable/upomp_lthj_keybtn"/>
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" style="@style/upomp_lthj_layout_width_height_ff" android:layout_weight="1.0">
+			<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize"
+				android:id="@id/upomp_lthj_keyboard_button_n" android:layout_height="fill_parent" android:layout_width="fill_parent" 
+				android:background="@drawable/upomp_lthj_keybtn"/>
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" style="@style/upomp_lthj_layout_width_height_ff" android:layout_weight="1.0">
+			<Button android:textSize="@dimen/upomp_lthj_keyboard_fontsize"
+				android:id="@id/upomp_lthj_keyboard_button_m" android:layout_height="fill_parent" android:layout_width="fill_parent" 
+				android:background="@drawable/upomp_lthj_keybtn"/>
+		</LinearLayout>			
+		<Button android:id="@id/upomp_lthj_keyboard_buttonC" android:text="清除" android:layout_width="wrap_content"
+			android:layout_height="fill_parent" android:background="@drawable/upomp_lthj_keybtn" android:paddingLeft="10dip" android:paddingRight="10dip"
+			/>
+	</LinearLayout>
+</LinearLayout>

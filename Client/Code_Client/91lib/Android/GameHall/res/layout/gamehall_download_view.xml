@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/button_view"
+        android:layout_width="wrap_content"
+        android:layout_height="65dip"
+        android:clickable="true"
+        android:gravity="bottom" >
+
+        <TextView
+            android:id="@+id/button_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/txt_white"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/progress_view"
+        android:layout_width="wrap_content"
+        android:layout_height="65dip"
+        android:background="@drawable/gamehall_download_btn_bg"
+        android:paddingTop="8dip"
+        android:visibility="gone" >
+
+        <FrameLayout
+            android:id="@+id/progress_top_view"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true" >
+
+            <cn.sina.youxi.ui.CircleImageView
+                android:id="@+id/backImageView"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:src="@drawable/gamehall_down_progress_back" />
+
+            <cn.sina.youxi.ui.CircleImageView
+                android:id="@+id/frontImageView"
+                android:layout_width="34dp"
+                android:layout_height="0dp"
+                android:src="@drawable/gamehall_down_progress_front" />
+
+            <TextView
+                android:id="@+id/progressRateView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="0%"
+                android:textColor="@color/txt_white"
+                android:textSize="12dp" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progress_top_view"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="2dip"
+            android:text="下载中"
+            android:textColor="@color/txt_white"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+</LinearLayout>

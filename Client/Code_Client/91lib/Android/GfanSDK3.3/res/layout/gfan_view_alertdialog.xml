@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gfan_bg_border"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/gfan_title"
+        android:paddingLeft="10dp"
+        android:layout_centerVertical="true"
+        android:textAppearance="@style/topbar_title"
+        android:shadowColor="@color/black"
+        android:shadowDy="-2.0"
+        android:shadowRadius="0.1" 
+        android:gravity="center_vertical"
+        android:layout_weight="0"
+        />
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="fill_parent"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+         />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_weight="0"
+        >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1.0"
+            android:layout_margin="10dp"
+            android:background="@drawable/gfan_selector_btn_blue"
+            android:textColor="@color/text_blue"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1.0"
+            android:layout_margin="10dp"
+            android:background="@drawable/gfan_selector_btn_orange"
+            android:textColor="@color/text_orange"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+</LinearLayout>

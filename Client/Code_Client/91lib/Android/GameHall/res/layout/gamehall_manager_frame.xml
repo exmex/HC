@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gamehall_tab_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/gamehall_main_tab_top"
+        layout="@layout/gamehall_headerview" />
+
+    <cn.sina.youxi.ui.TabPageIndicator
+        android:id="@+id/manager_indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/manager_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#fff" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/gamehall_manager_sd_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textSize="14dp"
+            android:text="SD卡容量：0G 剩余容量：0G" />
+
+        <ProgressBar
+            android:id="@+id/gamehall_manager_sd_progressBar"
+            android:layout_width="fill_parent"
+            android:layout_height="6dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progressDrawable="@drawable/gamehall_manager_sd_progress_horizontal" />
+    </LinearLayout>
+
+</LinearLayout>

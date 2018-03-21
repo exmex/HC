@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nearme.gamecenter.open.core.smallboy.FloatAdView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+    <ImageView
+        android:id="@+id/nmgc_ad_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/nmgc_ad_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/nmgc_ad_image"
+        android:layout_centerVertical="true"
+        android:src="@drawable/nmgc_x" />
+
+</com.nearme.gamecenter.open.core.smallboy.FloatAdView>

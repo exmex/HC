@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/nmgc_login_title_height"
+        android:background="@drawable/nmgc_global_title" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/nmgc_login_x_right"
+            android:layout_marginTop="@dimen/nmgc_login_title_top"
+            android:contentDescription="@string/nmgc_global_title"
+            android:src="@drawable/nmgc_x"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/nmgc_login_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/nmgc_login_title_top"
+            android:text="@string/nmgc_reg_register_account"
+            android:textSize="@dimen/nmgc_login_title_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/nmgc_reg_stepone_input_height"
+        android:layout_marginLeft="@dimen/nmgc_reg_stepone_input_margin_left"
+        android:layout_marginRight="@dimen/nmgc_reg_stepone_input_margin_left"
+        android:layout_marginTop="@dimen/nmgc_reg_stepone_input_margin_top"
+        android:background="@drawable/nmgc_input_border"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/nmgc_left"
+            style="@style/nmgc_login_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/nmgc_reg_stepone_input_text_margin_left"
+            android:layout_marginRight="@dimen/nmgc_reg_stepone_input_text_margin_left"
+            android:gravity="center_vertical"
+            android:text="@string/nmgc_reg_phone_number"
+            android:textSize="@dimen/nmgc_login_common_text_size" />
+
+        <ImageView
+            android:id="@+id/nmgc_stepone_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/nmgc_global_title"
+            android:src="@drawable/nmgc_x" />
+
+        <EditText
+            android:id="@+id/nmgc_reg_stepone_input"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/nmgc_stepone_x"
+            android:layout_toRightOf="@id/nmgc_left"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/nmgc_reg_phone_number_eleven"
+            android:inputType="number"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:textColor="#1a1a1a"
+            android:textSize="@dimen/nmgc_login_common_text_size" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/nmgc_reg_stepone_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/nmgc_reg_stepthree_hint1_margin"
+        android:layout_marginLeft="@dimen/nmgc_reg_stepone_input_margin_left"
+        android:layout_marginRight="@dimen/nmgc_reg_stepone_input_margin_left"
+        android:layout_marginTop="@dimen/nmgc_reg_stepthree_hint1_margin"
+        android:text="@string/nmgc_reg_qingshiyongshoujihaodenglu"
+        android:textColor="#e32626"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/nmgc_reg_stepone_hint_margin_left"
+        android:gravity="center_vertical" >
+
+        <CheckBox
+            android:id="@+id/nmgc_reg_stepone_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/nmgc_custom_checkbox"
+            android:checked="true" >
+        </CheckBox>
+
+        <TextView
+            android:id="@+id/nmgc_reg_stepone_readhint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/nmgc_reg_read_hint"
+            android:textColor="#4a4a4a"
+            android:textSize="@dimen/nmgc_reg_stepone_hint_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/nmgc_reg_stepone_button_margin_top"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/nmgc_reg_stepone_button"
+            android:layout_width="@dimen/nmgc_reg_stepone_button_width"
+            android:layout_height="@dimen/nmgc_reg_stepone_button_height"
+            android:background="@drawable/nmgc_button_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/nmgc_reg_getcode"
+            android:textColor="#3e3e3e"
+            android:textSize="@dimen/nmgc_charge_index_text_size" />
+    </LinearLayout>
+
+</LinearLayout>

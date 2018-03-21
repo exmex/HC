@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <com.fl.gamehelper.ui.widget.BoldButton
+        android:id="@+id/flsdk_register_btn"
+        style="@style/flsdk_style_btn_yellow"
+        android:layout_width="92.0dip"
+        android:layout_height="36.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8.0dip"
+        android:onClick="sureClick" />
+
+    <com.fl.gamehelper.ui.widget.BaseEditTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/flsdk_register_btn" />
+
+</RelativeLayout>

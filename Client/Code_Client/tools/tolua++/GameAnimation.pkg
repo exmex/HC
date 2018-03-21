@@ -1,0 +1,8 @@
+$#include "GameAnimation.h"
+
+enum AnimationTye
+{
+	Type_LegendAnimation,
+	Type_Spine,
+	Type_DragonBone
+};

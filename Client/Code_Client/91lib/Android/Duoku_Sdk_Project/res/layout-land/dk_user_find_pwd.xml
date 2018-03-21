@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" 
+	android:gravity="center_vertical"
+    android:paddingLeft="70dp"
+    android:paddingRight="70dp"
+	>
+	
+    <include layout="@layout/dk_user_login_lan_header"
+        android:id="@+id/dk_user_find_pwd_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    
+    <!-- 可滑动区域 -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:fadeScrollbars="false"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbarThumbVertical="@drawable/dk_scrollbar_gray" 
+        android:background="@drawable/dk_bg_bottom"
+        android:layout_below="@id/dk_user_find_pwd_header"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:orientation="vertical"
+            android:paddingLeft="12dp"
+        	android:paddingRight="12dp">
+        	
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/dk_username_edit_text"
+                    style="@style/dk_style_user_edittext"
+                    android:layout_gravity="center_vertical"
+                    android:hint="@string/dk_find_pwd_hint" 
+                    android:digits="@string/dk_register_name_digits"
+                    />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/dk_btn_commit"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dk_login_btn_selector"
+                    android:gravity="center"
+                    android:text="@string/dk_userlogin_forgetpwd_confirm"
+                    android:textColor="@color/dk_gamesdk_white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            
+                    
+                    
+        </LinearLayout>
+        
+        <include layout="@layout/dk_user_bottom_logo_2"
+		        android:id="@+id/dk_custom_bottom"
+		        android:layout_width="fill_parent"
+		       	android:layout_height="wrap_content"
+		       	android:layout_alignParentBottom="true"
+		       	android:layout_marginTop="12dp"
+		       	android:layout_marginBottom="8dp"
+	        />
+     
+    </RelativeLayout>
+    
+    <include layout="@layout/dk_user_login_shadow"
+        android:layout_width="fill_parent"
+        android:layout_height="8dp"
+        android:layout_below="@id/dk_user_find_pwd_header"
+        />
+    
+  <!--   <include layout="@layout/dk_user_bottom_logo"
+        android:id="@+id/dk_custom_bottom"
+        android:layout_width="fill_parent"
+       	android:layout_height="wrap_content"
+       	android:layout_alignParentBottom="true"
+       	android:layout_marginBottom="16dp"
+        /> -->
+    
+</RelativeLayout>

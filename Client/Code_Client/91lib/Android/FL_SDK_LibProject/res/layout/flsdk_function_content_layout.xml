@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:id="@+id/flsdk_function_detail_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="26.0dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/flsdk_function_click_expand_bg"
+            android:contentDescription="@string/flsdk_app_name" />
+
+        <RelativeLayout
+            android:id="@+id/flsdk_function_announce_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/flsdk_function_content_bg" >
+
+            <com.fl.gamehelper.ui.widget.BoldTextView
+                style="@style/flsdk_style_f1e74b_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/flsdk_app_name"
+                android:drawablePadding="3.0dip"
+                android:drawableTop="@drawable/flsdk_function_announce_bg"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/flsdk_function_announce_tips"
+                style="@style/flsdk_style_msg_tips"
+                android:layout_marginLeft="35.0dip"
+                android:layout_marginTop="8.0dip"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/flsdk_function_client_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/flsdk_function_content_bg" >
+
+            <com.fl.gamehelper.ui.widget.BoldTextView
+                style="@style/flsdk_style_f1e74b_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/flsdk_app_name"
+                android:drawablePadding="3.0dip"
+                android:drawableTop="@drawable/flsdk_function_client_bg"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/flsdk_function_client_tips"
+                style="@style/flsdk_style_msg_tips"
+                android:layout_marginLeft="35.0dip"
+                android:layout_marginTop="8.0dip"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/flsdk_function_invitate_friend_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/flsdk_function_content_bg" >
+
+            <com.fl.gamehelper.ui.widget.BoldTextView
+                style="@style/flsdk_style_f1e74b_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/flsdk_app_name"
+                android:drawablePadding="3.0dip"
+                android:drawableTop="@drawable/flsdk_function_invite_friend_bg"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/flsdk_function_invite_tips"
+                style="@style/flsdk_style_msg_tips"
+                android:layout_marginLeft="35.0dip"
+                android:layout_marginTop="8.0dip"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/flsdk_function_invitation_code_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/flsdk_function_content_bg" >
+
+            <com.fl.gamehelper.ui.widget.BoldTextView
+                style="@style/flsdk_style_f1e74b_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/flsdk_app_name"
+                android:drawablePadding="3.0dip"
+                android:drawableTop="@drawable/flsdk_function_invite_code_bg"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/flsdk_function_account_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/flsdk_function_content_bg" >
+
+            <com.fl.gamehelper.ui.widget.BoldTextView
+                style="@style/flsdk_style_f1e74b_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/flsdk_app_name"
+                android:drawablePadding="3.0dip"
+                android:drawableTop="@drawable/flsdk_function_account_bg"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/flsdk_function_arrow_bg"
+            android:contentDescription="@string/flsdk_app_name" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/flsdk_function_open_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" >
+
+        <ImageView
+            android:id="@+id/flsdk_function_open_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/flsdk_function_click_shrink_bg"
+            android:contentDescription="@string/flsdk_app_name" />
+
+        <TextView
+            android:id="@+id/flsdk_function_all_tips"
+            style="@style/flsdk_style_msg_tips"
+            android:layout_alignRight="@+id/flsdk_function_open_image"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</merge>

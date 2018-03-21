@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gamehall_settingitem"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp" >
+
+    <ImageView
+        android:id="@+id/gamehall_settingimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="9dp" />
+
+    <TextView
+        android:id="@+id/gamehall_settingtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="9dp"
+        android:layout_toRightOf="@+id/gamehall_settingimage"
+        android:textColor="#BFBFC0"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="9dp"
+        android:src="@drawable/gamehall_icon_arrow" />
+
+</RelativeLayout>

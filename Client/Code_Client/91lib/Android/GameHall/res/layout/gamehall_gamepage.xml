@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2010, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/gamehall_mainview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/gamehall_gamelistitem_bg"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/gamehall_radiogroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gamehall_bgtap"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/gamehall_Button1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/main_tab_top"
+                android:background="@drawable/gamehall_newestbg_selector"
+                android:layout_weight="1"
+                android:text="单机" />
+
+            <RadioButton
+                android:id="@+id/gamehall_Button2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/main_tab_top"
+                android:background="@drawable/gamehall_weekhotest_selector"
+                android:layout_weight="1"
+                android:text="网游" />
+
+            <RadioButton
+                android:id="@+id/gamehall_Button3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/main_tab_top"
+                android:background="@drawable/gamehall_weekhotest_selector"
+                android:layout_weight="1"
+                android:text="排行" />
+            
+            <RadioButton
+                android:id="@+id/gamehall_Button4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/main_tab_top"
+                android:background="@drawable/gamehall_hotesttoday_selector"
+                android:layout_weight="1"
+                android:text="热门" />
+        </RadioGroup>
+
+        <FrameLayout
+            android:id="@+id/gamehall_gamelist_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/gamehall_network_error_view"
+        layout="@layout/gamehall_net_page" />
+
+</FrameLayout>

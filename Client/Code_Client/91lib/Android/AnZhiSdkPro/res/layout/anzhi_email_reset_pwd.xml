@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/size_20" >
+
+        <RelativeLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/size_48"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/size_10" >
+
+            <Button
+                android:id="@+id/email_getcode_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_40"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/anzhi_button_bg_orange"
+                android:gravity="center"
+                android:text="@string/get_authcode_txt"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_18" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/size_48"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_toLeftOf="@id/email_getcode_tv"
+                android:background="@drawable/anzhi_textview_normal" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/white" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/size_10"
+                        android:text="@string/anzhi_email"
+                        android:textColor="@color/anzhi_494949"
+                        android:textSize="@dimen/font_18" />
+
+                    <EditText
+                        android:id="@+id/em_nameid_tel"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:hint="@string/anzhi_input_email"
+                        android:inputType="textEmailAddress|textEmailSubject"
+                        android:paddingRight="5dip"
+                        android:singleLine="true"
+                        android:textColor="@color/anzhi_494949"
+                        android:textColorHint="@color/anzhi_d0d0d0"
+                        android:textSize="@dimen/font_18" >
+
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/size_48"
+            android:layout_marginLeft="@dimen/size_10"
+            android:layout_marginRight="@dimen/size_10"
+            android:layout_marginTop="@dimen/size_10"
+            android:background="@drawable/anzhi_input_normal" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:background="@android:color/white" >
+
+                <TextView
+                    android:id="@+id/code_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/size_10"
+                    android:text="@string/anzhi_validatecode"
+                    android:textColor="@color/anzhi_494949"
+                    android:textSize="@dimen/font_18" />
+
+                <EditText
+                    android:id="@+id/email_code_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/size_10"
+                    android:layout_toRightOf="@id/code_tv"
+                    android:background="@null"
+                    android:hint="@string/anzhi_input_six_validatecode"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/size_10"
+                    android:paddingRight="5dip"
+                    android:singleLine="true"
+                    android:textColor="@color/anzhi_494949"
+                    android:textColorHint="@color/anzhi_d0d0d0"
+                    android:textSize="@dimen/font_18" >
+
+                    <requestFocus />
+                </EditText>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/pwd_linearlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/size_48"
+            android:layout_marginLeft="@dimen/size_10"
+            android:layout_marginRight="@dimen/size_10"
+            android:layout_marginTop="@dimen/size_10"
+            android:background="@drawable/anzhi_input_normal"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@android:color/white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/size_10"
+                    android:text="@string/anzhi_newPwd"
+                    android:textColor="@color/anzhi_494949"
+                    android:textSize="@dimen/font_18" />
+
+                <EditText
+                    android:id="@+id/email_pwd_edittext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/size_10"
+                    android:background="@null"
+                    android:hint="@string/anzhi_above_sixnumberorword"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/size_10"
+                    android:paddingRight="5dip"
+                    android:password="true"
+                    android:singleLine="true"
+                    android:textColor="@color/anzhi_494949"
+                    android:textColorHint="@color/anzhi_d0d0d0"
+                    android:textSize="@dimen/font_18" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pwd_linearlayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/size_48"
+            android:layout_marginLeft="@dimen/size_10"
+            android:layout_marginRight="@dimen/size_10"
+            android:layout_marginTop="@dimen/size_10"
+            android:background="@drawable/anzhi_input_normal"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@android:color/white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/size_10"
+                    android:text="@string/anzhi_confirm_pwd"
+                    android:textColor="@color/anzhi_494949"
+                    android:textSize="@dimen/font_18" />
+
+                <EditText
+                    android:id="@+id/email_pwd_edittext2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/size_10"
+                    android:background="@null"
+                    android:hint="@string/anzhi_inputpwd_again"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/size_10"
+                    android:paddingRight="5dip"
+                    android:password="true"
+                    android:singleLine="true"
+                    android:textColor="@color/anzhi_494949"
+                    android:textColorHint="@color/anzhi_d0d0d0"
+                    android:textSize="@dimen/font_18" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/email_tim_imageview"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/size_40"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/size_40"
+            android:layout_marginRight="@dimen/size_40"
+            android:layout_marginTop="@dimen/size_40"
+            android:background="@drawable/anzhi_button_bg_green"
+            android:text="@string/anzhi_save"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_18" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_10"
+            android:layout_marginRight="@dimen/size_10"
+            android:layout_marginTop="@dimen/size_40"
+            android:text="@string/anzhi_friendly_prompt"
+            android:textColor="@color/anzhi_757575"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_10"
+            android:layout_marginRight="@dimen/size_10"
+            android:layout_marginTop="@dimen/size_10"
+            android:text="@string/anzhi_friendlyprompt_one_withemail"
+            android:textColor="@color/anzhi_757575"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_10"
+            android:layout_marginRight="@dimen/size_10"
+            android:text="@string/anzhi_friendlyprompt_two"
+            android:textColor="@color/anzhi_757575"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_10"
+            android:layout_marginRight="@dimen/size_10"
+            android:text="@string/anzhi_friendylyprompt_three"
+            android:textColor="@color/anzhi_757575"
+            android:textSize="@dimen/font_14" />
+    </LinearLayout>
+
+</RelativeLayout>

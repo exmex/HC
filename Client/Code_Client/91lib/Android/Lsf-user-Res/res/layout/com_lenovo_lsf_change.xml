@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lenovo.lsf.account.view.KeyboardLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/change_keyboardLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	<ScrollView
+	    android:id="@+id/change_scrollview"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:fillViewport="true" >
+	    
+	<LinearLayout 
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:orientation="vertical">
+	    
+	    <LinearLayout
+	        style="@style/com_lenovo_lsf_layout_loc">
+	
+	        <TextView
+	            android:id="@+id/change_text_changepassword"
+	            style="@style/com_lenovo_lsf_head_text"
+	            android:text="@string/com_lenovo_lsf_change_string_changepassword" />
+	    </LinearLayout>
+	    <ImageView
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:layout_marginTop="8dp"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginRight="5dp"
+	            android:scaleType="fitXY"
+	            android:src="@drawable/com_lenovo_lsf_line" />
+	    <LinearLayout
+	            android:id="@+id/change_layout_error"
+	            style="@style/com_lenovo_lsf_layout_loc"
+	            android:paddingTop="10dp">
+	        
+	            <TextView 
+	                android:id="@+id/change_text_error"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:textColor="#FFFFFF"
+	                android:background="#FFA200"
+	                android:gravity="center"
+	                style="@style/com_lenovo_lsf_text_size_small"/>
+	            
+	    </LinearLayout>
+	    <LinearLayout
+	        android:id="@+id/change_layout_password"
+	        style="@style/com_lenovo_lsf_layout_loc" 
+	        android:paddingTop="0dp">
+	
+	        <RelativeLayout
+	            android:id="@+id/change_layout_oldpassword" 
+	            style="@style/com_lenovo_lsf_input_area" >
+	
+	            <TextView
+	                android:id="@+id/change_text_oldpassword"
+	                style="@style/com_lenovo_lsf_input_text"
+	                android:text="@string/com_lenovo_lsf_change_string_oldpassword" />
+	
+	            <EditText
+	                android:id="@+id/change_edit_oldpassword"
+	                style="@style/com_lenovo_lsf_input_edit"
+	                android:layout_toRightOf="@id/change_text_oldpassword"
+	                android:inputType="textPassword"
+	                android:hint="@string/com_lenovo_lsf_change_string_hint"/>
+	        </RelativeLayout>
+	
+	        <RelativeLayout style="@style/com_lenovo_lsf_input_area" >
+	
+	            <TextView
+	                android:id="@+id/change_text_newpassword"
+	                style="@style/com_lenovo_lsf_input_text"
+	                android:text="@string/com_lenovo_lsf_change_string_newpassword" />
+	
+	            <EditText
+	                android:id="@+id/change_edit_newpassword"
+	                style="@style/com_lenovo_lsf_input_edit"
+	                android:layout_toRightOf="@id/change_text_newpassword"
+	                android:inputType="textPassword"
+	                android:hint="@string/com_lenovo_lsf_change_string_hint"/>
+	        </RelativeLayout>
+	        
+	        <RelativeLayout style="@style/com_lenovo_lsf_input_area" >
+	
+	            <TextView
+	                android:id="@+id/change_text_confirmpassword"
+	                style="@style/com_lenovo_lsf_input_text"
+	                android:text="@string/com_lenovo_lsf_change_string_confirmpassword"/>
+	
+	            <EditText
+	                android:id="@+id/change_edit_confirmpassword"
+	                style="@style/com_lenovo_lsf_input_edit"
+	                android:layout_toRightOf="@id/change_text_confirmpassword"
+	                android:inputType="textPassword" 
+	                android:hint="@string/com_lenovo_lsf_change_string_hint"/>
+	        </RelativeLayout>
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        style="@style/com_lenovo_lsf_bottom"
+	        android:layout_marginTop="20dp">
+	        <Button
+	                android:id="@+id/change_button_confirm"
+	                android:background="@drawable/com_lenovo_lsf_button_old"
+	                android:textColor="@android:color/white"
+	                style="@style/com_lenovo_lsf_button_style"
+	                android:text="@string/com_lenovo_lsf_change_string_confirm"/>
+	    </LinearLayout>
+	</LinearLayout>
+	</ScrollView>
+</com.lenovo.lsf.account.view.KeyboardLayout>

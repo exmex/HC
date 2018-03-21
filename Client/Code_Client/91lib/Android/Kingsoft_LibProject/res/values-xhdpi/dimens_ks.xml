@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="ks_clause_height">155dp</dimen>
+    <dimen name="ks_switch_txt">15sp</dimen>
+    <dimen name="ks_account_phone_width">12.5dp</dimen>
+    <dimen name="ks_account_phone_height">17dp</dimen>
+    <dimen name="ks_returnbtn_width">25.5dp</dimen>
+    <dimen name="ks_reg_checkbox">19dp</dimen>
+    <dimen name="ks_account_bindphone_txt">13.5dp</dimen>
+    <dimen name="ks_account_id_txt">15dp</dimen>
+    <dimen name="ks_account_layout_height">47.5dp</dimen>
+    <dimen name="ks_account_icon_width">22dp</dimen>
+    <dimen name="ks_account_icon_height">23dp</dimen>
+    <dimen name="ks_del_icon_width">19dp</dimen>
+    <dimen name="ks_switch_layout_height">245dp</dimen>
+    <dimen name="ks_del_button_width">60.5dp</dimen>
+    <dimen name="ks_del_text_size">13.5dp</dimen>
+    <dimen name="ks_additem_text_size">16dp</dimen>
+
+    <!-- 下面是新UI -->
+
+
+    <!-- 一键注册界面 -->
+    <dimen name="ks_cm_icon_img_width">102dp</dimen>
+    <dimen name="ks_cm_icon_img_height">25.5dp</dimen>
+    <dimen name="ks_cm_title_line_height_lite">2dp</dimen>
+    <dimen name="ks_cm_one_key_reg_layout_height">205dp</dimen>
+    <dimen name="ks_cm_one_key_reg_layout_width">310dp</dimen>
+    <dimen name="ks_cm_one_key_reg_logo_margin">35dp</dimen>
+    <dimen name="ks_cm_one_key_reg_logo_margin_bottom">25dp</dimen>
+    <dimen name="ks_cm_one_key_reg_logo_height">45dp</dimen>
+    <dimen name="ks_cm_one_key_reg_logo_width">276dp</dimen>
+    <dimen name="ks_cm_one_key_reg_btn_margin">13dp</dimen>
+    <dimen name="ks_cm_one_key_reg_divier_margin">13dp</dimen>
+    <dimen name="ks_cm_one_key_reg_right_arrow_margin">2dp</dimen>
+    <dimen name="ks_cm_one_key_reg_another_account_min_height">40dp</dimen>
+    <dimen name="ks_cm_one_key_reg_loading_padding_left_right">20dp</dimen>
+    <dimen name="ks_cm_one_key_reg_loading_min_height">60dp</dimen>
+    <dimen name="ks_cm_one_key_reg_loading_margin_left">10dp</dimen>
+
+    <!-- 登录界面 -->
+    <dimen name="ks_cm_login_layout_height">255dp</dimen>
+    <dimen name="ks_cm_login_layout_width">300dp</dimen>
+    <dimen name="ks_cm_login_layout_item_width">52dp</dimen>
+    <dimen name="ks_cm_login_edittext_layout_width">276dp</dimen>
+    <dimen name="ks_cm_login_edittext_layout_height">40dp</dimen>
+    <dimen name="ks_cm_login_edittext_height">39.5dp</dimen>
+    <dimen name="ks_cm_login_edittext_margin">10dp</dimen>
+    <dimen name="ks_cm_login_icon_height">39.5dp</dimen>
+    <dimen name="ks_cm_login_icon_width">38.5dp</dimen>
+    <dimen name="ks_cm_login_line_margin">10dp</dimen>
+    <dimen name="ks_cm_login_edittext_inner_color_padding">1px</dimen>
+    <dimen name="ks_cm_login_button_layout_width">276dp</dimen>
+    <dimen name="ks_cm_login_button_margin">2dp</dimen>
+    
+    <dimen name="ks_cm_error_tips_margin">8dp</dimen>
+    
+    <!-- 公共定义 -->
+    <dimen name="ks_cm_layout_height">202.5dp</dimen>
+    <dimen name="ks_cm_layout_width">309dp</dimen>
+    <dimen name="ks_cm_title_layout_height">42dp</dimen>
+    
+    <dimen name="ks_cm_title_img_height">42dp</dimen>
+    <dimen name="ks_cm_title_img_width">47dp</dimen>
+    <dimen name="ks_cm_title_line_height">3dp</dimen>
+    <dimen name="ks_cm_title_line_minheight">1dp</dimen>
+    <dimen name="ks_cm_title_shadeline_height">5dp</dimen>
+
+</resources>

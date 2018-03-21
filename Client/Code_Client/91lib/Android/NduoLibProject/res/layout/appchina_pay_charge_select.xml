@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+	android:background="@drawable/appchina_pay_main_shape">
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<!-- 标题栏 -->
+		<RelativeLayout android:id="@+id/title_ly"
+			android:layout_width="fill_parent" android:layout_height="48dp"
+			android:background="@drawable/appchina_pay_title_bg"
+			android:layout_alignParentTop="true">
+			<TextView android:id="@+id/title" android:layout_width="wrap_content"
+				android:text="充值虚拟币" android:textColor="#ffffff" android:textSize="20sp"
+				android:layout_height="wrap_content" android:layout_centerInParent="true" />
+		</RelativeLayout>
+		<!-- charge 界面1 -->
+		<RelativeLayout android:id="@+id/charge_ly1"
+			android:orientation="vertical" android:layout_below="@id/title_ly"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<ScrollView android:id="@+id/select_sroll"
+				android:layout_width="fill_parent" android:layout_alignParentTop="true"
+				android:layout_marginBottom="3dp" android:layout_above="@+id/cancel"
+				android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+				android:layout_height="fill_parent">
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:orientation="vertical">
+					<TextView android:id="@+id/ld_tip_title"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_marginTop="10dip" android:layout_marginLeft="10dip"
+						android:layout_marginRight="10dip" android:text="温馨提示:"
+						style="@style/appchina_pay_text_highlight_18" />
+					<TextView android:id="@+id/ld_tip" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:layout_marginLeft="10dip"
+						android:textSize="17sp" android:layout_marginRight="10dip"
+						android:text="@string/appchina_pay_welcome_words" style="@style/appchina_pay_text_16" />
+					<!-- LinearLayout android:id="@+id/select_ly" android:layout_marginTop="10dp" 
+						android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"/ -->
+					<com.nduoa.nmarket.pay.nduoasecservice.ui.MyGridView
+						android:layout_marginTop="5dp"
+						android:layout_gravity="center_horizontal" android:id="@+id/charge_grid"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:numColumns="auto_fit" android:horizontalSpacing="8dp"
+						android:verticalSpacing="8dp" android:columnWidth="75dp"
+						android:gravity="center_horizontal" android:listSelector="@drawable/appchina_pay_grid_item_selector" />
+				</LinearLayout>
+			</ScrollView>
+			<Button android:id="@id/cancel" android:layout_width="150dp"
+				android:layout_alignParentBottom="true" android:padding="8dp"
+				android:layout_centerHorizontal="true" android:layout_marginBottom="5dp"
+				android:layout_height="wrap_content" android:gravity="center"
+				android:textSize="18sp" android:text="返回"
+				android:background="@drawable/appchina_pay_by_button_selector"
+				android:textColor="#ffffff" />
+		</RelativeLayout>
+		<!-- charge 界面2 -->
+		<RelativeLayout android:id="@+id/charge_ly2"
+			android:layout_below="@id/title_ly" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:visibility="gone">
+			<ScrollView android:scrollbarAlwaysDrawVerticalTrack="true"
+				android:layout_height="fill_parent" android:layout_alignParentTop="true"
+				android:layout_above="@+id/btn_ly2" android:layout_width="fill_parent">
+				<LinearLayout android:orientation="vertical"
+					android:gravity="center_horizontal" android:layout_width="fill_parent"
+					android:layout_height="fill_parent">
+					<TextView android:layout_width="fill_parent"
+						android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+						android:textColor="#ff7800" android:textSize="15sp"
+						android:layout_height="wrap_content" android:text="@string/appchina_pay_creditcard_warn" />
+					<TextView android:id="@+id/warn_text"
+						android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+						android:layout_width="fill_parent" android:textSize="15sp"
+						android:textColor="#000000" android:layout_height="wrap_content" />
+					<TextView android:layout_marginTop="30dp"
+						style="@style/appchina_pay_text_highlight_14"
+						android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+						android:text="请输入充值金额: (单位: 元,精确到分)" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" />
+					<EditText android:id="@+id/amount" android:layout_height="wrap_content"
+						android:layout_width="fill_parent" android:layout_gravity="center_vertical|right"
+						android:singleLine="true" android:layout_marginLeft="10dp"
+						android:layout_marginRight="10dp" android:background="@drawable/appchina_pay_edittext"
+						android:inputType="numberDecimal"
+						android:digits="0123456789."
+						android:numeric="decimal" android:maxLength="10" />
+					<TextView android:id="@+id/total" style="@style/appchina_pay_text_highlight"
+						android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+						android:layout_width="fill_parent" android:layout_height="wrap_content" />
+				</LinearLayout>
+			</ScrollView>
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_marginBottom="5dp" android:layout_alignParentBottom="true"
+				android:id="@id/btn_ly2" android:layout_marginLeft="10dp"
+				android:gravity="center_vertical" android:layout_marginRight="10dp"
+				android:layout_height="wrap_content">
+				<Button android:id="@+id/submit1" android:layout_width="0dp"
+					android:layout_weight="1" android:layout_marginRight="10dp"
+					android:layout_marginLeft="5dp" android:padding="8dp"
+					android:layout_height="wrap_content" android:gravity="center"
+					android:textSize="18sp" android:text="确定"
+					android:background="@drawable/appchina_pay_by_button_selector"
+					android:textColor="#ffffff" />
+				<Button android:layout_width="0dp" android:id="@+id/back1"
+					android:layout_weight="1" android:padding="8dp"
+					android:layout_height="wrap_content" android:layout_marginLeft="10dp"
+					android:layout_marginRight="5dp" android:gravity="center"
+					android:textSize="18sp" android:text="返回"
+					android:background="@drawable/appchina_pay_by_button_selector"
+					android:textColor="#ffffff" />
+			</LinearLayout>
+		</RelativeLayout>
+		<!-- charge 界面3 -->
+		<RelativeLayout android:id="@+id/charge_ly3"
+			android:layout_below="@id/title_ly" android:visibility="gone"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<ScrollView android:layout_width="fill_parent"
+				android:scrollbarAlwaysDrawVerticalTrack="true"
+				android:layout_alignParentTop="true" android:layout_above="@+id/btn_ly"
+				android:layout_height="wrap_content">
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="fill_parent" android:layout_height="fill_parent">
+					<TextView android:layout_width="wrap_content"
+						android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+						android:textColor="#ff7800" android:textSize="15sp"
+						android:layout_height="wrap_content" android:text="@string/appchina_pay_creditcard_warn" />
+					<TextView android:id="@+id/warn_text2"
+						android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+						android:layout_width="fill_parent" android:textSize="15sp"
+						android:textColor="#000000" android:layout_height="wrap_content" />
+					<TextView style="@style/appchina_pay_text_highlight_14"
+						android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+						android:text="请选择卡号类型:" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" />
+					<Spinner android:id="@+id/szf_card_type"
+						android:background="@drawable/appchina_pay_dropdown_button"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+						android:paddingRight="30dip" android:drawSelectorOnTop="true"
+						android:prompt="@string/appchina_pay_spinner_promt_default" style="@style/appchina_pay_MySpinner" />
+					<TextView style="@style/appchina_pay_text_highlight_14"
+						android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+						android:text="请选择充值卡面额:" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" />
+					<Spinner android:id="@+id/szf_card_deno"
+						android:background="@drawable/appchina_pay_dropdown_button"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+						android:paddingRight="30dip" android:drawSelectorOnTop="true"
+						android:prompt="@string/appchina_pay_spinner_promt_default" style="@style/appchina_pay_MySpinner" />
+					<TextView style="@style/appchina_pay_text_highlight_14"
+						android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+						android:text="请输入充值卡号:" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" />
+					<EditText android:id="@+id/szf_card_no"
+						android:layout_height="wrap_content" android:layout_marginLeft="10dp"
+						android:layout_marginRight="10dp" android:layout_width="fill_parent"
+						android:layout_gravity="center_vertical|left" android:singleLine="true"
+						android:background="@drawable/appchina_pay_edittext"
+						android:digits="1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM"
+						android:hint="8~21位数字" android:inputType="text"
+						android:maxLength="32" />
+					<TextView style="@style/appchina_pay_text_highlight_14"
+						android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+						android:text="请输入充值卡密码:" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" />
+					<EditText android:id="@+id/szf_card_psd"
+						android:layout_height="wrap_content" android:layout_marginLeft="10dp"
+						android:layout_marginRight="10dp" android:layout_width="fill_parent"
+						android:hint="8~21位数字" android:layout_gravity="center_vertical|left"
+						android:singleLine="true" android:background="@drawable/appchina_pay_edittext"
+						android:digits="1234567890" android:inputType="number"
+						android:maxLength="32" />
+					<TextView android:id="@+id/total" style="@style/appchina_pay_text_highlight"
+						android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+						android:layout_width="fill_parent" android:layout_height="wrap_content" />
+					<TextView style="@style/appchina_pay_text_highlight_14"
+						android:layout_marginTop="5dp" android:layout_marginLeft="10dp"
+						android:layout_marginRight="10dp" android:text="@string/appchina_pay_card_tip"
+						android:layout_width="fill_parent" android:layout_height="wrap_content" />
+				</LinearLayout>
+			</ScrollView>
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_marginLeft="10dp" android:layout_alignParentBottom="true"
+				android:id="@id/btn_ly" android:gravity="center_vertical"
+				android:layout_marginBottom="5dp" android:layout_marginRight="10dp"
+				android:layout_height="wrap_content">
+				<Button android:id="@+id/submit2" android:layout_width="0dp"
+					android:layout_weight="1" android:layout_marginRight="10dp"
+					android:layout_marginLeft="5dp" android:padding="8dp"
+					android:layout_height="wrap_content" android:gravity="center"
+					android:textSize="18sp" android:text="确定"
+					android:background="@drawable/appchina_pay_by_button_selector"
+					android:textColor="#ffffff" />
+				<Button android:layout_width="0dp" android:id="@+id/cancel2"
+					android:layout_weight="1" android:padding="8dp"
+					android:layout_height="wrap_content" android:layout_marginLeft="10dp"
+					android:layout_marginRight="5dp" android:gravity="center"
+					android:textSize="18sp" android:text="返回"
+					android:background="@drawable/appchina_pay_by_button_selector"
+					android:textColor="#ffffff" />
+			</LinearLayout>
+		</RelativeLayout>
+		<!-- charge界面4 -->
+		<RelativeLayout android:id="@+id/charge_ly4"
+			android:visibility="gone" android:layout_below="@id/title_ly"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<ScrollView android:layout_width="fill_parent"
+				android:scrollbarAlwaysDrawVerticalTrack="true"
+				android:layout_alignParentTop="true" android:layout_above="@+id/btn_ly4"
+				android:layout_height="wrap_content">
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="fill_parent" android:layout_height="fill_parent">
+					<TextView android:layout_width="wrap_content"
+						android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+						android:textColor="#ff7800" android:textSize="15sp"
+						android:layout_height="wrap_content" android:text="@string/appchina_pay_creditcard_warn" />
+					<TextView android:id="@+id/warn_text3"
+						android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+						android:layout_width="fill_parent" android:textSize="15sp"
+						android:textColor="#000000" android:layout_height="wrap_content" />
+					<TextView style="@style/appchina_pay_text_highlight_14"
+						android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+						android:text="请选择卡号类型:" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" />
+					<Spinner android:id="@+id/Spinner"
+						android:background="@drawable/appchina_pay_dropdown_button"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:layout_marginLeft="5dip" android:layout_marginRight="5dip"
+						android:paddingRight="30dip" android:drawSelectorOnTop="true"
+						android:prompt="@string/appchina_pay_spinner_promt_default" style="@style/appchina_pay_MySpinner" />
+					<TextView style="@style/appchina_pay_text_highlight_14"
+						android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+						android:text="请输入卡面额(元):" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" />
+					<EditText android:id="@+id/denomination"
+						android:layout_height="wrap_content" android:layout_marginLeft="5dp"
+						android:layout_width="fill_parent" android:layout_gravity="center_vertical|left"
+						android:singleLine="true" android:layout_marginRight="5dp"
+						android:background="@drawable/appchina_pay_edittext"
+						android:digits="1234567890" android:inputType="number"
+						android:maxLength="4" />
+					<TextView style="@style/appchina_pay_text_highlight_14"
+						android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+						android:text="请输入卡号:" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" />
+					<EditText android:id="@+id/cardid" android:layout_height="wrap_content"
+						android:layout_marginLeft="5dp" android:layout_width="fill_parent"
+						android:layout_gravity="center_vertical|left" android:singleLine="true"
+						android:layout_marginRight="5dp" android:background="@drawable/appchina_pay_edittext"
+						android:digits="1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM"
+						android:inputType="text" android:maxLength="32" />
+					<TextView style="@style/appchina_pay_text_highlight_14"
+						android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+						android:text="请输入卡密码:" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" />
+					<EditText android:id="@+id/cardpsd" android:layout_height="wrap_content"
+						android:layout_marginLeft="5dp" android:layout_width="fill_parent"
+						android:layout_gravity="center_vertical|left" android:singleLine="true"
+						android:layout_marginRight="5dp" android:background="@drawable/appchina_pay_edittext"
+						android:digits="1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM"
+						android:inputType="text" android:maxLength="32" />
+					<TextView android:id="@+id/warn_text"
+						style="@style/appchina_pay_text_highlight_14"
+						android:layout_marginTop="5dp" android:layout_marginLeft="10dp"
+						android:layout_marginRight="10dp" android:text="@string/appchina_pay_card_tip"
+						android:layout_width="fill_parent" android:layout_height="wrap_content" />
+				</LinearLayout>
+			</ScrollView>
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_alignParentBottom="true" android:id="@id/btn_ly4"
+				android:layout_marginLeft="10dp" android:gravity="center_vertical"
+				android:layout_marginBottom="5dp" android:layout_marginRight="10dp"
+				android:layout_height="wrap_content">
+				<Button android:id="@+id/submit3" android:layout_width="0dp"
+					android:layout_weight="1" android:layout_marginRight="10dp"
+					android:layout_marginLeft="5dp" android:padding="8dp"
+					android:layout_height="wrap_content" android:gravity="center"
+					android:textSize="18sp" android:text="确定"
+					android:background="@drawable/appchina_pay_by_button_selector"
+					android:textColor="#ffffff" />
+				<Button android:layout_width="0dp" android:id="@+id/back3"
+					android:layout_weight="1" android:padding="8dp"
+					android:layout_height="wrap_content" android:layout_marginLeft="10dp"
+					android:layout_marginRight="5dp" android:gravity="center"
+					android:textSize="18sp" android:text="返回"
+					android:background="@drawable/appchina_pay_by_button_selector"
+					android:textColor="#ffffff" />
+			</LinearLayout>
+		</RelativeLayout>
+		
+			<!-- charge界面5 -->
+			<RelativeLayout android:id="@+id/charge_ly5"
+			android:layout_below="@id/title_ly" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:visibility="gone">
+			<ScrollView android:scrollbarAlwaysDrawVerticalTrack="true"
+				android:layout_height="fill_parent" android:layout_alignParentTop="true"
+				android:layout_above="@+id/btn_ly2" android:layout_width="fill_parent">
+				<LinearLayout android:orientation="vertical"
+					android:gravity="center_horizontal" android:layout_width="fill_parent"
+					android:layout_height="fill_parent">
+					<TextView android:layout_width="fill_parent"
+						android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+						android:textColor="#ff7800" android:textSize="15sp"
+						android:layout_height="wrap_content" android:text="@string/appchina_pay_creditcard_warn" />
+					<TextView android:id="@+id/warn_text"
+						android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+						android:layout_width="fill_parent" android:textSize="15sp"
+						android:textColor="#000000" android:layout_height="wrap_content" />
+					<TextView android:layout_marginTop="30dp"
+						style="@style/appchina_pay_text_highlight_14"
+						android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+						android:text="请选择充值金额: (单位: 元)" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" />
+					<Spinner android:id="@+id/charge_amount"
+						android:background="@drawable/appchina_pay_dropdown_button"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+						android:paddingRight="30dip" android:drawSelectorOnTop="true"
+						android:prompt="@string/appchina_pay_spinner_promt_default" style="@style/appchina_pay_MySpinner" />	
+					<TextView android:id="@+id/total" style="@style/appchina_pay_text_highlight"
+						android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+						android:layout_width="fill_parent" android:layout_height="wrap_content" />
+				</LinearLayout>
+			</ScrollView>
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_marginBottom="5dp" android:layout_alignParentBottom="true"
+				android:id="@id/btn_ly2" android:layout_marginLeft="10dp"
+				android:gravity="center_vertical" android:layout_marginRight="10dp"
+				android:layout_height="wrap_content">
+				<Button android:id="@+id/submit1" android:layout_width="0dp"
+					android:layout_weight="1" android:layout_marginRight="10dp"
+					android:layout_marginLeft="5dp" android:padding="8dp"
+					android:layout_height="wrap_content" android:gravity="center"
+					android:textSize="18sp" android:text="确定"
+					android:background="@drawable/appchina_pay_by_button_selector"
+					android:textColor="#ffffff" />
+				<Button android:layout_width="0dp" android:id="@+id/back1"
+					android:layout_weight="1" android:padding="8dp"
+					android:layout_height="wrap_content" android:layout_marginLeft="10dp"
+					android:layout_marginRight="5dp" android:gravity="center"
+					android:textSize="18sp" android:text="返回"
+					android:background="@drawable/appchina_pay_by_button_selector"
+					android:textColor="#ffffff" />
+			</LinearLayout>
+		</RelativeLayout>
+		
+		
+	</RelativeLayout>
+</FrameLayout>

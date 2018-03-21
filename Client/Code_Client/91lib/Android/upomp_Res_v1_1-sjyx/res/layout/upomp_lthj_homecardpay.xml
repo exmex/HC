@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     style="@style/upomp_lthj_scrollview_big">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   style="@style/upomp_lthj_layout_padding"
+    android:orientation="vertical" 
+    >
+    <include layout="@layout/upomp_lthj_hometradeinfo" android:id="@id/upomp_lthj_tradeinfolayout"
+        />
+    <LinearLayout android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout style="@style/upomp_lthj_input_layout" >
+            <EditText style="@style/upomp_lthj_input_edittext" android:hint="@string/upomp_lthj_three_cardtype" android:maxLength="23"
+                android:layout_centerVertical="true" android:id="@id/upomp_lthj_card_num_edit" android:inputType="phone"/>
+            <Button style="@style/upomp_lthj_input_help_btn" android:layout_alignParentRight="true"  android:layout_centerVertical="true" android:id="@id/upomp_lthj_help_btn"/>
+        </RelativeLayout>
+        <RelativeLayout style="@style/upomp_lthj_input_layout"  >
+            <EditText style="@style/upomp_lthj_input_edittext" android:hint="@string/upomp_lthj_card_mobile_num" android:maxLength="11"
+                android:layout_centerVertical="true" android:id="@id/upomp_lthj_mobile_num_edit" android:inputType="phone"/>
+        </RelativeLayout>
+        
+		<com.unionpay.upomp.lthj.widget.ValidateCodeView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@id/upomp_lthj_validatecode_layout"
+		    android:visibility="gone" android:layout_marginBottom="@dimen/upomp_lthj_margin_top"/>
+	    <Button style="@style/upomp_lthj_button_big_single" android:id="@id/upomp_lthj_next_btn" android:text="@string/upomp_lthj_next" />
+    </LinearLayout>
+    
+    <Button
+        style="@style/upomp_lthj_button_big_single" 
+        android:background="@drawable/upomp_lthj_button_green"
+        android:text="@string/upomp_lthj_use_quick"
+        android:id="@id/upomp_lthj_use_quick_pay" 
+        />
+
+</LinearLayout>
+</ScrollView>

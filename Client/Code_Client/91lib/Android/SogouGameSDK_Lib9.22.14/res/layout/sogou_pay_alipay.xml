@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_background_color"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@color/main_background_color"
+        android:orientation="vertical" >
+
+        <include layout="@layout/sogou_head" />
+        <include layout="@layout/sogou_pay_info" />
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="34dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="10dp"
+            android:gravity="top" >
+
+            <TableRow android:layout_marginTop="0dip" >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/sogou_pay_alipay_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/money_press"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/sogou_pay_alipay_title"
+                            style="@style/main_font"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/sogou_pay_alipay"
+                            android:duplicateParentState="true"
+                            android:gravity="center"
+                            android:text="@string/ali_pay_10" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/sogou_pay_alipay_30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/money_press"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/sogou_pay_alipay_title"
+                            style="@style/main_font"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/sogou_pay_alipay"
+                            android:duplicateParentState="true"
+                            android:gravity="center"
+                            android:text="@string/ali_pay_30" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/sogou_pay_alipay_50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/money_press"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/sogou_pay_alipay_title"
+                            style="@style/main_font"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/sogou_pay_alipay"
+                            android:duplicateParentState="true"
+                            android:gravity="center"
+                            android:text="@string/ali_pay_50" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dip" >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/sogou_pay_alipay_100"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/money_press"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/sogou_pay_alipay_title"
+                            style="@style/main_font"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/sogou_pay_alipay"
+                            android:duplicateParentState="true"
+                            android:gravity="center"
+                            android:text="@string/ali_pay_100" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/sogou_pay_alipay_200"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/money_press"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/sogou_pay_alipay_title"
+                            style="@style/main_font"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/sogou_pay_alipay"
+                            android:duplicateParentState="true"
+                            android:gravity="center"
+                            android:text="@string/ali_pay_200" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/sogou_pay_alipay_300"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/money_press"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/sogou_pay_alipay_title"
+                            style="@style/main_font"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/sogou_pay_alipay"
+                            android:duplicateParentState="true"
+                            android:gravity="center"
+                            android:text="@string/ali_pay_300" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dip" >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/sogou_pay_alipay_500"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/money_press"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/sogou_pay_alipay_title"
+                            style="@style/main_font"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/sogou_pay_alipay"
+                            android:duplicateParentState="true"
+                            android:gravity="center"
+                            android:text="@string/ali_pay_500" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/sogou_pay_alipay_1000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/money_press"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/sogou_pay_alipay_title"
+                            style="@style/main_font"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/sogou_pay_alipay"
+                            android:duplicateParentState="true"
+                            android:gravity="center"
+                            android:text="@string/ali_pay_1000" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/sogou_pay_alipay_2000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/money_press"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/sogou_pay_alipay_title"
+                            style="@style/main_font"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/sogou_pay_alipay"
+                            android:duplicateParentState="true"
+                            android:gravity="center"
+                            android:text="@string/ali_pay_2000" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dip" >
+
+                <RelativeLayout
+                    android:id="@+id/sogou_pay_alipay_other"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/sogou_pay_alipay_other_inner"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center" >
+
+                        <EditText
+                            android:id="@+id/sogou_pay_alipay_other_amount"
+                            style="@style/input_font"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/input_background"                           
+                            android:hint="@string/ali_pay_other_amount"
+                            android:inputType="number"
+                            android:maxLength="5"
+                            android:paddingLeft="15dp"
+                            android:singleLine="true" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/sogou_pay_other_amount_yuan"
+                        style="@style/button_font"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/sogou_pay_alipay_other_inner"
+                        android:duplicateParentState="true"
+                        android:text="@string/ali_pay_yuan" />
+                </RelativeLayout>
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/sogou_pay_alipay_btn"
+            style="@style/button_font"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_red_press"
+            android:text="@string/all_pay_confirm"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</ScrollView>

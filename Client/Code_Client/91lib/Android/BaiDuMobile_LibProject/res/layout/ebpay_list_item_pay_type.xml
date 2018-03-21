@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ebpay_bg_item_area">
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="45dp">
+	    
+	    <ImageView
+	        android:id="@+id/pay_type_img" 
+	        android:layout_width="35dp"
+	        android:layout_height="35dp"
+	        android:scaleType="fitXY"
+	        android:layout_marginLeft="5dp"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentLeft="true"/>
+	    
+	    <LinearLayout 
+	        android:id="@+id/pay_layout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_marginLeft="5dp"
+	        android:layout_toRightOf="@+id/pay_type_img"
+	        android:layout_centerInParent="true">
+	        <TextView
+		        android:id="@+id/tv_pay_type_name"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/ebpay_text_333333"
+		        android:textSize="@dimen/ebpay_text_size_15"/>
+	       <!--  <TextView
+			    android:id="@+id/tv_pay_desc_h" 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/ebpay_text_d9d9d9"
+		        android:textSize="@dimen/ebpay_text_size_15"/> -->
+	    </LinearLayout>
+	
+		 <!--  <TextView
+		    android:id="@+id/tv_pay_desc_v" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/pay_layout"
+	        android:layout_centerInParent="true"
+	        android:layout_marginLeft="10dip"
+	        android:textColor="@color/ebpay_text_d9d9d9"
+	        android:textSize="@dimen/ebpay_text_size_15"/> -->
+		
+		<TextView
+		    android:id="@+id/tv_pay_conment" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="5dp"
+	        android:layout_centerInParent="true"
+	        android:textColor="@color/ebpay_text_333333"
+	        android:textSize="@dimen/ebpay_text_size_15"/>
+		<ImageView
+		    android:id="@+id/v_item_checked_state" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/ebpay_item_checked_guide"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"/>
+
+	</RelativeLayout>
+</LinearLayout>

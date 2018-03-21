@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/appWhite" >
+
+    <ImageView
+        android:id="@+id/imageView_uc_logo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/appWhite"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo_uc" />
+
+
+    <!-- SurfaceView占个坑，先黑屏一下，屏蔽了切换contentview到SurfaceView的黑屏闪一下 -->
+    
+    <SurfaceView
+        android:id="@+id/surfaceView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp" />
+
+    <FrameLayout
+        android:id="@+id/uc_logo_waiting"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:background="#000f0f0f" >
+        
+        <ProgressBar
+	        android:id="@+id/uc_waiting_progressBar"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:gravity="center" 
+	        android:layout_marginTop="50dp"/>
+    
+	    <!--
+	         android:textStyle="bold"
+	    -->
+	    <TextView
+	        android:id="@+id/uc_waiting_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:gravity="center"
+	        android:text="@string/dummy_content"
+	        android:textColor="#0d0d0d"
+	        android:textSize="14sp"
+	        android:layout_marginTop="80dp" />
+        
+    </FrameLayout>
+
+</RelativeLayout>

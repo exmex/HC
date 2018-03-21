@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ebpay_white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/ebpay_line_margin_15"
+        android:text="@string/ebpay_account_info"
+        android:textColor="@color/ebpay_black"
+        android:textSize="@dimen/ebpay_text_size_20" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/ebpay_blue" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ebpay_line_margin_20"
+        android:layout_marginRight="@dimen/ebpay_line_margin_20"
+        android:layout_marginTop="@dimen/ebpay_line_margin_15"
+        android:text="@string/ebpay_prompt_info"
+        android:textColor="@color/ebpay_blue"
+        android:textSize="@dimen/ebpay_text_size_20" />
+
+    <LinearLayout
+        android:id="@+id/pass_area"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ebpay_line_height"
+        android:layout_marginLeft="@dimen/ebpay_line_margin_20"
+        android:layout_marginRight="@dimen/ebpay_line_margin_20"
+        android:layout_marginTop="20dp"
+        android:background="@color/ebpay_line_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ebpay_ic_pwd" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/ebpay_line_height"
+            android:layout_weight="1"
+            android:background="@null"
+            style="@style/edit_common_style"
+            android:drawableLeft="@drawable/ebpay_shape_line_fill_gray"
+            android:drawablePadding="5dp"
+            android:maxLength="20"
+            android:hint="@string/ebpay_pay_pass" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="@dimen/ebpay_line_height"
+            android:layout_height="@dimen/ebpay_line_height"
+            android:background="@null"
+            android:textOff="@string/ebpay_hide"
+            android:textOn="@string/ebpay_display" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ebpay_line_margin_20"
+        android:layout_marginRight="@dimen/ebpay_line_margin_20"
+        android:layout_marginTop="10dp"
+        android:text="@string/ebpay_pwd_info"
+        android:textColor="@color/ebpay_text_999999"
+        android:textSize="@dimen/ebpay_text_size_15" />
+   <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ebpay_line_margin_20"
+        android:layout_marginRight="@dimen/ebpay_line_margin_20"
+        android:layout_marginTop="@dimen/ebpay_line_margin_15"
+        android:text="@string/ebpay_fill_true_name"
+        android:textColor="@color/ebpay_black"
+        android:textSize="@dimen/ebpay_text_size_20" />
+    <EditText
+        android:id="@+id/ebpay_true_name_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ebpay_line_height"
+        android:layout_marginLeft="@dimen/ebpay_line_margin_20"
+        android:layout_marginRight="@dimen/ebpay_line_margin_20"
+        android:layout_marginTop="@dimen/ebpay_line_margin_15"
+        android:background="@drawable/ebpay_bg_pass_seletor"
+        style="@style/edit_common_style"
+        android:hint="@string/ebpay_fill_true_name"
+        android:paddingLeft="10dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ebpay_line_margin_20"
+        android:layout_marginRight="@dimen/ebpay_line_margin_20"
+        android:layout_marginTop="@dimen/ebpay_line_margin_15"
+        android:text="@string/ebpay_sec_problem"
+        android:textColor="@color/ebpay_black"
+        android:textSize="@dimen/ebpay_text_size_20" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ebpay_line_height"
+        android:layout_marginLeft="@dimen/ebpay_line_margin_20"
+        android:layout_marginRight="@dimen/ebpay_line_margin_20"
+        android:layout_marginTop="10dp"
+        android:background="@color/ebpay_white"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:text="@string/ebpay_me"
+            android:textColor="#999999"
+            android:textSize="@dimen/ebpay_text_size_20" />
+
+        <Spinner
+            android:id="@id/ebpay_who_id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_weight="4"
+            android:background="@drawable/ebpay_guide_icon"
+            android:padding="5dp"
+            android:textSize="@dimen/ebpay_text_size_20" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:text="@string/ebpay_di"
+            android:textColor="#999999"
+            android:textSize="@dimen/ebpay_text_size_20" />
+
+        <Spinner
+            android:id="@id/ebpay_type_id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_weight="4"
+            android:background="@drawable/ebpay_guide_icon"
+            android:padding="5dp"
+            android:textSize="@dimen/ebpay_text_size_20" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/anwser"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ebpay_line_height"
+        android:layout_marginLeft="@dimen/ebpay_line_margin_20"
+        android:layout_marginRight="@dimen/ebpay_line_margin_20"
+        android:layout_marginTop="@dimen/ebpay_line_margin_15"
+        android:background="@drawable/ebpay_bg_pass_seletor"
+        android:hint="@string/ebpay_pre_problem"
+        style="@style/edit_common_style"
+        android:paddingLeft="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ebpay_line_margin_20"
+        android:background="@color/ebpay_line_gray"
+        android:orientation="horizontal"
+        android:paddingTop="1dp" >
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ebpay_bg_dialog_btn"
+            android:padding="15dp"
+            android:text="@string/ebpay_cancel"
+            android:textColor="@color/ebpay_black"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/btn_line"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/ebpay_line_gray" />
+
+        <Button
+            android:id="@+id/confirm_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ebpay_bg_dialog_btn"
+            android:padding="15dp"
+            android:text="@string/ebpay_confirm"
+            android:textColor="@color/ebpay_black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,1 @@
+ndk-build -C ./ -B NDK_DEBUG=0 "NDK_MODULE_PATH=../Code_Client;./;./cocos2dx/platform/third_party/android/prebuilt" "APP_OPTIM=release" "APP_CPPFLAGS=-frtti -DCOCOS2D_DEBUG=0 -fexceptions -O3 -DANDROID"

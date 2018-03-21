@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="@dimen/dcn_login_content"
+    android:background="@android:color/white"
+    android:paddingLeft="@dimen/dcn_login_padding_left_right"
+    android:paddingRight="@dimen/dcn_login_padding_left_right"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/dcn_orange_btn_selector"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:id="@+id/dcn_phone_register">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dcn_phone_register_ic" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/dcn_btn_divider_orange"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dcn_quick_register_title"
+                android:id="@+id/textView"
+                android:textSize="18sp"
+                android:textIsSelectable="false"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dcn_quick_register_warning"
+                android:id="@+id/textView2"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView3"
+            android:src="@drawable/dcn_btn_arrow"
+            android:layout_marginLeft="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/dcn_blue_btn_selector"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/dcn_name_register"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dcn_user_register_ic" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/imageView5"
+            android:background="@drawable/dcn_btn_divider_blue"
+            android:layout_marginLeft="10dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dcn_name_register_title"
+                android:id="@+id/textView3"
+                android:textSize="18sp"
+                android:textIsSelectable="false"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView6"
+            android:src="@drawable/dcn_btn_arrow"
+            android:layout_marginLeft="20dp" />
+    </LinearLayout>
+</LinearLayout>

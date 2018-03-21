@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/payment_button_style"
+    android:orientation="vertical" >
+    
+    <ImageView 
+        android:id="@+id/dk_iv_payment_icon"
+         android:layout_width="60dp"
+         android:layout_height="24dp"
+         android:src="@drawable/dk_img_kubi" />
+    
+    <TextView 
+        android:id="@+id/dk_tv_payment_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dk_ku_bi_exchange"
+        android:textColor="#666666"
+        android:layout_marginTop="4dp"
+        android:textSize="@dimen/text_size_12_sp" />
+</LinearLayout>

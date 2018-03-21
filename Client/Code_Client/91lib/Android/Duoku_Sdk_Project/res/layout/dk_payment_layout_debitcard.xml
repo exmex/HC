@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    
+	<com.duoku.platform.view.WebViewWrapper
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent">
+	
+	   <LinearLayout
+            android:id="@+id/dk_layout_progress_webview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                layout="@layout/dk_common_progress" />
+        </LinearLayout>
+	        
+       <com.duoku.platform.view.DKDebitCardWebView
+		   android:id="@+id/dk_debitcard_webview"
+		   android:layout_width="fill_parent"
+		   android:layout_height="fill_parent"
+		   android:layout_marginBottom="6dp"
+		   android:visibility="visible" />
+	         
+        <LinearLayout 
+            android:id="@+id/dk_layout_net_error_webview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:gravity="center_horizontal"
+	        android:layout_marginTop="36dp"
+	        android:layout_gravity="center_horizontal"
+	        android:visibility="gone">
+       
+        	<ImageView 
+	        	android:layout_width="64dp"
+	        	android:layout_height="64dp"
+	        	android:src="@drawable/dk_ic_network_info"/>
+    
+    		<TextView 
+        		android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+		        android:layout_marginTop="18dp"
+		        android:textSize="@dimen/text_size_16_sp"
+		        android:textColor="@color/dk_color_333333"
+		        android:text="@string/dk_tip_payment_network_error"/>
+    
+    		<Button 
+		        android:id="@+id/dk_btn_payment_retry_webview"
+		        android:layout_width="fill_parent"
+		        android:layout_height="36dp"
+		        android:gravity="center"
+		        android:textColor="#ffffff"
+		        android:layout_marginTop="18dp"
+		        android:text="@string/dk_retry"
+		        android:textSize="@dimen/text_size_16_sp"
+		        android:background="@drawable/dk_payment_btn_pay_selector" />
+   		</LinearLayout>
+   		
+        <LinearLayout 
+            android:id="@+id/dk_layout_gen_error_webview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:gravity="center_horizontal"
+	        android:layout_marginTop="36dp"
+	        android:layout_gravity="center_horizontal"
+	        android:visibility="gone">
+       
+        	<ImageView 
+	        	android:layout_width="64dp"
+	        	android:layout_height="64dp"
+	        	android:src="@drawable/dk_ic_generic_webview_error"/>
+    
+    		<TextView 
+        		android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+		        android:layout_marginTop="18dp"
+		        android:textSize="@dimen/text_size_16_sp"
+		        android:textColor="@color/dk_color_333333"
+		        android:text="@string/dk_tip_payment_webview_generic_error"/>
+    
+    		<Button 
+		        android:id="@+id/dk_btn_payment_backtogame_webview"
+		        android:layout_width="fill_parent"
+		        android:layout_height="36dp"
+		        android:gravity="center"
+		        android:textColor="#ffffff"
+		        android:layout_marginTop="18dp"
+		        android:text="@string/dk_btn_string_back"
+		        android:textSize="@dimen/text_size_16_sp"
+		        android:background="@drawable/dk_payment_btn_pay_selector" />
+   		</LinearLayout>
+	</com.duoku.platform.view.WebViewWrapper>
+</RelativeLayout>

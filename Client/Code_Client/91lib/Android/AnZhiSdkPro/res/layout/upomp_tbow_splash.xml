@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>   
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+ 	android:layout_width="fill_parent"  
+ 	android:layout_height="fill_parent" >
+ 	<ImageView android:id="@+id/welcome" 
+ 		android:layout_width="fill_parent"
+ 		android:layout_height="fill_parent"
+ 		android:layout_centerInParent="true"
+		android:background="@drawable/splash">
+	</ImageView>
+    <RelativeLayout 
+	    android:id="@+id/rl_loading_info"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    android:layout_centerInParent="true">
+	    <ProgressBar
+	        android:id="@+id/p_loading_dialog"
+	        android:layout_width="206dip"
+	        android:layout_height="wrap_content"
+	        style="?android:attr/progressBarStyleHorizontal"   
+	        android:indeterminateDrawable="@drawable/anzhi_progress_init"
+	        android:indeterminateOnly="true"     
+            android:indeterminateDuration="400"     
+            android:indeterminateBehavior="repeat"    
+	        />
+	   	<TextView
+	        android:id="@+id/tv_loading_dialog"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/p_loading_dialog"
+	        android:singleLine="true"
+	        android:layout_centerInParent="true"
+	        android:textSize="15.0sp" 
+	        android:textColor="@color/white"/>
+    </RelativeLayout>
+
+	<RelativeLayout 
+	    android:id="@+id/rl_loading_info2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    android:layout_centerHorizontal="true"
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginBottom="20dip">
+		<TextView android:id="@+id/textView_splash_time" 
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_alignParentBottom="true"
+	        android:textSize="15.0sp"
+			android:textColor="@color/white"
+			android:text="@string/yl_2002_2011"/>
+		<TextView android:id="@+id/textView_splash_yinlian" 
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_above="@id/textView_splash_time"
+	        android:textSize="15.0sp"
+			android:textColor="@color/white"
+			android:text="@string/yl_china_hj" 
+			/>
+		<TextView android:id="@+id/textView_splash_version" 
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:textSize="15.0sp"
+			android:text="@string/yl_viso_1" 
+			android:layout_above="@id/textView_splash_yinlian" 
+			android:textColor="@color/white"/>
+	</RelativeLayout>
+	
+</RelativeLayout> 
+
+

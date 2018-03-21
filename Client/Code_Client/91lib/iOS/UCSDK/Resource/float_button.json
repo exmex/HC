@@ -1,0 +1,15 @@
+{ 
+   "defaultIcon":"conf/ucIcon.png",          
+   "expandedIcon":"conf/ucExpanded.png",   
+   "width":50,
+   "height":50,
+   "startX":100,                                    
+   "startY":50,                                     
+   "moveThreshold":5,                               
+   "bubble":{                                    
+			"borderColor":-818176,                   
+			"backgroundColor":-25600,               
+			"fontColor":-1,                     
+			"fontSize":10	                     
+	}
+}

@@ -1,0 +1,284 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="flsdk_AppTheme" parent="android:Theme.Light.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="flsdk_style_c2c2c2_18">
+        <item name="android:textColor">@color/flsdk_gamehelper_color_c2c2c2</item>
+        <item name="android:textSize">18.0sp</item>
+    </style>
+
+    <style name="flsdk_style_c2c2c2_16">
+        <item name="android:textColor">@color/flsdk_gamehelper_color_c2c2c2</item>
+        <item name="android:textSize">18.0sp</item>
+    </style>
+
+    <style name="flsdk_style_494e54_16">
+        <item name="android:textColor">@color/flsdk_gamehelper_color_494e54</item>
+        <item name="android:textSize">16.0sp</item>
+    </style>
+    
+    <style name="flsdk_style_494e54_18">
+        <item name="android:textColor">@color/flsdk_gamehelper_color_494e54</item>
+        <item name="android:textSize">18.0sp</item>
+    </style>
+
+    <style name="flsdk_style_ffffff_18">
+        <item name="android:textColor">@color/flsdk_gamehelper_color_white</item>
+        <item name="android:textSize">18.0sp</item>
+    </style>
+
+    <style name="flsdk_style_2b261c_18">
+        <item name="android:textColor">@color/flsdk_gamehelper_color_2b261c</item>
+        <item name="android:textSize">18.0sp</item>
+    </style>
+
+    <style name="flsdk_style_2b261c_14">
+        <item name="android:textColor">@color/flsdk_gamehelper_color_2b261c</item>
+        <item name="android:textSize">14.0sp</item>
+    </style>
+
+    <style name="flsdk_style_ffffff_16">
+        <item name="android:textColor">@color/flsdk_gamehelper_color_white</item>
+        <item name="android:textSize">16.0sp</item>
+    </style>
+
+    <style name="flsdk_style_msg_tips">
+        <item name="android:layout_width">17.4dip</item>
+        <item name="android:layout_height">21.4dip</item>
+        <item name="android:textColor">@color/flsdk_gamehelper_color_white</item>
+        <item name="android:textSize">10.0sp</item>
+        <item name="android:background">@drawable/flsdk_function_msg_tips_bg</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="flsdk_style_white_14">
+        <item name="android:textColor">@color/flsdk_gamehelper_color_white</item>
+        <item name="android:textSize">14.0sp</item>
+    </style>
+
+    <style name="flsdk_style_c2c2c2_14">
+        <item name="android:textColor">@color/flsdk_manager_account_text_color</item>
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">36.0dip</item>
+    </style>
+
+    <style name="flsdk_style_c12c20_14">
+        <item name="android:textColor">@color/flsdk_gamehelper_color_c12c20</item>
+        <item name="android:textSize">14.0sp</item>
+    </style>
+
+    <style name="flsdk_style_d5bf00_14">
+        <item name="android:textColor">@color/flsdk_gamehelper_color_d5bf00</item>
+        <item name="android:textSize">14.0sp</item>
+    </style>
+
+    <style name="flsdk_style_077df7_14">
+        <item name="android:textColor">@color/flsdk_gamehelper_color_077df7</item>
+        <item name="android:textSize">14.0sp</item>
+    </style>
+
+    <style name="flsdk_style_f1e74b_11">
+        <item name="android:textColor">@color/flsdk_gamehelper_color_f1e74b</item>
+        <item name="android:textSize">10.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="flsdk_style_f7d98b_14">
+        <item name="android:textColor">@color/flsdk_gamehelper_color_f7d98b</item>
+        <item name="android:textSize">14.0sp</item>
+    </style>
+
+    <style name="flsdk_style_ffffff_14">
+        <item name="android:textColor">@color/flsdk_gamehelper_color_white</item>
+        <item name="android:textSize">14.0sp</item>
+    </style>
+
+    <style name="flsdk_style_d5bf00_18">
+        <item name="android:textColor">@color/flsdk_gamehelper_color_d5bf00</item>
+        <item name="android:textSize">18.0sp</item>
+    </style>
+
+    <style name="flsdk_style_title_text">
+        <item name="android:textColor">@color/flsdk_manager_account_text_color</item>
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:layout_width">42.0dip</item>
+        <item name="android:layout_height">36.0dip</item>
+        <item name="android:gravity">center|right</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="flsdk_style_edit_text">
+        <item name="android:textColor">@color/flsdk_gamehelper_color_353535</item>
+        <item name="android:textColorHint">@color/flsdk_gamehelper_color_9a9a9a</item>
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:background">@drawable/flsdk_edit_text_bg</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">36.0dip</item>
+    </style>
+
+    <style name="flsdk_style_9a9a9a_14">
+        <item name="android:textColor">@color/flsdk_gamehelper_color_9a9a9a</item>
+        <item name="android:textSize">14.0sp</item>
+    </style>
+
+    <!-- Activity body 部分横版 -->
+    <style name="flsdk_style_body_lay_land">
+
+        <!-- item name="android:layout_width">fill_parent</item -->
+        <item name="android:layout_width">470.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!-- item name="android:background">@drawable/flsdk_body_bg</item> -->
+        <item name="android:layout_marginTop">40.0dip</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">18.0dip</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <!-- Activity body 部分竖版 -->
+    <style name="flsdk_style_body_lay_port">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginTop">45.0dip</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingTop">12.0dip</item>
+        <item name="android:paddingLeft">18.0dip</item>
+        <item name="android:paddingRight">18.0dip</item>
+        <item name="android:paddingBottom">12.0dip</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <!-- 充值Activity body 部分横版 -->
+    <style name="flsdk_style_charge_body_lay">
+
+        <!-- item name="android:layout_width">fill_parent</item -->
+        <item name="android:layout_width">470.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!-- item name="android:background">@drawable/flsdk_body_bg</item> -->
+        <item name="android:layout_marginTop">100.0dip</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">18.0dip</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    
+    <!-- 充值Activity body 部分竖版 -->
+    <style name="flsdk_style_charge_body_lay_port">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginTop">100.0dip</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingTop">12.0dip</item>
+        <item name="android:paddingLeft">18.0dip</item>
+        <item name="android:paddingRight">18.0dip</item>
+        <item name="android:paddingBottom">12.0dip</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <!-- 充值Activity body ScrollView部分横版 -->
+    <style name="flsdk_style_charge_scroll_body_lay">
+        <item name="android:layout_width">470.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">100.0dip</item>
+        <item name="android:paddingTop">4.0dip</item>
+        <item name="android:paddingLeft">18.0dip</item>
+        <item name="android:paddingRight">18.0dip</item>
+        <item name="android:fadeEnabled">false</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    <!-- 充值中心 Activity body ScrollView部分横版 -->
+    <style name="flsdk_style_charge_main_scroll_body_lay">
+        <item name="android:layout_width">470.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">0.0dip</item>
+        <item name="android:paddingTop">4.0dip</item>
+        <item name="android:paddingLeft">18.0dip</item>
+        <item name="android:paddingRight">18.0dip</item>
+        <item name="android:fadeEnabled">false</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <!-- 单行数字EditText -->
+    <style name="flsdk_style_edittext_single_number">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">6.0dip</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="flsdk_style_translucent_lay">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@color/flsdk_gamehelper_color_translucent</item>
+    </style>
+
+    <style name="flsdk_style_btn_green">
+        <item name="android:textColor">@color/flsdk_btn_green_text_color</item>
+        <item name="android:background">@drawable/flsdk_btn_green_bg</item>
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_height">36.0dip</item>
+    </style>
+
+    <style name="flsdk_style_btn_yellow">
+        <item name="android:textColor">@color/flsdk_btn_yellow_text_color</item>
+        <item name="android:background">@drawable/flsdk_btn_yellow_bg</item>
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_height">36.0dip</item>
+        <item name="android:layout_width">220.0dip</item>
+    </style>
+
+    <style name="flsdk_style_btn_unable">
+        <item name="android:textColor">@color/flsdk_gamehelper_color_383838</item>
+        <item name="android:background">@drawable/flsdk_btn_unabled_bg</item>
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_height">36.0dip</item>
+    </style>
+
+    <style name="flsdk_style_btn_blue">
+        <item name="android:textColor">@color/flsdk_gamehelper_color_00323a</item>
+        <item name="android:background">@drawable/flsdk_btn_blue_bg</item>
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_height">36.0dip</item>
+    </style>
+
+    <style name="flsdk_style_btn_green_test">
+        <item name="android:shadowColor">@color/flsdk_gamehelper_color_1b4503</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:textColor">@color/flsdk_btn_green_text_color</item>
+        <item name="android:background">@drawable/flsdk_btn_green_bg</item>
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_height">36.0dip</item>
+    </style>
+
+    <!-- 自定义dialog样式1 -->
+    <style name="flsdk_style_custom_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    
+    <!-- listview  gridview style -->
+    <style name="flsdk_style_list_style">
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:scrollingCache">false</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+</resources>

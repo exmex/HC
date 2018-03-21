@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cityselect_xml"
+    android:orientation="vertical"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+	<RelativeLayout
+		android:id="@+id/layout_tv_cardlist_title"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="15.0dip"
+		android:layout_marginRight="15.0dip"
+		>
+		<Button android:id="@+id/btn_tbow_add_card"
+			android:textSize="18.0sp"
+			android:textColor="@color/anzhi_cFFFFFFFF"
+			android:background="@drawable/upomp_tbow_btn_enter"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10.0dip"
+			android:text="@string/yl_add_card"
+			android:layout_centerVertical="true"
+			>
+		</Button>
+		
+	</RelativeLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+	    <RadioGroup android:id="@+id/cardradiogroup"
+			android:orientation="vertical"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="left"
+			android:layout_marginLeft="10dip">
+		</RadioGroup>
+	</ScrollView>
+</LinearLayout >

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ump_translucent_background">#80000000</color>
+
+    <style name="ump_translucent">
+        <item name="android:windowBackground">@color/ump_translucent_background</item>
+        <item name="android:windowIsTranslucent">true</item>
+         <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+
+</resources>

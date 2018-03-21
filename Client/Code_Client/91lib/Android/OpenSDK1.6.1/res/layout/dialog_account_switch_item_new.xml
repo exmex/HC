@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/head_user_icon"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dialog_switch_account_item_height"
+    android:layout_marginTop="@dimen/settings_head_icon_margint_top"
+    android:background="@drawable/rank_list_item_selector"
+    android:contentDescription="@null"
+    android:drawableLeft="@drawable/switch_account_item_icon_new"
+    android:drawablePadding="@dimen/head_text_margin_left"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/dialog_switch_account_icon_margin_left"
+    android:text="@string/switch_account_new"
+    android:textSize="@dimen/j_text_size"
+    android:textColor="#4c4d4d"/>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="@dimen/ks_cm_login_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/ks_bg_cm_dialog"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <include layout="@layout/ks_common_cm_title_bar" />
+
+        <ImageView
+            android:id="@+id/ks_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ks_cm_logout_banner_marginvertical"
+            android:layout_marginLeft="@dimen/ks_cm_logout_banner_marginhorizontal"
+            android:layout_marginRight="@dimen/ks_cm_logout_banner_marginhorizontal"
+            android:layout_marginTop="@dimen/ks_cm_logout_banner_marginvertical"
+            android:background="@color/ks_cm_edit_text_icon_bg_color"
+            android:contentDescription="@null"
+            android:scaleType="center"
+            android:src="@drawable/ks_logout_default_banner" />
+
+        <TextView
+            android:id="@+id/ks_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ks_cm_logout_banner_marginvertical"
+            android:layout_marginLeft="@dimen/ks_cm_logout_banner_marginhorizontal"
+            android:layout_marginRight="@dimen/ks_cm_logout_banner_marginhorizontal"
+            android:layout_marginTop="@dimen/ks_cm_logout_banner_marginvertical"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="@dimen/ks_cm_login_button_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ks_cm_logout_banner_marginvertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/ks_btn_goto_broswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/ks_cm_login_button_margin"
+                android:layout_weight="1"
+                android:background="@drawable/ks_bg_cm_btn_blue_selector"
+                android:minHeight="@dimen/ks_cm_one_key_reg_logo_height"
+                android:minWidth="@dimen/ks_cm_one_key_reg_logo_width"
+                android:shadowColor="@color/ks_cm_text_shadow_color"
+                android:text="@string/ks_cm_reg_btn_text"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/ks_text_size_20" />
+
+            <Button
+                android:id="@+id/ks_btn_quit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ks_cm_login_button_margin"
+                android:layout_weight="1"
+                android:background="@drawable/ks_bg_cm_btn_orange_selector"
+                android:minHeight="@dimen/ks_cm_one_key_reg_logo_height"
+                android:minWidth="@dimen/ks_cm_one_key_reg_logo_width"
+                android:shadowColor="@color/ks_cm_text_shadow_color"
+                android:text="@string/ks_cm_logn_btn_text"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/ks_text_size_20" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

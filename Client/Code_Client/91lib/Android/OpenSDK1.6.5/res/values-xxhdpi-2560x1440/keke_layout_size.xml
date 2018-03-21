@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="float_view_width">160px</dimen>
+    <dimen name="bubble_view_width">60px</dimen>
+    <dimen name="bubble_view_margin_left">120px</dimen>
+</resources>

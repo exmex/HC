@@ -1,0 +1,38 @@
+$#include "libOS.h"
+
+class libOS
+{
+	static libOS* getInstance();
+	
+	long avalibleMemory();
+	void rmdir(const char* path);
+
+	const std::string& generateSerial();
+
+	void showInputbox(bool multiline);
+	void showMessagebox(const std::string& msg, int tag = 0);
+
+	void openURL(const std::string& url);
+	void emailTo(const std::string& mailto, const std::string & cc , const std::string& title, const std::string & body);
+
+	void setWaiting(bool);
+    void fbAttention();
+	long long getFreeSpace();
+
+	NetworkStatus getNetWork();
+	
+	void clearNotification();
+    void addNotification(const std::string& msg, int secondsdelay,bool daily = false);
+	
+	const std::string getDeviceID();
+	const std::string getPlatformInfo();
+	
+	void analyticsLogEvent(const std::string& event);
+	void analyticsLogEvent(const std::string& event, const std::map<std::string, std::string>& dictionary, bool timed = false);
+	void analyticsLogEndTimeEvent(const std::string& event);
+	
+  void WeChatInit(const std::string& appID);
+  bool WeChatIsInstalled();
+  void WeChatInstall();
+  void WeChatOpen();
+}

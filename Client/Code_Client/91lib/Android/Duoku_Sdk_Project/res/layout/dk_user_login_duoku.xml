@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/userloginroot"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:gravity="center_vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    >
+	
+    <!-- titlebar区域 -->
+    <include layout="@layout/dk_user_login_header"
+        android:id="@+id/dk_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+     
+    <!-- 可滑动区域 -->
+    <RelativeLayout
+        android:id="@+id/dk_login_sv"
+        android:layout_width="fill_parent"
+        android:layout_height="380dp"
+        android:fadeScrollbars="false"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbarThumbVertical="@drawable/dk_scrollbar_gray"
+        android:background="@drawable/dk_bg_bottom"
+        android:layout_below="@id/dk_head"
+        
+        >
+
+        <LinearLayout
+            android:id="@+id/dk_login_body"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="14dp"
+        	android:paddingRight="14dp"
+            >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal" 
+                >
+
+                <FrameLayout android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    >
+	                <EditText
+	                    android:id="@+id/dk_account_input_edit"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="40dp"
+	                    android:background="@drawable/dk_edittext_selector"
+	                    android:gravity="center_vertical"
+	                    android:hint="@string/dk_account_hint" 
+	                    android:textColorHint="@color/dk_color_999999"
+	                    android:singleLine="true"
+	                    android:digits="@string/dk_register_name_digits"
+	                    android:textSize="14sp"
+	                    android:maxLength="14"/>
+		                <View android:id="@+id/dk_account_pop_fold_unfold_container" 
+		                    android:layout_width="68dp"
+		                    android:layout_height="36dp"
+		                    android:layout_gravity="right|center_vertical"
+		                    android:background="@color/dk_transparent"
+		                    />
+		                	
+		                <ImageButton android:id="@+id/dk_account_pop_fold_unfold"
+		                    android:layout_width="24dp"
+		                    android:layout_height="24dp"
+		                    android:layout_gravity="right|center_vertical"
+		                    android:layout_marginRight="8dp"
+		                    android:clickable="true"/>
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/dk_pwd_input_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/dk_edittext_selector"
+                android:digits="@string/dk_register_name_digits"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="@string/dk_pwd_login_hint"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColorHint="@color/dk_color_999999"
+                android:textSize="14sp" 
+                android:maxLength="16"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+				
+                <LinearLayout android:id="@+id/dk_login_remember_state" 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/dk_user_login_checkbox"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:button="@drawable/dk_login_checkbox_selector_2"
+                    android:checked="true" 
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:gravity="center"
+                    android:text="@string/dk_remember_login_state"
+                    android:textColor="@color/dk_color_666666"
+                    android:textSize="14sp" 
+                    android:layout_gravity="center_vertical" />
+				</LinearLayout>
+				
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/dk_btn_forgot_pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dk_transparent"
+                    android:singleLine="true"
+                    android:text="@string/dk_forget_pwd_text"
+                    android:textColor="@color/dk_color_2764af"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/dk_btn_login"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/dk_login_btn_selector"
+                    android:gravity="center"
+                    android:text="@string/dk_login"
+                    android:textColor="@color/dk_gamesdk_white"
+                    android:textSize="16sp" />
+			</LinearLayout>
+			
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/dk_btn_register_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1.42"
+                    android:background="@drawable/dk_register_phone_btn_selector"
+                    android:gravity="center"
+                    android:text="@string/dk_register_phone"
+                    android:textColor="@color/dk_gamesdk_white"
+                    android:textSize="13sp" />
+                
+                <Button
+                   android:id="@+id/dk_btn_register"
+                   android:layout_marginLeft="8dp"
+                   android:layout_width="0dp"
+                   android:layout_height="40dp"
+				   android:layout_weight="1"
+                   android:background="@drawable/dk_register_btn_selector"
+                   android:gravity="center"
+                   android:text="@string/dk_username_register"
+                   android:textColor="@color/dk_color_333333"
+                   android:textSize="13sp" />
+                
+			</LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/dk_login_phone_register_divider"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical" 
+                >
+
+                <TextView
+                    android:id="@+id/dk_login_phone_register_send_msg_mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dk_phone_send_textmsg_default"
+                    android:textColor="@color/dk_color_999999"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="10sp" 
+                    android:gravity="center"
+                    android:paddingLeft="6dp"/>
+
+            </LinearLayout>
+			
+            <LinearLayout
+                android:id="@+id/dk_login_thirdparty_choose"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical" 
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dk_thirdparty_login"
+                    android:textColor="@color/dk_color_666666"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="12sp" 
+                    android:gravity="center"/>
+                
+                <ImageButton
+                    android:id="@+id/dk_login_thirdparty_baidu" 
+                    android:layout_width="72dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="14dp"
+                    android:contentDescription="@string/dk_imagview_contentdesc"
+                    android:src="@drawable/dk_thirdparty_login_baidu_selector"/>
+                
+                <ImageButton
+                    android:id="@+id/dk_login_thirdparty_xinlang" 
+                    android:layout_width="72dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="8dp"
+                    android:contentDescription="@string/dk_imagview_contentdesc"
+                    android:src="@drawable/dk_thirdparty_login_xinlang_selector"/>
+
+            </LinearLayout>
+            
+            <LinearLayout
+                 android:id="@+id/dk_login_bd"
+                 android:layout_width="fill_parent"
+                 android:layout_height="36dp"
+                 android:layout_marginTop="16dp"
+                 android:background="@drawable/dk_register_btn_selector"
+                 android:clickable="true"
+                 android:gravity="center"
+                 android:orientation="horizontal" 
+                 android:visibility="gone">
+
+                 <ImageView
+                     android:layout_width="24dp"
+                     android:layout_height="24dp"
+                     android:layout_gravity="center_vertical|center_horizontal"
+                     android:background="@drawable/dk_ic_baidu" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="fill_parent"
+                     android:layout_marginLeft="6dp"
+                     android:gravity="center"
+                     android:text="@string/dk_login_with_baidu_account"
+                     android:textColor="@color/dk_color_333333"
+                     android:textSize="16sp" />
+
+            </LinearLayout>
+            
+            
+        </LinearLayout>
+        
+        <include layout="@layout/dk_user_bottom_logo_2"
+                android:id="@+id/dk_custom_bottom"
+		        android:layout_width="fill_parent"
+		       	android:layout_height="wrap_content"
+		       	android:layout_marginTop="12dp"
+		       	android:layout_marginBottom="8dp"
+		       	android:layout_alignParentBottom="true"
+		        />
+        
+    </RelativeLayout>
+	
+	<include layout="@layout/dk_user_login_shadow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dk_head"
+       	
+        />
+    
+    <!-- <include layout="@layout/dk_user_bottom_logo"
+        android:layout_width="fill_parent"
+       	android:layout_height="wrap_content"
+       	android:layout_alignParentBottom="true"
+       	android:layout_marginBottom="16dp"
+        /> -->
+</RelativeLayout>

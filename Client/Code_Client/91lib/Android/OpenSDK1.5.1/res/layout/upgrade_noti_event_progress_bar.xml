@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layout_download_item" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" android:layout_gravity="center_vertical">
+	<ImageView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/iv_download_indicator"
+		android:layout_centerVertical="true" android:layout_marginLeft="10dip"
+		android:background="@android:drawable/stat_sys_download"></ImageView>
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:width="180dip"
+		android:singleLine="true" android:layout_marginLeft="10dip"
+		android:id="@+id/upgrade_download_title" android:textSize="15sp"
+		android:textColor="@android:color/black" android:layout_toRightOf="@id/iv_download_indicator"></TextView>
+	<RelativeLayout android:layout_height="wrap_content"
+		android:id="@+id/layout_artist" android:layout_width="180dip"
+		android:layout_below="@+id/upgrade_download_title"
+		android:layout_alignLeft="@+id/upgrade_download_title">
+		<ProgressBar android:id="@+id/upgrade_download_progress"
+			style="?android:attr/progressBarStyleHorizontal" android:max="100"
+			android:layout_width="fill_parent"
+			android:layout_toLeftOf="@+id/upgrade_download_percent"
+			android:progressDrawable="@drawable/upgrade_buffer_progress" 
+			android:layout_alignLeft="@id/upgrade_download_title"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="5dip" 
+			android:layout_below="@+id/layout_artist"></ProgressBar>
+		<TextView android:id="@+id/upgrade_download_percent" android:text="@+id/TextView01"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentRight="true" android:textSize="12sp"
+			android:textColor="@android:color/black" android:layout_marginLeft="5dp"></TextView>
+	</RelativeLayout>
+</RelativeLayout>

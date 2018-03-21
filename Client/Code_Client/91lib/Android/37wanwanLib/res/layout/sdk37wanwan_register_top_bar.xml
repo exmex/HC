@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/dimen_h_48dp"
+    android:background="@drawable/sdk37wanwan_bg"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/sdk37wanwan_topbar_back"
+        android:layout_width="@dimen/dimen_60dp"
+        android:layout_height="@dimen/dimen_h_31dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="left"
+        android:layout_marginLeft="@dimen/dimen_13dp"
+        android:background="@drawable/sdk37wanwan_cancle_selector"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="@dimen/dimen_16sp"
+        android:text="@string/sdk37wanwan_cancle" />
+
+    <TextView
+        android:id="@+id/sdk37wanwan_topbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/sdk37wanwan_register"
+        android:textColor="#fff"
+        android:textSize="@dimen/dimen_24sp" />
+
+</RelativeLayout>

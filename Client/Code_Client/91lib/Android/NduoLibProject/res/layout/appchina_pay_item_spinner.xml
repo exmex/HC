@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- spinner项 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="250dip" android:layout_height="45dp">
+	<TextView android:id="@+id/TextView" android:layout_height="fill_parent"
+		style="@style/appchina_pay_label_theme"
+		android:layout_width="80dp"
+		android:gravity="center_vertical" />
+	<Spinner android:id="@+id/Spinner" android:background="@drawable/appchina_pay_dropdown_button"
+		android:layout_width="160dip" android:layout_height="wrap_content" 
+		android:layout_marginLeft="5dip"
+		android:layout_marginRight="5dip" 
+		android:paddingRight="30dip"
+		android:drawSelectorOnTop="true" android:prompt="@string/appchina_pay_spinner_promt_default"
+		style="@style/appchina_pay_MySpinner" /> 
+</LinearLayout>

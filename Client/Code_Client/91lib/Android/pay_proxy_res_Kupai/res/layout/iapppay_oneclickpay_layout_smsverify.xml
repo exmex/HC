@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <include
+        android:id="@+id/oneclickpay_title"
+        android:layout_alignParentTop="true"
+        layout="@layout/iapppay_oneclickpay_layout_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/iapppay_oneclick_frame_body_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/oneclickpay_verify_tips"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#8a8a8a"
+                android:textSize="13sp" />
+            
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d2dbe6"
+                android:layout_marginTop="13dp"
+                />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="13dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|bottom"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:id="@+id/oneclickpay_smscode"
+                        style="@style/edit_common_style"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="请输入短信验证码"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:textColor="#303030"
+                        android:textColorHint="#b5b5b5"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/aipay_oneclickpay_input" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/oneclickpay_timecounter"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/iapppay_oneclickpay_bg_confrim_selector"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/onclickpay_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/iapppay_oneclickpay_bg_confrim_selector"
+                android:gravity="center"
+                android:text="支付"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

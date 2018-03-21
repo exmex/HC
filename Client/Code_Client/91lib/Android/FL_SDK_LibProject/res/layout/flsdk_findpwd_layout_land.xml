@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <include layout="@layout/flsdk_base_bg_layout_land" />
+
+    <LinearLayout
+        style="@style/flsdk_style_body_lay_land"
+        android:gravity="center" >
+
+          <com.fl.gamehelper.ui.widget.BaseEditTextView
+            android:id="@+id/flsdk_findpwd_account_edit_lay"
+            android:layout_width="280.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="14.0dip"
+              />
+
+         <com.fl.gamehelper.ui.widget.BaseEditTextView
+            android:id="@+id/flsdk_findpwd_band_edit_lay"
+            android:layout_width="280.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="14.0dip"
+             />
+
+        <include
+            android:layout_width="200.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8.0dip"
+            android:layout_marginLeft="14.0dip"
+            android:layout_marginRight="14.0dip"
+            layout="@layout/flsdk_register_button_layout" />
+
+        <include layout="@layout/flsdk_base_divide_line_layout" />
+
+        <TextView
+            style="@style/flsdk_style_077df7_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8.0dip"
+            android:singleLine="true"
+            android:text="@string/flsdk_account_bind_hint" />
+    </LinearLayout>
+
+    <include layout="@layout/flsdk_base_loading_layout" />
+
+</merge>

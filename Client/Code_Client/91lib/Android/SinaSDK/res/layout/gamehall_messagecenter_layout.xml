@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:background="@drawable/gamehall_popup_detail_bg_black" 
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/gamehall_feedback_title_bg" >
+
+            <ImageButton
+                android:id="@+id/gamehall_universal_activity_backbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/gamehall_feedback_back_selector" />
+
+            <TextView
+                android:id="@+id/gamehall_universal_activity_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/gamehall_messagecenter_title"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <cn.sina.youxi.ui.pulltorefresh_reload_listview.XListView
+            android:id="@+id/gamehall_messagecenter_listview"
+            android:cacheColorHint="#00000000"
+            android:headerDividersEnabled="false"
+            android:footerDividersEnabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:scrollbars="none" >
+        </cn.sina.youxi.ui.pulltorefresh_reload_listview.XListView>
+    </LinearLayout>
+
+</FrameLayout>

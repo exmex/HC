@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 顶部容器 -->
+
+    <LinearLayout
+        android:id="@+id/container_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <!-- 中部容器 -->
+
+    <LinearLayout
+        android:id="@+id/container_middle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/container_top"
+        android:background="@android:color/white" >
+    </LinearLayout>
+
+</RelativeLayout>

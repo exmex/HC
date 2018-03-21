@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>button</key>
+	<dict>
+		<key>type</key>
+		<string>button</string>
+		<key>rect</key>
+		<string>{{0,6},{76,36}}</string>
+		<key>buttonType</key>
+		<string>0</string>
+		<key>bgImage</key>
+		<string>appPromotion/downloadNormal</string>
+		<key>bgImage_stretchPoint</key>
+		<string>{0.5,0}</string>
+		<key>title</key>
+		<string>    立即下载</string>
+		<key>vertAlign</key>
+		<string>center</string>
+		<key>horizenAlign</key>
+		<string>center</string>
+		<key>fontSize</key>
+		<string>12</string>
+		<key>titleColor</key>
+		<string>1,1,1,1</string>
+	</dict>
+</dict>
+</plist>

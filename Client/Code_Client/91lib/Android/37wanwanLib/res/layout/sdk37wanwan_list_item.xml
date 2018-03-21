@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/dimen_h_40dp"
+    android:orientation="horizontal" >
+
+    <TextView 
+        android:id="@+id/sdk37wanwan_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="left"
+        android:singleLine="true"
+        android:textColor="#aaa"
+        android:textSize="@dimen/dimen_20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    <TextView
+        style="@style/nmgc_common_text"
+        android:id="@+id/nmgc_boy_dialog_text"
+        android:layout_width="@dimen/nmgc_boy_dialog_width"
+        android:layout_height="@dimen/nmgc_boy_dialog_height"
+        android:gravity="center"
+        android:maxLines="2" />
+</LinearLayout>

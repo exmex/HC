@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/welcomeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <cn.sina.youxi.ui.WelcomeWebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:id="@+id/progressView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/gamehall_home_bg"
+                android:gravity="center" >
+
+                <ProgressBar
+                    style="@android:style/Widget.ProgressBar.Small.Inverse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4dip"
+                    android:text="@string/gamehall_loadmore"
+                    android:textColor="@color/txt_white"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/gamehall_network_error_view"
+        layout="@layout/gamehall_net_page" />
+
+</FrameLayout>

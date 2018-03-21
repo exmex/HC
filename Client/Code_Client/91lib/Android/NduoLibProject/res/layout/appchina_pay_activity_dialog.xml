@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content"
+	android:layout_width="fill_parent"
+>
+<RelativeLayout
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/appchina_pay_main_shape">
+	<RelativeLayout android:id="@+id/title_ly"
+		android:layout_alignParentTop="true" android:layout_width="fill_parent"
+		android:layout_height="48dp" android:background="@drawable/appchina_pay_title_bg">
+		<!--  <ImageView android:layout_width="142dp"
+			android:layout_height="34dp" android:layout_centerInParent="true"
+			android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+			android:src="@drawable/appchina_pay_title" />-->
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="34dp" android:layout_centerInParent="true"
+			android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+			android:textSize = "20sp" android:gravity="center_vertical"
+			android:textColor="#ffffff"
+			android:text="收银台" />
+	</RelativeLayout>
+	<ScrollView android:id="@+id/scroll" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_below="@id/title_ly"
+		android:layout_above="@+id/btn">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:orientation="vertical">
+			<TextView android:id="@+id/title" style="@style/appchina_pay_text_green_18"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginLeft="10dip" android:layout_marginRight="10dip" />
+			<TextView android:id="@+id/info" style="@style/appchina_pay_text_gray_16"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginLeft="10dip" android:layout_marginRight="10dip" />
+		</LinearLayout>
+	</ScrollView>
+	<Button android:gravity="center" android:layout_gravity="center"
+		android:layout_centerHorizontal="true"
+		android:layout_width="70dp" android:layout_height="wrap_content"
+		android:id="@id/btn" android:text="@string/appchina_pay_btn_close"
+		android:padding="8dp" style="@style/appchina_pay_button_text_16"
+		android:background="@drawable/appchina_pay_by_button_selector"
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="10dp" />
+</RelativeLayout>
+</FrameLayout>

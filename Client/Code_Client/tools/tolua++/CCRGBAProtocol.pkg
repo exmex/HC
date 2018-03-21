@@ -1,0 +1,18 @@
+class  CCRGBAProtocol
+{
+  virtual void setColor(const ccColor3B& color) = 0;
+    virtual const ccColor3B& getColor(void) = 0;
+    virtual const ccColor3B& getDisplayedColor(void) = 0;
+    virtual GLubyte getDisplayedOpacity(void) = 0;
+    virtual GLubyte getOpacity(void) = 0;
+    virtual void setOpacity(GLubyte opacity) = 0;
+    virtual void setOpacityModifyRGB(bool bValue) = 0;
+    virtual bool isOpacityModifyRGB(void) = 0;
+    virtual bool isCascadeColorEnabled(void) = 0;
+    virtual void setCascadeColorEnabled(bool cascadeColorEnabled) = 0;
+    virtual void updateDisplayedColor(const ccColor3B& color) = 0;
+    virtual bool isCascadeOpacityEnabled(void) = 0;
+    virtual void setCascadeOpacityEnabled(bool cascadeOpacityEnabled) = 0;
+    virtual void updateDisplayedOpacity(GLubyte opacity) = 0;
+
+};

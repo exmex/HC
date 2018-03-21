@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_exit_title">Dota</string>
+    <string name="app_exit_msg">您确定退出游戏吗?</string>
+    <string name="app_dlg_title">提示</string>
+    <string name="enter">enter</string>
+     <string name="cancel">cancel</string>
+     <string name="app_dlg_newwork_notok_msg">网络不可连接，请检查您的手机网络！</string>
+    <string name="app_dlg_externalstorage_notok_msg">外部存储不可用，请检查您的SD卡是否正确安装！</string>
+    <string name="app_dlg_externalstorage_nofreespace_msg">外部存储空间不足，请先释放SD卡存储空间！</string>
+</resources>

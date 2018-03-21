@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 自定义弹出菜单 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="60.0dip" >
+
+    <RelativeLayout
+        android:id="@+id/flsdk_game_alert_builder_body_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/flsdk_alert_body_bg"
+        android:padding="25.0dip" >
+
+        <TextView
+            android:id="@+id/flsdk_game_alert_builer_message"
+            style="@style/flsdk_style_c2c2c2_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="left|center"
+            android:paddingBottom="25.0dip" />
+
+        <com.fl.gamehelper.ui.widget.BoldButton
+            android:id="@+id/flsdk_game_alert_builder_okbut"
+            android:layout_width="94.0dip"
+            android:layout_height="36.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/flsdk_game_alert_builer_message"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/flsdk_alert_ok_button" />
+
+        <com.fl.gamehelper.ui.widget.BoldButton
+            android:id="@+id/flsdk_game_alert_builder_cancelbut"
+            android:layout_width="94.0dip"
+            android:layout_height="36.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/flsdk_game_alert_builder_okbut"
+            android:background="@drawable/flsdk_alert_cancel_button" />
+
+        <com.fl.gamehelper.ui.widget.BoldButton
+            android:id="@+id/flsdk_game_alert_builder_centerBtn"
+            style="@style/flsdk_style_btn_blue"
+            android:layout_width="94.0dip"
+            android:layout_height="36.0dip"
+            android:layout_alignTop="@+id/flsdk_game_alert_builder_okbut"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

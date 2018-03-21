@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="200" android:drawable="@drawable/loading_line_1" />
+    <item android:duration="200" android:drawable="@drawable/loading_line_2" />
+    <item android:duration="200" android:drawable="@drawable/loading_line_3" />
+    <item android:duration="200" android:drawable="@drawable/loading_line_4" />
+    <item android:duration="200" android:drawable="@drawable/loading_line_5" />
+    <item android:duration="200" android:drawable="@drawable/loading_line_6" />
+    <item android:duration="200" android:drawable="@drawable/loading_line_7" />
+    <item android:duration="200" android:drawable="@drawable/loading_line_8" />
+    <item android:duration="200" android:drawable="@drawable/loading_line_9" />
+    <item android:duration="200" android:drawable="@drawable/loading_line_10" />
+</animation-list>
+
+
+<!--  <?xml version="1.0" encoding="utf-8"?>
+<rotate
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:fromDegrees="0.0"
+	android:toDegrees="360.0"
+	android:pivotX="50%"
+	android:pivotY="50%"
+	>
+	<shape
+		android:shape="ring"
+		android:innerRadiusRatio="3.0"
+		android:thicknessRatio="8.0"
+		android:useLevel="false"
+		>
+		<gradient
+			android:startColor="#00FFFFFF"
+			android:endColor="#FFFFFFFF"
+			android:useLevel="false"
+			android:type="sweep"
+			android:centerY="0.5"
+			android:centerColor="#88FFFFFF"
+			>
+		</gradient>
+	</shape>
+</rotate>-->

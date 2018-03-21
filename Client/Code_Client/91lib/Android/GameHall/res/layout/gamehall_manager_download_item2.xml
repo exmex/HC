@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gamehall_list_item_selector"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <ImageView
+            android:id="@+id/manager_item2_imageview_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <Button
+            android:id="@+id/manager_item2_button_command"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="14dp"
+            android:background="@drawable/gamehall_manager_button_bg"
+            android:textColor="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toLeftOf="@id/manager_item2_button_command"
+            android:layout_toRightOf="@id/manager_item2_imageview_icon"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/manager_item2_textview_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/manager_item2_textview_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="#6d6d6d" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/gamehall_manager_item2_linear_command"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#666"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <Button
+            android:id="@+id/gamehall_manager_item2_button_Delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:background="@drawable/gamehall_manager_item2_button_selector"
+            android:text="@string/gamehall_manager_download_btn_delete"
+            android:textColor="@android:color/white"
+            android:drawableTop="@drawable/gamehall_manager_item2_rubbish_selector"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/gamehall_manager_item2_button_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:background="@drawable/gamehall_manager_item2_button_selector"
+            android:text="@string/gamehall_manager_download_btn_retry"
+            android:textColor="@android:color/white"
+            android:drawableTop="@drawable/gamehall_manager_item2_refresh_selector"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

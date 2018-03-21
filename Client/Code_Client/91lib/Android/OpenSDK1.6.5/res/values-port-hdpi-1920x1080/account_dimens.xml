@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="regist_keke_margin_left">83px</dimen>
+    <dimen name="regist_keke_margin_top">58px</dimen>
+    <dimen name="login_keke_back_bar_margin_left">48px</dimen>
+    <dimen name="login_keke_back_bar_margin_top">67px</dimen>
+    <dimen name="login_keke_text_margin_left">35px</dimen>
+    <dimen name="login_keke_title_height">129px</dimen>
+    <dimen name="usr_name_input_margin_top">90px</dimen>
+    <dimen name="psw_input_margin_top">38px</dimen>
+    <dimen name="forget_psw_margin_top">22px</dimen>
+    <dimen name="login_btn_margin_top">169px</dimen>
+    <dimen name="input_area_height">111px</dimen>
+    <dimen name="input_area_width">874px</dimen>
+    <dimen name="login_btn_height">150px</dimen>
+    <dimen name="login_btn_width">607px</dimen>
+    <dimen name="login_title_margin_ringt">10px</dimen>
+    
+    
+    <dimen name="regist_type_height">104px</dimen>
+    <dimen name="regist_type_select_line_len">278px</dimen>
+    <dimen name="regist_divide_line_len">916px</dimen>
+    <dimen name="phone_num_margin_top">30px</dimen>
+    <dimen name="phone_num_input_area_height">113px</dimen>
+    <dimen name="phone_num_input_area_width">565px</dimen>
+    <dimen name="get_verify_code_btn_margin_left">25px</dimen>
+    <dimen name="get_verify_code_btn_width">253px</dimen>
+    <dimen name="verify_code_input_area_margin_top">30px</dimen>
+    <dimen name="phone_regist_pwd_margin_top">32px</dimen>
+    <dimen name="phone_regist_btn_margin_top">39px</dimen>
+    <dimen name="login_keke_account_line_len">201px</dimen>
+    <dimen name="login_keke_account_bar_margin_parent_right">47px</dimen>
+    <dimen name="login_keke_account_text_margin_parent_right">81px</dimen>
+    <dimen name="general_input_width">874px</dimen>
+    
+    
+    <dimen name="usr_regist_margin_top">46px</dimen>
+    <dimen name="usr_psw_margin_top">38px</dimen>
+    <dimen name="usr_regist_btn">100px</dimen>
+    
+    <dimen name="login_successfully_text_margin_left">302px</dimen>
+    <dimen name="login_successfully_text_margin_top">84px</dimen>
+    <dimen name="remember_keke_account_text_margin_top">69px</dimen>
+    <dimen name="keke_name_margin_top">60px</dimen>
+    <dimen name="start_game_btn_margin_top">78px</dimen>
+    
+    <dimen name="keke_input_box_margin_left">67.5px</dimen>
+    <dimen name="regist_login_btn_margin_left">201px</dimen>
+    <dimen name="view_layout_width">1009px</dimen>
+    <dimen name="view_layout_height">928px</dimen>
+    
+</resources>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_background_color"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_background_color"
+        android:orientation="vertical" >
+
+        <include layout="@layout/sogou_head" />
+
+        <include layout="@layout/sogou_pay_info" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/sogou_pay_card_blance_label"
+                style="@style/main_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/card_pay_amount" />
+
+            <EditText
+                android:id="@+id/sogou_pay_card_blance_text"
+                style="@style/input_font"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/sogou_pay_card_blance_label"
+                android:background="@drawable/info_background"
+                android:hint="@string/card_pay_select_amount"
+                android:inputType="number"
+                android:maxLength="5"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                 />
+
+            <RelativeLayout
+                android:id="@+id/sogou_pay_card_drop_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="-40dip"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_toRightOf="@+id/sogou_pay_card_blance_text" >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/arrow_drop_list_press" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/sogou_pay_card_number_label"
+                style="@style/main_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:hint="@string/card_pay_number_label" />
+
+            <EditText
+                android:id="@+id/sogou_pay_card_number_text"
+                style="@style/input_font"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/sogou_pay_card_number_label"
+                android:background="@drawable/info_background"
+                android:hint="@string/card_pay_number"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                 />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/sogou_pay_card_password_label"
+                style="@style/main_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/card_pay_password_label" />
+
+            <EditText
+                android:id="@+id/sogou_pay_card_password_text"
+                style="@style/input_font"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/sogou_pay_card_password_label"
+                android:background="@drawable/info_background"
+                android:hint="@string/card_pay_password"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                 />
+        </RelativeLayout>
+        
+        <Button
+            android:id="@+id/sogou_pay_card_btn"
+            style="@style/button_font"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_red_press"
+            android:text="@string/all_pay_confirm"
+             />
+    </LinearLayout>
+
+</ScrollView>

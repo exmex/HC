@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/nmgc_main_bg" >
+
+    <LinearLayout
+        android:id="@+id/nmgc_fullload_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ProgressBar
+            android:id="@+id/nmgc_fullload_loading_progress"
+            style="@style/nmgc_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/nmgc_fullload_loading_progress_content"
+            style="@style/nmgc_login_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/nmgc_loading_text_left"
+            android:text="@string/nmgc_loading_text"
+            android:textSize="@dimen/nmgc_loading_text_size" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nmgc_fullload_hint"
+        style="@style/nmgc_login_button_text"
+        android:drawableTop="@drawable/nmgc_nodata_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/nmgc_loading_text_left"
+        android:text="@string/nmgc_global_loading_error_click"
+        android:textSize="@dimen/nmgc_login_common_text_size" 
+        android:visibility="gone"/>
+
+</RelativeLayout>

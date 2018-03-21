@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <include
+        android:layout_width="wrap_content"
+        layout="@layout/flsdk_base_bg_layout_land" />
+
+    <LinearLayout style="@style/flsdk_style_body_lay_land" >
+
+        <LinearLayout
+            android:layout_width="280.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="2.0dip" >
+
+            <TextView
+                android:id="@+id/flsdk_manager_account_name"
+                style="@style/flsdk_style_c2c2c2_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="280.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/flsdk_account_manager_bottom"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/flsdk_manager_account_modify_pwd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/flsdk_account_manager_round_up_select"
+                android:padding="2.0dip" >
+
+                <TextView
+                    android:id="@+id/flsdk_manager_account_editpwd"
+                    style="@style/flsdk_style_c2c2c2_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:padding="8.0dip"
+                    android:text="@string/flsdk_manager_account_editpwd" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="8.0dip"
+                    android:src="@drawable/flsdk_account_manager_arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/flsdk_manager_account_set_account"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/flsdk_account_manager_round_botom_select"
+                android:padding="2.0dip"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/flsdk_manager_account_band_hide"
+                    style="@style/flsdk_style_c2c2c2_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:padding="8.0dip"
+                    android:text="@string/flsdk_manager_account_band_hide" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="8.0dip"
+                    android:src="@drawable/flsdk_account_manager_arrow" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/flsdk_manager_account_split_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/flsdk_account_line" />
+
+            <RelativeLayout
+                android:id="@+id/flsdk_manager_account_switch"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/flsdk_account_manager_round_botom_select"
+                android:padding="2.0dip" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    style="@style/flsdk_style_c2c2c2_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:padding="8.0dip"
+                    android:text="@string/flsdk_manager_account_logout" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="8.0dip"
+                    android:src="@drawable/flsdk_account_manager_arrow" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/flskd_manager_account_security_tips"
+            android:layout_width="280.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="2.0dip" >
+
+            <TextView
+                android:id="@+id/flsdk_manager_account_level"
+                style="@style/flsdk_style_c2c2c2_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="8.0dip"
+                android:text="@string/flsdk_manager_account_level" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/flsdk_manager_account_band_layout"
+            android:layout_width="280.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/flsdk_account_manager_bottom"
+            android:padding="2.0dip" >
+
+            <TextView
+                android:id="@+id/flsdk_manager_account_band"
+                style="@style/flsdk_style_c2c2c2_14"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:padding="8.0dip"
+                android:text="@string/flsdk_manager_account_band" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="10.0dip"
+                android:src="@drawable/flsdk_account_manager_arrow" />
+        </RelativeLayout>
+
+        <include layout="@layout/flsdk_base_divide_line_layout" />
+
+        <TextView
+            android:id="@+id/flsdk_manager_account_band_tips"
+            style="@style/flsdk_style_c2c2c2_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/flsdk_manager_account_band_tips" />
+    </LinearLayout>
+
+    <include layout="@layout/flsdk_base_loading_layout" />
+
+</merge>

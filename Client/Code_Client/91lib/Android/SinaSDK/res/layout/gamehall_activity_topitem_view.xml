@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gamehall_mine_selector" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gamehall_activity_img_height"
+        android:scaleType="fitXY" />
+
+</FrameLayout>

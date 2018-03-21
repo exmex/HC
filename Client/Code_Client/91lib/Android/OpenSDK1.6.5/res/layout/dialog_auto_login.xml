@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/nmgc_auto_login_dialog_width"
+    android:layout_height="@dimen/nmgc_auto_login_dialog_height"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/nmgc_auto_login_dialog_bg"
+    android:orientation="vertical" >
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/nmgc_auto_login_dialog_margin_top"
+        android:src="@drawable/nmgc_auto_login_logo"
+        android:contentDescription="@null"/>
+    <LinearLayout
+        android:id="@+id/dialog_auto_login_user_layout"
+        android:layout_marginTop="@dimen/nmgc_auto_login_dialog_margin_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/nmgc_auto_login_dialog_account_margin_left"
+            android:text="@string/nmgc_auto_login_current_account"
+            android:textColor="@color/nmgc_auto_login_dialog_text_color_1"
+            android:textSize="15sp"  />
+
+        <TextView
+            android:id="@+id/dialog_auto_login_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/nmgc_auto_login_dialog_text_color_1"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dialog_auto_login_accountType_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/nmgc_auto_login_dialog_account_midle_line_margin_top"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/nmgc_auto_login_dialog_account_margin_left"
+            android:text="@string/nmgc_auto_login_account_type"
+            android:textColor="@color/nmgc_auto_login_dialog_text_color_1"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/dialog_auto_login_accountType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/nmgc_auto_login_dialog_text_color_1"
+            android:textSize="15sp" />
+    </LinearLayout>
+	<RelativeLayout 
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:layout_marginTop="@dimen/nmgc_auto_login_dialog_loading_margin_top"
+	    android:orientation="vertical">
+	    <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/nmgc_auto_login_dialog_text_color_1"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/nmgc_auto_login_tips"
+            android:textSize="20sp"/>
+	    <ProgressBar 
+	        android:layout_width="@dimen/nmgc_auto_login_dialog_progress_w_h"
+	        android:layout_height="@dimen/nmgc_auto_login_dialog_progress_w_h"
+	        android:layout_marginRight="@dimen/nmgc_auto_login_dialog_progress_margin_right"
+	        android:layout_alignParentRight="true"
+	        android:indeterminateDrawable="@drawable/nmgc_auto_login_progress"
+	        android:layout_centerVertical="true"/>
+	</RelativeLayout>
+</LinearLayout>

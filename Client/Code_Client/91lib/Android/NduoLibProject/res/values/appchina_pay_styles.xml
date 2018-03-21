@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style parent="android:Theme.Black" name="appchina_pay_label_theme">
+	<item name="android:textSize">16dip</item>
+	<item name="android:textColor">#000000</item>
+	<item name="android:layout_gravity">center_vertical</item>
+</style>
+
+<style name="appchina_pay_AlertDialog" parent="@android:style/Theme.Dialog">
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:paddingLeft">10dip</item>
+		<item name="android:paddingRight">10dip</item>
+    </style>
+
+<style name="appchina_pay_MySpinner" parent="@android:style/Widget.DropDownItem.Spinner">
+		<item name="android:checkMark">@drawable/appchina_pay_checkbox_btn</item>
+    </style>
+
+
+<style name="appchina_pay_Theme" parent="android:Theme.Translucent.NoTitleBar">
+		<!-- <item name="android:windowAnimationStyle">@style/Animation</item> -->
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:configChanges">orientation|keyboardHidden</item>
+		<item name="android:windowBackground">@null</item>
+		<item name="android:windowContentOverlay">@null</item>
+		<item name="android:windowAnimationStyle">@null</item>
+		<item name="android:windowDisablePreview">true</item>
+		<item name="android:alwaysRetainTaskState">true</item>
+</style>
+<style name="appchina_pay_text_14">
+	<item name="android:textSize">14sp</item>
+	<item name="android:textColor">#000000</item>
+</style>
+<style name="appchina_pay_text_14_gray">
+	<item name="android:textSize">14sp</item>
+	<item name="android:textColor">#666666</item>
+</style>
+<style name="appchina_pay_text_16">
+	<item name="android:textSize">16sp</item>
+	<item name="android:textColor">#000000</item>
+</style>
+<style name="appchina_pay_text_gray_16">
+	<item name="android:textSize">16sp</item>
+	<item name="android:textColor">#666666</item>
+</style>
+<style name="appchina_pay_text_gray_14">
+	<item name="android:textSize">14sp</item>
+	<item name="android:textColor">#666666</item>
+</style>
+<style name="appchina_pay_button_text_16">
+	<item name="android:textSize">16sp</item>
+	<item name="android:textColor">#ffffff</item>
+</style>
+<style name="appchina_pay_button_text_14">
+	<item name="android:textSize">14sp</item>
+	<item name="android:textColor">#ffffff</item>
+</style>
+<style name="appchina_pay_text_18">
+	<item name="android:textSize">18sp</item>
+	<item name="android:textColor">#000000</item>
+</style>
+<style name="appchina_pay_text_input">
+	<item name="android:textSize">16sp</item>
+	<item name="android:textColor">#000000</item>
+</style>
+<style name="appchina_pay_text_highlight">
+	<item name="android:textSize">16sp</item>
+	<item name="android:textColor">#ff7800</item>
+</style>
+<style name="appchina_pay_text_highlight_14">
+	<item name="android:textSize">14sp</item>
+	<item name="android:textColor">#ff7800</item>
+</style>
+<style name="appchina_pay_text_highlight_16">
+	<item name="android:textSize">16sp</item>
+	<item name="android:textColor">#ff7800</item>
+</style>
+<style name="appchina_pay_text_highlight_18">
+	<item name="android:textSize">18sp</item>
+	<item name="android:textColor">#ff7800</item>
+</style>
+<style name="appchina_pay_text_highlight_20">
+	<item name="android:textSize">20sp</item>
+	<item name="android:textColor">#ff7800</item>
+</style>
+<style name="appchina_pay_text_highlight_24">
+	<item name="android:textSize">24sp</item>
+	<item name="android:textColor">#ff7800</item>
+</style>
+<style name="appchina_pay_text_green_16">
+	<item name="android:textSize">16sp</item>
+	<item name="android:textColor">#005c6a</item>
+</style>
+<style name="appchina_pay_text_green_18">
+	<item name="android:textSize">18sp</item>
+	<item name="android:textColor">#005c6a</item>
+</style>
+<style name="appchina_pay_listview_line">
+	<item name="android:layout_width">fill_parent</item>
+	<item name="android:layout_height">1dip</item>
+	<item name="android:background">#eee</item>
+	<item name="android:layout_marginTop">10dip</item>
+	<item name="android:layout_marginBottom">10dip</item>
+</style>
+<!-- style name="spinner">
+  <item name="android:background">@drawable/spinner</item> 
+  <item name="android:clickable">true</item> 
+  </style-->
+  
+<style name="appchina_pay_Transparent">
+    <item name="android:windowBackground">@color/appchina_pay_transparent</item>
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item>
+</style>
+
+<style name="appchina_pay_EmptyTheme" parent="android:Theme.Translucent.NoTitleBar">
+		<item name="android:windowAnimationStyle">@style/appchina_pay_Animation</item>
+		<item name="android:configChanges">orientation|keyboardHidden</item>
+	</style>
+	<style name="appchina_pay_Animation">
+
+		<item name="android:activityOpenEnterAnimation">@null</item>
+
+		<item name="android:activityOpenExitAnimation">@null</item>
+
+		<item name="android:activityCloseEnterAnimation">@null</item>
+
+		<item name="android:activityCloseExitAnimation">@null</item>
+
+		<item name="android:taskOpenEnterAnimation">@null</item>
+
+		<item name="android:taskOpenExitAnimation">@null</item>
+
+		<item name="android:taskCloseEnterAnimation">@null</item>
+
+		<item name="android:taskCloseExitAnimation">@null</item>
+
+		<item name="android:taskToFrontEnterAnimation">@null</item>
+
+		<item name="android:taskToFrontExitAnimation">@null</item>
+
+		<item name="android:taskToBackEnterAnimation">@null</item>
+
+		<item name="android:taskToBackExitAnimation">@null</item>
+
+	</style>
+	<style name="appchina_pay_Theme.Translucent">
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:windowIsTranslucent">true</item>
+		<item name="android:windowNoTitle">true</item>
+	</style>
+
+</resources>

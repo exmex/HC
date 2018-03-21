@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nuclear.sdk"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- So that we can get the account name -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- Used to request data from the Google+ APIs in the SignInActivity -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Required if we need to invalidate access tokens -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_dev"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="263429413838799" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.nuclear.sdk.active.TestDemo"
+            android:label="@string/app_dev"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nuclear.sdk.active.SdkPreLogin"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.FloatActivity"
+            />
+        <activity
+            android:name="com.nuclear.sdk.active.SdkRegist"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.FloatActivity"
+            android:windowSoftInputMode="adjustPan" />
+
+    
+        <meta-data
+            android:name="nuclear_channel"
+            android:value="1000" />
+
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:label="@string/app_dev"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+        <activity
+            android:name="com.nuclear.sdk.active.SdkLogin"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/u2_AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.nuclear.sdk.active.SdkLoginMain"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.FloatActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.nuclear.sdk.active.SdkControlCenter"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.FloatActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.nuclear.sdk.active.SdkPay"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/u2_AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.nuclear.sdk.active.SdkRegistBind"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.FloatActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.nuclear.sdk.active.SdkRegistBindPre"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.FloatActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.nuclear.sdk.active.SdkProtocal"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.FloatActivity"
+            android:windowSoftInputMode="adjustPan" />
+        
+
+    </application>
+
+</manifest>

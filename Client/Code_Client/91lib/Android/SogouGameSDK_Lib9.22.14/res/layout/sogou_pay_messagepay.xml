@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_background_color"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/main_background_color"
+        android:orientation="vertical" >
+
+        <include layout="@layout/sogou_head" />
+
+        <include layout="@layout/sogou_pay_info" />
+
+        <TextView
+            android:id="@+id/sogou_pay_method"
+            style="@style/main_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/mssage_pay_tips" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/sogou_pay_message_blance_label"
+                style="@style/main_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/mssage_pay_amount" />
+
+            <EditText
+                android:id="@+id/sogou_pay_message_blance_text"
+                style="@style/input_font"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/sogou_pay_message_blance_label"
+                android:background="@drawable/info_background"
+                android:hint="@string/mssage_pay_input_amount"
+                android:inputType="number"
+                android:maxLength="5"
+                android:paddingLeft="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/sogou_pay_messagepay_droplist_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="-40dip"
+                android:background="@drawable/arrow_drop_list_press" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/sogou_pay_message_blance_place"
+                style="@style/main_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/mssage_pay_code"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/sogou_pay_message_blance_code_text"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/sogou_pay_message_blance_place"
+                android:background="@drawable/button_black_press"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/mssage_pay_send_code"
+                android:textColor="#FFFFFF"
+                android:textSize="22dip"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/sogou_pay_card_blance_text"
+                style="@style/main_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/mssage_pay_code" />
+
+            <EditText
+                android:id="@+id/sogou_pay_message_blance_code"
+                style="@style/input_font"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/sogou_pay_card_blance_text"
+                android:background="@drawable/info_background"
+                android:hint="@string/mssage_pay_input_code"
+                android:paddingLeft="10dp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/sogou_pay_select_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_red_press"
+            android:text="@string/all_pay_confirm"
+            android:textColor="#FFFFFF"
+            android:textSize="22dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</ScrollView>

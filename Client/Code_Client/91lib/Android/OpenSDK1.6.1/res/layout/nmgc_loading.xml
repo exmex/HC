@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/nmgc_loading_border_width"
+    android:layout_height="@dimen/nmgc_loading_border_height"
+    android:background="@drawable/rank_listitem_bg"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+    <ProgressBar
+        android:id="@+id/nmgc_pop_progress_small"
+        style="@style/nmgc_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/nmgc_loading_spinner_left"
+        android:gravity="center_vertical" />
+    <TextView
+        android:id="@+id/nmgc_loading_txt"
+        style="@style/nmgc_login_button_text"
+        android:textSize="@dimen/nmgc_loading_text_size"
+        android:layout_marginLeft="@dimen/nmgc_loading_text_left"
+       	android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+</LinearLayout>

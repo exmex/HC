@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingBottom="@dimen/size_20" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_marginRight="@dimen/size_10"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/size_48"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/size_5" >
+
+                    <Button
+                        android:id="@+id/getcode_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/size_40"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/size_10"
+                        android:background="@drawable/anzhi_button_bg_orange"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/get_authcode_txt"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/font_16" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/size_48"
+                        android:layout_toLeftOf="@id/getcode_tv"
+                        android:background="@drawable/anzhi_input_normal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                              android:gravity="right|center"
+                            android:minEms="4"
+                            android:text="@string/anzhi_telnumber"
+                            android:textColor="@color/anzhi_494949"
+                            android:textSize="@dimen/font_16" />
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:background="@android:color/white" >
+
+                            <EditText
+                                android:id="@+id/tel_et"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:hint="@string/anzhi_input_telnumber"
+                                android:inputType="phone"
+                                android:paddingLeft="5dip"
+                                android:paddingRight="5dip"
+                                android:singleLine="true"
+                                android:textColor="@color/anzhi_494949"
+                                android:textColorHint="@color/anzhi_d0d0d0"
+                                android:textSize="@dimen/font_16" >
+
+                                <requestFocus />
+                            </EditText>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/size_48"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/size_5" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/size_48"
+                        android:background="@drawable/anzhi_input_normal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                           
+                            android:gravity="right|center"
+                            android:minEms="4"
+                            android:text="@string/anzhi_validatecode"
+                            android:textColor="@color/anzhi_494949"
+                            android:textSize="@dimen/font_16" />
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:background="@android:color/white" >
+
+                            <EditText
+                                android:id="@+id/code_edittext"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:hint="@string/anzhi_input_six_validatecode"
+                                android:inputType="number"
+                                android:paddingLeft="5dip"
+                                android:paddingRight="5dip"
+                                android:singleLine="true"
+                                android:textColor="@color/anzhi_494949"
+                                android:textColorHint="@color/anzhi_d0d0d0"
+                                android:textSize="@dimen/font_16" >
+
+                                <requestFocus />
+                            </EditText>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/yuan_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/size_48"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/size_5"
+                    android:background="@drawable/anzhi_input_normal"
+                    android:gravity="center_vertical"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:id="@+id/yuanzhifu_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                       
+                        android:gravity="right|center"
+                        android:minEms="4"
+                        android:text="@string/anzhi_paypwd"
+                        android:textColor="@color/anzhi_494949"
+                        android:textSize="@dimen/font_16" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/size_48"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_toRightOf="@id/yuanzhifu_textview"
+                        android:background="@android:color/white" >
+
+                        <EditText
+                            android:id="@+id/pwd_yuan"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@null"
+                            android:ems="10"
+                            android:hint="@string/anzhi_input_paypwd"
+                            android:inputType="textPassword"
+                            android:paddingLeft="5dip"
+                            android:paddingRight="5dip"
+                            android:password="true"
+                            android:singleLine="true"
+                            android:textColor="@color/anzhi_494949"
+                            android:textColorHint="@color/anzhi_d0d0d0"
+                            android:textSize="@dimen/font_16" >
+
+                            <requestFocus />
+                        </EditText>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/new_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/size_48"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/size_5"
+                    android:background="@drawable/anzhi_input_normal"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/zhifu_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:gravity="right|center_vertical"
+                        android:minEms="4"
+                        android:text="@string/anzhi_confirm_pwd"
+                        android:textColor="@color/anzhi_494949"
+                        android:textSize="@dimen/font_16" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/size_48"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_toRightOf="@id/zhifu_textview"
+                        android:background="@android:color/white" >
+
+                        <EditText
+                            android:id="@+id/pwd_first"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@null"
+                            android:ems="10"
+                            android:hint="@string/anzhi_input_paypwd"
+                            android:inputType="textPassword"
+                            android:paddingLeft="5dip"
+                            android:paddingRight="5dip"
+                            android:password="true"
+                            android:singleLine="true"
+                            android:textColor="@color/anzhi_494949"
+                            android:textColorHint="@color/anzhi_d0d0d0"
+                            android:textSize="@dimen/font_16" >
+
+                            <requestFocus />
+                        </EditText>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/new2_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="20dip"
+                    android:gravity="center_vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/zhifu_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/anzhi_confirm_paypwd" />
+
+                    <EditText
+                        android:id="@+id/pwd_second"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/zhifu_textview"
+                        android:layout_marginTop="10dip"
+                        android:ems="10"
+                        android:hint="@string/anzhi_input_paypwd" >
+
+                        <requestFocus />
+                    </EditText>
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/size_40"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/size_40"
+                    android:layout_marginRight="@dimen/size_40"
+                    android:layout_marginTop="@dimen/size_40"
+                    android:background="@drawable/anzhi_button_bg_green"
+                    android:gravity="center"
+                    android:text="@string/anzhi_setup_atonce"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_18" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_10"
+                    android:layout_marginRight="@dimen/size_10"
+                    android:layout_marginTop="@dimen/size_40"
+                    android:text="@string/anzhi_friendly_prompt"
+                    android:textColor="@color/anzhi_757575"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_10"
+                    android:layout_marginRight="@dimen/size_10"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:text="@string/anzhi_setuppaypwd_prompt"
+                    android:textColor="@color/anzhi_757575"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_10"
+                    android:layout_marginRight="@dimen/size_10"
+                    android:text="@string/anzhi_validatephone_for_setuppaypwd"
+                    android:textColor="@color/anzhi_757575"
+                    android:textSize="@dimen/font_14" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

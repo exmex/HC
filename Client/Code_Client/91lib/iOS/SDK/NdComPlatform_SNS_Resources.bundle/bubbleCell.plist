@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>subViewPos</key>
+	<dict>
+		<key>leftBubble</key>
+		<dict>
+			<key>leftMargin</key>
+			<integer>17</integer>
+			<key>rightMargin</key>
+			<integer>12</integer>
+			<key>topMargin</key>
+			<integer>6</integer>
+			<key>bottomMargin</key>
+			<integer>11</integer>
+		</dict>
+		<key>rightBubble</key>
+		<dict>
+			<key>leftMargin</key>
+			<integer>15</integer>
+			<key>rightMargin</key>
+			<integer>19</integer>
+			<key>topMargin</key>
+			<integer>6</integer>
+			<key>bottomMargin</key>
+			<integer>12</integer>
+		</dict>
+		<key>borderXmargin</key>
+		<integer>2</integer>
+		<key>borderYmargin</key>
+		<integer>3</integer>
+		<key>yMargin</key>
+		<integer>2</integer>
+	</dict>
+	<key>imgFile</key>
+	<dict>
+		<key>leftBubble</key>
+		<string>paopao1</string>
+		<key>rightBubble</key>
+		<string>paopao</string>
+	</dict>
+	<key>CellFont</key>
+	<dict>
+		<key>timeFont</key>
+		<integer>15</integer>
+		<key>timeFontColor</key>
+		<string>0.1,0.1,0.1,1</string>
+		<key>contentFont</key>
+		<integer>17</integer>
+		<key>contentFontColor</key>
+		<string>0,0,0,1</string>
+	</dict>
+</dict>
+</plist>

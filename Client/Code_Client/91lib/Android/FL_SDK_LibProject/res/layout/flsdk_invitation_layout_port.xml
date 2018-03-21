@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <include layout="@layout/flsdk_base_bg_layout_port" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="45.0dip"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10.0dip" >
+
+            <WebView
+                android:id="@+id/flsdk_invitation_image_webview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="12.0dip"
+                android:layerType="software"
+                android:scrollbars="none" />
+
+            <RelativeLayout
+                android:id="@+id/flsdk_invitation_code_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/flsdk_invitation_image_webview"
+                android:background="@drawable/flsdk_invite_friend_bg"
+                android:paddingRight="5.0dip" >
+
+                <com.fl.gamehelper.ui.widget.BoldButton
+                    android:id="@+id/flsdk_invitation_copy_textview"
+                    style="@style/flsdk_style_white_14"
+                    android:layout_width="48.0dip"
+                    android:layout_height="48.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/flsdk_invite_friend_copy_btn_bg"
+                    android:onClick="copyClick" />
+
+                <TextView
+                    android:id="@+id/flsdk_invitation_num_textview"
+                    style="@style/flsdk_style_white_14"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/flsdk_invitation_copy_textview"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:paddingLeft="16.0dip"
+                    android:paddingRight="20.0dip"
+                    android:singleLine="true"
+                    android:text="" />
+            </RelativeLayout>
+
+            <WebView
+                android:id="@+id/flsdk_invitation_rule_webview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/flsdk_invitation_code_lay"
+                android:layout_centerHorizontal="true"
+                android:layerType="software"
+                android:scrollbars="none" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <include layout="@layout/flsdk_base_loading_layout" />
+
+</merge>

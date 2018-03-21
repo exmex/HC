@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="appchina_pay_cateorg_textcolor">#001740</color>
+    <color name="appchina_pay_transparent" > #0000 </color> 
+    <drawable name="appchina_pay_link_text_on">#ff9200</drawable>   
+</resources>

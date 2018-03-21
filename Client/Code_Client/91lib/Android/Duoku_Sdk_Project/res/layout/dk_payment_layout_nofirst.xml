@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The right region end int the same step start -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/dk_bg"
+    android:orientation="vertical"
+    android:paddingRight="8dp">
+    
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/dk_layout_payment_notice"
+        android:layout_width="fill_parent"
+     	android:layout_height="wrap_content"
+     	android:orientation="horizontal"
+     	android:gravity="center_vertical"
+     	android:layout_marginLeft="12dp"
+     	android:layout_marginBottom="8dp">
+     	
+     	<ImageView 
+     	    android:id="@+id/dk_iv_payment_notice"
+     	    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/dk_ic_announcement" />
+
+     	<com.duoku.platform.view.MarqueeTextView
+     	    android:id="@+id/dk_tv_payment_notice"
+     	    android:layout_width="wrap_content"
+     	    android:layout_height="wrap_content"
+     	    android:gravity="center_vertical"
+     	    android:layout_marginLeft="4dp"
+     	    android:ellipsize="marquee" 
+	        android:focusable="true" 
+	        android:singleLine="true"
+	        android:marqueeRepeatLimit="marquee_forever" 
+	        android:focusableInTouchMode="true" 
+	        android:scrollHorizontally="true"
+     	    android:text="@string/dk_payment_notice"
+     	    android:textColor="@color/dk_color_ff3300"
+     	    android:textSize="@dimen/text_size_12_sp" />
+
+     </LinearLayout>
+     
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <TextView 
+            android:id="@+id/dk_tv_last_payment_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:textColor="#333333"
+            android:textSize="@dimen/text_size_14_sp"
+            android:text="@string/dk_last_pay_mode"/>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+         	android:layout_height="wrap_content"
+         	android:orientation="horizontal"
+         	android:layout_marginTop="4dp" >
+         	
+         	<include
+         	    android:id="@+id/dk_layout_kubi_card" 
+         	    layout="@layout/dk_payment_layout_card"/>
+         
+         	<include
+         	    android:visibility="invisible"
+         	    android:id="@+id/dk_layout_recharge_card"
+         	    layout="@layout/dk_payment_layout_card"/>
+     	</LinearLayout>
+    </LinearLayout>
+ 
+    <LinearLayout 
+        android:id="@+id/dk_layout_select_mode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp">
+        
+        <TextView 
+            android:id="@+id/dk_tv_other_payment_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:textSize="@dimen/text_size_14_sp"
+            android:text="@string/dk_other_pay_mode"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <LinearLayout
+         	android:layout_width="fill_parent"
+         	android:layout_height="wrap_content"
+         	android:orientation="horizontal"
+         	android:layout_marginTop="4dp" >
+
+         	<include
+         	    android:visibility="invisible"
+         	    android:id="@+id/dk_layout_pay_card" 
+         	    layout="@layout/dk_payment_layout_card"/>
+         
+         	<include
+         	    android:visibility="invisible"
+         	    android:id="@+id/dk_layout_bank_card" 
+         	    layout="@layout/dk_payment_layout_card"/>
+     	</LinearLayout>
+        
+     	<LinearLayout
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:orientation="horizontal"
+	         android:layout_marginTop="8dp" >
+         	
+         	<include
+         	    android:visibility="invisible"
+         	    android:id="@+id/dk_layout_wealth_card"
+         	    layout="@layout/dk_payment_layout_card"/>
+         
+	        <include
+	             android:visibility="invisible"
+	             android:id="@+id/dk_layout_game_card" 
+	         	 layout="@layout/dk_payment_layout_card"/>
+      	</LinearLayout>
+      	
+     	<LinearLayout
+     	    android:visibility="gone"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:orientation="horizontal"
+	         android:layout_marginTop="8dp" >
+         	
+         	<include
+         	    android:visibility="invisible"
+         	    layout="@layout/dk_payment_layout_card"/>
+         
+	        <include
+	             android:visibility="invisible"
+	         	 layout="@layout/dk_payment_layout_card"/>
+      	</LinearLayout>
+   	</LinearLayout>
+</LinearLayout>
+<!-- The right region end int the same step end -->

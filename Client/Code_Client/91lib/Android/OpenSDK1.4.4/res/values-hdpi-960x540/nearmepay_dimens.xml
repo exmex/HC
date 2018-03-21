@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="nearmepay_dialog_width">327dip</dimen>
+    <dimen name="nearmepay_dialog_loading_width">237dp</dimen>
+    <dimen name="nearmepay_dialog_footer_margin">18dp</dimen>
+    <dimen name="nearmepay_dialog_botton_between">8dp</dimen>
+    <dimen name="nearmepay_dialog_botton_height">43dp</dimen>
+    <dimen name="nearmepay_dialog_message_margin_bottom">25dp</dimen>
+    <dimen name="nearmepay_dialog_message_margin_top">19dp</dimen>
+    <dimen name="nearmepay_title_big_size">22dp</dimen>
+    <dimen name="nearmepay_dialog_text_size">20dp</dimen>
+    <dimen name="nearmepay_dialog_button_size">20dp</dimen>
+    <dimen name="nearmepay_dialog_progress_text">16dp</dimen>
+</resources>

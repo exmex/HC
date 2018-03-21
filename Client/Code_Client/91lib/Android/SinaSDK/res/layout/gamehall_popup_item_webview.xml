@@ -1,0 +1,21 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center" >
+
+    <WebView
+        android:id="@+id/gamehall_popup_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        android:id="@+id/gamehall_network_error_view"
+        layout="@layout/gamehall_nonet_page" />
+    
+    <include 
+        android:id="@+id/gamehall_net_loading"
+        layout="@layout/gamehall_loading_view"
+        android:visibility="gone"
+        />
+
+</FrameLayout>

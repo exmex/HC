@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     style="@style/upomp_lthj_scrollview_big" >
+<LinearLayout 
+      style="@style/upomp_lthj_layout_padding"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >    
+    <ImageView
+        android:layout_width="198dip"
+        android:layout_height="86dip"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/upomp_lthj_splash_logo" />
+    <LinearLayout style="@style/upomp_lthj_about_item" android:orientation="horizontal" android:layout_marginTop="10dip">
+		<TextView style="@style/upomp_lthj_about_textview" android:text="银联手机支付安全支付控件" />
+	</LinearLayout>
+	<LinearLayout style="@style/upomp_lthj_about_item" android:orientation="horizontal">
+		<TextView style="@style/upomp_lthj_about_textview" android:text="版本说明:"/>
+		<TextView style="@style/upomp_lthj_about_textview" android:text="@string/upomp_lthj_version"/>
+	</LinearLayout>
+	<LinearLayout style="@style/upomp_lthj_about_item" android:orientation="horizontal">
+   		<TextView style="@style/upomp_lthj_about_textview" android:text="客服电话:"/>
+		<TextView style="@style/upomp_lthj_about_textview" android:text="95516"/>
+	</LinearLayout>
+<LinearLayout style="@style/upomp_lthj_about_item" android:orientation="horizontal">
+		<TextView style="@style/upomp_lthj_about_textview" android:text="中国银联股份有限公司版权所有"/>
+	</LinearLayout>
+<LinearLayout style="@style/upomp_lthj_about_item" android:orientation="horizontal">
+		<TextView style="@style/upomp_lthj_about_textview" android:text="@string/upomp_lthj_about_copyright"/>
+	</LinearLayout>
+<LinearLayout style="@style/upomp_lthj_about_item" android:orientation="horizontal">
+		<TextView style="@style/upomp_lthj_about_textview" android:text="北京融信优贝网络技术有限公司"/>
+	</LinearLayout>
+<LinearLayout style="@style/upomp_lthj_about_item" android:orientation="horizontal">
+		<TextView style="@style/upomp_lthj_about_textview" android:text="创建编号:"/>
+		<TextView style="@style/upomp_lthj_about_textview" android:id="@id/upomp_lthj_build_no" />
+	</LinearLayout>
+</LinearLayout>
+</ScrollView>

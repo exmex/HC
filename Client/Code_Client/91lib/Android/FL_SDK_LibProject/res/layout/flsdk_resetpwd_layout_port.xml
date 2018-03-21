@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 重置密码-竖版 -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <include layout="@layout/flsdk_base_bg_layout_port" />
+
+    <LinearLayout style="@style/flsdk_style_body_lay_port" >
+
+        <com.fl.gamehelper.ui.widget.BaseEditTextView
+            android:id="@+id/flsdk_resetpwd_code_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <com.fl.gamehelper.ui.widget.BaseEditTextView
+            android:id="@+id/flsdk_resetpwd_new_pwd_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14.0dip" />
+
+        <TextView
+            android:id="@+id/flsdk_resetpwd_new_pwd_tip"
+            style="@style/flsdk_style_c2c2c2_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dip"
+            android:text="@string/flsdk_resetpwd_new_pwd_tip"
+            android:visibility="gone" />
+
+        <com.fl.gamehelper.ui.widget.BaseEditTextView
+            android:id="@+id/flsdk_resetpwd_sure_pwd_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14.0dip" />
+
+        <include
+            android:id="@+id/flsdk_resetpwd_pwd_check_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dip"
+            layout="@layout/flsdk_base_checkbox_layout"
+            android:visibility="gone" />
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:layout_marginTop="14.0dip"
+            android:layout_marginBottom="14.0dip"
+            layout="@layout/flsdk_register_button_layout" />
+
+        <include layout="@layout/flsdk_base_divide_line_layout" />
+
+        <TextView
+            style="@style/flsdk_style_c2c2c2_14"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14.0dip"
+            android:gravity="center"
+            android:text="@string/flsdk_verify_fail" />
+
+        <com.fl.gamehelper.ui.widget.BoldButton
+            android:id="@+id/flsdk_verify_count_down_btn"
+            style="@style/flsdk_style_btn_green"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14.0dip"
+            android:layout_marginBottom="14.0dip"
+            android:onClick="countClick"
+            android:text="@string/flsdk_verify_again" />
+    </LinearLayout>
+
+    <include layout="@layout/flsdk_base_loading_layout" />
+
+</merge>

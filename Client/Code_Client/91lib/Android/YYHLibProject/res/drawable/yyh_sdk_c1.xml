@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/yyh_sdk_c1_pressed" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/yyh_sdk_c_1_unpress" android:state_pressed="false"></item>
+
+</selector>

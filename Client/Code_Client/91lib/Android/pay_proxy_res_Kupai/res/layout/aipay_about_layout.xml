@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/aipay_margin_vertical"
+    android:layout_marginBottom="@dimen/aipay_margin_vertical"
+    android:layout_marginRight="@dimen/aipay_margin_horizontal"
+    android:layout_marginLeft="@dimen/aipay_margin_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/aipay_bg">
+    
+    <include android:id="@+id/v_title_aipay"
+        layout="@layout/aipay_title_bar"/>
+    
+    <ScrollView android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:layout_marginBottom="5dp"
+    	android:scrollbarThumbVertical="@drawable/aipay_scrollbar"
+    	android:fadingEdge="none"
+    	android:background="@color/aipay_white">
+    	
+        <RelativeLayout android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:background="@color/white">
+            <ImageView android:id="@+id/iv_logo_aipay"
+		        android:layout_width="115dp"
+		        android:layout_height="40dp"
+		        android:layout_marginTop="55dp"
+		        android:layout_marginBottom="43dp"
+		        android:scaleType="fitXY"
+		        android:layout_centerHorizontal="true"
+		        android:src="@drawable/aipay_ic_logo_about"
+		        android:contentDescription="@null"/>   
+	        
+		    <TextView android:id="@+id/tv_name_aipay"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginBottom="9dp"
+		        android:layout_marginLeft="29dp"
+		        android:layout_below="@id/iv_logo_aipay"
+		        android:textSize="13sp"
+		        android:textColor="@color/aipay_grey"
+		        android:text="@string/aipay_unit"/>
+		    
+		    <View android:id="@+id/v_divide_name_aipay"
+		        android:layout_width="match_parent"
+		        android:layout_marginLeft="29dp"
+		        android:layout_marginRight="29dp"
+		        android:layout_height="1dp"
+		        android:layout_below="@id/tv_name_aipay"
+		        android:background="#d2dbe6"/>
+		    
+		    <TextView android:id="@+id/tv_description_aipay"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="14dp"
+		        android:layout_marginBottom="20dp"
+		        android:layout_marginLeft="29dp"
+		        android:layout_marginRight="29dp"
+		        android:layout_below="@+id/v_divide_name_aipay"
+		        android:textSize="13sp"
+		        android:textColor="@color/aipay_black_1"
+		        android:text="@string/aipay_vb_desc"/>
+		     
+		    <TextView android:id="@+id/tv_exchange_aipay"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginBottom="9dp"
+		        android:layout_marginLeft="29dp"
+		        android:layout_below="@id/tv_description_aipay"
+		        android:textSize="13sp"
+		        android:textColor="@color/aipay_grey"
+		        android:text="@string/aipay_convert"/>
+		    
+		    <View android:id="@+id/v_divide_aipay"
+		        android:layout_width="match_parent"
+		        android:layout_marginLeft="29dp"
+		        android:layout_marginRight="29dp"
+		        android:layout_height="1dp"
+		        android:layout_below="@+id/tv_exchange_aipay"
+		        android:background="#d2dbe6"/>
+		    
+		     <TextView android:id="@+id/tv_exchange_detail_aipay"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="14dp"
+		        android:layout_marginBottom="50dp"
+		        android:layout_marginLeft="29dp"
+		        android:layout_marginRight="29dp"
+		        android:layout_below="@+id/v_divide_aipay"
+		        android:textSize="13sp"
+		        android:textColor="@color/aipay_black_1"
+		        android:text="@string/aipay_exchange"/>
+		    
+		    <LinearLayout android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:gravity="center_horizontal"
+		        android:layout_alignParentBottom="true"
+		        android:layout_below="@+id/tv_exchange_detail_aipay">
+		        
+			    <TextView android:id="@+id/tv_version_aipay"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginBottom="8dp"
+			        android:textSize="12sp"
+			        android:textColor="@color/aipay_grey"
+			        android:text="@string/aipay_version"/>
+			    
+			    <TextView android:id="@+id/tv_right_ch_aipay"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginBottom="8dp"
+			        android:textSize="12sp"
+			        android:textColor="@color/aipay_grey"
+			        android:text="@string/aipay_cryption"/>
+			     
+			    <TextView android:id="@+id/tv_right_en_aipay"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:paddingBottom="25dp"
+			        android:textSize="12sp"
+			        android:textColor="@color/aipay_grey"
+			        android:text="@string/aipay_copyright"/>
+		    </LinearLayout>
+    	</RelativeLayout>
+    </ScrollView>
+</LinearLayout>

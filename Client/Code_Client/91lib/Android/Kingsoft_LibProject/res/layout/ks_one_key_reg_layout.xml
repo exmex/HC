@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ks_main_layout"
+        android:layout_width="@dimen/ks_cm_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/ks_bg_cm_dialog"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <include layout="@layout/ks_common_cm_title_line_view" />
+
+        <ImageView
+            android:layout_width="@dimen/ks_cm_icon_img_width"
+            android:layout_height="@dimen/ks_cm_icon_img_height"
+            android:layout_marginBottom="@dimen/ks_cm_one_key_reg_logo_margin_bottom"
+            android:layout_marginTop="@dimen/ks_cm_one_key_reg_logo_margin"
+            android:src="@drawable/ks_ic_cm_logo" />
+
+        <Button
+            android:id="@+id/ks_btn_one_key_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ks_cm_one_key_reg_divier_margin"
+            android:layout_marginLeft="@dimen/ks_cm_one_key_reg_btn_margin"
+            android:layout_marginRight="@dimen/ks_cm_one_key_reg_btn_margin"
+            android:background="@drawable/ks_bg_cm_btn_orange_selector"
+            android:minHeight="@dimen/ks_cm_one_key_reg_logo_height"
+            android:minWidth="@dimen/ks_cm_one_key_reg_logo_width"
+            android:shadowColor="@color/ks_cm_button_shadow_color"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="1"
+            android:text="@string/ks_cm_one_key_reg_random_account_text"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/ks_text_size_20" />
+
+        <include layout="@layout/ks_common_cm_shadow_divider" />
+
+        <LinearLayout
+            android:id="@+id/ks_btn_another_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/ks_cm_one_key_reg_another_account_min_height"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="1dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ks_ic_right_arrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/ks_cm_one_key_reg_right_arrow_margin"
+                android:gravity="center_vertical"
+                android:text="@string/ks_cm_use_another_account_login_text"
+                android:textColor="@color/ks_cm_dark_blue"
+                android:textSize="@dimen/ks_text_size_16" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/ks_loading_view" />
+
+</FrameLayout>

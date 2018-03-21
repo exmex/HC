@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nmgc_kebi_account_pre"
+            android:textAppearance="@style/nmgc_kebi_accout_pre" />
+
+        <TextView
+            android:id="@+id/nmgc_kebi_account_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textAppearance="@style/nmgc_kebi_accout_info" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nmgc_kebi_pre"
+            android:textAppearance="@style/nmgc_kebi_accout_pre" />
+
+        <TextView
+            android:id="@+id/nmgc_kebi_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textAppearance="@style/nmgc_kebi_accout_info" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/nmgc_kebi_line_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nmgc_kebi_charge_number"
+            android:textAppearance="@style/nmgc_kebi_accout_info" />
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/nmgc_kebi_line_pre"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:src="@color/nmgc_kebi_line_color" android:contentDescription="@null"/>
+    </RelativeLayout>
+
+</LinearLayout>

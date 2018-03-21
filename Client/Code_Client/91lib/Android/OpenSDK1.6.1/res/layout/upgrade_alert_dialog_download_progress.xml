@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:orientation="vertical" android:layout_gravity="center" 
+		>
+
+	<TextView
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:text="@string/upgrade_dialog_force_upgrade_title"
+	    android:textAppearance="?android:attr/textAppearanceMedium"
+	    android:textColor="@android:color/white" android:layout_marginBottom="10dp"
+	    android:id="@+id/upgrade_dialog_title"
+	    android:layout_marginTop="5dp"/>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/upgrade_line" />	
+    
+	<TextView android:id="@+id/upgrade_tv_notice" android:layout_width="fill_parent"
+		android:gravity="center" android:textColor="@android:color/white"
+		android:layout_marginTop="15dip" android:textSize="15sp"
+		android:layout_height="40dp" android:textAppearance="?android:attr/textAppearanceMedium"/>
+	<LinearLayout 
+		android:layout_width="fill_parent" android:layout_height="40dip"
+		android:gravity="center" android:layout_marginTop="10dp"
+		android:layout_marginBottom="10dp"
+		android:layout_gravity="center" android:orientation="horizontal">
+		
+		<ProgressBar android:id="@+id/upgrade_pb_dailog"
+			style="?android:attr/progressBarStyleHorizontal" android:max="100"
+			android:layout_width="170dp" android:gravity="center" android:layout_gravity="center"
+			android:progressDrawable="@drawable/upgrade_buffer_progress" 
+			android:layout_height="wrap_content" />
+		
+		<TextView 
+			android:id="@+id/upgrade_tv_hint" android:textColor="@android:color/white" 
+			android:gravity="center" android:layout_gravity="center" android:layout_height="wrap_content" 
+			android:layout_width="wrap_content" android:layout_marginLeft="10dip" android:layout_marginRight="10dip" 
+			android:textAppearance="?android:attr/textAppearanceMedium" android:visibility="gone"/>
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:orientation="horizontal" android:gravity="center"
+		>
+		<Button android:id="@+id/upgrade_download_pause" android:layout_height="wrap_content"
+			android:gravity="center" android:layout_marginTop="3dip"
+			android:layout_width="125dip" android:text="@string/upgrade_download_pause"/>
+		<Button android:id="@+id/upgrade_download_cancel" android:layout_height="wrap_content"
+			android:layout_width="125dip" android:text="@string/upgrade_download_cancel"
+			android:gravity="center" android:layout_marginTop="3dip"/>
+	</LinearLayout>
+</LinearLayout>

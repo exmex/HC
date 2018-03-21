@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/u2_proto_title_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="vertical"
+    android:visibility="visible" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:orientation="vertical" >
+
+        <!-- 左按钮 -->
+
+        <Button
+            android:id="@+id/prpto_button_left"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/titlebt_bg"
+            android:gravity="center"
+            android:text="@string/title_back"
+            android:textColor="@color/TextColorWhite"
+            android:textSize="16sp" >
+        </Button>
+
+        <!-- 标题 -->
+
+        <TextView
+            android:id="@+id/u2_prpto_title_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="游戏相关协议"
+            android:textColor="@color/TextColorWhite"
+            android:textSize="22sp" >
+        </TextView>
+
+        <!-- 右按钮 -->
+
+        <Button
+            android:id="@+id/prpto_button_right"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/titlebt_bg"
+            android:gravity="center"
+            android:text="同意"
+            android:textColor="@color/TextColorWhite"
+            android:textSize="16sp"
+            android:visibility="visible" >
+        </Button>
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/u2_proto_show"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:visibility="visible" />
+
+</LinearLayout>

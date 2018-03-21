@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NdCtrls</key>
+	<dict>
+		<key>toolbar</key>
+		<dict>
+			<key>type</key>
+			<string>view</string>
+			<key>viewType</key>
+			<string>UIToolbar</string>
+			<key>autoResizeFlag</key>
+			<string>1,2,4,8</string>
+			<key>rect</key>
+			<string>{{0,0},{320,40}}</string>
+			<key>bottomRightMargin</key>
+			<string>{0,0}</string>
+		</dict>
+		<key>UIPickerView</key>
+		<dict>
+			<key>type</key>
+			<string>view</string>
+			<key>viewType</key>
+			<string>UIPickerView</string>
+			<key>autoResizeFlag</key>
+			<string>1,2,4,8</string>
+			<key>rect</key>
+			<string>{{0,40},{320,216}}</string>
+			<key>bottomRightMargin</key>
+			<string>{0,0}</string>
+		</dict>
+	</dict>
+	<key>NdView</key>
+	<dict>
+		<key>bgColor</key>
+		<string>1,1,1,1</string>
+	</dict>
+	<key>NdExtent</key>
+	<dict>
+		<key>rect</key>
+		<string>{{0,200},{320,256}}</string>
+		<key>rect_landscape</key>
+		<string>{{0,40},{480,256}}</string>
+		<key>rect_ipad</key>
+		<string>{{0,200},{480,256}}</string>
+	</dict>
+</dict>
+</plist>

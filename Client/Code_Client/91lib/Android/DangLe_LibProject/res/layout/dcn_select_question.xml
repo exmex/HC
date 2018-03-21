@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dcn_pop_up_bg"
+        android:paddingBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dcn_title_height"
+            android:paddingLeft="@dimen/dcn_login_padding_left_right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="22sp"
+                android:textColor="@color/dcn_ucenter_navi_text_color_pressed"
+                android:text="@string/dcn_select_question_title" />
+
+            <LinearLayout
+                android:id="@+id/dcn_question_exit"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/dcn_back_btn_selector"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dcn_popup_closed_selector" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/dcn_question_list"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/dcn_transparent"
+            android:dividerHeight="5dp"
+            android:paddingLeft="@dimen/dcn_login_padding_left_right"
+            android:paddingRight="@dimen/dcn_login_padding_left_right"
+            android:cacheColorHint="@android:color/transparent"
+            android:listSelector="@android:color/transparent"
+            android:measureWithLargestChild="true" />
+    </LinearLayout>
+
+</RelativeLayout>

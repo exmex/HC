@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:gravity="right">
+
+    <LinearLayout
+        android:id="@+id/dcn_switch_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/dcn_login_switch_account_selector">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dcn_login_switch_account_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dcn_switch_account"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/dcn_light_black"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/dcn_login_box_bg"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dcn_mid_account"
+                android:textSize="16sp"
+                android:textColor="@color/dcn_light_black" />
+
+            <TextView
+                android:id="@+id/dcn_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/dcn_ucenter_navi_text_color_pressed" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dcn_loading_progress"
+                android:textSize="16sp"
+                android:textColor="@color/dcn_light_black" />
+
+            <ProgressBar
+                style="@style/dcn_progress_loading"
+                android:indeterminateOnly="true"
+                android:indeterminateDrawable="@drawable/dcn_login_progress"
+                android:indeterminateBehavior="repeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

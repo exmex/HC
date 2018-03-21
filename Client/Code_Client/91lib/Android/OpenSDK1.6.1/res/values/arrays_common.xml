@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="nmgc_first_greets" translatable="false">
+	    <item>欢迎回到游戏</item>
+	    <item>试试把我拖到另一边*-*</item>
+	    <item>点击活动中心，里面有丰富的奖品</item>
+	</string-array>
+</resources>

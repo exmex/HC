@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@null"
+    android:orientation="vertical" >
+
+    <!-- title区域-->    
+    <include
+	        android:id="@+id/title_pay"
+	        layout="@layout/iapppay_oneclickpay_layout_title" />
+    
+    <!-- 内容区域 -->
+	<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@null"
+    android:orientation="vertical" >
+	    <LinearLayout 
+	    android:id="@+id/tip"
+	    android:paddingLeft="14dp"
+	    android:paddingRight="14dp"	  
+	    android:paddingTop="24dp"	 
+	    android:paddingBottom="24dp"	 	    	      
+	    android:layout_width="fill_parent"
+	    android:layout_height="214dp"
+	    android:layout_gravity="center"
+	    android:background="@color/iapppay_call_waiting_tip"
+	    android:orientation="vertical" >
+
+		 <ImageView
+	            android:layout_height="63dp"
+	            android:layout_width="63dp"
+	            android:layout_gravity="center"
+	            android:contentDescription="@string/iapppay_img"
+	            android:src="@drawable/iapppay_oneclickpay_ic_call"
+	            android:scaleType="fitXY" />
+		 
+         <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="22dp"
+                 android:layout_gravity="center"
+                 android:text="@string/please_waiting_bank_call"
+                 android:textColor="#0c6fad"
+                 android:textSize="18sp" />
+		<TextView
+                 android:layout_width="wrap_content"
+				 android:singleLine="false"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="13dp"
+                 android:layout_gravity="center"
+                 android:text="@string/please_waiting_bank_call_tip"
+                 android:textColor="#333333"
+                 android:textSize="14sp" />          
+	    </LinearLayout>
+	
+	    <RelativeLayout 
+	    android:id="@+id/service"
+	    android:background="@color/iapppay_call_waiting_service"
+	    android:layout_alignParentBottom="true"
+	    android:layout_width="fill_parent"
+	    android:layout_height="48dp"
+	    android:orientation="horizontal" >
+	    <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+       
+                 android:layout_centerInParent="true"
+                 android:text="@string/please_waiting_bank_call_service"
+                 android:textColor="#3d3d3d"
+                 android:textSize="12sp" />  
+	    </RelativeLayout>
+	    
+	    <LinearLayout 
+   		android:background="@color/iapppay_call_waiting_confirm"	    
+	    android:layout_below="@id/tip"
+	    android:layout_above="@id/service"
+	    android:layout_width="fill_parent"
+	    android:layout_height="171dp"
+	    android:paddingTop="53dp"
+	    android:orientation="vertical" > 
+	   
+   			<Button
+            android:id="@+id/confirm"
+            android:layout_width="205dp"
+            android:layout_height="35.0dp"
+            android:layout_gravity="center_horizontal"
+   			android:background="@drawable/iapppay_oneclickpay_bg_confrim_selector"
+ 			android:text="@string/please_waiting_bank_call_payed"
+   			android:textColor="@color/white"
+  		    android:textSize="18sp" />
+   		
+   			<LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+		    android:orientation="horizontal" > 	
+   			<TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="13dp"
+                 android:layout_gravity="center_horizontal"
+                 android:text="@string/please_waiting_bank_call_query"
+                 android:textColor="#333333"
+                 android:textSize="14sp" />   
+            <TextView
+                 android:id="@+id/query"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="13dp"
+                 android:autoLink="all"
+                 android:layout_gravity="center_horizontal"
+                 android:text="@string/please_waiting_bank_call_query_start"
+                 android:textColor="#333333"
+                 android:textSize="14sp" />        
+ 	   	 </LinearLayout>
+	    </LinearLayout>
+	    
+    </RelativeLayout>
+</LinearLayout>

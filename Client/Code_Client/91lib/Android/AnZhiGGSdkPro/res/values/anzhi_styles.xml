@@ -1,0 +1,86 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="titlebar">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40dip</item>
+        <item name="android:background">@drawable/upomp_tbow_title_bg</item>
+    </style>
+
+    <style name="Widget" parent="android:Widget"></style>
+
+    <style name="RelativeLayout_Text">
+        <item name="android:layout_width">100dip</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="RelativeLayout_Text2">
+        <item name="android:layout_width">110dip</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- 定义一个样式，继承Android系统的对话框样式 android:style/Theme.Dialog -->
+    <style name="Theme.FloatActivity" parent="android:style/Theme.Dialog">
+
+        <!-- float_box为我们定义的窗口背景 -->
+        <item name="android:windowBackground">@drawable/anzhi_float_box</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <!--
+模糊true,清洗false
+       <item name="android:layout_alignParentBottom">true</item>
+        -->
+    </style>
+
+    <style name="Button_keyboard_sign">
+        <item name="android:layout_width">22.3dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/virtual_keyboard_btn_letter</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+    </style>
+
+    <style name="Button_keyboard_sign_marginLeft">
+        <item name="android:layout_width">22.3dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/virtual_keyboard_btn_letter</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:layout_marginLeft">2.1dip</item>
+    </style>
+
+    <style name="Transparent">
+        <item name="android:windowBackground">@color/progressdialog_background</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="Transparent_no_fullscreen">
+        <item name="android:windowBackground">@color/progressdialog_background</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+</resources>

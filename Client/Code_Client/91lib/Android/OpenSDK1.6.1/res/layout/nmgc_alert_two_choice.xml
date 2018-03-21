@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dialog_confirm_width"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dialog_title_bar_height"
+        android:background="#FFDDDDDD" >
+
+        <TextView
+            android:id="@+id/nmgc_alert_title"
+            style="@style/nmgc_login_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/nmgc_setting_title_changehead"
+            android:textSize="@dimen/nmgc_login_title_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/nmgc_alert_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/nmgc_alert_two_choice1"
+                style="@style/nmgc_common_text"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/nmgc_setting_list_item_height"
+                android:background="@drawable/rank_list_item_selector"
+                android:text="@string/nmgc_setting_changehead_1"
+                android:textSize="@dimen/nmgc_lg_button_text_size" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/dialog_divider" />
+
+            <TextView
+                android:id="@+id/nmgc_alert_two_choice2"
+                style="@style/nmgc_common_text"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/nmgc_setting_list_item_height"
+                android:background="@drawable/rank_list_item_selector"
+                android:text="@string/nmgc_setting_changehead_2"
+                android:textSize="@dimen/nmgc_lg_button_text_size" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

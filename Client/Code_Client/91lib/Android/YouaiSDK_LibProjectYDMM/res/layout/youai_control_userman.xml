@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/u2_background"
+        android:orientation="vertical" >
+	<LinearLayout 
+	    android:id="@+id/toptitle"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/TextColorBlack"
+    android:orientation="horizontal"
+    >
+
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:textColor="@color/TextColorWhite"
+		    android:layout_marginLeft="10dp"
+		    android:text="有爱互动社区" />
+
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:layout_below="@+id/toptitle"
+         android:id="@+id/u2_title_bar_layout"
+         android:layout_width="fill_parent"
+         android:background="@drawable/title_bg"
+        android:layout_height="42dp">
+        <!-- 左按钮 -->
+
+        <Button
+            android:id="@+id/u2_title_bar_button_left"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:textColor="@color/TextColorWhite"
+            android:gravity="center"
+            android:text="@string/title_back"
+            android:background="@drawable/titlebt_bg"
+            android:textSize="16sp" >
+        </Button>
+
+        <!-- 标题 -->
+
+        <TextView
+            android:id="@+id/u2_title_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+             android:textSize="22sp"
+            android:textColor="@color/TextColorWhite"
+            android:text="@string/title_man" >
+        </TextView>
+
+        <!-- 右按钮 -->
+
+        <Button
+            android:id="@+id/u2_title_bar_button_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dip"
+            android:gravity="center"
+            android:text="完成"
+            android:visibility="gone"
+            android:background="@drawable/titlebt_bg"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16sp"
+             >
+        </Button>
+    </RelativeLayout>
+    <!-- 当前帐号提示 -->
+
+    <TextView
+        android:layout_below="@+id/u2_title_bar_layout"
+        android:id="@+id/u2_account_name"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="18sp"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/TextColorWhite"
+		>
+    </TextView>
+    
+    <TextView
+        android:layout_below="@+id/u2_account_name"
+        android:id="@+id/u2_account_pass"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollHorizontally="true"
+        android:textSize="15sp"
+        android:layout_marginLeft="25dp"
+        android:layout_gravity="left"
+        android:textColor="@color/TextColorWhite"
+     	 android:textAppearance="?android:attr/textAppearanceSmall"
+		>
+    </TextView>
+    
+  	 <LinearLayout
+  	    android:id="@+id/table_userman"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/u2_account_pass"
+        android:orientation="vertical" >
+			 
+		</LinearLayout>
+			 
+</RelativeLayout>
+				

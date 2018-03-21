@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ijinshan.ksmglogin.ui.view.TitlebarView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/titlebar_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/ks_cm_title_layout_height"
+    android:orientation="vertical" >
+    <include layout="@layout/ks_common_cm_title_line_view" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ks_cm_title_bg_color"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/ks_btn_common_title_back"
+            android:layout_width="@dimen/ks_cm_title_img_width"
+            android:layout_height="@dimen/ks_cm_title_img_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ks_bg_cm_btn_back_selector" />
+
+        <ImageView
+            android:id="@+id/ks_btn_common_title_close"
+            android:layout_width="@dimen/ks_cm_title_img_width"
+            android:layout_height="@dimen/ks_cm_title_img_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ks_bg_cm_btn_close_selector" />
+
+        <TextView
+            android:id="@+id/ks_common_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/ks_cm_title_layout_height"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@id/ks_btn_common_title_close"
+            android:layout_toRightOf="@id/ks_btn_common_title_back"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/ks_text_size_18" />
+    </RelativeLayout>
+
+    <include layout="@layout/ks_common_cm_shadow_divider"/>
+
+</com.ijinshan.ksmglogin.ui.view.TitlebarView>

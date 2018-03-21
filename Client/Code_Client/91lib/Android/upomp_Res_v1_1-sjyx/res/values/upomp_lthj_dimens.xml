@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="upomp_lthj_lineframe_h">45dip</dimen>
+	<dimen name="upomp_lthj_lineframe_image_w">45dip</dimen>
+	<dimen name="upomp_lthj_lineframe_image_pad">5dip</dimen>
+	<dimen name="upomp_lthj_lineframe_text_pad">10dip</dimen>
+	<dimen name="upomp_lthj_input_h">45dip</dimen>
+	<dimen name="upomp_lthj_logo_w">15dip</dimen>
+	<dimen name="upomp_lthj_big_button_textsize">18dip</dimen>
+	<dimen name="upomp_lthj_small_button_textsize">14dip</dimen>
+	<dimen name="upomp_lthj_lineframe_textsize">15dip</dimen>
+	<dimen name="upomp_lthj_pad_left">10dip</dimen>
+	<dimen name="upomp_lthj_pad_right">10dip</dimen>
+	<dimen name="upomp_lthj_pad_top">10dip</dimen>
+	<dimen name="upomp_lthj_margin_top">10dip</dimen>
+	<dimen name="upomp_lthj_margin_left">10dip</dimen>
+	<dimen name="upomp_lthj_margin_right">10dip</dimen>
+	<dimen name="upomp_lthj_margin_bottom">15dip</dimen>
+	<dimen name="upomp_lthj_infobutton_w">35dip</dimen>
+	<dimen name="upomp_lthj_infobutton_h">35dip</dimen>
+	<dimen name="upomp_lthj_infobutton_margin">10dip</dimen>
+	<dimen name="upomp_lthj_listview_item_h">40dip</dimen>
+    <dimen name="upomp_lthj_keyboard_fontsize">16.0dip</dimen>
+	<dimen name="upomp_lthj_num_sign_keyboard_padding">0dip</dimen>
+	<dimen name="upomp_lthj_key_letter_btn_width">28.0dip</dimen>
+	<dimen name="upomp_lthj_keyboard_padding">0dip</dimen>
+	<dimen name="upomp_lthj_imgViewCheck_width">80dip</dimen>
+	<dimen name="upomp_lthj_imgViewCheck_height">35dip</dimen>
+    <dimen name="upomp_lthj_progressBar_size">35.0dip</dimen>
+    <dimen name="upomp_lthj_supportcard_padding">15.0dip</dimen>
+</resources>

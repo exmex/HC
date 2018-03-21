@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/gamehall_main_tab_top"
+        layout="@layout/gamehall_headerview2" />
+
+    <RadioGroup
+        android:id="@+id/main_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/tab1"
+            style="@style/main_tab_bottom_one"
+            android:drawableTop="@drawable/gamehall_main_tab_btn1"
+            android:text="@string/gamehall_tab_title1" />
+
+        <RadioButton
+            android:id="@+id/tab2"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/gamehall_main_tab_btn2"
+            android:text="@string/gamehall_tab_title2" />
+
+        <RadioButton
+            android:id="@+id/tab3"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/gamehall_main_tab_btn3"
+            android:text="@string/gamehall_tab_title3" />
+
+        <RadioButton
+            android:id="@+id/tab4"
+            style="@style/main_tab_bottom_four"
+            android:drawableTop="@drawable/gamehall_main_tab_btn4"
+            android:text="@string/gamehall_tab_title4" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/main_tab"
+        android:layout_below="@id/gamehall_main_tab_top"
+        android:background="@android:color/transparent" >
+
+        <include
+            android:id="@+id/progress_view"
+            layout="@layout/gamehall_loading_view" />
+
+        <cn.sina.youxi.app.CustomViewPager
+            android:id="@+id/main_tab_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|center_horizontal" />
+    </FrameLayout>
+
+</RelativeLayout>

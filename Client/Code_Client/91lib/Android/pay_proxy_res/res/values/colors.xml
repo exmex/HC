@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="transparent">#fcfcfc</drawable>
+    <drawable name="yyh_cursor_color">#000000</drawable>
+
+    <color name="yyh_center_selected">#2d3340</color>
+    <color name="yyh_center_unselected">#ababab</color>
+
+</resources>

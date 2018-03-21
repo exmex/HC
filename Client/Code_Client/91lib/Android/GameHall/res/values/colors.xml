@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="txt_white">#FFFFFF</color>
+    <color name="txt_black">#000000</color>
+    
+    <!-- 游戏详情页 -->
+    <color name="game_detail_bg">#242424</color>
+    <color name="game_detail_info">#aaaaaa</color>
+    <color name="gamehall_gamelistitem_bg">#242424</color>
+    <color name="gamehall_activitynotstart_color">#808080</color>
+    <color name="gamehall_activitystarted_color">#05B8E0</color>
+    
+   	<color name="gamehall_detail_loading">#3a3c3d</color>
+   	
+   	<!--帐户管理-->
+   	<color name="gamehall_account_label">#000</color>
+   	<color name="gamehall_account_input">#b3b3b3</color>
+   	
+   	<color name="gamehall_account_register_nor">#5fb200</color>
+   	<color name="gamehall_account_register_sel">#7fcc1f</color>
+   	
+   	<color name="gamehall_account_reset_nor">#808080</color>
+   	<color name="gamehall_account_reset_sel">#b3b3b3</color>
+   	
+   	<!-- 登录中 -->
+   	<color name="gamehall_account_loading_label">#808080</color>
+   	<color name="gamehall_account_loading_username">#7fcc1f</color>
+   	
+   	<!-- 登录-验证码 -->
+   	<color name="gamehall_login_verify_label">#808080</color>
+   	<color name="gamehall_login_verify_reget_nor">#808080</color>
+   	<color name="gamehall_login_verify_reget_sel">#b3b3b3</color>
+   	
+   	<!-- 注册 -->
+   	<color name="gamehall_register_tab_nor">#808080</color>
+   	<color name="gamehall_register_tab_sel">#4c9f02</color>
+   	
+   	<color name="gamehall_transparent_black">#3000</color>
+   	
+</resources>

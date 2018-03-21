@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	style="@style/NearMePayActivityBasicLinearLayout"
+	>
+	
+	    <LinearLayout style="@style/NearMePayTitleBar">
+
+		<TextView
+		    android:id="@+id/web_title"
+		    style="@style/NearMePayTitleBarText"
+		    android:text="@string/nearmepay_web_title" />
+
+		<Button
+		    android:id="@+id/close_bn"
+            style="@style/NearMePayActivityTitleButton"
+            android:text="@string/nearmepay_close_bn" />
+		</LinearLayout>
+		<ImageView style="@style/NearMePayActivityBasicBoldDivide" />
+		<ViewSwitcher android:id="@+id/show_pay_vs"
+		    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+		
+		<WebView android:id="@+id/show_pay_wv" android:layout_height="fill_parent"
+		android:layout_width="fill_parent" android:layout_weight="1"
+		 />
+	    
+		<include layout="@layout/nearmepay_startpay_err_page"/>
+		
+		</ViewSwitcher>
+
+	    
+	
+	
+	
+</LinearLayout>

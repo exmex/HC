@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="@dimen/dialog_loading_width"
+        android:layout_height="@dimen/dialog_loading_height"
+        android:layout_marginLeft="@dimen/dialog_margin_left"
+        android:layout_marginRight="@dimen/dialog_margin_right"
+        android:background="@drawable/dialog_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="62dp"
+        android:paddingRight="62dp" >
+
+        <ProgressBar
+            style="@style/nmgc_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/loading_text"
+            android:textSize="@dimen/a_text_size"
+    		android:textColor="#4c4d4d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:singleLine="true"
+            android:gravity="center"
+            android:text="@string/nmgc_global_handing" />
+    </LinearLayout>
+
+</LinearLayout>

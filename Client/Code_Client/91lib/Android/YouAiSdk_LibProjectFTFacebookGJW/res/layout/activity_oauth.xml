@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/TextColorWhite"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+         android:id="@+id/u2_title_bar_layout"
+         android:layout_width="fill_parent"
+         android:background="@drawable/top_p"
+        android:layout_height="42dp">
+        <!-- 左按钮 -->
+
+        <Button
+            android:id="@+id/u2_back"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/u2_titlebt_bg"
+            android:gravity="center"
+            android:text="@string/title_back"
+            android:textColor="@color/TextColorWhite"
+            android:textSize="16sp" >
+
+        </Button>
+
+        <TextView
+            android:id="@+id/webtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+             android:textSize="22sp"
+            android:textColor="@color/TextColorWhite"
+            android:text="@string/app_dev" >
+        </TextView>
+    </RelativeLayout>
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

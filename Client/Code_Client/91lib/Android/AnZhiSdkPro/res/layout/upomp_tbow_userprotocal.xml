@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_relativeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/upomp_tbow_background" >
+
+    <LinearLayout
+        android:id="@+id/title"
+        style="@android:style/ButtonBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/upomp_tbow_title_bg" >
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10.0dip" >
+
+    <LinearLayout
+        android:id="@+id/tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         >
+         <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:text="@string/yl_kk"
+                android:textColor="@color/black"
+                android:textSize="15.0sp" >
+            </TextView>
+    </LinearLayout>
+           
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--   ImageView
+        android:id="@+id/flsdk_base_imagbg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:contentDescription="@string/flsdk_app_name"
+        android:scaleType="fitXY" / -->
+
+    <TextView style="@style/flsdk_style_translucent_lay" />
+
+    <include
+        android:id="@+id/flsdk_title"
+        layout="@layout/flsdk_base_title_layout" />
+
+</merge>

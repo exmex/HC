@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/appchina_pay_main_shape"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+	<RelativeLayout android:id="@+id/title_ly"
+		android:layout_width="fill_parent" android:layout_height="48dp"
+		android:background="@drawable/appchina_pay_title_bg"
+		android:layout_alignParentTop="true">
+		<TextView android:id="@+id/title" android:layout_width="wrap_content"
+			android:textColor="#ffffff" android:textSize="20sp"
+			android:layout_height="wrap_content" android:layout_centerInParent="true" />
+	</RelativeLayout>
+	<!-- 充值界面 -->
+	<ScrollView android:layout_below="@id/title_ly"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<LinearLayout android:padding="5dp" android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<TextView android:layout_marginBottom="5dp"
+				android:layout_marginTop="5dp" android:layout_marginLeft="20dp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				style="@style/appchina_pay_text_16" android:text="请确认卡信息:" />
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_marginLeft="25dp" android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<TextView android:layout_height="wrap_content"
+					android:text="类  型: " android:layout_gravity="top"
+					style="@style/appchina_pay_label_theme" android:layout_width="wrap_content" />
+				<TextView android:id="@+id/type"
+					style="@style/appchina_pay_text_highlight_18"
+					android:layout_height="wrap_content" android:layout_width="160dip"
+					android:layout_gravity="center_vertical|left" android:singleLine="true"
+					android:layout_marginLeft="5dip" android:layout_marginRight="5dip" />
+			</LinearLayout>
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_marginLeft="25dp" android:layout_height="wrap_content"
+				android:orientation="horizontal" android:layout_centerHorizontal="true">
+				<TextView android:layout_height="wrap_content"
+					android:text="面  额: " android:layout_gravity="top"
+					style="@style/appchina_pay_label_theme" android:layout_width="wrap_content" />
+				<TextView android:id="@+id/deno"
+					style="@style/appchina_pay_text_highlight_18"
+					android:layout_height="wrap_content" android:layout_width="160dip"
+					android:layout_gravity="center_vertical|left" android:singleLine="true"
+					android:layout_marginLeft="5dip" android:layout_marginRight="5dip" />
+			</LinearLayout>
+			<LinearLayout android:layout_width="wrap_content"
+				android:id="@+id/price_ly" android:visibility="gone"
+				android:layout_marginLeft="25dp" android:layout_height="wrap_content"
+				android:orientation="horizontal" android:layout_centerHorizontal="true">
+				<TextView android:layout_height="wrap_content"
+					android:text="资  费: " android:layout_gravity="top"
+					style="@style/appchina_pay_label_theme" android:layout_width="wrap_content" />
+				<TextView android:id="@+id/price"
+					style="@style/appchina_pay_text_highlight_18"
+					android:layout_height="wrap_content" android:layout_width="160dip"
+					android:layout_gravity="center_vertical|left" android:singleLine="true"
+					android:layout_marginLeft="5dip" android:layout_marginRight="5dip" />
+			</LinearLayout>
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_marginLeft="25dp" android:layout_height="wrap_content"
+				android:orientation="horizontal" android:layout_centerHorizontal="true">
+				<TextView android:layout_height="wrap_content"
+					android:text="卡  号: " android:layout_gravity="top"
+					style="@style/appchina_pay_label_theme" android:layout_width="wrap_content" />
+				<TextView android:id="@+id/id"
+					style="@style/appchina_pay_text_highlight_18"
+					android:layout_height="wrap_content" android:layout_width="160dip"
+					android:layout_gravity="center_vertical|left"
+					android:layout_marginLeft="5dip" android:layout_marginRight="5dip" />
+			</LinearLayout>
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_marginLeft="25dp" android:layout_height="wrap_content"
+				android:orientation="horizontal" android:layout_centerHorizontal="true">
+				<TextView android:layout_height="wrap_content"
+					android:text="密  码: " android:layout_gravity="top"
+					style="@style/appchina_pay_label_theme" android:layout_width="wrap_content" />
+				<TextView android:id="@+id/pwd"
+					style="@style/appchina_pay_text_highlight_18"
+					android:layout_height="wrap_content" android:layout_width="160dip"
+					android:layout_gravity="center_vertical|left"
+					android:layout_marginLeft="5dip" android:layout_marginRight="5dip" />
+			</LinearLayout>
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_marginLeft="25dp" android:layout_height="wrap_content"
+				android:orientation="horizontal" android:layout_centerHorizontal="true">
+				<TextView android:id="@+id/total"
+					android:visibility="gone"
+					style="@style/appchina_pay_text_highlight_18"
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:layout_gravity="center_vertical|left"
+					android:layout_marginLeft="5dip" android:layout_marginRight="5dip" />
+			</LinearLayout>
+		<RelativeLayout android:id="@+id/btn_ly"
+		android:layout_width="fill_parent"
+		android:layout_marginTop="5dp" android:layout_marginLeft="10dp"
+		android:layout_marginBottom="5dp"
+		android:layout_marginRight="10dp" android:layout_height="wrap_content">
+		<View android:id="@+id/cv" android:layout_width="10dp"
+			android:layout_height="0dp" android:layout_centerInParent="true" />
+		<Button android:id="@+id/submit" android:layout_width="105dp"
+			android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+			android:padding="5dp" android:layout_marginTop="5dip"
+			android:layout_toLeftOf="@id/cv" android:text="确  定"
+			style="@style/appchina_pay_button_text_16" android:layout_gravity="center_horizontal"
+			android:background="@drawable/appchina_pay_by_button_selector" />
+		<Button android:id="@+id/cancel" android:layout_width="105dp"
+			android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+			android:padding="5dp" android:layout_marginTop="5dip"
+			android:layout_toRightOf="@id/cv" android:text="取  消"
+			style="@style/appchina_pay_button_text_16" android:layout_gravity="center_horizontal"
+			android:background="@drawable/appchina_pay_by_button_selector" />
+	</RelativeLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

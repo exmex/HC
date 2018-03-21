@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dip"
+        android:background="@drawable/sogou_game_sdk_feed_back_item_white_background"
+        android:paddingBottom="12dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:paddingTop="12dp" >
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_feed_back_record_item_issues_label"
+            style="@style/sogou_game_sdk_list_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/sogou_game_sdk_feed_back_record_item_issues_label_text"
+            android:textColor="@color/sogou_game_sdk_font_red" />
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_feed_back_record_item_issues_content"
+            style="@style/sogou_game_sdk_list_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/sogou_game_sdk_feed_back_record_item_issues_label"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/sogou_game_sdk_feed_back_record_item_feed_linearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_feed_back_record_item_feed_content"
+            style="@style/sogou_game_sdk_list_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sogou_game_sdk_feed_back_record_item_feed_content_text" />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="0px"
+        android:layout_height="0px" />
+
+</LinearLayout>

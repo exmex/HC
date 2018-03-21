@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flsdk_toast_message"
+    style="@style/flsdk_style_c12c20_14"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="5.0dip"
+    android:layout_marginLeft="50.0dip"
+    android:layout_marginRight="30.0dip"
+    android:layout_marginTop="5.0dip"
+    android:background="@drawable/flsdk_toast_bg"
+    android:gravity="center"
+    android:minWidth="180.0dip" />

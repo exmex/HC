@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- 升级模块 -->
+	<string name="upgrade_notify_upgrade_label">有最新的軟體版本</string>
+	<string name="upgrade_notify_upgrade_content">最新版本為%s,點擊進行更新</string>
+	<string name="upgrade_dialog_force_upgrade_title">軟件更新</string>
+	<string name="upgrade_dialog_force_upgrade_label" formatted="false">如不更新則不能繼續使用本軟體，建議在wifi環境下進行升級。\n更新內容：\n%s</string>
+	<string name="upgrade_update_now">立即更新</string>
+	<string name="upgrade_update_later">暫不更新</string>
+	<string name="upgrade_dialog_upgrade_label" formatted="false">建議在wifi環境下進行升級。\n更新內容：\n%s</string>
+	<string name="upgrade_notify_install_fail">%s安裝失敗</string>
+	<string name="upgrade_download_pause">暫停</string>
+	<string name="upgrade_download_resume">繼續</string>
+	<string name="upgrade_download_cancel">取消</string>
+	<string name="upgrade_dialog_download_ing">正在下載，請稍候...</string>
+	<string name="upgrade_dialog_download_pause">下載暫停，點擊按鍵繼續下載</string>
+	<string name="upgrade_dialog_download_fail">網絡問題導致下載更新中斷，\n請稍候繼續。</string>
+	<string name="upgrade_maintain_title">更新維護</string>
+	<string name="upgrade_update_already">您的軟體為最新版本，不需要更新。</string>
+	<string name="upgrade_confirm">確定</string>
+	<string name="upgrade_update_checking">存取更新中，請稍候…</string>
+	<string name="upgrade_network_error">網絡異常，請重試.</string>
+	<string name="upgrade_no_enough_space">手機內存或存儲卡容量不足，請刪除其他文件后重試</string>
+	<string name="upgrade_fail">更新失敗</string>
+	<string name="upgrade_error_md5">由於網路不穩定，加載數據有丟失，請重新加載。</string>
+	<string name="upgrade_retry">重新加載</string>
+	<string name="upgrade_no_sdcard">沒有找到SD卡，無法進行圖片加載和在線升級</string>
+	<!-- 20130228新增 -->
+	<string name="upgrade_upgrade_size">更新大小：%s</string>
+	<string name="upgrade_version">版本：%s</string>
+	<string name="upgrade_dialog_force_upgrade_title_fail">更新中斷</string>
+</resources>
+

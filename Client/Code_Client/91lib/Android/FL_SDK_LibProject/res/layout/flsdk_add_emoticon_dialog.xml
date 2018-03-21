@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 表情框 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_expression_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/flsdk_dialog_transparent_bg" >
+
+    <GridView
+        android:id="@+id/emoticon_grid"
+        style="@style/flsdk_style_list_style"
+        android:layout_width="wrap_content"
+        android:layout_height="400.0dip"
+        android:layout_centerInParent="true"
+         android:layout_margin="15.0dip"
+        android:background="@android:color/white"
+        android:listSelector="@null"
+        android:numColumns="6"
+        android:paddingTop="10.0dip"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/dismiss_emoticon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/emoticon_grid"
+        android:layout_alignTop="@+id/emoticon_grid"
+        android:layout_marginTop="-15dip"
+        android:src="@drawable/flsdk_clear_btn_bg" />
+
+</RelativeLayout>

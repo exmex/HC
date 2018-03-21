@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nearme.gamecenter.open.core.smallboy.FloatWebView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/keke_webview_background" >    
+    
+    <WebView
+    	android:id="@+id/nmgc_float_webview"
+        android:layout_width="@dimen/nmgc_boyclick_webview_width"
+        android:layout_height="@dimen/nmgc_boyclick_webview_height"
+        android:background="@android:color/transparent" 
+        android:layout_centerInParent="true" />    
+
+    <include
+        android:id="@+id/inc_loading_full_root"
+        layout="@layout/nmgc_loading_full"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/nmgc_ad_x"
+        android:layout_width="@dimen/nmgc_x_width"
+        android:layout_height="@dimen/nmgc_x_width"
+        android:layout_alignRight="@id/nmgc_float_webview"
+        android:layout_marginRight="@dimen/nmgc_x_margin_right"
+        android:layout_alignTop="@id/nmgc_float_webview"
+        android:layout_marginTop="@dimen/nmgc_x_margin_top"
+        android:src="@drawable/nmgc_x" />
+    
+    <!-- <ImageView
+        android:id="@+id/nmgc_ad_xxx"
+        android:layout_width="@dimen/nmgc_x_width"
+        android:layout_height="@dimen/nmgc_x_width"
+        android:layout_toLeftOf="@id/nmgc_ad_x"
+        android:layout_marginRight="@dimen/nmgc_x_margin_right"
+        android:layout_alignTop="@id/nmgc_float_webview"
+        android:layout_marginTop="@dimen/nmgc_x_margin_top"
+        android:src="@drawable/nmgc_x" /> -->
+  	<Button
+        android:id="@+id/nmgc_switch_account_btn"
+        android:layout_width="@dimen/nmgc_switch_btn_width"
+        android:layout_height="@dimen/nmgc_switch_btn_height"
+        android:layout_alignRight="@id/nmgc_float_webview"
+        android:layout_marginRight="@dimen/nmgc_switch_btn_margin_right"
+        android:layout_alignTop="@id/nmgc_float_webview"
+        android:layout_marginTop="@dimen/nmgc_switch_btn_margin_top"
+        android:text="@string/switch_account"
+        android:textSize="12sp"
+        android:textColor="#585858"
+        android:background="@drawable/switch_account_btn_selector" />
+    
+
+
+</com.nearme.gamecenter.open.core.smallboy.FloatWebView>

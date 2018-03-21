@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/u2_account_login_layout_portrait"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/u2_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    
+	<RelativeLayout 
+	    android:id="@+id/top_lv"
+    android:layout_width="fill_parent"
+    android:layout_height="25dp"
+    android:background="@color/TextColorBlack"
+    android:orientation="horizontal"
+    >
+
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:gravity="center"
+		    android:textColor="@color/TextColorWhite"
+		    android:layout_marginLeft="10dp"
+		    android:text="@string/title_top" />
+
+		<ImageButton
+		    android:id="@+id/button_close"
+		    android:layout_alignParentRight="true"
+		    android:layout_width="40dp"
+		    android:layout_height="wrap_content"
+		    android:background="@color/u2_gcsdk_translucent"
+		    android:src="@drawable/closebt" />
+
+    </RelativeLayout>
+    <!-- 标题栏 -->
+
+    <RelativeLayout
+        android:layout_below="@+id/top_lv"
+        android:id="@+id/u2_title_bar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/title_bg"
+        android:orientation="vertical" >
+
+        <!-- 左按钮 -->
+
+        <Button
+            android:id="@+id/u2_title_bar_button_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:gravity="center"
+            android:text="@string/title_back"
+            android:visibility="gone"
+            android:background="@drawable/titlebt_bg"
+            android:textSize="16sp" >
+        </Button>
+
+        <!-- 标题 -->
+
+        <TextView
+            android:id="@+id/nd3_title_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+             android:textSize="22sp"
+            android:textColor="@color/TextColorWhite"
+            android:text="@string/title_login" >
+        </TextView>
+
+        <!-- 右按钮 -->
+
+        <Button
+            android:id="@+id/nd3_title_bar_button_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:gravity="center"
+            android:text="@string/rightbtn"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16sp"
+            android:visibility="invisible" >
+        </Button>
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_below="@+id/u2_title_bar_layout"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <!-- 图标 -->
+
+            <ImageView
+                android:layout_width="280dp"
+                android:layout_marginTop="35dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/title"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                 />
+
+            <!-- 通行证、密码 -->
+
+			<RelativeLayout 
+			    android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/charge_none_round"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:orientation="vertical" >
+
+                <!-- 通行证 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+						android:text="@string/user_account"
+						android:textColor="@color/TextColorWhite"
+						android:layout_marginLeft="10dp"
+						android:layout_marginRight="5dp"
+						style="@style/u2_option_text_style"
+		                 >
+                    </TextView>
+                    <AutoCompleteTextView
+                        android:id="@+id/u2_account_login_account"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:maxLength="16"
+                        android:inputType="textAutoComplete"
+                        style="@style/u2_option_text_style"
+                        android:singleLine="true"
+                        android:nextFocusDown="@+id/u2_account_login_password"
+                        android:imeOptions="actionNext"
+                        >
+                    </AutoCompleteTextView>
+                    <ImageView
+                        android:id="@+id/quickdelete"
+                        android:src="@drawable/ic_dial_action_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="15dp"
+                        android:visibility="invisible"
+                         >
+                    	</ImageView>
+					<ImageView
+                        android:id="@+id/logineduser"
+                        android:src="@drawable/btn_more"
+                        android:layout_width="30dp"
+                        android:scaleType="centerInside"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp">
+                    	</ImageView>
+                    <ImageView
+                        android:id="@+id/u2_account_login_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                         >
+                    </ImageView>
+                </LinearLayout>
+		<ImageView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_height="1dp"
+         android:background="#1A1E24" />
+
+                <!-- 密码 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/user_password"
+                        android:textColor="@color/TextColorWhite"
+						android:layout_marginLeft="10dp"
+						style="@style/u2_option_text_style"
+                         android:layout_marginRight="5dp">
+                         
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/u2_account_login_password"
+                        android:layout_width="fill_parent"
+                        style="@style/u2_option_edittext_style"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:maxLines="12"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:singleLine="true" >
+                    </EditText>
+                    <ImageView
+                        android:id="@+id/quickdel_pass"
+                        android:src="@drawable/ic_dial_action_delete"
+                        android:layout_marginRight="50dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:visibility="invisible"
+                         >
+                    	</ImageView>
+                </LinearLayout>
+                
+                
+                
+            </LinearLayout>
+            <ProgressBar
+			    android:id="@+id/loadingbar"
+			    android:visibility="gone"
+			    android:layout_centerInParent="true"
+			    style="?android:attr/progressBarStyleLarge"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content" />
+			</RelativeLayout>
+            
+            <!-- 注册/登录 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                 >
+
+               <!--  <TextView
+                    android:id="@+id/nd3_account_login_reg_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" >
+                </TextView> -->
+
+                <Button
+                    android:id="@+id/u2_account_login_reg"
+                    android:layout_width="140dp"
+                    android:background="@drawable/login_bt_bg"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/TextColorWhite"
+                    android:text="@string/title_register">
+                </Button>
+
+                <Button
+                    android:id="@+id/u2_account_login_log"
+                    android:layout_width="140dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/TextColorWhite"
+                    android:textSize="20sp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/login_bt_bg"
+                    android:text="@string/title_login"
+                     >
+                </Button>
+            </LinearLayout>
+
+            
+
+            <!-- 其他帐户登录 -->
+
+            <LinearLayout
+                android:id="@+id/u2_account_login_other_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:visibility="invisible" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="30dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="6dip"
+                    android:layout_weight="1"
+                    android:textColor="@color/TextColorWhite"
+                    android:text="@string/user_other_login"
+                     >
+                </TextView>
+		
+		<!-- android:background="#242930" -->
+                <LinearLayout
+                    android:id="@+id/nd3_account_login_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dip"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="visible" >
+
+                    <ImageButton
+                        android:id="@+id/imageButtonqq"
+                        android:background="@android:color/transparent"
+                         android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:scaleType="centerInside"
+                        android:visibility="gone"
+                        android:src="@drawable/thirdloginqq" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonweibo"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:scaleType="centerInside"
+                        android:visibility="gone"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/thirdloginweibo" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonrenren"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:scaleType="centerInside"
+                        android:layout_marginRight="10dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/thirdloginrenren" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtondouban"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:visibility="visible"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/thirdlogindouban" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 忘记密码 -->
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+              <!--    <TextView
+                     android:id="@+id/u2_tv_find"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_forgetpass"
+                    android:textColor="@color/TextColorWhite"
+                      > 
+                </TextView>
+                <TextView
+                    android:id="@+id/u2_account_forget_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/user_findpass"
+                      android:gravity="center"
+                    android:textColor="#47A1FF"
+                   >
+                </TextView>
+                
+                -->
+            </LinearLayout>
+            
+             
+            
+        </LinearLayout>
+
+</RelativeLayout>

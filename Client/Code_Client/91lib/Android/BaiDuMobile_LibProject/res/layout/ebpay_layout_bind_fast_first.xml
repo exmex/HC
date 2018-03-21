@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ebpay_line_margin_15"
+        android:text="@string/ebpay_add_card"
+        android:textColor="@color/ebpay_text_333333"
+        android:textSize="@dimen/ebpay_text_size_18" />
+    <LinearLayout
+        android:id="@+id/card_area"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ebpay_line_height"
+        android:layout_marginTop="@dimen/ebpay_line_margin_20"
+        android:background="@color/ebpay_white"
+        android:gravity="center_vertical" >
+
+        <ImageView
+             android:contentDescription="@string/ebpay_img"
+            style="@style/ebpay_icon_common_style"
+            android:src="@drawable/ebpay_ic_bank" />
+
+        <com.baidu.android.pay.view.DivisionEditText
+            android:id="@id/ebpay_card_no_id"
+            style="@style/edit_common_style"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ebpay_shape_line_gray"
+            android:drawablePadding="5dp"
+            android:maxLength="23"
+            android:hint="@string/ebpay_card_tip"
+            android:inputType="number" />
+
+<!--         <ProgressBar -->
+<!--             android:id="@+id/progressBar" -->
+<!--             style="?android:attr/progressBarStyle" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_centerInParent="true" -->
+<!--             android:layout_gravity="center" -->
+<!--             android:indeterminate="false" -->
+<!--             android:indeterminateDrawable="@drawable/ebpay_process" -->
+<!--             android:visibility="gone" /> -->
+
+<!--         <ImageView -->
+<!--             android:id="@id/ebpay_bank_name_id" -->
+<!--             android:layout_width="@dimen/ebpay_line_height" -->
+<!--             android:layout_height="match_parent" -->
+<!--             android:background="@null" -->
+<!--             android:padding="5dp" -->
+<!--             android:visibility="gone" /> -->
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ebpay_line_margin_15"
+        android:orientation="horizontal">
+	    <CheckBox
+	            android:id="@id/ebpay_need_bind_card_id"
+	            android:layout_width="25dp"
+	            android:layout_height="25dp"
+	            android:layout_gravity="center_vertical"	            
+	            android:button="@drawable/ebpay_bg_checkbox_seletor"
+	            android:checked="true"
+	            android:clickable="true"
+	            android:textColor="@color/ebpay_black"
+	            android:textSize="@dimen/ebpay_text_size_15" />
+	    <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:text="@string/ebpay_need_bind_lable"
+	            android:layout_gravity="center_vertical"
+	            android:textColor="@color/ebpay_black"
+	            android:textSize="@dimen/ebpay_text_size_15" />
+    </LinearLayout>
+
+    <Button
+         android:id="@+id/pay_next"
+         android:layout_width="fill_parent"
+         android:layout_height="50dp"
+         android:layout_marginTop="@dimen/ebpay_line_margin_10"
+         android:layout_marginBottom="@dimen/ebpay_line_margin_20"
+         android:background="@drawable/ebpay_bg_confrim_selector"
+         android:text="@string/ebpay_pay_next"
+         android:textColor="@color/ebpay_white"
+         android:textSize="@dimen/ebpay_text_size_20" />
+  
+</LinearLayout>

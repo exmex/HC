@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fl.gamehelper.ui.widget.BoldButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flsdk_register_single_btn"
+    style="@style/flsdk_style_btn_yellow"
+    android:layout_width="170.0dip"
+    android:layout_gravity="center_horizontal"
+    android:onClick="sureClick"
+    android:text="@string/flsdk_account_register" />

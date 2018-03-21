@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#f5f5f5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dcn_title_height"
+        android:background="@drawable/dcn_action_bar_bg"
+        android:paddingBottom="0dp">
+
+        <LinearLayout
+            android:id="@+id/dcn_back"
+            android:orientation="horizontal"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:background="@drawable/dcn_back_btn_selector">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dcn_back_ic" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="22sp"
+            android:textColor="#ff7800"
+            android:text="@string/dcn_feedback_title"
+            android:textIsSelectable="false" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:paddingLeft="15dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:clickable="true"
+            android:background="@drawable/dcn_login_box_tips_bg"
+            android:id="@+id/dcn_error_layer">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:id="@+id/dcn_error_message"
+                android:drawableLeft="@drawable/dcn_login_tips_warning_icon"
+                android:textColor="@color/dcn_error_msg_color"
+                android:textSize="18sp"
+                android:text="@string/dcn_error_message_title" />
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:id="@+id/dcn_error_exit"
+                android:background="@drawable/dcn_back_btn_selector"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dcn_tips_closed_selector" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+        android:background="@drawable/dcn_login_box_bg"
+        android:maxLength="800"
+        android:hint="请输入您的反馈信息"
+        android:textColorHint="@color/dcn_login_edit_hint"
+        android:textSize="16sp"
+        android:textColor="@color/dcn_light_black"
+        android:id="@+id/dcn_feedback"
+        android:gravity="top"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dcn_feedback_send"
+        android:textSize="20sp"
+        android:id="@+id/dcn_send"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/dcn_orange_btn_selector"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@android:color/white" />
+</LinearLayout>

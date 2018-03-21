@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pp_bg" >
+
+    <include layout="@layout/pipaw_user_lg" />
+
+    <include layout="@layout/pipaw_user_bt" />
+
+    <include layout="@layout/pipaw_user_bm" />
+
+    <include layout="@layout/pipaw_user_fp" />
+
+    <include layout="@layout/pipaw_user_rp" />
+
+    <include layout="@layout/pipaw_user_rg" />
+
+    <include layout="@layout/pipaw_user_terms" />
+
+</RelativeLayout>

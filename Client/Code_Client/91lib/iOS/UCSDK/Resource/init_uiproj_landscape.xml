@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project nbr="IOSHorizon205" enable="true" packTime="201121211225">
+    <node nbr="common" ver="130801164147" entry=""/>
+	<node nbr="general" ver="130801164646" entry=""/>
+	<node nbr="game" ver="130801164420" entry="./game.html"/>
+	<node nbr="pay" ver="130801164603" entry="./start.html"/>
+    <node nbr="user" ver="130801164747" entry="./user.html"/>
+    <node nbr="conf" ver="130801164243" entry=""/>
+    
+    <clientapi apiName="login" entryNodeNbr="user" hash="" />
+	<clientapi apiName="pay" entryNodeNbr="pay" hash="" />
+	<clientapi apiName="user_center" entryNodeNbr="user" hash="#!user"/>
+	<clientapi apiName="update_pwd" entryNodeNbr="user" hash="#!user/updatePassword/true"/>
+	<clientapi apiName="login_game" entryNodeNbr="user" hash="#!sso/oldAcc"/>
+	<clientapi apiName="register" entryNodeNbr="user" hash="#!user/register"/>
+    <clientapi apiName="alpha_code" entryNodeNbr="game" hash="#!game/validCode/"/>
+	<clientapi apiName="game_not_open" entryNodeNbr="game" hash="#!game/notOpen"/>
+    <clientapiForUrl apiName="strategy" url="http://a.9game.cn/sdk/list.html" />
+    
+</project>

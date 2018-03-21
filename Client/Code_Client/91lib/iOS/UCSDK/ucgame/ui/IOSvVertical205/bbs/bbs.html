@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width = device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="MobileOptimized" content="320"/>
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="../common/css/bbs-reset.css?1368164432584"/>
+<link rel="stylesheet" href="../common/css/bbs.css?1368164432584"/>
+<title>游戏论坛</title>
+</head>
+<body class="da_bg">
+<div id="bbs"></div>
+
+<!--footer-->
+<script type='text/html' id='bbsFooter_templ'>
+    <div class="footer">
+        <p class="ad_text">手机游戏 尽在九游(9game.cn)</p>
+    </div>
+</script>
+
+<!--umbrella-->
+<script type='text/html' id='error_templ'>
+    <ul class="ui-module-list ui-module-list-MBnews">
+        <div style = "padding:5px;">
+            <p class='postTitle'>
+                哦，好像出错了！先放松一下吧！
+            </p>
+            <p class='gr-name'>可能原因:</p>
+            <p class='gr-name'>网络信号太弱</p>
+            <p class='gr-name'>此站点暂时无法访问</p>
+            <a class="blue" onclick='window.history.back()' href = "javascript:void(0)" >
+                后退
+            </a>
+            <a class="blue" onclick='window.location.reload()' href = "javascript:void(0)" >
+                刷新
+            </a>
+        </div>
+    </ul>
+</script>
+
+<!--umbrella-->
+<script type='text/html' id='umbrella_templ'>
+    <div class="sdk_umbrella">
+        <div id="umbrella_box" class="sdk_umbrella_box">
+            <a href="javascript:window.scrollTo(0, 0);" class="sdk_umbrella_top">TOP</a>
+            <!--这个用于发帖-->
+            <span id = "makeNewPost" class="sdk_umbrella_post">发帖</span>
+            <span id = "makeNewReply" class="sdk_umbrella_comit">回复</span>
+        </div>
+        <div id="icon_umbrella" class="icon_parasol"></div>
+    </div>
+</script>
+
+<!-- simley -->
+<script type='text/html' id='smiley_templ'>
+    <% if (faces) { %>
+        <% for (face in faces) { %>
+            <span data-faceId="<%= face %>">
+                <img src="<%= faceDir + faces[face] %>" id="face<%= face %>" class="gr-item"/>
+            </span>
+        <% } %>
+    <% } %>
+</script>
+
+<!--帖子列表模板-->
+<script type = "text/html" id = "list_template">
+    <% if (listBoardTopics) { %>
+        <ul class="ui-module-list ui-module-list-MBnews" <% if (id) { %> id="<%= id %>" <% } %> >
+            <% for (var i = 0, max = listBoardTopics.length; i < max ; i++ ) {%>
+                <li class="bbsList" data-topicId="<%= listBoardTopics[i].topicId %>" >
+                    <p class='ui-module-list-MBnews-main'>
+                        <% for (var j = 0; j < listBoardTopics[i].className.length; j ++) { %>
+                            <span id="postTag" class="<%= listBoardTopics[i].className[j] %>"><%= listBoardTopics[i].words[j] %></span>
+                        <% } %>
+                        <span class="postTitle"><%= listBoardTopics[i].title %></span>
+                    </p>
+                    <div class='ui-module-list-MBnews-info clearfix'>
+                        <p class='gr-name'><span></span>
+                            <span><%= listBoardTopics[i].userName %></span>
+                        </p>
+                        <p class='gr-info'>
+                            <span><%= listBoardTopics[i].replyCount %></span>&nbsp;/&nbsp;<span><%= listBoardTopics[i].hitCount %></span>
+                        </p>
+                    </div>
+                </li>
+            <% } %>
+            <% if (listBoardTopics.length == 0) { %>
+                <li id="no-content" style="background: none;">
+                    <p class="fc">暂时还没有内容</p>
+                </li>
+            <% } %>
+        </ul>
+    <% } %>
+</script>
+
+<!--帖子列表-->
+<script type='text/html' id='postlist_templ'>
+    <section class="ui-maincontainer" id="bbsIndex">
+        <div class="sub_top clearfix">
+            <a href="javascript:void(0);" class="new_b relative" id="newPostsNum">新帖:<em class="blue">0</em><span class="n_ico">NEW<em class="n_sel"></em></span></a>
+            <a href="javascript:void(0);" class="new_b relative" id = "askPostsNum">求助:<em class="blue">0</em></a>
+            <span class="n_seach" id="openSearchBtn"><em class="n_sico"><img src="../common/images/n_seach.png"></em>搜索</span>
+        </div>        
+        <div class="n_s_box hide relative" id="gr_search_win">
+             <div class="n_sinput"><input id="keyWord" type="text" placeholder="请输入关键词"></div>
+             <input id="searchBtn" type="button" class="n_sbtn" value="搜索帖子">
+        </div>
+
+        <!--tab-->
+        <div class="relative">
+            <div id="postsContainer" class="nav_five title_bg">
+                <a id="allPosts" href="javascript:void(0);">所有</a>
+                <a id="goodPosts" href="javascript:void(0);">精华</a>
+                <a id="expPosts" href="javascript:void(0);">攻略</a>
+                <a id="testPosts" class="last-none" href="javascript:void(0);">评测</a>
+                <span id="js_lis" class="nav_five_right"><em class="nav_lis"></em></span>
+            </div>
+            <div class="sn_pop hide" id="js-po">
+                <div class="relative">
+                    <em class="sn_lis"></em>
+                    <div class="sn_con">
+                        <a id="askPosts" href="javascript:void(0);">求助</a>
+                        <a id="moodPosts" href="javascript:void(0);">心情</a>
+                        <a id="advisePosts" href="javascript:void(0);">建议</a>
+                        <a id="newPosts" href="javascript:void(0);">新帖</a>
+                    </div>
+                </div>
+            </div>
+            <div class="home_new_lines">
+                <div id="nav_line"></div>
+            </div>
+        </div>
+        
+        <!--帖子列表-->
+        <div id="postsContent-all"></div>
+        <div id="postsContent-good"></div>
+        <div id="postsContent-exp"></div>
+        <div id="postsContent-test"></div>
+        <div id="postsContent-ask"></div>
+        <div id="postsContent-mood"></div>
+        <div id="postsContent-advise"></div>
+        <div id="postsContent-new"></div>
+        
+        <!--翻页-->
+        <div class="game_page" id = "paginate">
+        </div>
+        <div class="exp"><a href="javascript:void(0);" id="gameExpBtn" data-btnFeed="feed">进入<span class="boardNameContainer"></span>游戏攻略</a></div>
+        <div class="footer">
+            <p class="ad_text">手机游戏 尽在九游(9game.cn)</p>
+        </div>
+    </section>
+</script>
+
+<script type='text/html' id='pagecontrol_templ'>
+    <% if (type == 'more') { %>
+        <div class="game_page_bar game_page_more" style="padding: 0px; height: 35px; line-height: 35px;">
+            <ul>
+                <li id = "morePage" class="ui-morelist"><span>查看更多</span></li>
+            </ul>
+        </div>
+    <% } else if (type == 'paging') { %>
+        <div class="game_page_bar">
+            <div class="game_page_bar_left"><a href="javascript:void(0);" id = "pageFirst"></a></div>
+                <ul class="game_page_ul">
+                    <li id = "pagePre"><a href="javascript:void(0);" >上一页</a></li>
+                    <li class="game_pages"><input id="game_page_num" class="game_page_num" type="text"  value="" /></li>
+                    <li id = "pageNext"><a href="javascript:void(0);" >下一页</a></li>
+                </ul>
+            <div class="game_page_bar_right"><a href="javascript:void(0);" id = "pageLast"></a></div>
+        </div>
+    <% } else if (type == 'end') { %>
+        <div class="game_page_bar">
+            <ul>
+                <li><span style="color: #999">已经查看完全部条目</span></li>
+            </ul>
+        </div>
+    <% } %>
+</script>
+
+<!--帖子内容-->
+<script type='text/html' id='postDetail_templ'>
+    <section class="ui-maincontainer">
+        <!--头部导航-->
+        <div class="bread"><a href="#" class="boardNameContainer"></a>&gt;<a id="topicInfoHref" class="last" href="javascript:void(0)">帖子内容</a></div>
+        <!--帖子标题-->
+        <div class="posts box_bg">
+            <div class="black" id="topicTitle"></div>
+        </div>
+
+        <!--TODO 帖子内容-->
+        <div id="topicInfo"></div>
+
+        <!--TODO 帖子回复列表-->
+        <div id="replyList"></div>
+
+        <!--游戏攻略-->
+        <div class="exp"><a href="javascript:;" id="gameExpBtn" data-btnFeed="feed">进入<span class="boardNameContainer"></span>游戏攻略</a></div>
+        <!--页底导航-->
+        <div class="bread"><a href="#" class="boardNameContainer"></a>&gt;<a class="last" href="javascript:void(0)">帖子内容</a></div>
+        <div class="footer">
+            <p class="ad_text">手机游戏 尽在九游(9game.cn)</p>
+        </div>
+        <div class="sdk_img_pop" id="sdk_img_pop">
+        <div class="sdk_img_pop_bg"></div>
+            <div class="sdk_img_pop_box">
+                <img src="" width="300" height="200"/>
+                <a class="sdk_img_pop_view_btn" href="javascript:void(0);">查看原图</a>
+            </div>
+        </div>
+    </section>
+</script>
+
+<script type="text/html" id="replyList_templ">
+    <!--回复列表开始-->
+    <div id="reply_list" class="">
+        <% if (replyList.length == 0) {%>
+            <div class="replyContainer posts">
+                <p>目前还没有回复。<p>
+            </div>
+        <%} else {%>
+            <% for (var i = 0, max = replyList.length; i < max; i ++) { %>
+            <div class="replyContainer posts">
+                <div class="comit_user">
+                    <span class="comit_user_floor"><%= replyList.at(i).get('floor') %>楼</span><span style="color: #666666;"><%= replyList.at(i).get('userName') %></span>&nbsp;&nbsp;
+                    <span class="comit_user_level"><%= replyList.at(i).get('userLevel')%>级</span>
+                </div>
+                <!--判断显示类型，如果是详情页，对较长的回复进行处理，只显示前100个字，如果是全部回复页，则不进行处理-->
+                <% if (viewMode == "detail" && replyList.at(i).get('content').length > 100) { %>
+                    <!--前100个字-->
+                    <div id="replyContent<%= i %>" class="replyContent">
+                        <% if (replyList.at(i).get("face") != "") { %>
+                            <img src="<%= replyList.at(i).get('face')%>"></img>
+                        <% } %>
+                        <%= replyList.at(i).get('content').substr(0, 100) + "..." %>
+                    </div>
+                    <!--全部内容-->
+                    <div id="fullReplyContent<%= i %>" class="fullReplyContent">
+                        <% if (replyList.at(i).get("face") != "") { %>
+                            <img src="<%= replyList.at(i).get('face')%>"></img>
+                        <% } %>
+                        <%= replyList.at(i).get('content') %>
+                    </div>
+                    <a id="extra<%= i %>" class="extraContent" href="javascript:void(0)">[查看全部]</a>
+                <% } else { %>
+                    <!--全部内容-->
+                    <div class="replyContent">
+                        <% if (replyList.at(i).get("face") != "") { %>
+                            <img src="<%= replyList.at(i).get('face')%>"></img>
+                        <% } %>
+                        <%= replyList.at(i).get('content') %>
+                    </div>
+                <% } %>
+
+                <div class="small_info">
+                    <!--判断用户是不是回复作者，以及回复是否已经删除，仅当用户为作者且回复未删除时，显示删除按钮-->
+                    <% if (replyList.at(i).get('isLock') != true && replyList.at(i).get('uid') == user.ucid && isClosed != null && isClosed != true) { %>
+                        <span>
+                            <!--<a href="#">编辑</a>  |-->
+                            <a class="deleteReplyBtn" href="javascript:void(0);" data-replyId="<%= replyList.at(i).get('replyId') %>">删除</a>
+                        </span>
+                    <% } %>
+                    <%= replyList.at(i).get('createTime') %><!--时间格式 2012-08-10  12:00  -->
+                </div>
+             </div>
+            <% } %>
+        <% } %>
+    </div>
+    
+    <!--查看更多按钮-->
+    <% if (replyPage > 1) { %>
+        <p class="ui-more-btn">
+            <span class="gr-btn" id="show_more_post_btn">查看全部回复(<%= replyList.totalCount %>)</span>
+        </p>
+    <% } %>
+
+    <!--翻页按钮-->
+    <div class="game_page">
+        <div class="game_page_bar" id = "paginate">
+            <div id = "first_page" class="game_page_bar_left"><a href="javascript:void(0);"></a></div>
+            <ul class="game_page_ul">
+                <li id = "page_Pre"><a href="javascript:void(0);" >上一页</a></li>
+                <li class="game_pages"><input id="result_page_num" class="game_page_num" type="text"  value="" /></li>
+                <li id = "page_Next"><a href="javascript:void(0);" >下一页</a></li>
+            </ul>
+            <div id = "last_page" class="game_page_bar_right"><a href="javascript:void(0);"></a></div>
+        </div>
+    </div>
+</script>
+
+<script type="text/html" id="topicInfo_templ">
+    <!--帖子标题-->
+    <!--<div class="posts bg_gray">
+        <div class="black"><%= topic.get("title") %></div>
+    </div>-->
+    <!--帖子信息-->
+    <div class="posts f14">
+        <span><span class="black">楼主：</span><span style="color: #666666;"><%= topic.get("userName") %></span></span>&nbsp;<img src="../common/images/gc_icon_level.png" width="13" height="18" />&nbsp;<%= topic.get("userLevel")%>级
+        <div class="small_info">回(<%= topic.get("replyCount") %>)&nbsp;&nbsp;/&nbsp;&nbsp;阅(<%= topic.get("hitCount") %>)&nbsp;&nbsp;&nbsp;<%= topic.get("createTime")%></div>
+    </div>
+
+    <!--帖子正文-->
+    <div class="posts f14">
+        <!--普通帖，判断帖子正文是否作了分段处理，如果是，显示分段内容，如果不是，显示全部内容-->
+        <% if (topic.get("topicType") == 0 && typeof topic.get("content") != "string") { %>
+            <div id="topicContent" class="topic-content"><%= topic.get("content")[0] %></div>
+        <% } else if(topic.get("topicType") == 0) { %>
+            <div class="topic-content"><%= topic.get("content") %></div>
+        <% } %>
+
+        <!--文件帖-->
+        <% if (topic.get("topicType") == 1) { %>
+            <div class="topic-content"><%= topic.get("content") %></div>
+            <% for(var i = 0, files = topic.get("files"); i < files.length; i++) { %>
+                <div class="posts_sdk_img" style="width: 150px;"><img src="<%= files[i].path %>" width="150" height="100" /></div>
+                <span><%= files[i].description %></span>
+            <% } %>
+        <% } %>
+
+        <!--投票帖，判断用户是否已经投票，如果已经投票，显示投票结果，如果不是，显示投票格式-->
+        <% if (topic.get("topicType") == 2 && !topic.get("hasVoted")) { %>
+            <div class="topic-content"><%= topic.get("content") %></div>
+            <div class="ui-voteOpt">
+                <p class="gr-title">每人最多可选<%= topic.get("voteMax") %>项</p>
+                <div class="gr-cont">
+                <% for(i = 0, items = topic.get("voteItems"); i < items.length; i++) { %>
+                    <p>
+                        <input id="voteItem<%= items[i].itemId %>" class="voteItem" type = "checkbox" />
+                        <label for="voteItem<%= items[i].itemId %>" ><%= items[i].itemName %></label>
+                    </p>
+                <% } %>
+                </div>
+                <p class="sdk_reply"><input id="vote_btn" class="face_submit" type = "button" value = "提交" /></p>
+            </div>
+        <% } else if (topic.get("topicType") == 2 && topic.get("hasVoted")) { %>
+            <div class="topic-content"><%= topic.get("content") %></div>
+            <div class="ui-voteOpt">
+                <p class="gr-title">每人最多可选<%= topic.get("voteMax") %>项</p>
+                <div class="gr-cont">
+                    <% for(i = 0, items = topic.get("voteItems"); i < items.length; i++) { %>
+                        <div class="vote-wraper">
+                            <span class="vote-content"><%= items[i].itemName %></span>
+                            <span class="vote-counter"><%= items[i].voteCount %>票</span>
+                        </div>
+                    <% } %>
+                </div>
+                <p class="sdk_reply"><input class="face_submit bg_gray" style="color: gray;" type = "button" value = "已投票" /></p>
+            </div>
+        <% } %>
+
+        <!--翻页按钮-->
+        <% if (topic.get("topicType") == 0 && typeof topic.get("content") != "string") { %>
+            <div class="posts_page f14" id="content_paging">
+                <a id="show_all_content_btn" href="javascript:void(0)" class="gr-btn">余下全文</a>
+            </div>
+        <% } %>
+    </div>
+
+    <!--签名档-->
+    <!--<div class="posts">
+        <span class="small_info user-sign">签名：&nbsp;<%= topic.get("userSign")%></span>
+    </div>-->
+    <!--操作栏，判断用户是否为帖子作者，仅当用户为作者且帖子不是投票帖时，显示操作栏-->
+    <% if (topic.get("uid") == user.ucid && topic.get("topicType") != 2) { %>
+    <div class="posts">
+        <div class="posts_right_a">
+            <a href="#!topic/edit/<%= topic.get('boardId') %>/<%= topic.gameId %>/<%= topic.get('topicId') %>">编辑</a>   |
+            <a class="deleteTopicBtn" href="javascript:void(0);" data-topicId="<%= topic.get('topicId') %>">删除</a>
+        </div>
+    </div>
+    <% } %>
+</script>
+
+<!--全部回复列表-->
+<script type='text/html' id='allReplies_templ'>
+    <!--页面主要内容-->
+    <section class="ui-maincontainer">
+        <!--头部导航-->
+        <div class="bread"><a href="#" class="boardNameContainer"></a>&gt;<a class="topicInfoHref" href="javascript:void(0)">帖子内容</a>&gt;<a class="last" href="javascript:void(0)">回复列表</a></div>
+
+        <!--TODO 帖子回复列表-->
+        <div id="replyList"></div>
+
+        <!--底部导航-->
+        <div class="bread"><a href="#" class="boardNameContainer"></a>&gt;<a class="topicInfoHref" href="javascript:void(0)">帖子内容</a>&gt;<a class="last" href="javascript:void(0)">回复列表</a></div>
+        <div class="footer">
+            <p class="ad_text">手机游戏 尽在九游(9game.cn)</p>
+        </div>
+    </section>
+</script>
+
+<!--搜索结果列表-->
+<script type='text/html' id='search_templ'>
+    <section class="ui-maincontainer" id="searchContainer">
+        <!--头部导航-->
+        <div class="bread"><a href="#" class="boardNameContainer"></a>&gt;<a class="last" href="javascript:void(0)">搜索结果</a></div>
+
+        <!--页面模块·搜索弹窗-->
+        <div class="posts bg_gray">
+            <form action = "javascript:void(0);">
+                <div class="li-s-input fl"><input type="text" id = "keyWord" value = "" /></div>
+                <input type="button" id = "searchBtn" value="搜索帖子" class="li-s-btn">
+            </form>
+        </div>
+
+        <div class="posts">
+            <p class="black">
+                共搜索到<span id = "searchPostsNum" class="red"></span>条帖子
+            </p>
+        </div>
+        <!--帖子列表-->
+        <ul class="ui-module-list ui-module-list-MBnews" id = "postsContainer_search">
+            
+        </ul>    
+        <!--翻页-->
+        <div class="game_page" id = "paginate">
+            <div class="game_page_bar" id = "paginate">
+                <div class="game_page_bar_left"><a href="javascript:void(0);" id = "pageFirst"></a></div>
+                <ul class="game_page_ul">
+                    <li id = "pagePre"><a href="javascript:void(0);" >上一页</a></li>
+                    <li class="game_pages"><input id="game_page_num" class="game_page_num" type="text"  value="" /></li>
+                    <li id = "pageNext"><a href="javascript:void(0);" >下一页</a></li>
+                </ul>
+                <div class="game_page_bar_right"><a href="javascript:void(0);" id = "pageLast"></a></div>
+            </div>
+        </div>
+        <!--底部导航-->
+        <div class="bread"><a href="#" class="boardNameContainer"></a>&gt;<a class="last" href="javascript:void(0)">搜索结果</a></div>
+        <div class="footer">
+            <p class="ad_text">手机游戏 尽在九游(9game.cn)</p>
+        </div>
+    </section>
+</script>
+
+
+<!--发表新帖子-->
+<script type='text/html' id='addPost_templ'>
+    <!--编辑表单-->
+    <form class="cont_1" id="postTopicForm">
+        <div class="f16">标题<span class="gray">(3个字以上)</span>:</div>
+        <div class="input_100"><input name="title" id="title" type="text" placeholder="请输入标题"/></div>
+        <div class="space_10"></div>
+        <div class="f16">内容<span class="gray">(10个字以上)</span>:</div>
+        <div class="textarea_100"><textarea name="content" placeholder="请输入内容" rows="3"></textarea></div>
+        <div class="space_10"></div>
+        <div class="hide" id="TopicImageListDiv"></div>
+        <div class="space_10"></div>
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td width="19%">分组</td>
+                <td width="27%"><label><input value="0" name="group" type="radio" checked="checked"/>不分组</label></td>
+                <td width="27%"><label><input value="1" name="group" type="radio"/>攻略</label></td>
+                <td width="27%"><label><input value="2" name="group" type="radio"/>评测</label></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td><label><input value="3" name="group" type="radio"/>求助</label></td>
+                <td><label><input value="4" name="group" type="radio"/>心情</label></td>
+                <td><label><input value="5" name="group" type="radio"/>建议</label></td>
+            </tr>
+        </table>
+        <div class="f14 gray">选择分组,可增加帖查看/回复量</div>
+        <div class="space_10"></div>
+        <p class="ed_btn"><input id="postTopicBtn" type="submit" class="orn_btn" value="<%=isAdd?'发表':'编辑'%>"/></p>
+        <div class="space_10"></div>
+    </form>
+    <!--发帖帮助
+    <div class="cont_1">
+        <p class="f16">发帖帮助：</p>
+        <p class="gray">
+        1、显示链接：[url=http://链接地址]文字说明[/url]<br>
+        2、换行：[br]<br>
+        3、加粗：[b]字[/b]<br>
+        4、下划线：[u]要下划线字符[/u]</p>
+    </div>-->
+    <div class="footer">
+        <p class="ad_text">手机游戏 尽在九游(9game.cn)</p>
+    </div>
+</script>
+
+<script type="text/html" id="topicFile_templ">
+    <% if (list) { %>
+        <% for (var i = 0, max = list.length; i < max; i++) { %>
+            <div id="topicFile<%= list[i].fileId %>">
+                <p class="ui-delImg"><img src="<%= list[i].path %>" class="gr-img"/>
+                    <a id="img<%= i %>" class="deleteTopicFileBtn" href="javascript:void(0)" data-fileId="<%= list[i].fileId %>">删除</a>
+                </p>
+                <div class="f16">描述:</div>
+                <div><input class="input_100" id="topicFile<%= list[i].fileId %>" value="<%= list[i].description %>" type="text" placeholder="请输入图片描述"/></div>
+            </div>
+        <% } %>
+    <% } %>
+</script>
+
+<!--发表新回复-->
+<script type='text/html' id='addReply_templ'>
+    <form class="posts ui-wtShadow" id="postReplyForm">
+        <div class="f16">内容<span class="gray">(必填)</span>:</div>
+        <div class="textarea_100"><textarea id='content' name="content" placeholder="请输入内容" rows="3"></textarea></div>
+        <div class="space_10"></div>
+            <p class="sdk_reply">
+                <span id="postReplyFaceBtn"><img src="../common/images/icon_face.png" width="26" height="26"/></span>
+                <input id="postReplyBtn" type="submit" class="orn_btn" value="发表"/>
+            </p>
+        <div class="space_5"></div>
+    </form>
+    <div class="ui-face-box hide" id="sdkFacePop">
+        <div class="ui-arrow"><p class="ui-arrow-cont"></p></div>
+        <div id="faceContainer" class="ui-face-cont clearfix"></div>
+    </div>
+
+    <div class="footer">
+        <p class="ad_text">手机游戏 尽在九游(9game.cn)</p>
+    </div>
+</script>
+
+<script type="text/html" id="ConfirmBox-tpl">
+<div id="uiConfirmBox">
+    <section>
+        <div class="li-pop-box" id="js-po">
+            <p class="li-pop-t" id="uiConfirmBoxContent">确定删除帖子吗？</p>
+            <p class="fc">
+                <a href="javascript:void(0);" id="uiConfirmBoxConfirm" class="li-pop-btn">确定</a><a id="uiConfirmBoxCancel" href="javascript:void(0);" class="li-pop-btn">取消</a>
+            </p>
+        </div>
+    </section>
+</div>
+</script>
+
+<script type="text/html" id="MsgBox-tpl">
+<div id="uiMsgBox">
+    <section>
+        <div class="li-pop-box" id="js-po">
+            <p class="li-pop-t" id="uiMsgBoxContent"></p>
+            <p class="fc">
+                <a href="javascript:void(0);" id="uiMsgBoxConfirm" class="li-pop-btn">确定</a>
+            </p>
+        </div>
+    </section>
+</div>
+</script>
+
+<script type="text/javascript" src="../common/js/template.js?1368164432584"></script>
+<script type="text/javascript" src="../common/js/ucRoute.js?1368164432584"></script>
+<script type="text/javascript" src="js/bbsRoute.js?1368164432584"></script>
+<script type='text/javascript'>
+    Route.routeInit('Bbs');
+</script>
+<script type="text/javascript" src="../common/js/sdkBase.js?1368164432584"></script>
+<script type="text/javascript" src="../common/js/ucf.js?1368164432584"></script>
+<script type="text/javascript" src="../common/js/environment.js?1368164432584"></script>
+<script type="text/javascript" src="../common/js/common.js?1368164432584"></script>
+<script type="text/javascript" src="../game/js/game.js?1368164432584"></script>
+<script type="text/javascript" src="../user/js/user.js?1368164432584"></script>
+<script type="text/javascript" src="js/bbs.js?1368164432584"></script>
+<script type="text/javascript">
+document.addEventListener( 'deviceready',  function() {
+    S.initializer('bbs');
+});
+</script>
+</body>
+</html>

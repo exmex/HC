@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/announce_dialogrl"
+    android:layout_width="wrap_content"
+    android:layout_height="400dp"
+    android:layout_gravity="center"
+    android:background="@drawable/paybackbg"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+<LinearLayout 
+    android:paddingTop="130dp"
+    android:paddingRight="18dp"
+
+    android:paddingLeft="32dp"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent"  
+	 android:orientation="vertical"  
+    >
+
+    
+
+    <ImageButton
+        android:id="@+id/pay_mycard_member"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@drawable/mycard_account"
+        android:padding="10dp"
+        android:layout_margin="3dp"
+        android:scaleType="centerInside" />
+
+    <ImageButton
+        android:id="@+id/pay_mycard_billing"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@drawable/u_storedbtn02"
+        android:padding="10dp"
+        android:layout_margin="3dp"
+        android:scaleType="centerInside"/>
+
+    <ImageButton
+        android:id="@+id/pay_mycard_ingame"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@drawable/u_storedbtn03"
+        android:padding="10dp"
+        android:layout_margin="3dp"
+        android:scaleType="centerInside" />
+
+    <ImageButton
+        android:id="@+id/pay_gash"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@drawable/u_storedbtn04"
+        android:visibility="gone"
+        android:padding="12dp"
+        android:layout_margin="3dp"
+        android:scaleType="centerInside" />
+
+    <ImageButton
+        android:id="@+id/pay_google"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@drawable/u_storedbtn04"
+        android:padding="10dp"
+        android:visibility="visible"
+        android:layout_margin="3dp"
+        android:scaleType="centerInside" />
+    <!-- android:background="@android:color/transparent" -->
+</LinearLayout>
+
+<ImageButton
+    android:id="@+id/pay_cancel"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/u_storedbtn05"
+    android:padding="10dp"
+    android:scaleType="centerInside" />
+
+</RelativeLayout>

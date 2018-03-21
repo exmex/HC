@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/nmgc_quick_lg_width"
+    android:layout_height="@dimen/nmgc_onekey_height"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nmgc_alert_title_border" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/nmgc_lg_x_margin_left"
+            android:contentDescription="@string/nmgc_global_title"
+            android:src="@drawable/nmgc_x"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/nmgc_login_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/nmgc_onekey_reglg"
+            android:textSize="@dimen/nmgc_login_title_text_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/nmgc_alert_content_border"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/nmgc_login_part_margin_left"
+            android:layout_marginRight="@dimen/nmgc_login_part_margin_right"
+            android:clickable="true"
+            android:focusable="true" >
+
+            <TextView
+                style="@style/nmgc_common_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/nmgc_login_part1_name_margin_top"
+                android:layout_marginRight="@dimen/nmgc_login_part1_name_margin_top"
+                android:layout_marginTop="@dimen/nmgc_login_part1_name_margin_top"
+                android:gravity="center"
+                android:text="@string/nmgc_onekey_hint" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/nmgc_login_part_margin_left"
+            android:layout_marginRight="@dimen/nmgc_login_part_margin_right"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center|top"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/nmgc_onekey_button"
+                style="@style/nmgc_login_button_text"
+                android:layout_width="@dimen/nmgc_quick_lg_button_width"
+                android:layout_height="@dimen/nmgc_quick_lg_button_height"
+                android:layout_marginTop="@dimen/nmgc_onekey_lg_button_top"
+                android:layout_marginBottom="@dimen/nmgc_login_button_margin_bottom"
+                android:background="@drawable/nmgc_button_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/nmgc_onekey_login" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/nmgc_onekey_other"
+            style="@style/nmgc_login_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/nmgc_login_button_margin_bottom"
+            android:text="@string/nmgc_onekey_hasaccount"
+            android:textColor="#3a8292"
+            android:textSize="@dimen/nmgc_quick_lg_other_szie" />
+    </LinearLayout>
+
+</LinearLayout>

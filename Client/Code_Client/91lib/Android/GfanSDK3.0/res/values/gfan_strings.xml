@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="gfan_app_name">GfanPaySDK</string>
+
+    <!-- Common -->
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="submit">提交</string>
+    <string name="not_login">您尚未登录</string>
+    <string name="next">下一步</string>
+
+    <!-- 登录页 -->
+    <string name="login">登录</string>
+    <string name="login_success">登录成功</string>
+    <string name="singin">登录中，请稍候</string>
+    <string name="check_login">用户信息验证中，请稍候</string>
+    <string name="check_choose">用户信息验证中，请稍候</string>
+    <string name="login_tip">已经拥有机锋账号？\n立即登录</string>
+    <string name="hint_input_username">机锋帐号</string>
+    <string name="hint_input_password">密码</string>
+    <string name="hint_remeber">自动登录</string>
+    <string name="error_login_username">用户名不存在，请重新输入。</string>
+    <string name="error_login_password">密码不正确，请重新输入。</string>
+    <string name="error_login_other">登录失败，请稍候重试。</string>
+    <string name="error_verify_token">你好，你的登录验证已过期，为了你的账号安全，请重新登录！</string>
+    <string name="id_exit">切换用户</string>
+    <string name="makesure_id_exit">确定要切换用户吗？</string>
+    <string name="login_attention">只要拥有机锋账号并且登录，您就可以享受到云服务给您带来的便利生活体验~快来试试吧！</string>
+    <string name="warning_login_error_unknown">服务端发生未知错误</string>
+    <string name="weibo_login">新浪微博账号登录</string>
+     <string name="other_account">用其它账号登录</string>
+    
+    
+    <!-- 注册页 -->
+    <string name="register">注册</string>
+    <string name="register_ok">注册成功</string>
+    <string name="registering">注册中，请稍候</string>
+    <string name="register_label">提交</string>
+    <string name="hint_username">用户名</string>
+    <string name="hint_password">密码</string>
+    <string name="hint_confirm_password">确认密码</string>
+    <string name="hint_email">邮箱</string>
+    <string name="error_username_empty">用户名不能为空</string>
+    <string name="error_username_length_invalid">用户名长度必须是3到15字符之间（一个汉字等于3个字符）</string>
+    <string name="error_email_empty">邮箱不能为空</string>
+    <string name="error_email_format_invalid">邮箱格式不正确</string>
+    <string name="error_email_length_invalid">邮箱长度必须是6到32个字符之间</string>
+    <string name="error_password_empty">密码不能为空</string>
+    <string name="error_password_length_invalid">密码长度必须小于17个字符</string>
+    <string name="error_password_not_same">密码不匹配</string>
+    <string name="error_username_invalid">用户名不合法，请重新输入</string>
+    <string name="error_username_exist">用户名已经被注册，请尝试其他的用户名。</string>
+    <string name="error_email_invalid">您输入的邮箱格式不正确。</string>
+    <string name="error_email_exist">邮箱已经被注册，请尝试其他的邮箱。</string>
+    <string name="error_password_invalid">密码不合法。</string>
+    <string name="error_other">失败，未知原因。</string>
+    <string name="error_insure_same_the_two_password">请确保两次密码一致</string>
+    <string name="register_tip">还没有机锋账号？立即创建</string>
+
+    <!-- Choose Account -->
+    <string name="title_choose_account">选择您的机锋账号</string>
+    <string name="add_acccount">使用其他帐号</string>
+    <string name="token_error">您好，您的登录验证已过期，为了您的账号安全，请重新登录！</string>
+    <string name="account_cancle">返回</string>
+  	<string name="account_ok">确定</string>
+
+    <!-- Confirm Credentials -->
+    <string name="gfan_login">机锋帐号登录</string>
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="confirm_password">确认密码</string>
+    <string name="email">邮箱</string>
+    <string name="register_hint_login">取消</string>
+
+    <!-- error -->
+    <string name="error_network_time_out">网络超时，请稍候重试</string>
+    <string name="error_unknown">抱歉，未知服务器端错误</string>
+    <string name="error_params">参数错误，id:%d</string>
+
+    <!-- 网络连接失败 -->
+    <string name="no_data">连接失败，请检查你的网络后重试</string>
+    
+    <!-- menu -->
+    <string name="menu_del">删除帐号</string>
+    <string name="menu_cancle">取消</string>
+    
+    <!-- dialog -->
+    <string name="dialog_del">删除</string>
+    <string name="dialog_del_account">删除%s帐号信息？</string>
+    
+    <!-- for 支付SDK start -->
+     <string name="pay">支 付</string>
+    <string name="charge">充  值</string>
+    <string name="hint_pay_value">支付金额 > 0 (必填)</string>
+    <string name="hint_order_id">订单号(非必填)</string>
+    <string name="generate_orderid">生成定单号</string>
+    <string name="uid">uid</string>
+    <string name="running_number">流水号</string>
+    <string name="orderid">订单号</string>
+    <string name="game_login">登录游戏</string>
+    <string name="game_register">注册游戏</string>
+    <string name="new_role">创建新角色</string>
+    <string name="paytype1">ALL</string>
+    <string name="paytype2">OVERAGE</string>
+    <string name="paytype3">SMS</string>
+    <string name="sms_support">短信支付只支持5,10,25,50,75,100几个数量的充值.</string>
+    <!-- for 支付SDK end -->
+    
+    
+    <!-- 一键登录 、完善账号-->
+    <string name="onekey_login">免注册登录</string>
+    <string name="onekey_try">免注册登录</string>
+	<string name="onekeying">免注册登录中，请稍候</string>
+	<string name="onekey_login_tip">随机生成用户名和密码，登录后可更改.</string>
+    <string name="onekey_login_error_later">一键登录启用失败，请稍后再试。</string>
+	<string name="modfiy_info">完善账号</string>
+	<string name="modfiying">修改中</string>
+	<string name="error_username_must_modfiy">必须使用自定义用户名</string>
+	<string name="user_modfiy">完善账号</string>	
+	<string name="error_onekey_tips">免注册登录失败，请使用账号登录</string>	
+	<string name="error_only_onekey_can">只有免注册登录的账号可以修改账号</string>
+	<string name="error_cannot_modify">不允许修改用户名</string>
+	<!-- 分享 -->
+	<string name="game_share">分享游戏</string>
+	<string name="game_share_choose_way">选择分享方式</string>
+	<string name="game_shareing">分享中</string>
+	
+	<!-- 邀请好友 -->
+	<string name="invite_friends">邀请机锋好友</string>
+	<string name="invite_friends_getting">读取好友列表</string>
+	<string name="invite_friends_success">恭喜，您成功邀请了机锋好友</string>
+	
+	
+</resources>

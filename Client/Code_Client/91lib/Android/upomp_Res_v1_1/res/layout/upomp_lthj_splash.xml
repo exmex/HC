@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout 
+        android:layout_width="fill_parent" 
+        xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:orientation="vertical"
+        android:layout_height="fill_parent" 
+        android:background="@drawable/upomp_lthj_background">
+	<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" 
+	        android:paddingBottom="150dip" android:layout_alignParentBottom="true">
+	    	<ImageView style="@style/upomp_lthj_watermark" />
+	    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+    	 android:gravity="center" android:layout_alignParentBottom="true" android:paddingBottom="40dip">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+    	 android:gravity="center" android:layout_alignParentBottom="true">
+    	 <TextView style="@style/upomp_lthj_layout_width_height_ww" android:layout_marginRight="@dimen/upomp_lthj_margin_right"
+    		android:textColor="@drawable/upomp_lthj_white" android:text="@string/upomp_lthj_version_hint"/>
+    	 <TextView style="@style/upomp_lthj_layout_width_height_ww"
+    		android:textColor="@drawable/upomp_lthj_white" android:text="@string/upomp_lthj_version"/>
+    	 </LinearLayout>
+    	<TextView android:text="@string/upomp_lthj_company" style="@style/upomp_lthj_layout_width_height_ww"
+    		android:textColor="@drawable/upomp_lthj_white"/>
+    	<TextView style="@style/upomp_lthj_layout_width_height_ww"
+    		android:textColor="@drawable/upomp_lthj_white" android:id="@id/upomp_lthj_textview_time"/>
+    	<TextView style="@style/upomp_lthj_layout_width_height_ww"/>	
+    </LinearLayout>
+    <ImageView
+        android:layout_width="198dip"
+        android:layout_height="86dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/upomp_lthj_splash_logo" />
+    <SeekBar
+        android:id="@id/upomp_lthj_splash_seekbar"
+        android:layout_width="217dip"
+        android:layout_height="20dip"
+        android:paddingTop="2dip"
+        android:layout_centerInParent="true"
+        android:thumb="@drawable/upomp_lthj_splash_thumb"
+        android:progressDrawable="@drawable/upomp_lthj_splash_progress"
+        android:thumbOffset="0dip"
+	/>
+</RelativeLayout>

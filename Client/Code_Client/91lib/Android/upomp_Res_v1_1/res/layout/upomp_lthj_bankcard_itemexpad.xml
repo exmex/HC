@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent" android:layout_height="wrap_content">
+   	<ImageView style="@style/upomp_lthj_lineframe_icon" android:src="@drawable/upomp_lthj_pay_icon" android:id="@id/upomp_lthj_bankcard_listview_childicon"
+        />
+   	<ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:background="@drawable/upomp_lthj_vertical_line" />
+   	 <RelativeLayout  android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" >
+  	    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/upomp_lthj_row_line"/>
+      	<TextView
+      	    android:paddingLeft="10dip"
+      	    android:layout_width="fill_parent"
+      	    android:layout_height="wrap_content"
+      	    android:layout_centerVertical="true"
+      	    android:textColor="@drawable/upomp_lthj_text_black"
+      	    android:layout_toLeftOf="@id/upomp_lthj_relative_arrows"
+      	    android:text="@string/upomp_lthj_set_default" 
+      	    android:id="@id/upomp_lthj_bankcard_listview_childtv"/>
+	<ImageView style="@style/upomp_lthj_right_arrows" android:id="@id/upomp_lthj_relative_arrows"
+	    android:layout_alignParentRight="true"  android:layout_centerVertical="true"/> 
+      </RelativeLayout>
+  </LinearLayout>

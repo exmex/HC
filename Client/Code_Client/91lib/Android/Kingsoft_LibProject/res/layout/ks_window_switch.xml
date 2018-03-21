@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/switch_window_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ks_bg_cm_dialog"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <include layout="@layout/ks_common_cm_title_line_minview" />
+
+    <LinearLayout
+        android:id="@+id/switch_window_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/ks_switch_padding_btm"
+        android:paddingLeft="@dimen/ks_switch_padding_left"
+        android:paddingRight="@dimen/ks_switch_padding_right"
+        android:paddingTop="@dimen/ks_switch_padding_top" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/ks_switch_padding_mid"
+            android:contentDescription="@null"
+            android:duplicateParentState="true"
+            android:src="@drawable/ks_switch_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ks_switch"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/ks_switch_txt" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/dialog_switch_account_root"
+        android:layout_width="@dimen/nmgc_log_reg_width"
+        android:layout_height="@dimen/nmgc_log_reg_height"
+        android:layout_marginLeft="@dimen/dialog_margin_left"
+        android:layout_marginRight="@dimen/dialog_margin_right"
+        android:layout_gravity="center" 
+        android:background="@drawable/nmgc_auto_login_dialog_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_title_bar_height"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="@string/choice_account"
+            android:textColor="#4c4d4d"
+            android:textSize="18.33sp" />
+
+        <ImageView
+            android:id="@+id/dialog_switch_divider_line"
+            android:layout_width="@dimen/keke_switch_account_orange_divider_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialog_title"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/keke_orange_divider"
+            android:contentDescription="@null" />
+
+        <Button
+            android:id="@+id/dialog_switch_user_other_btn"
+            android:layout_width="@dimen/dialog_switch_account_listview_other_btn_w"
+            android:layout_height="@dimen/dialog_switch_account_listview_other_btn_h"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dialog_switch_account_listview_other_btn_margin_top"
+            android:layout_marginBottom="@dimen/dialog_switch_account_listview_other_btn_margin_bottom"
+            android:background="@drawable/switch_account_btn_selector"
+            android:text="@string/switch_account_use_other"
+            android:textColor="#4c4d4d"
+            android:textSize="@dimen/d_text_size" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@id/dialog_switch_user_other_btn"
+            android:layout_below="@id/dialog_switch_divider_line" >
+
+            <com.nearme.gamecenter.open.core.view.AccountListView
+                android:id="@+id/dialog_switch_account_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/list_divider_horizontal"
+                android:listSelector="@color/transparent" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

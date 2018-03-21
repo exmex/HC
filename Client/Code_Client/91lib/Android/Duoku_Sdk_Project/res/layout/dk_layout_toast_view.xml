@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/dk_bg_tip_info">
+        
+        <ImageView 
+            android:id="@+id/dk_iv_toast_user"
+            android:layout_width="32dp"
+            android:layout_height="32dp" 
+            android:visibility="gone"
+            android:src="@drawable/dk_ic_user" />
+        
+         <TextView
+             android:id="@+id/dk_tv_toast_user_account"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/dk_account_text"
+             android:layout_marginLeft="4dp"
+             android:textColor="@color/dk_color_333333"
+             android:textSize="@dimen/text_size_14_sp" />
+         
+         <TextView
+             android:id="@+id/dk_tv_toast_user_welcome"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerInParent="true"
+             android:layout_marginLeft="4dp"
+             android:textColor="@color/dk_color_333333"
+             android:textSize="@dimen/text_size_14_sp"
+             android:text="@string/dk_user_welcome_back_info"
+             android:layout_toRightOf="@+id/dk_tv_toast_user_account" />
+    </RelativeLayout>
+</LinearLayout>

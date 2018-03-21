@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content">
+	<RelativeLayout android:id="@+id/rl_special_item_aipay"
+	    android:layout_width="match_parent" 
+	    android:layout_height="wrap_content"
+	    android:layout_marginRight="12dp"
+	    android:layout_marginLeft="12dp"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="5dp">
+	    
+	    <ImageView android:id="@+id/iv_watermark_aipay"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:scaleType="fitXY"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:contentDescription="@null"/>
+	    	    
+	    <ImageView android:id="@+id/iv_paytype_icon_aipay"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp" 
+	        android:scaleType="fitXY"
+	        android:layout_marginLeft="13dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentLeft="true"
+	        android:contentDescription="@null"/>
+	    
+	    <TextView android:id="@+id/tv_paytype_aipay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_paytype_icon_aipay"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/aipay_white"/>
+	    
+	    <TextView android:id="@+id/tv_cardtype_aipay"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:layout_toRightOf="@+id/tv_paytype_aipay"
+	        android:layout_alignBottom="@+id/tv_paytype_aipay"
+	        android:textColor="@color/aipay_white"
+	        android:textSize="12sp"/>
+	    
+	    <TextView android:id="@+id/tv_name_aipay"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="10dp"
+	        android:layout_toRightOf="@+id/tv_paytype_aipay"
+	        android:layout_alignBottom="@+id/tv_paytype_aipay"
+	        android:textSize="13sp"
+	        android:maxWidth="140dp"
+	        android:singleLine="true"
+	        android:ellipsize="middle"
+	        android:textColor="@color/aipay_white"/>
+	    	    
+	    <!-- 酷派显示方式 -->
+	    <LinearLayout android:id="@+id/ll_aibei_info_aipay"
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"  
+			android:layout_below="@+id/tv_paytype_aipay"
+	        android:layout_toRightOf="@id/iv_paytype_icon_aipay"
+	        android:paddingBottom="23dp"
+	        android:orientation="horizontal"
+	        android:gravity="center_vertical"
+	        android:visibility="gone">
+		        
+	       <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textSize="14sp"
+		        android:text="余额:"
+		        android:textColor="@color/aipay_white"/>
+	       
+	       <TextView android:id="@+id/tv_balance_aipay"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:singleLine="true"
+		        android:textSize="13sp"
+		        android:textColor="@color/aipay_white"/>
+	       
+	       <TextView android:id="@+id/tv_blance_unit_aipay"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textSize="13sp"
+		        android:textColor="@color/aipay_white"/>
+	       
+	        <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:textSize="14sp"
+		        android:text="应付:"
+		        android:textColor="@color/aipay_white"/>
+	       
+	       <TextView android:id="@+id/tv_price_aipay"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:singleLine="true"
+		        android:textSize="13sp"
+		        android:textColor="@color/aipay_white"/>
+	       
+	       <TextView android:id="@+id/tv_price_unit_aipay"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textSize="13sp"
+		        android:textColor="@color/aipay_white"/>
+	   </LinearLayout>
+	    
+        <TextView android:id="@+id/tv_lastno_aipay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_paytype_aipay"
+	        android:layout_toRightOf="@id/iv_paytype_icon_aipay"
+	        android:gravity="center_vertical"
+            android:paddingBottom="25dp"
+            android:textSize="20sp"
+            android:textColor="@color/aipay_white"
+            android:visibility="gone"/>
+	    
+	    <TextView android:id="@+id/tv_discount_aipay"
+	        android:layout_width="29dp"
+	        android:layout_height="18dp"
+	        android:layout_marginTop="12dp"
+	        android:layout_marginRight="17dp"
+	        android:gravity="center"
+	        android:layout_alignParentRight="true"
+	        android:background="@drawable/aipay_discount_bg"
+	        android:textSize="12sp"
+	        android:textColor="@color/aipay_white"
+	        android:visibility="gone"/>   
+	        
+	</RelativeLayout>
+</LinearLayout>

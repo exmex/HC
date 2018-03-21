@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00000000"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/nmgc_notify_download_light"/>
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/nmgc_common_text"
+        android:textColor="@android:color/black"
+        android:id="@+id/nmgc_notification_download_finish_gamename"
+        android:text="斗地主"/>
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/nmgc_common_text"
+        android:text="@string/nmgc_notify_download_finish_end"/>
+
+</LinearLayout>

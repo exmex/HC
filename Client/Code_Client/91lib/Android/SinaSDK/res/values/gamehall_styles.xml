@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="@android:style/Theme.Light"></style>
+
+    <style name="AppDialog" parent="@android:style/Theme.Dialog"></style>
+
+    <style name="Dialog" parent="@style/AppDialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="install_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/gamehall_button2_selector1</item>
+        <item name="android:paddingBottom">12dip</item>
+        <item name="android:paddingTop">12dip</item>
+        <item name="android:paddingRight">24dip</item>
+        <item name="android:paddingLeft">24dip</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/txt_white</item>
+    </style>
+
+    <style name="gamehall_common_dialog" parent="@style/AppDialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/gamehall_window_small</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="gamehall_account_dialog" parent="@style/AppDialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@drawable/gamehall_login_bg</item>
+    </style>
+
+    <style name="gamehall_transparent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="popup_content_port_menu_style">
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+    <style name="popup_content_land_menu_style">
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:maxWidth">80dp</item>
+    </style>
+    
+    <style name="reddot_style">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">8dp</item>
+    </style>
+</resources>

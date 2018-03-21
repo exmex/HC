@@ -1,0 +1,22 @@
+<resources>
+
+    <dimen name="aipay_dimen_85dp">85dp</dimen>
+    <dimen name="aipay_dimen_60dp">60dp</dimen>
+    <dimen name="aipay_white_line_height">46dip</dimen>
+    <dimen name="ebpay_line_height">40dp</dimen>
+    <dimen name="ebpay_title_heigth">49dp</dimen>
+    
+    <dimen name="aipay_margin_horizontal">10dp</dimen>
+    <dimen name="aipay_margin_vertical">10dp</dimen>
+    
+    <dimen name="aipay_portrit_feeinfolist_item_height_scale_1.5">32dp</dimen>
+    
+    <dimen name="aipay_landscape_feeinfolist_item_height_scale_1.5">32dp</dimen>
+    
+    <dimen name="aipay_portrit_feeinfolist_item_height_scale_3.0">20dp</dimen>
+    
+    <dimen name="aipay_landscape_feeinfolist_item_height_scale_3.0">20dp</dimen>
+    
+    <dimen name="aipayfeeinfolist_item_margin_left_right">13dp</dimen>
+    <dimen name="aipayfeeinfolist_item_margin_top_bottom">6dp</dimen>
+</resources>

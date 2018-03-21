@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:nearme="http://com.nearme.gamecenter.namespace"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE9E9E9"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/account_login_top_bar"
+        layout="@layout/activity_account_top_bar" />
+
+    <TextView
+        android:id="@+id/account_pwd_has_changed_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/nmgc_reg_stepone_input_margin_left"
+        android:layout_marginRight="@dimen/nmgc_reg_stepone_input_margin_left"
+        android:layout_marginTop="@dimen/nmgc_reg_stepone_input_margin_left"
+        android:textColor="#4c4d4d"
+        android:textSize="@dimen/nmgc_login_common_text_size"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.nearme.gamecenter.open.core.view.InputBar
+            android:id="@+id/account_input_area"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/nmgc_reg_stepone_input_height"
+            android:layout_marginLeft="@dimen/nmgc_reg_stepone_input_margin_left"
+            android:layout_marginRight="@dimen/nmgc_reg_stepone_input_margin_left"
+            android:layout_marginTop="@dimen/nmgc_reg_stepone_input_margin_top"
+            nearme:input_hint="@string/nmgc_account_hint"
+            nearme:input_label="@string/nmgc_account" >
+        </com.nearme.gamecenter.open.core.view.InputBar>
+
+        <com.nearme.gamecenter.open.core.view.InputBar
+            android:id="@+id/password_input_area"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/nmgc_reg_stepone_input_height"
+            android:layout_below="@id/account_input_area"
+            android:layout_marginLeft="@dimen/nmgc_reg_stepone_input_margin_left"
+            android:layout_marginRight="@dimen/nmgc_reg_stepone_input_margin_left"
+            android:layout_marginTop="@dimen/nmgc_reg_stepone_input_margin_top"
+            nearme:input_hint="@string/nmgc_changepwd_pwdhint"
+            nearme:input_label="@string/nmgc_password"
+            nearme:input_length="16"
+            nearme:is_password="true" >
+        </com.nearme.gamecenter.open.core.view.InputBar>
+
+        <TextView
+            android:id="@+id/forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/password_input_area"
+            android:layout_below="@+id/password_input_area"
+            android:layout_marginLeft="46dp"
+            android:layout_marginTop="4.44dp"
+            android:text="@string/nmgc_forget_password"
+            android:textColor="#4c4d4d"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1.2dp"
+            android:layout_alignLeft="@id/forget_password"
+            android:layout_alignRight="@id/forget_password"
+            android:layout_below="@id/forget_password"
+            android:background="@drawable/account_login_forget_password_bottom_line" />
+
+        <Button
+            android:id="@+id/account_login"
+            android:layout_width="160dp"
+            android:layout_height="38dp"
+            android:layout_below="@id/password_input_area"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="39.4dp"
+            android:background="@drawable/nmgc_orange_button_selector"
+            android:text="@string/account_login_btn"
+            android:textColor="#4c4d4d"
+            android:textSize="@dimen/nmgc_login_common_text_size" />
+
+        <TextView
+            android:id="@+id/regist_new_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/password_input_area"
+            android:layout_marginTop="252.6dp"
+            android:drawableRight="@drawable/register_new_account_right_icon"
+            android:text="@string/nmgc_register_new_account"
+            android:textColor="#4c4d4d"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1.2dp"
+            android:layout_alignLeft="@id/regist_new_account"
+            android:layout_alignRight="@id/regist_new_account"
+            android:layout_below="@id/regist_new_account"
+            android:background="@drawable/account_login_forget_password_bottom_line" />
+        
+        <TextView
+            android:id="@+id/regist_visitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/password_input_area"
+            android:layout_marginTop="252.6dp"
+            android:drawableRight="@drawable/register_new_account_right_icon"
+            android:text="@string/nmgc_register_visitor"
+            android:textColor="#4c4d4d"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1.2dp"
+            android:layout_alignLeft="@id/regist_visitor"
+            android:layout_alignRight="@id/regist_visitor"
+            android:layout_below="@id/regist_new_account"
+            android:background="@drawable/account_login_forget_password_bottom_line" />
+    </RelativeLayout>
+
+</LinearLayout>

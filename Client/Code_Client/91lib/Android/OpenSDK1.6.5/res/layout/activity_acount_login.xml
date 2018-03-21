@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:nearme="http://com.nearme.gamecenter.open.core.view"
+    android:layout_width="@dimen/nmgc_log_reg_width"
+    android:layout_height="@dimen/nmgc_log_reg_height"
+    android:layout_gravity="center"
+    android:background="@drawable/nmgc_auto_login_dialog_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/account_login_top_bar"
+        layout="@layout/activity_account_top_bar"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/account_pwd_has_changed_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/nmgc_reg_stepone_input_margin_left"
+                android:layout_marginRight="@dimen/nmgc_reg_stepone_input_margin_left"
+                android:layout_marginTop="@dimen/nmgc_reg_stepone_input_margin_left"
+                android:textColor="#4c4d4d"
+                android:textSize="@dimen/nmgc_login_common_text_size"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/keke_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/keke_logo_margin_top"
+                android:contentDescription="@null"
+                android:src="@drawable/nmgc_auto_login_logo" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <com.nearme.gamecenter.open.core.view.InputBar
+                    android:id="@+id/account_input_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/keke_input_area_height"
+                    android:layout_marginLeft="@dimen/keke_input_area_margin_left"
+                    android:layout_marginRight="@dimen/keke_input_area_margin_left"
+                    android:layout_marginTop="@dimen/keke_usr_name_input_margin_top"
+                    nearme:input_hint="@string/account_name"
+                    nearme:input_label="@string/nmgc_account" >
+                </com.nearme.gamecenter.open.core.view.InputBar>
+
+                <com.nearme.gamecenter.open.core.view.InputBar
+                    android:id="@+id/password_input_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/keke_input_area_height"
+                    android:layout_below="@id/account_input_area"
+                    android:layout_marginLeft="@dimen/keke_input_area_margin_left"
+                    android:layout_marginRight="@dimen/keke_input_area_margin_left"
+                    android:layout_marginTop="@dimen/keke_psw_input_margin_top"
+                    nearme:input_hint="@string/nmgc_changepwd_pwdhint"
+                    nearme:input_label="@string/nmgc_password"
+                    nearme:input_length="16"
+                    nearme:is_password="true" >
+                </com.nearme.gamecenter.open.core.view.InputBar>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/password_input_area"
+                    android:layout_below="@id/password_input_area"
+                    android:layout_marginLeft="@dimen/keke_rem_psw_margin_left"
+                    android:layout_marginTop="@dimen/keke_rem_psw_margin_top"
+                    android:orientation="horizontal"
+                    android:id="@+id/ll_cb" >
+					
+                    <CheckBox
+                        android:id="@+id/keke_auto_login"
+                        android:layout_width="@dimen/keke_check_box_width"
+                        android:layout_height="@dimen/keke_check_box_width"
+                        android:button="@drawable/keke_check_box"
+                        android:layout_gravity="center_vertical"
+                        android:checked="true" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="@string/nmgc_rem_psw"
+                        android:textColor="#585858"
+                        android:textSize="13sp" />                   
+                </LinearLayout>               
+
+                <TextView
+                    android:id="@+id/forget_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/password_input_area"
+                    android:layout_below="@+id/password_input_area"
+                    android:layout_marginRight="@dimen/keke_forget_psw_margin_right"
+                    android:layout_marginTop="@dimen/keke_rem_psw_margin_top"
+                    android:text="@string/nmgc_forget_password"
+                    android:textColor="#585858"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1.2dp"
+                    android:layout_alignLeft="@id/forget_password"
+                    android:layout_alignRight="@id/forget_password"
+                    android:layout_alignBottom="@id/forget_password"
+                    android:background="@drawable/account_login_forget_password_bottom_line" />
+
+                <Button
+                    android:id="@+id/regist_new_account"
+                    android:layout_width="@dimen/keke_reg_btn_width"
+                    android:layout_height="@dimen/keke_reg_btn_height"
+                    android:layout_alignLeft="@id/account_input_area"
+                    android:layout_below="@id/ll_cb"
+                    android:layout_marginTop="@dimen/keke_reg_btn_margin_top"
+                    android:background="@drawable/log_reg_bg_selector"
+                    android:text="@string/nmgc_fast_reg"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15.5sp"
+                    android:shadowColor="#000000"
+		            android:shadowDx="0"
+		            android:shadowDy="1"
+		            android:shadowRadius="1" />
+
+                <Button
+                    android:id="@+id/account_login"
+                    android:layout_width="@dimen/keke_reg_btn_width"
+                    android:layout_height="@dimen/keke_reg_btn_height"
+                    android:layout_alignRight="@id/account_input_area"
+                    android:layout_below="@id/ll_cb"
+                    android:layout_marginTop="@dimen/keke_reg_btn_margin_top"
+                    android:background="@drawable/log_reg_bg_selector"
+                    android:text="@string/nmgc_usr_log"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15.5sp" 
+                    android:shadowColor="#000000"
+		            android:shadowDx="0"
+		            android:shadowDy="1"
+		            android:shadowRadius="1" />
+
+                <Button
+                    android:id="@+id/regist_visitor"
+                    android:layout_width="@dimen/keke_visitor_log_width"
+                    android:layout_height="@dimen/keke_visitor_log_height"
+                    android:layout_below="@id/account_login"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/keke_visitor_log_margin_top"
+                    android:background="@drawable/visitor_login_bg_selector"
+                    android:text="@string/nmgc_visitor_login"
+                    android:textColor="#585858"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

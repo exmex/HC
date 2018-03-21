@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="#00000000">
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:background="@drawable/appchina_pay_main_shape"
+		android:layout_margin="10dp">
+		<!-- 标题栏 -->
+		<RelativeLayout android:id="@+id/web_title_ly"
+			android:layout_width="fill_parent" android:layout_height="48dp"
+			android:background="@drawable/appchina_pay_title_bg"
+			android:layout_alignParentTop="true">
+			<Button	android:id="@+id/web_view_exitbtn" 
+				android:text="@string/appchina_pay_btn_back" 
+				android:padding="5dp"
+				android:layout_centerVertical="true"
+				android:layout_alignParentLeft="true"
+				android:layout_marginLeft="15dp"
+				android:layout_width="55dp" 
+				style="@style/appchina_pay_button_text_16" 
+				android:layout_height="wrap_content" android:background="@drawable/appchina_pay_by_button_selector"/>
+			<!-- <ImageView android:layout_width="142dp"
+				android:id="@+id/title_img"
+				android:layout_height="34dp"
+				android:layout_centerVertical="true"
+				android:layout_toRightOf="@id/web_view_exitbtn"
+				android:layout_marginLeft="20dp"
+				android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+				android:src="@drawable/appchina_pay_title" /> -->
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="34dp" android:layout_centerInParent="true"
+			android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+			android:textSize = "20sp" android:gravity="center_vertical"
+			android:textColor="#ffffff"
+			android:text="收银台" />		
+	</RelativeLayout>
+		<!-- webView -->
+		<ScrollView android:id="@+id/web_scroll"
+			android:layout_marginBottom="3dp"
+			android:layout_marginLeft="3dp"
+			android:layout_marginRight="3dp"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			 android:fadingEdge="none"
+			android:layout_below="@id/web_title_ly">
+			<WebView android:id="@+id/id_webview" android:layout_width="fill_parent"
+				android:layout_height="fill_parent" android:scrollbars="none" />
+		</ScrollView>
+	</RelativeLayout>
+</RelativeLayout>

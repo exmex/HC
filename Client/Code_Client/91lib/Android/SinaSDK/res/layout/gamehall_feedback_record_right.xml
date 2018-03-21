@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:clickable="false"
+    android:background="#000" >
+    
+    <include layout="@layout/gamehall_feedback_record_time"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center"
+        android:orientation="horizontal" >
+        <ImageView
+            android:id="@+id/gamehall_feedback_record_right_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:src="@drawable/gamehall_feedback_error" />
+        
+        <ProgressBar 
+            android:id="@+id/gamehall_feedback_record_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleSmallInverse"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/gamehall_feedback_record_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/gamehall_feedback_record_right"
+            android:maxWidth="200dp"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"
+            android:singleLine="false" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/gamehall_feedback_me" />
+    </LinearLayout>
+
+</LinearLayout>

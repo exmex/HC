@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="textPersonName"
+        android:background="@null"
+        android:textSize="16sp"
+        android:ems="10"
+        android:id="@+id/dcn_name"
+        android:layout_weight="1"
+        android:textColor="@color/dcn_light_black"
+        android:textColorHint="@color/dcn_login_edit_hint"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:id="@+id/dcn_delete"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:background="@drawable/dcn_back_btn_selector">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dcn_edit_delete" />
+    </LinearLayout>
+</LinearLayout>

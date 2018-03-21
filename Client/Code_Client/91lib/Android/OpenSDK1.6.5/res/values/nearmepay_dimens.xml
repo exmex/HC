@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="nearmepay_title_big_size">20dp</dimen>
+    <dimen name="nearmepay_dialog_loading_width">237dp</dimen>
+    <dimen name="nearmepay_dialog_msg_size">13sp</dimen>
+    <dimen name="nearmepay_dialog_width">297dip</dimen>
+    <dimen name="nearmepay_dialog_footer_margin">18dp</dimen>
+    <dimen name="nearmepay_dialog_footer_margin_bottom">19dp</dimen>
+    <dimen name="nearmepay_dialog_botton_height">43dp</dimen>
+    <dimen name="nearmepay_dialog_botton_between">8dp</dimen>
+    <dimen name="nearmepay_dialog_message_margin_bottom">25dp</dimen>
+    <dimen name="nearmepay_dialog_message_margin_top">19dp</dimen>
+    <dimen name="nearmepay_dialog_title_size">24dp</dimen>
+    <dimen name="nearmepay_dialog_text_size">20dp</dimen>
+    <dimen name="nearmepay_title_size">16sp</dimen>
+    <dimen name="nearmepay_dialog_progress_text">18dp</dimen>
+    <dimen name="nearmepay_gbtn_text_size">18sp</dimen>
+    <dimen name="nearmepay_dialog_button_size">18sp</dimen>
+    <dimen name="nearmepay_dialog_toast_margin_top">11dp</dimen>
+    <dimen name="nearmepay_dialog_toast_margin_bottom">15dp</dimen>
+     <dimen name="nearmepay_dialog_toast_margin_left">11dp</dimen>
+    <dimen name="nearmepay_dialog_toast_margin_right">11dp</dimen>
+    <!--  -->
+    <dimen name="nearmepay_dialog_reconfirm_height">256dp</dimen>
+    <dimen name="nearmepay_dialog_reconfirm_text_normal_size">17dp</dimen>
+    <dimen name="nearmepay_dialog_reconfirm_margin_top_1">20dp</dimen>
+    <dimen name="nearmepay_dialog_reconfirm_margin_top_2">13dp</dimen>
+    <dimen name="nearmepay_dialog_reconfirm_margin_top_3">28dp</dimen>
+    <dimen name="nearmepay_dialog_reconfirm_margin_top_4">20dp</dimen>
+    <dimen name="nearmepay_dialog_reconfirm_text_small_size">13dp</dimen>
+    <dimen name="nearmepay_dialog_reconfirm_margin_top_5">13dp</dimen>
+    
+</resources>

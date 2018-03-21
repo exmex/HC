@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gamehall_window">
+
+    <ImageButton
+        android:id="@+id/gamehall_customdialog1_delbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="12dp"        
+        android:background="@drawable/gamehall_button3_selector1" />
+
+    <TextView
+        android:id="@+id/gamehall_customdialog1_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gamehall_customdialog1_delbtn"
+        android:layout_marginTop="14dp"
+        android:layout_alignLeft="@+id/gamehall_customdialog1_awdbtn"
+        android:textSize="17dp" />
+
+    <Button
+        android:id="@+id/gamehall_customdialog1_awdbtn"
+        android:layout_width="270dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+        android:layout_below="@+id/gamehall_customdialog1_msg"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/gamehall_button2_selector1"
+        android:textColor="@color/txt_white"
+        android:text="领取奖品"
+        android:textSize="17dp" />
+
+</RelativeLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dcn_pop_up_bg"
+        android:paddingBottom="15dp">
+        
+        <RelativeLayout
+            android:id="@+id/dcn_recharge_user_enter_title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dcn_title_height"
+            >
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/dcn_recharge_user_enter_title"
+                android:textSize="22sp"
+                android:textColor="@color/dcn_ucenter_navi_text_color_pressed"
+                />
+
+            
+            <LinearLayout
+                android:id="@+id/dcn_recharge_user_enger_exit"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/dcn_back_btn_selector"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dcn_popup_closed_selector" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:paddingLeft="15dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:clickable="true"
+                android:background="@drawable/dcn_login_box_tips_bg"
+                android:id="@+id/dcn_error_layer">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/dcn_error_message"
+                    android:drawableLeft="@drawable/dcn_login_tips_warning_icon"
+                    android:textColor="@color/dcn_error_msg_color"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/dcn_error_exit"
+                    android:background="@drawable/dcn_back_btn_selector"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dcn_tips_closed_selector" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/dcn_recharge_user_enter_label"
+                android:textSize="16sp"
+                android:textColor="@color/dcn_light_black"
+                />
+            
+           <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/dcn_login_box_bg"
+                android:gravity="center_vertical">
+    
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dcn_yuan"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+    
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="25dp"
+                    android:background="@color/dcn_color_login_box_gb"
+                    android:layout_marginRight="10dp" />
+    
+                <EditText
+                    android:id="@+id/dcn_user_enter_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/dcn_recharge_user_enter_value"
+                    android:textSize="@dimen/dcn_edit_text_size"
+                    android:background="@null"
+                    android:textColorHint="@color/dcn_login_edit_hint"
+                    android:textColor="@color/dcn_light_black"
+                    android:layout_weight="1"
+                    android:singleLine="true" />
+    
+                <LinearLayout
+                    android:id="@+id/dcn_delete_user_enter_money"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:gravity="center"
+                    android:background="@drawable/dcn_back_btn_selector"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/dcn_edit_delete" />
+            </LinearLayout>
+
+        </LinearLayout>
+        
+        </LinearLayout>
+        <LinearLayout 
+            android:id="@+id/dcn_switch_account_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >"
+
+            <Button
+                android:id="@+id/dcn_cancel_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/dcn_pop_up_cancel_btn"
+                android:textColor="@android:color/white"
+                android:text="@string/dcn_dialog_cancel" />
+
+            <Button
+                android:id="@+id/dcn_confirm_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/dcn_orange_btn_selector"
+                android:text="@string/dcn_recharge_user_enter_confirm"
+                android:textColor="@android:color/white" />
+            
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/anzhi_account_list_item_selector"
+    android:descendantFocusability="blocksDescendants" >
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/size_5"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/iv_header"
+        android:text="@string/anzhi_test"
+        android:textColor="@color/anzhi_494949"
+        android:textSize="@dimen/font_16" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginLeft="@dimen/size_5"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/iv_header"
+        android:text="@string/anzhi_gift_desc"
+        android:textColor="@color/red"
+        android:textSize="@dimen/font_12" />
+
+    <TextView
+        android:id="@+id/tv_gift_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_desc"
+        android:layout_marginLeft="@dimen/size_5"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/iv_header"
+        android:ellipsize="end"
+        android:paddingBottom="5dp"
+        android:singleLine="true"
+        android:text="@string/anzhi_gift_key"
+        android:textColor="@color/anzhi_494949"
+        android:textSize="@dimen/font_12" />
+
+    <Button
+        android:id="@+id/bt_gift_copy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/size_20"
+        android:background="@drawable/anzhi_button_bg_green"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/anzhi_copy"
+        android:minEms="5"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_14" />
+             
+        
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+           android:layout_marginRight="@dimen/size_50"
+           android:layout_marginLeft="@dimen/size_50"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/actionbar"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/size_50" >
+
+            <LinearLayout
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_35"
+                android:layout_centerInParent="true" >
+
+                <Button
+                    android:id="@+id/back_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/anzhi_logo"
+                    android:clickable="false"
+                    android:focusable="false" />
+
+                <TextView
+                    android:id="@+id/txt_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_10"
+                    android:layout_marginTop="@dimen/size_5"
+                    android:paddingRight="@dimen/size_5"
+                    android:text="@string/title_notice"
+                    android:textColor="@color/anzhi_494949"
+                    android:textSize="@dimen/size_20" />
+            </LinearLayout>
+
+          <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            	 android:layout_alignParentRight="true"
+            	  android:gravity="center"
+            	  android:id="@+id/ib_pay_close"
+                >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_margin="@dimen/size_14"
+                android:layout_height="wrap_content"
+                android:background="@drawable/anzhi_notice_close" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_marginLeft="@dimen/size_10"
+            android:layout_marginRight="@dimen/size_10"
+            android:background="@color/anzhi_D6D6D6" />
+
+             <LinearLayout
+        android:layout_width="fill_parent"
+       android:layout_height="@dimen/size_150"
+        android:orientation="vertical" >   
+           <TextView
+            android:id="@+id/notice_tv"
+            android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_10"
+              android:singleLine="false"
+              android:scrollbars="none"
+                android:textColor="@color/anzhi_EB9100"
+            android:textSize="@dimen/font_18" />
+           </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_look_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/size_40"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/size_10"
+            android:layout_marginLeft="@dimen/size_80"
+            android:layout_marginRight="@dimen/size_80"
+            android:layout_marginTop="@dimen/size_10"
+            android:background="@drawable/anzhi_button_bg_green"
+            android:text="@string/anzhi_look_notice_detail"
+            android:textColor="@color/anzhi_FFFFFF"
+            android:textSize="@dimen/font_18" />
+    </LinearLayout>
+
+</RelativeLayout>

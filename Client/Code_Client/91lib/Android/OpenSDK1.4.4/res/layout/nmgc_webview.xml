@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/nmgc_main_bg"
+    android:orientation="vertical" >
+    <WebView
+        android:id="@+id/nmgc_webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <include android:id="@+id/inc_loading_full_root" layout="@layout/nmgc_loading_full"/>
+</RelativeLayout>

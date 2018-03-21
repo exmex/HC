@@ -1,0 +1,21 @@
+
+
+
+class  CCShaderCache : public CCObject 
+{
+
+    CCShaderCache();
+
+    virtual ~CCShaderCache();
+    static CCShaderCache* sharedShaderCache();
+
+    static void purgeSharedShaderCache();
+
+    void loadDefaultShaders();
+    
+    void reloadDefaultShaders();
+
+    CCGLProgram * programForKey(const char* key);
+
+    void addProgram(CCGLProgram* program, const char* key);
+}

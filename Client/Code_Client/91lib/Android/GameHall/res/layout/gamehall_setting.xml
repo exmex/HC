@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#242424"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/gamehall_setting_headerview"
+        layout="@layout/gamehall_headerview" />
+
+    <ScrollView
+        android:id="@+id/view_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/gamehall_setting_headerview"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:id="@+id/gamehall_settingcontainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#242424"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

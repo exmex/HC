@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_more"
+    android:layout_width="fill_parent"
+    android:layout_height="60dip"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <!--
+             <TextView
+            android:id="@+id/tv_btn_load_more"
+            android:layout_width="150dip"
+            android:layout_height="40dip"
+            android:background="@drawable/yyh_button_slector_register_cell"
+            android:gravity="center"
+            android:textColor="@color/yyh_a_1"
+            android:text="@string/yyh_listview_more"
+            android:visibility="gone" />
+    -->
+
+    <ProgressBar
+        style="@style/yyh_loading_progressbar_style"
+        android:layout_gravity="center_vertical" >
+    </ProgressBar>
+
+    <TextView
+        android:id="@+id/loading_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1.0dip"
+        android:paddingLeft="6.0dip"
+        android:paddingTop="2.0dip"
+        android:text="@string/yyh_loading"
+        android:textColor="#000000"
+        android:textSize="14dip" >
+    </TextView>
+
+</LinearLayout>

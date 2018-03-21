@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="@color/TextColorWhite"
+    android:layout_height="match_parent" >
+   <LinearLayout 
+    android:id="@+id/toptitle"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:background="@color/TextColorBlack"
+    android:orientation="vertical"
+    >
+
+<RelativeLayout 
+    android:id="@+id/titlepay"
+    android:layout_width="fill_parent"
+     android:layout_height="42dp"
+    android:layout_gravity="center_horizontal"
+	android:background="@drawable/top_p"
+    android:orientation="horizontal" >
+   
+    
+
+    <Button
+        android:id="@+id/u2_title_back"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/u2_titlebt_bg"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:textSize="16sp"
+          android:textColor="@color/TextColorWhite"
+        android:text="@string/title_back" />
+
+    <TextView
+        android:id="@+id/u2_title_text"
+        android:layout_width="wrap_content"
+        android:text="@string/app_dev"
+        android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textColor="@color/TextColorWhite"/>
+
+    </RelativeLayout>
+    
+    </LinearLayout>
+    
+    <!-- <include
+        android:id="@+id/u2_title"
+        layout="@layout/youai_base_title_layout" /> -->
+    
+<TextView
+        android:id="@+id/u2_charge_user"
+         android:layout_below="@+id/toptitle"
+         android:background="@drawable/charge_none_round"
+         android:textSize="16sp"
+         android:paddingLeft="12dp"
+         android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+         android:layout_marginTop="20dp"
+        android:layout_height="45dp"
+        android:text="@string/payuser"
+        android:textColor="@color/TextColorGray"
+        android:singleLine="true" />
+
+
+   <TextView
+        android:id="@+id/u2_charge_info"
+         android:layout_below="@+id/u2_charge_user"
+         android:textSize="17sp"
+         android:gravity="center_vertical"
+         android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="12dp"
+        android:layout_height="wrap_content"
+        android:text="@string/payproduct"
+        android:textColor="@color/TextColorGray"
+        android:singleLine="true" />
+ 
+    <LinearLayout
+        android:id="@+id/paylayout"
+        style="@style/u2_style_charge_body_lay_port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/u2_charge_info"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="5dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.0dip"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+		<LinearLayout 
+     android:id="@+id/infopay"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/charge_none_round"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical" >
+     
+    <TextView
+        android:id="@+id/u2_charge_money_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:gravity="center_vertical|left"
+        android:layout_marginLeft="12dp"
+        android:textSize="16sp"
+        android:text="@string/payprice"
+        android:textColor="@color/TextColorGray"
+        android:singleLine="true" />
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_height="1dp"
+         android:background="@color/TextColorGray" />
+
+    <TextView
+        android:id="@+id/u2_charge_game_name"
+        android:layout_width="wrap_content"
+        android:gravity="center_vertical|left"
+        android:textSize="16sp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="12dp"
+        android:textColor="@color/TextColorGray"
+        android:text="@string/paygame"
+        android:singleLine="true" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_height="1dp"
+         android:background="@color/TextColorGray" />
+    <TextView
+        android:id="@+id/u2_charge_product"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:textSize="16sp"
+        android:layout_height="35dp"
+        android:gravity="center_vertical|left"
+        android:text="@string/paything"
+        android:textColor="@color/TextColorGray"
+        android:singleLine="true" />
+</LinearLayout>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="12dp"
+                android:textColor="@color/TextColorGray"
+                android:singleLine="true"
+                android:layout_gravity="left"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/select_pay" />
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_marginTop="4.0dip"
+                layout="@layout/youai_charge_type" />
+        </LinearLayout>
+</LinearLayout>
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_alignParentBottom="true"
+     android:layout_below="@+id/paylayout"
+     android:layout_centerHorizontal="true"
+     android:gravity="left|center_vertical"
+     android:orientation="vertical"
+     android:paddingLeft="20dp" >
+
+  <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2.0dip"
+                android:textColor="@color/TextColorGray"
+                android:singleLine="true"
+                android:text="@string/payprompt" />
+  <TextView
+      			android:id="@+id/youai_help_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2.0dip"
+                android:textColor="@color/TextColorGray"
+                android:singleLine="true"
+                android:text="@string/custom_phone" />
+  <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2.0dip"
+                android:textColor="@color/TextColorGray"
+                android:singleLine="true"
+                android:text="@string/custom_time" />
+  <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2.0dip"
+                android:linksClickable="true"
+                android:textColor="@color/TextColorGray"
+                android:singleLine="true"
+                android:text="@string/youaiweb" />
+     
+     
+ </LinearLayout>
+    
+
+</RelativeLayout>

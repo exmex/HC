@@ -1,0 +1,125 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appWhite"
+    tools:context=".GameActivity" >
+
+    <org.cocos2dx.lib.Cocos2dxEditText
+        android:id="@+id/GameApp_Cocos2dxEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="top"
+        android:lines="3" >
+		
+    </org.cocos2dx.lib.Cocos2dxEditText>
+
+    
+    <org.cocos2dx.lib.Cocos2dxGLSurfaceView
+        android:id="@+id/GameApp_Cocos2dxGLSurfaceView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+    </org.cocos2dx.lib.Cocos2dxGLSurfaceView>
+    
+    
+    <RelativeLayout
+        android:id="@+id/GameApp_LogoRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/game_activity_logo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:background="@color/appWhite"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo_nuclear" />
+        
+        <TextView
+	        android:id="@+id/loading_game_textView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="15dp"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerHorizontal="true"
+	        android:text="" />
+
+    	<TextView
+	        android:id="@+id/loading_game_textView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_above="@+id/loading_game_textView1"
+	        android:layout_centerHorizontal="true"
+	        android:textColor="@color/red_text"
+	        android:text="@string/starting_game" />
+        
+    </RelativeLayout>
+    
+    <FrameLayout
+        android:id="@+id/GameApp_WaitingFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#000f0f0f"
+        android:visibility="invisible" >
+
+        <!-- 
+        	android:alpha="0.4"
+			颜色值带alpha也ok#40000000
+			layout_gravity应用于自己，gravity应用于父
+         -->
+
+        <ProgressBar
+            android:id="@+id/waiting_progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:indeterminate="false"
+            android:indeterminateDrawable="@anim/nuclear_loading" />
+
+        <TextView
+            android:id="@+id/waiting_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:text="@string/dummy_content"
+            android:textColor="#0d0d0d"
+            android:textSize="14sp" />
+    </FrameLayout>
+ 
+    <com.nuclear.WorldVideoView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+       	android:visibility="gone"
+       	android:id="@+id/worldvideoview"
+     />
+
+    <ImageButton
+        android:id="@+id/buttonstopmovie"
+        android:layout_width="53dp"
+        android:scaleType="centerInside"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/moviejump"
+        android:background="@android:color/transparent"
+        android:layout_height="35dp"
+        android:visibility="gone"
+        android:layout_gravity="top|right"/>
+    
+    <ImageButton
+        android:id="@+id/disciplestopmovie"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerInside"
+        android:background="@android:color/transparent"
+        android:visibility="gone"
+        android:layout_gravity="top|right"/>
+
+</FrameLayout>

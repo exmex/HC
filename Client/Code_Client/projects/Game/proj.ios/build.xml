@@ -1,0 +1,24 @@
+<project default="Hero" name="Hero">
+    <property name="app.id" value="hero"/>
+    <property name="configuration" value="Release"/>
+    <property name="version" value="1.0"/>
+    <property name="automation.template.path" value="/Developer/Platforms/iPhoneOS.platform/Developer/Library/Instruments/PlugIns/AutomationInstrument.bundle/Contents/Resources/Automation.tracetemplate"/>
+    <property name="release.path" value="/bamboo_agent/xml-data/build-dir/HERO-HEROALPHAIOSCLIENTKEY1-JOB1/hero/build/Release-iphonesimulator/HeroAlpha.app"/>
+    <property name="code.path" value="/bamboo_agent/xml-data/build-dir/HERO-HEROALPHAIOSCLIENTKEY1-JOB1/projects/hero/proj.ios"/>
+    <property name="rsync.path" value="/product/hero/alpha/web/htdocs/ios/" />		
+
+	<path id="jsch.path">
+        <pathelement location="lib/jsch-0.1.45.jar" />
+	</path>
+	
+    <target name="distribution">
+        <exec executable="sh" failonerror="true">
+            <arg value="${code.path}/AutoBuildShell/iosDistribution.sh"/>
+            <arg value="${code.path}"/>
+            <arg value="heroAlpha"/>
+            <arg value="${rsync.path}"/>
+            <arg value="${versionNumber}"/>
+            <arg value="${typeFlag}"/>           
+        </exec>
+    </target>
+</project>

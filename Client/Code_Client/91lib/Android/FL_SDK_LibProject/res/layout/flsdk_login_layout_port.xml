@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <include layout="@layout/flsdk_base_bg_layout_port" />
+
+    <LinearLayout style="@style/flsdk_style_body_lay_port" >
+
+        <com.fl.gamehelper.ui.widget.BaseEditTextView
+            android:id="@+id/flsdk_login_account_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <com.fl.gamehelper.ui.widget.BaseEditTextView
+            android:id="@+id/flsdk_login_pwd_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14.0dip" />
+
+        <include
+            android:id="@+id/flsdk_login_pwd_check_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dip"
+            layout="@layout/flsdk_base_checkbox_layout"
+             />
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2.0dip"
+            android:layout_marginLeft="14.0dip"
+            android:layout_marginRight="14.0dip"
+            android:layout_marginTop="2.0dip"
+            layout="@layout/flsdk_login_btn_layout_port" />
+
+        <include layout="@layout/flsdk_base_divide_line_img" />
+
+        <LinearLayout 
+           android:id="@+id/flsdk_third_login_lay"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"  >
+           
+        	<include layout="@layout/flsdk_login_third_layout_port" />
+        	<include layout="@layout/flsdk_base_divide_line_img" />
+        </LinearLayout>
+
+        <include layout="@layout/flsdk_base_divide_line_layout" />
+
+        <include layout="@layout/flsdk_base_divide_line_layout" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/flsdk_login_forget_pwd_btn"
+                style="@style/flsdk_style_c2c2c2_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textIsSelectable="true" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/flsdk_base_loading_layout" />
+
+</merge>

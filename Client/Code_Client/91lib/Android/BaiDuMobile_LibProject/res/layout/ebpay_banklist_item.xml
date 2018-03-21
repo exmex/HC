@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ebpay_white" >
+
+    <ImageView
+        android:id="@+id/ic_bank"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:padding="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/ebpay_img" />
+
+    <TextView
+        android:id="@+id/bank_name"
+        android:layout_toRightOf="@+id/ic_bank"
+        android:layout_marginLeft="25dp"
+        android:textColor="@color/ebpay_black"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/ebpay_text_size_15" />
+
+    <RadioButton
+        android:id="@+id/address_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:checked="false"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+</RelativeLayout>

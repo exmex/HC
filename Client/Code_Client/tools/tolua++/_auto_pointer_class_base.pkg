@@ -1,0 +1,6 @@
+class _auto_pointer_class_base
+{
+
+	virtual long AddRef();
+	virtual long Release();
+}

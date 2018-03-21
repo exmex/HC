@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gfan_bg_border" >
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/gfan_top_bar_login" />
+    
+    
+    <FrameLayout android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.0"
+         >
+        
+	    <EditText android:id="@+id/msg"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_margin="5dp"
+	        android:gravity="top"
+	        android:visibility="gone" 
+	        android:layout_gravity="center"/>
+	    <ListView
+	        android:id="@+id/list"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        />
+        
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1.0"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/btn_invite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1.0"
+            android:text="@string/next" />
+    </LinearLayout>
+
+</LinearLayout>

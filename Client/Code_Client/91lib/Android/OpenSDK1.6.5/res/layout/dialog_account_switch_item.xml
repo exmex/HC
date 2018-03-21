@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/true_item_root"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dialog_switch_account_item_height"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dialog_switch_account_Item_padding_left"
+    android:paddingRight="@dimen/dialog_switch_account_Item_padding_left" >
+
+    <RelativeLayout
+        android:id="@+id/item_root"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_switch_account_item_height"
+        android:background="@color/transparent" >
+
+        <com.nearme.gamecenter.open.core.view.RoundImageView
+            android:id="@+id/head_user_icon"
+            android:layout_width="@dimen/dialog_switch_account_Item_icon_height"
+            android:layout_height="@dimen/dialog_switch_account_Item_icon_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dialog_switch_account_icon_margin_left"
+            android:layout_marginTop="@dimen/settings_head_icon_margint_top"
+            android:background="@drawable/user_head_bg"
+            android:contentDescription="@null"
+            android:padding="3dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/nmgc_default_avatar_male" />
+
+        <LinearLayout
+            android:id="@+id/usr_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/head_text_margin_left"
+            android:layout_toRightOf="@id/head_user_icon"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/head_user_txt"
+                android:layout_width="@dimen/keke_user_name_width"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"                
+                android:textColor="#4c4d4d"
+                android:textSize="15sp" />
+
+            <!--
+             <TextView
+            android:id="@+id/head_user_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/head_text_account_margin_top"
+            android:singleLine="true"
+            android:textColor="#4c4d4d"
+            android:textSize="@dimen/q_text_size" />
+            -->
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/rem_psw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="23dp"
+            android:drawableLeft="@drawable/nmgc_is_rempsd"
+            android:drawablePadding="@dimen/rem_psw_hint_drawable_padding_left"
+            android:gravity="center_vertical"
+            android:text="@string/keke_remember_psd"
+            android:textColor="#585858"/>
+        
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/delete_account"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/nmgc_delete_account_bg" >
+
+        <TextView
+            android:id="@+id/child_delete_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="@string/keke_delete"
+            android:textColor="#edecec"
+            android:textSize="15sp" />
+        <!-- 79.33dp -->
+    </RelativeLayout>
+  
+</LinearLayout>

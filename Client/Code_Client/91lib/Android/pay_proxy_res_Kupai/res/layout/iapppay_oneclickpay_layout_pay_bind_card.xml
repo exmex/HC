@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="22dip"
+    android:layout_marginBottom="10dp"
+    android:paddingLeft="17.0dip"
+    android:paddingRight="17.0dip"
+    >
+    
+        <LinearLayout  android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="vertical">
+        	
+            <include
+        	layout="@layout/iapppay_oneclickpay_layout_orderinfo" />
+        
+		    <!-- 信用卡有效期 和CVV2-->
+		    <LinearLayout
+		        android:id="@+id/gp_credit_card_info" 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="23dp"
+		        android:gravity="center_vertical" >
+		
+		        <LinearLayout
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginRight="17dip"
+		            android:layout_weight="9"
+		            android:gravity="center_vertical"
+		            android:orientation="vertical" >
+		
+		            <TextView
+		                android:id="@+id/validateTextView"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:gravity="left|center_vertical"
+		                android:hint="@string/valid_date"
+		                android:textColorHint="#b5b5b5"
+		                android:textColor="#303030"
+		                android:maxLength="5" 
+		                android:textSize="16sp"/>
+		            
+		            <ImageView 
+		            	android:layout_width="fill_parent"
+		             	android:layout_height="wrap_content"
+		             	android:layout_marginTop="6dp"
+		             	android:background="@drawable/aipay_oneclickpay_input"
+		             	android:contentDescription="@null"/>
+		        </LinearLayout>
+		
+		        <LinearLayout
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="5"
+		            android:orientation="vertical"
+		            android:gravity="center_vertical" >
+		
+		            <TextView
+		                android:id="@+id/cvv2_id"
+		                style="@style/edit_common_style"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:gravity="left|center_vertical"
+		                android:hint="@string/card_end_dim"
+		                android:maxLength="3" 
+		                android:textColorHint="#b5b5b5"
+		                 android:textColor="#303030"
+		                android:textSize="16sp"/>
+		            
+		            <ImageView
+			             android:layout_width="fill_parent"
+			             android:layout_height="wrap_content"
+			             android:layout_marginTop="6dp"
+			             android:background="@drawable/aipay_oneclickpay_input"
+		          		 android:contentDescription="@null"/>
+		            
+		        </LinearLayout>
+		        
+		    </LinearLayout>
+		    
+		    <LinearLayout android:id="@+id/ll_cvv2_err_tip"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:visibility="gone">
+		        
+		         <LinearLayout
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginRight="17dip"
+		            android:layout_weight="9"
+		            android:gravity="center_vertical"
+		            android:orientation="vertical" >
+		
+		            <TextView
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:gravity="left|center_vertical"
+		                android:textColorHint="#b5b5b5"
+		                android:textColor="#303030"
+		                android:maxLength="5" 
+		                android:textSize="16sp"/>
+		            
+		        </LinearLayout>
+		
+		        <LinearLayout
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="5"
+		            android:orientation="vertical"
+		            android:gravity="center_vertical" >
+		
+		            <TextView android:id="@+id/tv_cvv2_err_tip"
+				        android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:layout_marginTop="4dp"
+					    android:text="请输入3位有效数字"
+					    android:textColor="#ff0e0e"
+					    android:textSize="12sp"/>
+		        </LinearLayout>
+		        
+		    </LinearLayout>
+		        
+		    <!-- 借記卡銀行卡密碼-->
+		    <LinearLayout
+		        android:id="@+id/gp_card_password"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="23dp"
+		        android:gravity="center_vertical" 
+		        android:orientation="vertical">
+		
+		        <EditText
+		            android:id="@+id/card_password"
+		            style="@style/edit_common_style"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1.0"
+		            android:imeOptions="actionNext"
+		            android:hint="@string/card_password"
+		            android:textColorHint="#b5b5b5"
+		            android:textColor="#303030"
+		            android:singleLine="true"
+		            android:inputType="number"
+		            android:textSize="16sp"/>
+		        
+		        <ImageView 
+		             android:layout_width="fill_parent"
+		             android:layout_height="wrap_content"
+		             android:layout_marginTop="6dp"
+		             android:background="@drawable/aipay_oneclickpay_input"
+		          />
+		    </LinearLayout>
+		
+		    
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal">
+		    
+			    <!-- 持卡人姓名-->
+			    <RelativeLayout
+			        android:id="@+id/gp_card_holder_name"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_weight="8"
+			        android:layout_marginTop="23dp"
+			        android:layout_marginRight="17dp">
+			
+			        <EditText
+			            android:id="@+id/ownerNameEditText"
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:hint="@string/true_name"
+			            android:textSize="16sp"
+			            android:textColorHint="#b5b5b5"
+			            android:textColor="#303030"
+			            android:imeOptions="actionNext"
+			            android:background="@null"
+			            android:singleLine="true"
+			            android:maxLength="16"
+			            android:layout_centerVertical="true" />
+			        <ImageView 
+			             android:layout_width="fill_parent"
+			             android:layout_height="wrap_content"
+			             android:layout_below="@+id/ownerNameEditText"
+			             android:layout_marginTop="6dp"
+			             android:background="@drawable/aipay_oneclickpay_input"
+			          	android:contentDescription="@null"/>
+			    </RelativeLayout>
+			
+			    <!-- 持卡人身份信息-->
+			    <RelativeLayout 
+			        android:id="@+id/gp_card_holder_identify"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_weight="5"
+			        android:layout_marginTop="23dp">
+			  		
+			        <EditText 
+			 		    android:id="@+id/identifyNumber"
+			 		    android:layout_width="match_parent"
+			 		    android:layout_height="wrap_content"
+			 		    android:hint="@string/identity_no"
+			 		    android:textSize="16sp"
+			 		    android:background="@null"
+			 		    android:textColorHint="#b5b5b5"
+			 		    android:textColor="#303030"
+			 		    android:inputType="number"
+			 		    android:imeOptions="actionNext"
+			 		    android:longClickable="false"
+			 		    android:maxLength="18"
+			          	android:ellipsize="end"
+			          	android:singleLine="true"
+			 		    android:layout_centerVertical="true"/> 
+			 		<Button 
+					    android:id="@+id/btn_identify_clear"
+				       android:layout_width="18dp"
+				       android:layout_height="18dp"
+				       android:layout_centerVertical="true"
+				       android:layout_alignParentRight="true"
+				       android:visibility="gone"
+				       android:background="@drawable/iapppay_oneclickpay_bg_clear_selector"/>
+			 		
+			 		<ImageView 
+			 		    android:layout_width="match_parent"
+			 		    android:layout_height="wrap_content"
+			 		    android:layout_marginTop="6dp"
+			 		    android:background="@drawable/aipay_oneclickpay_input"
+			 		    android:layout_below="@+id/identifyNumber"
+			 		    android:contentDescription="@null"/>
+			    </RelativeLayout>
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal">
+		        
+		         <LinearLayout
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginRight="17dip"
+		            android:layout_weight="8"
+		            android:gravity="center_vertical"
+		            android:orientation="vertical" >
+		
+		             <TextView android:id="@+id/tv_name_err_tip"
+				        android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:layout_marginTop="4dp"
+					    android:text="名字输入有误"
+					    android:singleLine="true"
+					    android:textColor="#ff0e0e"
+					    android:textSize="12sp"
+				    	android:visibility="gone"/>
+		            
+		        </LinearLayout>
+		
+		        <LinearLayout
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="5"
+		            android:orientation="vertical"
+		            android:gravity="center_vertical" >
+		
+		           <TextView android:id="@+id/tv_identify_err_tip"
+				        android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:layout_marginTop="4dp"
+					    android:text="证件号码错误，请检查并重新输入"
+					    android:singleLine="true"
+					    android:textColor="#ff0e0e"
+					    android:textSize="12sp"
+				    	android:visibility="gone"/>
+		        </LinearLayout>
+		        
+		    </LinearLayout>
+		
+		    <!-- 持卡人手機號碼信息-->
+		    <RelativeLayout 
+		        android:id="@+id/gp_card_holder_phone"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="23dp">
+		  		
+		        <EditText 
+		 		    android:id="@+id/phoneNumber"
+		 		    android:layout_width="match_parent"
+		 		    android:layout_height="wrap_content"
+		 		    android:hint="@string/bank_bind_phone"
+		 		    android:textSize="16sp"
+		 		    android:background="@null"
+		 		    android:textColorHint="#b5b5b5"
+		 		    android:textColor="#303030"
+		 		    android:inputType="phone"
+		 		    android:imeOptions="actionNext"
+		 		    android:longClickable="false"
+		 		    android:singleLine="true"
+		 		    android:maxLength="11"
+		          	android:ellipsize="end"
+		 		    android:layout_centerVertical="true"/> 
+		 		<Button 
+				    android:id="@+id/btn_phone_clear"
+			       android:layout_width="18dp"
+			       android:layout_height="18dp"
+			       android:layout_centerVertical="true"
+			       android:layout_alignParentRight="true"
+			       android:visibility="gone"
+			       android:background="@drawable/iapppay_oneclickpay_bg_clear_selector"/>
+		 		
+		 		<ImageView 
+		 		    android:layout_width="match_parent"
+		 		    android:layout_height="wrap_content"
+		 		    android:layout_marginTop="6dp"
+		 		    android:background="@drawable/aipay_oneclickpay_input"
+		 		    android:layout_below="@+id/phoneNumber"
+		 		    android:contentDescription="@null"/>
+		    </RelativeLayout>
+		    
+		    <TextView android:id="@+id/tv_phonenumber_err_tip"
+		        android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="4dp"
+			    android:text="电话号码输入有误，请检查并重新输入"
+			    android:textColor="#ff0e0e"
+			    android:textSize="12sp"
+		    	android:visibility="gone"/>
+		
+		    <!-- 持卡人手機號碼校驗-->
+		    <LinearLayout
+		        android:id="@+id/gp_card_holder_phone_valid"
+		        android:layout_width="fill_parent"
+		         android:layout_height="wrap_content"
+		        android:orientation="horizontal" 
+		        >
+		 		
+		         <RelativeLayout 
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:layout_weight="1"
+			        android:layout_marginTop="23dp">
+			  		
+			        <EditText 
+			 		    android:id="@+id/smsCode"
+			 		    android:layout_width="match_parent"
+			 		    android:layout_height="wrap_content"
+			 		    android:paddingLeft="10.0dip"
+			 		    android:hint="@string/input_sms_code"
+			 		    android:textSize="16sp"
+			 		    android:background="@null"
+			 		    android:textColorHint="#b5b5b5"
+			 		    android:textColor="#303030"
+			 		    android:inputType="number"
+			 		    android:imeOptions="actionNext"
+			 		    android:singleLine="true"
+			 		    android:longClickable="false"
+			 		    android:maxLength="6"
+			          	android:ellipsize="end"
+			          	android:gravity="center_vertical"
+			 		    android:layout_centerVertical="true"/> 
+			 		<Button 
+					   android:id="@+id/btn_smscode_clear"
+				       android:layout_width="18dp"
+				       android:layout_height="18dp"
+				       android:layout_centerVertical="true"
+				       android:layout_alignParentRight="true"
+				       android:visibility="gone"
+				       android:background="@drawable/iapppay_oneclickpay_bg_clear_selector"/>
+			 		
+			 		<ImageView 
+			 		    android:layout_width="match_parent"
+			 		    android:layout_height="wrap_content"
+			 		    android:layout_marginTop="6dp"
+			 		    android:background="@drawable/aipay_oneclickpay_input"
+			 		    android:layout_below="@+id/smsCode"
+			 		    android:contentDescription="@null"/>
+			    </RelativeLayout>
+		
+		        <Button
+		            android:id="@+id/getSmsCodeButton"
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+		             android:layout_weight="1.0"
+		            android:layout_marginLeft="10.0dip"
+		            android:background="@drawable/iapppay_oneclickpay_bg_confrim_selector"
+		            android:gravity="center"
+		            android:layout_gravity="bottom"
+		            android:text="@string/get_sms_code"
+		            android:textColor="@color/white"
+		            android:textSize="16sp" />
+		
+		    </LinearLayout>
+		
+		     <!-- 是否查看支付協議-->
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="12dp"
+		        android:gravity="center_vertical"
+		        android:orientation="horizontal" >
+		            
+		         <CheckBox
+		            android:id="@+id/protocolCheckBox"
+		            android:layout_width="26dp"
+		            android:layout_height="wrap_content"
+		            android:checked="true"
+		            android:clickable="true" 
+		            android:button="@drawable/iapppay_oneclickpay_bg_checkbox_seletor"
+		            
+		            /> 
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="同意"
+		            android:textColor="#8a8a8a"
+		            android:textSize="13sp"
+		            android:layout_marginLeft="4sp"
+		            
+		            />
+		         <TextView
+		            android:id="@+id/agree"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/protel"
+		            android:textColor="#33b5e5"
+		            android:textSize="13sp"
+		            />
+		    </LinearLayout>
+		    
+		    <Button
+		        android:id="@+id/payButton"
+		        android:layout_width="fill_parent"
+		        android:layout_height="42dp"
+				android:layout_marginTop="19dp"
+				android:layout_marginBottom="30dp"
+				android:background="@drawable/iapppay_oneclickpay_bg_confrim_selector"
+				android:text="@string/submit_pay"
+				android:textColor="@color/white"
+			    android:textSize="16sp" />
+            
+        </LinearLayout>
+ </ScrollView>

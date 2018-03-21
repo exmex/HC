@@ -1,0 +1,9 @@
+{
+	"CFBundleDevelopmentRegion" = English;
+	CFBundleExecutable = Encrypt;
+	CFBundleIdentifier = "com.91.Encrypt";
+	"CFBundleInfoDictionaryVersion" = "6.0";
+	CFBundlePackageType = FMWK;
+	CFBundleSignature = "????";
+	CFBundleVersion = 1000;
+}

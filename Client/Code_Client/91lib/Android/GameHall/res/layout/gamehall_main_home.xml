@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/gamehall_main_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gamehall_home_bg"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!-- 广告位视图 -->
+
+                <LinearLayout
+                    android:id="@+id/gamehall_adview_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/gamehall_adview_container0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/transparent"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <ImageView
+                            android:id="@+id/gamehall_adview_container0_imageview0"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/gamehall_default_ad"
+                            android:scaleType="centerInside" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/gamehall_adview_container1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/transparent"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <ImageView
+                            android:id="@+id/gamehall_adview_container1_imageview0"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/gamehall_default_ad"
+                            android:scaleType="centerInside" />
+
+                        <LinearLayout
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content" >
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/gamehall_adview_container1_imageview1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/gamehall_default_ad"
+                            android:scaleType="centerInside" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/gamehall_adview_container2_aboveseperator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/gamehall_adview_container2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@android:color/transparent"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <ImageView
+                            android:id="@+id/gamehall_adview_container2_imageview0"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/gamehall_default_ad"
+                            android:scaleType="centerInside" />
+
+                        <LinearLayout
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content" >
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/gamehall_adview_container2_imageview1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/gamehall_default_ad"
+                            android:scaleType="centerInside" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <GridView
+                    android:id="@+id/grid_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:numColumns="4"
+                    android:paddingBottom="@dimen/gamehall_gridview_bottom"
+                    android:stretchMode="columnWidth"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/progress_view"
+                layout="@layout/gamehall_loading_view" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/gamehall_network_error_view"
+        layout="@layout/gamehall_net_page" />
+
+</FrameLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- app 列表名称 -->
+    <string name="gamehall_app_name">微游戏</string>
+    <string name="gamehall_app_list_name">微游戏</string>
+    <string name="gamehall_application_already_uninstalled">应用程序已经卸载，点击一下重新安装</string>
+    
+    <string name="gamehall_game_offline">此游戏已经下线</string>
+    <string name="gamehall_gamelist_title">游戏列表</string>
+    <string name="gamehall_gameupdate_title">游戏升级</string>
+    <string name="gamehall_activitylist_title">精彩活动</string>
+    <string name="gamehall_luckydraw_title">抽奖</string>
+    <string name="gamehall_download_text">下载</string>
+    <string name="gamehall_downloading_text">下载中</string>
+    <string name="gamehall_paused_text">暂停中</string>
+    <string name="gamehall_update_text">升级</string>
+    <string name="gamehall_startgame_text">开始</string>
+    <string name="gamehall_retry_text">重试</string>
+    <string name="gamehall_install_text">安装</string>
+    <string name="gamehall_pause_text">暂停</string>
+    <string name="gamehall_resume_text">继续</string>
+    <string name="gamehall_waiting_text">等待中</string>
+    <string name="gamehall_icon_update">检查更新</string>
+    <string name="gamehall_icon_download">游戏管理</string>
+    <string name="gamehall_icon_weibo">官方微博</string>
+    <string name="gamehall_icon_web">官方网站</string>
+    <string name="gamehall_icon_opinion">意见反馈</string>
+    <string name="gamehall_icon_cooperation">诚邀合作</string>
+    <string name="gamehall_icon_more">更多精彩应用</string>
+    <string name="gamehall_icon_about">关于我们</string>
+    <string name="gamehall_icon_account">帐号切换</string>
+    <string name="gamehall_loadmore">正在加载数据...</string>
+    <string name="gamehall_cannot_download">暂时无法下载此游戏</string>
+    <string name="gamehall_file_missing">未找到已下载的文件</string>
+    <string name="gamehall_insufficient_space_on_external" >"无法完成下载，外部存储器的空间不足"</string>
+    <string name="gamehall_insufficient_space_on_cache" >"无法完成下载，内部下载存储器的空间不足"</string>
+    <string name="gamehall_media_not_found" >"无法下载，未安装外部媒体"</string>
+    <string name="gamehall_cannot_resume" >"下载中断，无法继续进行"</string>
+    <string name="gamehall_file_already_exists" >"无法下载，目标文件已存在"</string>
+    <string name="gamehall_no_application" >"无法打开文件"</string>
+    <string name="gamehall_no_sufficient_space" >"SD卡空间不足"</string>
+    <string name="gamehall_paused_duetouncertifiednetwork" >"您的网络异常，请检查网络"</string>
+    
+    <!-- 网络 -->
+    <string name="gamehall_network_null">无法连接到网络，请检查网络设置</string>
+    <string name="gamehall_network_set2g3g">如果想在2G/3G模式下进行下载，请到设置中进行2G/3G设置</string>
+
+    <!-- 暂时放置 -->
+    <string name="gamehall_tab_title1">推荐</string>
+    <string name="gamehall_tab_title2">游戏</string>
+    <string name="gamehall_tab_title3">活动</string>
+    <string name="gamehall_tab_title4">我的</string>
+    <string name="gamehall_title1">推荐游戏</string>
+    <string name="gamehall_title2">游戏列表</string>
+    <string name="gamehall_title3">活动</string>
+    <string name="gamehall_title4">个人中心</string>
+    <string name="gamehall_title_login">登录</string>
+    <string name="gamehall_title_manager">游戏管理</string>
+    <string name="gamehall_title_setting">设置</string>
+    <string name="gamehall_mine_game">我的游戏</string>
+    <string name="gamehall_game_detail">游戏详情</string>
+	<string name="gamehall_game_loading">请稍等，游戏加载中...</string>
+
+    <!-- 版本升级 -->
+    <string name="gamehall_version_error">获取新版本失败</string>
+    <string name="gamehall_version_nolaster">没有检测到新版本</string>
+    <string name="gamehall_version_loading">检测新版本，请稍候</string>
+    <string name="gamehall_version_doalog_title">更新提示</string>
+    <string name="gamehall_version_download_start">新版本下载中..</string>
+    <string name="gamehall_version_message" formatted="false">微游戏有新版本%s\r\n为您提供更好的视觉体验和功能体验</string>
+    <string name="gamehall_version_message_isforce" formatted="false">微游戏有新版本%s\r\n您当前的版本过老，请更新后再次进入大厅</string>
+    <string name="gamehall_version_text">2.1.1</string>
+    
+    <string name="gamehall_aboutme_txt">微游戏\nV%s\n新浪公司 版权所有\nAll Rights Reserved.\n</string>
+    <string name="gamehall_connect_txt">联系邮箱：yu.bu@weiyouxi.com\n联系电话：13911610197\n</string>
+    <string name="gamehall_dialog_install">为了保障您的帐号安全，将为您安装\"游戏安全插件\"。</string>
+
+    <!-- 游戏管理菜单 -->
+    <string name="gamehall_manager_download">下载管理</string>
+    <string name="gamehall_manager_install">安装管理</string>
+    <string name="gamehall_manager_update">更新管理</string>
+    <string name="gamehall_manager_all_update">更新全部</string>
+    
+    <string name="gamehall_manager_downloading">正在下载</string>
+    <string name="gamehall_manager_downloaded">已下载</string>
+    
+    <string name="gamehall_register_email_label">\@game.weibo.com</string>
+    
+    <string name="gamehall_notifition_update">微游戏更新</string>
+    <string name="gamehall_notifition_download">微游戏下载</string>
+    
+    <!-- 密码找回 -->
+    <string name="gamehall_pwd_reset_msg">1069009088</string>
+    <string name="gamehall_pwd_reset_number">4000 960 960</string>
+    
+    <string name="gamehall_manager_download_btn_delete">删除</string>
+    <string name="gamehall_manager_download_btn_retry">重新下载</string>
+    
+    <!-- 用户名可输入规则 -->
+    <string name="gamehall_usercode_digits">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_@.</string>
+    
+    <string name="gamehall_reg_usercode_digits">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_</string>
+</resources>

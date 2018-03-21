@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/xl_charge_channel_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/xl_charge_zfb" />
+
+    <TextView
+        android:id="@+id/xl_charge_channel_text"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/xl_bank"
+        android:textColor="#3C3C3C"
+        android:textSize="12sp" />
+
+</LinearLayout>

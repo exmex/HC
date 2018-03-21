@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/rl_card_main" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" android:background="#dae3ec">
+	<LinearLayout android:focusable="true"
+		android:focusableInTouchMode="true" android:layout_width="0dip"
+		android:layout_height="0dip" />
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_marginBottom="70dip">
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			<include layout="@layout/upomp_bypay_navigator" />
+			
+			<RelativeLayout android:id="@+id/rl_title_card_balance_result"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_marginLeft="15dip" android:layout_marginRight="15dip"
+				android:background="@drawable/upomp_bypay_card_info_title"
+				android:layout_below="@+id/rl_header" android:layout_marginTop="20dip">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_marginLeft="10dip"
+					android:text="@string/upomp_bypay_balanceresult_balance" android:textColor="#ffffff" android:textSize="20sp"
+					android:layout_centerVertical="true" />
+			</RelativeLayout>
+
+			<RelativeLayout android:id="@+id/rl_card_balance_result_success"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:paddingBottom="8dip"
+				android:layout_below="@+id/rl_title_card_balance_result"
+				android:background="@drawable/upomp_bypay_card_info_bg"
+				android:layout_marginLeft="15dip" android:layout_marginRight="15dip">
+				<TextView android:id="@+id/tv_card_balance_result_success_title"
+					android:layout_marginTop="8dip"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:textColor="#000000" android:textSize="15sp" android:text="@string/upomp_bypay_balanceresult_balancesucceed"
+					android:layout_marginLeft="10dip" android:layout_marginRight="10dip" />
+				<TextView android:id="@+id/tv_card_balance_result_success_content"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:textColor="#000000" android:layout_below="@+id/tv_card_balance_result_success_title"
+					android:layout_marginTop="8dip" android:textSize="15sp"
+					
+					android:layout_marginLeft="10dip" android:layout_marginRight="10dip" />
+			</RelativeLayout>
+			<RelativeLayout android:id="@+id/rl_bot_card_balance_result"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_marginLeft="15dip" android:layout_marginRight="15dip"
+				android:background="@drawable/upomp_bypay_card_info_bot"
+				android:layout_below="@+id/rl_card_balance_result_success">
+			</RelativeLayout>
+			<RelativeLayout android:id="@+id/rl_card_balance_result_failure" android:visibility="gone"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_below="@+id/rl_card_balance_result_success"
+				android:gravity="center_horizontal" android:layout_marginTop="20dip">
+				<TextView android:id="@+id/tv_card_balance_result_failure_title"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:textColor="#000000" android:textSize="15sp" android:text="@string/upomp_bypay_balanceresult_balancefail" />
+				<TextView android:id="@+id/tv_card_balance_result_failure_content"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:textColor="#000000" android:layout_below="@+id/tv_card_balance_result_failure_title"
+					android:layout_marginTop="20dip" android:textSize="15sp"
+					android:text="@string/upomp_bypay_failcause" />
+			</RelativeLayout>
+			<RelativeLayout android:id="@+id/rl_btn_card_balance_result"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_below="@+id/rl_card_balance_result_failure"
+				android:layout_marginLeft="15dip" android:layout_marginRight="15dip"
+				android:layout_marginTop="20dip" android:gravity="center_horizontal">
+				<Button android:id="@+id/btn_return_card_balance_result"
+					android:layout_width="wrap_content" android:layout_height="40dip"
+					android:text="@string/upomp_bypay_return" android:background="@drawable/upomp_bypay_btn_esc"
+					android:textColor="#ffffff" android:textSize="20sp"/>
+			</RelativeLayout>
+		</RelativeLayout>
+	</ScrollView>
+	<com.unionpay.upomp.bypay.view.MainBottom
+		android:id="@+id/main_bottom" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

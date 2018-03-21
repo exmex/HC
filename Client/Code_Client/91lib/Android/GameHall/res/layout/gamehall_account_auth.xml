@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical"
+    android:padding="5dip" >
+
+    <LinearLayout
+        android:id="@+id/logo_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/gamehall_login_input"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip" >
+
+            <ImageView
+                android:id="@+id/app_logo"
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:layout_marginRight="10dip"
+                android:src="@drawable/gamehall_ic_launcher" />
+
+            <TextView
+                android:id="@+id/app_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/gamehall_list_blockbg_divider" />
+
+        <TextView
+            android:id="@+id/app_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dip"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#666666"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:src="@drawable/gamehall_auth_userinfo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="获取你的个人信息，好友关系"
+                android:textColor="#666666"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:src="@drawable/gamehall_auth_weibo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="分享内容到你的微博"
+                android:textColor="#666666"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:src="@drawable/gamehall_auth_comment" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="获得你的评论"
+                android:textColor="#666666"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingBottom="10dip"
+            android:paddingTop="5dip" >
+
+            <Button
+                android:id="@+id/cancel_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/gamehall_account_auth_cancel"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:text="取消"
+                android:textColor="#999999"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/auth_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/gamehall_account_auth_cancel"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:text="开始并授权"
+                android:textColor="#4c9f02"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

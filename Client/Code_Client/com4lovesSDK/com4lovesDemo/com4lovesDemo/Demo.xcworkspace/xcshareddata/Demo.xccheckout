@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>60376F27-058B-4C83-BBC6-7F1A89517EBA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Demo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BB163185-1A52-4C8F-8667-56BBA0896A8D</key>
+		<string>svn://223.202.15.4/Code_Client/trunk</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>com4lovesSDK/com4lovesDemo/com4lovesDemo/Demo.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BB163185-1A52-4C8F-8667-56BBA0896A8D</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>BB163185-1A52-4C8F-8667-56BBA0896A8D</key>
+		<string>svn://223.202.15.4</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>svn://223.202.15.4/Code_Client/trunk/com4lovesSDK/com4lovesDemo/com4lovesDemo/Demo.xcworkspace</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BB163185-1A52-4C8F-8667-56BBA0896A8D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryBranchesRelativeLocationKey</key>
+			<string>Code_Client/branches</string>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlRepositoryTagsRelativeLocationKey</key>
+			<string>Code_Client/tags</string>
+			<key>IDESourceControlRepositoryTrunkRelativeLocationKey</key>
+			<string>Code_Client/trunk</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BB163185-1A52-4C8F-8667-56BBA0896A8D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Code_Client</string>
+		</dict>
+	</array>
+</dict>
+</plist>

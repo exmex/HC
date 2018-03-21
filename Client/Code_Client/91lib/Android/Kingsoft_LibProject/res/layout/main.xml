@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dip"
+        android:text="开始游戏" />
+
+    <Button
+        android:id="@+id/show_switch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dip"
+        android:text="显示切换账号" />
+
+    <Button
+        android:id="@+id/show_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dip"
+        android:text="显示登陆界面" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dip"
+        android:text="通知SDK注销游戏" />
+
+    <EditText
+        android:id="@+id/money_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dip"
+        android:hint="请输入金额,单位元"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/start_pay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dip"
+        android:text="开始支付" />
+
+</LinearLayout>

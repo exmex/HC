@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/flsdk_login_more_text"
+        style="@style/flsdk_style_c2c2c2_14"
+        android:layout_width="88.5dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/flsdk_more_arrow_bg"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="@string/flsdk_more"
+        android:visibility="invisible"/>
+
+    <!-- <com.fl.gamehelper.ui.widget.BaseEditTextView -->
+
+    <com.fl.gamehelper.ui.widget.BaseEditTextView
+        android:layout_width="280.0dip"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@+id/flsdk_login_more_text" />
+
+</RelativeLayout>

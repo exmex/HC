@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 充值查询listview布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:orientation="vertical"
+	android:layout_height="90dp">
+	<LinearLayout android:layout_width="fill_parent"
+		android:orientation="vertical" android:background="@drawable/appchina_pay_consume_list_item_shape"
+		android:layout_marginBottom="5dp" android:padding="10dp"
+		android:layout_height="wrap_content">
+		<TextView android:id="@+id/charge_date" android:layout_width="wrap_content"
+			android:textSize="16dp" android:textColor="#b2b2b2"
+			android:layout_height="wrap_content" />
+		<TextView android:id="@+id/charge_content" style="@style/appchina_pay_text_highlight"
+			android:singleLine="true" android:ellipsize="end"
+			android:layout_marginRight="5dp" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+		<LinearLayout android:layout_width="fill_parent"
+			android:orientation="horizontal" android:layout_height="wrap_content">
+			<TextView android:layout_width="80dp" android:layout_height="wrap_content"
+				android:textColor="#000000" android:textSize="16dp"
+				android:layout_gravity="top" android:text="商品名称: " />
+			<TextView android:id="@+id/charge_ware"
+				android:layout_width="wrap_content" android:layout_marginLeft="5dp"
+				style="@style/appchina_pay_label_theme" android:singleLine="true"
+				android:ellipsize="end" android:layout_marginRight="5dp"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:orientation="horizontal" android:layout_height="wrap_content">
+			<TextView android:layout_width="80dp" android:layout_height="wrap_content"
+				style="@style/appchina_pay_label_theme" android:text="商家名称: " />
+			<TextView android:id="@+id/charge_cp"
+				android:layout_marginLeft="5dp" android:layout_width="wrap_content"
+				android:singleLine="true" android:ellipsize="end"
+				android:layout_marginRight="5dp" style="@style/appchina_pay_label_theme"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

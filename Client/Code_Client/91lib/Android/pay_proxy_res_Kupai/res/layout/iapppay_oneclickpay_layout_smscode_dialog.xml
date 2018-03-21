@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_area"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@null"
+    android:orientation="vertical" >
+
+    <include
+	        android:id="@+id/title_pay"
+	        layout="@layout/iapppay_oneclickpay_layout_title" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="@dimen/iapppay_padding_large"
+        android:paddingRight="@dimen/iapppay_padding_large"
+        android:background="@color/iapppay_bg_content" >
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="vertical" >
+            
+    <TextView
+            android:id="@+id/sendsmsTip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/line_margin_20"
+            android:text="@string/iapppay_sms_tip"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_15" />
+            
+    <!-- 持卡人手機號碼校驗-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginTop="@dimen/line_margin_15"
+        android:orientation="horizontal" >
+
+        
+        <EditText
+            android:id="@+id/smsCode"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/iapppay_oneclickpay_bg_edit_seletor"
+            android:hint="@string/input_sms_code"
+            android:maxLength="8"
+            android:paddingLeft="10.0dip"
+            android:singleLine="true" />
+        
+        
+        <Button
+            android:id="@+id/getSmsCodeButton"
+            android:layout_width="160.0dip"
+            android:layout_height="43.0dip"
+            android:background="@drawable/iapppay_oneclickpay_bg_send_sms"
+            android:drawableLeft="@drawable/iapppay_oneclickpay_ic_airplane"
+            android:drawablePadding="5.0dip"
+            android:gravity="center"
+            android:layout_marginLeft="10.0dip"
+            android:paddingLeft="7.0dip"
+            android:paddingRight="7.0dip"
+            android:singleLine="true"
+            android:text="@string/get_sms_code"
+            android:textColor="@color/black"
+            android:textSize="15.0sp" />
+
+        
+    </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+               <Button
+                android:id="@+id/payButton"
+                android:layout_width="fill_parent"
+             	 android:layout_height="50.0dip"
+   				android:layout_marginBottom="@dimen/line_margin_20"
+   				android:layout_marginTop="@dimen/line_margin_15"
+   				android:background="@drawable/iapppay_oneclickpay_bg_confrim_selector"
+                android:text="@string/submit_pay"
+                android:textColor="@color/iapppay_white"
+                android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

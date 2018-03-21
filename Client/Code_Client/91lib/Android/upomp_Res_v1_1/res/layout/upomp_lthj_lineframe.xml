@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:gravity="center_vertical"
+    >
+   <ImageView style="@style/upomp_lthj_lineframe_icon"
+        android:id="@id/upomp_lthj_lineframe_image"
+        />
+
+   <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="fill_parent"
+       android:background="@drawable/upomp_lthj_vertical_line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@id/upomp_lthj_lineframe_title"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/upomp_lthj_lineframe_text_pad"
+        android:textSize="@dimen/upomp_lthj_lineframe_textsize"
+        android:textColor="@drawable/upomp_lthj_text_black"
+        android:minEms="4"
+        />
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:id="@id/upomp_lthj_lineframe_tv"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/upomp_lthj_lineframe_text_pad"
+        android:textSize="@dimen/upomp_lthj_lineframe_textsize"
+        android:textColor="@drawable/upomp_lthj_text_black"
+        />
+    
+</LinearLayout>

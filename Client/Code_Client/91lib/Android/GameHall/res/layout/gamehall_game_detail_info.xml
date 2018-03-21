@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center" >
+
+        <FrameLayout
+            android:id="@+id/game_item_image_outer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="8dip" >
+
+            <ImageView
+                android:id="@+id/game_logo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@drawable/gamehall_logo_default_80" />
+
+            <ImageView
+                android:id="@+id/game_logo_style"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/game_item_clickimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:paddingRight="5dip"
+            android:paddingTop="5dip" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingRight="8dip"
+                android:paddingTop="5dip" >
+
+                <Button
+                    android:id="@+id/gamehall_apk_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gamehall_game_download"
+                    android:paddingBottom="@dimen/gamehall_btn_bottom"
+                    android:paddingLeft="@dimen/gamehall_btn_left"
+                    android:paddingRight="@dimen/gamehall_btn_right"
+                    android:paddingTop="@dimen/gamehall_btn_top"
+                    android:textColor="@color/txt_white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/game_item_clickimage"
+            android:layout_toRightOf="@id/game_item_image_outer"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/game_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:gravity="left"
+                android:textColor="@color/txt_white"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="25dip"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="星级:"
+                    android:textColor="@color/game_detail_info"
+                    android:textSize="14dp" />
+
+                <cn.sina.youxi.app.game.GameRankView
+                    android:id="@+id/game_rank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                </cn.sina.youxi.app.game.GameRankView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/game_size"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:lines="1"
+                android:scrollHorizontally="true"
+                android:textColor="@color/game_detail_info"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/game_down_progress_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gamehall_download_bg"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/game_progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="170dp"
+            android:layout_height="14dp"
+            android:paddingRight="2dip"
+            android:progressDrawable="@drawable/gamehall_progress_horizontal" />
+
+        <TextView
+            android:id="@+id/game_progressate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dip"
+            android:scrollHorizontally="true"
+            android:textColor="@color/txt_white"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/game_progressstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dip"
+            android:scrollHorizontally="true"
+            android:textColor="@color/txt_white"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+</merge>

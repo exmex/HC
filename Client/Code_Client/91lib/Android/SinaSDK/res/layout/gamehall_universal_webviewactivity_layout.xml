@@ -1,0 +1,68 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:background="@drawable/gamehall_popup_detail_bg_black"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/gamehall_feedback_title_bg" >
+
+            <ImageButton
+                android:id="@+id/gamehall_universal_activity_backbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/gamehall_feedback_back_selector" />
+
+            <TextView
+                android:id="@+id/gamehall_universal_activity_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:maxLength="8"
+                android:textColor="@color/txt_white"
+                android:textSize="18dp" 
+                android:singleLine="true"
+                android:ellipsize="end"
+                />
+
+            <ProgressBar
+                android:id="@+id/gamehall_universal_activity_progress"
+                style="@android:style/Widget.ProgressBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="2dp" >
+
+            <WebView
+                android:id="@+id/gamehall_universal_webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <include
+                android:id="@+id/gamehall_network_error_view"
+                layout="@layout/gamehall_nonet_page" />
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

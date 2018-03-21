@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Cache-Control" content="no-cache;max-age=0" />
+<meta name="viewport" content="width = device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="MobileOptimized" content="320"/>
+<meta name="format-detection" content="telephone=no">
+<meta name="Cache-Control" content="" />
+<link rel="stylesheet" href="../common/css/base.css?1375336343193"/>
+<!-- <link rel="stylesheet" href="../common/css/style_sdk.css?1375336343193"/> -->
+<link rel="stylesheet" href="../common/css/style.css?1375336343193"/>
+<link rel="stylesheet" href="../common/css/sui.css?1375336343193"/>
+<title>UC游戏</title>
+</head>
+<body data-btnfeedback=true>
+<div class="ui-maincontainer" id="gameContainer"></div>
+<script type="text/html" id="notOpenTpl">
+    <div class="con">
+    <!--
+        <p class="pwdQ"><span class="gr-f14"><%=message%></span></p>
+        <p class="gr-mt15"><input type="button" class="lo_btn higher width100" id="bbsLink"  data-btnFeed="feed" value="去论坛看看" /></p>
+        -->
+        <p class='f14 black gr-mt15'><%=message%></p>
+        <input class="sui-btn sui-w-full gr-mt15" type="button" value="去论坛看看" id="bbsLink" />
+    </div>
+</script>
+<script type="text/html" id="validateCodeTpl">
+	<div class="con gr-pb0" id="topCon">
+        <p class="f14 gr-mt15">该游戏正在内测中，请输入内测码后进入游戏。</p>
+        <div class="sui-inp-box sui-mg-top sui-inp-shadow-top">
+            <input class="sui-inp" type="text"  placeholder="输入内测码" name="validCode" id="validCode" />
+        </div>
+        <input class="sui-btn sui-w-full gr-mt15" type="button" value="确认" id="confirmValidCode" />
+        <p class="gr-mt15 noti-heart block">
+              <span class="f14">温馨提示：</span>
+              <span class="f14">游戏内测激活码，请到九游游戏发号大厅领取</span>
+        </p>
+	</div>
+    <div class="pa10 ms-tr" id='gameBottom'><a href="javascript:;" class="red-link" id='toUserCenterLink'>进入用户中心</a></div>
+</script>
+<script type="text/javascript" src="../common/js/template.js?1375336343193"></script>
+<script type="text/javascript" src="../common/js/ucRoute.js?1375336343193"></script>
+<script type="text/javascript" src="js/gameRoute.js?1375336343193"></script>
+<script type='text/javascript'>
+    Route.routeInit('Game');
+</script>
+<script type="text/javascript" src="../common/js/sdkBase.js?1375336343193"></script>
+<script type="text/javascript" src="../common/js/ucf.js?1375336343193"></script>
+<script type="text/javascript" src="../common/js/environment.js?1375336343193"></script>
+<script type="text/javascript" src="../common/js/common.js?1375336343193"></script>
+<script type="text/javascript" src="../general/js/general.js?1375336343193"></script>
+<script type="text/javascript" src="../user/js/user.js?1375336343193"></script>
+<script type="text/javascript" src="js/game.js?1375336343193"></script>
+<script type="text/javascript">
+document.addEventListener( 'deviceready',  function() {
+	FastClick.attach(document.body);
+    S.initializer('game');
+});
+</script>
+</body>
+</html>

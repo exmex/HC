@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/yyh_login_dialog_layout_parent_width"
+    android:layout_height="wrap_content"
+    android:background="@drawable/yyh_sdk_dialog_rect_cir"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/yyh_sdk_dialog_rect_cir_title" >
+
+        <TextView
+            android:id="@+id/yyh_btnknown"
+            android:layout_width="30dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:drawableRight="@drawable/yyh_notifydialog_close_unpress_v3" />
+
+        <TextView
+            android:id="@+id/yyh_tvtitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/yyh_btnknown"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dip"
+            android:singleLine="true"
+            android:textColor="#cacaca"
+            android:textSize="16dip" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/yyh_svtextview"
+        android:layout_width="fill_parent"
+        android:layout_height="150dip"
+        android:layout_marginTop="10dp"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <TextView
+            android:id="@+id/yyh_tvcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:lineSpacingExtra="3dp"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:textColor="#606060"
+            android:textSize="14dip"
+            android:textStyle="normal" />
+    </ScrollView>
+
+    <View
+        android:id="@+id/v_shape_under_listview"
+        android:layout_width="match_parent"
+        android:layout_height="5dip"
+        android:layout_above="@id/tv_btn_register_sub_account"
+        android:background="@drawable/yyh_rect_below_listview" />
+
+    <CheckBox
+        android:id="@+id/yyh_ckbnomorealert"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:button="@null"
+        android:drawableLeft="@drawable/yyh_notifydialog_checkbox_selector"
+        android:drawablePadding="8dip"
+        android:gravity="center_vertical"
+        android:text="@string/yyh_dialog_now_show"
+        android:textColor="#747474"
+        android:textSize="12dip" />
+
+</LinearLayout>

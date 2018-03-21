@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/u2_account_login_layout_portrait"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    
+<RelativeLayout
+        android:id="@+id/top_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/top_p"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="@string/binduser" 
+            android:textColor="@color/TextColorWhite" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@+id/u2_title_bar_button_left"
+            android:src="@drawable/top_line" />
+
+        <ImageButton
+            android:id="@+id/u2_title_bar_button_left"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/close_top" />
+    </RelativeLayout>
+    
+ 
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_below="@+id/top_lv"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+ 			<TextView 
+ 			    android:layout_height="wrap_content"
+ 			    android:layout_width="wrap_content"
+ 			    android:layout_marginTop="15dp"
+ 			    android:textSize="18sp"
+ 			    android:textColor="@color/TextColorGray"
+ 			    android:id="@+id/nowtryuser_tv"
+ 			    />
+
+			<RelativeLayout 
+			    android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/charge_none_round"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:orientation="vertical" >
+
+                <!-- 通行证 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+						android:text="@string/user_account"
+						android:textColor="@color/TextColorGray"
+						android:layout_marginLeft="10dp"
+						android:layout_marginRight="5dp"
+						style="@style/u2_option_text_style"
+		                 >
+                    </TextView>
+                    <AutoCompleteTextView
+                        android:id="@+id/u2_account_login_account"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:maxLength="16"
+                        android:inputType="textAutoComplete"
+                        style="@style/u2_option_text_style"
+                        android:singleLine="true"
+                        android:hint="@string/writelimit"
+                        android:nextFocusDown="@+id/u2_account_login_password"
+                        android:imeOptions="actionNext"
+                        >
+                    </AutoCompleteTextView>
+                    <ImageView
+                        android:id="@+id/quickdelete"
+                        android:src="@drawable/ic_dial_action_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="25dp"
+                        android:visibility="invisible"
+                         >
+                    	</ImageView>
+					 
+                </LinearLayout>
+		<ImageView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_height="1dp"
+         android:background="@color/TextColorGray" />
+
+                <!-- 密码 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/registerpass"
+                        android:textColor="@color/TextColorGray"
+						android:layout_marginLeft="10dp"
+						style="@style/u2_option_text_style"
+                         android:layout_marginRight="5dp">
+                         
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/u2_account_login_password"
+                        android:layout_width="match_parent"
+                        style="@style/u2_option_edittext_style"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:maxLines="12"
+                         android:password="true"
+                        android:imeOptions="actionDone"
+                        android:hint="@string/writelimit"
+                        android:singleLine="true" >
+                    </EditText>
+                    <ImageView
+                        android:id="@+id/quickdel_pass"
+                        android:src="@drawable/ic_dial_action_delete"
+                        android:layout_marginRight="25dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:visibility="invisible">
+                    	</ImageView>
+                    	
+                </LinearLayout>
+                <ImageView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_height="1dp"
+         android:background="@color/TextColorGray" />
+ 				<!-- 邮箱 -->                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+						android:text="@string/user_email"
+						android:textColor="@color/TextColorGray"
+						android:layout_marginLeft="10dp"
+						android:layout_marginRight="5dp"
+						style="@style/u2_option_text_style"
+		                 >
+                    </TextView>
+                    <AutoCompleteTextView
+                        android:id="@+id/u2_account_login_email"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:maxLength="64"
+                        android:hint="@string/findpasschoose"
+                        android:inputType="textAutoComplete"
+                        style="@style/u2_option_text_style"
+                        android:singleLine="true"
+                        android:nextFocusDown="@+id/u2_account_login_password"
+                        android:imeOptions="actionNext"
+                        >
+                    </AutoCompleteTextView>
+                    <ImageView
+                        android:id="@+id/quickdelete_email"
+                        android:src="@drawable/ic_dial_action_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="25dp"
+                        android:visibility="invisible"
+                         >
+                    	</ImageView>
+                     
+                </LinearLayout>
+		<ImageView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_height="1dp"
+         android:background="#1A1E24" />
+		
+            </LinearLayout>
+           
+			</RelativeLayout>
+            
+            <!-- 注册/登录 -->
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:orientation ="horizontal"
+				android:gravity="center_horizontal"
+				android:visibility="visible"	
+				>
+				
+				 
+				<CheckBox
+                android:id="@+id/u2_account_is_agree"
+                android:layout_width="wrap_content"
+				android:enabled="false"
+				android:layout_height="wrap_content"
+                android:checked="true" />
+		
+				<TextView
+					android:id="@+id/u2_account_agreement"
+					android:layout_width="wrap_content"
+					android:textColor="@color/TextColorGray"
+					android:layout_height="wrap_content"
+					android:text="@string/use_protocol">
+				</TextView>
+				<TextView
+					android:id="@+id/u2_account_protocol"
+					android:layout_marginLeft="10dp"
+					android:layout_width="wrap_content"
+					android:textColor="@color/TextColorBlue"
+					android:layout_height="wrap_content"
+					android:text="@string/u2_protocol">
+				</TextView>	
+			</LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                 >
+
+                <Button
+                    android:id="@+id/u2_account_login_reg"
+                    android:layout_width="140dp"
+                    android:background="@drawable/login_bt_bg"
+                    android:layout_height="48dp"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/TextColorWhite"
+                    android:text="@string/user_rebang">
+                </Button>
+
+                <Button
+                    android:id="@+id/u2_account_login_log"
+                    android:layout_width="140dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/TextColorWhite"
+                    android:textSize="20sp"
+                    android:visibility="gone"
+                    android:layout_marginRight="15dp"
+                    android:text="@string/user_bang"
+                     >
+                </Button>
+            </LinearLayout>
+             
+
+            <!-- 忘记密码 -->
+
+            
+            
+        </LinearLayout>
+
+        <ProgressBar
+                android:id="@+id/loadingbar"
+                android:visibility="invisible"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+         
+</RelativeLayout>

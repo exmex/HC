@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nearme.gamecenter.open"
+    android:versionCode="1"
+    android:versionName="1.4" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    
+    <!-- permisson for sdk -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application>
+        
+        <!-- activity for sdk all begin -->
+        <!-- activity for sdk core -->
+        
+        <activity
+            android:name="com.nearme.gamecenter.open.core.WebActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.nearme.gamecenter.open.core.LogoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.nearme.gamecenter.open.core.LoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.nearme.gamecenter.open.core.WebViewBarActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.nearme.gamecenter.open.core.ActiveDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.nearme.gamecenter.open.core.KebiChargeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@style/nmgc_activitynotfloat" >
+        </activity>
+        <activity
+            android:name="com.nearme.gamecenter.open.core.KebiNormalPayActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@style/nmgc_activitynotfloat" >
+        </activity>
+        <activity
+            android:name="com.nearme.gamecenter.open.core.KebiRatePayActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.nearme.gamecenter.open.core.KebiFixedPayActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        
+        <!-- activity for sdk upgrade -->
+        <activity
+            android:name="com.oppo.upgrade.activity.ForceUpgradeDialog"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.oppo.upgrade.activity.UpgradeDialog"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.oppo.upgrade.activity.MaintainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        
+        
+        <!-- activity for sdk charge begin -->
+        <activity
+            android:name="com.nearme.wappay.activity.BaseClientActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
+         <activity
+            android:name="com.nearme.wappay.activity.BasePluginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
+        <activity
+            android:name="com.nearme.wappay.activity.BasePayActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/NearMePayActivityNotFloat"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.nearme.wappay.activity.BaseRechargeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/NearMePayActivityNotFloat"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.nearme.wappay.activity.StartPayActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/NearMePayActivityNotFloat"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.nearme.wappay.activity.AlipayPluginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.nearme.wappay.activity.YeePayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/NearMePayActivityNotFloat" />
+        <activity
+            android:name="com.nearme.wappay.activity.TenPayPluginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/NearMePayActivityNotFloat" />
+
+        <!-- 以下为易宝支付Activity -->
+        <activity
+            android:name="com.yeepay.android.plugin.YeepayPlugin"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- activity for sdk charge end --> 
+        <!-- activity for sdk all end !!! -->
+    </application>
+</manifest>

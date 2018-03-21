@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/size_10"
+        android:layout_marginLeft="@dimen/size_10"
+        android:background="@drawable/anzhi_filled_box"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_login_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10"
+            android:textSize="@dimen/font_16" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_5" >
+<!-- 
+             <ImageView
+                android:id="@+id/progressIv"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:src="@drawable/anzhi_loding" />  -->
+      <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:indeterminateDrawable="@drawable/anzhi_progressbar" />
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/anzhi_tv_logining"
+                android:textSize="@dimen/font_16" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_cancal_login"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/size_40"
+            android:gravity="center"
+             android:layout_marginLeft="@dimen/size_40"
+               android:layout_marginRight="@dimen/size_40"
+            android:layout_marginTop="@dimen/size_10"
+            android:background="@drawable/anzhi_button_bg_gray"
+            android:text="@string/anzhi_login_cancel"
+            android:textColor="@color/anzhi_FFFFFF"
+            android:textSize="@dimen/font_18" />
+        
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/dcn_ucenter_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="@dimen/dcn_login_padding_left_right"
+        android:paddingRight="@dimen/dcn_login_padding_left_right"
+        android:background="@color/dcn_ucenter_bg">
+        <TextView
+            android:id="@+id/dcn_select_check_ps_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dcn_select_check_payment_ps"
+            android:textColor="@color/dcn_light_black"
+            android:textSize="15sp" />
+    
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dcn_login_box_bg">
+
+            <RelativeLayout
+                android:id="@+id/dcn_use_phone_check"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/dcn_back_btn_selector"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/dcn_use_phone_check_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="16sp"
+                    android:textColor="@color/dcn_light_black"
+                    android:paddingLeft="10dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/dcn_use_phone_check" />
+                <ImageView
+                    android:id="@+id/dcn_right_arrow_image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dcn_right_arrow"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/dcn_color_login_box_gb" />
+
+            <RelativeLayout
+                android:id="@+id/dcn_use_question_check"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/dcn_back_btn_selector"
+                android:clickable="true" >
+    
+                <TextView
+                    android:id="@+id/dcn_use_question_check_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="16sp"
+                    android:textColor="@color/dcn_light_black"
+                    android:paddingLeft="10dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/dcn_use_question_check" />
+                <ImageView
+                    android:id="@+id/dcn_right_arrow_image2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dcn_right_arrow"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="vertical" android:layout_marginLeft="10dp"
+	android:layout_marginRight="10dp" android:background="@drawable/appchina_pay_main_shape">
+	<RelativeLayout android:id="@+id/main_title_ly"
+		android:layout_width="fill_parent" android:layout_height="48dp"
+		android:background="@drawable/appchina_pay_title_bg"
+		android:layout_alignParentTop="true">
+		<TextView android:textSize="20sp" android:layout_width="wrap_content"
+			android:layout_height="34dp" android:layout_centerInParent="true"
+			android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+			android:text="短信扣费提示" />
+	</RelativeLayout>
+	<TextView android:id="@+id/ld_tip_title"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_marginTop="0dip" android:layout_marginLeft="10dip"
+		android:layout_marginRight="10dip" android:text="温馨提示:" android:textColor="#ff7800"
+		android:textSize="18sp" />
+	<TextView android:id="@+id/ld_tip"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_marginTop="0dip" android:layout_marginLeft="10dip" android:textSize="17sp" 
+		android:layout_marginRight="10dip" android:text="@string/appchina_pay_welcome_words"
+		style="@style/appchina_pay_text_16" />
+	<TextView android:id="@+id/ld_kefu"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_marginTop="5dip" android:layout_marginLeft="10dip" android:textSize="17sp" 
+		android:layout_marginRight="10dip" 
+		style="@style/appchina_pay_text_16" />
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_marginTop="10dp"
+			android:layout_marginLeft="10dp" android:layout_alignParentBottom="true"
+			android:id="@id/btn_ly" android:gravity="center_vertical"
+			android:layout_marginBottom="5dp"
+			android:layout_marginRight="10dp" android:layout_height="wrap_content">
+			<Button android:id="@+id/ld_sure" android:layout_width="0dp"
+				android:layout_weight="1" android:layout_marginRight="10dp"
+				android:layout_marginLeft="5dp" android:padding="8dp"
+				android:layout_height="wrap_content" android:gravity="center"
+				android:textSize="18sp" android:text="@string/appchina_pay_btn_sure" 
+				android:background="@drawable/appchina_pay_by_button_selector"
+				android:textColor="#ffffff" />
+			<Button android:layout_width="0dp" android:id="@+id/ld_cancel"
+				android:layout_weight="1" android:padding="8dp"
+				android:layout_height="wrap_content" android:layout_marginLeft="10dp"
+				android:layout_marginRight="5dp" android:gravity="center"
+				android:textSize="18sp" android:text="@string/appchina_pay_btn_cancel"
+				android:background="@drawable/appchina_pay_by_button_selector"
+				android:textColor="#ffffff" />
+		</LinearLayout>
+</LinearLayout>
+

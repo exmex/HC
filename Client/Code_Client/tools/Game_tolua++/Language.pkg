@@ -1,0 +1,16 @@
+$#include "Language.h"
+
+class Language
+{
+public:
+	void init(const std::string& languagefile);
+	void addLanguageFile(const std::string& languagefile);
+	bool hasString(const std::string& _key);
+	const std::string & getString(const std::string& _key);
+
+	void updateNode(cocos2d::CCNode* _root);
+	void clear();
+	
+	static Language* getInstance();
+};
+

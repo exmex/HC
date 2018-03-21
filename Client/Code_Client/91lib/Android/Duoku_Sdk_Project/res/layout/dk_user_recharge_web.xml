@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/tabview"
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:background="@drawable/dk_bg_ab_recharge"
+        android:gravity="center"
+        android:orientation="horizontal" >
+		
+        <ImageView
+            android:id="@+id/chargeback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/dk_user_fastcharge_back_selector" 
+            android:visibility="visible"/>
+        
+        <TextView
+            android:id="@+id/chargetext"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/dk_choose_charge_mode"
+            android:textColor="@android:color/white"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+        
+         <ImageView
+            android:id="@+id/rechargeweb_chargeback2game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/dk_user_fastcharge_back2game_selector" 
+            android:visibility="visible"/>
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/bookstore_contentview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white" >
+
+        <LinearLayout
+            android:id="@+id/rechargeweb_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            <include
+                android:id="@+id/bookdetail_progress_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                layout="@layout/dk_common_progress" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/rechargeweb_neterror_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/dk_net_disconnect"
+                android:textSize="15dip" 
+                android:textColor="@android:color/black"/>
+            <Button 
+                android:id="@+id/fastcharge_retrybtn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/dk_retry"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/black"
+                android:background="@drawable/dk_gamesdk_neterror_retrybtn_selector"
+                />
+        </LinearLayout>
+        <WebView
+            android:id="@+id/recharge_web"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </FrameLayout>
+
+</LinearLayout>

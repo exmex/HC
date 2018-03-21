@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/aipay_margin_vertical"
+    android:layout_marginBottom="@dimen/aipay_margin_vertical"
+    android:layout_marginRight="@dimen/aipay_margin_horizontal"
+    android:layout_marginLeft="@dimen/aipay_margin_horizontal"
+    android:background="@drawable/aipay_bg">
+	
+    <include 
+        android:id="@+id/v_title_bar"
+        layout="@layout/aipay_title_bar"/>
+     <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbarThumbVertical="@drawable/aipay_scrollbar"
+        android:fadingEdge="none"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp">
+
+     <LinearLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="5dp"
+         android:layout_marginLeft="17dp"
+         android:layout_marginRight="17dp"
+         android:layout_gravity="center_horizontal"
+         android:orientation="vertical">
+	         
+	   	<TextView 
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_marginTop="30dp"
+	       android:textColor="@color/aipay_grey"
+	       android:text="请选择充值金额"
+	       android:textSize="13sp"/> 
+	       
+	   	<View 
+	        android:layout_width="match_parent"
+			android:layout_height="2dp"
+			android:background="#d2dbe6"/>   
+		       
+	   	<LinearLayout
+	   	    android:id="@+id/v_charge_values" 
+	   	    android:layout_width="fill_parent"
+	   	    android:layout_height="wrap_content"
+	   	    android:orientation="vertical">	       	    	
+	   	   
+	   	</LinearLayout>
+		     	
+	     
+   		<TextView 
+   		    android:id="@+id/tv_lable"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/aipay_grey"
+	        android:text="其他金额："
+	        android:textSize="13sp"
+	        android:layout_marginTop="35dp"
+	        android:layout_marginBottom="4dp"/>
+	        
+  		    <View android:id="@+id/v_divider_aipay"
+	        android:layout_width="match_parent"
+			android:layout_height="2dp"
+			android:background="#d2dbe6"/>  
+				
+    	<RelativeLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginTop="20dp">
+    		
+	   		<EditText 
+	   		    android:id="@+id/et_other_value"
+	   		    android:layout_width="match_parent"
+	   		    android:layout_height="wrap_content"
+	   		    android:hint="请输入充值金额"
+	   		    android:textSize="16sp"
+	   		    android:background="@null"
+	   		    android:textColor="@color/aipay_black_1"
+	   		    android:textColorHint="@color/aipay_grey_light"
+	   		    android:layout_marginRight="6dp"
+	   		     android:imeOptions="actionDone"
+	   		    android:maxLength="5"
+	   		    android:inputType="number"
+	   		    android:layout_centerVertical="true"/> 
+    		<Button 
+    		    android:id="@+id/btn_clear"
+		        android:layout_width="18dp"
+		        android:layout_height="18dp"
+		        android:layout_centerVertical="true"
+		        android:layout_alignParentRight="true"
+		        android:layout_toRightOf="@+id/et_other_value"
+		        android:visibility="gone"
+		        android:background="@drawable/aipay_del_selector"/>
+    		
+    		<ImageView android:layout_width="match_parent"
+    		    android:layout_height="wrap_content"
+    		    android:layout_marginTop="6dp"
+    		    android:background="@drawable/aipay_input"
+    		    android:layout_below="@+id/et_other_value"
+    		    android:contentDescription="@null"/>
+    	</RelativeLayout>
+		         
+	   	<TextView
+	   	    android:id="@+id/tv_predict_value"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:textColor="@color/aipay_orange"
+			android:textSize="13sp"
+			android:visibility="gone"/> 
+			
+		<Button 
+		    android:id="@+id/btn_submit"
+		    android:layout_width="fill_parent"
+		    android:layout_height="43dp"
+		    android:background="@drawable/aipay_bg_confrim_selector"
+		    android:textSize="16sp"
+		    android:gravity="center"
+		    android:textColor="@color/white"
+		    android:layout_marginTop="30dp"
+		    android:text="充值"/>	
+	</LinearLayout>
+	</ScrollView>
+</LinearLayout>

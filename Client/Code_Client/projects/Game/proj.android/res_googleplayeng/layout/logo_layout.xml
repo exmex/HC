@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+  	android:background="@android:color/transparent">
+<!--    android:background="@android:color/transparent" -->
+    <ImageView
+        android:id="@+id/imageView_logo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/appWhite"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        android:src="@drawable/logo_nuclear" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/assets_unzip_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/red_text" />
+
+    <!-- android:indeterminateDrawable="@android:drawable/progress_horizontal" -->
+
+    <ProgressBar
+        android:id="@+id/assetsUnzipProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/assets_unzip_textView"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.8" 
+        android:background="@color/appWhite"
+        android:max="100"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:progress="50"
+        android:minHeight="5dp"
+        android:maxHeight="5dp"
+        android:visibility="invisible"
+        android:progressDrawable="@drawable/assets_unzip_progressbar" />
+    
+    <!-- SurfaceView占个坑，先黑屏一下，屏蔽了切换contentview到SurfaceView的黑屏闪一下 -->
+    
+    <SurfaceView
+        android:id="@+id/surfaceView1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp" />
+    
+	 <com.nuclear.LogoVideoView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+       	android:visibility="gone"
+       	android:id="@+id/logovideoview"
+     />
+    
+</RelativeLayout>

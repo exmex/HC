@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gamehall_launcher_bg" >
+
+    <!-- RelativeLayout
+        android:id="@+id/gamehall_logo_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="118dp" >
+
+        <ImageView
+            android:id="@+id/gamehall_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/gamehall_logo" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/gamehall_logo"
+            android:src="@drawable/gamehall_app_name" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/footer_view_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gamehall_logo_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="79dp"
+        android:indeterminate="false"
+        android:indeterminateDrawable="@drawable/gamehall_progress_bar_img" >
+    </ProgressBar -->
+
+</RelativeLayout>

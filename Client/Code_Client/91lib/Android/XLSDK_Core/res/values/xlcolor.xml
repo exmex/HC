@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 透明效果 -->
+    <color name="xl_transparent">#0000</color>
+    <!-- 黑色 -->
+    <color name="xl_black">#000000</color>
+    <!-- 按钮字 -->
+    <color name="xl_textblack">#1F1F1F</color>
+    <!-- 纹理背景 -->
+    <color name="xl_veins">#e8e8e8</color>
+    <!-- 白色 -->
+    <color name="xl_white">#FFFFFF</color>
+    <!-- 橙色 -->
+    <color name="xl_orange">#FFA500</color>
+    <!-- 绿色 -->
+    <color name="xl_green">#008000</color>
+    <color name="xl_line">#e6e6e6</color>
+    <!-- 登录窗口标题字 -->
+    <color name="xl_loginwindow_titleblack">#3c3c3c</color>
+    <!-- 登录窗口提示字 -->
+    <color name="xl_loginwindow_tipblack">#595959</color>
+    <!-- 登录窗口编辑框提示字 -->
+    <color name="xl_loginwindow_hintblack">#c2c2c2</color>
+    <!-- 注册窗口提示字 -->
+    <color name="xl_registerwindow_tipblack">#1f1f1f</color>
+    <!-- 验证码提示字 -->
+    <color name="xl_verifycode_tipblack">#4c4a4a</color>
+    <!-- 快速登录编辑框文本字 -->
+    <color name="xl_fastlogin_textblack">#1f1f1f</color>
+    <color name="xl_fastlogin_tipblack">#525252</color>
+
+    <!-- 登录页面忘记密码颜色 -->
+    <color name="xl_login_forget_password">#2b8eee</color>
+    <!-- 注册页面用户使用协议 -->
+    <color name="xl_register_user_protocol">#497fc0</color>
+    <!-- 红色 -->
+    <color name="xl_red">#ff0000</color>
+
+    <!-- 帐号选择列表使用 -->
+    <drawable name="xl_accounts_item_divider">#A4CDCF</drawable>
+
+</resources>

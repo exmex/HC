@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:id="@+id/flsdk_tool_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal|bottom"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/flsdk_function_open_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/flsdk_btn_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dip"
+                    android:contentDescription="@string/flsdk_app_name"
+                    android:src="@drawable/flsdk_function_shrink_bg"
+                    android:textColor="#FFFFFFFF" />
+
+                <TextView
+                    android:id="@+id/flsdk_function_all_tips"
+                    style="@style/flsdk_style_msg_tips"
+                    android:layout_alignRight="@+id/flsdk_btn_show"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/flsdk_tool_bar_expand"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="left|bottom"
+            android:orientation="vertical" >
+
+            <ViewAnimator
+                android:id="@+id/flsdk_animator_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|bottom" >
+
+                <!-- 第1个页面 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|bottom" >
+
+                    <RelativeLayout
+                        android:id="@+id/flsdk_function_announce_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/flsdk_function_content_bg" >
+
+                        <Button
+                            android:id="@+id/flsdk_btn_announce"
+                            style="@style/flsdk_style_f1e74b_11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@null"
+                            android:drawableTop="@drawable/flsdk_function_announce_bg"
+                            android:gravity="center"
+                            android:text="@string/flsdk_announce_btn" 
+                            android:textColor="#fff1e74b"
+                            android:textSize="8.0sp" />
+
+                        <TextView
+                            android:id="@+id/flsdk_function_announce_tips"
+                            style="@style/flsdk_style_msg_tips"
+                            android:layout_marginLeft="35.0dip"
+                            android:layout_marginTop="8.0dip"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/flsdk_function_client_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/flsdk_function_content_bg" >
+
+                        <Button
+                            android:id="@+id/flsdk_btn_custom_service"
+                            style="@style/flsdk_style_f1e74b_11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@null"
+                            android:drawablePadding="3.0dip"
+                            android:drawableTop="@drawable/flsdk_function_client_bg"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="@string/flsdk_custom_btn"
+                            android:textColor="#fff1e74b"
+                            android:textSize="8.0sp" />
+
+                        <TextView
+                            android:id="@+id/flsdk_function_client_tips"
+                            style="@style/flsdk_style_msg_tips"
+                            android:layout_marginLeft="35.0dip"
+                            android:layout_marginTop="8.0dip"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/flsdk_function_invitate_friend_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/flsdk_function_content_bg" >
+
+                        <Button
+                            android:id="@+id/flsdk_btn_invite_friend"
+                            style="@style/flsdk_style_f1e74b_11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@null"
+                            android:drawablePadding="3.0dip"
+                            android:drawableTop="@drawable/flsdk_function_invite_friend_bg"
+                            android:gravity="center"
+                            android:text="@string/flsdk_promot_btn"
+                            android:textColor="#fff1e74b"
+                            android:textSize="8.0sp" />
+
+                        <TextView
+                            android:id="@+id/flsdk_function_invite_tips"
+                            style="@style/flsdk_style_msg_tips"
+                            android:layout_marginLeft="35.0dip"
+                            android:layout_marginTop="8.0dip"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/flsdk_function_invitation_code_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/flsdk_function_content_bg" >
+
+                        <Button
+                            android:id="@+id/flsdk_btn_invite_code"
+                            style="@style/flsdk_style_f1e74b_11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@null"
+                            android:drawablePadding="3.0dip"
+                            android:drawableTop="@drawable/flsdk_function_invite_code_bg"
+                            android:gravity="center"
+                            android:text="@string/flsdk_promot_input"
+                            android:textColor="#fff1e74b"
+                            android:textSize="8.0sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/flsdk_function_account_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/flsdk_function_content_bg" >
+
+                        <Button
+                            android:id="@+id/flsdk_btn_account_mannager"
+                            style="@style/flsdk_style_f1e74b_11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@null"
+                            android:drawablePadding="3.0dip"
+                            android:drawableTop="@drawable/flsdk_function_account_bg"
+                            android:gravity="center"
+                            android:text="@string/flsdk_account_center"
+                            android:textColor="#fff1e74b"
+                            android:textSize="8.0sp" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/flsdk_function_arrow_bg"
+                        android:contentDescription="@string/flsdk_app_name" />
+                </LinearLayout>
+                <!-- 第二个页面 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|bottom" />
+            </ViewAnimator>
+        </LinearLayout>
+    </LinearLayout>
+
+</merge>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style name="com_lenovo_lsf_dialogactivitytheme" parent="android:Theme.Light">
+        <item name="android:windowBackground">@color/com_lenovo_lsf_transparent</item>
+        <item name="android:windowNoTitle">true</item>
+		<item name="android:windowIsTranslucent">true</item>
+		<item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="com_lenovo_lsf_uititlebackground">
+        <item name="android:background">#0091cf</item>
+    </style>
+    
+    <style name="com_lenovo_lsf_ui" parent="android:Theme.Light">
+        <item name="android:windowTitleSize">41dp</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@color/com_lenovo_lsf_appcolor</item>
+        <item name="android:windowTitleBackgroundStyle">@style/com_lenovo_lsf_uititlebackground</item>
+    </style>
+    
+    <style name="com_lenovo_lsf_ui_no_title" parent="android:Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@color/com_lenovo_lsf_appcolor</item>
+        <item name="android:windowTitleBackgroundStyle">@style/com_lenovo_lsf_uititlebackground</item>
+    </style>
+    
+    <style name="com_lenovo_lsf_layout_location">
+        <item name="android:paddingLeft">18dp</item>
+        <item name="android:paddingRight">18dp</item>
+        <item name="android:paddingTop">10dp</item>
+    </style>
+    <style name="com_lenovo_lsf_layout_loc">
+        <item name="android:layout_marginLeft">18dp</item>
+        <item name="android:layout_marginRight">18dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="com_lenovo_lsf_text_size_large">
+        <item name="android:textSize">30sp</item>
+    </style>
+    <style name="com_lenovo_lsf_text_size_middle">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="com_lenovo_lsf_text_size_small">
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="com_lenovo_lsf_button_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:background">@drawable/com_lenovo_lsf_find_pwd</item>
+    </style>
+    <style name="com_lenovo_lsf_input_area">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:background">@drawable/com_lenovo_lsf_input_area</item>
+    </style>
+
+    <style name="com_lenovo_lsf_input_edit">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="com_lenovo_lsf_input_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">7dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="com_lenovo_lsf_head_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+		<item name="android:textColor">#2e2e2e</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+    <style name="com_lenovo_lsf_detail_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="com_lenovo_lsf_myaccount_relative">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item> 
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+    <style name="com_lenovo_lsf_text_middle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item> 
+        <item name="android:textSize">15sp</item>      
+    </style>
+    <style name="com_lenovo_lsf_text_small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item> 
+        <item name="android:textSize">15sp</item>      
+    </style>
+    <style name="com_lenovo_lsf_text_large">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item> 
+        <item name="android:textSize">30sp</item>      
+    </style>
+    <style name="com_lenovo_lsf_button_small_style">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">@drawable/com_lenovo_lsf_find_pwd</item>
+    </style>
+    <style name="com_lenovo_lsf_bottom">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:layout_marginBottom">15dp</item>
+    </style>
+    <style name="com_lenovo_lsf_spinner">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+</resources>

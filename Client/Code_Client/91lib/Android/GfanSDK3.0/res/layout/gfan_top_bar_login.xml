@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_bar" 
+    android:layout_width="fill_parent"
+    android:layout_height="48dp" 
+    android:background="@drawable/gfan_title"
+    android:focusableInTouchMode="true" 
+    android:gravity="center"
+    >
+
+    <!-- Title -->
+    <TextView android:id="@+id/top_bar_title"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="13.5dp"
+        android:layout_centerVertical="true"
+        android:textAppearance="@style/topbar_title"
+        android:shadowColor="@color/black"
+        android:shadowDy="-2.0"
+        android:shadowRadius="0.1"
+        android:singleLine="true"
+        android:gravity="center"
+        android:visibility="gone" />
+
+</RelativeLayout>

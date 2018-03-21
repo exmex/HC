@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="@color/ebpay_white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/ebpay_tip"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/dialog_title_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/ebpay_blue" />
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/dialog_msg" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:paddingBottom="20dp" -->
+    <!-- android:paddingLeft="30dp" -->
+    <!-- android:paddingRight="30dp" -->
+    <!-- android:paddingTop="20dp" -->
+    <!-- android:text="@string/confirm_exit" -->
+    <!-- android:textSize="15sp" /> -->
+
+    <LinearLayout
+        android:id="@+id/dialog_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/dialog_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ebpay_gray"
+        android:orientation="horizontal"
+        android:paddingTop="1dp" >
+
+        <Button
+            android:id="@+id/negative_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ebpay_bg_dialog_btn"
+            android:padding="15dp"
+            android:text="@string/ebpay_not_exit"
+            android:textColor="@color/ebpay_black"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/btn_line"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/ebpay_gray" />
+
+        <Button
+            android:id="@+id/positive_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ebpay_bg_dialog_btn"
+            android:padding="15dp"
+            android:text="@string/ebpay_exit"
+            android:textColor="@color/ebpay_black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

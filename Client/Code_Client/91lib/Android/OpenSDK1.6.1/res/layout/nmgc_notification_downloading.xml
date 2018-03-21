@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="5dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:src="@drawable/game_state_icon_download" />
+
+    <RelativeLayout
+        android:paddingLeft="5dp"
+    	android:paddingRight="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/nmgc_notify_text_left"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:maxWidth="200dp"
+            android:singleLine="true"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/nmgc_notify_text_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/nmgc_notify_text_left"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/nmgc_notify_percentzero"
+            android:textColor="@android:color/black" />
+
+        <ProgressBar
+            android:id="@+id/nmgc_notify_progress"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nmgc_notify_text_left"
+            android:layout_marginTop="4dp"
+            android:max="100"
+            android:progressDrawable="@drawable/progressbar_download_background" />
+    </RelativeLayout>
+
+</LinearLayout>

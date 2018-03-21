@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingBottom="12dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="12dp"
+        android:text="@string/xl_charge_ykt_desc1"
+        android:textColor="#278AEA" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#f5f5f5"
+        android:fadingEdge="none"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:lineSpacingExtra="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="@string/xl_charge_ykt_desc_pop1"
+                android:textColor="#6B808E"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:lineSpacingExtra="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="@string/xl_charge_ykt_desc_pop2"
+                android:textColor="#6B808E"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:lineSpacingExtra="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="@string/xl_charge_ykt_desc_pop3"
+                android:textColor="#6B808E"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:lineSpacingExtra="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="@string/xl_charge_ykt_desc_pop4"
+                android:textColor="#6B808E"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:lineSpacingExtra="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="@string/xl_charge_ykt_desc_pop5"
+                android:textColor="#6B808E"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

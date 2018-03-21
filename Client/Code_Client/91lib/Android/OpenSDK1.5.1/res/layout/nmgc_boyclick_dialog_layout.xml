@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:src="@drawable/nmgc_active_center_bg" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/nmgc_boy_alert_2" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="102dp"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <TextView
+            android:id="@+id/nmgc_boy_click_dialog_button1"
+            style="@style/nmgc_boy_click_dialog_text"
+            android:layout_weight="0"
+            android:drawableTop="@drawable/nmgc_boy_click_dialog_button_1_selector"
+            android:text="@string/nmgc_boy_alert_button1" />
+
+        <TextView
+            android:id="@+id/nmgc_boy_click_dialog_button2"
+            style="@style/nmgc_boy_click_dialog_text"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="3"
+            android:drawableTop="@drawable/nmgc_boy_click_dialog_button_2_selector"
+            android:gravity="center_horizontal"
+            android:text="@string/nmgc_boy_alert_button2" />
+
+        <TextView
+            android:id="@+id/nmgc_boy_click_dialog_button3"
+            style="@style/nmgc_boy_click_dialog_text"
+            android:layout_weight="0"
+            android:drawableTop="@drawable/nmgc_boy_click_dialog_button_3_selector"
+            android:text="@string/nmgc_boy_alert_button3" />
+    </LinearLayout>
+
+</RelativeLayout>

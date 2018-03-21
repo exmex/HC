@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/account_title_view"
+        android:layout_alignParentTop="true"
+        layout="@layout/gamehall_account_title" />
+
+    <ImageView
+        android:id="@+id/logo_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/account_title_view"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="45dip"
+        android:layout_marginTop="45dip"
+        android:src="@drawable/gamehall_account_reset_title" />
+
+    <LinearLayout
+        android:id="@+id/phone_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_view"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dip"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="5dip"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:paddingTop="5dip" >
+
+        <ImageView
+            android:id="@+id/phone_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="16dip"
+            android:src="@drawable/gamehall_account_reset_sms" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/phone_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dip"
+                android:text="手机号注册用户点此"
+                android:textColor="#4c9f02"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/phone_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通过发送短信的方式找回密码，快捷方便"
+                android:textColor="#999999"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/email_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_view"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="5dip"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:paddingTop="5dip" >
+
+        <ImageView
+            android:id="@+id/email_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="16dip"
+            android:src="@drawable/gamehall_account_reset_phone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/email_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dip"
+                android:text="用户名注册用户点此"
+                android:textColor="#4c9f02"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/email_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通过致电客服，享受贴心的密码找回服务"
+                android:textColor="#999999"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

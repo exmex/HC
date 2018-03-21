@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_margin="-10dp"
+    android:background="@android:color/transparent"
+    android:layout_height="400dp" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_p"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/textView1"
+            android:layout_centerVertical="true"
+            android:src="@android:drawable/ic_dialog_info"
+            />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_loined"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textColor="@color/TextColorBlack"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        
+    </RelativeLayout>
+    
+    <ListView 
+        android:layout_below="@+id/title"
+    android:layout_width="wrap_content"
+    android:layout_above="@+id/cancelre"
+    android:background="@color/TextColorWhite"
+    android:id="@+id/userlv"
+    android:listSelector="@android:color/transparent"
+    android:scrollbars="none"
+    android:layout_height="wrap_content" >
+	</ListView>
+	
+    <RelativeLayout
+        android:id="@+id/cancelre"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/botom_n"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+          android:textColor="@color/TextColorBlack"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        
+    </RelativeLayout>
+    
+
+</RelativeLayout>

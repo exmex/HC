@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="52dp" 
+    android:gravity="center_vertical"
+    android:background="@drawable/gfan_selector_banner_blue"
+    >
+    
+	<TextView 
+	    android:id="@+id/account_username"
+	    android:layout_width="wrap_content"
+	    android:layout_height="52dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginLeft="8dp"
+	    android:gravity="center_vertical"
+	    android:textSize="18sp"
+	    android:textColor="@drawable/gfan_selector_tv_choose" />
+	<CheckBox 
+	    android:id="@+id/account_check"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+	    android:layout_alignParentRight="true"
+	    />
+	<ImageView  android:id="@+id/account_delete"
+	    android:layout_height="36dp"
+	    android:layout_width="36dp"
+	    android:layout_alignParentRight="true"
+	    android:layout_centerVertical="true"
+	    android:background="@drawable/gfan_selector_icon_delete"
+	    />
+</RelativeLayout>

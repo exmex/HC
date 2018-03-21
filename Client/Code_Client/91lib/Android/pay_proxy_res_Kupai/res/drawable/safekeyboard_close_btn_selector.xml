@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true"
+          android:drawable="@drawable/safekeyboard_close_pressed"/> <!-- pressed -->
+    <item android:state_focused="true"
+          android:drawable="@drawable/safekeyboard_close_pressed" /> <!-- focused -->
+    <item android:state_hovered="true"
+          android:drawable="@drawable/safekeyboard_close_pressed" /> <!-- hovered -->
+    <item android:drawable="@drawable/safekeyboard_close_normal"/> <!-- default -->
+    
+</selector>

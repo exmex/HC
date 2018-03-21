@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/nmgc_main_bg"
+    android:orientation="vertical" >
+    
+	<include
+        android:id="@+id/nmgc_setting_topbar_root"
+        layout="@layout/nmgc_inc_topbar" />
+    <include android:id="@+id/inc_loading_full_root" layout="@layout/nmgc_loading_full"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:layout_marginLeft="@dimen/nmgc_setting_body_margin_left"
+        android:layout_marginRight="@dimen/nmgc_setting_body_margin_left"
+        android:layout_marginTop="@dimen/nmgc_setting_body_margin_top" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/nmgc_setting_bg"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/nmgc_setting_head_root"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/nmgc_item_up_bg_selector"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:paddingBottom="@dimen/nmgc_setting_head_margin_bottom"
+                    android:paddingLeft="@dimen/nmgc_setting_head_margin_left"
+                    android:paddingTop="@dimen/nmgc_setting_head_margin_top" >
+
+                    <RelativeLayout
+                        android:id="@+id/nmgc_setting_head_h1"
+                        android:layout_width="@dimen/nmgc_setting_big_avatar_bg_width"
+                        android:layout_height="@dimen/nmgc_setting_big_avatar_bg_height"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/nmgc_item_icon_bg" >
+
+                        <ImageView
+                            android:id="@+id/nmgc_setting_head_image"
+                            android:layout_width="@dimen/nmgc_setting_small_avatar_bg_width"
+                            android:layout_height="@dimen/nmgc_setting_small_avatar_bg_height"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/nmgc_default_avatar_male" />
+                    </RelativeLayout>
+
+                    <TextView
+                        style="@style/nmgc_common_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/nmgc_setting_head_title_margin_left"
+                        android:layout_toRightOf="@id/nmgc_setting_head_h1"
+                        android:text="@string/nmgc_setting_title_changehead"
+                        android:textSize="@dimen/nmgc_setting_profile_setting_text_size" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/nmgc_next" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/nmgc_item_divider_dotted" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/nmgc_setting_list_item_height"
+                    android:background="@drawable/nmgc_item_middle_bg_selector"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/nmgc_setting_head_margin_left" >
+
+                    <TextView
+                        style="@style/nmgc_common_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nmgc_setting_title_sex" />
+
+                    <RadioGroup
+                        android:id="@+id/nmgc_setting_sex_radiogroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/nmgc_setting_sex_group_margin_left"
+                        android:checkedButton="@+id/sex_male"
+                        android:freezesText="false"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/nmgc_setting_sex_male"
+                            style="@style/nmgc_common_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/nmgc_sex_male_selector"
+                            android:focusable="false"
+                            android:paddingLeft="@dimen/nmgc_setting_sex_item_padding_left"
+                            android:text="@string/nmgc_global_male" />
+
+                        <RadioButton
+                            android:id="@+id/nmgc_setting_sex_female"
+                            style="@style/nmgc_common_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/nmgc_setting_sex_item_margin_left"
+                            android:button="@drawable/nmgc_sex_female_selector"
+                            android:focusable="false"
+                            android:paddingLeft="@dimen/nmgc_setting_sex_item_padding_left"
+                            android:text="@string/nmgc_global_female" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/nmgc_item_divider_dotted" />
+                
+                <LinearLayout
+                    android:id="@+id/nmgc_setting_username_root"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/nmgc_setting_list_item_height"
+                    android:background="@drawable/nmgc_item_middle_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/nmgc_setting_head_margin_left"
+                    android:paddingRight="@dimen/nmgc_setting_head_margin_left" >
+
+                    <TextView
+                        style="@style/nmgc_common_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nmgc_setting_title_username" />
+
+                    <TextView
+                        android:id="@+id/nmgc_setting_username_edit"
+                        style="@style/nmgc_common_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/nmgc_setting_name_edittext_margin_left"
+                        android:background="@null"
+                        android:focusable="true"
+                        android:maxLength="12"
+                        android:maxLines="2"
+                        android:gravity="center_vertical|left" />
+                </LinearLayout>
+                
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/nmgc_item_divider_dotted" />
+
+                <LinearLayout
+                    android:id="@+id/nmgc_setting_nickname_root"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/nmgc_setting_list_item_height"
+                    android:background="@drawable/nmgc_item_down_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/nmgc_setting_head_margin_left"
+                    android:paddingRight="@dimen/nmgc_setting_head_margin_left" >
+
+                    <TextView
+                        style="@style/nmgc_common_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nmgc_setting_title_nickname" />
+
+                    <EditText
+                        android:id="@+id/nmgc_setting_nickname_edit"
+                        style="@style/nmgc_common_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/nmgc_setting_name_edittext_margin_left"
+                        android:background="@null"
+                        android:focusable="true"
+                        android:maxLength="12"
+                        android:maxLines="2"
+                        android:inputType="text"
+                        android:gravity="center_vertical|left" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/nmgc_setting_bindphone_root"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/nmgc_setting_list_item_height"
+                android:layout_marginTop="@dimen/nmgc_setting_body_margin_top"
+                android:background="@drawable/nmgc_item_all_bg_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingLeft="@dimen/nmgc_setting_head_margin_left" >
+
+                <TextView
+                    style="@style/nmgc_common_text"
+                    android:id="@+id/nmgc_setting_bindphone_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/nmgc_setting_bindphone" />
+
+                <ImageView
+                    android:id="@+id/nmgc_setting_bindphone_enter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/nmgc_next" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/nmgc_setting_bindmail_root"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/nmgc_setting_list_item_height"
+                android:layout_marginTop="@dimen/nmgc_setting_body_margin_top"
+                android:background="@drawable/nmgc_item_all_bg_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingLeft="@dimen/nmgc_setting_head_margin_left" >
+
+                <TextView
+                    style="@style/nmgc_common_text"
+                    android:id="@+id/nmgc_setting_bindmail_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/nmgc_setting_bindmail" />
+
+                <ImageView
+                    android:id="@+id/nmgc_setting_bindmail_enter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/nmgc_next" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/nmgc_setting_changepwd_root"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/nmgc_setting_list_item_height"
+                android:layout_marginTop="@dimen/nmgc_setting_body_margin_top"
+                android:background="@drawable/nmgc_item_all_bg_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingLeft="@dimen/nmgc_setting_head_margin_left" >
+
+                <TextView
+                    style="@style/nmgc_common_text"
+                    android:id="@+id/nmgc_setting_changepwd_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/nmgc_setting_changepwd" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/nmgc_next" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

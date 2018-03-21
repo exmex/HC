@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 充值中心横屏 -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+	
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        layout="@layout/flsdk_base_bg_layout_land" />
+    
+    <LinearLayout
+        android:layout_width="340.0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="44.0dip" >
+
+        <include layout="@layout/flsdk_charge_info_lay" />
+    </LinearLayout>    
+	
+    <LinearLayout style="@style/flsdk_style_charge_body_lay" >
+        
+        <ScrollView
+            style="@style/flsdk_style_charge_main_scroll_body_lay">
+
+	        <LinearLayout
+	            android:layout_width="340.0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:layout_marginTop="10.0dip"
+	            android:orientation="vertical" >
+	
+	            <TextView
+	                style="@style/flsdk_style_c2c2c2_14"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:padding="2.0dip"
+	                android:singleLine="true"
+	                android:text="@string/flsdk_paycenter_select_paytype" />
+	
+	            <include
+	                android:layout_width="340.0dip"
+	                android:layout_marginTop="8.0dip"
+	                layout="@layout/flsdk_charge_type_lay" />
+	        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>  
+	
+    <include layout="@layout/flsdk_base_loading_layout" />
+   	
+</merge>

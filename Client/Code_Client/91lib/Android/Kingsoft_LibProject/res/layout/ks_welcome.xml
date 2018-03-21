@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:id="@+id/ks_main_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ks_new_welcome_bg" />
+
+            <ImageView
+                android:id="@+id/ks_welcome_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/ks_new_welcome_text" />
+
+            <LinearLayout
+                android:id="@+id/ks_one_key_login_layout"
+                android:layout_width="255dp"
+                android:layout_height="@dimen/ks_onekey_reg_btn_height"
+                android:layout_below="@id/ks_welcome_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/ks_btn_blue_selector"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:src="@drawable/ks_ic_phone"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/ks_bule_line_light"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/ks_blue_line_heave"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ks_one_key_login_text_old"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/ks_text_size_20" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/ks_one_key_login_text_tips"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/ks_text_size_12"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ks_new_welcome_bg_bottom"
+            android:minHeight="60dp" >
+
+            <TextView
+                android:id="@+id/ks_select_other_account_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/ks_ic_notice"
+                android:drawablePadding="3dp"
+                android:paddingBottom="5dp"
+                android:text="@string/ks_select_other_account"
+                android:textColor="@color/ks_light_blue"
+                android:textSize="@dimen/ks_text_size_16" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ks_info_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/ks_bg"
+        android:gravity="center"
+        android:minHeight="75dp"
+        android:orientation="horizontal"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/ks_progress_bar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ks_loading_halo"
+            android:indeterminateDrawable="@drawable/ks_progress" />
+
+        <TextView
+            android:id="@+id/ks_info_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/ks_one_key_login_text_info_reg_phone_fail"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/ks_text_size_16" />
+    </LinearLayout>
+
+</FrameLayout>

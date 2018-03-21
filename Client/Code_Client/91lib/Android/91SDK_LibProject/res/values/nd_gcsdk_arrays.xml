@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nd_gcsdk_operation_tips">
+        <item>点击图标可展开工具条</item>
+        <item>可拖动图标到屏幕其他位置</item>
+        <item>点击图标可展开工具条</item>
+        <item>可拖动图标到屏幕其他位置</item>
+    </string-array>
+</resources>

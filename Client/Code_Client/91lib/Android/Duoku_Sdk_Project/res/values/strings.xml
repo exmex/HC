@@ -1,0 +1,429 @@
+<resources>
+    <string name="dk_app_name">多酷游戏</string>
+    <string name="dk_find_wd"><u>找回密码</u></string>
+    <string name="dk_remember_login_state">记住登录状态</string>
+    <string name="dk_account">账号（手机号/用户名）</string>
+    <string name="dk_password">密码</string>
+    <string name="dk_login">登录</string>
+    <string name="dk_username_register">用户名注册</string>
+    <string name="dk_free_register">免费注册</string>
+    <string name="dk_login_with_baidu_account">使用百度账号登录</string>
+    <string name="dk_login_with_duoku_account">百度多酷用户登录</string>
+    <string name="dk_userregister_progress">信息提交中，请稍候！</string>
+    <string name="dk_user_register_nameerror">请输入正确的用户名（4-14位字母或数字）</string>
+    <string name="dk_user_pwd_null">密码不能为空！</string>
+    <string name="dk_user_pwd_error">密码输入不符合规范，请重新输入！</string>
+    <string name="dk_userlogin_progress">登录中...</string>
+    <string name="dk_user_login_sucess">登录成功</string>
+    <string name="dk_user_requesterror_net_timeout">网络超时，请稍候重试！</string>
+    <string name="dk_user_requesterror_server_dead">网络异常，请稍后重试!</string>
+    <string name="dk_user_requesterror_net_dead">网络异常，请稍后重试!</string>
+    <string name="dk_user_login_usernotexist">请输入正确的用户名或手机号！</string>
+    <string name="dk_user_login_pwderror">请输入正确的密码！</string>
+    <string name="dk_user_loginbaidu_namepwd_null">用户名，密码不能为空！</string>
+    <string name="dk_user_register_licence_hint_ok">注册前请先同意《注册协议》！</string>
+    <string name="dk_user_register_phonenum">您输入的用户名可能为手机号，请使用手机一键注册！</string>
+    <string name="dk_user_register_success">注册请求已发送，请查收短信！</string>
+    <string name="dk_user_register_fail1">注册失败！请确保网络连接正常！</string>
+    <string name="dk_user_register_fail2">注册失败！请确保手机卡通信正常！</string>
+    <string name="dk_userregister_phonenum_progress">手机号码注册中，请稍候！</string>
+    <string name="dk_confirm">确定</string>
+    <string name="dk_cancel">取消</string>
+    <string name="dk_userregister_success_1">注册成功！</string>
+    <string name="dk_user_register_name_exit">用户名已存在！</string>
+    <string name="dk_user_request_fail">请求失败，请稍候重试！</string>
+    <string name="dk_text_register_licence">注册服务协议</string>
+    <string name="dk_userlogin_forgetpwd_confirm_nobind">拨打客服找回</string>
+    <string name="dk_userlogin_forgetpwd_confirm">找回密码</string>
+    <string name="dk_user_login_name_null">账号不能为空！</string>
+    <string name="dk_user_thirdparty_login_failure">登录失败，请稍后再试！</string>
+    <string name="dk_user_welcome_back_info">欢迎你回来！</string>
+    <string name="dk_user_welcome_add_info">欢迎你加入！</string>
+    <string name="dk_logining">正在登录...</string>
+    <string name="dk_thirdparty_login_failure">网络异常，请稍后重试!</string>
+    <string name="dk_bdlogin_error_tip_inputusername">请输入用户名！</string>
+    <string name="dk_bdlgoin_error_tip_inputpassword">请输入密码！</string>
+    <string name="dk_bdlogin_error_tip_inputverifycode">请输入验证码！</string>
+    
+    <!-- add by wenzutong, error msg -->
+    <string name="dk_account_error">请输入正确的用户名/手机号！</string>
+    <string name="dk_account_null">请输入账号</string>
+    <string name="dk_pwd_error">请输入6-16位字母或数字!</string>
+    <string name="dk_pwd_null">请输入密码!</string>
+    <string name="dk_verifycode_error">验证码错误，请重新输入！</string>
+    <string name="dk_verifycode_null">请输入验证码！</string>
+    <string name="dk_username_error">请输入4-14位字母或数字!</string>
+    <string name="dk_username_null">请输入用户名或手机号！</string>
+    <string name="dk_username_cover">用户名已被人抢注了，我们猜您可能也喜欢:</string>
+    <string name="dk_username_digit_11">用户名不支持11位首字母为1的纯数字,请重新输入</string>
+    <string name="dk_password_rule_error">请输入符合要求的密码，6-16位字母或数字！</string>
+    <string name="dk_password_null">请输入密码！</string>
+    <string name="dk_null_check">注册前请先同意《注册服务协议》！</string>
+    <string name="dk_pre_pwd_error">请输入正确的原密码!</string>
+    <string name="dk_pre_pwd_null">请输入原密码!</string>
+    <string name="dk_new_pwd_rule_error">请输入6-16位字母或数字的新密码！</string>
+    <string name="dk_new_pwd_null">请输入新密码!</string>
+    <string name="dk_check_pwd_null">请输入确认新密码！</string>
+    <string name="dk_new_pwd_check_error">请检查两次新密码输入是否一致！</string>
+    <string name="dk_phonenum_rule_error">请输入真实的手机号码!</string>
+    <string name="dk_phonenum_null">请输入手机号！</string>
+    <string name="dk_phonenum_had_bind">该手机号码已绑定，请输入其他手机号码!</string>
+    <string name="dk_modify_nickname_interval_less_15days">距离上次修改还不足十五天哦！</string>
+    <string name="dk_bdpwd_error">请输入正确的密码！</string>
+    <string name="dk_bdverifycode_error">获取验证码失败，请重试！</string>
+    <string name="dk_username_or_pwd_error">用户名或密码错误，请重试！</string>
+    <string name="dk_login_failed_and_try_later">登录失败，请稍候重试!</string>
+    <string name="dk_xinlang_weibo_progress_info">请稍候</string>
+    <string name="dk_baidu_account_error">请输入正确的用户名！</string>
+    <string name="dk_str_tip_modify_pass">修改密码请求已经提交，请稍候！</string>
+    <string name="dk_str_tip_bind_phone">绑定手机请求已经提交，请稍候！</string>
+    <string name="dk_account_baidu_nobind_modify_tip">您当前为百度账号登录，请先绑定手机后激活修改密码功能！</string>
+    <string name="dk_account_sina_nobind_modify_tip">您当前为新浪账号登录，请先绑定手机后激活修改密码功能！</string>
+    <!-- end -->
+    
+    <!-- add by gaoman, for phone regist -->
+    <string name="dk_phone_send_textmsg_default">↑将用您的手机发送验证信息</string>
+    <string name="dk_phone_send_msg_nosimcard">抱歉，您还没有手机号，请插入SIM卡！</string>
+    <string name="dk_phone_send_msg_noNetwork">网络异常，请稍候重试！</string>
+    <string name="dk_phone_send_msg_cannotsendsms">请求超时，使用用户名注册也很方便哦~</string>
+    <string name="dk_phone_send_login_success">登录成功</string>
+    <string name="dk_sms_cmcc">1065750204886666</string>
+    <string name="dk_sms_cucc">106550200096386</string>
+    <string name="dk_sms_ctcc">106590571003386</string>
+    <string name="dk_sms_all">1069033312388</string>
+   
+    <string name="dk_sms_strategy">0</string>
+  
+    <!-- end -->
+    
+    <!-- add by wenzutong, for hint msg -->
+    <string name="dk_login_ing">登录中...</string>
+    <string name="dk_login_success">登录成功</string>
+    <string name="dk_register_username_hint">用户名：４－１４个字母或数字</string>
+    <string name="dk_register_pwd_hint">密　码：６－１６个字母或数字</string>
+    <string name="dk_register_agreement_hint">同意</string>
+    <string name="dk_register_licence">《注册协议》</string>
+    <string name="dk_btn_string_exchange_account">切换账号</string>
+    <string name="dk_btn_string_bind_phone">绑定手机</string>
+    <string name="dk_btn_string_modify_phone">修改绑定</string>
+    <string name="dk_btn_string_modify_pwd">修改密码</string>
+    <string name="dk_show_passord">显示密码</string>
+    <string name="dk_tv_string_charge_history">充值记录</string>
+    <string name="dk_tv_string_account_history">查看充值记录</string>
+    <string name="dk_btn_string_get_verify_code">获取验证码</string>
+    <string name="dk_tv_string_verifycode">验证码</string>
+    <string name="dk_et_string_verifycode_hint">请输入验证码</string>
+    <string name="dk_btn_commit">提交</string>
+    <string name="dk_tv_string_account_no_bind">绑定后账号更安全</string>
+    <string name="dk_tv_string_cur_bind_phone">您目前绑定的手机号码:</string>
+    <string name="dk_tv_string_pre_bind_phone">原手机号</string>
+    <string name="dk_btn_next_step">下一步</string>
+    <string name="dk_tv_string_new_phone">新手机号</string>
+    <string name="dk_btn_string_complete">完成</string>
+    <string name="dk_tv_string_pre_pwd">原密码：6-16位字母或数字</string>
+    <string name="dk_tv_pre_pwd_input">请输入原密码</string>
+    <string name="dk_et_string_pwd_rule">6-16位字母或数字</string>
+    <string name="dk_tv_string_new_pwd">新密码：6-16位字母或数字 </string>
+    <string name="dk_tv_string_confire_new_pwd">确认新密码</string>
+    <string name="dk_btn_string_confire_modify_pwd">确认修改</string>
+    <string name="dk_tv_string_loading">加载中...</string>
+    <string name="dk_tv_string_account_input">请输入您的账号</string>
+    <string name="dk_et_string_account_or_phone">用户名或手机号</string>
+    <string name="dk_tv_string_login_with_bd_account">百度账号登录</string>
+    <string name="dk_btn_string_change_verify_code">换一张</string>
+    <string name="dk_tv_string_register_service_lease">多酷注册服务协议</string>
+    <string name="dk_btn_string_i_know">我知道了</string>
+    <string name="dk_tv_string_req_bind_msg">您尚未绑定手机，忘记密码时将无法通过手机找回密码！</string>
+    <string name="dk_tv_string_req_bind_msg_2">绑定手机后可以找回密码，账号、付费更安全！</string>
+    <string name="dk_btn_string_bind_now">立即绑定</string>
+    <string name="dk_btn_string_bind_later">以后再说</string>
+    <string name="dk_tv_string_tip">温馨提示：</string>
+    <string name="dk_tv_string_req_bind_phone_tip_1">1、手机号码仅作为账户凭证，不会收取任何费用。</string>
+    <string name="dk_tv_string_req_bind_phone_tip_2">2、我们承诺保障您的隐私权益，不会泄漏您的手机号码。</string>
+    <string name="dk_loading">正在登录</string>
+    <string name="dk_find_pwd_hint">请输入用户名/手机号</string>
+    <!-- end -->
+    
+    <!-- add by wenzutong, for widget -->
+    <string name="dk_welcome_to_reg_duoku">欢迎注册百度多酷</string>
+    <string name="dk_account_text">账号</string>
+    <string name="dk_account_title">账号管理</string>
+    <string name="dk_register_now">立即注册</string>
+    <string name="dk_register_phone">手机号一键注册登录</string>
+    <string name="dk_bd_platform">百度旗下移动娱乐平台</string>
+    <string name="dk_login_duoku_title_text">多酷用户登录</string>
+    <string name="dk_account_hint">请输入用户名/手机号</string>
+    <string name="dk_account_bd_hint">请输入用户名</string>
+    <string name="dk_pwd_login_hint">请输入密码</string>
+    <string name="dk_forget_pwd_text">忘记密码？</string>
+    <string name="dk_account_manager_title_text">账户管理</string>
+    <string name="dk_account_with_colon">账号：</string>
+    <string name="dk_phone_with_colon">手机：</string>
+    <string name="dk_account_logout">注销</string>
+    <string name="dk_bind_phone_hint_1st">为了您的账号安全，请尽快绑定手机</string>
+    <string name="dk_bind_phone_hint_2nd">1、直接用手机号登录，更方便</string>
+    <string name="dk_bind_phone_hint_3rd">2、手机找回密码，更安全</string>
+    <string name="dk_account_manager_phone">手机号</string>
+    <string name="dk_account_manager_phone_hint">请输入手机号</string>
+    <string name="dk_account_manager_phone_new_hint">请输入新手机号</string>
+    <string name="dk_get_verify_code_again">再次获取</string>
+    <string name="dk_register_name_digits">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>  
+    <string name="dk_net_error">网络异常，请重新登录！</string>
+    <string name="dk_need_relogin">登录状态已失效，请重新登录！</string>
+    <!-- end -->
+    
+    <!-- Added by yinchao, update download notification -->
+    <string name="dk_default_game_name">多酷游戏</string>
+    <string name="dk_staus_bar_start">开始下载</string>
+    <string name="dk_staus_bar_complete">下载完成</string>
+    <string name="dk_staus_bar_failure">下载失败</string>
+    <string name="dk_staus_bar_failure_retry">下载失败,请重启游戏后继续下载。</string>
+    <string name="dk_staus_bar_complete_toinstall">下载完成,点击安装。</string>
+    <!-- end -->
+    
+    <!-- Added by hanyonglu, the prefecture start-->
+    <string name="dk_prefecture_game_title">%s专区</string>
+    <string name="dk_prefecture_other_title">百度多酷</string>
+    <!-- The prefecture end -->
+    
+    <!-- Added by hanyonglu@duoku.com, paying centre start -->
+    <string name="dk_pay_centre">多酷支付中心</string>
+    <string name="dk_pay_by_game_card">游戏卡支付</string>
+    <string name="dk_pay_mode_select">请选择支付方式</string>
+    <string name="dk_recharge_card">充值卡</string>
+    <string name="dk_pay_card">支付宝</string>
+    <string name="dk_bank_card">银行卡</string>
+    <string name="dk_wealth_card">财付通</string>
+    <string name="dk_game_card">游戏卡</string>
+    <string name="dk_credit_card">信用卡</string>
+    <string name="dk_mo9_card">Mo9先玩后付</string>
+    <string name="dk_money_payable">应付金额：</string>
+    <string name="dk_current_account">当前账号：</string>
+    <string name="dk_kubi_balance">酷币余额：</string>
+    <string name="dk_kubi_balance_account">余额：</string>
+    <string name="dk_merchandise_name">商品名称：</string>
+    <string name="dk_ku_bi_exchange">酷币兑换</string>
+    <string name="dk_ku_bi_payment">酷币支付</string>
+    <string name="dk_payment_notice">公告</string>
+    <string name="dk_btn_string_pay">支付</string>
+    <string name="dk_btn_gold_coin">金币</string>
+    <string name="dk_btn_string_exchange">兑换</string>
+    <string name="dk_btn_string_repay">重新支付</string>
+    <string name="dk_btn_string_back">返回游戏</string>
+    <string name="dk_btn_string_check_network">检查网络</string>
+    <string name="dk_current_consume">本次消费金额：</string>
+    <string name="dk_tip_current_amount">本次支付金额：</string>
+    <string name="dk_last_pay_mode">推荐支付方式</string>
+    <string name="dk_other_pay_mode">其他支付方式</string>
+    <string name="dk_last_recharge_mode">上次充值方式</string>
+    <string name="dk_other_recharge_mode">其他充值方式</string>
+    <string name="dk_customer_service_title">客服:</string>
+    <string name="dk_customer_service_number">4000-826-898</string>
+    <string name="dk_select_card_amount">请选择移动卡面额：</string>
+    <string name="dk_tip_card_info_title">温馨提示:</string>
+    <string name="dk_tip_exchange_amount">请填写兑换数量</string>
+    <string name="dk_tip_exchange_gold_amount">请输入兑换%s的数量！</string>
+    <string name="dk_tip_exchange_gold_number">请输入正确的%s数量！</string>
+    <string name="dk_tip_exchange_gold_success">%s成功，到账</string>
+    <string name="dk_tip_exchange_amount_most">最多能兑换%s</string>
+    <string name="dk_tip_exchange_rate">(1酷币=%s</string>
+    <string name="dk_tip_exchange_fail">兑换失败！</string>
+    <string name="dk_tip_exchange_no_enough">酷币余额不足，无法兑换！</string>
+    <string name="dk_tip_game_card_please_select">请选择%s面额:</string>
+    <string name="dk_tip_payment_fail">支付失败！</string>
+    <string name="dk_tip_payment_success">支付成功！</string>
+    <string name="dk_tip_input_card_number">请输入卡号</string>
+    <string name="dk_tip_input_card_password">请输入密码</string>
+    <string name="dk_tip_card_number">%s位</string>
+    <string name="dk_tip_card_pass">%s位</string>
+    <string name="dk_tip_card_number_hint">请输入卡序列号(%s)</string>
+    <string name="dk_tip_card_password_hint">请输入卡密码(%s)</string>
+    <string name="dk_tip_mobile_card_number_hint">请输入卡序列号</string>
+    <string name="dk_tip_mobile_card_password_hint">请输入卡密码</string>
+    <string name="dk_tip_game_card_number_hint">请输入卡号(%s)</string>
+    <string name="dk_tip_payment_abort">您确定放弃本次支付？</string>
+    <string name="dk_tip_card_number_error">卡号长度错误，请重新输入！</string>
+    <string name="dk_tip_card_password_error">密码长度错误，请重新输入！</string>
+    <string name="dk_tip_payment_error">请核对卡号、密码是否正确！</string>
+    <string name="dk_tip_progress_get_info">正在获取信息</string>
+    <string name="dk_tip_progress_pay_info">正在进行，请稍后…</string>
+    <string name="dk_tip_pay_dialog_all_amount">总共扣除：%s元</string>
+    <string name="dk_tip_pay_dialog_good_price">购买商品价格：%s元</string>
+    <string name="dk_tip_pay_dialog_kubi_save">存入酷币账户：%s元</string>
+    <string name="dk_tip_is_not_pay">是否进行支付？</string>
+    <string name="dk_tip_recharge_amount_error">您的充值金额超出限制！</string>
+    <string name="dk_tip_payment_other_error">数据提交失败，请返回游戏重试！</string>
+    <string name="dk_tip_payment_network_error">网络异常，请检查网络状态后重试！</string>
+    <string name="dk_tip_payment_network_time_out">网络请求超时，请检查网络后%s重试！</string>
+    <string name="dk_tip_payment_webview_generic_error">出现异常情况，请稍后重试！</string>
+    <string name="dk_tip_kubi_pay_info">扣除支付金额后所剩余金额将自动存入多酷账户！</string>
+    <string name="dk_tip_card_info_content">请选择与卡面金额相符的金额充值！仅支持通用的%s</string>
+    <string name="dk_tip_card_info_extend_mobile">充值卡、广州、江苏、浙江、辽宁、福建的地方卡。</string>
+    <string name="dk_tip_card_info_extend_unicom">充值卡，暂不支持地方卡。</string>
+    <string name="dk_tip_card_info_extend_specity">，矩阵卡暂不支持！ </string>
+    <string name="dk_tip_recharge_already_submit">充值请求已经提交,由于网络影响,充值到账可能有延迟,建议您1~3分钟后查看到账信息！</string>
+    <string name="dk_tip_choose_recharge_amount">请选择充值金额：</string>
+    <string name="dk_tip_choose_recharge_ratio">(1元=1酷币)</string>
+    <string name="dk_tip_alipay_exchange_ratio">(1元=*金币)</string>
+    <string name="dk_hint_for_alipay">其他金额(元)</string>
+    <string name="dk_tip_alipay_tip_jinbiamount">可兑换</string>
+    <string name="dk_tip_alipay_tip_jinbiamount1">**</string>
+    <string name="dk_tip_alipay_tip_jinbiamount2">游戏币</string>
+    <string name="dk_alipay_choose_amount_10">10元</string>
+    <string name="dk_alipay_choose_amount_30">30元</string>
+    <string name="dk_alipay_choose_amount_50">50元</string>
+    <string name="dk_alipay_choose_amount_100">100元</string>
+    <string name="dk_pay_session_invalid">您的登录状态已失效！</string>
+    <string name="dk_alipay_recharge_success">充值成功,游戏到账可能会稍有延迟,请您稍后查询到账情况。</string>
+    <string name="dk_alipay_recharge_failure">充值未成功,请返回重试！</string>
+    <string name="dk_tip_history_status">状态：%s</string>
+    <string name="dk_tip_history_none">未到账</string>
+    <string name="dk_tip_history_success">充值成功</string>
+    <string name="dk_tip_history_none_extend">(可能要过几分钟才能到账哦)</string>
+    <string name="dk_tip_history_pay_method">使用%s充值</string>
+    <string name="dk_tip_history_order_id">订单号：%s</string>
+    <!-- Recharge history extend start-->
+    <string name="dk_tip_history_recharge_amount">充值金额：</string>
+    <string name="dk_tip_history_recharge_method">充值方式：</string>
+    <string name="dk_tip_history_order_id_extend">订单号：</string>
+    <string name="dk_tip_history_order_status">充值状态：</string>
+    <string name="dk_tip_history_retry_load">触 屏 即 可 重 试</string>
+    <string name="dk_tip_history_failed">充值失败</string>
+    <string name="dk_tip_history_ongoing">充值已提交</string>
+    <string name="dk_tip_history_use">使用</string>
+    <string name="dk_tip_hisotry_recharge">充值</string>
+    <string name="dk_tip_history_ongoing_info">(可能要过几分钟才能到账哦)</string>
+    <!-- Recharge history extend end -->
+    <!-- Paying centre end -->
+    
+    <string name="dk_trade_status">交易状态</string>
+    <string name="dk_trade_info">兑换游戏币失败/充值x游戏币</string>
+    <string name="dk_back2game">返回游戏</string>
+    <string name="dk_dial_tip">拨打客服电话</string>
+    <string name="dk_other_pay_methods">其他充值方式</string>
+    <string name="dk_custom_service">客服：</string>
+    <string name="dk_custom_service_dialnum">4000826898</string>
+    <string name="dk_charge_failure">充值失败，请稍后重试或选择其他充值方式！</string>
+    <string name="dk_exchange_success">充值成功，到账</string>
+    <string name="dk_exchange">兑换</string>
+    <string name="dk_failure_choose">失败，请选择其他方式充值！</string>
+    <string name="dk_telnum">4000826898</string>
+    <string name="dk_exchange_failure">兑换失败，请稍后重试</string>
+    <string name="dk_kubi">酷币</string>
+    <string name="dk_exchange_tip">温馨提示：最多能兑换</string>
+    <string name="dk_input_exchange_money">请输入兑换金额！</string>
+    <string name="dk_exchange_least_money">最少兑换金额为</string>
+    <string name="dk_reinput_exchange_money">,请重新输入兑换金额~</string>
+    <string name="dk_processing_wait">处理中，请稍后......</string>
+    <string name="dk_kubi_exchange">酷币余额兑换</string>
+    <string name="dk_xkubi">x酷币</string>
+    <string name="dk_exchange_fulltip">温馨提示：最多能兑换x游戏币</string>
+    <string name="dk_input_exchange_money2">填写兑换数量</string>
+    <string name="dk_ratio_kubi">(1酷币=x游戏币)</string>
+    <string name="dk_youxibi">游戏币</string>
+    <string name="dk_tip">提示</string>
+    <string name="dk_user_invalide">用户已失效，请重新登录！</string>
+    <string name="dk_choose_charge_mode">请选择充值方式</string>
+    <string name="dk_net_disconnect">无法连接到网络\n请检查网络连接是否可用</string>
+    <string name="dk_retry">重试</string>
+    <string name="dk_exchange_username">user_name</string>
+    <string name="dk_traderesult_tipinfo">充值已提交，由于网络原因可能出现延迟，建议您1&#8211;3分钟后查询到账信息。</string>
+    <string name="dk_paycenter_tip_correct_amount">请输入正确的金额</string>
+    
+    <!-- alipay -->
+    <string name="dk_alipay_ensure">确定</string>
+    <string name="dk_alipay_cancel">取消</string>
+    <string name="dk_alipay_confirm_install_alipay">"为保证您的交易安全，需要您安装支付宝安全支付服务，才能进行付款。\n\n点击确定，立即安装。"</string>
+    <string name="dk_alipay_confirm_install_hint">"安装提示"</string>
+    <string name="dk_alipay_check_sign_failed">您的订单信息已被非法篡改。</string>
+    <string name="dk_payment_process_paying">正在处理</string>
+    <string name="dk_alipay_remote_call_failed">Failure calling remote service</string>
+    <string name="dk_alipay_orderid_request_net_error_tip">网络异常，请稍后重试!</string>
+    
+    <!-- app update -->
+    <string name="no_new_version_prompt_update_check">没有最新版本！</string>
+    <string name="update_dialog_titile_update_check">升级提示</string>
+    <string name="find_new_version_prompt_update_check">发现新版本:</string>
+    <string name="update_apk_size_prompt_update_check"> 大小：</string>
+    <string name="update_must_be">此版本为强制更新版本</string>
+    <string name="update_dialog_ok_update_check">立即升级</string>
+    <string name="update_dialog_cancel_update_check">取消</string>
+    <string name="new_version_check_failed_prompt_update_check">新版本检测失败！</string>
+    <string name="force_version_prompt_update_check">，该版本为强制更新版本。</string>
+    <string name="net_problem_check_failed_update_check">网络数据异常，新版本检测失败！</string>
+    <string name="dk_click_cancel_update_download">(点击取消下载)</string>
+    <string name="dk_thirdparty_login">其他账号登录</string>
+    <string name="dk_imagview_contentdesc">图片</string>
+    <string name="dk_userregister_licence">  一、总则\n
+1.1 用户（本协议中与“您”同义）如果充分理解并同意本协议的条款并按照页面上的提示完成全部的注册程序，用户则与百度移讯网络技术（北京）有限公司（即百度多酷）达成本服务协议，双方完全接受本协议项下的全部条款。\n
+1.2 用户注册成功后，百度多酷将给予每个用户一个用户账号及相应的密码，该用户账号和密码由用户负责保管；用户承诺其对以用户账号进行的所有活动和事件负法律责任。\n
+1.3 用户可以使用百度多酷各频道单项服务，当用户使用百度多酷各单项服务时，用户同意遵守该单项服务的服务条款以及百度多酷在该单项服务中发出的各类公告。\n
+1.4 百度多酷有权根据业务运营的需要随时修改或更新服务协议以及各频道单项服务条款和公告，百度多酷无需另行通知用户。您在使用相关服务时, 请对上述内容予以关注并遵守。\n
+1.5 您在使用百度多酷提供的各项服务之前，应仔细阅读本服务协议。如您不同意本服务协议及随时对其的修改，您可以主动取消百度多酷提供的服务；您一旦使用百度多酷服务，即视为您已了解并完全同意本服务协议各项内容，包括百度多酷对服务协议随时所做的任何修改，并成为百度多酷用户。\n
+二、注册信息和隐私保护\n
+2.1 百度多酷账号的所有权归百度多酷，用户完成注册申请手续后，获得百度多酷账号的使用权。用户应提供及时、详尽及准确的个人资料，并及时更新，以符合及时、详尽准确的要求。所有原始键入的资料将引用为注册资料。如果因注册信息不真实而引起的问题，以及问题发生所带来的后果，应由用户承担。\n
+2.2 用户不应将其账号、密码转让或出借予他人使用。如用户发现其账号遭他人非法使用，应立即通知百度多酷。因黑客行为或用户的保管疏忽导致账号、密码遭他人非法使用，百度多酷不承担任何责任。\n
+2.3 百度多酷承诺不对外公开或向第三方提供单个用户的注册资料，除非：\n
+(1)事先获得用户的明确授权；\n
+(2)只有透露您的个人资料，才能提供你所要求的产品和服务；\n
+(3)根据有关的法律法规要求；\n
+(4)按照相关政府主管部门的要求；\n
+(5)为维护百度多酷或其他用户的合法权益。\n
+2.4 在您注册百度多酷账户使用百度多酷产品或服务，访问百度多酷网页, 或参加促销和有奖游戏时，用户同意百度多酷会收集您的个人身份识别资料，并会将这些资料用于改进为您提供的服务及网页内容。\n
+三、使用规则\n
+3.1 用户在使用百度多酷服务时，必须遵守中华人民共和国相关法律法规的规定，用户应同意将不会利用本服务进行任何违法、不正当或对百度多酷造成不利影响的活动，包括但不限于下列行为∶\n
+(1)上载、展示、张贴、传播或以其它方式传送含有下列内容之一的信息：\n
+1) 反对宪法所确定的基本原则的； 2） 危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的； 3） 损害国家荣誉和利益的； 4） 煽动民族仇恨、民族歧视、破坏民族团结的； 5） 破坏国家宗教政策，宣扬邪教和封建迷信的； 6） 散布谣言，扰乱社会秩序，破坏社会稳定的； 7） 散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的； 8） 侮辱或者诽谤他人，侵害他人合法权利的； 9） 含有虚假、有害、胁迫、侵害他人隐私、骚扰、侵害、中伤、粗俗、猥亵、或其它道德上令人反感的内容；10）侵犯其他任何第三方的专利权、著作权、商标权、名誉权或其他任何合法权益； 11） 含有中国法律、法规、规章、条例以及任何具有法律效力之规范所限制或禁止的其它内容的；\n
+(2)不得为任何非法目的而使用网络服务系统；\n
+(3)不利用百度多酷服务从事以下活动：\n
+1) 未经允许，进入计算机信息网络或者使用计算机信息网络资源的；\n
+2) 未经允许，对计算机信息网络功能进行删除、修改或者增加的；\n
+3) 未经允许，对进入计算机信息网络中存储、处理或者传输的数据和应用程序进行删除、修改或者增加的；\n
+4) 故意制作、传播计算机病毒等破坏性程序的；\n
+5) 其他危害计算机信息网络安全的行为。\n
+6) 以任何形式使用百度多酷网络服务侵犯百度多酷的商业利益，包括并不限于发布非经百度多酷许可的商业广告\n
+3.2 百度多酷有权对用户使用多酷网络服务的情况进行审查和监督，用户违反本协议、相关服务条款或相关法律法规的规定，导致或产生的任何第三方主张的任何索赔、要求或损失，包括合理的律师费，您同意赔偿百度多酷与合作公司、关联公司，并使之免受损害。对此，百度多酷有权视用户的行为性质，采取包括但不限于删除用户发布信息内容、暂停使用许可、终止服务、限制使用、回收百度多酷账号、追究法律责任等措施。对恶意注册百度多酷账号、利用网站漏洞恶意充值或利用百度多酷账号进行违法活动、捣乱、骚扰、欺骗、其他用户以及其他违反本协议的行为，百度多酷有权回收其账号、罚没账号中的酷币以及报送司法机关。对于百度多酷回收的账号，百度多酷将永久性及不可撤销地删除用户当前百度多酷账号下的所有积分、等级、酷币、荣誉等资料以及相应的数据及信息，并不承担任何责任。\n
+3.3百度多酷提供的网络服务中包含的任何文本、图片、图形、音频或视频以及任何软件资料均受版权、商标和其它财产所有权法律的保护，未经相关权利人同意，上述资料均不得在任何媒体直接或间接发布、播放、出于播放或发布目的而改写或再发行，或者被用于其他任何商业目的。用户不得对本服务任何部分或本服务之使用或获得，进行复制、拷贝、反向工程或反汇编、出售、转售或用于任何其它商业目的。\n
+3.4 用户须对自己在使用百度多酷服务过程中的行为承担法律责任。用户承担法律责任的形式包括但不限于：对受到侵害者进行赔偿，以及在百度多酷首先承担了因用户行为导致的行政处罚或侵权损害赔偿责任后，用户应给予百度多酷等额的赔偿。\n
+四、服务内容\n
+4.1 百度多酷网络服务的具体内容由百度多酷根据实际情况提供。\n
+4.2 除非本服务协议另有其它明示规定，百度多酷所推出的新产品、新功能、新服务，均受到本服务协议之规范。\n
+4.3 为使用本服务，您必须能够自行经有法律资格对您提供互联网接入服务的第三方，进入国际互联网，并应自行支付相关服务费用。此外，您必须自行配备及负责与国际联网连线所需之一切必要装备，包括计算机、数据机或其它存取装置。\n
+4.4 鉴于网络服务的特殊性，用户同意百度多酷有权不经事先通知，随时变更、中断或终止部分或全部的网络服务（包括收费网络服务）。用户认可百度多酷不能保证网络服务不会中断以及网络服务的及时性、安全性、准确性。\n
+4.5 鉴于百度多酷Wap服务的实现有赖于中国移动、中国电信等运营商的密切配合，如因运营商方面的原因造成网络服务中断的，百度多酷不因此承担任何责任。\n
+4.6 百度多酷需要定期或不定期地对提供网络服务的平台或相关的设备进行检修或者维护，如因此类情况而造成网络服务（包括收费网络服务）在合理时间内的中断，百度多酷无需为此承担任何责任。百度多酷保留不经事先通知为维修保养、升级或其它目的暂停本服务任何部分的权利。\n
+4.7 本服务或第三人可提供与其它国际互联网上之网站或资源之链接。由于百度多酷无法控制这些网站及资源，您了解并同意，此类网站或资源是否可供利用，百度多酷不予负责，存在或源于此类网站或资源之任何内容、广告、产品或其它资料，百度多酷亦不予保证或负责。因使用或依赖任何此类网站或资源发布的或经由此类网站或资源获得的任何内容、商品或服务所产生的任何损害或损失，百度多酷不承担任何责任。\n
+4.8 用户明确同意其使用百度多酷网络服务所存在的风险将完全由其自己承担。用户理解并接受下载或通过百度多酷服务取得的任何信息资料取决于用户自己，并由其承担系统受损、资料丢失以及其它任何风险。百度多酷对在服务网上得到的任何商品购物服务、交易进程、招聘信息，都不作担保。\n
+4.9本着有效利用百度多酷账号资源，保障更多合法用户权益为目的，对于恶意注册或者长期（6个月）不登录的多酷账号，百度多酷有权收回。\n
+4.10 百度多酷有权于任何时间暂时或永久修改或终止本服务（或其任何部分），而无论其通知与否，百度对用户和任何第三人均无需承担任何责任。\n
+4.11 终止服务\n
+您同意此注册条款得基于其自行之考虑，因任何理由，包含但不限于长时间未使用，或百度多酷认为您已经违反本服务协议的文字及精神，终止您的密码、账号或本服务之使用（或服务之任何部分），并将您在本服务内任何内容、信息、虚拟货币加以移除并删除。您同意依本服务协议任何规定提供之本服务，无需进行事先通知即可中断或终止，您承认并同意，百度多酷可立即关闭或删除您的账号及您账号中所有相关信息及文件，禁止继续使用前述文件或本服务。此外，您同意若本服务之使用被中断或终止或您的账号及相关信息和文件被关闭或删除，百度多酷对您或任何第三人均不承担任何责任。\n
+五、知识产权和其他合法权益\n
+5.1 用户专属权利\n
+百度多酷尊重他人知识产权和合法权益，呼吁用户也要同样尊重知识产权和他人合法权益。若您认为您的知识产权或其他合法权益被侵犯，请按照以下说明向百度提供资料∶\n
+请注意：如果权利通知的陈述失实，权利通知提交者将承担对由此造成的全部法律责任（包括但不限于赔偿各种费用及律师费）。如果上述投诉人不确定网络上可获取的资料是否侵犯了其知识产权和其他合法权益，百度多酷建议该投诉人首先咨询专业人士。\n
+为了百度多酷有效处理上述个人或单位的权利通知，请使用以下格式（包括各条款的序号）：\n
+1. 权利人对涉嫌侵权内容拥有知识产权或其他合法权益或依法可以行使知识产权或其他合法权益的权属证明；\n
+2. 请充分、明确地描述被侵犯了知识产权或其他合法权益的情况并请提供涉嫌侵权的第三方网址（如果有）。\n
+3. 请指明涉嫌侵权网页的哪些内容侵犯了第2项中列明的权利。\n
+4. 请提供权利人具体的联络信息，包括姓名、身份证或护照复印件（对自然人）、单位登记证明复印件（对单位）、通信地址、电话号码、传真和电子邮件。\n
+5. 请提供涉嫌侵权内容在信息网络上的位置（如指明您举报的含有侵权内容的出处，即：指网页地址或网页内的位置）以便我们与您举报的含有侵权内容的网页的所有权人/管理人联系。\n
+6. 请在权利通知中加入如下关于通知内容真实性的声明： “我保证，本通知中所述信息是充分、真实、准确的，如果本权利通知内容不完全属实，本人将承担由此产生的一切法律责任。\n
+7. 请您签署该文件，如果您是依法成立的机构或组织，请您加盖公章。\n
+5.2用户同意百度多酷有权在提供网络服务过程中以各种方式投放各种商业性广告或其他任何类型的商业信息（包括但不限于在百度多酷网站的任何页面上投放广告），并且，用户同意接受百度多酷通过邮件或其他方式向用户发送商品促销或其他相关商业信息。\n
+5.3 对于用户通过百度多酷服务（包括但不限于阅读、游戏、音乐、主题、社区等）上传到百度多酷网站上可公开获取区域的任何内容，用户同意百度多酷在全世界范围内具有免费的、永久性的、不可撤销的、非独家的和完全再许可的权利和许可，以使用、复制、修改、改编、出版、翻译、据以创作衍生作品、传播、表演和展示此等内容（整体或部分），或将此等内容编入当前已知的或以后开发的其他任何形式的作品、媒体或技术中。\n
+5.4 百度多酷拥有本网站内所有资料的版权。任何被授权的浏览、复制、打印和传播属于本网站内的资料必须符合以下条件：\n
+所有的资料和图象均以获得信息为目的；\n
+所有的资料和图象均不得用于商业目的；\n
+所有的资料、图象及其任何部分都必须包括此版权声明；\n
+本网站所有的产品、技术与所有程序均属于百度多酷知识产权，在此并未授权。\n
+未经百度多酷许可，任何人不得擅自（包括但不限于：以非法的方式复制、传播、展示、镜像、上载、下载）使用。否则，将依法追究法律责任。\n
+六、青少年用户特别提示\n
+百度多酷倡导青少年用户遵守全国青少年网络文明公约：\n
+要善于网上学习，不浏览不良信息；要诚实友好交流，不侮辱欺诈他人；要增强自护意识，不随意约会网友；要维护网络安全，不破坏网络秩序；要有益身心健康，不沉溺虚拟时空。\n
+七、其他\n
+7.1 本协议的订立、执行和解释及争议的解决均应适用中华人民共和国法律。\n
+7.2 如双方就本协议内容或其执行发生任何争议，双方应尽量友好协商解决；协商不成时，任何一方均可向百度多酷所在地的人民法院提起诉讼。\n
+7.3 百度多酷未行使或执行本服务协议任何权利或规定，不构成对前述权利或权利之放弃。\n
+7.4 如本协议中的任何条款无论因何种原因完全或部分无效或不具有执行力，本协议的其余条款仍应有效并且有约束力。\n</string>
+</resources>

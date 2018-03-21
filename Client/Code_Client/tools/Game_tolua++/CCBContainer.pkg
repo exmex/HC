@@ -1,0 +1,26 @@
+$#include "CCBContainer.h"
+
+class CCBContainer : public CCNode
+{
+	static CCBContainer* create();
+	
+	virtual void loadCcbiFile(const std::string& filename, bool froceLoad = false);
+	void registerTouchDispatcherSelf(int priority = 0);
+	void unregisterTouchDispatcherSelf();
+	CCNode* getCCNodeFromCCB(const std::string& variablename);
+	CCSprite* getCCSpriteFromCCB(const std::string& variablename);
+	CCScale9Sprite* getCCScale9SpriteFromCCB(const std::string& variablename);
+	CCLabelBMFont* getCCLabelBMFontFromCCB(const std::string& variablename);
+	CCLabelTTF* getCCLabelTTFFromCCB(const std::string& variablename);
+	//CCBFileNew* getCCBFileFromCCB(const std::string& variablename);
+	CCMenuItemImage* getCCMenuItemImageFromCCB(const std::string& variablename);
+	CCScrollView* getCCScrollViewFromCCB(const std::string& variablename);
+	CCMenuItemCCBFile* getCCMenuItemCCBFileFromCCB(const std::string& variablename);
+	int mIndex;
+	void registerFunctionHandler(LUA_FUNCTION nHandler);
+	void unregisterFunctionHandler();
+	
+	virtual std::string dumpInfo();
+	 std::string getCurAnimationDoneName();
+	 void unload(void);
+};

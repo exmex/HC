@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 WiYun Inc.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/wy_dialog_bg">
+	
+    <!-- content -->
+    <FrameLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content">
+        
+        <LinearLayout
+            android:id="@+id/wy_panel_hint"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:visibility="gone">
+            
+            <!-- hint text -->
+            <TextView
+                android:id="@+id/wy_tv_hint"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"/>
+            
+            <TextView
+                android:id="@+id/wy_tv_tips"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:textColor="#EEEEEE"
+                android:textSize="14sp"/>
+            
+        </LinearLayout>
+        
+		<!-- loading panel -->
+		<LinearLayout
+			android:id="@+id/wy_progress_panel" 
+		    android:orientation="vertical"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:padding="30dp"
+		    android:gravity="center"
+		    android:background="@drawable/wy_dialog_progress_bg"
+		    android:visibility="invisible">
+		    
+		    <ProgressBar
+		    	android:layout_height="wrap_content"
+		    	android:layout_width="wrap_content"
+		    	android:indeterminate="true"/>
+		    	
+		    <TextView 
+		    	android:id="@+id/wy_tv_progress_hint"
+		        android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="5dip"
+		        android:textColor="@android:color/white"
+                android:textSize="16sp"
+		        android:singleLine="true"
+		        android:text="@string/wy_progress_loading"/>
+		        
+		</LinearLayout>
+		
+    </FrameLayout>
+    
+    <LinearLayout
+        android:id="@+id/wy_button_panel"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center">
+        
+		<!-- cancel button -->
+		<Button
+			android:id="@+id/wy_b_cancel"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="@drawable/wy_dialog_button"
+			android:textColor="@android:color/black"
+			android:textSize="18sp"
+			android:textStyle="bold"
+			android:text="@string/wy_button_cancel"/>
+			
+		<!-- buy button -->
+		<Button
+			android:id="@+id/wy_b_buy"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_marginLeft="15dp"
+			android:visibility="gone"
+			android:background="@drawable/wy_dialog_button_blue"
+			android:textColor="@android:color/white"
+			android:textSize="18sp"
+			android:textStyle="bold"
+			android:text="@string/wy_button_buy"/>
+    
+    </LinearLayout>
+
+</LinearLayout>

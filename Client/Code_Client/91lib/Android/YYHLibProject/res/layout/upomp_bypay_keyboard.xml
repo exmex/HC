@@ -1,0 +1,988 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:gravity="bottom">
+	
+		<RelativeLayout android:id="@+id/rl_keyboard_background" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_keyboard_bg">
+			<RelativeLayout android:id="@+id/rl_psw_window"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_marginTop="30dip">
+				<EditText android:id="@+id/et_psw_window"
+					android:singleLine="true" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:editable="false"
+					android:cursorVisible="false" android:layout_marginLeft="5dip"
+					android:layout_marginRight="5dip" android:password="true"
+					android:background="@drawable/upomp_bypay_keyboard_input_bg" />
+			</RelativeLayout>
+			<RelativeLayout android:paddingBottom="10dip"
+				android:layout_below="@+id/rl_psw_window" android:layout_marginTop="5dip"
+				android:layout_marginLeft="5dip" android:layout_marginRight="5dip"
+				android:visibility="visible" android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+				<RelativeLayout android:id="@+id/rl_bg"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:background="@drawable/upomp_bypay_keyboard_pw_bg"
+					android:paddingBottom="10dip">
+					<RelativeLayout android:id="@+id/rl_set"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_marginTop="10dip" android:layout_marginLeft="3dip"
+						android:layout_marginRight="3dip" android:layout_centerHorizontal="true">
+						<RelativeLayout android:id="@+id/rl_number"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:visibility="visible" android:layout_marginRight="5dip"
+							android:layout_centerHorizontal="true">
+							<RelativeLayout android:id="@+id/rl_line1"
+								android:layout_width="wrap_content" android:layout_height="wrap_content">
+								<RelativeLayout android:id="@+id/rl_key1"
+									android:layout_width="wrap_content" android:layout_height="wrap_content">
+									<Button android:id="@+id/btn_key1" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_number"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+
+								<RelativeLayout android:id="@+id/rl_key2"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_key1"
+									android:layout_marginLeft="10dip">
+									<Button android:id="@+id/btn_key2" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_number"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_key3"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_key2"
+									android:layout_marginLeft="10dip">
+									<Button android:id="@+id/btn_key3" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_number"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_key4"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_key3"
+									android:layout_marginLeft="10dip">
+									<Button android:id="@+id/btn_key4" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_number"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+							</RelativeLayout>
+							<RelativeLayout android:id="@+id/rl_line2"
+
+								android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:layout_below="@+id/rl_line1" android:layout_marginTop="10dip">
+
+								<RelativeLayout android:id="@+id/rl_key5"
+									android:layout_width="wrap_content" android:layout_height="wrap_content">
+									<Button android:id="@+id/btn_key5" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_number"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_key6"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_key5"
+									android:layout_marginLeft="10dip">
+									<Button android:id="@+id/btn_key6" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_number"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_key7"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_key6"
+									android:layout_marginLeft="10dip">
+									<Button android:id="@+id/btn_key7" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_number"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_key8"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_key7"
+									android:layout_marginLeft="10dip">
+									<Button android:id="@+id/btn_key8" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_number"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+							</RelativeLayout>
+							<RelativeLayout android:id="@+id/rl_line3"
+
+								android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:layout_below="@+id/rl_line2" android:layout_marginTop="10dip">
+
+								<RelativeLayout android:id="@+id/rl_key9"
+									android:layout_width="wrap_content" android:layout_height="wrap_content">
+									<Button android:id="@+id/btn_key9" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_number"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_key0"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_key9"
+									android:layout_marginLeft="10dip">
+
+									<Button android:id="@+id/btn_key0" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_number"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_backspace"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_key0"
+									android:layout_marginLeft="10dip">
+									<Button android:id="@+id/btn_backspace"
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										android:background="@drawable/upomp_bypay_keyboard_btn_clear"
+										android:text="@string/upomp_bypay_keyboard_clear"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+							</RelativeLayout>
+
+						</RelativeLayout>
+						<RelativeLayout android:id="@+id/rl_letter"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:layout_below="@+id/rl_psw_window"
+							android:layout_marginTop="0dip" android:visibility="gone"
+							android:layout_centerHorizontal="true">
+							<RelativeLayout android:id="@+id/rl_letter_line1"
+								android:layout_width="wrap_content" android:layout_height="wrap_content">
+								<RelativeLayout android:id="@+id/rl_keyQ"
+									android:layout_width="wrap_content" android:layout_height="wrap_content">
+									<Button android:id="@+id/btn_keyQ" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_letter"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_keyW"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_keyQ"
+									android:layout_marginLeft="3dip">
+									<Button android:id="@+id/btn_keyW" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_letter"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_keyE"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_keyW"
+									android:layout_marginLeft="3dip">
+									<Button android:id="@+id/btn_keyE" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_letter"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_keyR"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_keyE"
+									android:layout_marginLeft="3dip">
+									<Button android:id="@+id/btn_keyR" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_letter"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_keyT"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_keyR"
+									android:layout_marginLeft="3dip">
+									<Button android:id="@+id/btn_keyT" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_letter"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_keyY"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_keyT"
+									android:layout_marginLeft="3dip">
+									<Button android:id="@+id/btn_keyY" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_letter"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_keyU"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_keyY"
+									android:layout_marginLeft="3dip">
+									<Button android:id="@+id/btn_keyU" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_letter"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_keyI"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_keyU"
+									android:layout_marginLeft="3dip">
+									<Button android:id="@+id/btn_keyI" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_letter"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_keyO"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_keyI"
+									android:layout_marginLeft="3dip">
+									<Button android:id="@+id/btn_keyO" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_letter"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_keyP"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_keyO"
+									android:layout_marginLeft="3dip">
+									<Button android:id="@+id/btn_keyP" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_letter"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+							</RelativeLayout>
+							<RelativeLayout android:id="@+id/rl_letter_line2"
+
+								android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:layout_below="@+id/rl_letter_line1"
+								android:layout_marginTop="10dip" android:layout_marginLeft="17dip">
+
+								<RelativeLayout android:id="@+id/rl_keyA"
+									android:layout_width="wrap_content" android:layout_height="wrap_content">
+									<Button android:id="@+id/btn_keyA" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_letter"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_keyS"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_keyA"
+									android:layout_marginLeft="3dip">
+									<Button android:id="@+id/btn_keyS" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_letter"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_keyD"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_keyS"
+									android:layout_marginLeft="3dip">
+									<Button android:id="@+id/btn_keyD" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_letter"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_keyF"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_keyD"
+									android:layout_marginLeft="3dip">
+									<Button android:id="@+id/btn_keyF" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_letter"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_keyG"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_keyF"
+									android:layout_marginLeft="3dip">
+									<Button android:id="@+id/btn_keyG" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_letter"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_keyH"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_keyG"
+									android:layout_marginLeft="3dip">
+									<Button android:id="@+id/btn_keyH" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_letter"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_keyJ"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_keyH"
+									android:layout_marginLeft="3dip">
+									<Button android:id="@+id/btn_keyJ" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_letter"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_keyK"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_keyJ"
+									android:layout_marginLeft="3dip">
+									<Button android:id="@+id/btn_keyK" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_letter"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_keyL"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_keyK"
+									android:layout_marginLeft="3dip">
+									<Button android:id="@+id/btn_keyL" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_letter"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+							</RelativeLayout>
+							<RelativeLayout android:id="@+id/rl_letter_line3"
+
+								android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:layout_below="@+id/rl_letter_line2"
+								android:layout_marginTop="10dip" android:layout_marginLeft="0dip">
+								<RelativeLayout android:id="@+id/rl_letter_size"
+									android:layout_width="wrap_content" android:layout_height="wrap_content">
+									<Button android:id="@+id/btn_letter_size"
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										android:background="@drawable/upomp_bypay_keyboard_letter_a1"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_keyZ"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_letter_size"
+									android:layout_marginLeft="3dip">
+									<Button android:id="@+id/btn_keyZ" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_letter"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+
+								<RelativeLayout android:id="@+id/rl_keyX"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_keyZ"
+									android:layout_marginLeft="3dip">
+
+									<Button android:id="@+id/btn_keyX" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_letter"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_keyC"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_keyX"
+									android:layout_marginLeft="3dip">
+
+									<Button android:id="@+id/btn_keyC" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_letter"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_keyV"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_keyC"
+									android:layout_marginLeft="3dip">
+
+									<Button android:id="@+id/btn_keyV" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_letter"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_keyB"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_keyV"
+									android:layout_marginLeft="3dip">
+
+									<Button android:id="@+id/btn_keyB" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_letter"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_keyN"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_keyB"
+									android:layout_marginLeft="3dip">
+
+									<Button android:id="@+id/btn_keyN" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_letter"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_keyM"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_keyN"
+									android:layout_marginLeft="3dip">
+
+									<Button android:id="@+id/btn_keyM" android:layout_width="wrap_content"
+										android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_btn_letter"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_letter_backspace"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_keyM"
+									android:layout_marginLeft="3dip">
+									<Button android:id="@+id/btn_letter_backspace"
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										android:background="@drawable/upomp_bypay_keyboard_btn_l_clear"
+										android:text="@string/upomp_bypay_keyboard_clear"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+							</RelativeLayout>
+
+						</RelativeLayout>
+						<RelativeLayout android:id="@+id/rl_symbol"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:layout_below="@+id/rl_psw_window" android:visibility="gone"
+							android:layout_centerHorizontal="true"
+							android:layout_marginRight="5dip">
+							<RelativeLayout android:id="@+id/rl_symbol_line1"
+								android:layout_width="wrap_content" android:layout_height="wrap_content">
+								<RelativeLayout android:id="@+id/rl_symbol_1"
+									android:layout_width="wrap_content" android:layout_height="wrap_content">
+									<Button android:id="@+id/btn_symbol_1"
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										android:background="@drawable/upomp_bypay_btn_number"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_symbol_2"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_symbol_1"
+									android:layout_marginLeft="10dip">
+									<Button android:id="@+id/btn_symbol_2"
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										android:background="@drawable/upomp_bypay_btn_number"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_symbol_3"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_symbol_2"
+									android:layout_marginLeft="10dip">
+									<Button android:id="@+id/btn_symbol_3"
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										android:background="@drawable/upomp_bypay_btn_number"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_symbol_4"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_symbol_3"
+									android:layout_marginLeft="10dip">
+									<Button android:id="@+id/btn_symbol_4"
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										android:background="@drawable/upomp_bypay_btn_number"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+							</RelativeLayout>
+							<RelativeLayout android:id="@+id/rl_symbol_line2"
+
+								android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:layout_below="@+id/rl_symbol_line1"
+								android:layout_marginTop="10dip">
+
+								<RelativeLayout android:id="@+id/rl_symbol_5"
+									android:layout_width="wrap_content" android:layout_height="wrap_content">
+									<Button android:id="@+id/btn_symbol_5"
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										android:background="@drawable/upomp_bypay_btn_number"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_symbol_6"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_symbol_5"
+									android:layout_marginLeft="10dip">
+									<Button android:id="@+id/btn_symbol_6"
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										android:background="@drawable/upomp_bypay_btn_number"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_symbol_7"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_symbol_6"
+									android:layout_marginLeft="10dip">
+									<Button android:id="@+id/btn_symbol_7"
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										android:background="@drawable/upomp_bypay_btn_number"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_symbol_8"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_symbol_7"
+									android:layout_marginLeft="10dip">
+									<Button android:id="@+id/btn_symbol_8"
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										android:background="@drawable/upomp_bypay_btn_number"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+							</RelativeLayout>
+							<RelativeLayout android:id="@+id/rl_symbol_line3"
+
+								android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:layout_below="@+id/rl_symbol_line2"
+								android:layout_marginTop="10dip">
+
+								<RelativeLayout android:id="@+id/rl_symbol_9"
+									android:layout_width="wrap_content" android:layout_height="wrap_content">
+									<Button android:id="@+id/btn_symbol_9"
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										android:background="@drawable/upomp_bypay_btn_number"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_symbol_0"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_symbol_9"
+									android:layout_marginLeft="10dip">
+
+									<Button android:id="@+id/btn_symbol_0"
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										android:background="@drawable/upomp_bypay_btn_number"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+								<RelativeLayout android:id="@+id/rl_symbol_backspace"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/rl_symbol_0"
+									android:layout_marginLeft="10dip">
+									<Button android:id="@+id/btn_symbol_backspace"
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										android:background="@drawable/upomp_bypay_keyboard_btn_clear"
+										android:text="@string/upomp_bypay_keyboard_clear"
+										android:textColor="#ffffff" />
+								</RelativeLayout>
+							</RelativeLayout>
+
+						</RelativeLayout>
+					</RelativeLayout>
+
+				</RelativeLayout>
+				<RelativeLayout android:id="@+id/rl_key_menu"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_below="@+id/rl_bg" android:layout_marginTop="5dip">
+					<RelativeLayout android:id="@+id/rl_line1_menu"
+						android:layout_width="225dip" android:layout_height="wrap_content"
+						android:background="@drawable/upomp_bypay_keyboard_nav_bg">
+						<RelativeLayout android:id="@+id/rl_number_menu"
+							android:layout_width="75dip" android:layout_height="wrap_content"
+							android:layout_centerVertical="true">
+							<Button android:id="@+id/btn_num" android:layout_width="fill_parent"
+								android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_keyboard_btn1_on"
+								android:text="@string/upomp_bypay_keyboard_number"
+								android:textColor="#FFFFFF" />
+						</RelativeLayout>
+						<RelativeLayout android:id="@+id/rl_letter_menu"
+							android:layout_width="75dip" android:layout_height="wrap_content"
+							android:layout_toRightOf="@+id/rl_number_menu"
+							android:layout_centerVertical="true">
+							<Button android:id="@+id/btn_letter" android:layout_width="fill_parent"
+								android:layout_height="wrap_content" android:background="#00000000"
+								android:text="@string/upomp_bypay_keyboard_letter"
+								android:textColor="#FFFFFF" />
+						</RelativeLayout>
+						<RelativeLayout android:id="@+id/rl_symbol_menu"
+							android:layout_width="75dip" android:layout_height="wrap_content"
+							android:layout_toRightOf="@+id/rl_letter_menu"
+							android:layout_centerVertical="true">
+							<Button android:id="@+id/btn_symbol" android:layout_width="fill_parent"
+								android:layout_height="wrap_content" android:background="#00000000"
+								android:text="@string/upomp_bypay_keyboard_symbol"
+								android:textColor="#FFFFFF" />
+						</RelativeLayout>
+
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/rl_enter_menu"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_toRightOf="@+id/rl_symbol_menu"
+						android:layout_marginTop="2dip">
+						<Button android:id="@+id/btn_enter" android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_keyboard_btn_enter"
+							android:text="@string/upomp_bypay_affirm" android:textColor="#FFFFFF"
+							android:layout_alignParentRight="true" />
+						
+							<RelativeLayout android:id="@+id/rl_number_menu"
+							
+								android:layout_width="75dip" android:layout_height="wrap_content">
+							
+								<Button android:background="#00000000"
+								
+										android:layout_width="wrap_content" android:textColor="#FFFFFF"
+								
+										android:layout_height="wrap_content" android:id="@+id/btn_num"
+								
+										android:text="@string/text4">
+								</Button>
+						
+							</RelativeLayout>
+					</RelativeLayout>
+				</RelativeLayout>
+			</RelativeLayout>
+
+			<!--
+				rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+			-->
+
+
+			<RelativeLayout android:id="@+id/rl_number_toast"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:visibility="visible" android:layout_marginRight="15dip"
+				android:layout_marginLeft="15dip" android:layout_marginTop="20dip">
+				<RelativeLayout android:id="@+id/rl_line1_toast"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_marginRight="10dip" android:layout_marginLeft="10dip">
+
+					<RelativeLayout android:id="@+id/rl_key1_toast"
+						android:background="@drawable/upomp_bypay_toast_bg"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:visibility="gone">
+						<TextView android:id="@+id/tv_key1_toast"
+							android:layout_width="wrap_content" android:textColor="#ffffff"
+							android:layout_height="wrap_content" android:textSize="40dip"
+							android:layout_centerHorizontal="true"
+							android:layout_centerVertical="true" />
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/rl_key2_toast"
+						android:background="@drawable/upomp_bypay_toast_bg"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_marginLeft="70dip" android:visibility="gone">
+						<TextView android:id="@+id/tv_key2_toast"
+							android:layout_width="wrap_content" android:textColor="#ffffff"
+							android:layout_height="wrap_content" android:textSize="40dip"
+							android:layout_centerHorizontal="true"
+							android:layout_centerVertical="true" />
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/rl_key3_toast"
+						android:background="@drawable/upomp_bypay_toast_bg"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_marginLeft="140dip" android:visibility="gone">
+						<TextView android:id="@+id/tv_key3_toast"
+							android:layout_width="wrap_content" android:textColor="#ffffff"
+							android:layout_height="wrap_content" android:textSize="40dip"
+							android:layout_centerHorizontal="true"
+							android:layout_centerVertical="true" />
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/rl_key4_toast"
+						android:background="@drawable/upomp_bypay_toast_bg"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_marginLeft="210dip" android:visibility="gone">
+						<TextView android:id="@+id/tv_key4_toast"
+							android:layout_width="wrap_content" android:textColor="#ffffff"
+							android:layout_height="wrap_content" android:textSize="40dip"
+							android:layout_centerHorizontal="true"
+							android:layout_centerVertical="true" />
+					</RelativeLayout>
+				</RelativeLayout>
+				<RelativeLayout android:id="@+id/rl_line2_toast"
+
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_marginTop="42dip" android:layout_marginRight="10dip"
+					android:layout_marginLeft="10dip">
+
+					<RelativeLayout android:id="@+id/rl_key5_toast"
+						android:background="@drawable/upomp_bypay_toast_bg"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:visibility="gone">
+						<TextView android:id="@+id/tv_key5_toast"
+							android:layout_width="wrap_content" android:textColor="#ffffff"
+							android:layout_height="wrap_content" android:textSize="40dip"
+							android:layout_centerHorizontal="true"
+							android:layout_centerVertical="true" />
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/rl_key6_toast"
+						android:background="@drawable/upomp_bypay_toast_bg"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_marginLeft="70dip" android:visibility="gone">
+						<TextView android:id="@+id/tv_key6_toast"
+							android:layout_width="wrap_content" android:textColor="#ffffff"
+							android:layout_height="wrap_content" android:textSize="40dip"
+							android:layout_centerHorizontal="true"
+							android:layout_centerVertical="true" />
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/rl_key7_toast"
+						android:background="@drawable/upomp_bypay_toast_bg"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_marginLeft="140dip" android:visibility="gone">
+						<TextView android:id="@+id/tv_key7_toast"
+							android:layout_width="wrap_content" android:textColor="#ffffff"
+							android:layout_height="wrap_content" android:textSize="40dip"
+							android:layout_centerHorizontal="true"
+							android:layout_centerVertical="true" />
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/rl_key8_toast"
+						android:background="@drawable/upomp_bypay_toast_bg"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_marginLeft="210dip" android:visibility="gone">
+						<TextView android:id="@+id/tv_key8_toast"
+							android:layout_width="wrap_content" android:textColor="#ffffff"
+							android:layout_height="wrap_content" android:textSize="40dip"
+							android:layout_centerHorizontal="true"
+							android:layout_centerVertical="true" />
+					</RelativeLayout>
+				</RelativeLayout>
+				<RelativeLayout android:id="@+id/rl_line3_toast"
+
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_marginTop="85dip" android:layout_marginRight="10dip"
+					android:layout_marginLeft="10dip">
+
+					<RelativeLayout android:id="@+id/rl_key9_toast"
+						android:background="@drawable/upomp_bypay_toast_bg"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:visibility="gone">
+						<TextView android:id="@+id/tv_key9_toast"
+							android:layout_width="wrap_content" android:textColor="#ffffff"
+							android:layout_height="wrap_content" android:textSize="40dip"
+							android:layout_centerHorizontal="true"
+							android:layout_centerVertical="true" />
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/rl_key0_toast"
+						android:background="@drawable/upomp_bypay_toast_bg"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_marginLeft="70dip" android:visibility="gone">
+						<TextView android:id="@+id/tv_key0_toast"
+							android:layout_width="wrap_content" android:textColor="#ffffff"
+							android:layout_height="wrap_content" android:textSize="40dip"
+							android:layout_centerHorizontal="true"
+							android:layout_centerVertical="true" />
+					</RelativeLayout>
+
+				</RelativeLayout>
+
+			</RelativeLayout>
+			<RelativeLayout android:id="@+id/rl_letter_toast"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginTop="10dip" android:layout_marginRight="5dip"
+				android:layout_marginLeft="5dip">
+				<RelativeLayout android:id="@+id/rl_letter_line1"
+					android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<RelativeLayout android:id="@+id/rl_keyQ_toast"
+						android:background="@drawable/upomp_bypay_toast_bg"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:visibility="gone">
+						<TextView android:id="@+id/tv_keyQ_toast"
+							android:layout_width="wrap_content" android:textColor="#ffffff"
+							android:layout_height="wrap_content" android:textSize="40dip"
+							android:layout_centerHorizontal="true"
+							android:layout_centerVertical="true" />
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/rl_keyW_toast"
+						android:background="@drawable/upomp_bypay_toast_bg"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_marginLeft="28dip" android:visibility="gone">
+						<TextView android:id="@+id/tv_keyW_toast"
+							android:layout_width="wrap_content" android:textColor="#ffffff"
+							android:layout_height="wrap_content" android:textSize="40dip"
+							android:layout_centerHorizontal="true"
+							android:layout_centerVertical="true" />
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/rl_keyE_toast"
+						android:background="@drawable/upomp_bypay_toast_bg"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_marginLeft="56dip" android:visibility="gone">
+						<TextView android:id="@+id/tv_keyE_toast"
+							android:layout_width="wrap_content" android:textColor="#ffffff"
+							android:layout_height="wrap_content" android:textSize="40dip"
+							android:layout_centerHorizontal="true"
+							android:layout_centerVertical="true" />
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/rl_keyR_toast"
+						android:background="@drawable/upomp_bypay_toast_bg"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_marginLeft="84dip" android:visibility="gone">
+						<TextView android:id="@+id/tv_keyR_toast"
+							android:layout_width="wrap_content" android:textColor="#ffffff"
+							android:layout_height="wrap_content" android:textSize="40dip"
+							android:layout_centerHorizontal="true"
+							android:layout_centerVertical="true" />
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/rl_keyT_toast"
+						android:background="@drawable/upomp_bypay_toast_bg"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_marginLeft="112dip" android:visibility="gone">
+						<TextView android:id="@+id/tv_keyT_toast"
+							android:layout_width="wrap_content" android:textColor="#ffffff"
+							android:layout_height="wrap_content" android:textSize="40dip"
+							android:layout_centerHorizontal="true"
+							android:layout_centerVertical="true" />
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/rl_keyY_toast"
+						android:background="@drawable/upomp_bypay_toast_bg"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_marginLeft="140dip" android:visibility="gone">
+						<TextView android:id="@+id/tv_keyY_toast"
+							android:layout_width="wrap_content" android:textColor="#ffffff"
+							android:layout_height="wrap_content" android:textSize="40dip"
+							android:layout_centerHorizontal="true"
+							android:layout_centerVertical="true" />
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/rl_keyU_toast"
+						android:background="@drawable/upomp_bypay_toast_bg"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_marginLeft="168dip" android:visibility="gone">
+						<TextView android:id="@+id/tv_keyU_toast"
+							android:layout_width="wrap_content" android:textColor="#ffffff"
+							android:layout_height="wrap_content" android:textSize="40dip"
+							android:layout_centerHorizontal="true"
+							android:layout_centerVertical="true" />
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/rl_keyI_toast"
+						android:background="@drawable/upomp_bypay_toast_bg"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_marginLeft="196dip" android:visibility="gone">
+						<TextView android:id="@+id/tv_keyI_toast"
+							android:layout_width="wrap_content" android:textColor="#ffffff"
+							android:layout_height="wrap_content" android:textSize="40dip"
+							android:layout_centerHorizontal="true"
+							android:layout_centerVertical="true" />
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/rl_keyO_toast"
+						android:background="@drawable/upomp_bypay_toast_bg"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_marginLeft="224dip" android:visibility="gone">
+						<TextView android:id="@+id/tv_keyO_toast"
+							android:layout_width="wrap_content" android:textColor="#ffffff"
+							android:layout_height="wrap_content" android:textSize="40dip"
+							android:layout_centerHorizontal="true"
+							android:layout_centerVertical="true" />
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/rl_keyP_toast"
+						android:background="@drawable/upomp_bypay_toast_bg"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_marginLeft="252dip" android:visibility="gone">
+						<TextView android:id="@+id/tv_keyP_toast"
+							android:layout_width="wrap_content" android:textColor="#ffffff"
+							android:layout_height="wrap_content" android:textSize="40dip"
+							android:layout_centerHorizontal="true"
+							android:layout_centerVertical="true" />
+					</RelativeLayout>
+				</RelativeLayout>
+			</RelativeLayout>
+			<RelativeLayout android:id="@+id/rl_letter_line2"
+
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_below="@+id/rl_letter_line1"
+				android:layout_marginTop="75dip" android:layout_marginLeft="23dip">
+
+				<RelativeLayout android:id="@+id/rl_keyA_toast"
+					android:background="@drawable/upomp_bypay_toast_bg"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_marginLeft="0dip" android:visibility="gone">
+					<TextView android:id="@+id/tv_keyA_toast"
+						android:layout_width="wrap_content" android:textColor="#ffffff"
+						android:layout_height="wrap_content" android:textSize="40dip"
+						android:layout_centerHorizontal="true"
+						android:layout_centerVertical="true" />
+				</RelativeLayout>
+				<RelativeLayout android:id="@+id/rl_keyS_toast"
+					android:background="@drawable/upomp_bypay_toast_bg"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_marginLeft="28dip" android:visibility="gone">
+					<TextView android:id="@+id/tv_keyS_toast"
+						android:layout_width="wrap_content" android:textColor="#ffffff"
+						android:layout_height="wrap_content" android:textSize="40dip"
+						android:layout_centerHorizontal="true"
+						android:layout_centerVertical="true" />
+				</RelativeLayout>
+				<RelativeLayout android:id="@+id/rl_keyD_toast"
+					android:background="@drawable/upomp_bypay_toast_bg"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_marginLeft="56dip" android:visibility="gone">
+					<TextView android:id="@+id/tv_keyD_toast"
+						android:layout_width="wrap_content" android:textColor="#ffffff"
+						android:layout_height="wrap_content" android:textSize="40dip"
+						android:layout_centerHorizontal="true"
+						android:layout_centerVertical="true" />
+				</RelativeLayout>
+				<RelativeLayout android:id="@+id/rl_keyF_toast"
+					android:background="@drawable/upomp_bypay_toast_bg"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_marginLeft="84dip" android:visibility="gone">
+					<TextView android:id="@+id/tv_keyF_toast"
+						android:layout_width="wrap_content" android:textColor="#ffffff"
+						android:layout_height="wrap_content" android:textSize="40dip"
+						android:layout_centerHorizontal="true"
+						android:layout_centerVertical="true" />
+				</RelativeLayout>
+				<RelativeLayout android:id="@+id/rl_keyG_toast"
+					android:background="@drawable/upomp_bypay_toast_bg"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_marginLeft="112dip" android:visibility="gone">
+					<TextView android:id="@+id/tv_keyG_toast"
+						android:layout_width="wrap_content" android:textColor="#ffffff"
+						android:layout_height="wrap_content" android:textSize="40dip"
+						android:layout_centerHorizontal="true"
+						android:layout_centerVertical="true" />
+				</RelativeLayout>
+				<RelativeLayout android:id="@+id/rl_keyH_toast"
+					android:background="@drawable/upomp_bypay_toast_bg"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_marginLeft="140dip" android:visibility="gone">
+					<TextView android:id="@+id/tv_keyH_toast"
+						android:layout_width="wrap_content" android:textColor="#ffffff"
+						android:layout_height="wrap_content" android:textSize="40dip"
+						android:layout_centerHorizontal="true"
+						android:layout_centerVertical="true" />
+				</RelativeLayout>
+				<RelativeLayout android:id="@+id/rl_keyJ_toast"
+					android:background="@drawable/upomp_bypay_toast_bg"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_marginLeft="168dip" android:visibility="gone">
+					<TextView android:id="@+id/tv_keyJ_toast"
+						android:layout_width="wrap_content" android:textColor="#ffffff"
+						android:layout_height="wrap_content" android:textSize="40dip"
+						android:layout_centerHorizontal="true"
+						android:layout_centerVertical="true" />
+				</RelativeLayout>
+				<RelativeLayout android:id="@+id/rl_keyK_toast"
+					android:background="@drawable/upomp_bypay_toast_bg"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_marginLeft="196dip" android:visibility="gone">
+					<TextView android:id="@+id/tv_keyK_toast"
+						android:layout_width="wrap_content" android:textColor="#ffffff"
+						android:layout_height="wrap_content" android:textSize="40dip"
+						android:layout_centerHorizontal="true"
+						android:layout_centerVertical="true" />
+				</RelativeLayout>
+				<RelativeLayout android:id="@+id/rl_keyL_toast"
+					android:background="@drawable/upomp_bypay_toast_bg"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_marginLeft="224dip" android:visibility="gone">
+					<TextView android:id="@+id/tv_keyL_toast"
+						android:layout_width="wrap_content" android:textColor="#ffffff"
+						android:layout_height="wrap_content" android:textSize="40dip"
+						android:layout_centerHorizontal="true"
+						android:layout_centerVertical="true" />
+				</RelativeLayout>
+			</RelativeLayout>
+			<RelativeLayout android:id="@+id/rl_letter_line3"
+
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+				android:layout_marginTop="120dip" android:layout_marginLeft="47dip">
+
+				<RelativeLayout android:id="@+id/rl_keyZ_toast"
+					android:background="@drawable/upomp_bypay_toast_bg"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_marginLeft="0dip" android:visibility="gone">
+					<TextView android:id="@+id/tv_keyZ_toast"
+						android:layout_width="wrap_content" android:textColor="#ffffff"
+						android:layout_height="wrap_content" android:textSize="40dip"
+						android:layout_centerHorizontal="true"
+						android:layout_centerVertical="true" />
+				</RelativeLayout>
+
+				<RelativeLayout android:id="@+id/rl_keyX_toast"
+					android:background="@drawable/upomp_bypay_toast_bg"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_marginLeft="28dip" android:visibility="gone">
+					<TextView android:id="@+id/tv_keyX_toast"
+						android:layout_width="wrap_content" android:textColor="#ffffff"
+						android:layout_height="wrap_content" android:textSize="40dip"
+						android:layout_centerHorizontal="true"
+						android:layout_centerVertical="true" />
+				</RelativeLayout>
+				<RelativeLayout android:id="@+id/rl_keyC_toast"
+					android:background="@drawable/upomp_bypay_toast_bg"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_marginLeft="56dip" android:visibility="gone">
+					<TextView android:id="@+id/tv_keyC_toast"
+						android:layout_width="wrap_content" android:textColor="#ffffff"
+						android:layout_height="wrap_content" android:textSize="40dip"
+						android:layout_centerHorizontal="true"
+						android:layout_centerVertical="true" />
+				</RelativeLayout>
+				<RelativeLayout android:id="@+id/rl_keyV_toast"
+					android:background="@drawable/upomp_bypay_toast_bg"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_marginLeft="84dip" android:visibility="gone">
+					<TextView android:id="@+id/tv_keyV_toast"
+						android:layout_width="wrap_content" android:textColor="#ffffff"
+						android:layout_height="wrap_content" android:textSize="40dip"
+						android:layout_centerHorizontal="true"
+						android:layout_centerVertical="true" />
+				</RelativeLayout>
+				<RelativeLayout android:id="@+id/rl_keyB_toast"
+					android:background="@drawable/upomp_bypay_toast_bg"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_marginLeft="112dip" android:visibility="gone">
+					<TextView android:id="@+id/tv_keyB_toast"
+						android:layout_width="wrap_content" android:textColor="#ffffff"
+						android:layout_height="wrap_content" android:textSize="40dip"
+						android:layout_centerHorizontal="true"
+						android:layout_centerVertical="true" />
+				</RelativeLayout>
+				<RelativeLayout android:id="@+id/rl_keyN_toast"
+					android:background="@drawable/upomp_bypay_toast_bg"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_marginLeft="140dip" android:visibility="gone">
+					<TextView android:id="@+id/tv_keyN_toast"
+						android:layout_width="wrap_content" android:textColor="#ffffff"
+						android:layout_height="wrap_content" android:textSize="40dip"
+						android:layout_centerHorizontal="true"
+						android:layout_centerVertical="true" />
+				</RelativeLayout>
+				<RelativeLayout android:id="@+id/rl_keyM_toast"
+					android:background="@drawable/upomp_bypay_toast_bg"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_marginLeft="168dip" android:visibility="gone">
+					<TextView android:id="@+id/tv_keyM_toast"
+						android:layout_width="wrap_content" android:textColor="#ffffff"
+						android:layout_height="wrap_content" android:textSize="40dip"
+						android:layout_centerHorizontal="true"
+						android:layout_centerVertical="true" />
+				</RelativeLayout>
+			</RelativeLayout>
+		</RelativeLayout>
+
+</RelativeLayout>

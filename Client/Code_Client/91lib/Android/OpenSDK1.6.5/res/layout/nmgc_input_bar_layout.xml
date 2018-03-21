@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/account_input_bg"
+    android:id="@+id/input_root" >
+<!-- android:background="@drawable/nmgc_input_border" -->
+    <TextView
+        android:id="@+id/input_bar_label_id"
+        style="@style/nmgc_login_button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/nmgc_reg_stepone_input_text_margin_left"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/nmgc_login_common_text_size" />
+
+    <ImageView
+        android:id="@+id/input_bar_clear_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="6dp"
+        android:contentDescription="@string/nmgc_global_title"
+        android:src="@drawable/search_edittext_clear"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/input_bar_edit_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/input_bar_clear_id"
+        android:layout_toRightOf="@id/input_bar_label_id"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:hint="@string/nmgc_reg_phone_number_eleven"
+        android:singleLine="true"
+        android:textColor="#1a1a1a"
+        android:textSize="@dimen/nmgc_login_common_text_size" />
+
+</RelativeLayout>

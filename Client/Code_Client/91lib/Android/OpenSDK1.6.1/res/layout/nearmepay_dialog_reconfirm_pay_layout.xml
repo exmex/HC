@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/nearmepay_dialog_recharge_bg" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/nearmepay_dialog_reconfirm_height"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/nearmepay_dialog_reconfirm_margin_top_1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="left"
+                    android:text="@string/nearmepay_dialog_recharge_goods_name"
+                    android:textColor="#494949"
+                    android:textSize="@dimen/nearmepay_dialog_reconfirm_text_normal_size" />
+
+                <TextView
+                    android:id="@+id/dialog_reconfirm_goods_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="13dp"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:textColor="#494949"
+                    android:textSize="@dimen/nearmepay_dialog_reconfirm_text_normal_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="left"
+                    android:text="@string/nearmepay_dialog_recharge_goods_price"
+                    android:textColor="#494949"
+                    android:textSize="@dimen/nearmepay_dialog_reconfirm_text_normal_size" />
+
+                <TextView
+                    android:id="@+id/dialog_reconfirm_goods_price_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="13dp"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:textColor="#0b984b"
+                    android:textSize="@dimen/nearmepay_dialog_reconfirm_text_normal_size" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="@dimen/nearmepay_dialog_reconfirm_margin_top_2"
+                android:background="@drawable/nearmepay_dialog_recharge_devider"
+                android:scaleType="fitCenter" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/nearmepay_dialog_reconfirm_margin_top_3"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/waring_tips_iv"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/nearmepay_happy_iv" />
+
+                <TextView
+                    android:id="@+id/waring_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:gravity="left"
+                    android:text="@string/nearmepay_dialog_reconfirm_waring_tips"
+                    android:textColor="@color/happy_color"
+                    android:textSize="@dimen/nearmepay_dialog_reconfirm_text_normal_size" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/dialog_reconfirm_sure_bn"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="@dimen/nearmepay_dialog_reconfirm_margin_top_4"
+                android:background="@drawable/nearmepay_dialog_recharge_button_selector"
+                android:shadowColor="#000000"
+                android:shadowDx="0.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="1.0"
+                android:text="@string/nearmepay_dialog_reconfirm_sure"
+                android:textColor="#f7f7f7"
+                android:textSize="@dimen/nearmepay_dialog_reconfirm_text_normal_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/nearmepay_dialog_reconfirm_margin_top_5"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="13dp"
+                    android:layout_weight="1.0"
+                    android:gravity="left" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/nearmepay_dialog_recharge_account_name"
+                        android:textColor="#494949"
+                        android:textSize="@dimen/nearmepay_dialog_reconfirm_text_small_size" />
+
+                    <TextView
+                        android:id="@+id/dialog_reconfirm_account_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="left"
+                        android:singleLine="true"
+                        android:textColor="#494949"
+                        android:textSize="@dimen/nearmepay_dialog_reconfirm_text_small_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="13dp"
+                    android:layout_weight="1.0"
+                    android:gravity="right" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/nearmepay_dialog_recharge_account_balance"
+                        android:textColor="#494949"
+                        android:textSize="@dimen/nearmepay_dialog_reconfirm_text_small_size" />
+
+                    <TextView
+                        android:id="@+id/dialog_reconfirm_account_balance_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textColor="#494949"
+                        android:textSize="@dimen/nearmepay_dialog_reconfirm_text_small_size" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/dialog_reconfirm_close_bn"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="right|top"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/nearmepay_recharge_close_bn" />
+    </FrameLayout>
+
+</LinearLayout>

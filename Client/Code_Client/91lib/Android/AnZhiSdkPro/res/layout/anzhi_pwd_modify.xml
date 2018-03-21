@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/size_48"
+                android:layout_margin="@dimen/size_10"
+                android:background="@drawable/anzhi_input_normal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="right"
+                    android:minEms="4"
+                    android:text="@string/anzhi_oldPwd"
+                    android:textColor="@color/anzhi_494949"
+                    android:textSize="@dimen/font_16" />
+
+                <EditText
+                    android:id="@+id/oldPwd_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:hint="@string/anzhi_input_pwd_old"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/size_10"
+                    android:paddingRight="5dip"
+                    android:singleLine="true"
+                    android:textColor="@color/anzhi_494949"
+                    android:textColorHint="@color/anzhi_d0d0d0"
+                    android:textSize="@dimen/font_16" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/size_48"
+                android:layout_margin="@dimen/size_10"
+                android:background="@drawable/anzhi_input_normal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="right"
+                    android:minEms="4"
+                    android:text="@string/anzhi_newPwd"
+                    android:textColor="@color/anzhi_494949"
+                    android:textSize="@dimen/font_16" />
+
+                <EditText
+                    android:id="@+id/newPwd_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:hint="@string/anzhi_sixtosixteen_wordornumber"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/size_10"
+                    android:paddingRight="5dip"
+                    android:singleLine="true"
+                    android:textColor="@color/anzhi_494949"
+                    android:textColorHint="@color/anzhi_d0d0d0"
+                    android:textSize="@dimen/font_16" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/size_48"
+                android:layout_margin="@dimen/size_10"
+                android:background="@drawable/anzhi_input_normal" >
+
+                <TextView
+                    android:id="@+id/confirmPwd_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="right"
+                    android:minEms="4"
+                    android:text="@string/anzhi_confirmPwd"
+                    android:textColor="@color/anzhi_494949"
+                    android:textSize="@dimen/font_16" />
+
+                <EditText
+                    android:id="@+id/confirmPwd_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:hint="@string/anzhi_input_pwd"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/size_10"
+                    android:paddingRight="5dip"
+                    android:singleLine="true"
+                    android:textColor="@color/anzhi_494949"
+                    android:textColorHint="@color/anzhi_d0d0d0"
+                    android:textSize="@dimen/font_16" >
+                </EditText>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/size_40"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/size_40"
+                android:layout_marginRight="@dimen/size_40"
+                android:layout_marginTop="@dimen/size_40"
+                android:background="@drawable/anzhi_button_bg_green"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="@string/anzhi_save"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_18" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_10"
+            android:layout_marginRight="@dimen/size_10"
+             android:layout_marginBottom="@dimen/size_10"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"               
+                android:layout_weight="2"
+                android:background="@drawable/anzhi_textview_normal"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="@string/anzhi_help_customer"
+                android:textColor="@color/anzhi_757575"
+                android:textSize="@dimen/font_12" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"                                     
+                android:autoLink="phone"
+                android:background="@drawable/anzhi_textview_normal_b"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="@string/anzhi_service_tel_3_2"
+                android:textColor="@color/anzhi_757575"
+                android:textSize="@dimen/font_12" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

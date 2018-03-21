@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="@dimen/ks_cm_login_layout_width"
+        android:layout_height="@dimen/ks_cm_login_layout_height"
+        android:background="@drawable/ks_bg_cm_dialog"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <include layout="@layout/ks_common_cm_title_bar" />
+
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ks_entry_content_margintop"
+            android:layout_marginLeft="@dimen/ks_entry_content_margin"
+            android:layout_marginRight="@dimen/ks_entry_content_margin"
+            android:layout_marginBottom="@dimen/ks_entry_content_marginbottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ks_psw_tips1"
+                android:textColor="@color/ks_entry_txt"
+                android:textSize="@dimen/ks_psw_txt" />
+
+            <TextView
+                android:id="@+id/retrieve_psw_website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ks_entry_padding"
+                android:drawableLeft="@drawable/ks_internet"
+                android:drawablePadding="5dp"
+                android:textColor="@color/ks_light_blue"
+                android:textSize="@dimen/ks_psw_txt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ks_entry_input_padding"
+                android:text="@string/ks_psw_tips2"
+                android:textColor="@color/ks_entry_txt"
+                android:textSize="@dimen/ks_psw_txt" />
+
+            <TextView
+                android:id="@+id/retrieve_psw_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ks_entry_padding"
+                android:drawableLeft="@drawable/ks_ic_phone"
+                android:drawablePadding="5dp"
+                android:textColor="@color/ks_light_blue"
+                android:textSize="@dimen/ks_psw_txt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/ks_cm_login_button_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/retrieve_psw_ok"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/ks_bg_cm_btn_dark_selector"
+                android:minHeight="@dimen/ks_cm_one_key_reg_logo_height"
+                android:minWidth="@dimen/ks_cm_one_key_reg_logo_width"
+                android:shadowColor="@color/ks_cm_text_shadow_color"
+                android:text="@string/ks_know"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/ks_text_size_20" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="dcn_login_content">192dp</dimen>
+    <dimen name="dcn_login_padding_left_right">15dp</dimen>
+    <dimen name="dcn_float_menu_margin_top">30dp</dimen>
+    <dimen name="dcn_float_menu_margin_bottom">30dp</dimen>
+	<dimen name="dcn_badge_number_text_size">12sp</dimen>
+
+    <!-- 输入框文字大小-->
+    <dimen name="dcn_edit_text_size">14sp</dimen>
+
+    <!-- title高度-->
+    <dimen name="dcn_title_height">50dp</dimen>
+</resources>

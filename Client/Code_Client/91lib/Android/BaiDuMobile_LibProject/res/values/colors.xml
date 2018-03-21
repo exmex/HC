@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="ebpay_black_transparent">#8f000000</color>
+    <color name="ebpay_white_half_trans">#30ffffff</color>
+    <color name="ebpay_light_gray">#eaeaea</color>
+    <color name="ebpay_darkorange">#f4a51a</color>
+    <color name="ebpay_bg_error_red">#f43c1c</color>
+    <color name="ebpay_line_gray">#EDEDED</color>
+    <color name="ebpay_white">#ffffff</color>
+    <color name="ebpay_black">#ff000000</color>
+    <color name="ebpay_gray">#dddddd</color>
+    <color name="ebpay_red">#ff5652</color>
+    <color name="ebpay_transparent">#00000000</color>
+    <color name="ebpay_translucent_background">#60000000</color>
+    
+    <!-- 蓝色色 -->
+    <color name="ebpay_blue">#20a3ff</color>
+    
+    <color name="ebpay_scroll_bar">#bbbbbb</color>
+    
+    <!-- title_bar彩带颜色 -->
+    <color name="ebpay_t_blue">#7560df</color>
+    <color name="ebpay_t_purple">#df42a8</color>
+    <color name="ebpay_t_orange">#ea8b46</color>
+    <color name="ebpay_t_yellow">#e4ca1a</color>
+    <color name="ebpay_t_green">#52de7f</color>
+    <color name="ebpay_t_cyan">#2aa6e7</color>
+    
+    <!-- 字体颜色 -->
+    <color name="ebpay_text_333333">#333333</color>
+    <color name="ebpay_text_999999">#999999</color>
+    <color name="ebpay_text_d9d9d9">#d9d9d9</color>
+    <color name="ebpay_text_c7c7c7">#c7c7c7</color>
+    <color name="ebpay_text_ff7800">#ff7800</color>
+
+</resources>

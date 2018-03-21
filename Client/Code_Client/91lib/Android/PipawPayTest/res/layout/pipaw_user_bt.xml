@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bind_tip"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone" >
+
+    <RelativeLayout
+        android:id="@+id/bt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pp_title_bg" >
+
+        <ImageView
+            android:id="@+id/bt_back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/back_margin_left"
+            android:src="@drawable/pp_btn_back_selector" />
+
+        <TextView
+            android:id="@+id/bt_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bt_security"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_title"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip" >
+
+        <ImageView
+            android:id="@+id/bt_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/pu_warning" />
+
+        <TextView
+            android:id="@+id/bt_security_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/bt_warning"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_text_size" />
+
+        <TextView
+            android:id="@+id/bt_security_level_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/bt_security_tv"
+            android:textColor="#ffffde00"
+            android:textSize="@dimen/warning_text_size" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/bt_tip_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_security"
+        android:layout_margin="20dip"
+        android:gravity="center"
+        android:textColor="#ffadcae2"
+        android:textSize="@dimen/tv_text_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_tip_tv"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/bt_bind_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pu_btn_selector"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_text_size" />
+
+        <Button
+            android:id="@+id/bt_enter_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/pu_btn_selector"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_text_size" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/bt_cloud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/pu_bg_cloud" />
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="dcn_title_button_choosed">#7f7e77</color>
+    <color name="dcn_title_button_unchoosed">#53534a</color>
+    <color name="dcn_title_button_tag">#f39800</color>
+    <color name="dcn_hint">#d4d3d3</color>
+    <color name="dcn_text_status">#d4d3d3</color>
+    <color name="dcn_login_line">#eae6df</color>
+    <color name="dcn_info_bg">#ffffff</color>
+    <color name="dcn_info_title_text">#53534a</color>
+    <color name="dcn_info_text">#99988f</color>
+    <color name="dcn_info_button">#e43916</color>
+    <color name="dcn_info_title_text_choosed">#f35c3e</color>
+    <color name="dcn_info_line">#f2f1ef</color>
+    <color name="dcn_charge_line">#f1e8df</color>
+    <color name="dcn_transparent">#00000000</color>
+    <color name="dcn_charge_info_text">#4d4c47</color>
+    <color name="dcn_info_hint_text">#d0130d</color>
+    <color name="dcn_black">#000000</color>
+    <color name="dcn_white">#ffffffff</color>
+    <color name="dcn_recharge_help_item_pressed">#12000000</color>
+    <color name="dcn_help_chapter_first_level_title">#ffffff</color>
+    <color name="dcn_help_chapter_second_level_title">#030200</color>
+    <color name="dcn_henp_chapter_sencond_level_title">#51524d</color>
+    <color name="dcn_henp_chapter_sencond_level_content">#787878</color>
+    <color name="dcn_color_read_all_msg_enable">#f36f20</color>
+    <color name="dcn_color_read_all_msg_disable">#a1a1a1</color>
+
+    <color name="dcn_color_login_box_gb">#d5d5d5</color>
+    <color name="dcn_login_edit_hint">#ababab</color>
+    <color name="dcn_login_back_btn_pressed">#e9e9e9</color>
+    <color name="dcn_retrieve_font_grey">#ababab</color>
+    <color name="dcn_retrieve_font_blue">#00c1ee</color>
+    <color name="dcn_light_black">#333333</color>
+    
+    <color name="dcn_ucenter_navi_text_color_normal">#7f8c8d</color>
+    <color name="dcn_ucenter_navi_text_color_pressed">#ff7800</color>
+    <color name="dcn_ucenter_bg">#f5f5f5</color>
+    <color name="dcn_ucenter_title_bg">#fdfdfd</color>
+    <color name="dcn_ucenter_btn_text">#686868</color>
+    <color name="dcn_ucenter_info_text">#969696</color>
+    <color name="dcn_ucenter_msg_read">#939393</color>
+    <color name="dcn_ucenter_msg_unread">#f73333</color>
+    <color name="dcn_grey">#e5e5e5</color>
+    <color name="dcn_error_msg_color">#e52e1b</color>
+    <color name="dcn_recharge_help_color">#7b7b7b</color>
+    <color name="dcn_select_account_blue">#ff0bc4ef</color>
+    <color name="dcn_select_account_red">#fff04e30</color>
+
+    <color name="dcn_message_title_unread">#ffffa809</color>
+    <color name="dcn_message_content_unread">#ffffb00b</color>
+    <color name="dcn_recommend_item_bg">#fff5f5f5</color>
+</resources>

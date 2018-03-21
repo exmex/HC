@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:drawable="@drawable/yyh_qiuqiu_mainfeature_unpress"/>
+    <item android:drawable="@drawable/yyh_sdk_pressed_layer_rec"/>
+
+</layer-list>

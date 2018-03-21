@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="300dp" android:layout_height="wrap_content"
+	android:orientation="vertical" android:background="@drawable/appchina_pay_main_shape">
+	<RelativeLayout android:id="@+id/main_title_ly"
+		android:layout_width="fill_parent" android:layout_height="48dp"
+		android:background="@drawable/appchina_pay_title_bg"
+		android:layout_alignParentTop="true">
+		<!--  <ImageView android:layout_width="142dp"
+			android:layout_height="34dp" android:layout_centerInParent="true"
+			android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+			android:src="@drawable/appchina_pay_title" />-->
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="34dp" android:layout_centerInParent="true"
+			android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+			android:textSize = "20sp" android:gravity="center_vertical"
+			android:textColor="#ffffff"
+			android:text="收银台" />
+	</RelativeLayout>
+	<TextView android:id="@+id/tv_msg"
+		android:text="@string/appchina_pay_your_month" style="@style/appchina_pay_text_highlight"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_marginLeft="10dip" android:layout_marginRight="10dip" />
+	<CheckBox android:id="@+id/rb_tip"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_margin="10dip" android:text="@string/appchina_pay_no_tip"
+		style="@style/appchina_pay_text_16" android:button="@drawable/appchina_pay_checkbox_btn"/>
+	<Button	android:gravity="center" android:layout_gravity="center"
+		android:layout_width="120dp" android:layout_height="wrap_content"
+		android:id="@+id/btn_sure" android:text="@string/appchina_pay_btn_sure"
+		android:padding="8dp" 
+		style="@style/appchina_pay_button_text_16" android:background="@drawable/appchina_pay_by_button_selector"
+		android:layout_marginBottom="10dp"/>
+</LinearLayout>

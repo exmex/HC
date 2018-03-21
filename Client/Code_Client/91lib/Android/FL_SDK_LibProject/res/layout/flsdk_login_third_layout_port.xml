@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+        style="@style/flsdk_style_c2c2c2_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8.0dip"
+        android:text="@string/flsdk_third_title" />
+
+    <ImageView
+        android:id="@+id/flsdk_qq_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:contentDescription="@string/flsdk_app_name"
+        android:onClick="qqClick"
+        android:scaleType="fitXY"
+        android:src="@drawable/flsdk_icon_qq_bg" />
+
+    <ImageView
+        android:id="@+id/flsdk_sina_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:contentDescription="@string/flsdk_app_name"
+        android:onClick="sinaClick"
+        android:scaleType="fitXY"
+        android:src="@drawable/flsdk_icon_sina_bg" />
+
+</LinearLayout>

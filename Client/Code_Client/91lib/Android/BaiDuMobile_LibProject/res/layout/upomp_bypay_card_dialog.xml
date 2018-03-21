@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/ll_card_dialog" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:padding="10dp">
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:padding="5px">
+		<TextView android:id="@+id/text" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textColor="#000000"
+			android:text="@string/upomp_bypay_carddialog_select" android:textSize="18sp" />
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:padding="5px">
+			<Button android:id="@+id/btn_card_info" android:layout_width="180dip"
+				android:layout_height="40dip" android:text="@string/upomp_bypay_carddialog_seecardinfo"
+				android:gravity="center" android:textColor="#000000" />
+			<Button android:id="@+id/btn_set_default"
+				android:layout_width="180dip" android:layout_height="40dip"
+				android:text="@string/upomp_bypay_affirmchangedefultcard" android:gravity="center" android:textColor="#000000" />
+			<Button android:id="@+id/btn_cancel_bind"
+				android:layout_width="180dip" android:layout_height="40dip"
+				android:text="@string/upomp_bypay_removecard" android:gravity="center" android:textColor="#000000" />
+			<Button android:id="@+id/btn_get_balance"
+				android:layout_width="180dip" android:layout_height="40dip"
+				android:text="@string/upomp_bypay_balance" android:gravity="center" android:textColor="#000000" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout> 

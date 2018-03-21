@@ -1,0 +1,9 @@
+{
+	"CFBundleDevelopmentRegion" = English;
+	CFBundleExecutable = NetEngine;
+	CFBundleIdentifier = "com.91.NetEngine";
+	"CFBundleInfoDictionaryVersion" = "6.0";
+	CFBundlePackageType = FMWK;
+	CFBundleSignature = "????";
+	CFBundleVersion = 1000;
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/virtual_keyboard_toast_bg"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	>
+	<TextView android:id="@+id/popupwindow_text" 
+	    android:layout_centerInParent="true"
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:textSize="35sp"
+		android:textColor="@color/anzhi_cFFFFFFFF"
+		android:textStyle="bold"
+		android:gravity="center"/>
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/gamehall_gridview_item_height"
+    android:paddingBottom="5dp"
+    android:paddingLeft="4dip"
+    android:paddingRight="4dip"
+    android:paddingTop="7dp" >
+
+    <FrameLayout
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/logo_cover"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:id="@+id/game_status_view"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/gamehall_logo_fron_meng"
+            android:gravity="center_horizontal|bottom"
+            android:orientation="horizontal"
+            android:paddingBottom="2dip"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/game_status_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingRight="1dip" />
+
+            <TextView
+                android:id="@+id/game_status_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="1dip"
+                android:text=""
+                android:textColor="@color/txt_white"
+                android:textSize="10dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_view"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:paddingTop="3dip"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="12dp" />
+
+</RelativeLayout>

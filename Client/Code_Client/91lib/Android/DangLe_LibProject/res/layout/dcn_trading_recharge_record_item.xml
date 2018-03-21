@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@android:color/white"
+    android:paddingLeft="10dp"
+    android:paddingRight="5dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dcn_order_num_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dcn_order_num"
+                android:textColor="@color/dcn_ucenter_info_text"
+                android:textSize="13sp"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/dcn_order_num_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/dcn_order_num_label"
+                android:singleLine="true"
+                android:textColor="@color/dcn_light_black"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dcn_recharge_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dcn_money"
+                android:singleLine="true"
+                android:textColor="@color/dcn_ucenter_info_text"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/dcn_recharge_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/dcn_recharge_label"
+                android:singleLine="true"
+                android:textColor="@color/dcn_ucenter_navi_text_color_pressed"
+                android:textSize="13sp" />
+            <TextView
+                android:id="@+id/dcn_recharge_money_suffix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/dcn_recharge_money"
+                android:singleLine="true"
+                android:text="@string/dcn_le_dou"
+                android:textColor="@color/dcn_light_black"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dcn_recharge_mode_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dcn_recharge_mode"
+                android:singleLine="true"
+                android:textColor="@color/dcn_ucenter_info_text"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/dcn_recharge_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/dcn_recharge_mode_label"
+                android:textColor="@color/dcn_light_black"
+                android:textSize="13sp"
+                android:singleLine="true" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:id="@+id/dcn_date_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/dcn_ucenter_info_text"
+                    android:textSize="12sp"
+                    android:singleLine="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

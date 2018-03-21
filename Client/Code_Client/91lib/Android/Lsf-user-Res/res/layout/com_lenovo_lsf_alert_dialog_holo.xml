@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2010, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentPanel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dip"
+    android:layout_marginRight="8dip"
+    android:background="@drawable/com_lenovo_lsf_dialog_full_holo_light"
+    android:orientation="vertical">
+
+    <LinearLayout android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <LinearLayout
+            android:id="@+id/title_template"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:gravity="center_vertical|left"
+            android:minHeight="40dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/alertTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#ff33b5e5"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <View android:id="@+id/titleDivider"
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:background="#ff33b5e5" />
+        <!-- If the client uses a customTitle, it will be added here. -->
+    </LinearLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dip"/>
+    <LinearLayout android:id="@+id/contentPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+        <ScrollView android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:clipToPadding="false">
+            <TextView
+                android:id="@+id/message"
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dip"
+                android:paddingLeft="16dip"
+                android:paddingRight="16dip"
+                android:textColor="#2e2e2e"
+                android:paddingTop="8dip" />
+
+        </ScrollView>
+    </LinearLayout>
+
+    <FrameLayout android:id="@+id/customPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <FrameLayout android:id="@+id/custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <LinearLayout android:id="@+id/buttonPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:background="#FFF0F0F0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button android:id="@+id/dialog_button_ok"
+                android:layout_width="0dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:textSize="14sp"
+                android:minHeight="40dp"
+                android:layout_height="wrap_content"
+                android:visibility="visible"/>
+            <Button android:id="@+id/dialog_button_cancel"
+                android:layout_width="0dip"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:layout_marginBottom="0dp"
+                android:textSize="14sp"
+                android:minHeight="40dp"
+                android:layout_height="wrap_content" 
+                android:visibility="gone"/>
+        </LinearLayout>
+     </LinearLayout>
+</LinearLayout>

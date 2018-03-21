@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/payeco_orderDetailLayout"
+    style="@style/payeco_applicationBgStyle"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip" >
+
+        <include layout="@layout/payeco_plugin_title" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5.0dip"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:paddingTop="8.0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/payeco_close_webview_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="2.0dip"
+                android:text="@string/payeco_close_line"
+                android:textColor="@color/payeco_titleTextColor"
+                android:textSize="@dimen/payeco_normal_textsize"
+                android:visibility="gone" />
+
+            <WebView
+                android:id="@+id/payecoReadProtocolWebView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/payeco_close_webview_bt"
+                style="@style/payeco_pluginButtonSingle"
+                android:layout_marginTop="4.0dip"
+                android:text="@string/payeco_close"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/payecoReadProLoadingLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <ProgressBar
+                    android:id="@+id/payecoReadProLoadingView"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:indeterminateDrawable="@drawable/payeco_plugin_progressbar" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4.0dip"
+                    android:text="@string/payeco_loading"
+                    android:textColor="@color/payeco_tipsTextColor"
+                    android:textSize="@dimen/payeco_small_textsize" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/logo_window_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ks_logo_black"
+            android:gravity="right" >
+
+            <ImageView
+                android:id="@+id/logo_window_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/ks_tag"
+                android:visibility="gone">
+            </ImageView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/logo_window_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ks_logo_tips"
+            android:drawablePadding="@dimen/ks_entry_padding"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/ks_binding_tips"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/ks_entry_tips"
+            android:visibility="gone"/>
+    </LinearLayout>
+

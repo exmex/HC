@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>checkImg</key>
+	<string>gray_check_current</string>
+	<key>radioNormalImg</key>
+	<string>gray_radio</string>
+	<key>radioSelectedImg</key>
+	<string>gray_radio_current</string>
+	<key>spaceBetween</key>
+	<integer>8</integer>
+	<key>unCheckImg</key>
+	<string>gray_check</string>
+</dict>
+</plist>

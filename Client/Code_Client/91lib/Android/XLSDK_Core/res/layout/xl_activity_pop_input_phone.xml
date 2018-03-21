@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <TextView
+        android:id="@+id/xl_pop_input_phone_textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/xl_register_get_phone_number_fail"
+        android:textColor="#6f6f6f"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/xl_pop_input_phone_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/xl_pop_input_phone_textView"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:textColor="#7c7b7b"
+        android:textSize="18sp" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/xl_pop_input_phone_textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/xl_pop_input_phone_editText"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="@string/xl_register_cancel_send_message"
+        android:textColor="#6e6e6e"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/xl_pop_input_phone_next_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/xl_pop_input_phone_textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/xl_selector_next_blue"
+        android:ems="6"
+        android:gravity="center"
+        android:text="@string/xl_register_next"
+        android:textColor="#fffeff"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/xl_pop_input_phone_next_button" />
+
+</RelativeLayout>

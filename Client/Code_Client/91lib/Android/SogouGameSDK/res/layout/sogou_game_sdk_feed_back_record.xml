@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/sogou_game_sdk_main_background_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/sogou_game_sdk_head" />
+
+    <TextView
+        android:id="@+id/sogou_game_sdk_feed_back_record_count_label"
+        style="@style/sogou_game_sdk_list_font"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/sogou_game_sdk_feed_back_record_count_text" />
+
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:background="@color/sogou_game_sdk_main_background_color"
+        android:choiceMode="none"
+        android:divider="@color/sogou_game_sdk_main_background_color"
+        android:dividerHeight="12dp"
+        android:drawSelectorOnTop="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollingCache="true" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/sogou_game_sdk_feed_back_record_friendlyInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="22dp"
+        android:text="@string/sogou_game_sdk_feed_back_record_friendlyInfo_text" />
+
+</LinearLayout>

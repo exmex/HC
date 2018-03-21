@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/loadingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gamehall_detail_loading">"
+
+        <ImageView
+            android:id="@+id/loadingImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/gamehall_game_loading"/>
+
+        <ProgressBar
+            android:id="@+id/game_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="170dp"
+            android:layout_height="14dp"
+            android:layout_below="@id/loadingImg"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="12dip"
+            android:layout_marginTop="12dip"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/gamehall_progress_horizontal" />
+
+        <TextView
+            android:id="@+id/game_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/game_progress"
+            android:layout_centerInParent="true"
+            android:text="@string/gamehall_game_loading"
+            android:textSize="12dp"
+            android:textColor="@color/txt_white"/>"
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/networkErrorView"
+        layout="@layout/gamehall_net_page"
+        android:visibility="gone" />
+
+</FrameLayout>

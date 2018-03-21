@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/sogou_game_sdk_dialog_view" 
+	android:orientation="horizontal"
+	android:layout_width="300dp" 
+	android:layout_height="wrap_content"
+	android:gravity="center_vertical"
+	android:background="#F7F7F7">
+	<ImageView 
+		android:id="@+id/sogou_game_sdk_loading_img"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:padding="2dip"
+		android:src="@drawable/sogou_game_sdk_waiting_up"
+		/>
+	<TextView 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:id="@+id/sogou_sdk_loading_info"
+		android:padding="2dp"/>
+</LinearLayout>

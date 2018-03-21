@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/dialog_close_view"
+        android:layout_width="match_parent"
+        android:layout_height="20dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="right"
+        android:paddingRight="20dip" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dialog_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_close_view"
+        android:layout_marginTop="5dip"
+        android:lineSpacingExtra="2dip"
+        android:paddingLeft="20dip"
+        android:textColor="@color/txt_white"
+        android:textSize="16dp" />
+
+    <RelativeLayout
+        android:id="@+id/dialog_progress_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_text"
+        android:paddingBottom="10dip"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:paddingTop="10dip"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/dialog_progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:text="0%" />
+
+        <ProgressBar
+            android:id="@+id/dialog_progress_rate"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/dialog_progress_text"
+            android:max="100"
+            android:paddingRight="2dip"
+            android:progress="0"
+            android:progressDrawable="@drawable/gamehall_progress_horizontal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_progress_view"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip" >
+
+        <Button
+            android:id="@+id/dialog_yes_btn"
+            style="@style/install_button"
+            android:layout_marginBottom="33dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="33dip"
+            android:text="立即更新" />
+
+        <Button
+            android:id="@+id/dialog_no_btn"
+            style="@style/install_button"
+            android:layout_marginBottom="33dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="33dip"
+            android:layout_toRightOf="@id/dialog_yes_btn"
+            android:text="暂不更新"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

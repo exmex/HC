@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="aipay_transparent">#00000000</color>
+    <color name="aipay_blue">#33b5e5</color>
+    <color name="aipay_black_1">#303030</color>
+    <color name="aipay_black_2">#515151</color>
+    <color name="aipay_white">#ffffff</color>
+    <color name="aipay_white_light">#f8f8f8</color>
+    <color name="aipay_orange">#fe6700</color>
+    <color name="aipay_grey">#8a8a8a</color>
+    <color name="aipay_grey_light">#b5b5b5</color>
+    <color name="aipay_red">#ff0e0e</color>
+    
+    <color name="aipay_exctra_info_bg">#eff6ff</color>
+    
+    <!-- listview色值使用 -->
+    <color name="aipay_divider_line">#e5e5e5</color>
+    <color name="aipay_item_pressed">#f2f5f9</color>
+    
+    <!-- 弹窗底部按钮色值使用 -->
+    <color name="aipay_button_noraml_confirm_color">#cfcfcf</color>
+    <color name="aipay_button_pressed_confirm_color">#dcdcdc</color>
+    <color name="aipay_button_noraml_cancel_color">#c7c7c7</color>
+    <color name="aipay_button_pressed_cancel_color">#d1d1d1</color>
+    
+</resources>

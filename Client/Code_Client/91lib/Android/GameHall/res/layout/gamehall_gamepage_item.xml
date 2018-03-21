@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/gamehall_list_item_header_img"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/txt_white"
+        android:textSize="15dp"
+        android:paddingLeft="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+    </TextView>
+
+    <RelativeLayout
+        android:id="@+id/gamehall_list_item_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/gamehall_list_item_selector"
+        android:orientation="horizontal"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip" >
+
+        <ImageView
+            android:id="@+id/gamehall_logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:gravity="center"
+            android:src="@drawable/gamehall_logo_default_60" />
+
+        <ImageView
+            android:id="@+id/gamehall_logo_cover"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:scaleType="fitXY" />
+
+        <cn.sina.youxi.ui.DownloadButtonView
+            android:id="@+id/gamehall_download_btn_view"
+            android:layout_width="65dip"
+            android:layout_height="65dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/gamehall_download_btn_view"
+            android:layout_toRightOf="@id/gamehall_logo"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/gamehall_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:lines="1"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/gamehall_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:lines="1"
+                android:singleLine="true"
+                android:textColor="#6D6D6D"
+                android:textSize="12dp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/gamehall_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="#6D6D6D"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/gamehall_downloadcnt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#999999"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

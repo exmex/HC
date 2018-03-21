@@ -1,0 +1,20 @@
+<resources>
+    <dimen name="dimen_h_3dp">2dp</dimen>
+    <dimen name="dimen_h_13dp">8dp</dimen>    
+    <dimen name="dimen_h_20dp">12dp</dimen>
+    <dimen name="dimen_h_48dp">40dp</dimen>
+    <dimen name="dimen_h_31dp">27dp</dimen> 
+    <dimen name="dimen_h_53dp">35dp</dimen>
+    
+    <dimen name="dimen_w_10dp">10dp</dimen>
+    <dimen name="dimen_w_13dp">13dp</dimen>
+    <dimen name="dimen_input_margin">90dp</dimen>
+    <dimen name="dimen_w_26dp">26dp</dimen>
+    <dimen name="dimen_w_53dp">53dp</dimen>
+    <dimen name="dimen_w_140dp">140dp</dimen>
+    
+    <dimen name="dimen_16sp">11sp</dimen>
+    <dimen name="dimen_20sp">15sp</dimen>
+    <dimen name="dimen_24sp">17sp</dimen>
+    
+</resources>

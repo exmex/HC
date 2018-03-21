@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/account_item_layout"
+    android:layout_height="@dimen/ks_account_layout_height"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="4dp"
+    android:background="@drawable/ks_accountitem_normal_selector" >
+
+    <LinearLayout
+        android:id="@+id/accountlayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ks_account_layout_height" >
+
+        <LinearLayout
+            android:id="@+id/account_icon_layout"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/account_icon"
+                android:layout_width="@dimen/ks_account_icon_width"
+                android:layout_height="@dimen/ks_account_icon_height"
+                android:src="@drawable/ks_ic_account" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/account_passport_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:ellipsize="end" 
+                android:layout_marginRight="1dp"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:textColor="@color/ks_entry_txt"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/account_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end" 
+                android:layout_marginRight="1dp"
+                android:singleLine="true"
+                android:textColor="@color/ks_account_time_txt"
+                android:textSize="10.5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/del_imageview_layout"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:gravity="center|right"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/del_imageview"
+                android:layout_width="@dimen/ks_del_icon_width"
+                android:layout_height="@dimen/ks_del_icon_width"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ks_delicon_account_selector" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/add_layout"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal" >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ks_btn_addtxt"
+                android:background="@drawable/ks_bg_cm_btn_orange_selector"
+                android:minHeight="@dimen/ks_cm_one_key_reg_logo_height"
+                android:minWidth="@dimen/ks_cm_one_key_reg_logo_width"
+                android:shadowColor="@color/ks_cm_text_shadow_color"
+                android:text="@string/ks_additme_text"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/ks_text_size_20" />
+    </LinearLayout>
+</RelativeLayout>

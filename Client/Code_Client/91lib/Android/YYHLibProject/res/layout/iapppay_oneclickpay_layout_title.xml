@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/iapppay_title_heigth"
+        android:background="@color/iapppay_bg_title"
+        android:padding="0dip" >
+
+		<RelativeLayout
+	    android:id="@+id/logo"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/iapppay_title_img_heigth"
+        android:orientation="horizontal"
+        android:padding="0dip" >
+	    <ImageView
+	            android:layout_height="@dimen/iapppay_title_logo_heigth"
+	            android:layout_width="@dimen/iapppay_title_logo_width"
+	            android:layout_centerInParent="true"
+	            android:contentDescription="@string/iapppay_img"
+	            android:src="@drawable/iapppay_oneclickpay_ic_logo"
+	            android:scaleType="fitXY" />
+        </RelativeLayout>
+        
+        <View  
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/iapppay_title_line_heigth"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/logo"
+            android:background="@color/iapppay_bg_title_line" />
+</RelativeLayout>

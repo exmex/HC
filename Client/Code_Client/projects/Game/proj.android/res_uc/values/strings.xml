@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">王者交锋</string>
+    <string name="dummy_button">League of Champions</string>
+    <string name="dummy_content"></string>
+    <string name="app_exit_title">王者交锋</string>
+    <string name="app_exit_msg">您确定退出游戏吗?</string>
+    <string name="app_dlg_title">提示</string>
+    <string name="app_dlg_newwork_notok_msg">网络不可连接，请检查您的手机网络！</string>
+    <string name="app_dlg_externalstorage_notok_msg">外部存储不可用，请检查您的SD卡是否正确安装！</string>
+    <string name="app_dlg_externalstorage_nofreespace_msg">外部存储空间不足，请先释放SD卡存储空间！</string>
+    <string name="clearold">删除旧的本地目录,请稍后...</string>
+	<string name="unzipwait">解压缩资源,不需要流,请稍后...</string>
+    <string name="assets_unzip_msg">首次运行解压资源</string>
+    <string name="starting_game">正在启动游戏</string>
+    <string name="data_format_error">查询出现异常:json数据错误</string>
+    <string name="sdk_init">initing platform</string>    
+
+</resources>

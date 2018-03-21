@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:orientation="vertical">
+	        
+            <LinearLayout
+                android:id="@+id/dk_layout_recharge_card_out"
+		        android:layout_width="fill_parent"
+		        android:layout_height="36dp"
+		        android:orientation="horizontal"
+		        android:visibility="gone"
+		        android:background="@drawable/dk_bg_info_file" >
+		        
+	            <LinearLayout 
+	                android:layout_width="wrap_content"
+	                android:layout_height="fill_parent"
+	                android:layout_marginLeft="12dp"
+	                android:gravity="center_vertical">
+	                
+	                <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content" 
+		                android:text="@string/dk_current_account"
+		                android:textColor="#333333"
+		                android:textSize="@dimen/text_size_14_sp"/>
+	            </LinearLayout>
+		    </LinearLayout>
+	        
+	        <LinearLayout
+	            android:id="@+id/dk_layout_top_game_card"
+		        android:layout_width="fill_parent"
+		        android:layout_height="100dp"
+		        android:orientation="horizontal"
+		        android:background="@drawable/dk_bg_info_file" >
+
+	            <ScrollView 
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                style="@style/payment_scrollview_style">
+	                
+	                <!-- 
+	                <LinearLayout 
+	                    android:id="@+id/dk_layout_game_card_list"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:paddingLeft="8dp"
+	                    android:paddingRight="8dp"
+	                    android:orientation="vertical">
+
+	                </LinearLayout>  -->
+	                
+	                <LinearLayout 
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="fill_parent"
+	                    android:padding="8dp">
+	                    
+	                    <com.duoku.platform.view.DKLineFeedLayout
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_gravity="center_horizontal"
+		                    android:id="@+id/dk_layout_game_card_list">
+	                    
+	                	</com.duoku.platform.view.DKLineFeedLayout>
+	                </LinearLayout>
+	            </ScrollView> 
+		    </LinearLayout>
+		    
+	        <LinearLayout
+	            android:id="@+id/dk_layout_top_charge_card"
+		        android:layout_width="fill_parent"
+		        android:layout_height="48dp"
+		        android:orientation="horizontal"
+		        android:visibility="gone"
+		        android:padding="8dp"
+		        android:background="@drawable/dk_bg_info_file" >
+	            
+	            <com.duoku.platform.view.DKLineFeedLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/dk_layout_charge_card_list">
+	                
+	            </com.duoku.platform.view.DKLineFeedLayout>
+		    </LinearLayout>
+		    
+		    <ImageView
+		        android:id="@+id/dk_image_view_divider"
+		        android:layout_width="fill_parent"
+		        android:layout_height="2px"
+		        android:layout_alignParentLeft="true"
+		        android:background="@drawable/dk_divider"/> 
+		    
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="12dp"
+		        android:background="@drawable/dk_payment_bottom_dialog_bg"
+		        android:orientation="horizontal">
+		        
+		    </LinearLayout>
+		    
+		    <!-- The payment region -->
+		    <ScrollView 
+		        android:id="@+id/dk_scroll_view_card"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:fillViewport="true"
+		        android:scrollbarSize="4dp"
+		        android:fadeScrollbars="false"
+		        android:scrollbarThumbVertical="@drawable/dk_scrollbar_gray">
+		        
+		        <LinearLayout 
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:orientation="vertical">
+		            
+		            <LinearLayout
+			            android:id="@+id/dk_layout_payment_mode"
+			            android:layout_width="fill_parent"
+			            android:layout_height="0dp"
+			            android:layout_weight="10"
+			            android:orientation="vertical"
+			            android:paddingRight="8dp"
+			            android:paddingLeft="8dp"
+			            android:layout_marginTop="8dp">
+		            
+			            <LinearLayout 
+			                android:layout_width="fill_parent"
+			                android:layout_height="wrap_content"
+			                android:orientation="horizontal">
+			                
+			                <TextView 
+			                    android:id="@+id/dk_tv_tip_select_title"
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:textColor="#333333"
+				                android:textSize="@dimen/text_size_14_sp"
+				                android:text="@string/dk_current_consume"/>
+			                
+			                <TextView 
+			                    android:id="@+id/dk_tv_tip_select_content"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:textColor="#ff3300"
+			                    android:textSize="@dimen/text_size_14_sp" />
+			            </LinearLayout>
+			            
+			            <LinearLayout
+				            android:layout_width="fill_parent"
+				            android:layout_height="wrap_content"
+				            android:orientation="horizontal">
+			                
+			                <TextView 
+			                    android:id="@+id/dk_tv_tip_kubi_pay_info"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:textColor="#666666"
+			                    android:layout_marginTop="4dp"
+			                    android:textSize="@dimen/text_size_12_sp"
+			                    android:text="@string/dk_tip_kubi_pay_info"/>
+				        </LinearLayout>
+			            
+			            <LinearLayout 
+			                android:layout_width="fill_parent"
+			                android:layout_height="wrap_content"
+			                android:orientation="horizontal"
+			                android:layout_marginTop="8dp"
+			                android:visibility="gone">
+			                
+			                <TextView 
+			                    android:id="@+id/dk_tv_tip_other_select_title"
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:textColor="#333333"
+				                android:textSize="@dimen/text_size_14_sp"
+				                android:text="@string/dk_pay_mode_select"/>
+			                
+			            </LinearLayout>
+			            
+			            <LinearLayout 
+			                android:id="@+id/dk_layout_amout_select_panel"
+			                android:layout_width="fill_parent"
+			                android:layout_height="wrap_content"
+			                android:orientation="horizontal"
+			                android:layout_marginTop="8dp">
+			                
+			                <com.duoku.platform.view.DKFlowLayout
+			                    android:id="@+id/dk_layout_line_feed_panel"
+			                    android:layout_width="fill_parent"
+			                    android:layout_height="wrap_content">
+			                    
+			                </com.duoku.platform.view.DKFlowLayout>
+			            </LinearLayout>
+			            
+			            <LinearLayout
+				            android:layout_width="fill_parent"
+				            android:layout_height="wrap_content"
+				            android:orientation="horizontal"
+				            android:layout_marginTop="12dp" >
+			
+				            <EditText 
+				                android:id="@+id/dk_et_card_number"
+			                    android:layout_width="fill_parent"
+			                    android:layout_height="36dp"
+			                    android:hint="@string/dk_tip_card_number"
+			                    android:gravity="center_vertical"
+			                    android:inputType="text"
+			                    android:textColor="#333333"
+			                    android:textSize="@dimen/text_size_14_sp"
+			                    android:background="@drawable/dk_payment_edittext_selector">
+			                    
+			                 </EditText>
+				        </LinearLayout>
+			            
+			            <LinearLayout
+				            android:layout_width="fill_parent"
+				            android:layout_height="wrap_content"
+				            android:orientation="horizontal"
+				            android:layout_marginTop="8dp" >
+				            
+			                <EditText 
+			                    android:id="@+id/dk_et_card_password"
+			                    android:layout_width="fill_parent"
+			                    android:layout_height="36dp"
+			                    android:hint="@string/dk_tip_card_pass"
+			                    android:gravity="center_vertical"
+			                    android:singleLine="true" 
+			                    android:textColor="#333333"
+			                    android:textSize="@dimen/text_size_14_sp"
+			                    android:background="@drawable/dk_payment_edittext_selector"/>
+				        </LinearLayout>
+				        
+			            <LinearLayout
+			                android:layout_width="fill_parent"
+				            android:layout_height="wrap_content"
+				            android:orientation="horizontal"
+				            android:layout_marginTop="12dp" >
+			                
+			                <Button
+			                    android:id="@+id/dk_btn_game_card_pay"
+			                    android:layout_width="0dp"
+			                    android:layout_height="36dp"
+			                    android:gravity="center"
+			                    android:textColor="#ffffff"
+			                    android:layout_weight="1"
+			                    android:text="@string/dk_btn_string_pay"
+			                    android:textSize="@dimen/text_size_16_sp"
+			                    android:background="@drawable/dk_payment_btn_pay_selector" />
+			             </LinearLayout>
+			             
+			            <LinearLayout
+				            android:layout_width="fill_parent"
+				            android:layout_height="wrap_content"
+				            android:orientation="horizontal"
+				            android:layout_marginTop="4dp"
+				            android:layout_marginBottom="12dp">
+			                
+			                <TextView 
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:textColor="#ff3300"
+			                    android:visibility="gone"
+			                    android:textSize="@dimen/text_size_10_sp"
+			                    android:text="@string/dk_tip_card_info_title"/>
+			                
+			                <TextView 
+			                    android:id="@+id/dk_tv_tip_card_info"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:textColor="#666666"
+			                    android:textSize="@dimen/text_size_12_sp"
+			                    android:text="@string/dk_tip_card_info_content"/>
+				        </LinearLayout>
+			        </LinearLayout>
+			        
+		            <RelativeLayout
+		               android:id="@+id/dk_relative_layout_bottom_logo"
+		               android:layout_weight="2"
+		               android:layout_height="0dp"
+				       android:layout_width="fill_parent"
+				       android:gravity="center_horizontal"
+				       android:layout_gravity="center_horizontal">
+
+				        <include
+				            android:layout_alignParentBottom="true"
+				            android:layout_centerHorizontal="true"
+				            layout="@layout/dk_payment_bottom" />
+				        
+				   	</RelativeLayout>
+		        </LinearLayout>
+		    </ScrollView>
+		    <!-- The payment region end -->
+	    </LinearLayout>
+</RelativeLayout>

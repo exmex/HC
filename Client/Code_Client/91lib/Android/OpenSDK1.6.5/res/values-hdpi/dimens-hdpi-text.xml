@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="nmgc_loading_text_size">20sp</dimen>
+    <dimen name="nmgc_login_common_text_size">16sp</dimen>
+    <dimen name="nmgc_login_button_text_size">20sp</dimen>
+	
+    <!-- main tab start -->
+    <dimen name="a_text_size">20.5sp</dimen>
+    <dimen name="b_text_size">13sp</dimen>
+    <dimen name="c_text_size">11.5sp</dimen>
+    <dimen name="d_text_size">15.5sp</dimen>
+    <dimen name="d_text_line_space">10.83sp</dimen>
+    <dimen name="e_text_size">13.83sp</dimen>
+    <dimen name="f_text_size">13.83sp</dimen>
+    <dimen name="g_text_size">13.83sp</dimen>
+    <dimen name="h_text_size">15.5sp</dimen>
+    <dimen name="i_text_size">15.5sp</dimen>
+    <dimen name="j_text_size">17.5sp</dimen>
+    <dimen name="k_text_size">13.83sp</dimen>
+    <dimen name="l_text_size">10.5sp</dimen>
+    <dimen name="m_text_size">18.5sp</dimen>
+    <dimen name="n_text_size">13.83sp</dimen>
+    <dimen name="o_text_size">17.17sp</dimen>
+    <dimen name="p_text_size">10.5sp</dimen>
+    <dimen name="q_text_size">13.83sp</dimen>
+    <dimen name="r_text_size">15.5sp</dimen>
+    <dimen name="s_text_size">20.5sp</dimen>
+    <dimen name="t_text_size">16.17sp</dimen>
+    <dimen name="u_text_size">17.17sp</dimen>
+    <dimen name="v_text_size">14.83sp</dimen>
+    <dimen name="w_text_size">23.83sp</dimen>
+    <dimen name="x_text_size">15.5sp</dimen>
+    <dimen name="y_text_size">12.17sp</dimen>
+    <dimen name="z_text_size">12.17sp</dimen>
+</resources>

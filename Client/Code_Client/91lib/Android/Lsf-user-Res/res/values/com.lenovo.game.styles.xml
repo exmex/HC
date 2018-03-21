@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style name="com_lenovo_game_theme_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+   <style name="com_lenovo_game_theme_notice_activity" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+</resources>

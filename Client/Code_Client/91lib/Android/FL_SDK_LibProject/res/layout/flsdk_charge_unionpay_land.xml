@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 银联充值横屏 -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <include
+        android:layout_width="wrap_content"
+        layout="@layout/flsdk_base_bg_layout_land" />
+
+    <LinearLayout
+        android:layout_width="340.0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="44.0dip" >
+
+        <include layout="@layout/flsdk_charge_info_lay" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/flsdk_style_charge_body_lay" >
+
+        <com.fl.gamehelper.ui.widget.BoldButton
+            android:id="@+id/flsdk_charge_unionpay_btn"
+            style="@style/flsdk_style_btn_yellow"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8.0dip"
+            android:gravity="center"
+            android:onClick="unionPayClick"
+            android:text="@string/flsdk_pay_btn_text" />
+    </LinearLayout>
+
+    <include layout="@layout/flsdk_base_loading_layout" />
+
+</merge>

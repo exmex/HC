@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2200404E17F31037001B19A8 /* SvUDIDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2200404D17F31037001B19A8 /* SvUDIDTools.m */; };
+		2200405017F3107C001B19A8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2200404F17F3107C001B19A8 /* Security.framework */; };
+		2200405217F310F1001B19A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2200405117F310F1001B19A8 /* UIKit.framework */; };
+		224A1BA3183DC1EA00B0C24B /* BulletinBoardPage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 556A1C16178C15C700780030 /* BulletinBoardPage.mm */; };
+		224A1BA4183DC1EA00B0C24B /* BulletinBoardView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 556A1C18178C15C700780030 /* BulletinBoardView.mm */; };
+		224A1BA5183DC1EA00B0C24B /* libOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = 556A1C19178C15C700780030 /* libOS.mm */; };
+		224A1BA6183DC1EA00B0C24B /* libOSObj.mm in Sources */ = {isa = PBXBuildFile; fileRef = 556A1C1B178C15C700780030 /* libOSObj.mm */; };
+		224A1BA8183DC1EA00B0C24B /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 556A1C1F178C15C700780030 /* NSString+MD5Addition.m */; };
+		224A1BA9183DC1EA00B0C24B /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 556A1C21178C15C700780030 /* UIDevice+IdentifierAddition.m */; };
+		224A1BAA183DC1EA00B0C24B /* SvUDIDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2200404D17F31037001B19A8 /* SvUDIDTools.m */; };
+		224A1BAC183DC1EA00B0C24B /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF412E9C1835F239004812DB /* AdSupport.framework */; };
+		224A1BAD183DC1EA00B0C24B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2200405117F310F1001B19A8 /* UIKit.framework */; };
+		224A1BAE183DC1EA00B0C24B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2200404F17F3107C001B19A8 /* Security.framework */; };
+		224A1BAF183DC1EA00B0C24B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556A1C06178C158A00780030 /* Foundation.framework */; };
+		556A1C07178C158A00780030 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556A1C06178C158A00780030 /* Foundation.framework */; };
+		556A1C22178C15C700780030 /* BulletinBoardPage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 556A1C16178C15C700780030 /* BulletinBoardPage.mm */; };
+		556A1C23178C15C700780030 /* BulletinBoardView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 556A1C18178C15C700780030 /* BulletinBoardView.mm */; };
+		556A1C24178C15C700780030 /* libOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = 556A1C19178C15C700780030 /* libOS.mm */; };
+		556A1C25178C15C700780030 /* libOSObj.mm in Sources */ = {isa = PBXBuildFile; fileRef = 556A1C1B178C15C700780030 /* libOSObj.mm */; };
+		556A1C27178C15C700780030 /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 556A1C1F178C15C700780030 /* NSString+MD5Addition.m */; };
+		556A1C28178C15C700780030 /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 556A1C21178C15C700780030 /* UIDevice+IdentifierAddition.m */; };
+		AF412E9D1835F239004812DB /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF412E9C1835F239004812DB /* AdSupport.framework */; };
+		AF58FF60185B057700FA66A0 /* BulletinBoardPage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 556A1C16178C15C700780030 /* BulletinBoardPage.mm */; };
+		AF58FF61185B057700FA66A0 /* BulletinBoardView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 556A1C18178C15C700780030 /* BulletinBoardView.mm */; };
+		AF58FF62185B057700FA66A0 /* libOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = 556A1C19178C15C700780030 /* libOS.mm */; };
+		AF58FF63185B057700FA66A0 /* libOSObj.mm in Sources */ = {isa = PBXBuildFile; fileRef = 556A1C1B178C15C700780030 /* libOSObj.mm */; };
+		AF58FF64185B057700FA66A0 /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 556A1C1F178C15C700780030 /* NSString+MD5Addition.m */; };
+		AF58FF65185B057700FA66A0 /* YAKeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F3E90118405BE70005BA3F /* YAKeychainWrapper.m */; };
+		AF58FF66185B057700FA66A0 /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 556A1C21178C15C700780030 /* UIDevice+IdentifierAddition.m */; };
+		AF58FF67185B057700FA66A0 /* SvUDIDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2200404D17F31037001B19A8 /* SvUDIDTools.m */; };
+		AF58FF69185B057700FA66A0 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF412E9C1835F239004812DB /* AdSupport.framework */; };
+		AF58FF6A185B057700FA66A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2200405117F310F1001B19A8 /* UIKit.framework */; };
+		AF58FF6B185B057700FA66A0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2200404F17F3107C001B19A8 /* Security.framework */; };
+		AF58FF6C185B057700FA66A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556A1C06178C158A00780030 /* Foundation.framework */; };
+		AF58FF74185B05E600FA66A0 /* BulletinBoardPage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 556A1C16178C15C700780030 /* BulletinBoardPage.mm */; };
+		AF58FF75185B05E600FA66A0 /* BulletinBoardView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 556A1C18178C15C700780030 /* BulletinBoardView.mm */; };
+		AF58FF76185B05E600FA66A0 /* libOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = 556A1C19178C15C700780030 /* libOS.mm */; };
+		AF58FF77185B05E600FA66A0 /* libOSObj.mm in Sources */ = {isa = PBXBuildFile; fileRef = 556A1C1B178C15C700780030 /* libOSObj.mm */; };
+		AF58FF78185B05E600FA66A0 /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 556A1C1F178C15C700780030 /* NSString+MD5Addition.m */; };
+		AF58FF79185B05E600FA66A0 /* YAKeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F3E90118405BE70005BA3F /* YAKeychainWrapper.m */; };
+		AF58FF7A185B05E600FA66A0 /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 556A1C21178C15C700780030 /* UIDevice+IdentifierAddition.m */; };
+		AF58FF7B185B05E600FA66A0 /* SvUDIDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2200404D17F31037001B19A8 /* SvUDIDTools.m */; };
+		AF58FF7D185B05E600FA66A0 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF412E9C1835F239004812DB /* AdSupport.framework */; };
+		AF58FF7E185B05E600FA66A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2200405117F310F1001B19A8 /* UIKit.framework */; };
+		AF58FF7F185B05E600FA66A0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2200404F17F3107C001B19A8 /* Security.framework */; };
+		AF58FF80185B05E600FA66A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556A1C06178C158A00780030 /* Foundation.framework */; };
+		AF7B9D72185898D50029CAC8 /* BulletinBoardPage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 556A1C16178C15C700780030 /* BulletinBoardPage.mm */; };
+		AF7B9D73185898D50029CAC8 /* BulletinBoardView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 556A1C18178C15C700780030 /* BulletinBoardView.mm */; };
+		AF7B9D74185898D50029CAC8 /* libOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = 556A1C19178C15C700780030 /* libOS.mm */; };
+		AF7B9D75185898D50029CAC8 /* libOSObj.mm in Sources */ = {isa = PBXBuildFile; fileRef = 556A1C1B178C15C700780030 /* libOSObj.mm */; };
+		AF7B9D76185898D50029CAC8 /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 556A1C1F178C15C700780030 /* NSString+MD5Addition.m */; };
+		AF7B9D77185898D50029CAC8 /* YAKeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F3E90118405BE70005BA3F /* YAKeychainWrapper.m */; };
+		AF7B9D78185898D50029CAC8 /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 556A1C21178C15C700780030 /* UIDevice+IdentifierAddition.m */; };
+		AF7B9D79185898D50029CAC8 /* SvUDIDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2200404D17F31037001B19A8 /* SvUDIDTools.m */; };
+		AF7B9D7B185898D50029CAC8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF412E9C1835F239004812DB /* AdSupport.framework */; };
+		AF7B9D7C185898D50029CAC8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2200405117F310F1001B19A8 /* UIKit.framework */; };
+		AF7B9D7D185898D50029CAC8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2200404F17F3107C001B19A8 /* Security.framework */; };
+		AF7B9D7E185898D50029CAC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556A1C06178C158A00780030 /* Foundation.framework */; };
+		F7F3E90218405BE70005BA3F /* YAKeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F3E90118405BE70005BA3F /* YAKeychainWrapper.m */; };
+		F7F3E90318405BE70005BA3F /* YAKeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F3E90118405BE70005BA3F /* YAKeychainWrapper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		224A1BB0183DC1EA00B0C24B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		556A1C01178C158A00780030 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF58FF6D185B057700FA66A0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF58FF81185B05E600FA66A0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF7B9D7F185898D50029CAC8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2200404D17F31037001B19A8 /* SvUDIDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SvUDIDTools.m; path = ../../SvUDIDTools.m; sourceTree = "<group>"; };
+		2200404F17F3107C001B19A8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2200405117F310F1001B19A8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		224A1BB4183DC1EA00B0C24B /* liblibOSappstore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibOSappstore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		22E9D68117FC17AE00A3099E /* UIDevice+IdentifierAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIDevice+IdentifierAddition.h"; path = "../../../include/UIDevice+IdentifierAddition.h"; sourceTree = "<group>"; };
+		556A1C03178C158A00780030 /* liblibOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		556A1C06178C158A00780030 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		556A1C0A178C158A00780030 /* libOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libOS-Prefix.pch"; sourceTree = "<group>"; };
+		556A1C14178C15B400780030 /* BulletinBoardPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BulletinBoardPage.h; path = ../../../include/BulletinBoardPage.h; sourceTree = "<group>"; };
+		556A1C15178C15B400780030 /* libOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libOS.h; path = ../../../include/libOS.h; sourceTree = "<group>"; };
+		556A1C16178C15C700780030 /* BulletinBoardPage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = BulletinBoardPage.mm; path = ../../BulletinBoardPage.mm; sourceTree = "<group>"; };
+		556A1C17178C15C700780030 /* BulletinBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BulletinBoardView.h; path = ../../BulletinBoardView.h; sourceTree = "<group>"; };
+		556A1C18178C15C700780030 /* BulletinBoardView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = BulletinBoardView.mm; path = ../../BulletinBoardView.mm; sourceTree = "<group>"; };
+		556A1C19178C15C700780030 /* libOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = libOS.mm; path = ../../libOS.mm; sourceTree = "<group>"; };
+		556A1C1A178C15C700780030 /* libOSObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libOSObj.h; path = ../../libOSObj.h; sourceTree = "<group>"; };
+		556A1C1B178C15C700780030 /* libOSObj.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = libOSObj.mm; path = ../../libOSObj.mm; sourceTree = "<group>"; };
+		556A1C1C178C15C700780030 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = ../../MBProgressHUD.h; sourceTree = "<group>"; };
+		556A1C1E178C15C700780030 /* NSString+MD5Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+MD5Addition.h"; path = "../../NSString+MD5Addition.h"; sourceTree = "<group>"; };
+		556A1C1F178C15C700780030 /* NSString+MD5Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+MD5Addition.m"; path = "../../NSString+MD5Addition.m"; sourceTree = "<group>"; };
+		556A1C21178C15C700780030 /* UIDevice+IdentifierAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+IdentifierAddition.m"; path = "../../UIDevice+IdentifierAddition.m"; sourceTree = "<group>"; };
+		AF412E9C1835F239004812DB /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		AF412E9E1835FE9B004812DB /* SvUDIDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SvUDIDTools.h; path = ../../../include/SvUDIDTools.h; sourceTree = "<group>"; };
+		AF58FF71185B057700FA66A0 /* liblibOSappstoreTWPanggui.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibOSappstoreTWPanggui.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF58FF85185B05E600FA66A0 /* liblibOSappstoreTW68240412.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibOSappstoreTW68240412.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF7B9D83185898D50029CAC8 /* liblibOSappstoreTW.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibOSappstoreTW.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF9B0C3417E1CB4C00FE3143 /* WXApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WXApi.h; path = ../../../include/WXApi.h; sourceTree = "<group>"; };
+		F7F3E90018405BE70005BA3F /* YAKeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YAKeychainWrapper.h; path = ../../YAKeychainWrapper.h; sourceTree = "<group>"; };
+		F7F3E90118405BE70005BA3F /* YAKeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YAKeychainWrapper.m; path = ../../YAKeychainWrapper.m; sourceTree = "<group>"; };
+		FDAB391B18BB37E70086C20F /* MovieMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MovieMgr.h; path = ../../MovieMgr.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		224A1BAB183DC1EA00B0C24B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				224A1BAC183DC1EA00B0C24B /* AdSupport.framework in Frameworks */,
+				224A1BAD183DC1EA00B0C24B /* UIKit.framework in Frameworks */,
+				224A1BAE183DC1EA00B0C24B /* Security.framework in Frameworks */,
+				224A1BAF183DC1EA00B0C24B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		556A1C00178C158A00780030 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF412E9D1835F239004812DB /* AdSupport.framework in Frameworks */,
+				2200405217F310F1001B19A8 /* UIKit.framework in Frameworks */,
+				2200405017F3107C001B19A8 /* Security.framework in Frameworks */,
+				556A1C07178C158A00780030 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF58FF68185B057700FA66A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF58FF69185B057700FA66A0 /* AdSupport.framework in Frameworks */,
+				AF58FF6A185B057700FA66A0 /* UIKit.framework in Frameworks */,
+				AF58FF6B185B057700FA66A0 /* Security.framework in Frameworks */,
+				AF58FF6C185B057700FA66A0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF58FF7C185B05E600FA66A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF58FF7D185B05E600FA66A0 /* AdSupport.framework in Frameworks */,
+				AF58FF7E185B05E600FA66A0 /* UIKit.framework in Frameworks */,
+				AF58FF7F185B05E600FA66A0 /* Security.framework in Frameworks */,
+				AF58FF80185B05E600FA66A0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF7B9D7A185898D50029CAC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF7B9D7B185898D50029CAC8 /* AdSupport.framework in Frameworks */,
+				AF7B9D7C185898D50029CAC8 /* UIKit.framework in Frameworks */,
+				AF7B9D7D185898D50029CAC8 /* Security.framework in Frameworks */,
+				AF7B9D7E185898D50029CAC8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		556A1BF8178C158900780030 = {
+			isa = PBXGroup;
+			children = (
+				556A1C08178C158A00780030 /* libOS */,
+				556A1C05178C158A00780030 /* Frameworks */,
+				556A1C04178C158A00780030 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		556A1C04178C158A00780030 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				556A1C03178C158A00780030 /* liblibOS.a */,
+				224A1BB4183DC1EA00B0C24B /* liblibOSappstore.a */,
+				AF7B9D83185898D50029CAC8 /* liblibOSappstoreTW.a */,
+				AF58FF71185B057700FA66A0 /* liblibOSappstoreTWPanggui.a */,
+				AF58FF85185B05E600FA66A0 /* liblibOSappstoreTW68240412.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		556A1C05178C158A00780030 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF412E9C1835F239004812DB /* AdSupport.framework */,
+				2200405117F310F1001B19A8 /* UIKit.framework */,
+				2200404F17F3107C001B19A8 /* Security.framework */,
+				556A1C06178C158A00780030 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		556A1C08178C158A00780030 /* libOS */ = {
+			isa = PBXGroup;
+			children = (
+				FDAB391B18BB37E70086C20F /* MovieMgr.h */,
+				AF412E9E1835FE9B004812DB /* SvUDIDTools.h */,
+				22E9D68117FC17AE00A3099E /* UIDevice+IdentifierAddition.h */,
+				556A1C14178C15B400780030 /* BulletinBoardPage.h */,
+				556A1C16178C15C700780030 /* BulletinBoardPage.mm */,
+				556A1C17178C15C700780030 /* BulletinBoardView.h */,
+				556A1C18178C15C700780030 /* BulletinBoardView.mm */,
+				F7F3E90018405BE70005BA3F /* YAKeychainWrapper.h */,
+				F7F3E90118405BE70005BA3F /* YAKeychainWrapper.m */,
+				556A1C15178C15B400780030 /* libOS.h */,
+				556A1C19178C15C700780030 /* libOS.mm */,
+				556A1C1A178C15C700780030 /* libOSObj.h */,
+				556A1C1B178C15C700780030 /* libOSObj.mm */,
+				556A1C1C178C15C700780030 /* MBProgressHUD.h */,
+				556A1C1E178C15C700780030 /* NSString+MD5Addition.h */,
+				556A1C1F178C15C700780030 /* NSString+MD5Addition.m */,
+				556A1C09178C158A00780030 /* Supporting Files */,
+				2200404D17F31037001B19A8 /* SvUDIDTools.m */,
+				556A1C21178C15C700780030 /* UIDevice+IdentifierAddition.m */,
+				CF9B0C3417E1CB4C00FE3143 /* WXApi.h */,
+			);
+			path = libOS;
+			sourceTree = "<group>";
+		};
+		556A1C09178C158A00780030 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				556A1C0A178C158A00780030 /* libOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		224A1BA1183DC1EA00B0C24B /* libOSappstore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 224A1BB1183DC1EA00B0C24B /* Build configuration list for PBXNativeTarget "libOSappstore" */;
+			buildPhases = (
+				224A1BA2183DC1EA00B0C24B /* Sources */,
+				224A1BAB183DC1EA00B0C24B /* Frameworks */,
+				224A1BB0183DC1EA00B0C24B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libOSappstore;
+			productName = libOS;
+			productReference = 224A1BB4183DC1EA00B0C24B /* liblibOSappstore.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		556A1C02178C158A00780030 /* libOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 556A1C11178C158A00780030 /* Build configuration list for PBXNativeTarget "libOS" */;
+			buildPhases = (
+				556A1BFF178C158A00780030 /* Sources */,
+				556A1C00178C158A00780030 /* Frameworks */,
+				556A1C01178C158A00780030 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libOS;
+			productName = libOS;
+			productReference = 556A1C03178C158A00780030 /* liblibOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AF58FF5E185B057700FA66A0 /* libOSappstoreTWPangGui */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF58FF6E185B057700FA66A0 /* Build configuration list for PBXNativeTarget "libOSappstoreTWPangGui" */;
+			buildPhases = (
+				AF58FF5F185B057700FA66A0 /* Sources */,
+				AF58FF68185B057700FA66A0 /* Frameworks */,
+				AF58FF6D185B057700FA66A0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libOSappstoreTWPangGui;
+			productName = libOS;
+			productReference = AF58FF71185B057700FA66A0 /* liblibOSappstoreTWPanggui.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AF58FF72185B05E600FA66A0 /* libOSappstoreTW68240412 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF58FF82185B05E600FA66A0 /* Build configuration list for PBXNativeTarget "libOSappstoreTW68240412" */;
+			buildPhases = (
+				AF58FF73185B05E600FA66A0 /* Sources */,
+				AF58FF7C185B05E600FA66A0 /* Frameworks */,
+				AF58FF81185B05E600FA66A0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libOSappstoreTW68240412;
+			productName = libOS;
+			productReference = AF58FF85185B05E600FA66A0 /* liblibOSappstoreTW68240412.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AF7B9D70185898D50029CAC8 /* libOSappstoreTW */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF7B9D80185898D50029CAC8 /* Build configuration list for PBXNativeTarget "libOSappstoreTW" */;
+			buildPhases = (
+				AF7B9D71185898D50029CAC8 /* Sources */,
+				AF7B9D7A185898D50029CAC8 /* Frameworks */,
+				AF7B9D7F185898D50029CAC8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libOSappstoreTW;
+			productName = libOS;
+			productReference = AF7B9D83185898D50029CAC8 /* liblibOSappstoreTW.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		556A1BFA178C158A00780030 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = youai;
+			};
+			buildConfigurationList = 556A1BFD178C158A00780030 /* Build configuration list for PBXProject "libOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 556A1BF8178C158900780030;
+			productRefGroup = 556A1C04178C158A00780030 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				556A1C02178C158A00780030 /* libOS */,
+				224A1BA1183DC1EA00B0C24B /* libOSappstore */,
+				AF7B9D70185898D50029CAC8 /* libOSappstoreTW */,
+				AF58FF5E185B057700FA66A0 /* libOSappstoreTWPangGui */,
+				AF58FF72185B05E600FA66A0 /* libOSappstoreTW68240412 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		224A1BA2183DC1EA00B0C24B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				224A1BA3183DC1EA00B0C24B /* BulletinBoardPage.mm in Sources */,
+				224A1BA4183DC1EA00B0C24B /* BulletinBoardView.mm in Sources */,
+				224A1BA5183DC1EA00B0C24B /* libOS.mm in Sources */,
+				224A1BA6183DC1EA00B0C24B /* libOSObj.mm in Sources */,
+				224A1BA8183DC1EA00B0C24B /* NSString+MD5Addition.m in Sources */,
+				F7F3E90318405BE70005BA3F /* YAKeychainWrapper.m in Sources */,
+				224A1BA9183DC1EA00B0C24B /* UIDevice+IdentifierAddition.m in Sources */,
+				224A1BAA183DC1EA00B0C24B /* SvUDIDTools.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		556A1BFF178C158A00780030 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556A1C22178C15C700780030 /* BulletinBoardPage.mm in Sources */,
+				556A1C23178C15C700780030 /* BulletinBoardView.mm in Sources */,
+				556A1C24178C15C700780030 /* libOS.mm in Sources */,
+				556A1C25178C15C700780030 /* libOSObj.mm in Sources */,
+				556A1C27178C15C700780030 /* NSString+MD5Addition.m in Sources */,
+				F7F3E90218405BE70005BA3F /* YAKeychainWrapper.m in Sources */,
+				556A1C28178C15C700780030 /* UIDevice+IdentifierAddition.m in Sources */,
+				2200404E17F31037001B19A8 /* SvUDIDTools.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF58FF5F185B057700FA66A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF58FF60185B057700FA66A0 /* BulletinBoardPage.mm in Sources */,
+				AF58FF61185B057700FA66A0 /* BulletinBoardView.mm in Sources */,
+				AF58FF62185B057700FA66A0 /* libOS.mm in Sources */,
+				AF58FF63185B057700FA66A0 /* libOSObj.mm in Sources */,
+				AF58FF64185B057700FA66A0 /* NSString+MD5Addition.m in Sources */,
+				AF58FF65185B057700FA66A0 /* YAKeychainWrapper.m in Sources */,
+				AF58FF66185B057700FA66A0 /* UIDevice+IdentifierAddition.m in Sources */,
+				AF58FF67185B057700FA66A0 /* SvUDIDTools.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF58FF73185B05E600FA66A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF58FF74185B05E600FA66A0 /* BulletinBoardPage.mm in Sources */,
+				AF58FF75185B05E600FA66A0 /* BulletinBoardView.mm in Sources */,
+				AF58FF76185B05E600FA66A0 /* libOS.mm in Sources */,
+				AF58FF77185B05E600FA66A0 /* libOSObj.mm in Sources */,
+				AF58FF78185B05E600FA66A0 /* NSString+MD5Addition.m in Sources */,
+				AF58FF79185B05E600FA66A0 /* YAKeychainWrapper.m in Sources */,
+				AF58FF7A185B05E600FA66A0 /* UIDevice+IdentifierAddition.m in Sources */,
+				AF58FF7B185B05E600FA66A0 /* SvUDIDTools.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF7B9D71185898D50029CAC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF7B9D72185898D50029CAC8 /* BulletinBoardPage.mm in Sources */,
+				AF7B9D73185898D50029CAC8 /* BulletinBoardView.mm in Sources */,
+				AF7B9D74185898D50029CAC8 /* libOS.mm in Sources */,
+				AF7B9D75185898D50029CAC8 /* libOSObj.mm in Sources */,
+				AF7B9D76185898D50029CAC8 /* NSString+MD5Addition.m in Sources */,
+				AF7B9D77185898D50029CAC8 /* YAKeychainWrapper.m in Sources */,
+				AF7B9D78185898D50029CAC8 /* UIDevice+IdentifierAddition.m in Sources */,
+				AF7B9D79185898D50029CAC8 /* SvUDIDTools.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		224A1BB2183DC1EA00B0C24B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DSTROOT = /tmp/libOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libOS/libOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					LIBOS_APPSTORE,
+				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../include\"";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = libOSappstore;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Debug;
+		};
+		224A1BB3183DC1EA00B0C24B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DSTROOT = /tmp/libOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libOS/libOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = LIBOS_APPSTORE;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../include\"";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = libOSappstore;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Release;
+		};
+		556A1C0F178C158A00780030 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		556A1C10178C158A00780030 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		556A1C12178C158A00780030 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DSTROOT = /tmp/libOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libOS/libOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					LIBOS,
+				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../include\"";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Debug;
+		};
+		556A1C13178C158A00780030 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DSTROOT = /tmp/libOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libOS/libOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = LIBOS;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../include\"";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Release;
+		};
+		AF58FF6F185B057700FA66A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DSTROOT = /tmp/libOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libOS/libOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					LIBOS_APPSTORE_TW_Panggui,
+				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../include\"";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = libOSappstoreTWPanggui;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Debug;
+		};
+		AF58FF70185B057700FA66A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DSTROOT = /tmp/libOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libOS/libOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = LIBOS_APPSTORE_TW_Panggui;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../include\"";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = libOSappstoreTWPanggui;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Release;
+		};
+		AF58FF83185B05E600FA66A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DSTROOT = /tmp/libOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libOS/libOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					LIBOS_APPSTORE_TW_68240412,
+				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../include\"";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = libOSappstoreTW68240412;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Debug;
+		};
+		AF58FF84185B05E600FA66A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DSTROOT = /tmp/libOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libOS/libOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = LIBOS_APPSTORE_TW_68240412;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../include\"";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = libOSappstoreTW68240412;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Release;
+		};
+		AF7B9D81185898D50029CAC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DSTROOT = /tmp/libOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libOS/libOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					LIBOS_APPSTORE_TW,
+				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../include\"";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = libOSappstoreTW;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Debug;
+		};
+		AF7B9D82185898D50029CAC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DSTROOT = /tmp/libOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libOS/libOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = LIBOS_APPSTORE_TW;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../include\"";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = libOSappstoreTW;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		224A1BB1183DC1EA00B0C24B /* Build configuration list for PBXNativeTarget "libOSappstore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				224A1BB2183DC1EA00B0C24B /* Debug */,
+				224A1BB3183DC1EA00B0C24B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		556A1BFD178C158A00780030 /* Build configuration list for PBXProject "libOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				556A1C0F178C158A00780030 /* Debug */,
+				556A1C10178C158A00780030 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		556A1C11178C158A00780030 /* Build configuration list for PBXNativeTarget "libOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				556A1C12178C158A00780030 /* Debug */,
+				556A1C13178C158A00780030 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF58FF6E185B057700FA66A0 /* Build configuration list for PBXNativeTarget "libOSappstoreTWPangGui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF58FF6F185B057700FA66A0 /* Debug */,
+				AF58FF70185B057700FA66A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF58FF82185B05E600FA66A0 /* Build configuration list for PBXNativeTarget "libOSappstoreTW68240412" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF58FF83185B05E600FA66A0 /* Debug */,
+				AF58FF84185B05E600FA66A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF7B9D80185898D50029CAC8 /* Build configuration list for PBXNativeTarget "libOSappstoreTW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF7B9D81185898D50029CAC8 /* Debug */,
+				AF7B9D82185898D50029CAC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 556A1BFA178C158A00780030 /* Project object */;
+}

@@ -1,0 +1,109 @@
+{
+  "images" : [
+    {
+      "size" : "29x29",
+      "idiom" : "iphone",
+      "filename" : "appstore29.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "iphone",
+      "filename" : "appstore29-1.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "40x40",
+      "idiom" : "iphone",
+      "filename" : "appstore40.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "57x57",
+      "idiom" : "iphone",
+      "filename" : "appstore57.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "57x57",
+      "idiom" : "iphone",
+      "filename" : "appstore114.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "60x60",
+      "idiom" : "iphone",
+      "filename" : "appstore120.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "iphone",
+      "size" : "60x60",
+      "scale" : "3x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "ipad",
+      "filename" : "appstore29-2.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "ipad",
+      "filename" : "appstore29-3.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "40x40",
+      "idiom" : "ipad",
+      "filename" : "appstore40-1.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "40x40",
+      "idiom" : "ipad",
+      "filename" : "appstore40-2.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "50x50",
+      "idiom" : "ipad",
+      "filename" : "appstore50.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "50x50",
+      "idiom" : "ipad",
+      "filename" : "appstore50-1.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "72x72",
+      "idiom" : "ipad",
+      "filename" : "appstore72.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "72x72",
+      "idiom" : "ipad",
+      "filename" : "appstore144.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "76x76",
+      "idiom" : "ipad",
+      "filename" : "appstore76.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "76x76",
+      "idiom" : "ipad",
+      "filename" : "appstore152.png",
+      "scale" : "2x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

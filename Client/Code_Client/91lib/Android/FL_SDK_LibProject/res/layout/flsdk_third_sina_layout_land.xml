@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/flsdk_third_sina_bg"
+    android:padding="14.0dip" >
+
+    <RelativeLayout
+        android:layout_width="280.0dip"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5.0dip"
+            android:src="@drawable/flsdk_third_sina_logo" />
+
+        <Button
+            android:id="@+id/flsdk_third_sina_switch_btn"
+            android:layout_width="90.0dip"
+            android:layout_height="32.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/flsdk_third_sina_btn_cancel"
+            android:onClick="switchClick"
+            android:text="@string/flsdk_third_sina_switch_btn_text" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/flsdk_third_sina_switch_btn"
+            android:layout_marginTop="15.0dip"
+            android:background="@drawable/flsdk_third_sina_pop_bg"
+            android:padding="12.0dip" >
+
+            <ImageView
+                android:id="@+id/flsdk_third_sina_account_icon"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:layout_marginLeft="3.0dip"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/flsdk_third_sina_account_icon"
+                android:layout_marginLeft="5.0dip"
+                android:layout_toRightOf="@+id/flsdk_third_sina_account_icon"
+                android:text="@string/flsdk_third_sina_current_account" />
+
+            <TextView
+                android:id="@+id/flsdk_third_sina_account_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/flsdk_third_sina_account_icon"
+                android:layout_marginLeft="5.0dip"
+                android:layout_toRightOf="@+id/flsdk_third_sina_account_icon" />
+
+            <LinearLayout
+                android:id="@+id/flsdk_third_sina_quanxian"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/flsdk_third_sina_account_icon"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/flsdk_third_sina_account_icon"
+                    android:padding="3.0dip"
+                    android:text="@string/flsdk_third_sina_auth_text" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dip"
+                    android:drawableLeft="@drawable/flsdk_third_sina_user_icon"
+                    android:drawablePadding="8.0dip"
+                    android:padding="3.0dip"
+                    android:text="@string/flsdk_third_sina_auth_getinfo" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dip"
+                    android:drawableLeft="@drawable/flsdk_third_sina_share_icon"
+                    android:drawablePadding="8.0dip"
+                    android:padding="3.0dip"
+                    android:text="@string/flsdk_third_sina_auth_shareinfo" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dip"
+                    android:drawableLeft="@drawable/flsdk_third_sina_comment_icon"
+                    android:drawablePadding="8.0dip"
+                    android:padding="3.0dip"
+                    android:text="@string/flsdk_third_sina_auth_getcomment" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="120.0dip"
+                android:layout_height="36.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/flsdk_third_sina_quanxian"
+                android:background="@drawable/flsdk_third_sina_btn_cancel"
+                android:onClick="cancelClick"
+                android:text="@string/flsdk_third_sina_auth_cancel"
+                android:textColor="@color/flsdk_gamehelper_color_383838" />
+
+            <Button
+                android:layout_width="120.0dip"
+                android:layout_height="36.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/flsdk_third_sina_quanxian"
+                android:background="@drawable/flsdk_third_sina_btn_sure"
+                android:onClick="authorizeClick"
+                android:text="@string/flsdk_third_sina_auth"
+                android:textColor="@color/flsdk_gamehelper_color_white" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/flsdk_base_loading_layout" />
+
+</RelativeLayout>

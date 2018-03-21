@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:paddingTop="8dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp">
+
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:background="@drawable/dk_bg_list_record" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="8dp" 
+            android:paddingLeft="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/dk_style_user_center_recordlist"
+                android:text="@string/dk_tip_history_recharge_amount" />
+
+            <TextView
+                android:id="@+id/dk_tv_recharge_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                style="@style/dk_style_user_center_recordlist" />
+
+            <TextView
+                android:id="@+id/dk_tv_recharge_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                style="@style/dk_style_user_center_recordlist" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="4dp" 
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/dk_style_user_center_recordlist"
+                android:text="@string/dk_tip_history_recharge_method" />
+
+            <TextView
+                android:id="@+id/dk_tv_recharge_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="#333333"
+                style="@style/dk_style_user_center_recordlist" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="4dp" 
+            android:paddingLeft="8dp" 
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/dk_style_user_center_recordlist"
+                android:layout_gravity="top"
+                android:text="@string/dk_tip_history_order_id_extend" />
+
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                
+                <TextView
+	                android:id="@+id/dk_tv_recharge_order_id"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="#333333"
+	                style="@style/dk_style_user_center_recordlist" />
+            </LinearLayout>
+        </LinearLayout>
+        
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@drawable/dk_divider_list_record" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="8dp"
+            android:paddingRight="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" 
+                android:layout_alignParentLeft="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dk_tip_history_order_status"
+                    style="@style/dk_style_user_center_recordlist" />
+
+                <TextView
+                    android:id="@+id/dk_tv_recharge_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333333"
+                    style="@style/dk_style_user_center_recordlist" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/dk_tv_recharge_date"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/dk_style_user_center_recordlist" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+	<ImageView
+	    android:id="@+id/dk_image_view_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/dk_ic_succeed_list_record"/>
+    </RelativeLayout>
+</LinearLayout>

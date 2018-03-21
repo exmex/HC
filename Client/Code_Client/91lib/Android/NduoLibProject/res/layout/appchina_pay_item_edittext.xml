@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edit项 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="250dip" android:layout_height="45dp">
+	<TextView android:id="@+id/TextView" android:layout_height="wrap_content"
+		android:textSize="16sp" android:textColor="#000000"
+		android:layout_gravity="center_vertical"
+		android:layout_width="80dp" />
+	<EditText android:id="@+id/EditText" android:layout_height="wrap_content"
+		android:layout_marginLeft="5dp"
+		android:layout_width="160dp" android:layout_gravity="center_vertical|left"
+		android:singleLine="true"
+		android:layout_marginRight="5dp" android:background="@drawable/appchina_pay_edittext"
+		android:digits="1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM"
+		android:inputType="text" android:maxLength="24" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+class LegendAminationEffect :public LegendAnimation
+{
+    static LegendAminationEffect * create(const char*resource);
+	virtual  ~LegendAminationEffect();
+	LegendAminationEffect(const char * resName);
+    void setLoopAction(const char* action);
+    bool isTerminated();
+	void onEnter(void);
+	void onActionFinished(void);
+	void setStartAction(const char *action);
+
+};

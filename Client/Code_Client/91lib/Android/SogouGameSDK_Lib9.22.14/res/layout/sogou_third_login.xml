@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/sogou_head" />
+ 
+     <TextView
+            android:id="@+id/third_login_loading"
+            style="@style/main_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:text="@string/third_login_loading"  />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <WebView
+            android:id="@+id/sogou_third_login"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </WebView>
+    </LinearLayout>
+
+</LinearLayout>

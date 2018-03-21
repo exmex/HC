@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/aipay_margin_vertical"
+    android:layout_marginLeft="@dimen/aipay_margin_horizontal"
+    android:layout_marginRight="@dimen/aipay_margin_horizontal"
+    android:layout_marginTop="@dimen/aipay_margin_vertical"
+    android:background="@drawable/aipay_bg" >
+
+    <include
+        android:id="@+id/v_title_bar_aipay"
+        layout="@layout/aipay_title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/rl_feeinfo_aipay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v_title_bar_aipay"
+        android:background="@color/aipay_exctra_info_bg" >
+
+        <TextView
+            android:id="@+id/tv_appname_aipay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/aipay_black_1"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_wares_name_aipay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_appname_aipay"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/aipay_black_1"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_price_aipay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/aipay_orange"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_feeinfo_aipay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_price_aipay"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="15dp"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_feetype_aipay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/aipay_black_1"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/iv_more_feeinfo_aipay"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/aipay_more_feeinfo" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/ll_feeinfo_aipay" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_divider_aipay"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rl_feeinfo_aipay"
+        android:background="#d2dbe6" />
+
+    <ListView
+        android:id="@+id/ll_paytype_aipay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_divider_aipay"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/aipay_divider_line"
+        android:dividerHeight="1px"
+        android:fadeScrollbars="false"
+        android:fadingEdge="none"
+        android:listSelector="@drawable/aipay_list_item_selector"
+        android:scrollbarThumbVertical="@drawable/aipay_scrollbar" />
+
+    <TextView
+        android:id="@+id/tv_more_aipay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ll_paytype_aipay"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="15dp"
+        android:drawablePadding="4dp"
+        android:drawableRight="@drawable/aipay_more"
+        android:text="更多支付方式"
+        android:textColor="@color/aipay_black_1"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_notice_aipay"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#7f000000"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+               android:clickable="true"
+        android:visibility="gone" >
+
+        <com.iapppay.ui.MarqueeTextView
+            android:id="@+id/tv_notice_aipay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            
+            android:textColor="@color/aipay_white"
+            android:textSize="13sp"/>
+
+        <ImageView
+            android:id="@+id/iv_notice_del_aipay"
+            android:layout_width="28dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|right"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@null"
+            android:scaleType="center"
+            android:src="@drawable/aipay_del_selector" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sogou_game_sdk_exit_dialog"
+    android:layout_width="267dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sogou_game_sdk_exit_dialog_bg"
+    android:orientation="horizontal"
+    android:padding="1.5dp" >
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/sogou_game_sdk_ads_image"
+        android:layout_width="fill_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="119dp" />   
+
+    <TextView
+        android:id="@+id/sogou_game_sdk_ads_tips"
+        android:textSize="13.5sp"
+        android:textColor="@color/sogou_game_sdk_color_595959"
+        style="@style/sogou_game_sdk_textview_s20_c595959"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sogou_game_sdk_ads_image"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/sogou_game_sdk_isexit" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sogou_game_sdk_ads_tips"
+        android:layout_marginTop="3dp"
+        android:padding="8dp" >
+
+        <View
+            android:id="@+id/strut"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+             style="@style/sogou_game_sdk_pay_s20_cffffff"
+            android:id="@+id/sogou_game_sdk_ads_yes"
+            android:layout_width="0dp"
+            android:layout_height="33.5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@id/strut"
+            android:layout_marginRight="9.5dp"
+            android:background="@drawable/sogou_game_sdk_pay_ok_red"
+            android:text="@string/sogou_game_sdk_yes" />
+
+        <Button
+             style="@style/sogou_game_sdk_pay_s20_cffffff"
+             android:id="@+id/sogou_game_sdk_ads_no"
+            android:layout_width="0dp"
+            android:layout_height="33.5dp"
+            android:layout_alignLeft="@id/strut"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="9.5dp"
+            android:background="@drawable/sogou_game_sdk4_bt_gray"
+            android:text="@string/sogou_game_sdk_no" />
+    </RelativeLayout>
+
+</RelativeLayout>

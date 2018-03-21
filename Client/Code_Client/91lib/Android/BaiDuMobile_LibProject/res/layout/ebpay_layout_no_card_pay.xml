@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip" >
+
+    <TextView
+        android:id="@+id/pay_select_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/ebpay_no_card_pay_tip1"
+        android:textColor="@color/ebpay_text_333333"
+        android:textSize="@dimen/ebpay_text_size_18" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:baselineAligned="false" >
+
+        <FrameLayout
+            android:id="@+id/operatorLayout"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/ebpay_bg_round_area"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/keyType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:duplicateParentState="true"
+                android:text="@string/ebpay_mobile_china"
+                android:textColor="@color/ebpay_text_333333"
+                android:textSize="@dimen/ebpay_text_size_15" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="6.5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ebpay_guide_icon" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/faceValueLayout"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/ebpay_bg_round_area"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/faceValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:duplicateParentState="true"
+                android:text="@string/ebpay_yuan"
+                android:textColor="@color/ebpay_text_333333"
+                android:textSize="@dimen/ebpay_text_size_15" />
+
+            <ImageView
+                android:id="@+id/value_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="6.5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ebpay_guide_icon" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/noBankPayTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ebpay_line_margin_10"
+        android:textColor="@color/ebpay_text_ff7800"
+        android:textSize="15sp" />
+
+    <LinearLayout
+         android:id="@+id/pay_card_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:background="@color/ebpay_white"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/pay_no_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null" >
+
+            <EditText
+                android:id="@+id/pay_no"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                 android:background="@color/ebpay_white"
+                android:drawableLeft="@drawable/ebpay_shape_line_gray"
+                android:drawablePadding="5dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="@string/ebpay_card_no"
+                android:inputType="text"
+                android:maxLength="20"
+                android:paddingLeft="43dp" />
+
+            <ImageView
+                style="@style/ebpay_icon_common_style"
+                android:contentDescription="@string/ebpay_img"
+                android:gravity="center_vertical"
+                android:src="@drawable/ebpay_ic_bank" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="@color/ebpay_line_gray" />
+
+        <FrameLayout
+            android:id="@+id/pay_pass_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@null" >
+
+            <EditText
+                android:id="@+id/pay_pass"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                 android:background="@color/ebpay_white"
+                android:drawableLeft="@drawable/ebpay_shape_line_gray"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:hint="@string/ebpay_passwd"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:paddingLeft="43dp" />
+
+            <ImageView
+                style="@style/ebpay_icon_common_style"
+                android:contentDescription="@string/ebpay_img"
+                android:gravity="center_vertical"
+                android:src="@drawable/ebpay_ic_pwd" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

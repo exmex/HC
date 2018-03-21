@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/gamehall_popup_detail_bg_black" >
+
+        <include
+            android:id="@+id/gamehall_feedback_title"
+            layout="@layout/gamehall_feedback_title_include" />
+
+        <LinearLayout
+            android:id="@+id/gamehall_feedback_record_send"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <EditText
+                android:id="@+id/gamehall_feedback_send_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:background="@drawable/gamehall_feedback_write"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="14dp"
+                android:layout_weight="1"
+                android:maxHeight="50dp" />
+
+            <Button
+                android:id="@+id/gamehall_feedback_record_button_enter"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/gamehall_feedback_button_selector"
+                android:text="@string/gamehall_feedback_enter"
+                android:textColor="@android:color/white"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/gamehall_feedback_record_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/gamehall_feedback_record_send"
+            android:layout_below="@id/gamehall_feedback_title"
+            android:cacheColorHint="#0000"
+            android:divider="@null" >
+        </ListView>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/gamehall_feedback_title" >
+
+            <include
+                android:id="@+id/gamehall_feedback_list_loading"
+                layout="@layout/gamehall_loading_view"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/gamehall_feedback_nonet"
+                layout="@layout/gamehall_nonet_page"
+                android:visibility="gone" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

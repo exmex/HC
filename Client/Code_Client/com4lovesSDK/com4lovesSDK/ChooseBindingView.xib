@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment version="1072" identifier="iOS"/>
+        <development version="6000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChooseBindingView">
+            <connections>
+                <outlet property="btnBind" destination="Z6g-LV-7Ub" id="ObR-4N-bgr"/>
+                <outlet property="btnNotbind" destination="T3W-L4-IDZ" id="EnM-qJ-Bii"/>
+                <outlet property="labelWarning1" destination="eTv-ov-GN0" id="fUU-7P-Pcf"/>
+                <outlet property="labelWarning2" destination="ffL-0N-6Wj" id="Uhb-4d-7FV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2Qf-Ts-nkJ">
+                    <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <state key="normal">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="b2A-Pr-S8F">
+                    <rect key="frame" x="72" y="0.0" width="425" height="320"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="为避免账号遗失建议您尽快进行绑定" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ffL-0N-6Wj">
+                            <rect key="frame" x="42" y="111" width="355" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="T3W-L4-IDZ">
+                            <rect key="frame" x="93" y="228" width="238" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="以后绑定" backgroundImage="sdk_login.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="sdk_small_login.png"/>
+                            <connections>
+                                <action selector="laterBindingAccount:" destination="-1" eventType="touchUpInside" id="41j-Y9-pan"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前账号为试玩帐号" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eTv-ov-GN0">
+                            <rect key="frame" x="105" y="54" width="286" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                            <color key="textColor" red="0.92604033801020402" green="0.58013434728277657" blue="0.14447368169214547" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="warning.png" highlightedImage="warning.png" id="GAN-xo-XDf">
+                            <rect key="frame" x="31" y="24" width="98" height="82"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Z6g-LV-7Ub">
+                            <rect key="frame" x="93" y="167" width="238" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="立即绑定" backgroundImage="sdk_register.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="sdk_small_reg.png"/>
+                            <connections>
+                                <action selector="bindingAccount:" destination="-1" eventType="touchUpInside" id="Mt0-EX-ZiK"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.70000000000000007" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <point key="canvasLocation" x="140" y="155"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sdk_login.png" width="157" height="49"/>
+        <image name="sdk_register.png" width="157" height="49"/>
+        <image name="sdk_small_login.png" width="157" height="49"/>
+        <image name="sdk_small_reg.png" width="157" height="49"/>
+        <image name="warning.png" width="174" height="142"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

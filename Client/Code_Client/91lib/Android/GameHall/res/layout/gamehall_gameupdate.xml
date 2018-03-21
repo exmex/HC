@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/gamehall_mainview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gamehall_gamelistitem_bg"
+        android:orientation="vertical" >
+
+        <include layout="@layout/gamehall_headerview" />
+
+        <RelativeLayout
+            android:id="@+id/gamehall_gamelist_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/gamehall_network_error_view"
+        layout="@layout/gamehall_net_page" />
+
+</FrameLayout>

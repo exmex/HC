@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dip"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dip"
+        android:text="您的帐号状态异常"
+        android:textColor="@color/txt_black"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/content_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/title_view"
+        android:layout_marginBottom="5dip"
+        android:text="请输入图形字符并提交"
+        android:textColor="@color/gamehall_login_verify_label"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:id="@+id/security_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/content_view"
+        android:layout_marginBottom="4dip"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip" >
+
+            <ImageView
+                android:id="@+id/securitycode_image"
+                android:layout_width="100dip"
+                android:layout_height="40dip"
+                android:src="@drawable/gamehall_security_default" />
+
+            <ProgressBar
+                android:id="@+id/loading_progress"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:layout_gravity="center"
+                android:layout_marginRight="2dip"
+                android:indeterminate="false"
+                android:indeterminateDrawable="@drawable/gamehall_loading_progress" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/securitycode_change_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="换一张"
+            android:textColor="@drawable/gamehall_verify_reget_selector"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/security_input_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/security_view"
+        android:layout_marginBottom="5dip"
+        android:background="@drawable/gamehall_login_input" >
+
+        <EditText
+            android:id="@+id/security_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:paddingBottom="6dip"
+            android:paddingTop="6dip"
+            android:singleLine="true"
+            android:textColor="@color/txt_black"
+            android:textSize="14dp"
+            android:hint="请输入验证码"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/security_input_view"
+        android:gravity="left" >
+
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gamehall_login_verify_submit_btn"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:text="提交"
+            android:textColor="@color/txt_white"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+</RelativeLayout>

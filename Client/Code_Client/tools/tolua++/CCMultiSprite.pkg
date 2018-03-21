@@ -1,0 +1,13 @@
+
+class CCMultiSprite :public CCSprite
+{
+	CCMultiSprite();
+	virtual ~CCMultiSprite();
+	void setBackgroundScale(float);
+	void updateMultiTexture(void);
+	void setMultiSprite(CCDictionary * dict);
+		
+	static CCMultiSprite *createWithSpriteFrame(CCSpriteFrame * frame);
+	static CCMultiSprite * create(const char * name);
+	static CCMultiSprite * create(void);
+};

@@ -1,0 +1,39 @@
+
+
+class LegendAnimation:public CCSprite
+{
+    static LegendAnimation * create(const char* resource, float scale);
+    static LegendAnimation * create(const char* resource);
+    static void releaseAnimationFileInfo();
+    static void gc(float gcPassTime);
+    static void setgcTime(double gctime);
+
+    LegendAnimation(const char * resName);
+    virtual ~LegendAnimation();
+    int addEffect(const char * resName);
+    int addEffect(const char * resName, CCAffineTransform  const& mat, int zorder);
+    int addEffect(const char * resName, CCPoint pos, int zorder);
+    int addEffect(const char *name, int zorder);
+    void addToActionSequence(const char * actionName);
+    void clearActionSequence(void);
+    CCArray * getActionSequence(void);
+    void interruptSound(void);
+    void onActionFinished(void);
+    void removeEffectWithID(int eid);
+    void removeEffectWithName(const char * effectName);
+    void setAction(const char * name, bool bval=true);
+    void setColor(_ccColor3B clr);
+    void setComponent(const char * param1, const char * param2);
+    void setComponent(int param1, const char * param2);
+    void setNextAction(const char * actionName);
+    void setOpacity(unsigned char param1);
+    void tint(float r, float g, float b);
+    void update(float dt, bool isAuto = true);
+    void useDefaultShader(void);
+    void useShader(const char * shaderName);
+    void setActionElapsed(float elapsed);
+    void setActionSpeeder(float speeder);
+    void setLoop(bool val);
+    void setPosition(CCPoint pos);
+
+};

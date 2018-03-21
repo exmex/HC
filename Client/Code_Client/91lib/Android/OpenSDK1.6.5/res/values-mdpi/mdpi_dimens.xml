@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 公告弹框 -->
+    <dimen name="nmgc_boyclick_webview_width">300.67dp</dimen>
+	<dimen name="nmgc_boyclick_webview_height">248.67dp</dimen>
+</resources>

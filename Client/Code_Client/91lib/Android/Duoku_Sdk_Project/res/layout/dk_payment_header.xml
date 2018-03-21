@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dk_payment_title"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+       
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/dk_top_dialog_new" >
+
+        <ImageView
+            android:id="@+id/dk_btn_logo"
+            android:layout_width="54dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/dk_logo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/dk_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="4dp"
+                android:text="@string/dk_pay_centre"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" 
+            android:layout_alignParentRight="true">
+            
+            <ImageView
+                android:id="@+id/dk_payment_iv_close"
+	            android:layout_width="32dp"
+	            android:layout_height="32dp"
+	            android:layout_marginRight="8dp"
+	            android:layout_marginTop="8dp"
+	            android:background="@drawable/dk_payment_btn_close_selector" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

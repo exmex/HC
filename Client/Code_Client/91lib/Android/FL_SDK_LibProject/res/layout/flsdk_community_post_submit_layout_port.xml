@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 社区发帖-竖屏 -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <include layout="@layout/flsdk_base_bg_layout_port" />
+
+    <LinearLayout
+        style="@style/flsdk_style_body_lay_port"
+        android:orientation="vertical" >
+
+        <com.fl.gamehelper.ui.widget.BaseEditTextView
+            android:id="@+id/post_title_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:id="@+id/post_edittext_layout_r"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip">
+
+            <EditText
+                android:id="@+id/post_content_et"
+                style="@style/flsdk_style_edit_text"
+                android:layout_width="fill_parent"
+                android:layout_height="200dip"                
+                android:gravity="left|top"
+                android:hint="@string/post_content_hint"
+                android:inputType="textMultiLine"
+                android:padding="8.0dip" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/post_toolbar_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+            
+            <!-- 无实际用途只是用户定位表情和照片按钮 -->
+            <ImageView
+                android:id="@+id/post_add_img_gone"
+                android:layout_width="5.0dip"
+                android:layout_height="5.0dip"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:scaleType="fitXY"
+                android:visibility="gone"/>
+            
+            <ImageView
+                android:id="@+id/post_add_img_preview"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_alignBottom="@+id/post_add_img_gone"
+                android:layout_alignLeft="@+id/post_add_img_gone"
+                android:scaleType="fitXY"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/post_del_img"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:layout_alignBottom="@+id/post_add_img_preview"
+                android:layout_alignLeft="@+id/post_add_img_preview"
+                android:background="@drawable/flsdk_img_del_btn"
+                android:scaleType="fitXY"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/post_add_img_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/post_add_img_gone"
+                android:paddingLeft="5.0dip"
+                android:paddingRight="5.0dip"
+                android:paddingTop="2.0dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/flsdk_submit_add_img"/>
+
+            <ImageView
+                android:id="@+id/post_add_emoticon_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/post_add_img_btn"
+                android:layout_toLeftOf="@+id/post_add_img_btn"
+                android:paddingLeft="50.0dip"
+                android:paddingRight="5.0dip"
+                android:paddingTop="2.0dip"
+                android:src="@drawable/flsdk_submit_add_emoticon"/>
+            
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/flsdk_base_loading_layout" />
+
+</merge>

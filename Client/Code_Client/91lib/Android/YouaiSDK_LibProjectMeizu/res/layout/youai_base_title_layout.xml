@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <merge xmlns:android="http://schemas.android.com/apk/res/android" > -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+      android:background="@drawable/u2_background"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical" >
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/TextColorBlack"
+    android:orientation="horizontal"
+    >
+
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:textColor="@color/TextColorWhite"
+		    android:layout_marginLeft="10dp"
+		    android:text="有爱互动社区" />
+
+    </LinearLayout>
+<LinearLayout 
+    android:layout_width="fill_parent"
+     android:layout_height="42dp"
+    android:layout_gravity="center_horizontal"
+     android:background="@drawable/title_bg"
+    android:orientation="horizontal" >
+   
+    
+
+    <Button
+        android:id="@+id/u2_title_back"
+        android:layout_marginLeft="10dp"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+          android:textColor="@color/TextColorWhite"
+          android:textSize="16sp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/titlebt_bg"
+        android:text="@string/title_back" />
+
+    <TextView
+        android:id="@+id/u2_title_text"
+        style="@style/u2_style_2b261c_18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8.0dip" />
+
+    </LinearLayout>
+
+ 
+    </LinearLayout>
+<!-- </merge> -->

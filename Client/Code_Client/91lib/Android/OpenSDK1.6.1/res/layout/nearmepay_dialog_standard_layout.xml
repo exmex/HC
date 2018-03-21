@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/NearMePayDialogContainer"
+        android:layout_width="@dimen/nearmepay_dialog_width"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/NearMePayDialogTitle" >
+
+            <TextView
+                android:id="@+id/dialog_standard_tv_title"
+                style="@style/NearMePayDialogTitleText"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/NearMePayDialogContent" >
+
+            <TextView
+                android:id="@+id/dialog_standard_tv_message"
+                style="@style/NearMePayDialogContentText"
+            	android:gravity="left|center"
+            	>
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/NearMePayDialogBottom"
+            >
+
+            <Button
+                android:id="@+id/dialog_standard_bt_yes"
+                style="@style/NearMePayButtonAppearance"
+                android:layout_marginRight="@dimen/nearmepay_dialog_botton_between"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:id="@+id/dialog_standard_bt_no"
+                style="@style/NearMePayButtonAppearance"
+                android:layout_marginLeft="@dimen/nearmepay_dialog_botton_between"
+                android:layout_weight="1"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+
+    <resources>
+        <string name="nd_gcsdk_pausepage_title">继续游戏？</string>
+        <string name="nd_gcsdk_pausepage_default_text">点击进入游戏专区</string>
+        
+        <string name="nd_gcsdk_exitpage_recently_play">最近在玩的其他91游戏</string>
+        <string name="nd_gcsdk_exitpage_exit_title">退出%1$s？</string>
+        <string name="nd_gcsdk_exitpage_project_title">接着玩其他精品游戏吗？</string>
+        <string name="nd_gcsdk_exitpage_project_btn">不玩啦，退出</string>
+        <string name="nd_gcsdk_exitpage_exit_btn">退出</string>
+
+        <string name="nd_gcsdk_version_update_tips">新版本正在下载，请到桌面的消息通知栏查看下载进度。</string>
+        <string name="nd_gcsdk_version_check_fail_title">版本检查失败</string>
+        <string name="nd_gcsdk_version_check_fail_message">版本检查失败，请检查网络稍后再试。</string>
+        <string name="nd_gcsdk_version_check_fail_ok">知道了</string>
+
+        <string name="nd_gcsdk_enter_sdk_gamecenter_download">请先安装游戏中心</string>
+        
+        <string name="nd_gcsdk_floating_view_msg">消息</string>
+        <string name="nd_gcsdk_floating_view_forum">论坛</string>
+        <string name="nd_gcsdk_floating_view_feedback">客服</string>
+        <string name="nd_gcsdk_floating_view_gamecenter">游戏中心</string>
+        <string name="nd_gcsdk_floating_view_more">91社区</string>
+        <string name="nd_gcsdk_floating_view_no_login">请先登录</string>
+
+        <string name="nd_gcsdk_web_title">论坛</string>
+        
+        <!-- 支付宝 -->
+        <string name="alipay_is_checking">正在检测安全支付服务</string>
+        <string name="alipay_is_paying">正在支付</string>
+        <string name="alipay_confirm_install_hint">安装提示</string>
+	    <string name="alipay_confirm_install">为保证您的交易安全，需要您安装移动快捷支付，才能进行付款。\n\n点击确定，立即安装。</string>
+	    <string name="alipay_tip_title">提示</string>
+	    <string name="alipay_not_install">您还没有安装支付宝客户端，建议您先安装，或使用其他支付方式。</string>
+	    <string name="alipay_check_sign_failed">您的订单信息已被非法篡改。</string>
+
+    </resources>

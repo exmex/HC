@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="nmgc_loading_text_size">20sp</dimen>
+    <dimen name="nmgc_login_title_text_size">20sp</dimen>
+    <dimen name="nmgc_login_common_text_size">16sp</dimen>
+    <dimen name="nmgc_login_button_text_size">20sp</dimen>
+    <dimen name="nmgc_lg_input_text_size">17sp</dimen>
+    <dimen name="nmgc_lg_button_text_size">18sp</dimen>
+    <dimen name="nmgc_charge_index_text_size">15sp</dimen>
+    <dimen name="nmgc_charge_content_hint_text_size">12sp</dimen>
+    <dimen name="nmgc_charge_button_text_size">17sp</dimen>
+    <dimen name="nmgc_reg_stepone_hint_text_size">13sp</dimen>
+    <dimen name="nmgc_reg_steptwo_count_text_size">13sp</dimen>
+
+</resources>

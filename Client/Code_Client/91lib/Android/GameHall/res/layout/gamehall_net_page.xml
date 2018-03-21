@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/game_detail_bg" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/gamehall_netpage_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/gamehall_icon_warning" />
+
+        <TextView
+            android:id="@+id/gamehall_netpage_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gamehall_netpage_warning"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="40dip"
+            android:text="您的网络不给力，请重新加载"
+            android:textColor="#7E7E7E"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gamehall_netpage_text"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/gamehall_button4_selector1"
+            android:text="再试一次"
+            android:textColor="@color/txt_white"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

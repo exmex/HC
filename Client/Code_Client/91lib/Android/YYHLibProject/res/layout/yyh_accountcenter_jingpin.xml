@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/yyh_center_jingpin_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="20dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/yyh_huihui_cry" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/yyh_jiazaizhong"
+            android:textColor="#666666"
+            android:textSize="14dip" />
+    </LinearLayout>
+
+    <com.appchina.usersdk.ZCListView
+        android:id="@+id/yyh_center_jingpin_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+
+</LinearLayout>

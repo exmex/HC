@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECF4FA"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/xl_charge_title" >
+
+        <ImageButton
+            android:id="@+id/xl_charge_back_button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/xl_charge_back" />
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/xl_charge_cft_wv"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

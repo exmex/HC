@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#f8f8f8">
+
+    <LinearLayout
+        android:id="@+id/yyh_center_active_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dip"
+        android:gravity="center" >
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/yyh_huihui_cry"/>
+
+        <TextView
+            android:id="@+id/yyh_center_active_loading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/yyh_jiazaizhong"
+            android:textColor="#666666"
+            android:textSize="15.5dip"/>
+    </LinearLayout>
+
+    <com.appchina.usersdk.ZCListView
+        android:id="@+id/yyh_center_active_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+
+</LinearLayout>

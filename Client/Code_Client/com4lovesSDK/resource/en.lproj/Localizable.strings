@@ -1,0 +1,93 @@
+/* 
+  Localizable.strings
+  com4lovesSDK
+
+  Created by ljc on 13-12-12.
+  Copyright (c) 2013年 com4loves. All rights reserved.
+*/
+/* uialert 相关 */
+"notice" = "Warning";
+"cancel" = "Cancel";
+"ok" = "OK";
+"notice_changeuser"             = "";
+"notice_restart"                = "";
+"notice_bindingok"              = "Account is bound！";
+"notice_modify_password_ok"     = "Your password has been changed";
+"notice_init_failed"            = "Initialization failed！";
+"notice_sign_error"             = "";
+"notice_alipay_notinstall"      = "";
+"notice_username_toolong"       = "Account No more than 12 characters！";
+"notice_username_tooshoot"      = "Account No less than 6 characters！";
+"notice_password_length"        = "Password Must be 6 to 12 characters！";
+"notice_email_toolong"          = "Email No more than 64 characters！";
+"notice_username_ilegl"         = "Account Including illegal characters
+！";
+"notice_password_ilegl"         = "Password Including illegal characters！";
+"notice_email_ilegl"            = "Email address not available！";
+
+/*订单相关*/
+
+"order_faild"           = "Buy Failed";
+"order_success"         = "Buy success";
+"order_exception"       = "Pay anomalies";
+"order_wait_result"     = "Wait for the result of payment";
+"buy_faild"             = "Buy Failed";
+
+
+/*界面相关*/
+
+"zuanshi"       = "";
+"defualt"       = "Default";
+"welcome"       = "Welcome！";
+"register"      = "Register";
+"close"         = "Close";
+"binding"       = "Binding";
+"back"          = "Return";
+"finish"        = "Done";
+"email_optional"= "Optional";
+//"viewtitle"     = "小熊工作室";
+
+/*   selfpayview.xib */
+
+/*   loginview.xib  */
+
+"loginview_login"           = "Log in";
+"loginview_Quicklogin"      = "Fast Login";
+
+/*  webview.xib  */
+
+/*  registerview.xib  */
+
+"registerview_register"     = "Register";
+"registerview_bind"     = "Binding";
+"registerview_email_cint"   = "Email";
+"registerview_account_cint"   = "6-12 letters or numbers";
+"registerview_password_cint"   = "6-12 letters or numbers";
+"registerview_agree"       = "I have agreed to";
+"registerview_protocol"       = "《User's Protocol》";
+//"registerview_notice"       = "";
+
+/* accountmanager.xib  */
+"account_switchuser"    = "Log out";
+"account_changepass"   = "Change password";
+/*  accountcenter.xib  *///not use
+//"accountcenter_title"           = "";
+//"accountcenter_account"         = "";
+//"accountcenter_change_password" = "";
+
+/*  changepassword.xib */
+"changepsd_oldpsd"  = "Old Password:";
+"changepsd_newpsd"  = "New Password:";
+"changepsd_ok"  = "Confirm";
+"changepsd_cancel"  = "Cancel";
+"changepsd_makesure"  = "New Password:";
+"changepsd_tip" = "Warning";
+"changepsd_tipmessage" = "Inconsistent passwords";
+/*  userlistview.xib */
+
+/*  chooseBindingView.xib */
+"choosebind_waring1" = "The account is demo-based";
+"choosebind_waring2" = "Please bind it as soon as possible";
+"choosebind_bind" = "Binding now";
+"choosebind_notbind" = "Binding later";
+

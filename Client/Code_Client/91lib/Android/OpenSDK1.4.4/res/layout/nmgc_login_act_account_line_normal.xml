@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/nmgc_item_middle_bg_selector" 
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/nmgc_login_act_accountline_root"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/nmgc_login_act_account_line_height" >
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/nmgc_item_divider_dotted" android:contentDescription="@null"/>
+
+        <TextView
+            android:id="@+id/nmgc_login_act_accountline_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="hehe"
+            android:textColor="#1a1a1a"
+            android:textSize="@dimen/nmgc_login_common_text_size" />
+
+        <ImageView
+            android:id="@+id/nmgc_login_act_accountline_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/nmgc_global_title"
+            android:src="@drawable/nmgc_login_act_accountline_x" />
+    </RelativeLayout>
+
+</RelativeLayout>

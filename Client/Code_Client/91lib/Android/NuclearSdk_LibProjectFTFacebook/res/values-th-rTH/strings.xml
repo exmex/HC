@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    
+    
+	<string name="activity_remote_service_binding">AppDemo4</string>
+	<string name="remote_call_failed">Failure calling remote service</string>
+       
+	<string name="partnerHint">"partner"</string>
+	<string name="sellerHint">"seller"</string>
+	<string name="out_trade_noHint">"out_trade_no"</string>
+	<string name="subjectHint">"subject"</string>
+	<string name="bodyHint">"body"</string>
+	<string name="total_feeHint">"total_fee"</string>
+	<string name="notify_urlHint">"notify_url"</string>
+	<string name="charsetHint">"charset"</string>
+	<string name="signTypeHint">"signType"</string>
+	
+	<string name="app_dev">nuclear</string>
+	<string name="confirm_install_hint">"แนะนำติดตั้ง"</string>	
+	<string name="confirm_install">"เพื่อความปลอดภัยในการซื้อขาย ท่านต้องติดตั้งบริการใช้จ่ายเท็นเพย์แล้วถึงจะจ่ายเงินได้\n\nคลิกตกลงติดตั้ง"</string>
+	<string name="ensure">"ตกลง"</string>
+	<string name="cancel">"ยกเลิก"</string>
+	<string name="check_sign_failed">ข้อมูลการสั่งจองของท่านถูกการเปลี่ยนที่ผิดกฎหมาย </string> 
+	
+	<string-array name="control" >  
+        <item>บริหารบัตรผ่าน</item>  
+        <item>เว็บไซต์เกมส์</item>  
+        <item>เปลี่ยนผู้ใช้</item>  
+    </string-array>  
+	
+	<string name="gotoback">กลับ</string>
+	<string name="startgamea">กำลังเริ่มเกมส์.</string>
+    <string name="startgameb">กำลังเริ่มเกมส์..</string>
+    <string name="startgamec">กำลังเริ่มเกมส์...</string>
+	<string name="iccom4love">ห้องทำงานกังหัน</string>
+	
+	 
+	<!-- 有爱字符 -->
+	<string name="title_top">ชุมชนเกมส์</string>
+	<string name="title_back">กลับ</string>
+	<string name="title_login">ล็อกอิน</string>
+	<string name="title_ok">สำเร็จ</string>
+    <string name="title_change_pass"> เปลี่ยนรหัสผ่าน </string>
+    <string name="nowpass">รหัสเดิม:</string>
+    <string name="newpass"> รหัสใหม่ :</string>
+    <string name="inputold"> พิมพ์รหัสเดิม </string>
+    <string name="inputnew"> พิมพ์รหัสเก่า </string>
+    <string name="change_pass">เปลี่ยนรหัสผ่าน</string>
+    <string name="title_man">ศูนย์บัญชี</string>
+    <string name="sub_title_userman">บริหารบัตรผ่าน</string>
+	<string name="sub_title_bbs">เว็บไซต์เกมส์ </string>
+	<string name="sub_title_logout">ล็อกเอาท์</string>
+	<string name="select_pay">เลือกวิธีเติมเงิน</string>
+	<string name="payali"> ทางลัดใช้จ่าย</string>
+	<string name="paytencent">เท็นเพย์</string>
+	<string name="payyinlian"> บัตรธนาคาร </string>
+	<string name="title_register">ลงทะเบียน </string>
+	<string name="regist_name">บัญชี：</string>
+	<string name="regist_pass">รหัสผ่าน：</string>
+	<string name="regist_email">อีเมล：</string>
+	<string name="regist_tv">ท่านสามารถพิมพ์อีเมล ตัวอักษรอังกฤษ /ตัวเลขมาเป็นบัญชีบัตรผ่าน\nและสามารถใช้บัญชีที่ระบบให้มา </string>
+	<string name="user_delete">ลบ </string>
+	<string name="user_loined">ครื่องนี้ล็อกอินบัญชีแล้ว </string>
+	<string name="user_account">บัญชี ：</string>
+	<string name="user_password"> รหัสผ่าน：</string>
+	<string name="logout">ล็อกเอาท์</string>
+	<string name="user_other_login">ล็อกอินบัญชีอื่น </string>
+	<string name="user_forgetpass"> ลืมรหัสผ่าน</string>
+	<string name="user_findpass">คลิกที่นี่หาคืน</string>
+	<string name="close">ปิด</string>
+	<string name="user_other_account"> ท่านกำลังใช้บัญชีที่สาม เราได้ให้บัญชีชุมชนอันหนึ่ง คลิกเปลี่ยนรหัสสามารถเปลี่ยนรหัสบัญชีชุมชนเพื่อสะดวกต่อการใช้งานครั้งต่อไป </string>
+	<string name="user_rebang">ลงทะเบียนผูกพัน</string>
+	<string name="user_bang">ผูกพัน</string>
+	<string name="pay_web">ใช้จ่ายบนเว็บไซต์</string>
+	<string name="pay_chongcard">บัตรเติมเงิน</string>
+	<string name="use_protocol">ข้อตกลงการใช้</string>
+	<string name="rightbtn">ปุ่มกดขวา</string>
+	<string name="choosewrite">เลือกใส่</string>
+	<string name="user_email">อีเมล：</string>
+	<string name="registerpass"> รหัสผ่าน：</string>
+	<string name="writelimit">6-12ตัวอักษรอังกฤษหรือตัวเลข</string>
+	<string name="payuser">เติมเงินบัญชี：</string>
+	<string name="payproduct">สั่งจองสินค้า</string>
+	<string name="payprice">จำนวนเติมเงิน</string>
+	<string name="paygame">เกมส์ที่เติมเงิน</string>
+	<string name="paything">สั่งจองสินค้า:</string>
+	<string name="payprompt">คำแนะนำอุ่นใจ：Xบาทคู่กับ Xเพชร</string>
+	<string name="custom_phone">เบอร์บริการลูกค้า</string>
+	<string name="custom_time">เวลาบริการ：10:00-22:00</string>
+	<string name="youaiweb"> เว็บไซต์เกมส์：www.mxhzw.com</string>
+	<string name="userreadpro">ข้าพระเจ้าได้อ่านและปฏิบัติตามข้อตกลงในเซฟเวอร์ห้องทำงานกังหัน </string>
+	<string name="findpasschoose">เลือกใส่ หาคืนรหัสผ่าน </string>
+	
+	<string name="loading">加載中...</string>
+	<string name="nothaveaccount">您還沒有登入過賬號</string>
+	<string name="initfailinner">初始化失敗</string>
+	<string name="initfailtryagain">初始化失敗 重新初始化中</string>
+	<string name="netwarning">網絡異常</string>
+	<string name="warning">提示</string>
+	<string name="bindsuccess">註冊綁定成功</string>
+	<string name="logoutsuccess">註銷成功</string>
+	<string name="logouneedre">遊戲內部註銷賬號需要重新啓動遊戲\n</string>
+	<string name="namenull">賬號不能为空</string>
+	<string name="passwordnull">密碼不能为空</string>
+	<string name="nameerr">賬號格式不正确</string>
+	<string name="passworderr">密碼格式不正确</string>
+	<string name="mailerr">郵箱格式不正确</string>
+	<string name="registererr">註冊失败</string>
+	<string name="registeryes">註冊成功</string>
+	<string name="loginfailnet">網絡異常 登录失败</string>
+	<string name="registfailnet">網絡異常 註冊失败</string>
+	<string name="welcome">歡迎您回来</string>
+	<string name="errbind">網絡异常 绑定失败</string>
+	<string name="binderr">绑定失败</string>
+	<string name="bindneterr">网络异常 绑定失败</string>
+	<string name="buything">订购商品</string>
+	<string name="tryuser">游客</string>
+	<string name="paymoney">充值金额</string>
+	<string name="helpphone">客服热线</string>
+	<string name="nettryerr">网络异常，请重试</string>
+	<string name="httperr">网络访问异常</string>
+	<string name="paynow">正在支付</string>
+	<string name="yuan">元</string>
+	<string name="account">賬號</string>
+	<string name="initpassword">系统为您設置的初始密碼：</string>
+	<string name="passwordcgeok">密碼修改成功</string>
+	<string name="passwordcgeerr">密碼修改失敗</string>
+	<string name="controlpassword">修改密碼</string>
+	<string name="controlwebsite">社區官網</string>
+	<string name="controluser">切換用戶</string>
+	<string name="controlfeedback">建議反饋</string>
+	<string name="startgame">正在登录</string>
+	<string name="loginsuccess">登录成功</string>
+	<string name="loginfail">登录失败</string>
+</resources>

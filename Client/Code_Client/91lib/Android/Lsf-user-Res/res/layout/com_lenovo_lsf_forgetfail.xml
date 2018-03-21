@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    
+    <ImageView 
+        android:layout_marginTop="80dp"
+        android:layout_width="80dp" 
+        android:layout_height="80dp"
+		android:scaleType="fitXY"
+		android:src="@drawable/com_lenovo_lsf_fail"/>
+    
+    <TextView 
+        style="@style/com_lenovo_lsf_text_large"
+        android:text="@string/com_lenovo_lsf_forgetfail_string_fail"/>
+    <LinearLayout
+    	android:layout_height="wrap_content"
+    	android:layout_width="wrap_content"
+    	android:orientation="horizontal"
+    	android:layout_marginTop="30dp">
+    <TextView 
+        style="@style/com_lenovo_lsf_text_small"
+        android:text="@string/com_lenovo_lsf_forgetfail_string_detail"/>
+    <TextView 
+        style="@style/com_lenovo_lsf_text_small"
+        android:id="@+id/forgetfail_text_reason"
+        android:layout_marginLeft="10dp"
+        android:text="@string/com_lenovo_lsf_forgetfail_string_detail"/>
+    </LinearLayout>
+    <Button 
+        style="@style/com_lenovo_lsf_button_style"
+        android:id="@+id/forgetfail_button_resend"
+        android:textColor="@android:color/white"
+        android:background="@drawable/com_lenovo_lsf_button_old"
+        android:text="@string/com_lenovo_lsf_forgetfail_string_resend"/>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/nmgc_login_title_height"
+        android:background="@drawable/nmgc_global_title" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/nmgc_login_x_right"
+            android:layout_marginTop="@dimen/nmgc_login_title_top"
+            android:contentDescription="@string/nmgc_global_title"
+            android:src="@drawable/nmgc_x"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/nmgc_login_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/nmgc_login_title_top"
+            android:text="@string/nmgc_reg_zhucetiaokuan"
+            android:textSize="@dimen/nmgc_login_title_text_size" />
+    </RelativeLayout>
+	<WebView android:layout_width="fill_parent" android:layout_height="fill_parent"
+	    	 android:id="@+id/nmgc_webview"/>
+
+</LinearLayout>

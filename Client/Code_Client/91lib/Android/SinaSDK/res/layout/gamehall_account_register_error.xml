@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+            android:id="@+id/account_title"
+            android:layout_width="match_parent"
+            android:layout_height="44dip"
+            android:gravity="center"
+            android:text="@string/gamehall_account_register_warn_title"
+            android:textColor="@color/txt_black"
+            android:background="@color/gamehall_register_error_title"
+            android:textSize="18dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/gamehall_register_error_split"
+        android:gravity="center" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/account_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="middle"
+        android:paddingLeft="12dip"
+        android:paddingRight="12dip"
+        android:paddingTop="5dip"
+        android:singleLine="true"
+        android:text="@string/gamehall_account_register_warn_label"
+        android:textColor="@drawable/gamehall_account_reset_selector"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/account_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="middle"
+        android:paddingLeft="12dip"
+        android:paddingRight="12dip"
+        android:paddingTop="5dip"
+        android:singleLine="true"
+        android:text="@string/gamehall_account_register_warn_desc"
+        android:textColor="@drawable/gamehall_account_reset_selector"
+        android:textSize="14dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dip"
+        android:layout_marginRight="12dip"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/switch_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/gamehall_register_btn_selector"
+            android:text="@string/gamehall_account_register_warn_change_btn"
+            android:textColor="@color/txt_white"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/gamehall_login_btn_selector"
+            android:text="@string/gamehall_account_register_warn_login_btn"
+            android:textColor="@color/txt_white"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right" >
+
+        <TextView
+            android:id="@+id/account_resetpwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="10dip"
+            android:text="@string/gamehall_pwd_reset"
+            android:textColor="@drawable/gamehall_account_reset_selector"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+</LinearLayout>

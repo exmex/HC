@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/ks_login_mainlayout"
+        android:layout_width="@dimen/ks_cm_login_layout_width"
+        android:layout_height="@dimen/ks_cm_login_layout_height"
+        android:layout_gravity="center"
+        android:background="@drawable/ks_bg_cm_dialog"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <include layout="@layout/ks_common_cm_title_bar" />
+
+        <RelativeLayout
+            android:id="@+id/ks_cm_username_layout"
+            android:layout_width="@dimen/ks_cm_login_edittext_layout_width"
+            android:layout_height="@dimen/ks_cm_login_edittext_layout_height"
+            android:layout_marginTop="12dp"
+            android:background="@color/ks_cm_title_line_orange"
+            android:orientation="horizontal"
+  
+            >
+
+            <ImageView
+                android:id="@+id/ks_login_account_icon"
+                android:layout_width="@dimen/ks_cm_login_icon_width"
+                android:layout_height="@dimen/ks_cm_login_edittext_layout_width"
+                android:layout_alignParentLeft="true"
+                android:background="@color/ks_cm_edit_text_icon_bg_color"
+                android:scaleType="center"
+                android:src="@drawable/ks_ic_account" />
+
+            <LinearLayout
+                android:id="@+id/ks_btn_login_username_clear_layout"
+                android:layout_width="@dimen/ks_cm_login_icon_width"
+                android:layout_height="@dimen/ks_cm_login_edittext_layout_width"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/ks_cm_edit_text_bg_color" >
+                <ImageView
+                    android:id="@+id/ks_btn_login_username_clear"
+                    android:layout_width="@dimen/ks_cm_login_edittext_delicon_width"
+                    android:layout_height="@dimen/ks_cm_login_edittext_delicon_width"
+                    android:src="@drawable/ks_delete_selector" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/ks_login_username_edittext"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/ks_cm_login_edittext_layout_width"
+                android:layout_toLeftOf="@id/ks_btn_login_username_clear_layout"
+                android:layout_toRightOf="@id/ks_login_account_icon"
+                android:background="@color/ks_cm_edit_text_bg_color"
+                android:hint="@string/ks_cm_login_username_hint"
+                android:paddingLeft="@dimen/ks_cm_login_edittext_margin"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/ks_cm_edit_text_hint_text_color"
+                android:textSize="@dimen/ks_text_size_16" >
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/ks_cm_login_edittext_layout_width"
+            android:layout_height="@dimen/ks_cm_login_edittext_layout_height"
+            android:layout_marginTop="12dp"
+            android:background="@color/ks_cm_title_line_orange"
+            android:orientation="horizontal"
+             android:id="@+id/ks_cm_password_layout"
+            >
+
+            <ImageView
+                android:id="@+id/ks_password_account_icon"
+                android:layout_width="@dimen/ks_cm_login_icon_width"
+                android:layout_height="@dimen/ks_cm_login_edittext_layout_height"
+                android:layout_alignParentLeft="true"
+                android:background="@color/ks_cm_edit_text_icon_bg_color"
+                android:scaleType="center"
+                android:src="@drawable/ks_ic_password" />
+
+            <LinearLayout
+                android:id="@+id/ks_btn_login_password_clear_layout"
+                android:layout_width="@dimen/ks_cm_login_icon_width"
+                android:layout_height="@dimen/ks_cm_login_edittext_layout_height"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/ks_cm_edit_text_bg_color" >
+                <ImageView
+                    android:id="@+id/ks_btn_password_clear"
+                    android:layout_width="@dimen/ks_cm_login_edittext_delicon_width"
+                    android:layout_height="@dimen/ks_cm_login_edittext_delicon_width"
+                    android:src="@drawable/ks_delete_selector" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/ks_password_edittext"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/ks_cm_login_edittext_layout_height"
+                android:layout_toLeftOf="@id/ks_btn_login_password_clear_layout"
+                android:layout_toRightOf="@id/ks_password_account_icon"
+                android:background="@color/ks_cm_edit_text_bg_color"
+                android:hint="@string/ks_cm_login_password_hint"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/ks_cm_login_edittext_margin"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/ks_cm_edit_text_hint_text_color"
+                android:textSize="@dimen/ks_text_size_16" >
+            </EditText>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ks_find_password_text"
+            android:layout_width="@dimen/ks_cm_login_edittext_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ks_cm_login_line_margin"
+            android:paddingBottom="@dimen/ks_cm_login_line_margin"
+            android:text="@string/ks_cm_login_find_password"
+            android:textColor="@color/ks_cm_edit_text_hint_text_color" />
+
+        <LinearLayout
+            android:layout_width="@dimen/ks_cm_login_button_layout_width"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/ks_btn_goto_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/ks_cm_login_button_margin"
+                android:layout_weight="1"
+                android:background="@drawable/ks_bg_cm_btn_blue_selector"
+                android:minHeight="@dimen/ks_cm_one_key_reg_logo_height"
+                android:minWidth="@dimen/ks_cm_one_key_reg_logo_width"
+                android:shadowColor="@color/ks_cm_text_shadow_color"
+                android:text="@string/ks_cm_reg_btn_text"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/ks_text_size_20" />
+
+            <Button
+                android:id="@+id/ks_btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ks_cm_login_button_margin"
+                android:layout_weight="1"
+                android:background="@drawable/ks_bg_cm_btn_orange_selector"
+                android:minHeight="@dimen/ks_cm_one_key_reg_logo_height"
+                android:minWidth="@dimen/ks_cm_one_key_reg_logo_width"
+                android:shadowColor="@color/ks_cm_text_shadow_color"
+                android:text="@string/ks_cm_logn_btn_text"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/ks_text_size_20" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/ks_loading_view" />
+
+</FrameLayout>

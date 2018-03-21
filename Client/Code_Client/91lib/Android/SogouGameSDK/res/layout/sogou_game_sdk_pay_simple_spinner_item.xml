@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@android:id/text1"
+    style="@style/sogou_game_sdk_pay_label_tv"
+    android:paddingLeft="5dip"
+    android:paddingRight="5dip"
+    android:gravity="center_vertical"    
+    android:singleLine="true"   
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    />

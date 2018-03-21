@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_secondary_top_bar" />
+
+    <RelativeLayout
+        android:id="@+id/active_detail_webview_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/main_tab_top_bar"
+        android:orientation="vertical" >
+
+        <WebView
+            android:id="@+id/activity_active_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp"
+            android:background="@android:color/white"
+             />
+
+        <include
+            android:id="@+id/inc_loading_full_root1"
+            layout="@layout/nmgc_loading_full"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/activity_main_tab_bottom_bar_bg"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:baselineAligned="false"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="56dp"
+                        android:layout_height="56dp" >
+
+                        <ImageView
+                            android:id="@+id/game_info_icon"
+                            android:layout_width="47dp"
+                            android:layout_height="47dp"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@null"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/activity_main_icon_bg" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/game_info_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:singleLine="true"
+                            android:textColor="#4c4d4d"
+                            
+                            android:textSize="18.5sp" />
+
+                        <TextView
+                            android:id="@+id/game_info_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:textColor="#999999"
+                          
+                            android:textSize="13.83sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <include
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/game_download_status_box" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/inc_loading_full_root2"
+            layout="@layout/nmgc_loading_full"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

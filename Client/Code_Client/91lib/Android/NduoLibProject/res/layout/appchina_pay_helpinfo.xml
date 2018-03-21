@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<Button android:id="@+id/pay_back_btn" android:layout_width="150dp"
+		android:layout_alignParentBottom="true" android:padding="8dp"
+		android:layout_centerHorizontal="true" android:layout_marginBottom="5dp"
+		android:layout_height="wrap_content" android:gravity="center"
+		android:textSize="18sp" android:text="返回"
+		android:background="@drawable/appchina_pay_by_button_selector"
+		android:textColor="#ffffff" />
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_marginLeft="8dp"
+		android:layout_marginRight="8dp"
+		android:layout_height="fill_parent" android:layout_marginTop="10dp"
+		android:layout_marginBottom="5dp"
+		android:layout_above="@id/pay_back_btn">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:layout_above="@id/pay_back_btn"
+			android:orientation="vertical">
+			<TextView android:id="@+id/sys_help" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" style="@style/appchina_pay_text_gray_16" />
+			<TextView android:id="@+id/cp_help" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" style="@style/appchina_pay_text_gray_16" />
+		</LinearLayout>
+	</ScrollView>
+</RelativeLayout>

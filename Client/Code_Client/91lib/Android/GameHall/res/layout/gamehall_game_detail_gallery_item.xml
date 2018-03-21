@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.sina.youxi.app.game.GameImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gamehall="http://gamehall.com"
+    android:id="@+id/gamehall_game_image"
+    android:layout_width="@dimen/gamehall_detail_width"
+    android:layout_height="@dimen/gamehall_detail_height"
+    android:layout_margin="3dip"
+    android:src="@drawable/gamehall_detail_default"
+    gamehall:BorderColor="#4D4D4D" />

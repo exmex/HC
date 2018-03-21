@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_background_color"
+    android:orientation="vertical"
+    android:scrollbars="none" >
+
+    <ImageView
+        android:id="@+id/sogou_logo_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dip"
+        android:layout_marginTop="9dip"
+        android:background="@drawable/sogou_title_logo"
+        android:contentDescription="@string/reg_page_img_tips" />
+
+    <TextView
+        android:id="@+id/login_express_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_marginLeft="28dp"
+        android:paddingBottom="5dp"       
+        android:paddingTop="30dp"
+        android:text="@string/login_express_label"
+        android:textSize="17sp" />
+	<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="28dp"
+        android:orientation="horizontal"
+        android:paddingTop="5dp" >
+
+        <ImageView
+            android:id="@+id/login_express_agree_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/select_press"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/login_express_agree_text"
+            style="@style/main_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="@string/agree"
+            android:textSize="17sp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_marginTop="15dp"   
+        android:paddingLeft="28dp" 
+        android:paddingRight="28dp"                 
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/regist_btn"
+            style="@style/button_font"
+            android:layout_width="100dp"
+            android:layout_height="44dp"             
+            android:layout_alignParentLeft="true"  
+            android:background="@drawable/button_red_press"
+            android:text="@string/login_express_account_perfect" />
+
+        <Button
+            android:id="@+id/login_btn"
+            style="@style/button_font"
+            android:layout_width="100dp"
+            android:layout_height="44dp"            
+            android:layout_alignParentRight="true"            
+            android:background="@drawable/button_black_press"
+            android:text="@string/sogou_login_text" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="15dp" >
+
+        <LinearLayout
+            android:id="@+id/login_qq_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/third_login_press"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/login_qq_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sogou_qq"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/login_sina_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/login_qq_line"
+            android:background="@drawable/third_login_press"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/login_sina_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sogou_sina" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/login_rr_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/login_sina_line"
+            android:background="@drawable/third_login_press"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/login_rr_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/sogou_renren" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    
+
+</LinearLayout>

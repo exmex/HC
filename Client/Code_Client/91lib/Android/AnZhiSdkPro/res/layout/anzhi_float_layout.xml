@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"    
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/anzhi_logo"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:paddingTop="6dp"
+        android:paddingRight="6dp"
+        android:clickable="true"
+        android:layout_gravity="center"
+        android:background="@drawable/anzhi_back_float_norma"
+         >
+        <TextView
+            android:id="@+id/txt0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:visibility="gone"
+            android:background="@drawable/anzhi_remind"
+            android:gravity="center"          
+            android:textSize="8sp" />
+    </RelativeLayout>
+        
+</LinearLayout>

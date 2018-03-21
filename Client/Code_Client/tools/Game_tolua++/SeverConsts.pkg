@@ -1,0 +1,21 @@
+$#include "SeverConsts.h"
+#include <string>
+#include "Singleton.h"
+#include "CurlDownload.h"
+#include "libOS.h"
+
+class SeverConsts 
+	: public Singleton<SeverConsts>
+	, public CurlDownload::DownloadListener
+	, public libOSListener
+{
+public:
+	static SeverConsts* getInstance();
+	const std::string getServerInfoByLua();
+	const std::string & getBaseVersion() const { return mSeverVerson; }
+	void setIsInLoading(bool isInLoading);
+	const std::string & getServerInGrayMsg();
+	const std::string & getServerInUpdateMsg();
+	int getSeverDefaultID();
+};
+

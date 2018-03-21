@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <!-- title -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/nmgc_login_title_height"
+        android:background="@drawable/nmgc_global_title" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/nmgc_login_x_right"
+            android:layout_marginTop="@dimen/nmgc_login_title_top"
+            android:contentDescription="@string/nmgc_global_title"
+            android:src="@drawable/nmgc_x"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/nmgc_login_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/nmgc_login_title_top"
+            android:text="@string/nmgc_bind_dialog_title"
+            android:textSize="@dimen/nmgc_login_title_text_size" />
+    </RelativeLayout>
+
+    
+    <!-- choice -->
+    <LinearLayout
+        android:id="@+id/nmgc_findpwd_choice_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/nmgc_bind_choice_bindphone_root"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/nmgc_setting_list_item_height"
+            android:layout_marginLeft="@dimen/nmgc_setting_body_margin_left"
+            android:layout_marginRight="@dimen/nmgc_setting_body_margin_left"
+            android:layout_marginTop="@dimen/nmgc_setting_body_margin_top"
+            android:background="@drawable/nmgc_item_all_bg_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingLeft="@dimen/nmgc_setting_head_margin_left" >
+
+            <TextView
+                android:id="@+id/nmgc_findpwd_choice_bindphone_text"
+                style="@style/nmgc_common_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/nmgc_setting_bindphone" />
+
+            <ImageView
+                android:id="@+id/nmgc_findpwd_choice_bindphone_enter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/nmgc_next" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/nmgc_bind_choice_bindmail_root"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/nmgc_setting_list_item_height"
+            android:layout_marginLeft="@dimen/nmgc_setting_body_margin_left"
+            android:layout_marginRight="@dimen/nmgc_setting_body_margin_left"
+            android:layout_marginTop="@dimen/nmgc_setting_body_margin_top"
+            android:background="@drawable/nmgc_item_all_bg_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingLeft="@dimen/nmgc_setting_head_margin_left" >
+
+            <TextView
+                android:id="@+id/nmgc_findpwd_choice_bindmail_text"
+                style="@style/nmgc_common_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/nmgc_setting_bindmail" />
+
+            <ImageView
+                android:id="@+id/nmgc_findpwd_choice_bindmail_enter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/nmgc_next" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <include layout="@layout/flsdk_base_bg_layout_port" />
+
+    <WebView
+        android:id="@+id/flsdk_webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="fill_horizontal"
+        android:scrollbars="none"
+        android:layout_marginTop="45.0dip"
+        android:layerType="software"
+        android:scrollbarStyle="insideOverlay" />
+
+    <Button
+        android:id="@+id/flsdk_newPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:background="@drawable/flsdk_forum_post"
+        android:onClick="onNewPostClick"
+        android:visibility="gone" />
+
+    <include layout="@layout/flsdk_base_loading_layout" />
+
+</merge>

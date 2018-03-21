@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="@dimen/ks_entry_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ks_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/ks_entry_input_padding" >
+
+        <TextView
+                android:id="@+id/entry_layout_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/ks_entry_padding"
+                android:gravity="center"
+                android:text="@string/ks_agreement"
+                android:textColor="@color/ks_entry_txt"
+                android:textSize="@dimen/ks_entry_txt" />
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/ks_entry_padding"
+            android:background="#b9b9b9" />
+
+        <ScrollView
+            android:id="@+id/clause_web"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ks_clause_height"
+            android:layout_marginTop="@dimen/ks_entry_padding" >
+
+            <LinearLayout
+                android:id="@+id/clause_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/clause_alltext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/ks_entry_tips"
+                    android:textColor="@color/ks_entry_txt" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ks_entry_padding" >
+
+            <Button
+                android:id="@+id/clause_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ks_entry_btn_height"
+                android:background="@drawable/ks_btn_white_selector"
+                android:text="@string/ks_back_reg"
+                android:textColor="@color/ks_entry_txt"
+                android:textSize="@dimen/ks_entry_txt" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

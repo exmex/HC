@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 我的主页帖子列表Item -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="8.0dip"
+    android:paddingLeft="4.0dip"
+    android:paddingRight="4.0dip"
+    android:paddingTop="8.0dip" >
+
+    <ImageView
+        android:id="@+id/au_icon"
+        android:layout_width="60.0dip"
+        android:layout_height="60.0dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10.0dip"
+        android:background="@drawable/flsdk_user_icon_default"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/au_icon"
+        android:layout_alignTop="@+id/au_icon"
+        android:layout_marginLeft="12.0dip"
+        android:layout_toRightOf="@+id/au_icon" >
+
+        <TextView
+            android:id="@+id/au_name"
+            style="@style/flsdk_style_077df7_14"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="left"
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/post_info_lay"
+            android:text="auth 123" />
+
+        <LinearLayout
+            android:id="@+id/post_info_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/flsdk_posts_item_time_icon" />
+
+            <TextView
+                android:id="@+id/post_time"
+                style="@style/flsdk_style_2b261c_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6.0dip"
+                android:text="2013-12-12" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:src="@drawable/flsdk_posts_item_reply_icon" />
+
+            <TextView
+                android:id="@+id/post_reply_cnt"
+                style="@style/flsdk_style_2b261c_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6.0dip"
+                android:text="11" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/post_title"
+            style="@style/flsdk_style_494e54_16"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/post_info_lay"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/post_content"
+            style="@style/flsdk_style_9a9a9a_14"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/post_title"
+            android:ellipsize="end"
+            android:lines="2" />
+    </RelativeLayout>
+
+</RelativeLayout>

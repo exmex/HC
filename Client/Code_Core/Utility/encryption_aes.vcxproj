@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7585E6F6-0BC7-4AA8-BE41-E3ACD6857878}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>encryption_aes</RootNamespace>
+    <ProjectName>Utility</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)..\build\$(Configuration).win32\</OutDir>
+    <TargetName>Utility</TargetName>
+    <IntDir>$(SolutionDir)..\build\$(Configuration).win32.intermediate\$(ProjectName)</IntDir>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)..\build\$(Configuration).win32\</OutDir>
+    <IntDir>$(SolutionDir)..\build\$(Configuration).win32.intermediate\$(ProjectName)</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_UTILITY_USE_;REGISTER_FAC_AND_MAKE_DEFAULT;WIN32;_DEBUG;_WINDOWS;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\jsoncpp-src-0.5.0\include;$(SolutionDir)extensions;$(ProjectDir)..\cocos2dx;$(ProjectDir)..\cocos2dx\include;$(ProjectDir)..\cocos2dx\kazmath\include;$(ProjectDir)..\cocos2dx\platform\third_party\win32;$(ProjectDir)..\cocos2dx\platform\win32;$(ProjectDir)..\cocos2dx\platform\third_party\win32\OGLES;$(ProjectDir)..\CocosDenshion\include;$(ProjectDir)..\scripting\lua\cocos2dx_support;$(ProjectDir)..\scripting\lua\lua;$(ProjectDir)..\scripting\lua\tolua;$(ProjectDir)..\core\include;$(ProjectDir)..\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>winsock2.h;</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;opengl32.lib;glew32.lib;libcocos2d.lib;json.lib;libCocosDenshion.lib;libcurl_imp.lib;libzlib.lib;core.lib;liblua.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>LinkVerboseLib</ShowProgress>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_UTILITY_USE_;WIN32;_WINDOWS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ForcedIncludeFiles>winsock2.h;</ForcedIncludeFiles>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\jsoncpp-src-0.5.0\include;$(SolutionDir)extensions;$(ProjectDir)..\cocos2dx;$(ProjectDir)..\cocos2dx\include;$(ProjectDir)..\cocos2dx\kazmath\include;$(ProjectDir)..\cocos2dx\platform\third_party\win32;$(ProjectDir)..\cocos2dx\platform\win32;$(ProjectDir)..\cocos2dx\platform\third_party\win32\OGLES;$(ProjectDir)..\CocosDenshion\include;$(ProjectDir)..\scripting\lua\cocos2dx_support;$(ProjectDir)..\scripting\lua\lua;$(ProjectDir)..\scripting\lua\tolua;$(ProjectDir)..\core\include;$(ProjectDir)..\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>ws2_32.lib;libExtensions.lib;opengl32.lib;glew32.lib;libcocos2d.lib;json.lib;libCocosDenshion.lib;libcurl_imp.lib;libzlib.lib;core.lib;liblua.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\core\include\Base64.h" />
+    <ClInclude Include="..\core\include\GameEncryptKey.h" />
+    <ClInclude Include="..\core\include\md5.h" />
+    <ClInclude Include="..\core\include\rc4.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\core\src\Base64.cpp" />
+    <ClCompile Include="..\core\src\GameEncryptKey.cpp" />
+    <ClCompile Include="..\core\src\md5.cpp" />
+    <ClCompile Include="..\core\src\rc4.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

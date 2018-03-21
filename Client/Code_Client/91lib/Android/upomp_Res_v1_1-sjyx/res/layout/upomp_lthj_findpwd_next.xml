@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     style="@style/upomp_lthj_scrollview_big">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/upomp_lthj_layout_padding"
+    android:orientation="vertical" >
+    <LinearLayout style="@style/upomp_lthj_info_layout" android:orientation="vertical">
+       <com.unionpay.upomp.lthj.widget.LineFrameView 
+           android:layout_width="fill_parent" android:layout_height="wrap_content"
+           android:src="@drawable/upomp_lthj_user_icon"
+           android:hint="@string/upomp_lthj_username"
+           android:id="@id/upomp_lthj_username_view"
+           />
+       <ImageView style="@style/upomp_lthj_rowline"/>
+       <com.unionpay.upomp.lthj.widget.LineFrameView 
+           android:layout_width="fill_parent" android:layout_height="wrap_content"
+           android:src="@drawable/upomp_lthj_mobile_icon"
+           android:hint="@string/upomp_lthj_mobile"
+           android:id="@id/upomp_lthj_mobile_number_view"
+           />
+    </LinearLayout>
+     <LinearLayout style="@style/upomp_lthj_info_layout" android:orientation="vertical">
+       <com.unionpay.upomp.lthj.widget.LineFrameView 
+           android:layout_width="fill_parent" android:layout_height="wrap_content"
+           android:src="@drawable/upomp_lthj_shield_icon"
+           android:hint="@string/upomp_lthj_safe_ask"
+           android:id="@id/upomp_lthj_safe_ask_view"
+           />
+	</LinearLayout>
+	
+   	<RelativeLayout style="@style/upomp_lthj_input_layout">
+  	  <EditText style="@style/upomp_lthj_input_edittext" android:hint="@string/upomp_lthj_ente_answer" android:layout_centerVertical="true" android:id="@id/upomp_lthj_safe_asw_view"/>
+    </RelativeLayout>
+    <RelativeLayout style="@style/upomp_lthj_input_layout">
+  	  <EditText style="@style/upomp_lthj_input_edittext" android:hint="@string/upomp_lthj_ente_new_pwd" android:layout_centerVertical="true" android:id="@id/upomp_lthj_password_edit"/>
+    </RelativeLayout>
+    <RelativeLayout style="@style/upomp_lthj_input_layout">
+  	  <EditText style="@style/upomp_lthj_input_edittext" android:hint="@string/upomp_lthj_ente_confirm_pwd" android:layout_centerVertical="true" android:id="@id/upomp_lthj_confirm_pwd_input"/>
+    </RelativeLayout>
+    <com.unionpay.upomp.lthj.widget.ValidateCodeView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@id/upomp_lthj_validatecode_layout"
+		    android:visibility="gone" android:layout_marginBottom="@dimen/upomp_lthj_margin_top"/>
+    <Button style="@style/upomp_lthj_button_big_single" android:text="@string/upomp_lthj_ok" android:id="@id/upomp_lthj_button_ok"/>
+</LinearLayout>
+</ScrollView>

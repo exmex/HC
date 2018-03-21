@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom=" "
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:background="@drawable/upomp_tbow_background"
+    android:layout_height="fill_parent" >
+    <!--android:background="@drawable/player_background"-->
+
+	<!-- 头部为固定的布局 -->
+	<LinearLayout android:id="@+id/title_relativeLayout"
+	    android:focusable="true" android:focusableInTouchMode="true"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		style="@android:style/ButtonBar"
+		android:background="@drawable/upomp_tbow_title_bg">
+	
+		<TextView
+			android:id="@+id/titleBarName" 
+			android:layout_width="fill_parent"
+			android:layout_height="40dip"
+			android:gravity="right|center_vertical"
+			android:layout_gravity="right|center_vertical"
+			android:textColor="@color/anzhi_cFFFFFF"
+			android:textSize="17sp"
+			android:text="@string/yl_jiaoyi_guanli"/>
+	
+	</LinearLayout>
+	
+	<!-- 中间动态显示界面  -->
+ 	<LinearLayout android:id="@+id/contentLayout" 
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_below="@id/title_relativeLayout"
+	
+		android:layout_marginBottom="60.0dip">
+	</LinearLayout> 
+	
+	<!-- 底部为固定的布 
+	android:background="@drawable/title_background"
+	-->
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="60.0dip"
+		android:layout_alignParentBottom="true"
+		android:background="@color/anzhi_cFFD3D2D2">
+		
+		<ImageButton android:id="@+id/tab1_transaction"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/upomp_tbow_nav1_on"
+			android:layout_weight="1"
+			>
+		</ImageButton>
+			
+		<ImageButton android:id="@+id/tab2_user"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/upomp_tbow_nav2_default"
+			android:layout_weight="1"
+			>
+		</ImageButton>
+		
+		<ImageButton android:id="@+id/tab3_bakcard"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/upomp_tbow_nav3_default"
+			android:layout_weight="1"
+			>
+		</ImageButton>
+		
+		<ImageButton android:id="@+id/quitapp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/upomp_tbow_nav4_default"
+			android:layout_weight="1"
+			>
+		</ImageButton>
+	
+	</LinearLayout>
+</RelativeLayout>

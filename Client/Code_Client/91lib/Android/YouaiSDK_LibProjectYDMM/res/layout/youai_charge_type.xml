@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- FL 充值方式 布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/charge_type_lay"
+    android:padding="6dp"
+    android:background="@drawable/charge_none_round"
+    android:orientation="horizontal"
+    android:weightSum="4" >
+	<RelativeLayout
+	    android:id="@+id/u2_charge_rl_ydmm"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+         >
+
+        <ImageView
+            android:id="@+id/u2_charge_ydmm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="4.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/u2_charge_main_ydmm" />
+
+        <TextView
+            android:id="@+id/u2_charge_ydmm_tv"
+            style="@style/u2_style_c2c2c2_14"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/u2_charge_ydmm"
+            android:textColor="#9A9A9A"
+            android:layout_centerHorizontal="true"
+            android:text="移动支付" />
+    </RelativeLayout>
+    
+	<RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/u2_charge_alipay_web"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="4.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/u2_charge_main_alipay_web" />
+
+        <TextView
+            android:id="@+id/u2_charge_alipay_web_tv"
+            style="@style/u2_style_c2c2c2_14"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/u2_charge_alipay_web"
+            android:textColor="#9A9A9A"
+            android:layout_centerHorizontal="true"
+            android:text="网页支付" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/u2_charge_alipay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="4.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/u2_charge_main_alipay_normal" />
+
+        <TextView
+            android:id="@+id/u2_charge_alipay_tv"
+            style="@style/u2_style_c2c2c2_14"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/u2_charge_alipay"
+            android:textColor="#9A9A9A"
+            android:layout_centerHorizontal="true"
+            android:text="@string/payali" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+          >
+
+        <ImageView
+            android:id="@+id/u2_charge_tencent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="4.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/u2_charge_main_tencent" />
+
+        <TextView
+            android:id="@+id/youai_charge_type_name2"
+            style="@style/u2_style_c2c2c2_14"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/u2_charge_tencent"
+            android:layout_centerHorizontal="true"
+            android:textColor="#9A9A9A"
+            android:text="@string/paytencent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+
+        <ImageView
+            android:id="@+id/u2_charge_yinlian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="4.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/u2_charge_main_game_card_normal" />
+
+        <TextView
+            android:id="@+id/u2_charge_yinlian_tv"
+            style="@style/u2_style_c2c2c2_14"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/u2_charge_yinlian"
+            android:layout_centerHorizontal="true"
+            android:textColor="#9A9A9A"
+            android:text="充值卡" />
+        
+    </RelativeLayout>
+
+</LinearLayout>

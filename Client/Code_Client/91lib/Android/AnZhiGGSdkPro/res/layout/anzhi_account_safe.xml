@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/size_20" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/size_48"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_marginRight="@dimen/size_10"
+                android:layout_marginTop="@dimen/size_14" >
+
+                <Button
+                    android:id="@+id/bindtel_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/size_40"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/anzhi_button_bg_gray"
+                    android:text="@string/bind_txt"
+                    android:textColor="@color/anzhi_545454"
+                    android:textSize="@dimen/font_18" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/size_48"
+                    android:layout_marginRight="@dimen/size_10"
+                    android:layout_toLeftOf="@id/bindtel_button"
+                    android:background="@drawable/anzhi_textview_normal" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/size_48"
+                        android:layout_centerVertical="true"
+                        android:background="@android:color/white" >
+
+                        <TextView
+                            android:id="@+id/tel_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/size_10"
+                            android:text="@string/anzhi_bind_phone"
+                            android:textColor="@color/anzhi_494949"
+                            android:textSize="@dimen/font_18" />
+
+                        <EditText
+                            android:id="@+id/tel_et"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginRight="5dip"
+                            android:layout_toRightOf="@id/tel_TV"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:enabled="false"
+                            android:hint="@string/anzhi_current_notbind_phone"
+                            android:singleLine="true"
+                            android:textColor="@color/anzhi_494949"
+                            android:textColorHint="@color/anzhi_d0d0d0"
+                            android:textSize="@dimen/font_18"
+                            android:focusable="false" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/size_48"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_marginRight="@dimen/size_10"
+                android:layout_marginTop="@dimen/size_10" >
+
+                <Button
+                    android:id="@+id/bind_email_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/size_40"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/anzhi_button_bg_gray"
+                    android:text="@string/bind_txt"
+                    android:textColor="@color/anzhi_545454"
+                    android:textSize="@dimen/font_18" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/size_48"
+                    android:layout_marginRight="@dimen/size_10"
+                    android:layout_toLeftOf="@id/bind_email_button"
+                    android:background="@drawable/anzhi_textview_normal" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/size_48"
+                        android:layout_centerVertical="true"
+                        android:background="@android:color/white" >
+
+                        <TextView
+                            android:id="@+id/tel_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/size_10"
+                            android:text="@string/anzhi_bind_email"
+                            android:textColor="@color/anzhi_494949"
+                            android:textSize="@dimen/font_18" />
+
+                        <EditText
+                            android:id="@+id/emailet_et"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginRight="5dip"
+                            android:layout_toRightOf="@id/tel_TV"
+                            android:background="@null"
+                            android:enabled="false"
+                            android:hint="@string/anzhi_current_notbind_email"
+                            android:singleLine="true"
+                            android:textColor="@color/anzhi_494949"
+                            android:textColorHint="@color/anzhi_d0d0d0"
+                            android:textSize="@dimen/font_18" 
+                            android:focusable="false"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_marginTop="@dimen/size_48"
+                android:text="@string/anzhi_three_youhui_tequan"
+                android:textColor="@color/anzhi_EB9100"
+                android:textSize="@dimen/font_18" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/size_130"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_marginRight="@dimen/size_10"
+                android:layout_marginTop="@dimen/size_20" >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/size_100"
+                    android:layout_height="@dimen/size_130"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/anzhi_textview_normal" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/white"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dip"
+                            android:background="@color/anzhi_b5d242" >
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="40dip"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/anzhi_bind" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dip"
+                            android:layout_marginRight="4dip"
+                            android:layout_marginTop="@dimen/size_10"
+                            android:lineSpacingExtra="2dip"
+                            android:text="@string/anzhi_bindphone_for_findpwd"
+                            android:textColor="@color/anzhi_494949"
+                            android:textSize="@dimen/font_18" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@android:color/transparent" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/size_100"
+                    android:layout_height="@dimen/size_130"
+                    android:layout_marginLeft="@dimen/size_10"
+                    android:layout_marginRight="@dimen/size_10"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/anzhi_textview_normal" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/white"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dip"
+                            android:background="@color/anzhi_f27b03" >
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="40dip"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/anzhi_bind2" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dip"
+                            android:layout_marginRight="4dip"
+                            android:layout_marginTop="@dimen/size_10"
+                            android:lineSpacingExtra="2dip"
+                            android:text="@string/anzhi_precedence_get_giftbag"
+                            android:textColor="@color/anzhi_494949"
+                            android:textSize="@dimen/font_18" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@android:color/transparent" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/size_100"
+                    android:layout_height="@dimen/size_130"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/anzhi_textview_normal" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/white"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dip"
+                            android:background="@color/anzhi_74d9f7" >
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="40dip"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/anzhi_bind3" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dip"
+                            android:layout_marginRight="4dip"
+                            android:layout_marginTop="@dimen/size_10"
+                            android:lineSpacingExtra="2dip"
+                            android:text="@string/anzhi_precedence_experience_hotgames"
+                            android:textColor="@color/anzhi_494949"
+                            android:textSize="@dimen/font_18" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@android:color/transparent" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">上海仁游</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    
+    
+	<string name="activity_remote_service_binding">AppDemo4</string>
+	<string name="remote_call_failed">Failure calling remote service</string>
+       
+	<string name="partnerHint">"partner"</string>
+	<string name="sellerHint">"seller"</string>
+	<string name="out_trade_noHint">"out_trade_no"</string>
+	<string name="subjectHint">"subject"</string>
+	<string name="bodyHint">"body"</string>
+	<string name="total_feeHint">"total_fee"</string>
+	<string name="notify_urlHint">"notify_url"</string>
+	<string name="charsetHint">"charset"</string>
+	<string name="signTypeHint">"signType"</string>
+	
+	<string name="confirm_install_hint">"安装提示"</string>	
+	<string name="confirm_install">"为保证您的交易安全，需要您安装支付宝安全支付服务，才能进行付款。\n\n点击确定，立即安装。"</string>
+	<string name="ensure">"确定"</string>
+	<string name="cancel">"取消"</string>
+	<string name="check_sign_failed">您的订单信息已被非法篡改。</string> 
+	
+	
+	 <string-array name="control" >  
+        <item>通行证管理</item>  
+        <item>游戏官网</item>  
+        <item>切换用户</item>  
+    </string-array>  
+	
+	 
+	<!-- 有爱字符 -->
+	<string name="title_top">上海仁游社区</string>
+	<string name="title_youai">上海仁游</string>
+	<string name="title_back">返回</string>
+	<string name="title_login">登 录</string>
+	<string name="title_ok">完成</string>
+    <string name="title_change_pass">修改密码</string>
+    <string name="nowpass">原密码:</string>
+    <string name="newpass">新密码:</string>
+    <string name="inputold">输入原密码</string>
+    <string name="inputnew">输入旧密码</string>
+    <string name="change_pass">修改密码</string>
+    <string name="title_man">帐号中心</string>
+    <string name="sub_title_userman">通行证管理</string>
+	<string name="sub_title_bbs">游戏官网</string>
+	<string name="sub_title_logout">注销</string>
+	<string name="select_pay">选择充值方式</string>
+	<string name="payali">快捷支付</string>
+	<string name="paytencent">财付通</string>
+	<string name="payyinlian">银行卡</string>
+	<string name="title_register">注册</string>
+	<string name="regist_name">帐号：</string>
+	<string name="regist_pass">密码：</string>
+	<string name="regist_email">邮箱：</string>
+	<string name="regist_tv">您可以输入邮箱、字母/数字作为通行证帐号,\n也可以使用系统为您默认分配的帐号</string>
+	<string name="user_delete">删除</string>
+	<string name="user_loined">本机已经登录帐号</string>
+	<string name="user_tishi">您现在正使用第三方帐号登录,我们给您生成了一个仁游帐号,点击修改密码可修改仁游帐号密码,方便您下次使用仁游帐号进行登录。</string>
+	
+	<string name="logout">注销</string>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dip"
+    android:layout_height="wrap_content"
+    android:background="@drawable/yyh_sdk_dialog_rect_cir"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/yyh_sdk_dialog_rect_cir_title"
+        android:gravity="center"
+        android:text="@string/yyh_install_appchina_tip"
+        android:textColor="#ffffff"
+        android:textSize="16dip" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="14dip"
+        android:paddingLeft="14dip"
+        android:paddingRight="14dip"
+        android:paddingTop="14dip"
+        android:text="@string/yyh_install_appchina_msg"
+        android:textSize="14dip" />
+
+    <TextView
+        android:id="@+id/tv_btn_install_appchina"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginBottom="8dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="3dip"
+        android:background="@drawable/yyh_button_slector_register_cell"
+        android:gravity="center"
+        android:text="@string/yyh_install_appchina_btn"
+        android:textColor="@color/yyh_a_1"
+        android:textSize="16dip" />
+
+</LinearLayout>

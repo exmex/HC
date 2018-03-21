@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <!-- titlebar上文字大小 -->
+    <dimen name="titlebar_text_size">18sp</dimen>
+    <dimen name="text_size_10_sp">10sp</dimen>
+    <dimen name="text_size_12_sp">12sp</dimen>
+    <dimen name="text_size_14_sp">14sp</dimen>
+    <dimen name="text_size_16_sp">16sp</dimen>
+    <dimen name="text_size_18_sp">18sp</dimen>
+    <dimen name="text_size_20_sp">20sp</dimen>
+    <dimen name="text_size_22_sp">22sp</dimen>
+    <dimen name="text_size_24_sp">24sp</dimen>
+    <dimen name="text_size_10_dp">10dp</dimen>
+    <dimen name="text_size_12_dp">12dp</dimen>
+    <dimen name="text_size_14_dp">14dp</dimen>
+    <dimen name="text_size_16_dp">16dp</dimen>
+    <dimen name="text_size_18_dp">18dp</dimen>
+    <dimen name="text_size_20_dp">20dp</dimen>
+    <dimen name="text_size_22_dp">22dp</dimen>
+    <dimen name="text_size_24_dp">24dp</dimen>
+    
+</resources>

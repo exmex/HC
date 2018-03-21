@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:clickable="true"
+	android:id="@+id/pay_btn"
+	android:background="@drawable/appchina_pay_pay_button_selector"
+	android:padding="5dp"
+	android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+	<ImageView android:id="@+id/pay_btn_img"
+		android:layout_width="27dp"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp" android:layout_height="27dp" />
+	<TextView android:id="@+id/pay_btn_text" android:layout_width="wrap_content"
+		android:textColor="#000000"
+		android:textSize="16sp"
+		android:layout_centerVertical="true"
+		android:gravity="center_vertical"
+		android:layout_height="wrap_content" android:layout_toRightOf="@id/pay_btn_img" />
+	<TextView android:id="@+id/tx1" android:layout_width="wrap_content"
+		android:layout_marginLeft="5dp"
+		android:textColor="#000000"
+		android:textSize="16sp"
+		android:text="("
+		android:layout_centerVertical="true"
+		android:gravity="center_vertical"
+		android:layout_height="wrap_content" android:layout_toRightOf="@id/pay_btn_text" />
+	<TextView android:id="@+id/tx2" android:layout_width="wrap_content"
+		android:textColor="#00cc99"
+		android:textSize="16sp"
+		android:text="1元"
+		android:layout_centerVertical="true"
+		android:gravity="center_vertical"
+		android:layout_height="wrap_content" android:layout_toRightOf="@id/tx1" />
+	<TextView android:id="@+id/tx3" android:layout_width="wrap_content"
+		android:textColor="#000000"
+		android:textSize="16sp"
+		android:text="="
+		android:layout_centerVertical="true"
+		android:gravity="center_vertical"
+		android:layout_height="wrap_content" android:layout_toRightOf="@id/tx2" />
+	<TextView android:id="@+id/tx4" android:layout_width="wrap_content"
+		android:textColor="#ff6600"
+		android:textSize="16sp"
+		android:layout_centerVertical="true"
+		android:gravity="center_vertical"
+		android:layout_height="wrap_content" android:layout_toRightOf="@id/tx3" />
+	<TextView android:id="@+id/tx5" android:layout_width="wrap_content"
+		android:textColor="#000000"
+		android:textSize="16sp"
+		android:text=")"
+		android:layout_centerVertical="true"
+		android:gravity="center_vertical"
+		android:layout_height="wrap_content" android:layout_toRightOf="@id/tx4" />
+</RelativeLayout>

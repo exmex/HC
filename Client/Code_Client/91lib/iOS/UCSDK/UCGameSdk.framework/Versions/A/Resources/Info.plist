@@ -1,0 +1,9 @@
+{
+	"CFBundleDevelopmentRegion" = English;
+	CFBundleExecutable = UCGameSdk;
+	CFBundleIdentifier = "cn.uc.UCGameSdk";
+	"CFBundleInfoDictionaryVersion" = "6.0";
+	CFBundlePackageType = FMWK;
+	CFBundleSignature = "????";
+	CFBundleVersion = 1000;
+}

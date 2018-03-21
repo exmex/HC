@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="nearmepay_dialog_width">297dip</dimen>
+    <dimen name="nearmepay_dialog_loading_width">237dp</dimen>
+</resources>

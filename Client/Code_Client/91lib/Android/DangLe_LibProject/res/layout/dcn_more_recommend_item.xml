@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dcn_item"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingLeft="15dp"
+    android:paddingRight="5dp"
+    >
+
+    <ImageView
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:id="@+id/dcn_icon"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/dcn_icon_default"
+        android:layout_marginRight="10dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dcn_name"
+                android:textColor="@color/dcn_light_black"
+                android:textSize="16sp"
+                android:singleLine="true" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dcn_desc"
+                android:singleLine="true"
+                android:textColor="@color/dcn_login_edit_hint"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dcn_version"
+            android:singleLine="true"
+            android:textColor="@color/dcn_login_edit_hint"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dcn_size"
+            android:textColor="@color/dcn_light_black"
+            android:textSize="16sp"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dcn_install"
+            android:background="@drawable/dcn_install_btn_selector"
+            android:textColor="#00C1EE"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/dcn_recommended_install"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

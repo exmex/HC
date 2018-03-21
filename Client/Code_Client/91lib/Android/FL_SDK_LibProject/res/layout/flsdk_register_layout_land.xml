@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <include layout="@layout/flsdk_base_bg_layout_land" />
+
+    <LinearLayout style="@style/flsdk_style_body_lay_land" >
+
+        <LinearLayout 
+            android:layout_width="332.0dip"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal"
+        	android:layout_gravity="center_horizontal">
+        	
+            <com.fl.gamehelper.ui.widget.BaseEditTextView
+	            android:id="@+id/flsdk_register_account_lay"
+	            android:layout_width="280.0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5.0dip"/>
+            
+            <!-- added by hanqingan 20130814 随机获取账号按钮 -->
+            <com.fl.gamehelper.ui.widget.BoldButton
+                android:id="@+id/flsdk_register_auto_loginname_btn"
+                style="@style/flsdk_style_btn_yellow"                
+                android:layout_width="42.0dip"
+                android:layout_marginLeft="2.0dip"
+                android:layout_height="36.0dip"             
+                android:onClick="autoLoginNameClick"                
+                android:text="@string/flsdk_account_register_auto_loginname" />
+            
+        </LinearLayout>
+        
+		<LinearLayout
+            android:layout_width="332.0dip"
+        	android:layout_height="wrap_content"
+        	android:orientation="vertical"
+        	android:layout_gravity="center_horizontal">
+            
+		    <TextView
+	            android:id="@+id/flsdk_register_account_tip"
+	            style="@style/flsdk_style_c2c2c2_14"
+	            android:layout_width="280.0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="2.0dip"
+	            android:layout_marginLeft="5.0dip"
+	            android:text="@string/flsdk_register_account_tip" />
+		    
+		    <com.fl.gamehelper.ui.widget.BaseEditTextView
+	            android:id="@+id/flsdk_register_new_pwd_lay"
+	            android:layout_width="280.0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5.0dip"
+	            android:gravity="center_vertical" 
+	            android:layout_marginLeft="5.0dip"/>
+		    
+		    <TextView
+	            android:id="@+id/flsdk_register_new_pwd_tip"
+	            style="@style/flsdk_style_c2c2c2_14"
+	            android:layout_width="280.0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="2.0dip"
+	            android:text="@string/flsdk_register_new_pwd_tip"
+	            android:visibility="gone" 
+	            android:layout_marginLeft="5.0dip"/>
+	
+	        <com.fl.gamehelper.ui.widget.BaseEditTextView
+	            android:id="@+id/flsdk_register_sure_pwd_lay"
+	            android:layout_width="280.0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5.0dip"           
+	            android:gravity="center_vertical" 
+	            android:layout_marginLeft="5.0dip"/>
+	          
+	        <include
+	            android:id="@+id/flsdk_register_pwd_check_lay"
+	            android:layout_width="280.0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="2.0dip"
+	            layout="@layout/flsdk_base_checkbox_layout"
+	            android:visibility="gone" 
+	            android:layout_marginLeft="5.0dip"/>		    
+	
+	        <include
+	            android:layout_width="120.0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical|center"
+	            android:layout_marginBottom="10.0dip"
+	            android:layout_marginLeft="5.0dip"
+	            android:layout_marginRight="25.0dip"
+	            android:layout_marginTop="5.0dip"
+	            layout="@layout/flsdk_register_button_layout" />
+	
+	        <!--登录飞流已有账号 added by hanqingnan 20130814 -->
+	        <LinearLayout
+	            android:id="@+id/flsdk_old_login_btn"
+	            android:layout_width="120.0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical|right"
+	            android:layout_marginRight="44.0dip"
+	            >
+		        <TextView
+		            android:id="@+id/flsdk_login_fl_btn"
+		            style="@style/flsdk_style_c2c2c2_14"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerInParent="true"
+		            android:text=""
+		            android:textIsSelectable="true"
+		            android:layout_marginTop="8.0dip"
+	            	android:layout_marginBottom="5.0dip" >
+		        </TextView>
+			</LinearLayout>
+			
+	        <include
+	            android:layout_width="300.0dip"
+	            android:layout_height="wrap_content"
+	            layout="@layout/flsdk_register_protocal_layout"
+	            android:layout_marginLeft="5.0dip"/>
+	         
+        </LinearLayout>        
+    </LinearLayout>
+
+    <include layout="@layout/flsdk_base_loading_layout" />
+
+</merge>

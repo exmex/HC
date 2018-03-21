@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gamehall_gamelistitem_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/manager_update_loading"
+        layout="@layout/gamehall_loading_view1" />
+
+    <ListView
+        android:id="@+id/manager_update_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top"
+        android:cacheColorHint="#0000"
+        android:divider="@drawable/gamehall_seperator1"
+        android:listSelector="@null" />
+
+</LinearLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@android:color/white" >
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+        <LinearLayout         
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/size_20" >
+
+          
+                <RelativeLayout
+                    android:id="@+id/anzhi_chongzhi_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/size_48"
+                    android:layout_marginLeft="@dimen/size_10"
+                    android:layout_marginRight="@dimen/size_10"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:background="@drawable/anzhi_textview_normal" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/size_48"
+                        android:layout_centerVertical="true"
+                        android:background="@android:color/white" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/size_10"
+                            android:text="@string/anzhi_anzhicurrency_pay"
+                            android:textColor="@color/anzhi_494949"
+                            android:textSize="@dimen/font_16" />
+
+                        <ImageView
+                            android:id="@+id/iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/anzhi_arrow_right" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/chongzhi_log_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/size_48"
+                    android:layout_marginLeft="@dimen/size_10"
+                    android:layout_marginRight="@dimen/size_10"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:background="@drawable/anzhi_textview_normal" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/size_48"
+                        android:layout_centerVertical="true"
+                        android:background="@android:color/white" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/size_10"
+                            android:text="@string/title_currency_history"
+                            android:textColor="@color/anzhi_494949"
+                            android:textSize="@dimen/font_16" />
+
+                        <ImageView
+                            android:id="@+id/iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/anzhi_arrow_right" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/setting_charge_pwd_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/size_48"
+                    android:layout_marginLeft="@dimen/size_10"
+                    android:layout_marginRight="@dimen/size_10"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:background="@drawable/anzhi_textview_normal" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/size_48"
+                        android:layout_centerVertical="true"
+                        android:background="@android:color/white" >
+
+                        <ImageView
+                            android:id="@+id/iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/anzhi_arrow_right" />
+
+                        <TextView
+                            android:id="@+id/setting_textview"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/size_10"
+                            android:gravity="left"
+                            android:text="@string/title_set_paypwd"
+                            android:textColor="@color/anzhi_494949"
+                            android:textSize="@dimen/font_16" />
+
+                        <TextView
+                            android:id="@+id/iv_switch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/iv"
+                            android:text="@string/no_has_setted" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/update_pwd_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/setting_textview"
+                    android:layout_margin="@dimen/size_20"
+                    android:singleLine="true"
+                    android:text="@string/anzhi_modify_paypwd"
+                    android:textColor="@color/anzhi_eb9100"
+                    android:textSize="@dimen/font_18"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_10"
+            android:layout_marginRight="@dimen/size_10"
+             android:layout_marginBottom="@dimen/size_10"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"               
+                android:layout_weight="2"
+                android:background="@drawable/anzhi_textview_normal"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="@string/anzhi_help_customer"
+                android:textColor="@color/anzhi_757575"
+                android:textSize="@dimen/font_12" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"                                     
+                android:autoLink="phone"
+                android:background="@drawable/anzhi_textview_normal_b"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="@string/anzhi_service_tel_3_2"
+                android:textColor="@color/anzhi_757575"
+                android:textSize="@dimen/font_12" />
+        </LinearLayout>
+        </LinearLayout>
+  
+    </ScrollView>
+

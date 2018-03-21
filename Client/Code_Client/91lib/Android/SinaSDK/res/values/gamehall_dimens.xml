@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- 浮动图片的宽高 -->
+    <dimen name="gamehall_float_width">40dip</dimen>
+    <dimen name="gamehall_float_height">40dip</dimen>
+    
+    <!-- 浮动图间距 -->
+    <dimen name="gamehall_float_padding">0dip</dimen>
+
+    <!-- 浮动图片的坐标 -->
+    <dimen name="gamehall_float_x">50dip</dimen>
+    <dimen name="gamehall_float_y">50dip</dimen>
+    
+    <!-- 弹出菜单页 Item宽高 -->
+    <dimen name="gamehall_float_item_width">102dp</dimen>
+    <dimen name="gamehall_float_item_height">70dp</dimen>
+    
+    <!-- 弹出菜单页宽高 -->
+    <dimen name="gamehall_float_item_button_width">26.7dp</dimen>
+    <dimen name="gamehall_float_item_button_height">26.7dp</dimen>
+    
+    <!-- 反馈和存卡箱item高度 -->
+    <dimen name="gamehall_feedback_item_height">48dp</dimen>
+    
+    <!-- 活动大图高度 -->
+    <dimen name="gamehall_activity_img_height">200dip</dimen>
+</resources>

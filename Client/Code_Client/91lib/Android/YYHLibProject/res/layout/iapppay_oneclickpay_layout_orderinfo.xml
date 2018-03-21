@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="0dip" >
+
+     
+    <RelativeLayout
+	    android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_marginTop="@dimen/line_margin_12"
+  		
+	    android:orientation="horizontal" >
+    <TextView
+        style="@style/edit_common_style"
+        android:layout_alignParentLeft="true"
+        android:gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pay_amount_tip"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_15" />
+    <TextView
+        android:id="@+id/pay_amount"
+        style="@style/edit_common_style"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pay_amount"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/iapppay_bg_text_important"
+        android:textSize="@dimen/text_size_important" />
+    </RelativeLayout>
+    
+    
+     <RelativeLayout
+	    android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+    <TextView
+        style="@style/edit_common_style"
+                android:gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="@string/bank_name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_15" />
+    <TextView
+        android:id="@+id/bank_name"
+        style="@style/edit_common_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_15" />
+    </RelativeLayout>   
+    
+    <RelativeLayout
+	    android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+    <TextView
+        style="@style/edit_common_style"
+        android:gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="@string/card_no"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_15" />
+    <TextView
+        android:id="@+id/card_no"
+        style="@style/edit_common_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_15" />
+    </RelativeLayout> 
+    
+</LinearLayout>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nmgc_global_title">温馨提示</string>
+    <string name="nmgc_global_cancel">取消</string>
+    <string name="nmgc_global_queding">确定</string>
+    <string name="nmgc_global_islogin">正在登录…</string>
+    <string name="nmgc_global_ispayment">正在购买…</string>
+    <string name="nmgc_global_retry">重试</string>
+    <string name="nmgc_global_youxitang">游戏堂</string>
+    <string name="nmgc_global_save">保存</string>
+    <string name="nmgc_global_loginretry">登录失败,请重试</string>
+    <string name="nmgc_global_token_timeout">登录超时,为了您的信息安全,请重新登录</string>
+    <string name="nmgc_global_pay_yibao">易宝</string>
+    <string name="nmgc_global_pay_zhifubao">支付宝</string>
+    <string name="nmgc_global_pay_caifutong">财付通</string>
+    <string name="nmgc_global_loading_error_click">加载数据失败，点击重试</string>
+    <string name="nmgc_global_handing">正在处理…</string>
+    <string name="nmgc_global_ischeckorder">正在检查支付结果…</string>
+    <string name="nmgc_global_invalid_imei">非法的IMEI号，无法本机登录</string>
+    
+    <string name="nmgc_global_errorstring_notlogin">用户未登录</string>
+    <string name="nmgc_global_alreadylogin">已经登录</string>
+    <string name="nmgc_global_networkerror">网络异常</string>
+    
+    <string name="nmgc_loading_text">加载中\u2026</string>
+    <string name="nmgc_data_error">加载失败，点击屏幕重试</string>
+    <string name="nmgc_login_line1">您已经登录NearMe帐号,确定使用该帐号快速登录?</string>
+    <string name="nmgc_login_line2">使用其他帐号登录</string>
+    <string name="nmgc_login_hint1">请输入正确格式的帐号或密码</string>
+    <string name="nmgc_login_hint2">帐号或密码错误，请重新输入</string>
+    <string name="nmgc_quick_login">快速登录</string>
+	<string name="nmgc_lg_loginaccount">登录帐号</string>
+    <string name="nmgc_lg_account">帐号:</string>
+    <string name="nmgc_lg_password">密码:</string>
+    <string name="nmgc_lg_account_hint">邮箱/用户名/手机号码</string>
+    <string name="nmgc_lg_register">注册</string>
+    <string name="nmgc_lg_login">登录</string>
+    <string name="nmgc_lg_empty_hint">帐号和密码不能为空</string>
+    <string name="nmgc_charge_phonecharge">话费充值卡</string>
+    <string name="nmgc_charge_zhifubao">支付宝</string>
+    <string name="nmgc_charge_caifutong">财付通</string>
+    <string name="nmgc_charge_bencichongzhi">本次充值:</string>
+    <string name="nmgc_charge_card_type">充值卡类型:</string>
+    <string name="nmgc_charge_yuanbao">元宝</string>
+    <string name="nmgc_charge_content_hint">快速选择要充值的元宝数</string>
+    <string name="nmgc_charge_yuanbaochognzhi">元宝充值</string>
+    <string name="nmgc_charge_card_type_yidong">移动充值卡</string>
+    <string name="nmgc_charge_card_button_1">10元</string>
+    <string name="nmgc_charge_card_button_2">20元</string>
+    <string name="nmgc_charge_card_button_3">30元</string>
+    <string name="nmgc_charge_card_button_4">50元</string>
+    <string name="nmgc_charge_card_button_5">100元</string>
+    <string name="nmgc_charge_card_button_6">200元</string>
+    <string name="nmgc_charge_card_button_7">300元</string>
+    <string name="nmgc_charge_card_button_8">500元</string>
+    <string name="nmgc_charge_button_1">100元宝</string>
+    <string name="nmgc_charge_button_2">200元宝</string>
+    <string name="nmgc_charge_button_3">500元宝</string>
+    <string name="nmgc_charge_button_4">1000元宝</string>
+    <string name="nmgc_charge_button_5">2000元宝</string>
+    <string name="nmgc_charge_button_6">5000元宝</string>
+    <string name="nmgc_charge_card_format">%1$s元=%2$s元宝</string>
+    <string name="nmgc_charge_format">需支付%s元</string>
+    <string name="nmgc_charge_create_order">正在提交订单…</string>
+    <string name="nmgc_charge_create_order_failure">提交订单失败，请重试</string>
+    <string name="nmgc_charge_fail">支付失败</string>
+    <string name="nmgc_charge_yichang">支付异常</string>
+    <string name="nmgc_charge_fail_format">充值失败:%s</string>
+    <string name="nmgc_charge_success">支付成功</string>
+    <string name="nmgc_charge_card_hint">同时支持移动、联通、电信充值卡，请选择等值面额充值卡进行充值</string>
+    <string name="nmgc_charge_empty_hint">请您输入充值的元宝数</string>
+    <string name="nmgc_reg_register_account">注册帐号</string>
+    <string name="nmgc_reg_phone_number">手机号码:</string>
+    <string name="nmgc_reg_phone_number_eleven">11位手机号码</string>
+    <string name="nmgc_reg_read_hint"><u>已阅读注册条款</u></string>
+    <string name="nmgc_reg_getcode">获取验证码</string>
+    <string name="nmgc_reg_getcode_duole">获取验证码过于频繁，请稍候重试</string>
+    <string name="nmgc_reg_numberhasreg">手机号码已注册，请重新输入</string>
+    <string name="nmgc_reg_getcode_error">网络原因获取验证码失败，请重试</string>
+    <string name="nmgc_reg_getcode_not_support_num">抱歉,不支持的号码段,请使用移动或联通号码</string>
+    <string name="nmgc_reg_number_verify">手机验证码</string>
+    <string name="nmgc_reg_yanzhengma">验证码:</string>
+    <string name="nmgc_reg_yanzhengma_hint">4位数字</string>
+    <string name="nmgc_reg_submit">提交验证码</string>
+    <string name="nmgc_reg_wanshanxinxi">完善信息</string>
+    <string name="nmgc_reg_nickname">昵称:</string>
+    <string name="nmgc_reg_mingwenmiam">密码明文显示</string>
+    <string name="nmgc_reg_nickname_hint">2–12汉字、字母、数字</string>
+    <string name="nmgc_reg_password_hint">6–16字母、数字</string>
+    <string name="nmgc_reg_complete">完成</string>
+    <string name="nmgc_reg_agreement_not_read">请勾选“已阅读注册条款”</string>
+    <string name="nmgc_reg_error_phone_number">请输入正确格式的手机号码</string>
+    <string name="nmgc_reg_empty_phone_number">请输入手机号码</string>
+    <string name="nmgc_reg_isgettingcode">正在获取验证码…</string>
+    <string name="nmgc_reg_ischeckingcode">正在验证验证码…</string>
+    <string name="nmgc_reg_pleaseinputcode">请输入验证码</string>
+    <string name="nmgc_reg_sendcodeto">已经发送验证码至</string>
+    <string name="nmgc_reg_countdown">%s秒后可重新获取验证码</string>
+    <string name="nmgc_reg_regetcode">重新获取验证码</string>
+    <string name="nmgc_reg_verifycode_error">验证码错误，请重新输入</string>
+    <string name="nmgc_reg_input_nickname_error_null">请输入昵称</string>
+	<string name="nmgc_reg_input_nickname_error">请输入正确格式的昵称</string>
+	<string name="nmgc_reg_input_nickname_not_11number">昵称不能为11位纯数字，请重新输入</string>
+	<string name="nmgc_reg_input_psw_error_null">请输入密码</string>
+	<string name="nmgc_reg_input_psw_error">请输入正确格式的密码</string>
+	<string name="nmgc_reg_readyreg">准备注册…</string>
+	<string name="nmgc_reg_isreg">正在注册…</string>
+	<string name="nmgc_reg_reginit">初始化信息…</string>
+	<string name="nmgc_reg_regerror">网络原因注册失败，请重试</string>
+	<string name="nmgc_reg_regretry">网络原因注册失败，请重新注册</string>
+	<string name="nmgc_reg_zhucetiaokuan">注册条款</string>
+	<string name="nmgc_reg_qingshiyongshoujihaodenglu">请使用该手机号码作为登录帐号</string>
+	<string name="nmgc_reg_cannotusernicknametologin">昵称不能作为登录帐号，请使用手机号码作为登录帐号</string>
+	<string name="nmgc_reg_out">是否取消注册?</string>
+	<string name="nmgc_reg_shi">是</string>
+	<string name="nmgc_reg_fou">否</string>
+	<string name="nmgc_reg_cancelreg">取消注册</string>
+	<string name="nmgc_reg_regfailure">注册失败</string>
+	<string name="nmgc_reg_lg_failure">登录失败</string>
+	<string name="nmgc_not_install_gamecenter">您没有安装NearMe游戏堂</string>
+	<string name="nmgc_not_login">您还没有登录</string>
+	<string name="nmgc_download_gamecenter">您需要下载“游戏堂”客户端才能查看</string>
+	<string name="nmgc_download_now">立即下载</string>
+	<string name="nmgc_download_game">%s已经开始下载,请到下载管理查看</string>
+	
+	<string name="nmgc_quick_lg_title">登录游戏</string>
+	<string name="nmgc_quick_lg_other_account"><u>使用其他帐号登录</u></string>
+	
+<!-- <string name="nmgc_mobile_destination">106575555350999</string> -->
+	<string name="nmgc_mobile_destination">1065755553500661</string>
+	
+<!-- <string name="nmgc_unicom_destination">106550200389111</string> -->
+	<string name="nmgc_unicom_destination">10655020038915921</string>
+	
+	<string name="nmgc_onekey_hint">快速登录并体验游戏吧!</string>
+	<string name="nmgc_onekey_hasaccount"><u>已有NearMe帐号?</u></string>
+	<string name="nmgc_onekey_login">一键注册登录</string>
+	<string name="nmgc_onekey_lg">欢迎进入游戏</string>
+	<string name="nmgc_onekey_reglg">注册登录</string>
+	<string name="nmgc_onekey_reg_retry">注册失败请重试</string>
+	<string name="nmgc_onekey_nickname">昵称</string>
+	<string name="nmgc_onekey_complete_hint">请输入昵称</string>
+	<string name="nmgc_onekey_complete_nickname_not_empty">昵称不能为空</string>	
+	<string name="nmgc_onekey_complete_setnicknamefailure">网络原因设置昵称失败</string>
+	<string name="nmgc_onekey_lg_error">抱歉，网络原因登录失败，请重试</string>
+	<string name="nmgc_onekey_net_error">您的网络不可用，请设置网络后重试</string>
+	<string name="nmgc_charege_info1">用户:  </string>
+	<string name="nmgc_charege_info2">余额:  </string>
+	<string name="nmgc_charge_info3">还需充值:</string>
+	<string name="nmgc_charge_empty">         </string>
+	<string name="nmgc_charge_getdata_error">网络异常读取数据失败</string>
+	<string name="nmgc_charge_isgetdata">正在读取数据…</string>
+	<string name="nmgc_charge_bind_hint">为了您的资金安全,请<u>绑定手机</u></string>
+	<string name="nmgc_charge_bind_ok">立即绑定</string>
+	<string name="nmgc_charge_bind">绑定手机</string>
+	<string name="nmgc_charge_already_bind">您已经绑定手机</string>
+	<string name="nmgc_charge_bind_ok_line"><u>绑定手机</u></string>
+	<string name="nmgc_charge_paytype_yichang">渠道异常,请使用其他支付方式</string>
+	<string name="nmgc_user_balance_not_enough">USER_BALANCE_NOT_ENOUGH</string>
+	<string name="nmgc_bind_hint">短信可能会有延迟，请耐心等候，如果您长时间没有收到短信，请60秒以后重新获取验证码。</string>
+	<string name="nmgc_bind_pleasedostepone">请先获取验证码</string>
+	<string name="nmgc_bind_getcode_success">获取验证码成功</string>
+	<string name="nmgc_bind_isbinding">正在绑定…</string>
+	<string name="nmgc_bind_failure">网络原因绑定手机失败，请重试</string>
+	<string name="nmgc_bind_code_timeout">验证码已过期,请重新获取</string>
+	<string name="nmgc_bind_success">恭喜您！绑定手机号码成功</string>
+	<string name="nmgc_global_male">男</string>
+	<string name="nmgc_global_female">女</string>
+	
+	<string name="nmgc_setting_title">设置个人信息</string>
+	<string name="nmgc_setting_title_changehead">修改头像</string>
+	<string name="nmgc_setting_changehead_1">新照片</string>
+	<string name="nmgc_setting_changehead_2">从相册中选</string>
+	<string name="nmgc_setting_title_sex">性别:</string>
+	<string name="nmgc_setting_title_nickname">昵称:</string>
+	<string name="nmgc_setting_title_username">用户名:</string>
+	<string name="nmgc_setting_changepwd">修改密码</string>
+	<string name="nmgc_setting_bindphone">绑定手机</string>
+	<string name="nmgc_setting_bindphone_pattern">已绑定手机(%s)</string>
+	<string name="nmgc_setting_bindmail">绑定邮箱</string>
+	<string name="nmgc_setting_bindmail_pattern">已绑定邮箱(%s)</string>
+	<string name="nmgc_setting_findpwd">找回密码</string>
+	<string name="nmgc_setting_issave">正在保存…</string>
+	<string name="nmgc_setting_savesueccess">保存个人信息成功</string>
+	<string name="nmgc_setting_save_error">网络原因保存个人信息失败,请重试</string>
+	<string name="nmgc_setting_complete_reg_title">完善注册信息</string>
+	<string name="nmgc_setting_complete_reg_hint">您目前是游客用户，请完善注册信息后继续绑定手机邮箱。</string>
+	
+	<!-- change pwd -->
+	<string name="nmgc_changepwd_oldpwd">原密码:</string>	
+	<string name="nmgc_changepwd_newpwd">新密码:</string>
+	<string name="nmgc_changepwd_renewpwd">重复密码:</string>    
+	<string name="nmgc_changepwd_pwdhint">6–16位字母、数字</string>
+	<string name="nmgc_changepwd_forgetpwd"><u>忘记原密码？</u></string>
+	<string name="nmgc_changepwd_find1hint">验证码已经发送到您帐号绑定的手机<u>%s</u>。短信可能会有延迟，请耐心等候，如果您长时间没有收到短信，请60秒以后重新获取验证码。</string>
+	<string name="nmgc_changepwd_find1next">下一步</string>
+	<!-- <string name="nmgc_changepwd_youxianghint">您是邮箱注册用户,请到http://uc.nearme.com.cn修改密码</string> -->
+	<string name="nmgc_changepwd_youxianghint">您没有绑定手机，请用其他方式修改密码</string>
+	<string name="nmgc_changepwd_checkerror">抱歉,网络原因验证失败,请重试</string>
+	<string name="nmgc_changepwd_sendcode_success">验证码已经发送到您帐号绑定的手机</string>
+	<string name="nmgc_changepwd_pwderror">请输入正确格式的密码</string>
+	<string name="nmgc_changepwd_pwd_error">密码错误,请重新输入</string>
+	<string name="nmgc_changepwd_pwdnoequal">新密码和重复密码不一致，请重新输入</string>
+	<string name="nmgc_changepwd_changeerror">抱歉,网络原因修改密码失败,请重试</string>
+	<string name="nmgc_changepwd_changesuccess">修改密码成功</string>
+	<string name="nmgc_changepwd_ischanging">正在修改密码…</string>
+	
+	<!-- notification -->
+	<string name="nmgc_notify_percentzero">0%</string>
+	<string name="nmgc_notify_title">下载%s:</string>
+	<string name="nmgc_notify_download_failure">网络原因,下载失败</string>
+	<string name="nmgc_notify_download_next">%s已加入等待队列,稍后开始下载</string>
+	<string name="nmgc_notify_download_isdownloading">开始下载: %s</string>
+	<string name="nmgc_notify_getdata_error">网络原因获取数据失败</string>
+	<string name="nmgc_notify_download_finish_end">下载完成,请点击安装</string>
+	
+	<!-- boy click alert -->
+	<string name="nmgc_boy_alert_button1">游戏论坛</string>
+	<string name="nmgc_boy_alert_button2">活动中心</string>
+	<string name="nmgc_boy_alert_button3">个人资料</string>
+	
+	<!-- login activity -->
+	<string name="nmgc_login_act_forgetpwd"><u>忘记密码？</u></string>
+	<string name="nmgc_login_act_remenberpwd">记住密码</string>
+	<string name="nmgc_login_act_newaccount"><u>注册新帐号</u></string>
+	<string name="nmgc_login_act_regvisitor"><u>使用游客帐号</u></string>
+	<string name="nmgc_login_act_huo">或</string>
+	<string name="nmgc_login_act_upgrade_account"><u>升级为正式帐号</u></string>
+	<string name="nmgc_login_act_v_no_pwd">游客帐号暂无密码</string>
+	
+	<!-- bind mail -->
+	<string name="nmgc_bind_mail_title">绑定邮箱</string>
+	<string	name="nmgc_bind_mail_email">邮箱:</string>
+	<string name="nmgc_bind_mail_hint">输入邮箱地址</string>
+	<string name="nmgc_bind_mail_ok_hint">验证邮件已发送至%s，请登录邮箱点击邮件中的链接完成验证，24小时内有效。</string>
+	<string name="nmgc_bind_mail_input_error">请输入正确的邮箱地址</string>
+	<string name="nmgc_bind_mail_net_error">网络问题，邮件发送失败</string>
+	<string name="nmgc_bind_mail_mailexist">此邮箱已绑定，请输入其它的邮箱地址</string>
+	<string name="nmgc_bind_mail_email_format_error">请输入正确的邮箱地址</string>
+	<string name="nmgc_bind_mail_send">发送验证邮件</string>
+	
+	<!-- bind dialog -->
+	<string name="nmgc_bind_dialog_content">绑定手机或邮箱能帮您在忘记密码时找回密码，现在绑定还将获得10元宝。</string>
+	<string name="nmgc_bind_dialog_title">绑定手机邮箱</string>
+	<string name="nmgc_bind_dialog_hint">绑定手机或邮箱能帮您在忘记密码时找回密码。</string>
+	
+	
+	<!-- find pwd while not login -->
+	<string name="nmgc_findpwd_notlogin_title">找回密码</string>
+	<string name="nmgc_findpwd_notlogin_line1_hint">通过绑定手机找回密码</string>
+	<string name="nmgc_findpwd_notlogin_line2_hint">通过绑定邮箱找回密码</string>
+	<string name='nmgc_findpwd_notlogin_mail_send'>发送重置密码邮件</string>
+	<string name='nmgc_findpwd_notloging_mail_issending'>正在发送…</string>
+	<string name='nmgc_findpwd_notlogin_mail_input_hint'>输入绑定的邮箱地址</string>
+	<string name='nmgc_findpwd_notlogin_mail_send_ok_hint'>重置密码邮件已发送至%s，请登录邮箱点击邮件中的链接设置新密码。</string>
+	<string name='nmgc_findpwd_notlogin_phone_check_net_fail'>网络原因验证失败，请重试</string>
+	<string name="nmgc_findpwd_notlogin_phone_number_not_exist">该手机号未绑定</string>
+	<string name="nmgc_findpwd_notlogin_mail_not_exist">该邮箱未绑定</string>
+	
+	<!-- complete visitor  -->
+	<string name="nmgc_complete_visitor_nameorpwd_error">请输入正确格式的用户名或密码</string>
+	<string name="nmgc_complete_visitor_net_error">网络原因完善信息失败</string>
+	<string name="nmgc_complete_visitor_username_hint">2–12汉字、字母、数字</string>
+	<string name="nmgc_complete_visitor_isloading">正在完善信息…</string>
+	
+	<!-- username pwd reg -->
+	<string name="nmgc_reg_unpwd_title">注册帐号</string>
+	<string name="nmgc_reg_unpwd_net_error">网络原因注册失败</string>
+	<string name="nmgc_reg_unpwd_username_exist">用户名已被占用</string>
+	<string name="nmgc_reg_unpwd_username_not_all_number">用户名不能为纯数字</string>
+	
+	<string name="nmgc_welcome_text">欢迎您，%s</string>
+	
+	<!-- game download status -->
+    <string name="game_download_status_xiazai">下载</string>
+    <string name="game_download_status_dakai">打开</string>
+    <string name="game_download_status_zanting">暂停</string>
+    <string name="game_download_status_jixu">继续</string>
+    <string name="game_download_status_update">更新</string>
+    <string name="game_download_status_update_save">省流量</string>
+    <string name="game_download_status_install">安装</string>
+    <string name="game_download_status_prepare">等待中</string>
+    <string name="game_download_status_installing">安装中</string>
+</resources>

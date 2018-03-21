@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sogou_game_sdk_head_rl"
+    android:layout_width="fill_parent"
+    android:layout_height="43dp"
+    android:background="@drawable/sogou_game_sdk_head_bg"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/sogou_game_sdk_back_img_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:drawableLeft="@drawable/sogou_game_sdk_pay_head_back"
+        android:paddingBottom="11dip"
+        android:paddingLeft="23dip"
+        android:paddingRight="23dip"
+        android:paddingTop="11dip" />
+
+    <TextView
+        android:id="@+id/sogou_game_sdk_logo_text"
+        style="@style/sogou_game_sdk_head_title"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/sogou_game_sdk_head_title" />
+
+    <LinearLayout
+        android:id="@+id/sogou_game_sdk_head_button_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</RelativeLayout>

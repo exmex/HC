@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ks_account_layout_height"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="4dp"
+    android:id="@+id/account_additem_layout"
+    android:background="@drawable/ks_btn_white_selector" >
+    <TextView
+            android:id="@+id/del_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ks_additme_text"
+            android:layout_centerInParent="true"
+            android:textColor="@color/ks_entry_txt"
+            android:textSize="@dimen/ks_additem_text_size" />
+
+</RelativeLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/nmgc_kebi_input_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/nmgc_kebi_input"
+                android:layout_width="150dp"
+                android:layout_height="38dp"
+                android:background="@drawable/nmgc_kebi_input_bg"
+                android:ellipsize="end"
+                android:inputType="number"
+                android:maxLength="12"
+                android:padding="2dp"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/nmgc_kebi_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:textAppearance="@style/nmgc_kebi_hint_number" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/nmgc_kebi_input_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textAppearance="@style/nmgc_kebi_hint_orange" >
+        </TextView>
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/nmgc_kebi_not_enough_hint"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/nmgc_kebi_not_enough"
+        android:textAppearance="@style/nmgc_kebi_hint_orange" />
+
+    <TextView
+        android:id="@+id/nmgc_kebi_ok_button"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/nmgc_kebi_ok_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/nmgc_kebi_complete"
+        android:textAppearance="@style/nmgc_kebi_ok" />
+
+</LinearLayout><!--
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/nmgc_kebi_number_line1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/nmgc_kebi_number_selector"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="100"
+            android:textAppearance="@style/nmgc_kebi_hint_number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/nmgc_kebi_number_selector"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="100"
+            android:textAppearance="@style/nmgc_kebi_hint_number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/nmgc_kebi_number_selector"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="100"
+            android:textAppearance="@style/nmgc_kebi_hint_number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/nmgc_kebi_number_selector"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="100"
+            android:textAppearance="@style/nmgc_kebi_hint_number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/nmgc_kebi_number_line2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/nmgc_kebi_number_selector"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="100"
+            android:textAppearance="@style/nmgc_kebi_hint_number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/nmgc_kebi_number_selector"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="100"
+            android:textAppearance="@style/nmgc_kebi_hint_number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/nmgc_kebi_number_selector"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="100"
+            android:textAppearance="@style/nmgc_kebi_hint_number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/nmgc_kebi_number_selector"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="100"
+            android:textAppearance="@style/nmgc_kebi_hint_number" />
+    </LinearLayout>
+-->

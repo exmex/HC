@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:clickable="true" android:id="@+id/pay_btn"
+	android:background="@drawable/appchina_pay_pay_button_selector"
+	android:padding="5dp" android:layout_marginLeft="10dp"
+	android:layout_marginRight="10dp">
+	<TextView android:id="@+id/pay_btn_text" android:layout_width="wrap_content"
+		android:textColor="#000000" android:textSize="16sp"
+		android:layout_centerInParent="true" android:layout_centerVertical="true"
+		android:gravity="center_vertical" android:layout_height="wrap_content" />
+</RelativeLayout>

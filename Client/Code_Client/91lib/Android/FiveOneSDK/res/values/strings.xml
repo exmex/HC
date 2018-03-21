@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">51GameCenterSDK</string>
+    <string name="package_name">com.fiveone.gamecenter.sdk</string>
+
+</resources>

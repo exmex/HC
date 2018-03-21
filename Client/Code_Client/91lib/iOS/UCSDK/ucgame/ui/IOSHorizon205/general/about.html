@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Cache-Control" content="no-cache;max-age=0" />
+<meta name="viewport" content="width = device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="MobileOptimized" content="320"/>
+<meta name="format-detection" content="telephone=no" />
+<script type="text/javascript" src="../common/js/environment.js?1375336343193"></script>
+<link rel="stylesheet" href="../common/css/base.css?1375336343193"/>
+<link rel="stylesheet" href="../common/css/style_sdk.css?1375336343193"/>
+<link rel="stylesheet" href="../common/css/sui.css?1375336343193"/>
+<title>关于我们</title>
+</head>
+<body>
+<section class="ui-maincontainer">    
+    <!-- 主体内容框 -->
+	<div class="btl_whi pa10">
+	
+	<!-- 游戏信息展示区域 -->
+		<div class="mInfoplay">
+			<div class="content">
+				<a href="#" class="title" id="gameName">新佣兵三国</a>
+				<p class="" id="aboutVersion"></p>
+				<p class="">由 九游 独家代理</p>
+				<p class="" id="aboutPhone"></p>
+			</div>
+		</div>
+	
+	</div>
+</section>
+<!-- 底部版权信息 BEGIN -->
+<div class="btCr_o"></div>
+<div class="btCr"><p>UC优视版权所有</p></div>
+<!-- 底部版权信息 END -->
+<script type="text/javascript" src="../../../sdk/resources/config/environment.js"></script>
+<script type="text/javascript">
+var search = window.location.search;
+var gameName = search.substring(search.indexOf('=') + 1,search.length);
+document.getElementById('gameName').innerHTML = decodeURIComponent(gameName);
+document.getElementById('aboutVersion').innerHTML = "版本号：" + eConfig.version;
+document.getElementById('aboutPhone').innerHTML = "客服电话:" + eConfig.phoneNum;
+</script>
+</body>
+</html>

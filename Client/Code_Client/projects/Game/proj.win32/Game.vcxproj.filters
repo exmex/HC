@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{fc5cb953-2953-4968-83b3-39e3ff951754}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win32">
+      <UniqueIdentifier>{037a9a02-b906-4cc5-ad98-304acd4e25ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{6dd8544d-31ef-4575-ae56-b9496163a4a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\data">
+      <UniqueIdentifier>{d93c5039-0bdb-4ef5-ba6c-6bf74fb8f72b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\data\battle">
+    </Filter>
+    <Filter Include="Resource\data\battle\heroes">
+    </Filter>
+    <Filter Include="Resource\data\debug">
+    </Filter>
+    <Filter Include="Resource\data\event">
+    </Filter>
+    <Filter Include="Resource\data\gametable">
+    </Filter>
+    <Filter Include="Resource\data\gmtools">
+    </Filter>
+    <Filter Include="Resource\data\language">
+    </Filter>
+    <Filter Include="Resource\data\pb">
+    </Filter>
+    <Filter Include="Resource\data\pb\proto">
+    </Filter>
+    <Filter Include="Resource\data\pb\standard">
+    </Filter>
+    <Filter Include="Resource\data\socket">
+    </Filter>
+    <Filter Include="Resource\data\tutorial">
+    </Filter>
+    <Filter Include="Resource\data\ui">
+    </Filter>
+    <Filter Include="Resource\data\ui\announce">
+    </Filter>
+    <Filter Include="Resource\data\ui\controllers">
+    </Filter>
+    <Filter Include="Resource\data\ui\excavate">
+    </Filter>
+    <Filter Include="Resource\data\ui\fruit">
+    </Filter>
+    <Filter Include="Resource\data\ui\guild">
+    </Filter>
+    <Filter Include="Resource\data\ui\listener">
+    </Filter>
+    <Filter Include="Resource\data\ui\parameter">
+    </Filter>
+    <Filter Include="Resource\data\ui\popwindow">
+    </Filter>
+    <Filter Include="Resource\data\ui\uieditor">
+    </Filter>
+    <Filter Include="Resource\data\util">
+    </Filter>
+    <Filter Include="Resource\data\util\cocos2dx">
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GamePlatformInfo.h" />
+    <ClInclude Include="..\Classes\DataTableManager.h" />
+    <ClInclude Include="..\Classes\UpdateLoader.h" />
+    <ClInclude Include="..\Classes\apiforlua.h" />
+    <ClInclude Include="..\Classes\Gamelua.h" />
+    <ClInclude Include="..\Classes\AnnouncementNewPage.h" />
+    <ClInclude Include="..\Classes\ArmatureContainer.h" />
+    <ClInclude Include="..\Classes\SpineContainer.h" />
+    <ClInclude Include="..\Classes\GameNotification.h" />
+    <ClInclude Include="..\Classes\TimeCalculator.h" />
+    <ClInclude Include="..\Classes\PayForPlatform.h" />
+    <ClInclude Include="..\Classes\CCBContainer.h" />
+    <ClInclude Include="..\Classes\CCBManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GamePlatformInfo.cpp" />
+    <ClCompile Include="..\Classes\DataTableManager.cpp" />
+    <ClCompile Include="..\Classes\UpdateLoader.cpp" />
+    <ClCompile Include="..\Classes\apiforlua.cpp" />
+    <ClCompile Include="..\Classes\Gamelua.cpp" />
+    <ClCompile Include="..\Classes\AnnouncementNewPage.cpp" />
+    <ClCompile Include="..\Classes\ArmatureContainer.cpp" />
+    <ClCompile Include="..\Classes\SpineContainer.cpp" />
+    <ClCompile Include="..\Classes\GameNotification.cpp" />
+    <ClCompile Include="..\Classes\TimeCalculator.cpp" />
+    <ClCompile Include="..\Classes\PayForPlatform.cpp" />
+    <ClCompile Include="..\Classes\CCBContainer.cpp" />
+    <ClCompile Include="..\Classes\CCBManager.cpp" />
+  </ItemGroup>
+</Project>

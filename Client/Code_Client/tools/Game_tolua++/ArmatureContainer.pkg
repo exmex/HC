@@ -1,0 +1,32 @@
+$#include "ArmatureContainer.h"
+
+class ArmatureContainer : public CCNode
+{
+	static ArmatureContainer* create(const char* path, const char* name, CCNode* parent = NULL);	
+	void runAnimation(const char* name, unsigned int loopTimes = 1);
+	void changeSkin(CCBone* bone, CCNode* node, bool force = true);
+	void update(float dt,bool value);
+	void changeSkin(const char* boneName, const char* skinName, bool force = true);
+	void changeSkin(const char* boneName, CCLabelTTF* label, bool force = true);
+	void changeSkin(const char* boneName, CCParticleSystem* particle, bool force = true);
+	void registerLuaListener(LUA_FUNCTION listener);
+	void unregisterLuaListener();
+	bool setAction(const char  * name, bool bRemoveQueue=true);
+	void setLoop(bool val);
+	void setResourcePath(const char* resourcePath);
+	std::string getResourcePath() { return m_pResourcePath; };
+	static void clearResource(std::string resourcePath);
+	void setColor(const ccColor3B& color);
+	void tint(float r, float g, float b);
+	int addEffect(const char* resName);
+	int addEffect(const char* resName, CCAffineTransform  const& mat, int zorder);
+	int addEffect(const char* resName, CCPoint pos, int zorder);
+	int addEffect(const char *name, int zorder);
+	void removeEffectWithID(int eid);
+	void removeEffectWithName(const char  * effectName);
+	void useDefaultShader(void);
+	void useShader(const char* shaderName);
+	void setActionElapsed(float elapsed);
+	void setActionSpeeder(float speeder);
+	void setNextAction(const char* actionName);
+};

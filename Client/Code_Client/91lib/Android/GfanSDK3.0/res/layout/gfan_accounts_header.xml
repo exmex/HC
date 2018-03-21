@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="3dp" >
+    
+    <Button 
+        android:id="@+id/account_header_left"
+        android:layout_width="100dp"
+        android:layout_height="42dp"
+	    android:gravity="center"
+        android:text="@string/account_cancle"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/gfan_selector_btn_blue"
+        android:textColor="@color/text_blue" />
+    
+    <Button 
+        android:id="@+id/account_header_right"
+        android:layout_width="100dp"
+        android:layout_height="42dp"
+	    android:gravity="center"
+        android:text="@string/account_ok"
+        android:layout_alignParentRight="true" 
+        android:background="@drawable/gfan_selector_btn_orange"
+        android:textColor="@color/text_orange"
+        />
+
+</RelativeLayout>

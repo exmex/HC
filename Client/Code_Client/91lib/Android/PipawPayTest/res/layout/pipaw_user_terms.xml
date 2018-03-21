@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/terms"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone" >
+
+    <RelativeLayout
+        android:id="@+id/terms_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pp_title_bg" >
+
+        <ImageView
+            android:id="@+id/terms_back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/back_margin_left"
+            android:src="@drawable/pp_btn_back_selector" />
+
+        <TextView
+            android:id="@+id/terms_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_text_size" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/terms_cloud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/pu_bg_cloud" />
+
+    <LinearLayout
+        android:id="@+id/terms_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/terms_cloud"
+        android:layout_marginBottom="10dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/terms_agree_btn"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/pu_btn_small_selector"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_text_size" />
+
+        <Button
+            android:id="@+id/terms_disagree_btn"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:background="@drawable/pu_btn_small_selector"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_text_size" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/terms_buttons"
+        android:layout_marginBottom="10dip"
+        android:layout_below="@id/terms_title" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/terms_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/terms_title_size" />
+
+            <TextView
+                android:id="@+id/terms_content_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="10dip"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/tv_text_size" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

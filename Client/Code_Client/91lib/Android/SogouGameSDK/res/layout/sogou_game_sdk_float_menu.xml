@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sogou_game_sdk_float_menu_bg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sogou_game_sdk_float_menu_bg" >
+
+    <RelativeLayout
+        android:id="@+id/sogou_game_sdk_float_menu_customer_service_rl"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_float_menu_customer_service"
+            style="@style/sogou_game_sdk_float_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/sogou_game_sdk_float_menu_customer_service" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sogou_game_sdk_float_menu_switch_user_rl"
+        android:layout_width="wrap_content"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sogou_game_sdk_float_menu_customer_service_rl" >
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_float_menu_switch_user"
+            style="@style/sogou_game_sdk_float_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:text="@string/sogou_game_sdk_float_menu_switch_user" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sogou_game_sdk_float_menu_perfect_account_rl"
+        android:layout_width="wrap_content"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sogou_game_sdk_float_menu_switch_user_rl" >
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_float_menu_perfect_account"
+            style="@style/sogou_game_sdk_float_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/sogou_game_sdk_float_menu_perfect_account" />
+    </RelativeLayout>
+
+</RelativeLayout>

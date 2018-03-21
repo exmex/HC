@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <include layout="@layout/flsdk_base_bg_layout_land" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="45.0dip"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10.0dip" >
+
+            <WebView
+                android:id="@+id/flsdk_invitation_image_webview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="12.0dip"
+                android:scrollbars="none" />
+
+            <LinearLayout
+                android:id="@+id/flsdk_invitation_code_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/flsdk_invitation_image_webview"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <com.fl.gamehelper.ui.widget.BoldButton
+                    android:id="@+id/flsdk_invitation_num_textview"
+                    style="@style/flsdk_style_white_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/flsdk_invitation_num_pressed_bg"
+                    android:gravity="center"
+                    android:paddingRight="15.0dip"
+                    android:paddingTop="15.0dip"
+                    android:singleLine="true" />
+
+                <com.fl.gamehelper.ui.widget.BoldButton
+                    android:id="@+id/flsdk_invitation_code_textview"
+                    style="@style/flsdk_style_d5bf00_18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/flsdk_invitation_code_bg"
+                    android:gravity="center"
+                    android:paddingTop="18.0dip"
+                    android:singleLine="true" />
+
+                <com.fl.gamehelper.ui.widget.BoldButton
+                    android:id="@+id/flsdk_invitation_copy_textview"
+                    style="@style/flsdk_style_white_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/flsdk_invite_friend_copy_bg"
+                    android:gravity="center"
+                    android:onClick="copyClick"
+                    android:paddingLeft="15.0dip"
+                    android:paddingTop="15.0dip"
+                    android:singleLine="true"
+                    android:text="" />
+            </LinearLayout>
+
+            <WebView
+                android:id="@+id/flsdk_invitation_rule_webview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/flsdk_invitation_code_lay"
+                android:layout_centerHorizontal="true"
+                android:scrollbars="none" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <include layout="@layout/flsdk_base_loading_layout" />
+
+</merge>

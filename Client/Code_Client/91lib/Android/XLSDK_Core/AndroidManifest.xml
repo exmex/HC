@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xunlei.phone.game.component"
+    android:installLocation="preferExternal"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FIFESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application android:allowBackup="true" android:label="XLSDK">
+        <activity
+            android:name="com.xunlei.phone.game.component.activity.XLMainActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.xunlei.phone.game.component.activity.XLChargeCenterActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.xunlei.phone.game.component.activity.XLChargeCommonActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.xunlei.phone.game.component.activity.XLChargeCFT"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.xunlei.phone.game.component.activity.XLChargeYKT"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.xunlei.phone.game.component.activity.XLChargeYKTPay"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.xunlei.phone.game.component.activity.XLChargeYTKResult"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+    </application>
+
+</manifest>

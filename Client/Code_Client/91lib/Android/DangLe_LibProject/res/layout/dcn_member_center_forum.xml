@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dcn_white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:background="@drawable/dcn_action_bar_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dcn_title_height">
+
+            <LinearLayout
+                android:id="@+id/dcn_game_forum_back"
+                android:orientation="horizontal"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:background="@drawable/dcn_back_btn_selector">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dcn_back_ic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dcn_forum"
+                android:layout_centerInParent="true"
+                android:background="@drawable/dcn_back_btn_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:textColor="@color/dcn_ucenter_navi_text_color_pressed"
+                    android:text="@string/dcn_game_forum" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/dcn_grey" />
+
+        <WebView
+            android:id="@+id/dcn_forum_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:background="@color/dcn_white"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/dcn_ucenter_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dcn_title_height"
+        android:background="@drawable/dcn_action_bar_bg"
+        android:paddingBottom="0dp">
+
+        <LinearLayout
+            android:id="@+id/dcn_set_payment_ps_back"
+            android:orientation="horizontal"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:background="@drawable/dcn_back_btn_selector">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dcn_back_ic" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dcn_set_payment_ps_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="22sp"
+            android:textColor="@color/dcn_ucenter_navi_text_color_pressed"
+            android:text="@string/dcn_set_payment_ps"
+            android:textIsSelectable="false" />
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/dcn_payment_content"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:measureWithLargestChild="true">
+        <include
+            android:id="@+id/dcn_payment_condition"
+            layout="@layout/dcn_set_payment_condition"/>
+        <include
+            android:id="@+id/dcn_payment_password"
+            layout="@layout/dcn_set_payment_password"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

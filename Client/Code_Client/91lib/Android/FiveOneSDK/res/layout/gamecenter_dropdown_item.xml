@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal"
+    android:paddingBottom="10dip"
+    android:paddingTop="10dip"
+    tools:context=".activity.LoginActivity" >
+
+    <ImageButton
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/gamecenter_del_acount"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/textview"
+        style="?android:attr/dropDownItemStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/delete"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceSmallInverse"
+        android:textColor="@color/TextColorBlack" />
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/main_tab_top_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/account_top_back_area"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="#FFE9E9E9" >
+
+        <ImageView
+            android:id="@+id/account_title_bar_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/title_icon_margin_left"
+            android:background="@drawable/activity_setting_title_back_icon"
+            android:contentDescription="@null"
+            android:paddingLeft="@dimen/title_icon_margin_left" />
+
+        <TextView
+            android:id="@+id/account_title_bar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/account_title_bar_icon"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/add_account"
+            android:textSize="@dimen/a_text_size"
+    		android:textColor="#4c4d4d" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_color_line_height"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorline_area_1"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorline_area_2"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorline_area_3"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorline_area_4"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorline_area_5"
+            android:contentDescription="@null" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_top_divider"
+        android:background="@drawable/tab_top_divider"
+        android:contentDescription="@null" />
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 支付 land -->
+    <dimen name="nmgc_charge_land_width">468px</dimen>
+    <dimen name="nmgc_charge_land_height">263px</dimen>
+    <dimen name="nmgc_charge_land_index_margin_left">20px</dimen>
+    <dimen name="nmgc_charge_land_index_height">220px</dimen>
+    <dimen name="nmgc_charge_land_index_margin_top">9px</dimen>
+    <dimen name="nmgc_charge_land_index_button_height">50px</dimen>
+    <dimen name="nmgc_charge_land_index_button_width">61px</dimen>
+    <dimen name="nmgc_charge_land_index_tag_margin_left">3px</dimen>
+    <dimen name="nmgc_charge_land_index_tag_content_left">14px</dimen>
+    <dimen name="nmgc_charge_land_content_margin_top">5px</dimen>
+    <dimen name="nmgc_charge_land_content_height">174px</dimen>
+    <dimen name="nmgc_charge_land_content_width">358px</dimen>
+    <dimen name="nmgc_charge_phonecard_land_hint1_margin_top">5px</dimen>
+    <dimen name="nmgc_charge_phonecard_land_hint1_margin_bottom">5px</dimen>
+    <dimen name="nmgc_charge_phonecard_land_okbutton_height">38px</dimen>
+    <dimen name="nmgc_charge_phonecard_land_okbutton_width">296px</dimen>
+    <dimen name="nmgc_charge_zhifubao_land_buttons_margin">35px</dimen>
+    <dimen name="nmgc_charge_zhifubao_land_input_width">143px</dimen>
+    <dimen name="nmgc_charge_zhifubao_land_hint2_margin_top">5px</dimen>
+</resources>

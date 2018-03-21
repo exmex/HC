@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/game_detail_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/game_detail_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/gamehall_headerview"
+        layout="@layout/gamehall_headerview" />
+
+    <LinearLayout
+        android:id="@+id/gamehall_detail_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</LinearLayout>

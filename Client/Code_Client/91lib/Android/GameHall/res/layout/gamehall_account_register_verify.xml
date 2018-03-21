@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true" >
+
+    <include
+        android:id="@+id/account_title_view"
+        android:layout_alignParentTop="true"
+        layout="@layout/gamehall_account_title" />
+
+    <LinearLayout
+        android:id="@+id/logo_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/account_title_view"
+        android:layout_marginTop="10dip"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="输入验证码完成注册"
+            android:textColor="@color/txt_black"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/input_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_view"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/gamehall_login_input"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/securutycode_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:paddingBottom="10dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:text="验证码" />
+
+        <EditText
+            android:id="@+id/securutycode_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/securutycode_label"
+            android:background="@null"
+            android:focusable="true"
+            android:hint="请输入刚刚收到的验证码"
+            android:maxLength="6"
+            android:numeric="integer"
+            android:paddingBottom="15dip"
+            android:paddingTop="15dip"
+            android:singleLine="true"
+            android:textColor="#b3b3b3"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/time_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_view"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/timer_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/timer_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30"
+                android:textColor="#999999"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="秒后后可重新获取验证码"
+                android:textColor="#999999"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/reget_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="12dip"
+            android:background="@drawable/gamehall_recuritycode_reget"
+            android:paddingBottom="8dip"
+            android:paddingTop="8dip"
+            android:text="重新获取验证码"
+            android:textColor="#4c9f02"
+            android:textSize="14dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time_view"
+        android:layout_marginLeft="12dip"
+        android:layout_marginRight="12dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/gamehall_login_btn_selector"
+        android:text="提交验证码"
+        android:textColor="@color/txt_white"
+        android:textSize="16dp" />
+
+</RelativeLayout>

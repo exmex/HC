@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splashLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true" >
+
+            <ImageView
+                android:id="@+id/ImageViewTxwy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="6.0dip"
+                android:contentDescription="@android:string/untitled"
+                android:scaleType="matrix"
+                android:src="@drawable/sdk_guaji" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingBottom="20.0dip" >
+
+                <Button
+                    android:id="@+id/btnBind"
+                    android:layout_width="160.0dip"
+                    android:layout_height="36.0dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20.0dip"
+                    android:background="@drawable/sdk_guest_btn_bd_off"
+                    android:contentDescription="@android:string/untitled"
+                    android:onClick="onBindClick"
+                    android:text="@string/sdk_guest_btn_bd_off"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/btnLater"
+                    android:layout_width="160.0dip"
+                    android:layout_height="36.0dip"
+                    android:layout_below="@id/btnBind"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20.0dip"
+                    android:background="@drawable/sdk_guest_btn_nobd_off"
+                    android:contentDescription="@android:string/untitled"
+                    android:onClick="onLaterClick"
+                    android:text="@string/sdk_guest_btn_nobd_off"
+                    android:textColor="#fff" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageNotice"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="29dp"
+            android:layout_toLeftOf="@+id/textView1"
+            android:adjustViewBounds="true"
+            android:visibility="gone"
+            android:contentDescription="@android:string/untitled"
+            android:src="@drawable/sdk_guest_ts" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="11dp"
+            android:text="@string/guest_notice"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ff9900"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</FrameLayout>

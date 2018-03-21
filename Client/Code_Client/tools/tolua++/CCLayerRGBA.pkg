@@ -1,0 +1,28 @@
+class  CCLayerRGBA : public CCLayer
+{
+ 
+    static CCLayerRGBA* create();
+ 
+    CCLayerRGBA();
+    virtual ~CCLayerRGBA();
+    
+    virtual bool init();
+    
+    virtual GLubyte getOpacity();
+    virtual GLubyte getDisplayedOpacity();
+    virtual void setOpacity(GLubyte opacity);
+    virtual void updateDisplayedOpacity(GLubyte parentOpacity);
+    virtual bool isCascadeOpacityEnabled();
+    virtual void setCascadeOpacityEnabled(bool cascadeOpacityEnabled);
+    
+    virtual const ccColor3B& getColor();
+    virtual const ccColor3B& getDisplayedColor();
+    virtual void setColor(const ccColor3B& color);
+    virtual void updateDisplayedColor(const ccColor3B& parentColor);
+    virtual bool isCascadeColorEnabled();
+    virtual void setCascadeColorEnabled(bool cascadeColorEnabled);
+    
+    virtual void setOpacityModifyRGB(bool bValue) {}
+    virtual bool isOpacityModifyRGB() { return false; }
+};
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/progressBar_dialog"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/loadingbg">
+    <RelativeLayout 
+	    android:id="@+id/layout_progressBar_info"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    android:layout_centerInParent="true">
+	    <ProgressBar
+	        android:id="@+id/progressBar_dialog_progressBar"
+	        android:layout_width="30.0dip"
+	        android:layout_height="30.0dip"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginTop="40.0dip"
+	        android:indeterminateDrawable="@drawable/upomp_tbow_progress" 
+	        />
+	    <TextView
+	        android:id="@+id/textView_progressBar_dialog"
+	        style="@android:style/TextAppearance"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/progressBar_dialog_progressBar"
+	        android:layout_marginTop="5.0dip"
+	        android:layout_marginLeft="15.0dip"
+	        android:text="@string/yl_shaodeng"
+	        android:textColor="@color/anzhi_cff000000"
+	        android:textSize="15.0sp"
+	        android:layout_alignTop="@+id/progressBar_dialog_progressBar"/>
+	    <Button android:id="@+id/btn_progressBar_dialog" 
+		    android:layout_width="80dip"
+			android:layout_height="40dip"
+			android:layout_marginTop="5.0dip"
+	        android:textSize="15.0sp"
+			android:textColor="@color/anzhi_cFF000000" 
+			android:text="@string/yl_quxiao" 
+			android:layout_centerHorizontal="true"
+			android:layout_below="@id/progressBar_dialog_progressBar"
+			/>
+    </RelativeLayout>
+</RelativeLayout>

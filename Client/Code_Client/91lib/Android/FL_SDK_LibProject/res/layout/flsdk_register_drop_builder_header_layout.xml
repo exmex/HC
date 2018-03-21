@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flsdk_account_name_text"
+    style="@style/flsdk_style_9a9a9a_14"
+    android:layout_width="fill_parent"
+    android:layout_height="36.0dip"
+    android:background="@drawable/flsdk_drop_bulider_item_bg"
+    android:drawableLeft="@drawable/flsdk_register_list_header_image_bg"
+    android:drawablePadding="5.0dip"
+    android:gravity="center_vertical"
+    android:minHeight="36.0dip"
+    android:paddingLeft="5.0dip"
+    android:text="@string/flsdk_account_name_text" >
+
+</TextView>

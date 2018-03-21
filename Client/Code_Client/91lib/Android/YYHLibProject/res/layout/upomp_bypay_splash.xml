@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="#ffffff"
+	android:gravity="center">
+	<RelativeLayout android:id="@+id/rl_pay_main_loading"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:background="@drawable/upomp_bypay_loading">
+		<ProgressBar android:id="@+id/p_splash_progress"
+			android:layout_width="40dip" android:layout_height="40dip"
+			android:layout_centerHorizontal="true" android:layout_centerVertical="true"
+			android:indeterminateDrawable="@drawable/upomp_bypay_progress_init" android:layout_marginTop="30dip"/>
+		<TextView android:id="@+id/tv_pay_main_loading"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_below="@+id/p_splash_progress"
+			android:layout_marginTop="10dip" android:layout_centerHorizontal="true"
+			android:text="@string/upomp_bypay_splash_loading" android:textColor="#ffffff"
+			android:textSize="16sp" />
+		<TextView android:id="@+id/tv_pay_main_version"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_below="@+id/tv_pay_main_loading"
+			android:layout_marginTop="100dip" 
+			android:layout_centerHorizontal="true"
+			android:text="@string/upomp_bypay_splash_version" android:textColor="#ffffff" android:textSize="14sp" />
+		<TextView android:id="@+id/tv_pay_main_inc"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"  android:layout_below="@+id/tv_pay_main_version"
+			android:layout_marginTop="10dip"
+			android:text="@string/upomp_bypay_splash_info" android:textColor="#ffffff" />
+		<TextView android:id="@+id/tv_pay_main_inc_2"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true" android:layout_below="@+id/tv_pay_main_inc"
+			android:layout_marginTop="10dip"
+			android:textSize="14sp" android:text="@string/text8"
+			android:textColor="#ffffff" />
+	</RelativeLayout>
+</LinearLayout>

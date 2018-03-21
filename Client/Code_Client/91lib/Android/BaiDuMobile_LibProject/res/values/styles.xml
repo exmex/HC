@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"> 
+       
+    <style name="ebpay_AppBaseTheme" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:screenOrientation">sensor</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+	<style name="ebpay_base_act_anim" >
+        <item name="@android:activityOpenEnterAnimation">@anim/ebpay_activity_fade_in</item>
+        <item name="@android:activityOpenExitAnimation">@anim/ebpay_activity_fade_out</item>
+        <item name="@android:activityCloseEnterAnimation">@anim/ebpay_activity_fade_in</item>
+        <item name="@android:activityCloseExitAnimation">@anim/ebpay_activity_fade_out</item>
+        <item name="android:taskOpenEnterAnimation">@anim/ebpay_activity_fade_in</item> 
+        <item name="android:taskOpenExitAnimation">@anim/ebpay_activity_fade_out</item> 
+        <item name="android:taskCloseEnterAnimation">@anim/ebpay_activity_fade_in</item> 
+        <item name="android:taskCloseExitAnimation">@anim/ebpay_activity_fade_out</item> 
+        <item name="android:taskToFrontEnterAnimation">@anim/ebpay_activity_fade_in</item> 
+        <item name="android:taskToFrontExitAnimation">@anim/ebpay_activity_fade_out</item> 
+        <item name="android:taskToBackEnterAnimation">@anim/ebpay_activity_fade_in</item> 
+        <item name="android:taskToBackExitAnimation">@anim/ebpay_activity_fade_out</item> 
+    </style>
+    
+    <style name="ebpay_Theme_Activity_Base" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:screenOrientation">sensor</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/ebpay_base_act_anim</item>
+        <item name="android:textColor">@color/ebpay_black</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="DialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+		<item name="android:windowFrame">@null</item>
+		<item name="android:windowBackground">@color/ebpay_transparent</item>
+    </style>
+    <style name="ebpay_Theme_Activit" parent="ebpay_Theme_Activity_Base">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/ebpay_translucent_background</item>
+        <item name="android:windowAnimationStyle">@style/ebpay_base_act_anim</item>
+    </style>
+    
+    <style name="ebpay_Theme_Activity_Welcome" parent="ebpay_Theme_Activity_Base">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+    
+	<style name="ebpay_translucent" parent="ebpay_AppBaseTheme">
+		<item name="android:windowBackground">@color/ebpay_translucent_background</item>
+		<item name="android:windowIsTranslucent">true</item>
+	</style>
+	
+    <style name="ebpay_order_price_style">
+        <item name="android:textColor">@color/ebpay_text_ff7800</item>
+        <item name="android:textSize">@dimen/ebpay_text_size_20</item>
+    </style>
+
+    <style name="ebpay_prompt_dialog" parent="@android:style/Theme.Dialog">
+		<item name="android:windowFrame">@null</item>    
+　　 	<item name="android:windowNoTitle">true</item>   
+		<item name="android:textColor">@color/ebpay_black</item>
+		<item name="android:windowBackground">@color/ebpay_transparent</item>
+    	<item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="ebpay_icon_common_style">
+        <item name="android:layout_width">@dimen/ebpay_line_height</item>
+        <item name="android:layout_height">@dimen/ebpay_line_height</item>
+        <item name="android:contentDescription">@string/ebpay_img</item>
+        <item name="android:scaleType">center</item>
+    </style>
+    
+    <style name="edit_common_style">
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/ebpay_text_size_15</item>
+        <item name="android:background">@null</item>
+    </style></resources>

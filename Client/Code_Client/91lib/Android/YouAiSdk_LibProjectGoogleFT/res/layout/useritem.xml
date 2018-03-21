@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/userlistcenter"
+    android:layout_height="60dp" >
+
+    <ImageButton
+        android:id="@+id/useuserbt"
+        android:layout_alignParentLeft="true"
+        android:layout_width="40dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/togglebtn"
+        android:visibility="visible"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        />
+    
+   
+    <TextView
+        android:id="@+id/usertv"
+        android:layout_width="wrap_content"
+        android:gravity="left|center_vertical"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+		android:layout_toRightOf="@+id/useuserbt"
+		android:layout_toLeftOf="@+id/deluserbt_ture"
+        android:textColor="@color/TextColorWhite"
+        android:singleLine="true"
+        android:layout_centerVertical="true"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+<Button
+        android:id="@+id/deluserbt_ture"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_delete_bg"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        android:textColor="@color/TextColorBlue"
+        android:text="@string/user_delete" 
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        
+        />
+     <ImageButton
+       android:id="@+id/deluserbt"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/iv_delete"
+        android:layout_marginRight="15dp"
+         />
+     
+
+</RelativeLayout>

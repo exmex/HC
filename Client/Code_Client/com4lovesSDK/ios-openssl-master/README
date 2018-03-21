@@ -1,0 +1,50 @@
+This script builds OpenSSL 1.0.1c for iOS.
+
+Precompiled binaries and headers are also included and can be used directly in
+your project.
+
+It builds multi-architecture libaries with support for armv7, armv7s (iPhone 5) and
+i386 (for running in the simulator).
+
+This script is known to work with the following combination of software versions:
+
+ * MacOS X 10.8.1
+ * XCode 4.5 GM & iOS SDK 6.0
+
+The compiled libraries should be downward compatible to iOS 4.0 at least.
+
+Important: Support for ARMv6 has been removed because Xcode 4.5 does not support
+that architecture anymore. This means that these libraries cannot be used on the
+iPhone 3G or older. File an issue if that is a really big deal for you and I will
+try to work around that Xcode limitation.
+
+Building is done by invoking the build.sh script:
+
+ ./build.sh
+
+It will take about 5 minutes on a modern Mac. The result of the build can be found at:
+
+ lib/ - will contain libssl.a and libcrypto.a
+ include/ - will contain all OpenSSL headers
+
+If you just want cryptographic functions then you can skip libssl.a and just add
+libcrypto.a to your project.
+
+Making your code find the OpenSSL headers works best if the path to the include director is
+added to the 'Header Search Paths' in your target settings.
+
+The Example directory contains a little sample app. It calculates a SHA1 digest using
+the OpenSSL API.
+
+IMPORTANT
+
+I included pre-compiled binaries of the openssl libraries in this project mostly for my
+own convenience. But you should really not trust me and do two things:
+
+ 1) Verify that the openssl-1.0.1c.tar.gz file is authentic by comparing it's SHA1
+    hash to the one found on http://www.openssl.org/source/ You can do this with
+    the 'openssl sha1 openssl-1.0.1c.tar.gz' command.
+ 2) Compile your own version of the library as explained above
+
+Enjoy :-)
+

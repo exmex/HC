@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name0">Game</string>
+    <string name="xl_alipay_remote_call_failed">Failure calling remote service</string>
+    <string name="xl_alipay_partnerHint">"partner"</string>
+    <string name="xl_alipay_sellerHint">"seller"</string>
+    <string name="xl_alipay_out_trade_noHint">"out_trade_no"</string>
+    <string name="xl_alipay_subjectHint">"subject"</string>
+    <string name="xl_alipay_bodyHint">"body"</string>
+    <string name="xl_alipay_total_feeHint">"total_fee"</string>
+    <string name="xl_alipay_notify_urlHint">"notify_url"</string>
+    <string name="xl_alipay_charsetHint">"charset"</string>
+    <string name="xl_alipay_signTypeHint">"signType"</string>
+    <string name="xl_alipay_confirm_install_hint">"安装提示"</string>
+    <string name="xl_alipay_confirm_install">"为保证您的交易安全，需要您安装支付宝安全支付服务，才能进行付款。\n\n点击确定，立即安装。"</string>
+    <string name="xl_alipay_check_new">正在检查安全支付服务版本</string>
+    <string name="xl_alipay_Ensure">"确定"</string>
+    <string name="xl_alipay_Cancel">"取消"</string>
+    <string name="xl_alipay_check_sign_failed">您的订单信息已被非法篡改。</string>
+
+    <!-- 登录页 -->
+    <string name="xl_account_login">帐号登录</string>
+    <string name="xl_username">帐号</string>
+    <string name="xl_username_input_hint">迅雷帐号可直接登录</string>
+    <string name="xl_password">密码</string>
+    <string name="xl_password_input_hint">请输入密码</string>
+    <string name="xl_login">登录</string>
+    <string name="xl_register_right_now">注册</string>
+    <string name="xl_forget_password">忘记密码?</string>
+    <string name="xl_login_loading">登录中...</string>
+    <string name="xl_forget_password_url">http://aq.xunlei.com/password_find.html</string>
+    <string name="xl_login_please_select_account">请选择帐号：</string>
+    <string name="xl_vertical_line">|</string>
+    <string name="xl_login_remember_password">记住密码</string>
+
+    <!-- 快速登录页 -->
+    <string name="xl_fastlogin">快速登录</string>
+    <string name="xl_fastlogin_tip">检测到已登录过的帐号，点击快速登录进入游戏</string>
+    <string name="xl_switch_account">切换帐号</string>
+
+    <!-- 注册页 -->
+    <string name="xl_account_register">帐号注册</string>
+    <string name="xl_register_username_input_tip">6-16位字母数字组合</string>
+    <string name="xl_register_password_input_tip">6-16位任意字符组合</string>
+    <string name="xl_confirm_password">确认密码</string>
+    <string name="xl_verify_code">验证码</string>
+    <string name="xl_verify_code_tip">看不清，换一张</string>
+    <string name="xl_register">注册</string>
+    <string name="xl_return">返回</string>
+    <string name="xl_register_loading">注册中...</string>
+    <string name="xl_register_user_protocol">《用戶使用协议》</string>
+    <string name="xl_register_user_protocol_url">http://i.xunlei.com/tos.shtml</string>
+    <string name="xl_register_get_phone_number_fail">获取手机号码失败，请手动填写：</string>
+    <string name="xl_register_cancel_send_message">注：未填写则视为取消发送</string>
+    <string name="xl_register_next">继续</string>
+    <string name="xl_register_system_already_gen_account">系统已自动为您分配好帐号和密码</string>
+    <string name="xl_register_you_can_click">你也可以点击</string>
+    <string name="xl_register_manually_input">手动填写</string>
+    <string name="xl_register_send_account">将帐号和密码发送到当前手机</string>
+	<string name="xl_register_already_agree">已同意</string>
+	<string name="xl_register_fail">服务器异常，请过一段时间再尝试登录</string>
+	
+    <!-- Toast tips -->
+    <string name="xl_login_username_input_empty_tip">请输入用户名</string>
+    <string name="xl_user_notexist_tip">用户名不存在，请重新输入</string>
+    <string name="xl_login_password_input_empty_tip">请输入密码</string>
+    <string name="xl_password_error_tip">密码错误，请重新输入</string>
+    <string name="xl_login_success_tip">登录成功</string>
+    <string name="xl_register_username_input_error_tip">帐号：6-16位数字或字母组合，不能以数字开头</string>
+    <string name="xl_register_password_input_error_tip">密码：6-16位数字或字母组合</string>
+    <string name="xl_confirm_password_input_error_tip">确认密码不一致</string>
+    <string name="xl_register_disagree_protocol_tip">请勾选同意用户使用协议</string>
+    <string name="xl_verify_code_input_empty_tip">请输入验证码</string>
+    <string name="xl_verify_code_input_error_tip">验证码错误</string>
+    <string name="xl_register_success_tip">注册成功</string>
+    <string name="xl_account_exist_tip">帐号已存在</string>
+    <string name="xl_password_error_login_again_tip">密码错误，请重新登录</string>
+    <string name="xl_connect_errror">网络错误，请检查您的网络配置是否正常</string>
+    <string name="xl_operator_fail">操作失败，请稍后重试</string>
+    <string name="xl_loading_web">载入中，请稍后</string>
+    <string name="xl_try_login_later">服务器异常，请过一段时间再尝试登录</string>
+
+    <!-- 充值页 -->
+    <string name="xl_charge_inputPrice">请输入充值金额</string>
+    <string name="xl_zft">支付宝</string>
+    <string name="xl_cft">财付通</string>
+    <string name="xl_credit">信用卡</string>
+    <string name="xl_bank">储蓄卡</string>
+    <string name="xl_ykt">手机充值卡</string>
+    <string name="xl_yuan">元</string>
+    <string name="xl_yd">移动充值卡</string>
+    <string name="xl_lt">联通充值卡</string>
+    <string name="xl_dx">电信充值卡</string>
+    <string name="xl_input_pas">请输入密码</string>
+    <string name="xl_input_account">请输入卡号</string>
+    <string name="xl_error_account">卡号输入长度不正确，请重新输入</string>
+    <string name="xl_error_pas">密码输入长度不正确，请重新输入</string>
+    <string name="xl_illegal_price">请输入小于5000的非0充值金额</string>
+    <string name="xl_error_getting_order">信息获取失败，请稍后重试</string>
+    <string name="xl_error_pay">支付失败</string>
+    <string name="xl_charge_checkVersion">正在检查安全支付版本</string>
+    <string name="xl_charge_success">支付成功</string>
+    <string name="xl_charge_chargeInfo1">元人民币可以兑换</string>
+    <string name="xl_charge_chargeInfo2">个大掌门元宝</string>
+    <string name="xl_charge_xlNotice">为了保护帐户安全， 请确认支付信息</string>
+    <string name="xl_charge_otherPrice">其他金额：</string>
+    <string name="xl_charge_click2Input">  点击输入</string>
+    <string name="xl_charge_chargeComfirm">确认支付</string>
+    <string name="xl_charge_game_name">游戏名称</string>
+    <string name="xl_charge_userName">用户名：</string>
+    <string name="xl_charge_amount">充值金额</string>
+    <string name="xl_charge_way2Pay">请选择支付方式：</string>
+    <string name="xl_charge_ykt_way2Pay">请选择支付卡类型：</string>
+    <string name="xl_charge_alipay">支付宝</string>
+
+    <string name="xl_charge_current_account">当前帐号</string>
+    <string name="xl_charge_rate">兑换比例</string>
+    <string name="xl_charge_channel">支付方式</string>
+    <string name="xl_charge_denomination">请选择充值卡面额：</string>
+    <string name="xl_charge_ykt_desc">充值说明</string>
+    <string name="xl_charge_ykt_desc1">手机充值卡支付说明：</string>
+    <string name="xl_charge_ykt_desc_pop1">1. 建议您记录下充值后生成的订单号，一旦发生问题，我们将通过该订单号进行跟踪处理。</string>
+    <string name="xl_charge_ykt_desc_pop2">2. 卡内金额将一次全额扣除，请务必使用与您持有面额相同的移动充值卡，否则可能会导致支付不成功或支付金额丢失，我们无法帮您找回。</string>
+    <string name="xl_charge_ykt_desc_pop3">3. 请仔细核对您的充值卡序列号和密码，如果因为错误输入而导致您充值卡失效，我们会尽力帮您找回，但仍存在无法找回的可能。</string>
+    <string name="xl_charge_ykt_desc_pop4">4. 请您注意，系统目前不支持任何面额的彩铃充值卡和短信充值卡，请您切勿使用相关卡片充值，以免给您带来损失。</string>
+    <string name="xl_charge_ykt_desc_pop5">5. 由于网络延迟，您的充值可能有些许延迟，一般将于1到30分钟内兑换成功，如超过30分钟仍未兑换成功，请您联系客服。感谢您对我们的支持和理解！</string>
+    <string name="xl_charge_ykt_account">卡号：</string>
+    <string name="xl_charge_ykt_account_hint">请输入充值卡序列号码</string>
+    <string name="xl_charge_ykt_pas">密码：</string>
+    <string name="xl_charge_ykt_pas_hint">请输入充值卡密码</string>
+    <string name="xl_charge_ykt_ok">下单成功！</string>
+    <string name="xl_charge_ykt_order">订单号：</string>
+    <string name="xl_charge_ykt_time">到账时间将在1到5分钟内，请留意您的游戏账户。</string>
+    <string name="xl_charge_ykt_call">如有问题请拨打客户电话：</string>
+    <string name="xl_charge_go_back">返回游戏</string>
+    <string name="xl_charge_beside_5000">请输入5000以内的整数</string>
+    
+    <string name="xl_ny_bank">农业银行</string>
+    <string name="xl_zs_bank">招商银行</string>
+    <string name="xl_js_bank">建设银行</string>
+    <string name="xl_gd_bank">光大银行</string>
+    <string name="xl_gf_bank">广发银行</string>
+    <string name="xl_zx_bank">中信银行</string>
+    <string name="xl_ms_bank">民生银行</string>
+    <string name="xl_hr_bank">华润银行</string>
+    <string name="xl_zg_bank">中国银行</string>
+    <string name="xl_gs_bank">工商银行</string>
+    <string name="xl_sfz_bank">深发展银行</string>
+    <string name="xl_xy_bank">兴业银行</string>
+    <string name="xl_pa_bank">平安银行</string>
+</resources>

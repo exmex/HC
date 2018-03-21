@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/dcn_title_and_list"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dcn_action_bar_bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dcn_title_height">
+
+            <LinearLayout
+                android:id="@+id/dcn_msg_back"
+                android:orientation="horizontal"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:background="@drawable/dcn_back_btn_selector">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dcn_back_ic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dcn_action_xiala"
+                android:layout_centerInParent="true"
+                android:background="@drawable/dcn_back_btn_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:textColor="@color/dcn_ucenter_navi_text_color_pressed"
+                    android:text="@string/dcn_message_center" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/dcn_action_xiala"
+                    android:src="@drawable/dcn_action_bar_xiala" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/dcn_read_all_button"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="@drawable/dcn_ucenter_btn_selector"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/dcn_ucenter_btn_text"
+                android:textSize="14sp"
+                android:text="@string/dcn_read_all_msg" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/dcn_grey" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/dcn_message_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/dcn_grey"
+                android:dividerHeight="1px"
+                android:cacheColorHint="@android:color/transparent"
+                android:listSelector="@android:color/transparent" />
+
+            <TextView
+                android:id="@+id/dcn_no_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textSize="16sp"
+                android:textColor="@color/dcn_black"
+                android:text="@string/dcn_no_message" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/dcn_color_login_box_gb" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dcn_update_message"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@id/dcn_title_and_list"
+        android:layout_centerInParent="true"
+
+        android:visibility="gone"
+        android:clickable="true"
+        android:textSize="14sp"
+        android:textColor="@color/dcn_black"
+        android:text="@string/dcn_load_more_message" />
+
+</RelativeLayout>

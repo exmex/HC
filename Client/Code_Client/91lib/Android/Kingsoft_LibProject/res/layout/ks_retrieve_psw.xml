@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="@dimen/ks_entry_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ks_bg"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/ks_entry_input_padding"
+        android:paddingBottom="@dimen/ks_entry_padding"
+        android:paddingLeft="@dimen/ks_entry_padding_mid"
+        android:paddingRight="@dimen/ks_entry_padding_mid" >
+
+        <TextView
+            android:id="@+id/entry_layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/ks_entry_padding"
+            android:gravity="center"
+            android:text="@string/ks_psw_title"
+            android:textColor="@color/ks_entry_txt"
+            android:textSize="@dimen/ks_entry_txt" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ks_entry_input_padding"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ks_psw_tips1"
+                android:textColor="@color/ks_entry_txt"
+                android:textSize="@dimen/ks_psw_txt" />
+
+            <TextView
+                android:id="@+id/retrieve_psw_website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ks_entry_padding"
+                android:drawableLeft="@drawable/ks_internet"
+                android:drawablePadding="5dp"
+                android:textColor="@color/ks_light_blue"
+                android:textSize="@dimen/ks_psw_txt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ks_entry_input_padding"
+                android:text="@string/ks_psw_tips2"
+                android:textColor="@color/ks_entry_txt"
+                android:textSize="@dimen/ks_psw_txt" />
+
+            <TextView
+                android:id="@+id/retrieve_psw_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ks_entry_padding"
+                android:drawableLeft="@drawable/ks_tel"
+                android:drawablePadding="5dp"
+                android:textColor="@color/ks_light_blue"
+                android:textSize="@dimen/ks_psw_txt" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/ks_line" 
+            android:layout_marginTop="@dimen/ks_entry_padding"/>
+
+        <Button
+            android:id="@+id/retrieve_psw_ok"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ks_entry_btn_height"
+            android:background="#00000000"
+            android:text="@string/ks_know"
+            android:textColor="@color/ks_entry_txt"
+            android:textSize="@dimen/ks_entry_txt" />
+    </LinearLayout>
+
+</LinearLayout>

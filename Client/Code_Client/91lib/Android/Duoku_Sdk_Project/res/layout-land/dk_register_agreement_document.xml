@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/userloginroot"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:gravity="center_vertical"
+    android:paddingLeft="70dp"
+    android:paddingRight="70dp">
+
+    <!-- titlebar区域 -->
+    <include layout="@layout/dk_user_login_lan_header"
+        android:id="@+id/dk_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+	
+    <!-- 可滑动区域 -->   
+    <ScrollView 
+        android:layout_width="fill_parent"
+	    android:layout_height="250dp"
+	    android:fadeScrollbars="false"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbarThumbVertical="@drawable/dk_scrollbar_gray"
+	    android:background="@drawable/dk_bg_bottom"
+	    android:layout_below="@id/dk_head"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:paddingTop="20dp"
+	        android:paddingLeft="12dp"
+	        android:paddingRight="12dp" 
+	        >
+			
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/dk_color_333333"
+                android:text="@string/dk_userregister_licence"/>
+
+        </LinearLayout>
+    </ScrollView>
+	
+    <include layout="@layout/dk_user_login_shadow"
+        android:layout_width="fill_parent"
+        android:layout_height="8dp"
+        android:layout_below="@id/dk_head"
+        />
+		
+</RelativeLayout>

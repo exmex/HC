@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+    <RelativeLayout
+        android:id="@+id/surplus_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+		<TextView
+	        android:id="@+id/tv_pay_type_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:ellipsize="end"
+	        android:singleLine="true"
+	        android:textSize="@dimen/ebpay_text_size_18"
+        	android:textColor="@color/ebpay_text_333333"
+	        android:text="@string/ebpay_pay_mode_surplus" />
+		<TextView
+	        android:id="@+id/tv_surplus"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/tv_pay_type_name"
+	        android:layout_marginLeft="15dp"
+	        android:layout_centerVertical="true"
+	        android:ellipsize="end"
+	        android:singleLine="true"
+	       	android:textSize="@dimen/ebpay_text_size_18"
+        	android:textColor="@color/ebpay_text_333333" />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+		
+		<RelativeLayout
+		    android:id="@+id/pwd_area_layout"
+		    android:layout_width="fill_parent"
+		    android:layout_height="44dp"
+		    android:clickable="true"
+		    android:gravity="center_vertical" >
+		    <EditText
+		        android:id="@+id/et_pay_pass"
+		        style="@style/edit_common_style"
+		        android:layout_width="match_parent"
+		        android:layout_height="45dp"
+		        android:textColor="@color/ebpay_text_333333"
+            	android:textSize="@dimen/ebpay_text_size_15"
+            	android:background="@drawable/ebpay_bg_edit_seletor"
+		        android:drawableLeft="@drawable/ebpay_shape_line_gray"
+		        android:drawablePadding="5dp"
+		        android:hint="@string/ebpay_pay_pass" 
+		        android:inputType="textPassword"
+                android:maxLength="20"
+                android:paddingLeft="43dp"/>
+		    <ImageView
+		        android:id="@+id/custom_edit_view_img"
+		        android:src="@drawable/ebpay_ic_pwd"
+		        style="@style/ebpay_icon_common_style" />
+		</RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_repair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/pwd_area_layout"
+            android:textColor="@color/ebpay_text_333333"
+            android:textSize="@dimen/ebpay_text_size_15"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="repairInfo"
+            android:padding="10dp" 
+            android:visibility="gone"/>
+    </RelativeLayout>
+</LinearLayout>

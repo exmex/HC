@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/anzhi_bg_ab"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@drawable/anzhi_button_back"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/back_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_marginRight="@dimen/size_10"
+                android:src="@drawable/anzhi_arrow_back"
+                android:clickable="false"
+                android:focusable="false" />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                android:background="@drawable/anzhi_line_back" />
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dip"
+                android:text="@string/title_user_center"
+                android:textColor="@color/anzhi_ffffff"
+                android:textSize="@dimen/size_20" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ib_pay_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size_20"
+            android:background="@drawable/anzhi_pay_close"
+            android:padding="@dimen/size_5"
+            android:visibility="gone"
+           />
+
+        <RelativeLayout
+            android:id="@+id/ll_clear_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/anzhi_button_back"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/bt_clear_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:src="@drawable/anzhi_clear_msg" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/gift_bag_icon"
+            android:layout_width="@dimen/size_70"
+            android:visibility="gone"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/anzhi_button_back"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                <ImageView
+                    android:id="@+id/bt_gift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/size_10"
+                    android:background="@drawable/anzhi_gift_bag" />
+
+                <TextView
+                    android:id="@+id/gift_bag_new"
+                    style="@style/anzhi_float_menu_update"
+                    android:layout_alignRight="@id/bt_gift"
+                    android:layout_alignTop="@id/bt_gift"
+                    android:background="@drawable/anzhi_remind"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/actionbar" >
+    </RelativeLayout>
+
+</RelativeLayout>

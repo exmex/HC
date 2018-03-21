@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 登陆页面，包括登陆，手机注册，用户名注册的layout -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/yyh_login_dialog_layout_parent_width"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/yyh_sdk_dialog_rect_cir"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical" >
+
+    <!-- title部分 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:background="@drawable/yyh_sdk_dialog_rect_cir_title"
+        android:gravity="center"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip" >
+
+        <TextView
+            android:id="@+id/tv_title_info"
+            android:layout_width="match_parent"
+            android:layout_height="25dip"
+            android:layout_marginLeft="22dip"
+            android:gravity="center"
+            android:paddingRight="@dimen/yyh_login_dialog_layout_content_padding_lr"
+            android:textColor="#cacaca"
+            android:textSize="16dip" />
+
+        <TextView
+            android:id="@+id/tv_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="25dip"
+            android:layout_marginLeft="10dip"
+            android:drawableLeft="@drawable/yyh_header_back"
+            android:drawablePadding="10dip"
+            android:gravity="center_vertical"
+            android:textColor="#cacaca"
+            android:textSize="16dip"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <!--
+         <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginBottom="3dip"
+        android:layout_marginTop="5dip"
+        android:background="#cacaca" />
+    -->
+    <!-- 内容部分 -->
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="@dimen/yyh_login_dialog_layout_content_height"
+        android:orientation="vertical"
+        android:paddingBottom="5dip"
+        android:paddingLeft="@dimen/yyh_login_dialog_layout_content_padding_lr"
+        android:paddingRight="@dimen/yyh_login_dialog_layout_content_padding_lr"
+        android:paddingTop="@dimen/yyh_login_dialog_layout_content_vertical_space" >
+
+        <!-- 登陆 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="5dip"
+            android:visibility="visible" >
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/yyh_login_dialog_layout_content_edittext_height"
+                android:layout_marginBottom="@dimen/yyh_login_dialog_layout_content_vertical_space"
+                android:background="@drawable/yyh_edittext_bg_selector"
+                android:gravity="center_vertical"
+                android:hint="@string/yyh_login_dialog_layout_hint_username"
+                android:paddingLeft="5dip"
+                android:textColorHint="@color/yyh_hint_color"
+                android:textSize="@dimen/yyh_login_dialog_layout_text_size" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/yyh_login_dialog_layout_content_edittext_height"
+                android:layout_below="@id/et_username"
+                android:layout_marginBottom="@dimen/yyh_login_dialog_layout_content_vertical_space"
+                android:background="@drawable/yyh_edittext_bg_selector"
+                android:gravity="center_vertical"
+                android:hint="@string/yyh_login_dialog_layout_hint_password"
+                android:inputType="textPassword"
+                android:paddingLeft="5dip"
+                android:textColorHint="@color/yyh_hint_color"
+                android:textSize="@dimen/yyh_login_dialog_layout_text_size" />
+
+            <TextView
+                android:id="@+id/tv_register"
+                android:layout_width="120dip"
+                android:layout_height="40dip"
+                android:layout_below="@id/et_password"
+                android:background="@drawable/yyh_sdk_c2_sl"
+                android:gravity="center"
+                android:text="@string/yyh_login_dialog_layout_tv_btn_regiser"
+                android:textColor="@color/yyh_a_1"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="120dip"
+                android:layout_height="40dip"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/et_password"
+                android:background="@drawable/yyh_button_register_unclickable"
+                android:gravity="center"
+                android:text="@string/yyh_login_dialog_layout_tv_btn_login"
+                android:textColor="@color/yyh_a_1"
+                android:textSize="16dip" />
+        </RelativeLayout>
+
+        <!-- 手机号注册 -->
+
+        <TextView
+            android:id="@+id/tv_cell_register"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:background="@drawable/yyh_button_slector_register_cell"
+            android:gravity="center"
+            android:text="@string/yyh_login_dialog_layout_tv_btn_cell_register"
+            android:textColor="@color/yyh_a_1"
+            android:textSize="16dip"
+            android:visibility="gone" />
+
+        <!-- 自动获取手机号注册 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_cell_auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_cell_auto_tip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/yyh_login_dialog_layout_content_vertical_space"
+                android:text="@string/yyh_login_dialog_layout_cell_auto_tip"
+                android:textColor="@color/yyh_header_bg"
+                android:textSize="@dimen/yyh_login_dialog_layout_text_size_tv" />
+
+            <EditText
+                android:id="@+id/et_cell_auto_new_psw"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/yyh_login_dialog_layout_content_edittext_height"
+                android:layout_below="@id/tv_cell_auto_tip"
+                android:layout_marginBottom="@dimen/yyh_login_dialog_layout_content_vertical_space"
+                android:background="@drawable/yyh_edittext_bg_selector"
+                android:hint="@string/yyh_login_dialog_layout_cell_auto_hint"
+                android:inputType="textPassword"
+                android:paddingLeft="5dip"
+                android:textColorHint="@color/yyh_hint_color"
+                android:textSize="@dimen/yyh_login_dialog_layout_text_size" />
+
+            <TextView
+                android:id="@+id/tv_cell_auto_login"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_below="@id/et_cell_auto_new_psw"
+                android:background="@drawable/yyh_button_register_unclickable"
+                android:gravity="center"
+                android:text="@string/yyh_login_dialog_layout_cell_auto_tv_btn_login_now"
+                android:textColor="@color/yyh_a_1"
+                android:textSize="16dip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_cell_un_auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/et_cell_un_auto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/yyh_login_dialog_layout_content_edittext_height"
+                android:layout_marginBottom="@dimen/yyh_login_dialog_layout_content_vertical_space"
+                android:background="@drawable/yyh_edittext_bg_selector"
+                android:hint="@string/yyh_login_dialog_layout_cell_un_auto_hint"
+                android:paddingLeft="5dip"
+                android:textColorHint="@color/yyh_hint_color"
+                android:textSize="@dimen/yyh_login_dialog_layout_text_size" />
+
+            <TextView
+                android:id="@+id/tv_cell_un_auto_captcha"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_below="@id/et_cell_un_auto"
+                android:background="@drawable/yyh_button_register_unclickable"
+                android:gravity="center"
+                android:text="@string/yyh_login_dialog_layout_cell_un_auto_tv_btn_captcha"
+                android:textColor="@color/yyh_a_1"
+                android:textSize="16dip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_un_auto_captcha"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/tv_btn_un_auto_get_captcha"
+                android:layout_width="100dip"
+                android:layout_height="40dip"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/yyh_button_slector_register_cell"
+                android:gravity="center"
+                android:text="@string/yyh_login_dialog_layout_tv_btn_cell_auto_get_captcha"
+                android:textColor="@color/yyh_a_1"
+                android:textSize="16dip" />
+
+            <EditText
+                android:id="@+id/et_cell_un_auto_captcha"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/yyh_login_dialog_layout_content_edittext_height"
+                android:layout_marginBottom="@dimen/yyh_login_dialog_layout_content_vertical_space"
+                android:layout_toLeftOf="@id/tv_btn_un_auto_get_captcha"
+                android:background="@drawable/yyh_edittext_bg_selector"
+                android:hint="@string/yyh_login_dialog_layout_cell_un_auto_captcha"
+                android:paddingLeft="5dip"
+                android:textColorHint="@color/yyh_hint_color"
+                android:textSize="@dimen/yyh_login_dialog_layout_text_size" />
+
+            <EditText
+                android:id="@+id/et_cell_un_auto_psw"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/yyh_login_dialog_layout_content_edittext_height"
+                android:layout_below="@id/et_cell_un_auto_captcha"
+                android:layout_marginBottom="@dimen/yyh_login_dialog_layout_content_vertical_space"
+                android:background="@drawable/yyh_edittext_bg_selector"
+                android:hint="@string/yyh_login_dialog_layout_cell_un_auto_psw"
+                android:inputType="textPassword"
+                android:paddingLeft="5dip"
+                android:textColorHint="@color/yyh_hint_color"
+                android:textSize="@dimen/yyh_login_dialog_layout_text_size" />
+
+            <TextView
+                android:id="@+id/tv_btn_cell_unauto_register_login"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_below="@id/et_cell_un_auto_psw"
+                android:background="@drawable/yyh_button_register_unclickable"
+                android:gravity="center"
+                android:text="@string/yyh_login_dialog_layout_normal_register_login"
+                android:textColor="@color/yyh_a_1"
+                android:textSize="16dip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_normal_register"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/et_normal_register_username"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/yyh_login_dialog_layout_content_edittext_height"
+                android:layout_marginBottom="@dimen/yyh_login_dialog_layout_content_vertical_space"
+                android:background="@drawable/yyh_edittext_bg_selector"
+                android:hint="@string/yyh_login_dialog_layout_normal_register_username"
+                android:paddingLeft="5dip"
+                android:textColorHint="@color/yyh_hint_color"
+                android:textSize="@dimen/yyh_login_dialog_layout_text_size" />
+
+            <EditText
+                android:id="@+id/et_normal_register_psw"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/yyh_login_dialog_layout_content_edittext_height"
+                android:layout_below="@id/et_normal_register_username"
+                android:layout_marginBottom="@dimen/yyh_login_dialog_layout_content_vertical_space"
+                android:background="@drawable/yyh_edittext_bg_selector"
+                android:hint="@string/yyh_login_dialog_layout_normal_register_psw"
+                android:inputType="textPassword"
+                android:paddingLeft="5dip"
+                android:textColorHint="@color/yyh_hint_color"
+                android:textSize="@dimen/yyh_login_dialog_layout_text_size" />
+
+            <CheckBox
+                android:id="@+id/cb_bind_cell_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_normal_register_psw"
+                android:layout_marginBottom="20dip"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@drawable/yyh_new_bind_phone"
+                android:drawablePadding="7dip"
+                android:text="@string/yyh_login_dialog_layout_normal_register_bind_cell"
+                android:textColor="#888888"
+                android:textSize="14dip" />
+
+            <TextView
+                android:id="@+id/tv_normal_register_login"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_below="@id/cb_bind_cell_phone"
+                android:background="@drawable/yyh_button_register_unclickable"
+                android:gravity="center"
+                android:text="@string/yyh_login_dialog_layout_normal_register_login"
+                android:textColor="@color/yyh_a_1"
+                android:textSize="16dip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_normal_register_login_bind_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dip"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_btn_normal_register_login_bind_phone_get_captcha"
+                android:layout_width="100dip"
+                android:layout_height="40dip"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/yyh_button_slector_register_cell"
+                android:gravity="center"
+                android:text="@string/yyh_login_dialog_layout_tv_btn_cell_auto_get_captcha"
+                android:textColor="@color/yyh_a_1"
+                android:textSize="16dip" />
+
+            <EditText
+                android:id="@+id/et_normal_register_login_bind_phone_cell_num"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/yyh_login_dialog_layout_content_edittext_height"
+                android:layout_marginBottom="@dimen/yyh_login_dialog_layout_content_vertical_space"
+                android:layout_toLeftOf="@id/tv_btn_normal_register_login_bind_phone_get_captcha"
+                android:background="@drawable/yyh_edittext_bg_selector"
+                android:hint="@string/yyh_login_dialog_layout_cell_un_auto_hint"
+                android:inputType="phone"
+                android:paddingLeft="5dip"
+                android:textColorHint="@color/yyh_hint_color"
+                android:textSize="@dimen/yyh_login_dialog_layout_text_size" />
+
+            <EditText
+                android:id="@+id/et_normal_register_login_bind_phone_captcha"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/yyh_login_dialog_layout_content_edittext_height"
+                android:layout_below="@id/et_normal_register_login_bind_phone_cell_num"
+                android:layout_marginBottom="@dimen/yyh_login_dialog_layout_content_vertical_space"
+                android:background="@drawable/yyh_edittext_bg_selector"
+                android:hint="@string/yyh_login_dialog_layout_cell_un_auto_captcha"
+                android:paddingLeft="5dip"
+                android:textColorHint="@color/yyh_hint_color"
+                android:textSize="@dimen/yyh_login_dialog_layout_text_size" />
+
+            <TextView
+                android:id="@+id/tv_btn_normal_register_login_bind_phone"
+                android:layout_width="120dip"
+                android:layout_height="40dip"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/et_normal_register_login_bind_phone_captcha"
+                android:background="@drawable/yyh_button_register_unclickable"
+                android:gravity="center"
+                android:text="@string/yyh_tv_btn_normal_register_login_bind_phone"
+                android:textColor="@color/yyh_a_1"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/tv_btn_normal_register_login_bind_phone_cancel"
+                android:layout_width="120dip"
+                android:layout_height="40dip"
+                android:layout_below="@id/et_normal_register_login_bind_phone_captcha"
+                android:background="@drawable/yyh_sdk_c2_sl"
+                android:gravity="center"
+                android:text="@string/yyh_tv_btn_normal_register_login_bind_phone_cancel"
+                android:textColor="@color/yyh_a_1"
+                android:textSize="16dip" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_reset_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_reset_password_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/yyh_login_dialog_layout_content_vertical_space"
+                android:gravity="center_vertical"
+                android:text="@string/yyh_tv_reset_passward"
+                android:textColor="#888888"
+                android:textSize="@dimen/yyh_login_dialog_layout_text_size_tv" />
+
+            <EditText
+                android:id="@+id/et_reset_psw_login_info"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginBottom="@dimen/yyh_login_dialog_layout_content_vertical_space"
+                android:background="@drawable/yyh_edittext_bg_selector"
+                android:gravity="center_vertical"
+                android:hint="@string/yyh_shuruyonghuming"
+                android:paddingLeft="5dip"
+                android:singleLine="true"
+                android:textColorHint="@color/yyh_hint_color"
+                android:textSize="@dimen/yyh_login_dialog_layout_text_size"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rl_reset_psw_phone_captcha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/yyh_login_dialog_layout_content_vertical_space"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/tv_btn_reset_psw_phone_captcha_get_captcha"
+                    android:layout_width="80dip"
+                    android:layout_height="40dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="5dip"
+                    android:background="@drawable/yyh_button_slector_register_cell"
+                    android:gravity="center"
+                    android:text="@string/yyh_login_dialog_layout_tv_btn_cell_auto_get_captcha"
+                    android:textColor="@color/yyh_a_1"
+                    android:textSize="@dimen/yyh_login_dialog_layout_text_size_tv" />
+
+                <EditText
+                    android:id="@+id/et_reset_psw_phone_captcha"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/yyh_login_dialog_layout_content_edittext_height"
+                    android:layout_marginBottom="@dimen/yyh_login_dialog_layout_content_vertical_space"
+                    android:layout_toLeftOf="@id/tv_btn_reset_psw_phone_captcha_get_captcha"
+                    android:background="@drawable/yyh_edittext_bg_selector"
+                    android:hint="@string/yyh_login_dialog_layout_cell_un_auto_captcha"
+                    android:paddingLeft="5dip"
+                    android:textColorHint="@color/yyh_hint_color"
+                    android:textSize="@dimen/yyh_login_dialog_layout_text_size" />
+
+                <EditText
+                    android:id="@+id/et_reset_psw_phone_captcha_new_psw"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/yyh_login_dialog_layout_content_edittext_height"
+                    android:layout_below="@id/et_reset_psw_phone_captcha"
+                    android:layout_marginBottom="@dimen/yyh_login_dialog_layout_content_vertical_space"
+                    android:background="@drawable/yyh_edittext_bg_selector"
+                    android:hint="@string/yyh_login_dialog_layout_cell_un_auto_psw"
+                    android:inputType="textPassword"
+                    android:paddingLeft="5dip"
+                    android:textColorHint="@color/yyh_hint_color"
+                    android:textSize="@dimen/yyh_login_dialog_layout_text_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_reset_psw_phone_btns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip" >
+
+                <TextView
+                    android:id="@+id/tv_btn_rl_reset_psw_phone_btn_right"
+                    android:layout_width="120dip"
+                    android:layout_height="40dip"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/yyh_button_register_unclickable"
+                    android:gravity="center"
+                    android:text="@string/yyh_tv_btn_rl_reset_psw_phone_btn_right"
+                    android:textColor="@color/yyh_a_1"
+                    android:textSize="16dip" />
+
+                <TextView
+                    android:id="@+id/tv_btn_rl_reset_psw_phone_btn_left"
+                    android:layout_width="120dip"
+                    android:layout_height="40dip"
+                    android:background="@drawable/yyh_sdk_btn_gray_s"
+                    android:gravity="center"
+                    android:text="@string/yyh_tv_btn_rl_reset_psw_phone_btn_left"
+                    android:textColor="#888888"
+                    android:textSize="16dip" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- footer -->
+
+    <RelativeLayout
+        android:id="@+id/rl_footer"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:gravity="center_horizontal|top"
+        android:paddingBottom="10dip"
+        android:paddingLeft="@dimen/yyh_login_dialog_layout_content_padding_lr"
+        android:paddingRight="@dimen/yyh_login_dialog_layout_content_padding_lr" >
+
+        <LinearLayout
+            android:id="@+id/ll_login_btns"
+            android:layout_width="140dip"
+            android:layout_height="match_parent"
+            android:layout_marginRight="39dip"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <RelativeLayout
+                android:id="@+id/rl_btn_weibo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tv_btn_weibo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yyh_weibo_share" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_btn_renren"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_btn_renren"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yyh_renren_share"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_btn_qq"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tv_btn_qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yyh_qq_share" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_btn_fast"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tv_btn_fast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yyh_fast_login" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_tips_footer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/ll_login_btns"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_footer_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/yyh_login_dialog_layout_also_tip"
+                android:textColor="#888888"
+                android:textSize="14dip"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_btn_tip"
+                android:layout_width="85dip"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical|right"
+                android:paddingRight="6dip"
+                android:text="@string/yyh_wangjimima"
+                android:textColor="@color/yyh_c_3"
+                android:textSize="14dip" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

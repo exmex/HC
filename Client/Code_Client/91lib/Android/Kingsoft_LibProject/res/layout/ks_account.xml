@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="@dimen/ks_entry_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ks_bg"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/ks_entry_padding"
+        android:paddingLeft="@dimen/ks_entry_padding_mid"
+        android:paddingRight="@dimen/ks_entry_padding_mid"
+        android:paddingTop="@dimen/ks_entry_padding" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center" >
+            <TextView  
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:gravity="center"
+            	android:textSize="@dimen/ks_entry_txt"
+            	android:textColor="@color/ks_account_title_text"
+            	android:text="@string/ks_account1"/>
+            
+            <TextView
+                android:id="@+id/account_id"
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:gravity="center"
+            	android:textSize="@dimen/ks_account_id_txt"
+            	android:textStyle="bold"
+            	android:textColor="@color/ks_entry_txt"
+            	/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ks_entry_padding"
+            android:orientation="vertical" >
+           <TextView
+                    android:id="@+id/ks_hadbind_phone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/ks_account_bind_phone_tips_tail"
+                    android:textColor="@color/ks_account_title_text"
+                    android:layout_marginBottom="25dp"
+                    android:visibility="gone"
+                    android:textSize="@dimen/ks_account_bindphone_txt" />
+
+            <RelativeLayout
+                android:id="@+id/ks_go_to_bind_phone_layout"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="@dimen/ks_entry_btn_height"
+                android:background="@drawable/ks_btn_blue_selector"
+                >
+
+                <TextView
+                    android:id="@+id/entry_bind_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/ks_account_bind_phone_tips_tail"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/ks_entry_txt" />
+
+                <ImageView
+                    android:layout_width="@dimen/ks_account_phone_width"
+                    android:layout_height="@dimen/ks_account_phone_height"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/entry_bind_phone"
+                    android:src="@drawable/ks_account_phone" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/account_change_psw"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ks_entry_btn_height"
+                android:background="@drawable/ks_btn_white_selector"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/ks_change_psw"
+                android:textColor="@color/ks_entry_txt"
+                android:textSize="@dimen/ks_entry_txt" />
+
+            <Button
+                android:id="@+id/account_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ks_entry_btn_height"
+                android:background="@drawable/ks_btn_white_selector"
+                android:text="@string/ks_tips_cancel"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/ks_entry_txt"
+                android:textSize="@dimen/ks_entry_txt" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

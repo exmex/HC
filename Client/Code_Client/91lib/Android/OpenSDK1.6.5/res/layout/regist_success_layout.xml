@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:nearme="http://com.nearme.gamecenter.namespace"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE9E9E9"
+    android:orientation="vertical" 
+    android:id="@+id/success_hint_root">
+    
+    <!-- <LinearLayout 
+        ></LinearLayout> -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <RelativeLayout
+            android:id="@+id/success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_successfully_text_margin_top"
+            android:layout_centerHorizontal="true" >
+
+            <ImageView
+                android:id="@+id/success_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/success_hint" />
+
+            <TextView
+                android:id="@+id/regist_success"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px50_text_size"
+                android:layout_toRightOf="@id/success_hint"
+                android:text="@string/regist_success"
+                android:textColor="#494949"
+                android:textSize="@dimen/px70_text_size" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/remember_ur_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/success"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/remember_keke_account_text_margin_top"
+            android:text="@string/resigt_success_hint"
+            android:textColor="#494949"
+            android:textSize="@dimen/px45_text_size" />
+
+        <TextView
+            android:id="@+id/keke_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/remember_ur_account"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/keke_name_margin_top"
+            android:textColor="#494949"
+            android:textSize="@dimen/px50_text_size" />
+
+        <Button
+            android:id="@+id/start_game"
+            android:layout_width="@dimen/login_btn_width"
+            android:layout_height="@dimen/login_btn_height"
+            android:layout_below="@id/keke_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/login_successfully_text_margin_top"
+            android:background="@drawable/keke_login_btn_selector"
+            android:text="@string/start_game"
+            android:textColor="#f7f7f7"
+            android:textSize="@dimen/px50_text_size" />
+
+        
+
+    </RelativeLayout>
+
+</LinearLayout>

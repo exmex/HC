@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#434343"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/manager_group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:background="@android:color/transparent"
+        android:clickable="false"
+        android:textColor="#f2f2f2"
+        android:textSize="@dimen/gamehall_manager_title_textSize"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+
+    <Button
+        android:id="@+id/manager_group_right_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gamehall_manager_allupdate_bg"
+        android:textColor="@android:color/white"
+        android:text="@string/gamehall_manager_all_update"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:visibility="invisible" />
+    
+    <ImageView 
+        android:id="@+id/manager_group_right_img"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+		android:layout_centerVertical="true"
+        android:background="@drawable/gamehall_manager_button_side"
+        android:layout_toLeftOf="@id/manager_group_right_button"
+        android:visibility="invisible" />
+
+</RelativeLayout>

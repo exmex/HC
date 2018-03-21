@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dip" >
+
+    <RelativeLayout
+        android:id="@+id/top_info_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dip"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/mine_info_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" >
+
+            <LinearLayout
+                android:id="@+id/game_logo_outer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="14dip"
+                android:paddingRight="7dip"
+                android:paddingTop="14dip" >
+
+                <FrameLayout
+                    android:id="@+id/logo_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/game_logo"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:src="@drawable/gamehall_logo_default_80" />
+
+                    <ImageView
+                        android:id="@+id/game_logo_style"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/game_logo_outer"
+                android:orientation="vertical"
+                android:paddingTop="10dip" >
+
+                <TextView
+                    android:id="@+id/game_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fca429"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+                    android:id="@+id/top_info_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="3dip"
+                        android:paddingTop="3dip"
+                        android:text="最新活动："
+                        android:textColor="@color/txt_white"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/game_activity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:lineSpacingExtra="2dip"
+                        android:maxLines="2"
+                        android:paddingBottom="1dip"
+                        android:textColor="@color/txt_white"
+                        android:textSize="12dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/mine_game_start_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mine_info_top"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/gamehall_button2_selector1"
+            android:paddingBottom="12dip"
+            android:paddingLeft="24dip"
+            android:paddingRight="24dip"
+            android:paddingTop="12dip"
+            android:text="开始游戏"
+            android:textColor="@color/txt_white"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/top_progress_view"
+        android:layout_width="match_parent"
+        android:layout_height="140dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar.Small.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dip"
+            android:text="@string/gamehall_loadmore"
+            android:textColor="@color/txt_white"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+</FrameLayout>

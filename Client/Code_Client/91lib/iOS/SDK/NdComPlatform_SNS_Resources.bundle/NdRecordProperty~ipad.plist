@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>categoryController</key>
+	<dict>
+		<key>frameTable</key>
+		<string>{{7,6},{628,389}}</string>
+	</dict>
+	<key>listController</key>
+	<dict>
+		<key>frameTable</key>
+		<string>{{0,1},{640,390}}</string>
+		<key>cellHeight</key>
+		<string>50</string>
+		<key>pickerRowHeight</key>
+		<string>36</string>
+		<key>pickerMargin</key>
+		<string>{{8,10},{8,10}}</string>
+		<key>colorOddCell</key>
+		<string>0.725,0.722,0.745,1</string>
+		<key>colorEvenCell</key>
+		<string>0.851,0.851,0.882,1</string>
+		<key>dicFontSize</key>
+		<dict>
+			<key>titleSize</key>
+			<string>17</string>
+			<key>timeSize</key>
+			<string>16</string>
+			<key>tipSize</key>
+			<string>16</string>
+		</dict>
+		<key>pageTable</key>
+		<dict>
+			<key>pageSize</key>
+			<string>10</string>
+			<key>pageCountOnce</key>
+			<string>1</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

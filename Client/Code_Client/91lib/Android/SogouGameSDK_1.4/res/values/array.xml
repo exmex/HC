@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>    
+      <string-array name="phone_card_name">
+          <!-- 名称和值定义 -->
+        <item>中国移动充值卡:1</item>
+        <item>中国联通充值卡:2</item>
+        <item>中国电信充值卡:3</item>        
+    </string-array>   
+</resources>

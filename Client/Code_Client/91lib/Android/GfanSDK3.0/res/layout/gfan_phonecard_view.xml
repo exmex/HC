@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gfan_bg_border" >
+    
+    <include
+        android:id="@+id/top_bar_pay"
+        android:layout_alignParentTop="true"
+        layout="@layout/gfan_top_bar_pay" />
+    
+    <ViewAnimator
+        android:id="@+id/phonecard_viewanimator"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/top_bar_pay">
+    </ViewAnimator>
+
+</RelativeLayout>

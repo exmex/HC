@@ -1,0 +1,65 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/phonecard_scrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/phonecard_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <com.mappn.sdk.pay.weight.TitleSpinner
+            android:id="@+id/phonecard_cardspinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <com.mappn.sdk.pay.weight.TitleSpinner
+            android:id="@+id/phonecard_paynumspinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <EditText
+            android:id="@+id/phonecard_edittext_cardnum"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <EditText
+            android:id="@+id/phonecard_edittext_cardpsd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:id="@+id/phonecard_textview_confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <Button
+            android:id="@+id/phonecard_btn_ok"
+            android:layout_width="fill_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/gfan_selector_btn_orange"
+        	android:textColor="@color/text_orange"
+        	android:textAppearance="?android:attr/textAppearanceMedium"  />
+    </LinearLayout>
+
+</ScrollView>

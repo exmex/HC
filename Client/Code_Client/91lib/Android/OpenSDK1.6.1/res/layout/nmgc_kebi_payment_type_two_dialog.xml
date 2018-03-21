@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="344dp"
+    android:layout_height="280dp"
+    android:layout_gravity="center"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    android:background="@drawable/nmgc_kebi_charge_alert_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/nmgc_kebi_title_close_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/nmgc_kebi_charge_close"
+        android:clickable="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/inc_loading_full_root"
+            layout="@layout/nmgc_loading_full_new"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/nmgc_kebi_input_root"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/nmgc_kebi_goods"
+                        android:textAppearance="@style/nmgc_kebi_hint_number" />
+
+                    <TextView
+                        android:id="@+id/nmgc_kebi_input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:textAppearance="@style/nmgc_kebi_hint_number" />
+
+                    <TextView
+                        android:id="@+id/nmgc_kebi_product_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/nmgc_kebi_hint_number" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/nmgc_kebi_prices"
+                        android:textAppearance="@style/nmgc_kebi_hint_number" />
+
+                    <TextView
+                        android:id="@+id/nmgc_kebi_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textAppearance="@style/nmgc_kebi_hint_number"
+                        android:textColor="#0b984b" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nmgc_kebi"
+                        android:textAppearance="@style/nmgc_kebi_hint_number"
+                        android:textColor="#0b984b" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="8dp"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY"
+                    android:src="#0b984b" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="108dp"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/nmgc_kebi_input_hint_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/nmgc_kebi_charge_xiaolian"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/nmgc_kebi_charge_ok_hint"
+                        android:textAppearance="@style/nmgc_kebi_hint_orange" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/nmgc_kebi_input_hint_failure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/nmgc_kebi_charge_jushang"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/nmgc_kebi_not_enough"
+                        android:textAppearance="@style/nmgc_kebi_hint_orange"
+                        android:visibility="gone" >
+                    </TextView>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/nmgc_kebi_ok_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/nmgc_kebi_ok_selector"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/nmgc_kebi_complete"
+                    android:textAppearance="@style/nmgc_kebi_ok" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nmgc_kebi_account_pre"
+                        android:textAppearance="@style/nmgc_kebi_accout_pre" />
+
+                    <TextView
+                        android:id="@+id/nmgc_kebi_account_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLength="12"
+                        android:singleLine="true"
+                        android:textAppearance="@style/nmgc_kebi_accout_info" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nmgc_kebi_pre"
+                        android:textAppearance="@style/nmgc_kebi_accout_pre" />
+
+                    <TextView
+                        android:id="@+id/nmgc_kebi_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textAppearance="@style/nmgc_kebi_accout_info" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

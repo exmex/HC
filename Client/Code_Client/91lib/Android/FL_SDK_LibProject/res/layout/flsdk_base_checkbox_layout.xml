@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/flsdk_login_rember_text"
+        style="@style/flsdk_style_c2c2c2_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="@string/flsdk_login_rember_text"
+        android:visibility="invisible" />
+
+    <CheckBox
+        android:id="@+id/flsdk_login_pwd_checkbox"
+        android:layout_width="28.0dip"
+        android:layout_height="28.0dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:layout_toLeftOf="@+id/flsdk_login_rember_text"
+        android:button="@drawable/flsdk_checkbox_bg"
+        android:checked="true"
+        android:onClick="checkboxClick"
+        android:visibility="invisible" />
+
+</RelativeLayout>

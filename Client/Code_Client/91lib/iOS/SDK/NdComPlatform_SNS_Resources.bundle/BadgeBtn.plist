@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fontSize</key>
+	<real>14</real>
+	<key>fontColor</key>
+	<string>1,1,1,1</string>
+	<key>centerImg</key>
+	<string>pao</string>
+	<key>leftImg</key>
+	<string></string>
+	<key>rightImg</key>
+	<string></string>
+	<key>subViewPos</key>
+	<dict>
+		<key>leftMargin</key>
+		<integer>2</integer>
+		<key>rightMargin</key>
+		<integer>2</integer>
+		<key>topMargin</key>
+		<integer>1</integer>
+		<key>bottomMargin</key>
+		<integer>11</integer>
+	</dict>
+</dict>
+</plist>

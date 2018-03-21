@@ -1,0 +1,9 @@
+{
+	"CFBundleDevelopmentRegion" = English;
+	CFBundleExecutable = NDJSON;
+	CFBundleIdentifier = "com.91.NDJSON";
+	"CFBundleInfoDictionaryVersion" = "6.0";
+	CFBundlePackageType = FMWK;
+	CFBundleSignature = "????";
+	CFBundleVersion = 1000;
+}

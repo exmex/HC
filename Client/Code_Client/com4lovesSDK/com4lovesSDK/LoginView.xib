@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment version="1072" defaultVersion="1072" identifier="iOS"/>
+        <development version="6000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginView">
+            <connections>
+                <outlet property="backGroundView" destination="737" id="AV8-CD-aku"/>
+                <outlet property="btnArrow" destination="732" id="xYB-vK-TSS"/>
+                <outlet property="btnLogin" destination="71" id="OCC-bR-Acd"/>
+                <outlet property="btnNameDel" destination="kjn-iR-X3V" id="Pi6-Ix-esf"/>
+                <outlet property="btnPsdDel" destination="1Hj-3C-WW1" id="3G1-yL-sP3"/>
+                <outlet property="btnRegister" destination="695" id="wGc-PZ-ead"/>
+                <outlet property="btnShowList" destination="732" id="pAQ-sN-2HW"/>
+                <outlet property="listBackgroundView" destination="32B-Wt-EnZ" id="uVe-gf-cMz"/>
+                <outlet property="plainTextField" destination="51" id="686"/>
+                <outlet property="secretTextField" destination="57" id="687"/>
+                <outlet property="view" destination="6" id="248"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view opaque="NO" clearsContextBeforeDrawing="NO" contentMode="center" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="756" verticalCompressionResistancePriority="763" id="6">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TvV-WC-yVH">
+                    <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="737">
+                    <rect key="frame" x="72" y="0.0" width="425" height="320"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="71">
+                            <rect key="frame" x="222" y="222" width="110" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="登 录" backgroundImage="sdk_register.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" title="登 录" backgroundImage="sdk_small_reg.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="sdk_small_reg.png"/>
+                            <connections>
+                                <action selector="click:" destination="-1" eventType="touchUpInside" id="wZN-L0-J8g"/>
+                            </connections>
+                        </button>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="login_account.png" id="733">
+                            <rect key="frame" x="94" y="99" width="238" height="38"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="login_pass.png" highlightedImage="login_pass.png" id="734">
+                            <rect key="frame" x="94" y="159" width="238" height="38"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <textField autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minimumFontSize="17" id="51">
+                            <rect key="frame" x="132" y="99" width="190" height="37"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            <connections>
+                                <action selector="onEditChange:" destination="-1" eventType="editingChanged" id="Kx8-fl-loO"/>
+                                <action selector="userNameEditEnd:" destination="-1" eventType="editingDidEndOnExit" id="zSX-g6-1be"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minimumFontSize="17" id="57">
+                            <rect key="frame" x="132" y="159" width="190" height="37"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                            <connections>
+                                <action selector="didEnd:" destination="-1" eventType="editingDidEndOnExit" id="693"/>
+                                <action selector="onPasswordChange:" destination="-1" eventType="editingChanged" id="qSc-sB-uSH"/>
+                            </connections>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="732">
+                            <rect key="frame" x="286" y="100" width="46" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                            <state key="normal" backgroundImage="detailIcon_90.png">
+                                <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" red="0.073239098609999997" green="0.83538970369999999" blue="0.94007095029999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="showUserList:" destination="-1" eventType="touchDown" id="736"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kjn-iR-X3V">
+                            <rect key="frame" x="286" y="100" width="46" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="delete.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onNameDelClick:" destination="-1" eventType="touchUpInside" id="GzA-d1-dPs"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1Hj-3C-WW1">
+                            <rect key="frame" x="286" y="159" width="46" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" backgroundImage="delete.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onPsdDelClick:" destination="-1" eventType="touchUpInside" id="wDD-Ms-qff"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LOGO.png" id="CYX-K3-NcX">
+                            <rect key="frame" x="105" y="35" width="216" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="695">
+                            <rect key="frame" x="94" y="222" width="110" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="注 册" backgroundImage="sdk_login.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="sdk_small_login.png">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="sdk_small_login.png"/>
+                            <connections>
+                                <action selector="gotoRegister:" destination="-1" eventType="touchDown" id="707"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pPb-We-bcQ">
+                            <rect key="frame" x="8" y="8" width="38" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="return.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="return.png"/>
+                            <connections>
+                                <action selector="returnIndex:" destination="-1" eventType="touchUpInside" id="Pev-IO-OmY"/>
+                            </connections>
+                        </button>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" id="32B-Wt-EnZ">
+                            <rect key="frame" x="94" y="135" width="238" height="124"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.70000000000000007" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="LOGO.png" width="296" height="48"/>
+        <image name="delete.png" width="90" height="90"/>
+        <image name="detailIcon_90.png" width="90" height="90"/>
+        <image name="login_account.png" width="366" height="56"/>
+        <image name="login_pass.png" width="366" height="56"/>
+        <image name="return.png" width="71" height="70"/>
+        <image name="sdk_login.png" width="157" height="49"/>
+        <image name="sdk_register.png" width="157" height="49"/>
+        <image name="sdk_small_login.png" width="157" height="49"/>
+        <image name="sdk_small_reg.png" width="157" height="49"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

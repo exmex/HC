@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gfan_bg_border"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top_bar"
+        android:layout_alignParentTop="true"
+        layout="@layout/gfan_top_bar_login" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_bar" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+            
+            <TextView 
+                android:id="@+id/tv_notice"
+                android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="fill_parent"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/gfan_input_text_blue"
+                android:hint="@string/username"
+                android:inputType="textNoSuggestions"
+                android:textColor="#000000"
+                android:maxLength="15"
+                android:singleLine="true"
+                android:textColorHint="@color/text_hint" />
+
+             <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000000"
+                    android:hint="@string/email"
+                    android:singleLine="true"
+                    android:textColorHint="@color/text_hint"
+                    android:background="@drawable/gfan_input_text_blue"
+                    android:maxLength="32" />
+            
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="fill_parent"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000000"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/gfan_input_text_blue"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:textColorHint="@color/text_hint" />
+
+            <EditText
+                android:id="@+id/et_password2"
+                android:layout_width="fill_parent"
+                android:layout_height="42dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/gfan_input_text_blue"
+                android:textColor="#000000"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:textColorHint="@color/text_hint" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical" >
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gfan_selector_btn_blue"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="@string/register_hint_login"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/text_blue"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_modfiy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gfan_selector_btn_orange"
+                    android:text="@string/modfiy_info"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/text_orange" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

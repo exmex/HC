@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="horizontal" >
+
+    <!-- 注册区域 -->
+
+    <LinearLayout
+        android:id="@+id/yyh_register_area"
+        android:layout_width="@dimen/yyh_dialog_width"
+        android:layout_height="@dimen/yyh_dialog_content_height"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 用户名 -->
+
+            <RelativeLayout
+                android:id="@+id/yyh_regist_input_username_area"
+                android:layout_width="@dimen/yyh_dialog_inputframe_width"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/yyh_frame_5"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/yyh_abc_2"
+                    android:layout_width="30dip"
+                    android:layout_height="fill_parent"
+                    android:paddingBottom="5dip"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:paddingTop="5dip"
+                    android:src="@drawable/yyh_img_user" />
+
+                <EditText
+                    android:id="@+id/yyh_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignTop="@id/yyh_abc_2"
+                    android:layout_toRightOf="@id/yyh_abc_2"
+                    android:background="@null"
+                    android:hint="@string/yyh_shuruyonghuming"
+                    android:textColor="#8c8c8c"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+            <!-- 密码 -->
+
+            <RelativeLayout
+                android:id="@+id/yyh_regist_input_password_area"
+                android:layout_width="@dimen/yyh_dialog_inputframe_width"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/yyh_frame_3"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/yyh_abc_1"
+                    android:layout_width="30dip"
+                    android:layout_height="fill_parent"
+                    android:paddingBottom="5dip"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:paddingTop="5dip"
+                    android:src="@drawable/yyh_img_password" />
+
+                <EditText
+                    android:id="@+id/yyh_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignTop="@id/yyh_abc_1"
+                    android:layout_toRightOf="@id/yyh_abc_1"
+                    android:background="@null"
+                    android:hint="@string/yyh_shurumima"
+                    android:inputType="textPassword"
+                    android:textColor="#8c8c8c"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <!-- 绑定手机、立即注册区域 -->
+
+            <RelativeLayout
+                android:layout_width="@dimen/yyh_dialog_inputframe_width"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="20dip" >
+
+                <CheckBox
+                    android:id="@+id/yyh_bind_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:checked="true"
+                    android:text="@string/yyh_bangdingshouji"
+                    android:textColor="#303030"
+                    android:textSize="12sp" 
+                    android:paddingLeft="12dp"
+                    android:button="@drawable/yyh_checkbox_selector"
+                    />
+
+                <Button
+                    android:id="@+id/yyh_regist_now"
+                    android:layout_width="@dimen/yyh_btn_width"
+                    android:layout_height="@dimen/yyh_btn_width"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/yyh_buttonselector_login"
+                    android:text="@string/yyh_lijizhuce"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 绑定手机，输入手机号获取验证码 -->
+
+    <LinearLayout
+        android:id="@+id/yyh_bindphone_area"
+        android:layout_width="@dimen/yyh_dialog_width"
+        android:layout_height="@dimen/yyh_dialog_content_height"
+        android:layout_marginLeft="@dimen/yyh_dialog_width_fu"
+        android:gravity="center_vertical|center_horizontal"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 显示绑定的手机号码 -->
+
+            <RelativeLayout
+                android:layout_width="@dimen/yyh_dialog_inputframe_width"
+                android:layout_height="30dip"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/yyh_abc_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/yyh_bangdingshoujihao" />
+
+                <TextView
+                    android:id="@+id/yyh_binded_phonenum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/yyh_abc_3"
+                    android:layout_toRightOf="@id/yyh_abc_3" />
+            </RelativeLayout>
+
+            <!-- 获取验证码 -->
+
+            <RelativeLayout
+                android:layout_width="@dimen/yyh_dialog_inputframe_width"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/yyh_frame_5"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/yyh_abc_4"
+                    android:layout_width="5dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5dip"
+                    android:background="#00ffffff" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:id="@+id/yyh_abc_8"
+                     >
+
+                    <Button
+                        android:id="@+id/yyh_get_capture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/yyh_buttonselector_login"
+                        android:text="@string/yyh_huoquyanzhengma"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/yyh_input_phonenum"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignTop="@id/yyh_abc_4"
+                    android:layout_toLeftOf="@id/yyh_abc_8"
+                    android:layout_toRightOf="@id/yyh_abc_4"
+                    android:background="@null"
+                    android:hint="@string/yyh_shurushoujihao"
+                    android:textColor="#bcbcbc"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+            <!-- 验证码 -->
+
+            <RelativeLayout
+                android:layout_width="@dimen/yyh_dialog_inputframe_width"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/yyh_frame_3" >
+
+                <ImageView
+                    android:id="@+id/yyh_abc_6"
+                    android:layout_width="5dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5dip"
+                    android:background="#00ffffff" />
+
+                <EditText
+                    android:id="@+id/yyh_capture_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignTop="@id/yyh_abc_6"
+                    android:layout_toRightOf="@id/yyh_abc_6"
+                    android:background="@null"
+                    android:hint="@string/yyh_shuruyanzhengma"
+                    android:inputType="textPassword"
+                    android:textColor="#8c8c8c"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/yyh_dialog_inputframe_width"
+                android:layout_height="30dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dip" >
+
+                <Button
+                    android:id="@+id/yyh_ignore_bindphone"
+                    android:layout_width="@dimen/yyh_btn_width"
+                    android:layout_height="@dimen/yyh_btn_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/yyh_buttonselector_quickgame"
+                    android:text="@string/yyh_huluebangding"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/yyh_bindphone"
+                    android:layout_width="@dimen/yyh_btn_width"
+                    android:layout_height="@dimen/yyh_btn_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/yyh_buttonselector_login"
+                    android:text="@string/yyh_wanchengbangding"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

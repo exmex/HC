@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gfan_bg_border" >
+
+    <include
+        android:id="@+id/top_bar_pay"
+        android:layout_alignParentTop="true"
+        layout="@layout/gfan_top_bar_pay" />
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/phonecard_scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/top_bar_pay" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/confirm_tv_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp" />
+
+            <TextView
+                android:id="@+id/confirm_tv_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/confirm_tv_account"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/confirm_tv_charge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/confirm_tv_account"
+                android:layout_toRightOf="@+id/confirm_tv_balance"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/confirm_tv_pay_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/confirm_tv_balance"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp" />
+
+            <TextView
+                android:id="@+id/confirm_tv_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/confirm_tv_pay_name"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/confirm_tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/confirm_tv_product_name"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/confirm_tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/confirm_tv_num"
+                android:paddingLeft="10dp" />
+
+            <Button
+                android:id="@+id/confirm_btn_pay"
+                android:layout_width="100dp"
+                android:layout_height="42dp"
+                android:layout_below="@+id/confirm_tv_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/gfan_selector_btn_orange"
+                android:textColor="@color/text_orange" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

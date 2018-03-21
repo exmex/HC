@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:padding="5dip"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gamehall_activity_img_height"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:lineSpacingMultiplier="1.5"
+        android:textSize="14dp"
+        android:textColor="@color/gamehall_common_desc"
+         />
+
+</LinearLayout>

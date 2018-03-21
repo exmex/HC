@@ -1,0 +1,11 @@
+<resources>
+
+    <dimen name="tv_text_size">16sp</dimen>
+    <dimen name="btn_text_size">18sp</dimen>
+    <dimen name="title_text_size">20sp</dimen>
+    <dimen name="warning_text_size">22sp</dimen>
+    <dimen name="terms_title_size">22sp</dimen>
+    <dimen name="back_margin_left">10dip</dimen>
+    <dimen name="layout_margin">20dip</dimen>
+
+</resources>

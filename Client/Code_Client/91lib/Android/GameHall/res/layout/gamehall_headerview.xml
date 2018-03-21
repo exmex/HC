@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gamehall_header_bg"
+    android:paddingLeft="5dip"
+    android:paddingRight="5dip"
+    android:paddingTop="5dip" >
+
+    <RelativeLayout
+        android:id="@+id/gamehall_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <ImageButton
+            android:id="@+id/gamehall_leftBtn"
+            style="@style/title_setting_btn"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/gamehall_pagename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:textColor="#CACACA"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/gamehall_rightBtn"
+            style="@style/title_common_btn"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dip"
+            android:text="@string/gamehall_title_login" />
+
+        <TextView
+            android:id="@+id/gamehall_rightText"
+            style="@style/title_common_text"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:gravity="right"
+            android:visibility="invisible"
+             />
+
+        <ProgressBar
+            android:id="@+id/gamehall_rightProgress"
+            style="@android:style/Widget.ProgressBar.Small.Inverse"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,11 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/gamehall_ad_width"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <WebView
+        android:id="@+id/gamehall_ad_webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

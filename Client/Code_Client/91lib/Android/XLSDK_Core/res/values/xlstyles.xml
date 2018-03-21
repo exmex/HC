@@ -1,0 +1,19 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="xl_transparent_main">
+        <item name="android:windowBackground">@color/xl_transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="xl_activity">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="xl_login_pop_accounts_style">
+        <item name="android:divider">@drawable/xl_accounts_item_divider</item>
+       <!--  <item name="android:dividerHeight">0.5dp</item> -->
+        <item name="android:listSelector">@drawable/xl_accounts_item_style</item>
+    </style>
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/aipay_bg" >
+    
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="@color/aipay_blue"/>
+        
+       <View android:layout_width="match_parent"
+          	android:layout_height="2dp"
+          	android:layout_marginRight="13dp"
+            android:layout_marginLeft="13dp"
+          	android:background="@color/blue"/>
+    
+        <FrameLayout
+            android:id="@+id/fl_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_message"
+                android:orientation="vertical" >
+                
+                <TextView
+                    android:id="@+id/tv_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="400dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginRight="41dp"
+                    android:layout_marginLeft="41dp"
+                    android:lineSpacingExtra="10dp"
+                    android:scrollbars="vertical"
+                    android:singleLine="false"
+                    android:textColor="@color/aipay_black_1"
+                    android:textSize="13sp" />
+                
+                <CheckedTextView android:id="@+id/ctv_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="41dp"
+                    android:layout_marginBottom="18dp"
+                    android:gravity="center_vertical"
+                    android:checked="false"
+		            android:textColor="#8a8a8a"
+		            android:textSize="13sp"
+		            android:text="知道了，不再提示"
+		            android:drawablePadding="12dp"
+		            android:drawableLeft="@drawable/aipay_checkbox_selector"
+		            android:visibility="gone"/>"
+            </LinearLayout>
+    
+            <ListView
+                android:id="@+id/lv_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@null"
+                android:dividerHeight="1px"
+                android:fadingEdge="none"
+                android:listSelector="@null"
+                android:scrollingCache="false" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_button_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/b_negative_button"
+                android:layout_width="0dp"
+                android:layout_height="43dp"
+                android:layout_weight="1"
+                android:background="@drawable/alert_dialog_negative_button_bg"
+                android:gravity="center"
+                android:text="@android:string/cancel"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/b_neutral_button"
+                android:layout_width="0dp"
+                android:layout_height="43dp"
+                android:layout_weight="1"
+                android:background="@drawable/alert_dialog_neutral_button_bg"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/b_positive_button"
+                android:layout_width="0dp"
+                android:layout_height="43dp"
+                android:layout_weight="1"
+                android:background="@drawable/alert_dialog_positive_button_bg"
+                android:gravity="center"
+                android:text="@android:string/ok"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

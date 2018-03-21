@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/main_tab_top_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="51.83dp"
+        android:background="#FFE9E9E9"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/main_tab_top_back_area"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/main_tab_title_bar_setting"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@id/main_tab_title_bar_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14.83dp"
+                android:background="@drawable/activity_setting_title_back_icon"
+                android:contentDescription="@null"
+                android:paddingLeft="14.83dp" />
+
+            <TextView
+                android:id="@id/main_tab_title_bar_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="38.83dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/nmgc_boy_alert_button2"
+                android:textSize="20.5sp"
+                android:textColor="#4c4d4d"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@id/main_tab_title_bar_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16.5dp"
+            android:layout_marginTop="14.17dp"
+            android:background="@drawable/top_bar_refresh_selector"
+            android:contentDescription="@null"/>
+
+        <RelativeLayout
+            android:id="@id/main_tab_title_bar_download_manage_root"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:layout_marginRight="16.5dp" >
+
+            <ImageView
+                android:id="@id/main_tab_title_bar_download_manage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/top_bar_download_manage_selector"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/main_tab_title_bar_download_manage_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21dp"
+                android:gravity="center"
+                android:textColor="#2eb4e7"
+            
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2.83dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorline_area_1"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorline_area_2"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorline_area_3"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorline_area_4"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorline_area_5"
+            android:contentDescription="@null" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@drawable/tab_top_divider"
+        android:contentDescription="@null" />
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+$#include "SpineContainer.h"
+
+class SpineContainer : public CCNode
+{
+	static SpineContainer* create(const char* path, const char* name, float scale = 1.0f);
+	void runAnimation(int trackIndex,const char* name, int loopTimes=1,float delay=0);
+	void registerLuaListener(LUA_FUNCTION listener);
+	void unregisterLuaListener();
+	void stopAllAnimations();
+	void stopAnimationByIndex(int trackIndex);
+	
+	bool setAction(const char  * name, bool bRemoveQueue=true);
+
+	int addEffect(const char* resName);
+	int addEffect(const char* resName, CCAffineTransform  const& mat, int zorder);
+	int addEffect(const char* resName, CCPoint pos, int zorder);
+	int addEffect(const char *name, int zorder);
+	void clearActionSequence(void);
+	void interruptSound(void);
+	void onActionFinished(void);
+	void removeEffectWithID(int eid);
+	void removeEffectWithName(const char  * effectName);
+	void setColor(_ccColor3B clr);
+
+	bool setComponent(const char* param1, const char* param2);
+	bool setComponent(int index, const char* lpszName);
+	void setNextAction(const char* actionName);
+	void setOpacity(unsigned char param1);
+	void tint(float r, float g, float b);
+	void update(float dt, bool isAuto = true);
+	void useDefaultShader(void);
+	void useShader(const char* shaderName);
+	void setActionElapsed(float elapsed);
+	void setActionSpeeder(float speeder);
+	void setLoop(bool val);
+};

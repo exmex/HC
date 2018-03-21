@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Mon Jul 09 09:37:00 CST 2012
+onejar.license.required=true
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=KuPad_Pay_Service_Res_V3.0.5_fat.jar
+manifest.mergeall=true
+manifest.mainclass=
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=
+includes=

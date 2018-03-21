@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/anzhi_orange_button__perssed" android:state_pressed="true"/>
+    <item android:drawable="@drawable/anzhi__orange_button__focused" android:state_focused="true"/>
+     <item android:drawable="@drawable/anzhi_button_disable" android:state_enabled="false" />
+    <item android:drawable="@drawable/anzhi__orange_button__normal" />
+	
+</selector>

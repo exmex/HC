@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/game_detail_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/game_detail_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/view_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/gamehall_headerview"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/game_info"
+                layout="@layout/gamehall_game_detail_info" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gamehall_game_detail_split"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|left"
+                    android:paddingBottom="3dip"
+                    android:paddingLeft="8dip"
+                    android:paddingTop="3dip"
+                    android:text="游戏简介"
+                    android:textColor="@color/txt_white"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dip" >
+
+                <TextView
+                    android:id="@+id/game_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="2dip"
+                    android:text=""
+                    android:textColor="@color/game_detail_info"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:id="@+id/game_description_indicate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:paddingRight="5dip"
+                    android:paddingTop="5dip"
+                    android:src="@drawable/gamehall_detail_description_more" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/game_detail_gallery_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:paddingBottom="15dip"
+                android:paddingTop="15dip" >
+
+                <Gallery
+                    android:id="@+id/game_detail_gallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="3dip"
+                    android:spacing="17dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/game_detail_recommend_tag_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gamehall_game_detail_split"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|left"
+                    android:paddingBottom="3dip"
+                    android:paddingLeft="8dip"
+                    android:paddingTop="3dip"
+                    android:text="猜你喜欢"
+                    android:textColor="@color/txt_white"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/game_detail_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnWidth="90dp"
+                android:gravity="center"
+                android:numColumns="4"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="1dp" >
+            </GridView>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/progress_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#242424"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/gamehall_loading_view_progressBar"
+            style="@android:style/Widget.ProgressBar.Small.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/gamehall_loading_view_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dip"
+            android:text="@string/gamehall_loadmore"
+            android:textColor="@color/txt_white"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/gamehall_network_error_view"
+        layout="@layout/gamehall_net_page" />
+
+</FrameLayout>

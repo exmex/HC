@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent"
+    android:padding="10dp"
+    android:orientation="vertical" >
+    
+    <include
+	        layout="@layout/iapppay_oneclickpay_layout_title" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="17.0dip"
+            android:paddingRight="17.0dip" 
+            android:background="@drawable/iapppay_oneclick_frame_body_bg"
+            android:orientation="vertical" >
+
+            <TextView
+                    android:id="@+id/payAmountTextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/card_no"
+                    android:textColor="@color/iapppay_description_tip"
+                    android:textSize="@dimen/text_size_13" />
+            <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#d2dbe6"
+                android:layout_marginTop="7dp"
+                />
+
+                <!-- 请输入卡号 -->
+              <LinearLayout
+                    android:id="@+id/card_no_area"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21dp"
+                    android:gravity="center_vertical" 
+                    >
+
+                   
+
+                    <EditText
+                        android:id="@+id/cardNumberEditText"
+                        style="@style/edit_common_style"
+                        android:layout_width="0.0dip"
+                        android:layout_height="22dp"
+                        android:layout_weight="1.0"
+                        android:hint="@string/input_card_no"
+                        android:inputType="number"
+                        android:maxLength="25"
+                        android:imeOptions="flagNoExtractUi"
+                        android:textColorHint="#b5b5b5"
+                        android:textColor="#303030"
+                        android:textSize="16sp"
+                        />
+                    
+                        <ImageView
+			            android:id="@+id/clear"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:paddingRight="4dp"
+			            android:contentDescription="@string/iapppay_img"
+			            android:src="@drawable/iapppay_oneclickpay_bg_clear_selector" />
+                </LinearLayout>
+                
+                <ImageView 
+                    android:layout_width="fill_parent"
+                	android:layout_height="wrap_content"
+                	android:layout_marginTop="5dp"
+                	android:background="@drawable/aipay_oneclickpay_input"
+                    />
+                
+               <Button
+                android:id="@+id/nextStepButton"
+                android:layout_width="fill_parent"
+             	android:layout_height="wrap_content"
+   				android:layout_marginTop="30dp"
+   				android:background="@drawable/iapppay_oneclickpay_bg_confrim_selector"
+                android:text="@string/nextstep"
+                android:textColor="@color/iapppay_white"
+                android:textSize="16sp" />
+            </LinearLayout>
+</LinearLayout>

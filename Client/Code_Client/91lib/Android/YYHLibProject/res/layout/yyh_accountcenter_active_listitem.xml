@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dip" >
+
+    <RelativeLayout
+        android:id="@+id/yyh_active_item_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yyh_active_item_unuse_bg"
+        android:padding="7dip" >
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/yyh_active_icon"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:paddingRight="7dip"
+            android:src="@drawable/yyh_ic_icon" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/yyh_active_icon"
+            android:layout_alignTop="@id/yyh_active_icon"
+            android:layout_toRightOf="@id/yyh_active_icon"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/yyh_active_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/yyh_guanliyuan"
+                android:textColor="#484e5a"
+                android:textSize="12dip" />
+
+            <TextView
+                android:id="@+id/yyh_active_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="#484e5a"
+                android:textSize="15dip" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/yyh_active_content_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yyh_active_icon"
+            android:layout_marginTop="7dip" >
+
+            <TextView
+                android:id="@+id/yyh_active_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:textColor="#575a64"
+                android:textSize="13dip" />
+
+            <RelativeLayout
+                android:id="@+id/yyh_active_code_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/yyh_active_content"
+                android:layout_marginTop="10dip" >
+
+                <Button
+                    android:id="@+id/yyh_active_btn"
+                    android:layout_width="100dip"
+                    android:layout_height="35dip"
+                    android:background="@drawable/yyh_buttonselector_active"
+                    android:textColor="#ffffff"
+                    android:textSize="13dip" />
+
+                <TextView
+                    android:id="@+id/yyh_active_last_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:id="@+id/yyh_active_dead_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/yyh_active_last_num"
+                    android:textSize="12dip" />
+
+                <RelativeLayout
+                    android:id="@+id/yyh_active_copy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_below="@id/yyh_active_btn"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/yyh_areaselector_active"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/yyh_active_copy_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="10dip"
+                        android:text="@string/yyh_dianjifuzhi"
+                        android:textColor="#575a64"
+                        android:textSize="13dip" />
+
+                    <TextView
+                        android:id="@+id/yyh_active_code"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="5dip"
+                        android:layout_toLeftOf="@id/yyh_active_copy_content"
+                        android:paddingLeft="10dip"
+                        android:singleLine="true"
+                        android:textColor="#575a64"
+                        android:textSize="13dip" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<ImageView
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/sogou_game_sdk_float_menu_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:contentDescription="@string/sogou_game_sdk_app_name"
+        android:background="@drawable/sogou_game_sdk_float_icon"
+       />  

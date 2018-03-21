@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/ks_login_mainlayout"
+        android:layout_width="@dimen/ks_cm_login_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/ks_bg_cm_dialog"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <include
+            layout="@layout/ks_common_cm_title_line_view" />
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/ks_window_padding" >
+
+            <TextView
+                 android:id="@+id/ks_close_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ks_tips_close"
+                android:textColor="@color/ks_white"
+                android:textSize="@dimen/ks_entry_txt" />
+
+            <TextView
+                android:id="@+id/ks_close_detail_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ks_entry_padding"
+                android:text="@string/ks_tips_restart"
+                android:textColor="@color/ks_gray"
+                android:textSize="@dimen/ks_entry_tips" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/ks_cm_login_button_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/ks_btn_left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/ks_cm_login_button_margin"
+                android:layout_weight="1"
+                android:background="@drawable/ks_bg_cm_btn_dark_selector"
+                android:minHeight="@dimen/ks_cm_one_key_reg_logo_height"
+                android:minWidth="@dimen/ks_cm_one_key_reg_logo_width"
+                android:shadowColor="@color/ks_cm_text_shadow_color"
+                android:text="@string/ks_back"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/ks_text_size_20" />
+
+            <Button
+                android:id="@+id/ks_btn_right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ks_cm_login_button_margin"
+                android:layout_weight="1"
+                android:background="@drawable/ks_bg_cm_btn_orange_selector"
+                android:minHeight="@dimen/ks_cm_one_key_reg_logo_height"
+                android:minWidth="@dimen/ks_cm_one_key_reg_logo_width"
+                android:shadowColor="@color/ks_cm_text_shadow_color"
+                android:text="@string/ks_tips_ok"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/ks_text_size_20" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/ks_loading_view" />
+
+</FrameLayout>

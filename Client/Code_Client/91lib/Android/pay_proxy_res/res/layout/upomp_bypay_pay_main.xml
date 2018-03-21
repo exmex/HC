@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:background="#dae3ec">
+	
+	<RelativeLayout android:id="@+id/rl_pay_main_content"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<include layout="@layout/upomp_bypay_navigator" />
+
+
+		<ScrollView android:id="@+id/sv_pay_info"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:layout_below="@+id/rl_header"
+			android:layout_marginTop="8dip" android:layout_marginBottom="70dip">
+			<RelativeLayout android:id="@+id/rl_details"
+			
+				android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<RelativeLayout android:id="@+id/rl_info_title_pay_main"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_marginLeft="15dip" android:layout_marginRight="15dip"
+					
+					android:background="@drawable/upomp_bypay_card_info_title">
+					<TextView android:layout_width="wrap_content"
+						android:layout_marginLeft="10dip" android:gravity="left|center_vertical"
+						android:layout_height="40dip" android:text="@string/upomp_bypay_pay_main_tradeverify"
+						android:textColor="#ffffff" android:textSize="20sp" />
+				</RelativeLayout>
+				<RelativeLayout android:id="@+id/rl_info_pay_main"
+					android:layout_below="@+id/rl_info_title_pay_main"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_marginLeft="15dip" android:layout_marginRight="15dip"
+					android:background="@drawable/upomp_bypay_card_info_bg">
+					<RelativeLayout android:id="@+id/rl_merchant_name"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:layout_marginTop="2dip">
+						<RelativeLayout android:id="@+id/rl_merchant_name_title"
+							android:layout_width="wrap_content" android:layout_height="wrap_content">
+							<TextView android:id="@+id/tv_merchant_name_title"
+								android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:layout_marginLeft="10dip" android:textColor="#404041"
+								android:textSize="15sp" android:text="@string/upomp_bypay_pay_main_merchantname" android:gravity="center_vertical" />
+						</RelativeLayout>
+						<RelativeLayout android:id="@+id/rl_merchant_name_content"
+							android:layout_width="fill_parent" android:layout_toRightOf="@+id/rl_merchant_name_title"
+							android:layout_marginLeft="15dip" android:layout_height="wrap_content">
+							<TextView android:id="@+id/tv_merchant_name_content"
+								android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:textColor="#404041" android:textSize="15sp"
+								android:gravity="center_vertical" 
+								/>
+						</RelativeLayout>
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/rl_order_id"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:layout_below="@+id/rl_merchant_name"
+						android:layout_marginTop="2dip">
+						<RelativeLayout android:id="@+id/rl_order_id_title"
+							android:layout_width="wrap_content" android:layout_height="wrap_content">
+							<TextView android:id="@+id/tv_order_id_title"
+								android:layout_width="wrap_content" android:layout_height="25dip"
+								android:layout_marginLeft="10dip" android:textColor="#404041"
+								android:textSize="15sp" android:text="@string/upomp_bypay_pay_main_secondindentnum" android:gravity="center_vertical" />
+						</RelativeLayout>
+						<RelativeLayout android:id="@+id/rl_order_id_content"
+							android:layout_width="fill_parent" android:layout_toRightOf="@+id/rl_order_id_title"
+							android:layout_marginLeft="15dip" android:layout_height="wrap_content">
+							<TextView android:id="@+id/tv_order_id_content"
+								android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:textColor="#404041" android:textSize="15sp"
+								android:gravity="center_vertical" />
+						</RelativeLayout>
+					</RelativeLayout>
+
+					<RelativeLayout android:id="@+id/rl_summary_price"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:layout_below="@+id/rl_order_id" android:layout_marginTop="2dip">
+						<RelativeLayout android:id="@+id/rl_summary_price_title"
+							android:layout_width="wrap_content" android:layout_height="wrap_content">
+							<TextView android:id="@+id/tv_summary_price_title"
+								android:layout_width="wrap_content" android:layout_height="25dip"
+								android:layout_marginLeft="10dip" android:textColor="#404041"
+								android:textSize="15sp" android:text="@string/upomp_bypay_pay_main_secondpayamount" android:gravity="center_vertical" />
+						</RelativeLayout>
+						<RelativeLayout android:id="@+id/rl_summary_price_content"
+							android:layout_width="fill_parent" android:layout_toRightOf="@+id/rl_summary_price_title"
+							android:layout_marginLeft="15dip" android:layout_height="wrap_content">
+							<TextView android:id="@+id/tv_summary_price_content"
+								android:layout_width="wrap_content" android:layout_height="25dip"
+								android:textColor="#ff0000" android:textSize="15sp"
+								android:gravity="center_vertical" />
+						</RelativeLayout>
+					</RelativeLayout>
+
+					<RelativeLayout android:id="@+id/rl_order_time"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:layout_below="@+id/rl_summary_price"
+						android:layout_marginTop="2dip">
+						<RelativeLayout android:id="@+id/rl_order_time_title"
+							android:layout_width="wrap_content" android:layout_height="wrap_content">
+							<TextView android:id="@+id/tv_order_time_title"
+								android:layout_width="wrap_content" android:layout_height="25dip"
+								android:layout_marginLeft="10dip" android:textColor="#404041"
+								android:textSize="15sp" android:text="@string/upomp_bypay_pay_main_secondexchangetime" android:gravity="center_vertical" />
+						</RelativeLayout>
+						<RelativeLayout android:id="@+id/rl_order_time_content"
+							android:layout_width="fill_parent" android:layout_toRightOf="@+id/rl_order_time_title"
+							android:layout_marginLeft="15dip" android:layout_height="wrap_content">
+							<TextView android:id="@+id/tv_order_time_content"
+								android:layout_width="wrap_content" android:layout_height="25dip"
+								android:textColor="#404041" android:textSize="15sp"
+								android:gravity="center_vertical" />
+						</RelativeLayout>
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/rl_trading_currency"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:layout_below="@+id/rl_order_time"
+						android:layout_marginTop="2dip">
+						<RelativeLayout android:id="@+id/rl_trading_currency_title"
+							android:layout_width="wrap_content" android:layout_height="wrap_content">
+							<TextView android:id="@+id/tv_trading_currency_title"
+								android:layout_width="wrap_content" android:layout_height="25dip"
+								android:layout_marginLeft="10dip" android:textColor="#404041"
+								android:textSize="15sp" android:text="@string/upomp_bypay_pay_main_moneytype" android:gravity="center_vertical" />
+						</RelativeLayout>
+						<RelativeLayout android:id="@+id/rl_trading_currency_content"
+							android:layout_width="fill_parent" android:layout_toRightOf="@+id/rl_trading_currency_title"
+							android:layout_marginLeft="15dip" android:layout_height="wrap_content">
+							<TextView android:id="@+id/tv_trading_currency_content"
+								android:layout_width="wrap_content" android:layout_height="25dip"
+								android:textColor="#404041" android:textSize="15sp"
+								android:gravity="center_vertical" />
+						</RelativeLayout>
+					</RelativeLayout>
+
+					<RelativeLayout android:id="@+id/rl_transaction_types"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:layout_below="@+id/rl_trading_currency"
+						android:layout_marginTop="2dip">
+						<RelativeLayout android:id="@+id/rl_rl_transaction_types_title"
+							android:layout_width="wrap_content" android:layout_height="wrap_content">
+							<TextView android:id="@+id/tv_transaction_types_title"
+								android:layout_width="wrap_content" android:layout_height="25dip"
+								android:layout_marginLeft="10dip" android:textColor="#404041"
+								android:textSize="15sp" android:text="@string/upomp_bypay_pay_main_tradetype" android:gravity="center_vertical" />
+						</RelativeLayout>
+						<RelativeLayout android:id="@+id/rl_transaction_types_content"
+							android:layout_width="fill_parent" android:layout_toRightOf="@+id/rl_rl_transaction_types_title"
+							android:layout_marginLeft="15dip" android:layout_height="wrap_content">
+							<TextView android:id="@+id/tv_transaction_types_content"
+								android:layout_width="wrap_content" android:layout_height="25dip"
+								android:textColor="#404041" android:textSize="15sp"
+								android:gravity="center_vertical" />
+						</RelativeLayout>
+					</RelativeLayout>
+				</RelativeLayout>
+				<RelativeLayout android:id="@+id/rl_info_bot_pay_main"
+					android:layout_below="@+id/rl_info_pay_main" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_marginLeft="15dip"
+					android:layout_marginRight="15dip" android:background="@drawable/upomp_bypay_card_info_bot">
+
+				</RelativeLayout>
+
+				<RelativeLayout android:id="@+id/rl_pay_button"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_below="@+id/rl_info_bot_pay_main"
+					android:layout_marginTop="10dip">
+					<Button android:id="@+id/btn_pay" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:layout_marginLeft="15dip"
+						android:layout_alignParentLeft="true" android:background="@drawable/upomp_bypay_btn_enter"
+						android:text="@string/upomp_bypay_pay_main_immediatelypay" android:textColor="#FFFFFF" android:textSize="20sp" />
+					<Button android:id="@+id/btn_exit" android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true" android:layout_marginRight="15dip"
+						android:background="@drawable/upomp_bypay_btn_esc" android:text="@string/upomp_bypay_pay_main_cancelpay"
+						android:textColor="#FFFFFF" android:textSize="20sp" />
+				</RelativeLayout>
+
+				<RelativeLayout android:id="@+id/rl_pay_alert"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_below="@+id/rl_pay_button" android:layout_marginTop="10dip"
+					
+					android:layout_centerHorizontal="true" android:layout_marginLeft="15dip"
+					android:layout_marginRight="15dip">
+
+
+					<ImageView android:id="@+id/rl_title_pay_main"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:background="@drawable/upomp_bypay_tips_title"
+						/>
+					<RelativeLayout android:id="@+id/rl_content_pay_main"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:layout_below="@+id/rl_title_pay_main" android:background="@drawable/upomp_bypay_tips_bg">
+						<TextView android:id="@+id/tv_content_pay_main"
+							android:layout_width="fill_parent" android:layout_height="wrap_content"
+							android:textColor="#666666" android:textSize="14sp"
+							android:text="@string/upomp_bypay_pay_main_checkinfocarefully"
+							android:layout_marginLeft="10dip" android:layout_marginRight="10dip" />
+					</RelativeLayout>
+					<ImageView android:id="@+id/rl_title_bot_pay_main"
+						android:layout_below="@+id/rl_content_pay_main" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:background="@drawable/upomp_bypay_tips_bot"
+						/>
+
+
+					
+				</RelativeLayout>
+			</RelativeLayout>
+		</ScrollView>
+
+		<com.unionpay.upomp.bypay.view.MainBottom
+			android:id="@+id/main_bottom" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true" />
+	</RelativeLayout></RelativeLayout>

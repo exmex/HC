@@ -1,0 +1,29 @@
+{  
+    "version": 1,  
+    "files":  
+    [  
+			{"file": "ui/failed.png", "type": "imageAsync"}, 
+			{"file": "ui/good.png", "type": "imageAsync"}, 
+			{"file": "ui/mainUI_back.png", "type": "imageAsync"}, 
+			{"file": "ui/mainUI_exit.png", "type": "imageAsync"}, 
+			{"file": "ui/mainUI_exit_down.png", "type": "imageAsync"}, 
+			{"file": "ui/mainUI_info.png", "type": "imageAsync"}, 
+			{"file": "ui/mainUI_info_down.png", "type": "imageAsync"}, 
+			{"file": "ui/mainUI_instruction.png", "type": "imageAsync"}, 
+			{"file": "ui/mainUI_instruction_down.png", "type": "imageAsync"}, 
+			{"file": "ui/mainUI_play.png", "type": "imageAsync"}, 
+			{"file": "ui/mainUI_play_down.png", "type": "imageAsync"}, 
+			{"file": "ui/mainUI_restart.png", "type": "imageAsync"}, 
+			{"file": "ui/mainUI_restart_down.png", "type": "imageAsync"}, 
+			{"file": "ui/mainUI_store.png", "type": "imageAsync"}, 
+			{"file": "ui/mainUI_store_down.png", "type": "imageAsync"}, 
+			{"file": "ui/mainUI_title.png", "type": "imageAsync"}, 
+			{"file": "ui/pause_back.png", "type": "imageAsync"}, 
+			{"file": "ui/stages_back.png", "type": "imageAsync"}, 
+			{"file": "ui/stages_back_disable.png", "type": "imageAsync"}, 
+			{"file": "ui/stages_back_down.png", "type": "imageAsync"}, 
+			{"file": "ui/stage_back.png", "type": "imageAsync"}, 
+			{"file": "ui/star.png", "type": "imageAsync"}, 
+			{"file": "ui/top.png", "type": "imageAsync"}
+    ]  
+}  

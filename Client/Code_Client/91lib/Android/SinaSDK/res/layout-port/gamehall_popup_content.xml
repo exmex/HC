@@ -1,0 +1,74 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:background="@drawable/gamehall_popup_detail1_back"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/gamehall_popup_radioGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:padding="0dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                style="@style/popup_content_port_menu_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/gamehall_popup_menu_lb_selector"
+                android:background="@drawable/gamehall_popup_back_menu_lefttop_selector"
+                android:text="@string/gamehall_popup_lb" />
+
+            <RadioButton
+                style="@style/popup_content_port_menu_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/gamehall_popup_menu_gl_selector"
+                android:background="@drawable/gamehall_popup_back_menu_middle_selector"
+                android:text="@string/gamehall_popup_gl" />
+
+            <RadioButton
+                style="@style/popup_content_port_menu_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/gamehall_popup_menu_lt_selector"
+                android:background="@drawable/gamehall_popup_back_menu_middle_selector"
+                android:layout_weight="1"
+                android:text="@string/gamehall_popup_lt" />
+
+            <RadioButton
+                style="@style/popup_content_port_menu_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/gamehall_popup_menu_activity_selector"
+                android:background="@drawable/gamehall_popup_back_menu_middle_selector"
+                android:text="@string/gamehall_popup_hd" />
+            
+             <RadioButton
+                style="@style/popup_content_port_menu_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/gamehall_popup_menu_wd_selector"
+                android:background="@drawable/gamehall_popup_back_menu_righttop_selector"
+                android:text="@string/gamehall_popup_wd" />
+        </RadioGroup>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/gamehall_popup_content_tab"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+</FrameLayout>

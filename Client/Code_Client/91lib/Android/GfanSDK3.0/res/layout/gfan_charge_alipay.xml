@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gfan_bg_border" >
+
+    <include
+        android:id="@+id/top_bar_pay"
+        android:layout_alignParentTop="true"
+        layout="@layout/gfan_top_bar_pay" />
+
+    <TextView
+        android:id="@+id/charge_tv_balance_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_bar_pay"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/charge_tv_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/charge_tv_balance_info"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/charge_edit_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/charge_tv_input"
+        android:layout_centerVertical="true"
+        android:inputType="number"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/charge_tv_exchangeinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/charge_edit_input"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/charge_edit_input"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/charge_btn_ok"
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:layout_below="@+id/charge_edit_input"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/gfan_selector_btn_orange"
+        android:textColor="@color/text_orange"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

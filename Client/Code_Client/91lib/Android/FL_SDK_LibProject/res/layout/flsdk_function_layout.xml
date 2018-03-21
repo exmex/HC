@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <com.fl.gamehelper.ui.widget.FunctionContentView
+        android:id="@+id/flsdk_function_content_view"
+        android:layout_width="wrap_content"
+        android:layout_height="56.0dip"
+        android:layout_marginLeft="29.0dip" />
+
+    <ImageView
+        android:id="@+id/flsdk_function_icon_image"
+        android:layout_width="56.0dip"
+        android:layout_height="56.0dip"
+        android:background="@drawable/flsdk_function_shrink_bg"
+        android:contentDescription="@string/flsdk_app_name" />
+
+</merge>

@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:text="登录测试" />
+
+    <Button
+        android:id="@+id/buttoncenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonLogin"
+        android:text="帐号管理" />
+
+    
+    <Button
+        android:id="@+id/buttonPay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_below="@+id/buttoncenter"
+        android:text="支付测试" />
+    
+    <Button
+        android:id="@+id/buttonlogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/buttoncenter"
+        android:layout_below="@+id/buttonPay"
+        android:text="退出测试" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="back1:"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttoncenter"
+        android:layout_alignBottom="@+id/buttoncenter"
+        android:layout_alignParentRight="true"
+        android:text="back2:" />
+    
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonPay"
+        android:layout_alignBottom="@+id/buttonPay"
+        android:layout_alignParentRight="true"
+        android:text="back3:" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonlogout"
+        android:layout_alignBottom="@+id/buttonlogout"
+        android:layout_alignParentRight="true"
+        android:text="back4:" />
+
+    
+</RelativeLayout>

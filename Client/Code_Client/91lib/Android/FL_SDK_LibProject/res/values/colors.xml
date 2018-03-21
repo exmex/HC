@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="flsdk_gamehelper_color_white">#ffffffff</color>
+    <color name="flsdk_gamehelper_color_translucent">#ffe9e9e9</color>
+    <color name="flsdk_gamehelper_color_50translucent">#50000000</color>
+    <color name="flsdk_gamehelper_color_00323a">#ff00323a</color>
+    <color name="flsdk_gamehelper_color_2b261c">#ff2b261c</color>
+    <color name="flsdk_gamehelper_color_654208">#ff654208</color>
+    <color name="flsdk_gamehelper_color_1b4503">#ff1b4503</color>
+    <color name="flsdk_gamehelper_color_d5bf00">#ffd5bf00</color>
+    <color name="flsdk_gamehelper_color_f7d98b">#fff7d98b</color>
+    <color name="flsdk_gamehelper_color_c12c20">#ffc12c20</color>
+    <color name="flsdk_gamehelper_color_c2c2c2">#ffc2c2c2</color>
+    <color name="flsdk_gamehelper_color_9a9a9a">#ff9a9a9a</color>
+    <color name="flsdk_gamehelper_color_transparent">#00000000</color>
+    <color name="flsdk_gamehelper_color_383838">#ff383838</color>
+    <color name="flsdk_gamehelper_color_f1e74b">#fff1e74b</color>
+    <!-- -输入框字体色 -->
+    <color name="flsdk_gamehelper_color_353535">#ff353535</color>
+    <color name="flsdk_gamehelper_color_b0b0b0">#ffb0b0b0</color>
+    <color name="flsdk_gamehelper_color_494e54">#ff494e54</color>
+    <!-- 登录界面 -下拉 选 中文字背景 -->
+    <color name="flsdk_gamehelper_color_c4c4c4">#ffc4c4c4</color>
+    <color name="flsdk_gamehelper_color_077df7">#ff077df7</color>
+
+</resources>

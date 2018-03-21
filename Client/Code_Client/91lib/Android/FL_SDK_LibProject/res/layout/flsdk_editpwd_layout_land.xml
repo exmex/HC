@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <include layout="@layout/flsdk_base_bg_layout_land" />
+
+    <LinearLayout style="@style/flsdk_style_body_lay_land" >
+
+        <include
+            android:layout_width="280.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4.0dip"
+            layout="@layout/flsdk_base_username_layout" />
+
+        <com.fl.gamehelper.ui.widget.BaseEditTextView
+            android:id="@+id/flsdk_editpwd_old_lay"
+            android:layout_width="280.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4.0dip" />
+
+        <com.fl.gamehelper.ui.widget.BaseEditTextView
+            android:id="@+id/flsdk_editpwd_new_lay"
+            android:layout_width="280.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4.0dip" />
+
+        <TextView
+            android:id="@+id/flsdk_editpwd_new_tip"
+            style="@style/flsdk_style_c2c2c2_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4.0dip"
+            android:text="@string/flsdk_register_new_pwd_tip"
+            android:visibility="gone" />
+
+        <com.fl.gamehelper.ui.widget.BaseEditTextView
+            android:id="@+id/flsdk_editpwd_sure_lay"
+            android:layout_width="280.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4.0dip" />
+
+        <include
+            android:id="@+id/flsdk_editpwd_check_lay"
+            android:layout_width="280.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4.0dip"
+            layout="@layout/flsdk_base_checkbox_layout"
+            android:visibility="gone" />
+
+        <include
+            android:layout_width="280.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4.0dip"
+            layout="@layout/flsdk_register_button_layout" />
+    </LinearLayout>
+
+    <include layout="@layout/flsdk_base_loading_layout" />
+
+</merge>

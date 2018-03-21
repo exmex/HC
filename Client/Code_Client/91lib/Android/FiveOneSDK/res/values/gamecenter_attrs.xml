@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="pay_value_array">
+        <item>100.00</item>
+        <item>300.00</item>
+        <item>500.00</item>
+        <item>1000.00</item>
+        <item>50.00</item>
+        <item>30.00</item>
+        <item>10.00</item>
+        <item>2000.00</item>
+    </string-array>
+
+</resources>

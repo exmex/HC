@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/aipay_margin_vertical"
+    android:layout_marginLeft="@dimen/aipay_margin_horizontal"
+    android:layout_marginRight="@dimen/aipay_margin_horizontal"
+    android:layout_marginTop="@dimen/aipay_margin_vertical"
+    android:background="@drawable/iapppay_oneclick_frame_body_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/v_title_aipay"
+        layout="@layout/aipay_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" 
+            android:orientation="vertical"
+            android:layout_marginTop="13dp">
+            
+             <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="常见问题"
+                android:textColor="@color/aipay_grey"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="7dp"
+                android:background="#d2dbe6" />
+            
+            <ListView 
+                android:id="@+id/faq_list"
+                android:layout_width="fill_parent"
+            	android:layout_height="fill_parent"
+            	android:fadingEdge="none"
+            	android:divider="@null"
+            	android:cacheColorHint="#00000000"
+            	android:fadeScrollbars="false"
+            	android:scrollbars="vertical"
+            	android:listSelector="#00000000"
+                android:scrollbarThumbVertical="@drawable/aipay_scrollbar"/>
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:layout_gravity="bottom"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系我们"
+                android:textColor="@color/aipay_grey"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#d2dbe6" 
+                 android:layout_marginTop="7dp"/>
+            
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
+                
+                <LinearLayout
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:orientation="horizontal" 
+	                android:layout_marginTop="7dp"
+	                android:layout_marginBottom="7dp"
+	                android:gravity="center_vertical"
+	                >
+	
+	                <ImageView
+	                    android:layout_width="25dp"
+	                    android:layout_height="25dp"
+	                    android:layout_marginRight="7dp"
+	                    android:scaleType="fitXY"
+	                    android:background="@drawable/iapppay_service_phone" />
+	
+	                <TextView android:id="@+id/tv_phone_aipay"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textSize="16sp"
+	                    android:textColor="#303030"/>
+	            </LinearLayout>
+            
+	            <LinearLayout
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:orientation="horizontal" 
+	                android:layout_marginTop="7dp"
+	                android:layout_marginBottom="7dp"
+	                android:gravity="center_vertical">
+	
+	                <ImageView
+	                    android:layout_width="25dp"
+	                    android:layout_height="25dp"
+	                    android:layout_marginRight="7dp"
+	                    android:scaleType="fitXY"
+	                    android:background="@drawable/iapppay_service_qq" />
+	
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="1431190296" 
+	                    android:textSize="16sp"
+	                    android:textColor="#303030"/>
+	            </LinearLayout>
+	
+	            <LinearLayout
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:orientation="horizontal" 
+	                android:layout_marginTop="7dp"
+	                android:layout_marginBottom="7dp"
+	                android:layout_gravity="center_vertical">
+	
+	                <ImageView
+	                   android:layout_width="25dp"
+	                    android:layout_height="25dp"
+	                    android:layout_marginRight="7dp"
+	                    android:scaleType="fitXY"
+	                    android:background="@drawable/iapppay_service_wx" />
+	
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="公众账号：酷派信息" 
+	                    android:textSize="16sp"
+	                    android:textColor="#303030"/>
+	            </LinearLayout>
+                
+            </LinearLayout>
+            
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/aipay_divider_line" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
