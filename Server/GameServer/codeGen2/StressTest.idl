@@ -1,0 +1,317 @@
+
+//Object的类型.
+//
+enum _EGAMEOBJECT_TYPE {
+	OBJTYPE_PLAYER_PRIVATE	=0,//玩家私有信息
+	OBJTYPE_PLAYER_PUBLIC	,//玩家可公开信息
+    OBJTYPE_ITEM			,//物品
+    OBJTYPE_CONTAINER		,//容器
+    OBJTYPE_MONSTER			,//怪物
+	OBJTYPE_NPC  			,//NPC
+	OBJTYPE_PET  			,//宠物
+    OBJTYPE_PROPS			,//游戏道具,
+	OBJTYPE_CROPS
+};
+
+
+//所有对象的共有属性的索引值
+//
+struct GameObject{
+    STRINGA  GUID;
+    INT	  TYPE;//TYPE 参考_EGAMEOBJECT_TYPE 大分类
+    INT	  ENTRY;//同类型物品之中的ID值, 或怪物的不同ID，宠物的种类
+};
+
+//可移动的OBJECT
+//
+struct MovableObject:public GameObject
+{
+//移动相关的.
+FLOAT		MOVE_SPEED; //移动速度
+INT			POS_X;
+INT			POS_Y;
+INT			POS_FACING;
+INT			MOVE_FLAG; //用来表示一些组合运行,如向前跳,向后跳
+INT			LAST_MOVE_TIME;
+INT			STATUS;	// 状态，表示玩家当前状态
+};
+
+//生物的属性
+//
+struct UnitObject:public MovableObject
+{
+INT		        SUMMONEDBY;//给谁召唤出来的
+FLOAT			CAREER;//职业
+FLOAT			HEALTH;//当前HP
+FLOAT			MAXHEALTH;//最大hp
+FLOAT			MANA;//当前MP
+FLOAT			MAXMANA;//最大MP
+FLOAT	        SP;//精力
+FLOAT	        MAXSP;//最大精力
+
+INT			LEVEL;//等级
+AuraInfo	AURA_INFO[];//身上的光环信息BUFF
+FLOAT		BASIC_ATTACK;//基本攻击
+FLOAT		BASIC_DEFENSE; //基本防守
+
+
+FLOAT		ADDED_ATTACK;//加成攻击
+FLOAT		ADDED_DEFENSE;//加成防守
+
+FLOAT		HP_REGEN_SPEED;//HP回复速度 每秒
+FLOAT		MP_REGEN_SPEED;//MP回复速度 每秒
+FLOAT		SP_REGEN_SPEED;//MP回复速度 每秒
+
+FLOAT		ATTACK_SPEED;//攻击速度
+INT			SIGHT;       //TARGET IS VALID STREET (PIKSELGAP, IS 0, INFINITY) 
+INT			WARLIKE;	 //THE VALUE OF 0 TO 100. THE HIGHER THE AGGRESSIVE
+INT			FLAGS;       //用于怪物的一些属性组合.
+};
+
+
+
+
+struct TEST1
+{
+	UCHAR  t1;
+	UCHAR  t2[];
+	UCHAR  t3[10];
+	CHAR   t4;
+	CHAR   t5[];
+	CHAR   t6[10];
+	SHORT  t7;
+	SHORT  t8[];
+	SHORT  t9[20];
+	INT	   t10;
+	INT	   t11[];
+	INT	   t12[10];
+	UINT   t13;
+	UINT	t23[];
+	UINT	t24[10];
+	LONGLONG   t14;
+	LONGLONG	t15[];
+	LONGLONG	t16[10];
+	ULONGLONG   t17;
+	ULONGLONG	t18[];
+	ULONGLONG	t19[10];
+	STRINGA		t20;
+	STRINGA		t21[];
+	STRINGA		t22[10];
+};
+
+
+
+enum _ELOGIN_ERROR
+{
+	SUCCESS =0 ,
+	NEED_CREATE_CHARACTER,
+	EXPIRED,
+	SIG_WRONG,
+};
+
+enum _ECAREER
+{
+FIGHTER=0,//战士
+MAGE =1,//法师
+PRIEST =2,//牧师
+};
+
+enum _ECHARACTER_SLOT{
+INV_NOT_USED = 0,
+INV_SLOT_HEAD=1,//头
+INV_SLOT_NECK,//颈,项链
+INV_SLOT_SHIRT,//衬衣
+INV_SLOT_WAIST,//腰
+INV_SLOT_LEGS,//腿
+INV_SLOT_FEET,//脚
+INV_SLOT_WRISTS,//腕
+INV_SLOT_FINGER,//手指
+INV_SLOT_WEAPON,//武器
+INV_SLOT_TRINKET,//饰物,称号....
+};
+
+
+enum _EITEM_CATALOG
+{
+	CONSUMABLE = 0,
+	EQUIPMENT  = 1,
+	DECORATIONS    = 2,
+	SPECIAL		 =3,
+};
+
+
+struct AuraInfo  //BUFF
+{
+	INT Id;
+	INT level;
+	DOUBLE endtime; //结束时间
+};
+
+
+
+enum _EBUY_ITEM_ERROR
+{
+		SUCCESS = 0,
+		ERROR_COUNT_NEGATIVE = 1,
+		ERROR_ITEM_ITEM_NOT_FOUND = 2,
+		ERROR_ITEM_NOT_BUYABLE = 3,
+		ERROR_NOT_ENOUGH_COINS = 4,
+		
+};
+
+enum _ESELL_ITEM_ERROR
+{
+		SUCCESS = 0,
+		ERROR_COUNT_NEGATIVE = 1,
+		ERROR_ITEM_ITEM_NOT_FOUND = 2,
+		ERROR_ITEM_NOT_SELLABLE = 3,
+		ERROR_ITEM_NOT_ENOUGH = 4,
+};
+
+enum _EUSE_ITEM_ERROR
+{
+		SUCCESS = 0,
+		ERROR_COUNT_NEGATIVE = 1,
+		ERROR_ITEM_ITEM_NOT_FOUND = 2,
+		ERROR_ITEM_NOT_USABLE = 3,
+		ERROR_ITEM_NOT_ENOUGH = 4,
+};
+
+
+
+struct ItemObject{
+        STRINGA ID; // item id
+	INT OWNER; //放置地方 比如农场？仓库？
+        INT SLOT;  //放置地方 格
+	INT COUNT; //数量
+        INT PERIOD;  //生长期
+        STRINGA START_TIME; //生长期开始时间 
+        STRINGA END_TIME; //生长期结束时间
+};
+
+struct SkillInfo
+{
+	INT Id;
+	INT level;
+};
+
+
+struct QuestLogInfo
+{
+	INT Id;
+	INT status;
+};
+
+
+//发型样式 头发颜色 眼睛样式 瞳孔颜色 鼻子样式 耳朵样式 嘴巴样式
+// 皮肤颜色 唇色（女） 胡须（男）    
+struct PlayerAvatar
+{
+	INT sex;//性别
+	INT	face; //脸形
+	INT hair; //头发
+	INT skin; //肤色
+	INT eye; //眼睛
+	INT eyecolor;//眼睛颜色　
+	INT mouth; //嘴巴
+	INT beard;//胡须
+	INT brow;//眉毛
+	INT nose;  //鼻子
+	INT lipcolor;//唇色
+	INT haircolor;//头发颜色
+	INT accessories;//配饰 
+	INT chest;//衣服
+	INT pelvis;  //裙子，裤子	
+	INT leftUpperArm; //左上臂
+	INT rightUpperArm; //右上臂	
+	INT leftForeArm; //左前臂
+	INT rightForeArm; //右前臂	
+	INT leftHand;  //左手 
+	INT rightHand;  //右手
+	INT leftThigh;  //左大腿
+	INT rightThigh; //右大腿	
+	INT leftCalf;  //左小腿
+	INT rightCalf;  //右小腿	
+	INT leftFoot;  //左脚
+	INT rightFoot;  //右脚	
+	INT leftEar;  //左耳
+	INT rightEar;  //右耳
+
+};
+
+
+struct PlayerObjectPublic:public UnitObject
+{
+STRINGA	 NAME;
+INT		 SEX;
+STRINGA  CONSTELLATION;
+STRINGA  BLOODTYPE;
+INT      AGE;
+STRINGA  COUNTRY;
+STRINGA  HEAD_PORTRAIT;	//头像
+PlayerAvatar avatar;
+INT			 GUILDID;//所属公会
+ItemObject	 INV_SLOTS[];//装备栏,解除装备则移到ItemObject中
+};
+
+struct PlayerObjectPrivate:public PlayerObjectPublic
+{
+//以下是私人信息,其它玩家看不见
+
+ItemObject      ITEMS[];                //物品,装备后物品会从这里移除.
+INT             COINAGE;                //普通金币
+INT				cash;					//充值点数
+
+INT             XP;                     //当前经验
+INT             NEXT_LEVEL_XP;          //下一级经验
+INT				skillPoint;				//可用的天赋点数
+SkillInfo       SKILLS[];               //技能信息
+QuestLogInfo    QUEST_LOGS[];	        //任务列表
+INT				HURT;					//伤害
+INT				HABITUS;				//体质
+INT				HIT;					//命中
+INT				SPEED;					//速度
+INT  			DEFENSE;				//防御
+INT				STRENGTH;				//力量
+INT			    AGILE;					//敏捷  
+INT				ENDURANCE;				//耐力
+INT				DODGE;					//闪躲
+INT				ABILITY_POINT;			//能力点 
+INT				VIGOUR;					//活力
+INT				PHYSICAL_FORCE;			//体力
+INT 			INTELLIGENCE;			//智力
+};
+
+
+struct TEST2
+{
+	TEST1  t1;
+	TEST1  t2[];
+	TEST1  t3[5];
+};
+
+struct TEST3 :public TEST2
+{
+	TEST2  t4;
+	TEST2  t5[];
+	TEST2  t6[5];
+};
+
+coclass TestProtocol
+{
+	interface ITestServer
+	{
+			INT DoLogin(STRINGA userId,STRINGA account, STRINGA sessionKey)=1;
+			INT SendServerTest(UCHAR p[1024],TEST1 t1, TEST2 t2, TEST3 t3)=5;
+	};
+	
+			
+	dispinterface TestServerEvent
+	{
+			INT OnServerErrorMessage(INT error_code, STRINGA lpszMsg)=1;
+			INT OnLoginError(INT errorCode)=2;
+			INT OnPlayerObjectPrivate(PlayerObjectPrivate player)=3; //登录成功后发送
+			INT OnServerTestEcho(UCHAR p[1024],TEST1 t1, TEST2 t2, TEST3 t3)=5;
+	};
+};
+

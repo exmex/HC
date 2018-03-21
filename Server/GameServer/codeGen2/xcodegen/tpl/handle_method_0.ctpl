@@ -1,0 +1,12 @@
+
+int __/*::METHOD_NAME::*/(const char* __src TSRMLS_DC,int __len)
+{
+	zval dispatch_func;
+	zval *uf_result = NULL;
+
+	ZVAL_STRINGL(&dispatch_func, "__/*::METHOD_NAME::*/", sizeof("__/*::METHOD_NAME::*/") - 1, 0);
+
+	call_user_function_ex(CG(function_table), NULL, &dispatch_func, &uf_result, 0, NULL,1,NULL TSRMLS_CC);
+
+	return 0;
+}

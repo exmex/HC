@@ -1,0 +1,52 @@
+enum _EINTERNAL_NOTIFY_BY_PROXY_A
+{
+	CLIENT_DISCONNECT = 1,
+	CLIENT_NOT_EXIST_WHEN_RESPONSE = 2,
+	CLIENT_WRITE_ERROR = 3,
+	CLIENT_SOCKET_DEAD_ALREADY = 4,
+};
+
+
+enum _ECOMMON_SERVER_ERROR_A
+{
+	SUCCESS = 0,
+	PROXY_FASTCGI_INTERAL_ERROR = 1, //PROXY REVERED PLEASE DO NOT MODIFY IT
+	PROXY_SENDTO_FCGI_FAILED_TOO_MUCH = 2,
+	PROXY_FCGI_REQUEST_TIMEOUT = 3,
+	PROXY_FCGI_UNAVAILABLE = 4,
+	KICKED_OUT_BY_OTHER_DUPLICATED_LOGIN = 5,
+	KICKED_OUT_FOR_IDLE_TOO_LONG = 6,
+	KICKED_OUT_FOR_BAD_STATE_NOT_LOGIN_YET = 7, //Connection STATE CHECKING
+	KICKED_OUT_FOR_BAD_STATE_LOING_ALREADY = 8, //Connection STATE CHECKING
+	SERVER_UNDER_MAINTAIN = 9
+};
+
+
+coclass GameProtocol
+{
+	interface ServerInterface
+	{
+		/**
+		 * 登录接口会用在proxyServer中,更改这个接口必须通知Dany
+		 */
+		INT DoLogin(STRINGA userId, STRINGA server, STRINGA sessionKey, STRINGA version)=1;
+		/**
+		 * @param action see _EINTERNAL_NOTIFY_BY_PROXY,CLIENT发送此命令会给PROXY过滤,而仅用于PROXY内部
+		 */
+		INT SendInternalNotifyByProxy(INT action)=12;
+		/**
+		  * @param error_code see _ECOMMON_SERVER_ERROR_A
+		  */
+		INT OnKickout(INT error_code)=25;
+		INT SendPing(STRINGA time)=34; //心跳包
+		INT SendProtoBuff(UCHAR data[])=35;//逻辑包
+	};
+	
+	dispinterface ServerEvent
+	{
+		INT OnServerErrorMessage(INT error_code, STRINGA lpszMsg)=1;
+		INT OnSendZipData(UCHAR zipData[])=2; // 发送压缩过的包
+		INT OnPong(STRINGA time)=46;//心跳包
+		INT OnProtoReponse(INT error_code, UCHAR data[])=47;//逻辑包
+	};
+};

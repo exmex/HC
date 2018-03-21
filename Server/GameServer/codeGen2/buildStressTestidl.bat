@@ -1,0 +1,2 @@
+xproto.exe -i=StressTest.idl -sl=php -sd=..\server\test\protocol -sp=xproxy -ace=true -stdafx=false -td=testcode_templates
+xproto.exe -i=proxy.idl -cl=php -sd=..\server\test\protocol -sp=xproxy -ace=true -stdafx=false -td=testcode_templates

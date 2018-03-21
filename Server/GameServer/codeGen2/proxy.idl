@@ -1,0 +1,179 @@
+
+const _ECUSTOM_HEADER
+{
+	php_err_length   = "php-err-len";
+	proto_error_code ="proto-erro-code";
+	content_type     ="Content-type: application/xproto";
+	content_length   ="Content-length";
+	socket_id	     ="HTTP_SOCKET_ID";
+	proxy_id		 ="HTTP_PROXY_ID";
+	x_proto_type     ="xproto";
+
+};
+
+
+
+enum _ECOMMON_SERVER_ERROR
+{
+	SUCCESS = 0,
+	PROXY_FASTCGI_INTERAL_ERROR = 1,
+	PROXY_SENDTO_FCGI_FAILED_TOO_MUCH = 2,
+	PROXY_FCGI_REQUEST_TIMEOUT		  = 3,
+	PROXY_FCGI_UNAVAILABLE			  = 4,
+        KICKED_OUT_BY_OTHER_DUPLICATED_LOGIN =5,
+	KICKED_OUT_FOR_IDLE_TOO_LONG =6,
+	KICKED_OUT_FOR_BAD_STATE_NOT_LOGIN_YET =7,
+	KICKED_OUT_FOR_BAD_STATE_LOING_ALREADY =8,        
+};
+
+enum _EINTERNAL_NOTIFY_BY_PROXY
+{
+	CLIENT_DISCONNECT = 1,
+	CLIENT_NOT_EXIST_WHEN_RESPONSE = 2,
+	CLIENT_WRITE_ERROR = 3,
+	CLIENT_SOCKET_DEAD_ALREADY = 4,
+	PROXY_SAYHELLO_FASTCGI = 5,
+};
+
+enum _EPROXY_STATUS
+{
+	OFFLINE = 0,
+	BUSY    = 1,
+	NORMAL  = 2,
+	IDLE    = 3
+};
+
+enum _ECONNECTION_STAT
+{
+	NONE = 0, //AUTO GOTO STAT CONNECTED BY INSERT A RECORD
+	CONNECTED = 1,  //Event allow , LOGIN_CMD
+	AUTHENTICATED = 2, //Event allow, CHARACTER EXISTS , AUTO GOTO state ENTERWORLD
+	CREATING_CHARACTER=3,//Event allow, CREATE_CHARACTER cmd, GOTO state ENTERWORLD
+	ENTER_WORLD =4, //any other event beside of LOGIN_CMD,CREATE_CHARACTER
+	CLOSED =5,//DELETE RECORDE, AUTO GOTO NONE state
+};
+
+enum _ETIMER_OP_ERROR
+{
+	SUCCEED = 0,
+	TOO_MANY_TIMER,
+	TIMER_ID_NOT_FOUND,
+};
+
+enum _ENOTIFY_SEND_RESULT_ERROR
+{
+	SUCCEED = 0,
+	PROXY_ID_NOT_FOUND =1,
+	PROXY_SEND_FAILED  =2,
+	PROXY_ADDRESS_INVALID = 3,
+	PROXY_CONNECT_FAILED  = 4,
+	PROXY_QUEUE_TOO_MUCH  = 5,
+	PROXY_OFFLINE		  = 6,
+	PROXY_NO_LONGER_EXISTS = 7,
+	
+
+};
+
+
+struct PROXY_TARGET
+{
+	STRINGA PROXY_ID;
+	ULONGLONG SOCKET_ID[]; //动态数组，每个PROXY内部的SOCKET, 广播时可以为零
+};
+
+struct PROXY_TARGET_LOCAL
+{
+	STRINGA PROXY_ID;
+	STRINGA SOCKET_ID[]; //动态数组，每个PROXY内部的SOCKET, 广播时可以为零
+};
+
+struct NotifySendResult
+{
+	STRINGA PROXY_ID;
+	INT		errorcode; //SEE _ENOTIFYSEND_RESULT_ERROR
+	INT		numSucceed;
+	INT		numFailed;
+};
+
+/**
+	push client to push server
+*/
+coclass PushProtocol
+{
+	interface PushInterface
+	{
+		/**
+			I have obseleted the broadcast packet, because we can broadcast easily using the bInclude param to send broadcast.
+			@param bIncluded, set it 0 and a empty socketIdList will broacst to all.
+		*/
+	   INT SendMutiplecastPacket(ULONGLONG request_id, UCHAR bIncluded, 
+			ULONGLONG socketIdList[],
+			UCHAR pPacket[],
+			UCHAR bKickOut //Kick interface obseleted , integer by this param, let it purified and less codes
+			)=1;
+	};
+
+
+	dispinterface PushEvent
+	{
+
+		INT OnMutiplecastPacketError(ULONGLONG request_id, NotifySendResult res)=1;
+	};
+
+};
+
+
+/**
+php to push client
+*/
+coclass LocalDeamonProtocol
+{
+	interface LocalInterface
+	{
+		INT SendMutiplecastLocal(PROXY_TARGET_LOCAL targets[],
+			UCHAR bIncluded, 
+			UCHAR pPacket[], 
+			UCHAR bWaitDetailResult,
+			UCHAR bKickout  //<Kick interface is obseleted , integerated by this param, let it purified and less codes
+			)=1;
+
+		INT ScheduleTimer(UCHAR bRepeating, INT milliSecond, STRINGA scriptfileName, STRINGA className, STRINGA params)=3;
+
+		INT CancelTimer(STRINGA timerId)=4;
+	};
+
+	dispinterface LocalEvent
+	{
+		INT OnMutiplecastLocalError(NotifySendResult res[])=1;
+
+		INT	OnScheduleTimerResult(INT errorCode, STRINGA timerId)=3;
+		INT	OnCancelTimerResult(INT errorCode)=4;
+	};
+
+
+};
+
+/**
+	flash client to proxy	
+*/
+coclass ProxyProtocol
+{
+	interface ProxyServerInterface
+	{
+		/**
+				@param action see _EINTERNAL_NOTIFY,CLIENT发送此命令会给PROXY过滤,而仅用于				PROXY内部
+		*/
+		INT SendInternalNotifyByProxy(INT action)=12;
+                INT SendPing(STRINGA time)=34; //心跳包
+
+	};
+	
+	dispinterface ProxyServerEvent
+	{
+		INT	OnServerErrorMessage(INT error_code, STRINGA lpszMsg)=1;
+                INT     OnPong(STRINGA time)=46;
+	};
+};
+
+
+

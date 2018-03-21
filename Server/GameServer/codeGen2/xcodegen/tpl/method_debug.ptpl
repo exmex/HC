@@ -1,0 +1,9 @@
+
+function /*::METHOD_NAME::*/_ToDebugString(/*::PARAM_DEFINE::*/)
+{
+	$__xsd = "/*::METHOD_NAME::*/(";	
+	
+/*::DEBUG_CODE::*/
+	$__xsd .= ")";	
+	return str_replace( ",)", ")", $__xsd );
+}

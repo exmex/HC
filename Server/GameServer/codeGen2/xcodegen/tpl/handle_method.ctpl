@@ -1,0 +1,21 @@
+
+int __/*::METHOD_NAME::*/(const char* __src TSRMLS_DC,int __len)
+{
+	zval dispatch_func;
+	zval *uf_result = NULL;
+	zval ** params[/*::PARAMS_NUM_CODE::*/];
+	
+	int xsize = 0;
+	/*::BEAN_NAME::*/_Object * obj =(/*::BEAN_NAME::*/_Object *)emalloc(sizeof(/*::BEAN_NAME::*/_Object));
+    memset(obj, 0, sizeof(/*::BEAN_NAME::*/_Object));
+	/*::BEAN_NAME::*/_FromBuffer_s(obj TSRMLS_CC,__src,__len,&xsize);
+
+	ZVAL_STRINGL(&dispatch_func, "__/*::METHOD_NAME::*/", sizeof("__/*::METHOD_NAME::*/") - 1, 0);
+/*::PARAMS_DEFINE_CODE::*/	
+	call_user_function_ex(CG(function_table), NULL, &dispatch_func, &uf_result, /*::PARAMS_NUM_CODE::*/, params,1,NULL TSRMLS_CC);
+
+/*::BEAN_FREE_CODE::*/
+	efree(obj);
+
+	return 0;
+}

@@ -1,0 +1,4 @@
+  interface /*::ENUM_NAME::*/
+	{	
+/*::ENUM_MEMBERS::*/
+	}

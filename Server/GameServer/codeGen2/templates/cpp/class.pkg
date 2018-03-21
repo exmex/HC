@@ -1,0 +1,28 @@
+
+class /*::CLASS_NAME::*//*::PARENT_CLASS_NAME::*/
+{
+  /*{::getter_setters::}*/
+	static	int    _Size(/*{::REF_PARAMETERS::}*/);
+	static	int    _FromBuffer(const char *__src,int     __len,/*{::REF_PARAMETERS::}*/);
+	static	int    _ToBuffer(char *__dst,int     __len,/*{::REF_PARAMETERS::}*/);
+	int   Size();
+	int   FromBuffer(const char *__src,int     __len);
+	int   ToBuffer(char *__dst,int     __len);
+};
+
+//typedef _bean_ptr_t</*::CLASS_NAME::*/>  /*::CLASS_NAME::*/Ptr;
+
+class /*::CLASS_NAME::*/Ptr {
+   /*::CLASS_NAME::*/Ptr();
+    ~/*::CLASS_NAME::*/Ptr();
+    void Attach( /*::CLASS_NAME::*/* pInterface) ;
+    void Attach( /*::CLASS_NAME::*/* pInterface, bool fAddRef);
+     /*::CLASS_NAME::*/* Detach();
+    void Release() ;
+    void AddRef() ;
+    /*::CLASS_NAME::*/* GetInterfacePtr();
+    int CreateInstance() ;
+};
+
+//--------------------------------------------------------------
+

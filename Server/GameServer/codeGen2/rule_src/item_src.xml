@@ -1,0 +1,3538 @@
+<?xml version="1.0"?>
+<items>
+	<item id="business.biz_lotsite_4x4" name="Empty Lot" type="business" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="4" sizeY="4">
+		<unlock>friends</unlock>
+		<requiredFriends>3</requiredFriends>
+		<cost>0</cost>
+		<buildTime>0.005</buildTime>
+		<energyCost build="0" harvest="1"/>
+	</item>
+	<item id="business.bus_pharmacy" name="Pharmacy" type="business" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="3" sizeY="3" lottery="3">
+		<unlockCost>17</unlockCost>
+		<unlock>population</unlock>
+		<requiredPopulation>1100</requiredPopulation>
+		<cost>30000</cost>
+		<commodity name="coins"/>
+		<commodityReq>702</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0.005</buildTime>
+		<growTime>0.010425</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_pharmacy</headquarters>
+		<construction>constructionsite.construction_3x3_6stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="defaultcointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="pharmacy_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="business.bus_bakery" name="Bakery" type="business" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="3" sizeY="3" lottery="4">
+		<cost>200</cost>
+		<commodity name="coins"/>
+		<commodityReq>40</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0.000695</buildTime>
+		<growTime>0.010425</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_bakery</headquarters>
+		<construction>constructionsite.construction_3x3_2stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="bakerycointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="bakery_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="business.bus_florist_shop" name="Flower Shop" type="business" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="3" sizeY="3" lottery="4">
+		<unlockCost>4</unlockCost>
+		<unlock>population</unlock>
+		<requiredPopulation>50</requiredPopulation>
+		<cost>800</cost>
+		<commodity name="coins"/>
+		<commodityReq>95</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0.005</buildTime>
+		<growTime>0.010425</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_florist_shop</headquarters>
+		<construction>constructionsite.construction_3x3_2stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="defaultcointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="florist_shop_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="business.bus_coffee_shop" name="Coffee Shop" type="business" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="3" sizeY="3" lottery="4">
+		<unlockCost>3</unlockCost>
+		<unlock>population</unlock>
+		<requiredPopulation>30</requiredPopulation>
+		<cost>400</cost>
+		<commodity name="coins"/>
+		<commodityReq>320</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0.000695</buildTime>
+		<growTime>0.010425</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_coffee_shop</headquarters>
+		<construction>constructionsite.construction_3x3_2stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="coffeeshopcointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="coffee_shop_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="business.bus_toy_store" name="Toy Store" type="business" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="4" sizeY="4" lottery="4">
+		<unlockCost>12</unlockCost>
+		<unlock>population</unlock>
+		<requiredPopulation>700</requiredPopulation>
+		<cost>7500</cost>
+		<commodity name="coins"/>
+		<commodityReq>180</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0.005</buildTime>
+		<growTime>0.010425</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_toy_store</headquarters>
+		<construction>constructionsite.construction_4x4_5stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="toystorecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="toy_store_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="business.bus_burger_joint" name="Burger Joint" type="business" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="3" sizeY="3" lottery="4">
+		<unlock>friends</unlock>
+		<requiredFriends>8</requiredFriends>
+		<cost>2000</cost>
+		<commodity name="coins"/>
+		<commodityReq>240</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0.000694</buildTime>
+		<growTime>0.010425</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_burger_joint</headquarters>
+		<construction>constructionsite.construction_3x3_3stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="burgercointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="burger_joint_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="business.bus_grocery_store" name="Grocery store" type="business" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="4" sizeY="4" lottery="4">
+		<unlock>population</unlock>
+		<requiredPopulation>100</requiredPopulation>
+		<unlockCost>5</unlockCost>
+		<cost>1000</cost>
+		<commodity name="coins"/>
+		<commodityReq>95</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<requiredPopulation>1</requiredPopulation>
+		<buildTime>0.005</buildTime>
+		<growTime>0.010425</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_convenience_store</headquarters>
+		<construction>constructionsite.construction_4x4_2stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="videogamestorecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="grocery_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="business.bus_vegetable_store" name="Vegetable Store" type="business" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="3" sizeY="3" lottery="4">
+		<unlockCost>6</unlockCost>
+		<unlock>population</unlock>
+		<requiredPopulation>1000</requiredPopulation>
+		<cost>1500</cost>
+		<commodity name="goods"/>
+		<commodityReq>240</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0.000695</buildTime>
+		<growTime>0.010425</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<headquarters>hq_vegetable_store</headquarters>
+		<construction>constructionsite.construction_3x3_3stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="defaultcointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="vegetable_store_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="business.bus_clothing_store" name="Clothing Store" type="business" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="3" sizeY="3" lottery="4">
+		<unlockCost>8</unlockCost>
+		<unlock>population</unlock>
+		<requiredPopulation>350</requiredPopulation>
+		<cost>2500</cost>
+		<commodity name="coins"/>
+		<commodityReq>368</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0.005</buildTime>
+		<growTime>0.010425</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<headquarters>hq_clothing_store</headquarters>
+		<construction>constructionsite.construction_3x3_3stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="cosmeticstorecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="clothing_store_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="business.bus_ice_cream_parlor" name="Ice Cream Parlor" type="business" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="3" sizeY="3" lottery="4">
+		<unlockCost>8</unlockCost>
+		<unlock>population</unlock>
+		<requiredPopulation>400</requiredPopulation>
+		<cost>3000</cost>
+		<commodity name="coins"/>
+		<commodityReq>120</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0.001490</buildTime>
+		<growTime>0.010425</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_ice_cream_parlor</headquarters>
+		<construction>constructionsite.construction_3x3_3stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="poolhallcointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="ice_cream_parlor_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="business.bus_barbeshop" name="Barbershop" type="business" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="3" sizeY="3" lottery="4">
+		<unlock>population</unlock>
+		<requiredPopulation>450</requiredPopulation>
+		<unlockCost>8</unlockCost>
+		<cost>4000</cost>
+		<commodity name="coins"/>
+		<commodityReq>420</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<requiredPopulation>1</requiredPopulation>
+		<buildTime>0.005</buildTime>
+		<growTime>0.010425</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_barbershop</headquarters>
+		<construction>constructionsite.construction_3x3_4stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="bikeshopcointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="barbershop_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="business.bus_book_store" name="Book Store" type="business" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="4" sizeY="4" lottery="4">
+		<unlockCost>0</unlockCost>
+		<unlock>friends</unlock>
+		<requiredFriends>10</requiredFriends>
+		<cost>5000</cost>
+		<commodity name="coins"/>
+		<commodityReq>330</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0.005</buildTime>
+		<growTime>0.010425</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_book_store</headquarters>
+		<construction>constructionsite.construction_4x4_4stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="shoestorecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="book_store_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="business.bus_french_restaurant" name="French Restaurant" type="business" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="3" sizeY="3">
+		<cost>40000</cost>
+		<commodity name="coins"/>
+		<commodityReq>495</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<unlockCost>18</unlockCost>
+		<unlock>population</unlock>
+		<requiredPopulation>1300</requiredPopulation>
+		<buildTime>0.005</buildTime>
+		<growTime>0.010425</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<construction>constructionsite.construction_3x3_7stage</construction>
+		<headquarters>hq_french_restaurant</headquarters>
+		<randomModifiers>
+			<modifier type="coin" tableName="frenchrestcointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="french_restaurant_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="business.bus_tool_store" name="Tool Store" type="business" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="3" sizeY="3">
+		<unlockCost>15</unlockCost>
+		<commodity name="coins"/>
+		<commodityReq>368</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0.005</buildTime>
+		<growTime>0.010425</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_tool_store</headquarters>
+		<construction>constructionsite.construction_3x3_4stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="sunglassescointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="tool_store_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="business.bus_supermarket" name="Supermarket" type="business" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="3" sizeY="3">
+		<unlockCost>20</unlockCost>
+		<commodity name="coins"/>
+		<commodityReq>441</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0.005</buildTime>
+		<growTime>0.010425</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_supermarket</headquarters>
+		<construction>constructionsite.construction_3x3_4stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="italrestbscointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="supermarket_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="business.bus_pet_store" name="Pet Store" type="business" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="3" sizeY="3" lottery="3">
+		<unlock>population</unlock>
+		<requiredPopulation>750</requiredPopulation>
+		<unlockCost>12</unlockCost>
+		<cost> 10000</cost>
+		<commodity name="coins"/>
+		<commodityReq>495</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<requiredPopulation>1</requiredPopulation>
+		<buildTime>0.005</buildTime>
+		<growTime>0.010425</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_pet_store</headquarters>
+		<construction>constructionsite.construction_3x3_5stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="crabshackcointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="pet_store_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="business.bus_bar" name="Bar" type="business" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="4" sizeY="4" lottery="3">
+		<unlockCost>14</unlockCost>
+		<unlock>population</unlock>
+		<requiredPopulation>800</requiredPopulation>
+		<cost>12500</cost>
+		<commodity name="coins"/>
+		<commodityReq>534</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0.005</buildTime>
+		<growTime>0.010425</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_bar</headquarters>
+		<construction>constructionsite.construction_4x4_5stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="handbagscointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="bar_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="business.bus_gas_station" name="Gas Station" type="business" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="3" sizeY="3" lottery="3">
+		<unlockCost>0</unlockCost>
+		<unlock>population</unlock>
+		<requiredPopulation>850</requiredPopulation>
+		<cost>15000</cost>
+		<commodity name="coins"/>
+		<commodityReq>645</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0.001490</buildTime>
+		<growTime>0.010425</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_gas_station</headquarters>
+		<construction>constructionsite.construction_3x3_5stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="sushicointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="gas_station_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="business.bus_hotel" name="Hotel" type="business" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="3" sizeY="3" lottery="2">
+		<unlockCost>20</unlockCost>
+		<unlock>population</unlock>
+		<requiredPopulation>1400</requiredPopulation>
+		<cost>50000</cost>
+		<commodity name="coins"/>
+		<commodityReq>609</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0.005</buildTime>
+		<growTime>0.010425</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_hotel</headquarters>
+		<construction>constructionsite.construction_3x3_7stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="weddingstorecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="hotel_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="business.bus_cinema" name="Cinema" type="business" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="3" sizeY="6" lottery="2">
+		<cost>70000</cost>
+		<unlock>questflag</unlock>
+		<requiredQuestFlag>q_bus_cinema</requiredQuestFlag>
+		<commodity name="coins"/>
+		<commodityReq>900</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0.001490</buildTime>
+		<growTime>0.010425</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<animRoundRobbinOpt>1</animRoundRobbinOpt>
+		<animFramerateOpt>1</animFramerateOpt>
+		<headquarters>hq_cinema</headquarters>
+		<construction>constructionsite.construction_3x6_7stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="movietheatercointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="cinema_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="business.bus_appliances_store" name="Appliances Store" type="business" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="4" sizeY="4" lottery="3">
+		<cost>20000</cost>
+		<unlockCost>17</unlockCost>
+		<unlock>population</unlock>
+		<requiredPopulation>1000</requiredPopulation>
+		<commodity name="coins"/>
+		<commodityReq>150</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0.0010425</buildTime>
+		<growTime>0.010425</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_appliances_store</headquarters>
+		<construction>constructionsite.construction_4x4_6stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="skyscraperrestaurantcointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="appliances_store_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="business.bus_pizza_house" name="Pizza House" type="business" buyable="false" giftable="false" placeable="true" requireLevel="1" sizeX="3" sizeY="3" lottery="3">
+		<cost>35000</cost>
+		<unlockCost>18</unlockCost>
+		<commodity name="coins"/>
+		<commodityReq>749</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<unlock>population</unlock>
+		<requiredPopulation>1200</requiredPopulation>
+		<buildTime>0.001490</buildTime>
+		<growTime>0.010425</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_pizza_house</headquarters>
+		<construction>constructionsite.construction_3x3_6stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="cornerstorecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="pizza_house_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="business.bus_fitness_centre" name="Fitness Centre" type="business" buyable="false" giftable="false" placeable="true" requireLevel="1" sizeX="4" sizeY="4" lottery="2">
+		<cost>60000</cost>
+		<unlockCost>22</unlockCost>
+		<commodity name="coins"/>
+		<commodityReq>830</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<unlock>population</unlock>
+		<requiredPopulation>1500</requiredPopulation>
+		<buildTime>0.001490</buildTime>
+		<growTime>0.010425</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_fitness_center</headquarters>
+		<construction>constructionsite.construction_4x4_7stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="defaultcointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="fitness_centre_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="business.bus_garage" name="Garage" type="business" buyable="false" giftable="false" placeable="true" requireLevel="1" sizeX="3" sizeY="3" lottery="1">
+		<unlockCost>25</unlockCost>
+		<cost>80000</cost>
+		<commodity name="coins"/>
+		<commodityReq>910</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<unlock>population</unlock>
+		<requiredPopulation>1700</requiredPopulation>
+		<buildTime>0.005</buildTime>
+		<growTime>0.010425</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_garage</headquarters>
+		<construction>constructionsite.construction_3x3_8stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="tuxrentcointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="garage_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="business.bus_specialty_boutique" name="Specialty Boutique" type="business" buyable="false" giftable="false" placeable="true" requireLevel="1" sizeX="3" sizeY="3" lottery="1">
+		<unlockCost>30</unlockCost>
+		<cost>60000</cost>
+		<commodity name="coins"/>
+		<commodityReq>920</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<unlock>population</unlock>
+		<requiredPopulation>1900</requiredPopulation>
+		<buildTime>0.005</buildTime>
+		<growTime>0.010425</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_specialty_boutique</headquarters>
+		<construction>constructionsite.construction_3x3_8stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="fastfoodchickencointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="specialty_boutique_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="business.bus_chinese_food_restaurant" name="Chinese Food Restaurant" type="business" buyable="false" giftable="false" placeable="true" requireLevel="1" sizeX="4" sizeY="4" lottery="1">
+		<unlockCost>27</unlockCost>
+		<cost>100000</cost>
+		<commodity name="coins"/>
+		<commodityReq>920</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<unlock>population</unlock>
+		<requiredPopulation>1800</requiredPopulation>
+		<buildTime>0.005</buildTime>
+		<growTime>0.010425</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_chinese_restaurant</headquarters>
+		<construction>constructionsite.construction_4x4_8stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="fastfoodchickencointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="chinese_food_restaurant_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="business.bus_seafood_restaurant" name="Seafood Restaurant" type="business" buyable="false" giftable="false" placeable="true" requireLevel="1" sizeX="3" sizeY="6" lottery="3">
+		<unlockCost>15</unlockCost>
+		<unlock>population</unlock>
+		<requiredPopulation>900</requiredPopulation>
+		<cost>17500</cost>
+		<commodity name="coins"/>
+		<commodityReq>609</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<requiredPopulation>1</requiredPopulation>
+		<buildTime>0.005</buildTime>
+		<growTime>0.010425</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_seafood_restaurant</headquarters>
+		<construction>constructionsite.construction_3x6_6stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="jeansstorecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="seafood_restaurant_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="plot.plot_crop" name="Farm Plot" type="plot" giftable="false" buyable="true" placeable="true" code="XX" rareItem="false" useTilePicking="true" multiplace="true" requireLevel="1" sizeX="2" sizeY="2">
+		<cost>100</cost>
+		<noAutoScale>1</noAutoScale>
+		<growTime>1</growTime>
+		<energyCost build="0" harvest="5"/>
+	</item>
+	<item id="plot_contract.potatoes" name="Potatoes" type="plot_contract" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="2" sizeY="2">
+		<cost>20</cost>
+		<commodity name="goods"/>
+		<commodityReq>15</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0</buildTime>
+		<growTime>0.008242</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_bakery</headquarters>
+		<randomModifiers>
+			<modifier type="goods" tableName="potatoesgoodstable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="potato_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="plot_contract.eggplants" name="Eggplants" type="plot_contract" buyable="true" giftable="false" placeable="true" requireLevel="2" sizeX="2" sizeY="2">
+		<cost>46</cost>
+		<unlockCost>2</unlockCost>
+		<commodity name="goods"/>
+		<commodityReq>70</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0</buildTime>
+		<growTime>0.333333</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_flowerkiosk</headquarters>
+		<randomModifiers>
+			<modifier type="goods" tableName="eggplantsgoodstable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="eggplant_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="plot_contract.grapes" name="Grapes" type="plot_contract" buyable="true" giftable="false" placeable="true" requireLevel="4" sizeX="2" sizeY="2">
+		<cost>62</cost>
+		<unlockCost>4</unlockCost>
+		<commodity name="goods"/>
+		<commodityReq>110</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0</buildTime>
+		<growTime>1</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_coffeeshop</headquarters>
+		<randomModifiers>
+			<modifier type="goods" tableName="grapesgoodstable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="grape_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="plot_contract.tomatoes" name="Tomatoes" type="plot_contract" buyable="true" giftable="false" placeable="true" requireLevel="6" sizeX="2" sizeY="2">
+		<cost>28</cost>
+		<unlockCost>6</unlockCost>
+		<commodity name="goods"/>
+		<commodityReq>30</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0</buildTime>
+		<growTime>0.041667</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_toystore</headquarters>
+		<randomModifiers>
+			<modifier type="goods" tableName="tomatoesgoodstable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="tomato_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="plot_contract.lavender" name="Lavender" type="plot_contract" buyable="true" giftable="false" placeable="true" requireLevel="9" sizeX="2" sizeY="2">
+		<cost>36</cost>
+		<unlockCost>9</unlockCost>
+		<commodity name="goods"/>
+		<commodityReq>45</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0</buildTime>
+		<growTime>0.166667</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_burger</headquarters>
+		<randomModifiers>
+			<modifier type="goods" tableName="lavendergoodstable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="vanilla_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="plot_contract.pumpkins" name="Pumpkins" type="plot_contract" buyable="true" giftable="false" placeable="true" requireLevel="12" sizeX="2" sizeY="2">
+		<cost>50</cost>
+		<unlockCost>12</unlockCost>
+		<commodity name="goods"/>
+		<commodityReq>80</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<requiredPopulation>0</requiredPopulation>
+		<buildTime>0</buildTime>
+		<growTime>0.5</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_videogamestore</headquarters>
+		<randomModifiers>
+			<modifier type="goods" tableName="pumpkinsgoodstable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="pumpkin_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="plot_contract.wheat" name="Wheat" type="plot_contract" buyable="true" giftable="false" placeable="true" requireLevel="15" sizeX="2" sizeY="2">
+		<cost>52</cost>
+		<unlockCost>15</unlockCost>
+		<commodity name="goods"/>
+		<commodityReq>90</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0</buildTime>
+		<growTime>0.75</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<headquarters>hq_diner</headquarters>
+		<randomModifiers>
+			<modifier type="goods" tableName="wheatgoodstable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="wheat_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="plot_contract.soy_beans" name="Soybeans" type="plot_contract" buyable="true" giftable="false" placeable="true" requireLevel="20" sizeX="2" sizeY="2">
+		<cost>70</cost>
+		<unlockCost>20</unlockCost>
+		<commodity name="goods"/>
+		<commodityReq>130</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0</buildTime>
+		<growTime>2.1</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<headquarters>hq_cosmeticstore</headquarters>
+		<randomModifiers>
+			<modifier type="goods" tableName="soybeansgoodstable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="soybean_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="plot_contract.sunflowers" name="Sunflowers" type="plot_contract" buyable="true" giftable="false" placeable="true" requireLevel="25" sizeX="2" sizeY="2">
+		<cost>85</cost>
+		<unlockCost>25</unlockCost>
+		<commodity name="goods"/>
+		<commodityReq>155</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0</buildTime>
+		<growTime>3.1</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_poolhall</headquarters>
+		<randomModifiers>
+			<modifier type="goods" tableName="sunflowersgoodstable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="sunflower_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="storage.small_barn" name="Small Barn" type="storage" buyable="true" giftable="false" placeable="true" requireLevel="8" sizeX="3" sizeY="3">
+		<cost>1000</cost>
+		<commodity name="goods" capacity="400"/>
+		<commodityReq>0</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0.005</buildTime>
+		<growTime>0.010425</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_shoestore</headquarters>
+		<construction>constructionsite.construction_3x3_4stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="shoestorecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="bar_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="storage.silo" name="Silo" type="storage" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="2" sizeY="2">
+		<cost>250</cost>
+		<commodity name="goods" capacity="100"/>
+		<commodityReq>0</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0.005</buildTime>
+		<growTime>0.010425</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_shoestore</headquarters>
+		<construction>constructionsite.construction_2x2_2stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="shoestorecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="bar_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="storage.medium_barn" name="Medium Barn" type="storage" buyable="true" giftable="false" placeable="true" requireLevel="12" sizeX="4" sizeY="4">
+		<cost>1500</cost>
+		<commodity name="goods" capacity="600"/>
+		<commodityReq>0</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0.005</buildTime>
+		<growTime>0.010425</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<construction>constructionsite.construction_4x4_4stage</construction>
+		<headquarters>hq_frenchrest</headquarters>
+		<randomModifiers>
+			<modifier type="coin" tableName="frenchrestcointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="french_restaurant_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="storage.large_barn" name="Large Barn" type="storage" buyable="true" giftable="false" placeable="true" requireLevel="0" sizeX="3" sizeY="6">
+		<unlockCost>20</unlockCost>
+		<commodity name="goods" capacity="1000"/>
+		<commodityReq>0</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0.005</buildTime>
+		<growTime>0.010425</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_sunglasses</headquarters>
+		<construction>constructionsite.construction_3x6_7stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="sunglassescointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="bar_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+	</item>
+	<item id="municipal.town_hall" name="Town Hall" type="municipal" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="4" sizeY="4">
+		<cost>1000</cost>
+		<unlock>questflag</unlock>
+		<requiredQuestFlag>q_townhall</requiredQuestFlag>
+		<commodity name="coins"/>
+		<commodityReq>250</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0.005</buildTime>
+		<growTime>1</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_italrest</headquarters>
+		<xpYield>1</xpYield>
+		<populationCapYield>5</populationCapYield>
+		<construction>constructionsite.construction_4x4_5stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="italrestbscointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+		<gates>
+			<gate type="crew" name="build" instructions="true">
+				<key name="required_crew" amount="3">
+					<member name="crew_council" amount="1"/>
+					<member name="crew_treasurer" amount="1"/>
+					<member name="crew_clerk" amount="1"/>
+				</key>
+			</gate>
+		</gates>
+	</item>
+	<item id="municipal.post_office" name="Post Office" type="municipal" buyable="true" giftable="false" placeable="true" requireLevel="6" sizeX="4" sizeY="4">
+		<cost>2000</cost>
+		<unlockCost>6</unlockCost>
+		<commodity name="coins"/>
+		<commodityReq>250</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0.005</buildTime>
+		<growTime>1</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_crabshack</headquarters>
+		<xpYield>1</xpYield>
+		<coinYield>200</coinYield>
+		<populationCapYield>5</populationCapYield>
+		<construction>constructionsite.construction_4x4_5stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="crabshackcointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="appliances_store_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+		<gates>
+			<gate type="crew" name="build" instructions="true">
+				<key name="required_crew" amount="5">
+					<member name="crew_postmaster" amount="1"/>
+					<member name="crew_carrier" amount="1"/>
+					<member name="crew_inspector" amount="1"/>
+					<member name="crew_clerk" amount="1"/>
+					<member name="crew_licker" amount="1"/>
+				</key>
+			</gate>
+		</gates>
+	</item>
+	<item id="municipal.police_station" name="Police Station" type="municipal" buyable="true" giftable="false" placeable="true" requireLevel="9" sizeX="4" sizeY="4">
+		<cost>4000</cost>
+		<unlockCost>9</unlockCost>
+		<commodity name="coins"/>
+		<commodityReq>250</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0.005</buildTime>
+		<growTime>1</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_handbags</headquarters>
+		<xpYield>1</xpYield>
+		<populationCapYield>10</populationCapYield>
+		<construction>constructionsite.construction_4x4_5stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="handbagscointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="bar_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+		<gates>
+			<gate type="crew" name="build" instructions="true">
+				<key name="required_crew" amount="7" cashCost="2">
+					<member name="crew_chief" amount="1"/>
+					<member name="crew_captain" amount="1"/>
+					<member name="crew_sheriff" amount="1"/>
+					<member name="crew_sergeant" amount="1"/>
+					<member name="crew_deputy" amount="1"/>
+					<member name="crew_detective" amount="1"/>
+					<member name="crew_cop" amount="1"/>
+				</key>
+			</gate>
+		</gates>
+	</item>
+	<item id="municipal.grade_school" name="Grade School" type="municipal" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="4" sizeY="4">
+		<cost>10000</cost>
+		<unlock>questflag</unlock>
+		<requiredQuestFlag>q_grade_school</requiredQuestFlag>
+		<commodity name="coins"/>
+		<commodityReq>250</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0.001490</buildTime>
+		<growTime>1</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_sushi</headquarters>
+		<xpYield>1</xpYield>
+		<populationCapYield>50</populationCapYield>
+		<construction>constructionsite.construction_4x4_6stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="sushicointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="gas_station_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+		<gates>
+			<gate name="build">
+				<key name="decoration.marble_statue" amount="3"/>
+				<key name="tool.material_city_seal" amount="3"/>
+				<key name="tool.gold_plating" amount="3"/>
+				<key name="tool.permits" amount="3"/>
+				<key name="tool.material_ribbon" amount="3"/>
+			</gate>
+		</gates>
+	</item>
+	<item id="municipal.bank" name="Bank" type="municipal" buyable="true" giftable="false" placeable="true" requireLevel="18" sizeX="4" sizeY="4">
+		<cost>30000</cost>
+		<unlock>questflag</unlock>
+		<requiredQuestFlag>q_bank</requiredQuestFlag>
+		<commodity name="coins"/>
+		<commodityReq>250</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0.001490</buildTime>
+		<growTime>1</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<animRoundRobbinOpt>1</animRoundRobbinOpt>
+		<animFramerateOpt>1</animFramerateOpt>
+		<headquarters>hq_movietheater</headquarters>
+		<construction>constructionsite.construction_4x4_7stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="movietheatercointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="cinema_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+		<xpYield>1</xpYield>
+		<coinYield>200</coinYield>
+		<gates>
+			<gate type="crew" name="build" instructions="true">
+				<key name="required_crew" amount="10" cashCost="4">
+					<member name="crew_branchmanager" amount="1"/>
+					<member name="crew_investmentadvisor" amount="1"/>
+					<member name="crew_riskevaluator" amount="1"/>
+					<member name="crew_accountmanager" amount="1"/>
+					<member name="crew_mortgageadvisor" amount="1"/>
+					<member name="crew_creditadvisor" amount="1"/>
+					<member name="crew_teller" amount="1"/>
+					<member name="crew_securitymanager" amount="1"/>
+					<member name="crew_itguy" amount="1"/>
+					<member name="crew_moneycounter" amount="1"/>
+				</key>
+			</gate>
+		</gates>
+	</item>
+	<item id="municipal.hospital" name="Hospital" type="municipal" buyable="true" giftable="false" placeable="true" requireLevel="45" sizeX="4" sizeY="8">
+		<cost>80000</cost>
+		<unlockCost>45</unlockCost>
+		<commodity name="coins"/>
+		<commodityReq>250</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0.0010425</buildTime>
+		<growTime>1</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_skyscraperrestaurant</headquarters>
+		<xpYield>1</xpYield>
+		<coinYield>200</coinYield>
+		<populationCapYield>130</populationCapYield>
+		<construction>constructionsite.construction_4x8_10stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="skyscraperrestaurantcointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="appliances_store_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+		<gates>
+			<gate name="build">
+				<key name="decoration.marble_statue" amount="7"/>
+				<key name="tool.material_city_seal" amount="7"/>
+				<key name="tool.gold_plating" amount="7"/>
+				<key name="tool.permits" amount="7"/>
+				<key name="tool.material_ribbon" amount="7"/>
+			</gate>
+		</gates>
+	</item>
+	<item id="municipal.church" name="Church" type="municipal" buyable="true" giftable="false" placeable="true" requireLevel="28" sizeX="3" sizeY="3">
+		<cost>32000</cost>
+		<unlockCost>28</unlockCost>
+		<commodity name="coins"/>
+		<commodityReq>250</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0.001490</buildTime>
+		<growTime>1</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_cornerstore</headquarters>
+		<construction>constructionsite.construction_4x4_8stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="cornerstorecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="pizza_house_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+		<xpYield>1</xpYield>
+		<coinYield>200</coinYield>
+		<gates>
+			<gate name="build">
+				<key name="tool.material_bricks" amount="6"/>
+				<key name="tool.material_funds" amount="6"/>
+				<key name="tool.material_city_seal" amount="6"/>
+				<key name="tool.material_wood" amount="6"/>
+				<key name="tool.material_bricks" amount="6"/>
+			</gate>
+		</gates>
+	</item>
+	<item id="municipal.library" name="Library" type="municipal" buyable="true" giftable="false" placeable="true" requireLevel="22" sizeX="3" sizeY="6">
+		<cost>20000</cost>
+		<unlockCost>22</unlockCost>
+		<commodity name="coins"/>
+		<commodityReq>250</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0.001490</buildTime>
+		<growTime>1</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_tavern</headquarters>
+		<xpYield>5</xpYield>
+		<coinYield>400</coinYield>
+		<populationCapYield>40</populationCapYield>
+		<construction>constructionsite.construction_3x6_7stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="defaultcointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+		<gates>
+			<gate type="crew" name="build" instructions="true">
+				<key name="required_crew" amount="10" cashCost="4">
+					<member name="crew_deanlib" amount="1"/>
+					<member name="crew_provost" amount="1"/>
+					<member name="crew_director" amount="1"/>
+					<member name="crew_professor" amount="1"/>
+					<member name="crew_archivist" amount="1"/>
+					<member name="crew_curator" amount="1"/>
+					<member name="crew_historian" amount="1"/>
+					<member name="crew_librarian" amount="1"/>
+					<member name="crew_cataloger" amount="1"/>
+					<member name="crew_bookworm" amount="1"/>
+				</key>
+			</gate>
+		</gates>
+	</item>
+	<item id="municipal.high_school" name="High School" type="municipal" buyable="true" giftable="false" placeable="true" requireLevel="35" sizeX="4" sizeY="4">
+		<cost>40000</cost>
+		<unlockCost>35</unlockCost>
+		<commodity name="coins"/>
+		<commodityReq>250</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0.005</buildTime>
+		<growTime>1</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_tuxrent</headquarters>
+		<xpYield>1</xpYield>
+		<coinYield>200</coinYield>
+		<populationCapYield>110</populationCapYield>
+		<construction>constructionsite.construction_4x4_9stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="tuxrentcointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="garage_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+		<gates>
+			<gate name="build">
+				<key name="decoration.marble_statue" amount="6"/>
+				<key name="tool.material_city_seal" amount="6"/>
+				<key name="tool.gold_plating" amount="6"/>
+				<key name="tool.permits" amount="6"/>
+				<key name="tool.material_ribbon" amount="6"/>
+			</gate>
+		</gates>
+	</item>
+	<item id="municipal.firehouse" name="Firehouse" type="municipal" buyable="true" giftable="false" placeable="true" requireLevel="33" sizeX="4" sizeY="8">
+		<cost>60000</cost>
+		<unlock>population</unlock>
+		<requiredPopulation>3000</requiredPopulation>
+		<commodity name="coins"/>
+		<commodityReq>250</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0.005</buildTime>
+		<growTime>1</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_fastfoodchicken</headquarters>
+		<xpYield>1</xpYield>
+		<populationCapYield>90</populationCapYield>
+		<construction>constructionsite.construction_4x8_9stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="fastfoodchickencointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+			<modifier type="collectable" tableName="vanilla_colltable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+		<gates>
+			<gate name="build">
+				<key name="decoration.marble_statue" amount="5"/>
+				<key name="tool.material_city_seal" amount="5"/>
+				<key name="tool.gold_plating" amount="5"/>
+				<key name="tool.permits" amount="5"/>
+				<key name="tool.material_ribbon" amount="5"/>
+			</gate>
+		</gates>
+	</item>
+	<item id="municipal.court_house" name="Courthouse" type="municipal" buyable="true" giftable="false" placeable="true" requireLevel="50" sizeX="5" sizeY="5">
+		<cost>100000</cost>
+		<unlockCost>50</unlockCost>
+		<commodity name="coins"/>
+		<commodityReq>250</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0.005</buildTime>
+		<growTime>1</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_dvd</headquarters>
+		<construction>constructionsite.construction_5x5_10stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="dvdrentcointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+		<xpYield>1</xpYield>
+		<coinYield>200</coinYield>
+		<gates>
+			<gate name="build">
+				<key name="tool.material_bricks" amount="8"/>
+				<key name="tool.material_funds" amount="8"/>
+				<key name="tool.material_city_seal" amount="8"/>
+				<key name="tool.material_wood" amount="8"/>
+				<key name="tool.material_bricks" amount="8"/>
+			</gate>
+		</gates>
+	</item>
+	<item id="municipal.museum" name="Museum" type="municipal" buyable="true" giftable="false" placeable="true" requireLevel="16" sizeX="3" sizeY="6">
+		<cost>8000</cost>
+		<unlockCost>16</unlockCost>
+		<commodity name="coins"/>
+		<commodityReq>250</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<requiredPopulation>1</requiredPopulation>
+		<buildTime>0.005</buildTime>
+		<growTime>1</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_jeans</headquarters>
+		<xpYield>1</xpYield>
+		<coinYield>200</coinYield>
+		<populationCapYield>30</populationCapYield>
+		<construction>constructionsite.construction_3x6_6stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="jeansstorecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+		<gates>
+			<gate name="build">
+				<key name="decoration.marble_statue" amount="1"/>
+				<key name="tool.material_city_seal" amount="1"/>
+				<key name="tool.gold_plating" amount="1"/>
+				<key name="tool.permits" amount="1"/>
+				<key name="tool.material_ribbon" amount="1"/>
+			</gate>
+		</gates>
+	</item>
+	<item id="municipal.stadium" name="Stadium" type="municipal" buyable="true" giftable="false" placeable="true" requireLevel="42" sizeX="8" sizeY="8">
+		<cost>36000</cost>
+		<unlock>questflag</unlock>
+		<requiredQuestFlag>q_stadium</requiredQuestFlag>
+		<commodity name="coins"/>
+		<commodityReq>250</commodityReq>
+		<goodsConsumptionRate>1</goodsConsumptionRate>
+		<buildTime>0.005</buildTime>
+		<growTime>1</growTime>
+		<canFranchise>true</canFranchise>
+		<franchiseSaleCommCost>10</franchiseSaleCommCost>
+		<headquarters>hq_lamp</headquarters>
+		<construction>constructionsite.construction_8x8_8stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="lampstorecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<energyCost build="1" instantFinish="1" harvest="1" open="1"/>
+		<xpYield>1</xpYield>
+		<coinYield>200</coinYield>
+		<gates>
+			<gate name="build">
+				<key name="tool.material_bricks" amount="10"/>
+				<key name="tool.material_funds" amount="10"/>
+				<key name="tool.material_city_seal" amount="10"/>
+				<key name="tool.material_wood" amount="10"/>
+				<key name="tool.material_bricks" amount="10"/>
+			</gate>
+		</gates>
+	</item>
+	<item id="residence.res_bungalow" name="Bungalow" type="residence" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="3" sizeY="3" lottery="4">
+		<cost>200</cost>
+		<populationYield>1</populationYield>
+		<requiredPopulation>0</requiredPopulation>
+		<buildTime>0.003472222</buildTime>
+		<growTime>0.04166667</growTime>
+		<coinYield>50</coinYield>
+		<xpYield>0</xpYield>
+		<randomModifiers>
+			<modifier type="coin" tableName="pineridgecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<construction>constructionsite.construction_3x3_2stage</construction>
+		<energyCost build="1" harvest="1"/>
+		<rewards>
+			<reward id="population" value="5"/>
+		</rewards>
+	</item>
+	<item id="residence.res_cozy_cottage" name="Cozy Cottage" type="residence" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="3" sizeY="3" lottery="4">
+		<cost>400</cost>
+		<populationYield>2</populationYield>
+		<buildTime>0.043478261</buildTime>
+		<growTime>0.166666667</growTime>
+		<coinYield>100</coinYield>
+		<xpYield>1</xpYield>
+		<construction>constructionsite.construction_3x3_2stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="cozycottagecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<energyCost build="1" harvest="1"/>
+		<rewards>
+			<reward id="population" value="5"/>
+		</rewards>
+	</item>
+	<item id="residence.res_courtyard_house" name="Courtyard House" type="residence" buyable="true" giftable="false" placeable="true" requireLevel="3" sizeX="3" sizeY="3" lottery="4">
+		<unlockCost>3</unlockCost>
+		<cost>800</cost>
+		<populationYield>3</populationYield>
+		<buildTime>0.003472222</buildTime>
+		<growTime>0.0013889</growTime>
+		<coinYield>10</coinYield>
+		<xpYield>0</xpYield>
+		<randomModifiers>
+			<modifier type="coin" tableName="suburbancointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<construction>constructionsite.construction_3x3_2stage</construction>
+		<energyCost build="1" harvest="1"/>
+		<rewards>
+			<reward id="population" value="5"/>
+		</rewards>
+	</item>
+	<item id="residence.res_lake_house" name="Lake House" type="residence" buyable="true" giftable="false" newitem="true" placeable="true" requireLevel="5" sizeX="3" sizeY="6" lottery="4">
+		<cost>1500</cost>
+		<unlockCost>5</unlockCost>
+		<cash>0</cash>
+		<buildTime>0.003472222</buildTime>
+		<growTime>2.1</growTime>
+		<coinYield>220</coinYield>
+		<xpYield>1</xpYield>
+		<populationYield>4</populationYield>
+		<randomModifiers>
+			<modifier type="coin" tableName="lodgecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<construction>constructionsite.construction_3x6_3stage</construction>
+		<energyCost build="1" harvest="1"/>
+		<rewards>
+			<reward id="population" value="5"/>
+		</rewards>
+	</item>
+	<item id="residence.res_single_floor_cottage" name="Single-floor Cottage" type="residence" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="4" sizeY="4" lottery="4">
+		<unlock>questflag</unlock>
+		<requiredQuestFlag>q_res_single_floor_cottage</requiredQuestFlag>
+		<cost>3000</cost>
+		<populationYield>5</populationYield>
+		<buildTime>0.003472222</buildTime>
+		<growTime>1</growTime>
+		<coinYield>150</coinYield>
+		<xpYield>0</xpYield>
+		<randomModifiers>
+			<modifier type="coin" tableName="upscalebrickcointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<construction>constructionsite.construction_4x4_3stage</construction>
+		<energyCost build="1" harvest="1"/>
+		<rewards>
+			<reward id="population" value="5"/>
+		</rewards>
+	</item>
+	<item id="residence.res_loft_villa" name="Loft Villa" type="residence" buyable="true" giftable="false" placeable="true" requireLevel="8" sizeX="3" sizeY="3" lottery="4">
+		<unlockCost>8</unlockCost>
+		<cost>4500</cost>
+		<populationYield>6</populationYield>
+		<requiredPopulation>1</requiredPopulation>
+		<buildTime>0.003472222</buildTime>
+		<growTime>0.33333333</growTime>
+		<coinYield>150</coinYield>
+		<xpYield>1</xpYield>
+		<npcInfo>
+			<npcs types="NPC_Woman1,NPC_Woman2,NPC_Woman3,NPC_Woman4,NPC_Woman5,NPC_Woman6,NPC_Woman7,NPC_Woman8,NPC_Woman9,NPC_Woman10,NPC_Woman11,NPC_Woman12,NPC_Woman13,NPC_Woman14,NPC_Woman15,NPC_Woman16,NPC_Woman17,NPC_Woman18,NPC_Woman19,NPC_Woman20,NPC_Woman21,NPC_girl1,NPC_girl2,NPC_girl3,NPC_girl4,NPC_girl5,NPC_girl6,NPC_girl7,NPC_girl8,NPC_girl9,NPC_girl10,NPC_boy1,NPC_boy2,NPC_boy3,NPC_boy4,NPC_boy5,NPC_boy6,NPC_boy7,NPC_boy8,NPC_boy9,NPC_boy10,NPC_Man_1,NPC_Man_2,NPC_Man_3,NPC_Man_4,NPC_Man_5,NPC_Man_6,NPC_Man_7,NPC_Man_8,NPC_Man_9,NPC_Man_10,NPC_Man_11,NPC_Man_12,NPC_Man_13,NPC_Man_13,NPC_Man_14,NPC_Man_15,NPC_Man_16,NPC_Man_17"/>
+		</npcInfo>
+		<randomModifiers>
+			<modifier type="coin" tableName="apartmentcointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<construction>constructionsite.construction_3x3_3stage</construction>
+		<energyCost build="1" harvest="1"/>
+		<rewards>
+			<reward id="population" value="5"/>
+		</rewards>
+	</item>
+	<item id="residence.res_low_rise" name="Low-rise" type="residence" buyable="true" giftable="false" placeable="true" requireLevel="10" sizeX="3" sizeY="3" lottery="4">
+		<unlockCost>10</unlockCost>
+		<cost>6000</cost>
+		<buildTime>0.003472222</buildTime>
+		<growTime>1</growTime>
+		<coinYield>210</coinYield>
+		<xpYield>1</xpYield>
+		<populationYield>7</populationYield>
+		<randomModifiers>
+			<modifier type="coin" tableName="brownstonecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<construction>constructionsite.construction_3x3_4stage</construction>
+		<energyCost build="1" harvest="1"/>
+		<rewards>
+			<reward id="population" value="5"/>
+		</rewards>
+	</item>
+	<item id="residence.res_beach_hut" name="Beach Hut" type="residence" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="4" sizeY="4" lottery="4">
+		<unlock>firends</unlock>
+		<requiredFriends>8</requiredFriends>
+		<cost>7500</cost>
+		<populationYield>8</populationYield>
+		<requiredPopulation>1</requiredPopulation>
+		<buildTime>0.003472222</buildTime>
+		<growTime>3.1</growTime>
+		<coinYield>240</coinYield>
+		<xpYield>0</xpYield>
+		<randomModifiers>
+			<modifier type="coin" tableName="missionminicointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<construction>constructionsite.construction_4x4_4stage</construction>
+		<energyCost build="1" harvest="1"/>
+		<rewards>
+			<reward id="population" value="5"/>
+		</rewards>
+	</item>
+	<item id="residence.res_double_floor_cottage" name="Double-floor Cottage" type="residence" buyable="true" giftable="false" placeable="true" requireLevel="15" sizeX="4" sizeY="4" lottery="4">
+		<unlockCost>15</unlockCost>
+		<cost>9000</cost>
+		<populationYield>9</populationYield>
+		<requiredPopulation>1</requiredPopulation>
+		<buildTime>0.003472222</buildTime>
+		<growTime>0.75</growTime>
+		<coinYield>189</coinYield>
+		<xpYield>0</xpYield>
+		<randomModifiers>
+			<modifier type="coin" tableName="aptcomplexcointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<construction>constructionsite.construction_4x4_5stage</construction>
+		<energyCost build="1" harvest="1"/>
+		<rewards>
+			<reward id="population" value="5"/>
+		</rewards>
+	</item>
+	<item id="residence.res_single_floor_villa" name="Single-floor Villa" type="residence" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="4" sizeY="4" lottery="3">
+		<unlock>firends</unlock>
+		<requiredFriends>10</requiredFriends>
+		<cost>12000</cost>
+		<populationYield>10</populationYield>
+		<requiredPopulation>1</requiredPopulation>
+		<buildTime>0.003472222</buildTime>
+		<growTime>0.041667</growTime>
+		<coinYield>52</coinYield>
+		<xpYield>1</xpYield>
+		<randomModifiers>
+			<modifier type="coin" tableName="duplexcointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<construction>constructionsite.construction_4x4_5stage</construction>
+		<energyCost build="1" harvest="1"/>
+		<rewards>
+			<reward id="population" value="5"/>
+		</rewards>
+	</item>
+	<item id="residence.res_double_floor_villa" name="Double-floor Villa" type="residence" buyable="true" giftable="false" placeable="true" requireLevel="25" sizeX="4" sizeY="4" lottery="3">
+		<unlockCost>25</unlockCost>
+		<cost>20000</cost>
+		<populationYield>12</populationYield>
+		<requiredPopulation>1</requiredPopulation>
+		<buildTime>0.003472222</buildTime>
+		<growTime>0.33333333</growTime>
+		<coinYield>158</coinYield>
+		<xpYield>1</xpYield>
+		<randomModifiers>
+			<modifier type="coin" tableName="loftscointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<construction>constructionsite.construction_4x4_6stage</construction>
+		<energyCost build="1" harvest="1"/>
+		<rewards>
+			<reward id="population" value="5"/>
+		</rewards>
+	</item>
+	<item id="residence.res_apartment" name="Apartment" type="residence" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="4" sizeY="4" lottery="3">
+		<unlock>firends</unlock>
+		<requiredFriends>15</requiredFriends>
+		<cost>15000</cost>
+		<populationYield>11</populationYield>
+		<requiredPopulation>1</requiredPopulation>
+		<buildTime>0.000016666</buildTime>
+		<growTime>1</growTime>
+		<coinYield>210</coinYield>
+		<xpYield>1</xpYield>
+		<energyCost build="1" harvest="1"/>
+		<rewards>
+			<reward id="population" value="25"/>
+		</rewards>
+		<randomModifiers>
+			<modifier type="coin" tableName="mclovinchateaucointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<construction>constructionsite.construction_4x4_6stage</construction>
+	</item>
+	<item id="residence.res_three_floor_villa" name="Three-floor Villa" type="residence" buyable="true" giftable="false" placeable="true" requireLevel="35" sizeX="3" sizeY="6" lottery="2">
+		<unlockCost>35</unlockCost>
+		<cost>50000</cost>
+		<populationYield>14</populationYield>
+		<requiredPopulation>1</requiredPopulation>
+		<buildTime>0.003472222</buildTime>
+		<growTime>2.1</growTime>
+		<coinYield>231</coinYield>
+		<xpYield>1</xpYield>
+		<construction>constructionsite.construction_3x6_7stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="hotelcointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<energyCost build="1" harvest="1"/>
+		<rewards>
+			<reward id="population" value="5"/>
+		</rewards>
+	</item>
+	<item id="residence.res_mansion" name="Mansion" type="residence" buyable="true" giftable="false" placeable="true" requireLevel="40" sizeX="4" sizeY="8" lottery="1">
+		<unlockCost>40</unlockCost>
+		<cost>75000</cost>
+		<populationYield>16</populationYield>
+		<requiredPopulation>1</requiredPopulation>
+		<buildTime>0.003472222</buildTime>
+		<growTime>0.75</growTime>
+		<coinYield>195</coinYield>
+		<xpYield>1</xpYield>
+		<construction>constructionsite.construction_4x8_7stage</construction>
+		<randomModifiers>
+			<modifier type="coin" tableName="mansioncointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<energyCost build="1" harvest="1"/>
+		<rewards>
+			<reward id="population" value="5"/>
+		</rewards>
+	</item>
+	<item id="residence.res_boutique_hotel" name="Boutique Hotel" type="residence" buyable="true" giftable="false" placeable="true" requireLevel="45" sizeX="4" sizeY="8" lottery="1">
+		<unlockCost>45</unlockCost>
+		<cost>100000</cost>
+		<populationYield>18</populationYield>
+		<requiredPopulation>1</requiredPopulation>
+		<buildTime>0.000695</buildTime>
+		<growTime>0.1666667</growTime>
+		<coinYield>105</coinYield>
+		<xpYield>1</xpYield>
+		<randomModifiers>
+			<modifier type="coin" tableName="penttowercointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<energyCost build="1" harvest="1"/>
+		<rewards>
+			<reward id="population" value="5"/>
+		</rewards>
+		<construction>constructionsite.construction_4x8_8stage</construction>
+	</item>
+	<item id="residence.res_castle" name="Castle" type="residence" buyable="true" giftable="false" placeable="true" requireLevel="50" sizeX="6" sizeY="6">
+		<unlockCost>0</unlockCost>
+		<cost>500000</cost>
+		<populationYield>20</populationYield>
+		<requiredPopulation>1</requiredPopulation>
+		<buildTime>0.000695</buildTime>
+		<growTime>0.33333333</growTime>
+		<coinYield>10</coinYield>
+		<xpYield>0</xpYield>
+		<randomModifiers>
+			<modifier type="coin" tableName="countryhomecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<energyCost build="1" harvest="1"/>
+		<rewards>
+			<reward id="population" value="5"/>
+		</rewards>
+		<construction>constructionsite.construction_6x6_8stage</construction>
+	</item>
+	<item id="decoration.flower_patch_1" name="Flower Patch 1" type="decoration" buyable="true" giftable="false" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1" lottery="4">
+		<cost>50</cost>
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="3">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.flower_patch_2" name="Flower Patch 2" type="decoration" buyable="true" giftable="false" multiplace="true" placeable="true" requireLevel="1" sizeX="1" sizeY="1" lottery="4">
+		<cost>75</cost>
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="3">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.large_pot_of_flowers" name="Large Flower Pot" type="decoration" buyable="true" giftable="false" multiplace="true" placeable="true" requireLevel="1" sizeX="2" sizeY="2" lottery="4">
+		<cost>5000</cost>
+		<bonuses>
+			<bonus name="bonus_16%" field="coinYield" modifier="0" percentModifier="16" radius="6">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.stop_sign" name="STOP Sign" type="decoration" buyable="true" giftable="false" multiplace="true" placeable="true" requireLevel="1" sizeX="1" sizeY="1" lottery="4">
+		<cost>100</cost>
+		<unlock>questflag</unlock>
+		<requiredQuestFlag>q_stop_sign</requiredQuestFlag>
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.pet_1" name="Pet 1" type="decoration" buyable="true" giftable="false" multiplace="true" newitem="true" placeable="true" requireLevel="1" sizeX="1" sizeY="1" lottery="4">
+		<cost>200</cost>
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="3">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.road_lamp_1" name="Road Lamp 1" type="decoration" buyable="true" giftable="false" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1" lottery="4">
+		<cost>75</cost>
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="3">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.road_lamp_2" name="Road Lamp 2" type="decoration" buyable="true" giftable="false" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1" lottery="4">
+		<cost>100</cost>
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="3">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.fence_1" name="Fence 1" type="decoration" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="2" sizeY="1" lottery="4">
+		<cost>75</cost>
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="3">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.fence_2" name="Fence 2" type="decoration" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="2" sizeY="1" lottery="4">
+		<cost>100</cost>
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="3">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.barricade_1" name="Barricade 1" type="decoration" buyable="true" giftable="false" multiplace="true" placeable="true" requireLevel="1" sizeX="1" sizeY="1" lottery="4">
+		<cost>50</cost>
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="3">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.barricade_2" name="Barricade 2" type="decoration" buyable="true" giftable="false" multiplace="true" newitem="true" placeable="true" requireLevel="1" sizeX="1" sizeY="1" lottery="4">
+		<cost>100</cost>
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="3">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.tree_1" name="Tree 1" type="decoration" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="2" sizeY="1" lottery="4">
+		<cost>50</cost>
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="3">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.tree_2" name="Tree 2" type="decoration" buyable="true" giftable="false" multiplace="false" placeable="true" requireLevel="1" sizeX="2" sizeY="1" lottery="4">
+		<cost>100</cost>
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="3">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.pet_2" name="Pet 2" type="decoration" buyable="true" giftable="false" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1" lottery="4">
+		<cost>400</cost>
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.bushes" name="Bushes" type="decoration" buyable="true" giftable="false" multiplace="false" placeable="true" requireLevel="1" sizeX="4" sizeY="4" lottery="4">
+		<cost>6000</cost>
+		<bonuses>
+			<bonus name="bonus_16%" field="coinYield" modifier="0" percentModifier="16" radius="6">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.pet_room" name="Pet Room" type="decoration" buyable="true" giftable="false" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1" lottery="4">
+		<cost>50</cost>
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.windmill" name="Windmill" type="decoration" buyable="true" giftable="false" multiplace="false" placeable="true" requireLevel="1" sizeX="2" sizeY="2" lottery="4">
+		<cost>7000</cost>
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="3">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.bird_house" name="Bird House" type="decoration" buyable="true" giftable="false" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1" lottery="4">
+		<cost>100</cost>
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.tiered_fountain" name="Tiered Fountain" type="decoration" buyable="true" giftable="false" multiplace="false" placeable="true" requireLevel="1" sizeX="2" sizeY="2" lottery="3">
+		<cost>15000</cost>
+		<bonuses>
+			<bonus name="bonus_9%" field="coinYield" modifier="0" percentModifier="9" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.big_fountain" name="Big Fountain" type="decoration" buyable="true" giftable="false" multiplace="false" placeable="true" requireLevel="1" sizeX="3" sizeY="3" lottery="3">
+		<cost>30000</cost>
+		<bonuses>
+			<bonus name="bonus_9%" field="coinYield" modifier="0" percentModifier="9" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.beacon" name="Beacon" type="decoration" buyable="true" giftable="false" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1" lottery="3">
+		<cost>25000</cost>
+		<unlock>questflag</unlock>
+		<requiredQuestFlag>q_beacon</requiredQuestFlag>
+		<bonuses>
+			<bonus name="bonus_9%" field="coinYield" modifier="0" percentModifier="9" radius="5">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.pavilion" name="Pavilion" type="decoration" buyable="true" giftable="false" multiplace="false" placeable="true" requireLevel="1" sizeX="2" sizeY="2" lottery="3">
+		<cost>15000</cost>
+		<bonuses>
+			<bonus name="bonus_4%" field="coinYield" modifier="0" percentModifier="4" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.expo_tent" name="Expo Tent" type="decoration" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="2" sizeY="2" lottery="3">
+		<cost>20000</cost>
+		<unlock>questflag</unlock>
+		<requiredQuestFlag> q_expo_tent</requiredQuestFlag>
+		<bonuses>
+			<bonus name="bonus_8%" field="coinYield" modifier="0" percentModifier="8" radius="5">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.basketball_court" name="Basketball Court" type="decoration" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="4" sizeY="4" lottery="2">
+		<cost>40000</cost>
+		<unlock>questflag</unlock>
+		<requiredQuestFlag>q_basketball_court</requiredQuestFlag>
+		<bonuses>
+			<bonus name="bonus_16%" field="coinYield" modifier="0" percentModifier="16" radius="6">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.tennis_court" name="Tennis Court" type="decoration" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="4" sizeY="8">
+		<cost/>
+		<bonuses>
+			<bonus name="bonus_32%" field="coinYield" modifier="0" percentModifier="32" radius="6">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.baseball_field" name="Baseball Field" type="decoration" buyable="true" giftable="false" multiplace="false" placeable="true" requireLevel="1" sizeX="4" sizeY="4" lottery="2">
+		<cost>50000</cost>
+		<unlock>questflag</unlock>
+		<requiredQuestFlag>q_baseball_field</requiredQuestFlag>
+		<bonuses>
+			<bonus name="bonus_8%" field="coinYield" modifier="0" percentModifier="8" radius="5">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.pet_3" name="Pet 3" type="decoration" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1" lottery="4">
+		<cost>600</cost>
+		<bonuses>
+			<bonus name="bonus_4%" field="coinYield" modifier="0" percentModifier="4" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.small_pond" name="Small Pond" type="decoration" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="3" sizeY="4" lottery="3">
+		<cost>30000</cost>
+		<bonuses>
+			<bonus name="bonus_4%" field="coinYield" modifier="0" percentModifier="4" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.balloon_gift_box" name="Balloon Gift Box" type="decoration" buyable="true" giftable="false" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1" lottery="4">
+		<cost>500</cost>
+		<bonuses>
+			<bonus name="bonus_4%" field="coinYield" modifier="0" percentModifier="4" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.sand_sculpture" name="Sand Sculpture" type="decoration" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="4" sizeY="4" lottery="2">
+		<cost>45000</cost>
+		<unlock>questflag</unlock>
+		<requiredQuestFlag>decoration.sand_sculpture</requiredQuestFlag>
+		<bonuses>
+			<bonus name="bonus_4%" field="coinYield" modifier="0" percentModifier="4" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.floral_porch" name="Floral Porch" type="decoration" buyable="true" giftable="false" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="2" lottery="4">
+		<cost>500</cost>
+		<bonuses>
+			<bonus name="bonus_2%" field="coinYield" modifier="0" percentModifier="2" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.large_rock" name="Large Rock" type="decoration" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="2" sizeY="2" lottery="4">
+		<cost>1000</cost>
+		<bonuses>
+			<bonus name="bonus_4%" field="coinYield" modifier="0" percentModifier="4" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.picnic_area" name="Picnic Area" type="decoration" buyable="true" giftable="false" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1" lottery="4">
+		<cost>500</cost>
+		<unlock>questflag</unlock>
+		<requiredQuestFlag>q_picnic_area</requiredQuestFlag>
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.b-day_gift_box" name="B-Day Gift Box" type="decoration" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1" lottery="4">
+		<cost>1000</cost>
+		<bonuses>
+			<bonus name="bonus_4%" field="coinYield" modifier="0" percentModifier="4" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.scarecrow" name="Scarecrow" type="decoration" buyable="true" giftable="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1" lottery="4">
+		<cost>200</cost>
+		<bonuses>
+			<bonus name="bonus_4%" field="coinYield" modifier="0" percentModifier="4" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.pet_4" name="Pet 4" type="decoration" buyable="true" giftable="false" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1" lottery="4">
+		<cost>800</cost>
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.flag_pole" name="Flag Pole" type="decoration" buyable="true" giftable="false" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1" lottery="4">
+		<cost>50</cost>
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.squirrel_pole" name="Squirrel Pole" type="decoration" buyable="true" giftable="false" multiplace="false" placeable="true" requireLevel="1" sizeX="2" sizeY="2" lottery="4">
+		<cost>4000</cost>
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="3">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.bird_pool" name="Bird Pool" type="decoration" buyable="true" giftable="false" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1" lottery="4">
+		<cost>5000</cost>
+		<bonuses>
+			<bonus name="bonus_4%" field="coinYield" modifier="0" percentModifier="4" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.statue" name="Statue" type="decoration" buyable="true" giftable="false" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="2" lottery="4">
+		<cost>3000</cost>
+		<bonuses>
+			<bonus name="bonus_2%" field="coinYield" modifier="0" percentModifier="2" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.ornate_fountain" name="Ornate Fountain" type="decoration" buyable="true" giftable="false" multiplace="false" placeable="true" requireLevel="1" sizeX="3" sizeY="3" lottery="2">
+		<cost>50000</cost>]<unlock>questflag</unlock>
+		<requiredQuestFlag>q_ornate_fountain</requiredQuestFlag>
+		<bonuses>
+			<bonus name="bonus_4%" field="coinYield" modifier="0" percentModifier="4" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.playground" name="Playground" type="decoration" buyable="true" giftable="false" multiplace="false" placeable="true" requireLevel="1" sizeX="3" sizeY="3" lottery="2">
+		<cost>40000</cost>
+		<bonuses>
+			<bonus name="bonus_4%" field="coinYield" modifier="0" percentModifier="4" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.fishing_lake" name="Fishing Lake" type="decoration" buyable="true" giftable="false" multiplace="false" placeable="true" requireLevel="1" sizeX="5" sizeY="5" lottery="2">
+		<cost/>
+		<bonuses>
+			<bonus name="bonus_16%" field="coinYield" modifier="0" percentModifier="16" radius="6">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.park_bench" name="Park Bench" type="decoration" buyable="true" giftable="false" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1" lottery="4">
+		<cost>800</cost>
+		<bonuses>
+			<bonus name="bonus_4%" field="coinYield" modifier="0" percentModifier="4" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.bandstand" name="Bandstand" type="decoration" buyable="true" giftable="false" multiplace="false" placeable="true" requireLevel="1" sizeX="4" sizeY="4" lottery="1">
+		<cost>70000</cost>
+		<bonuses>
+			<bonus name="bonus_16%" field="coinYield" modifier="0" percentModifier="16" radius="6">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.marble_statue" name="Marble Statue" type="decoration" buyable="false" giftable="false" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1">
+		<cash>2</cash>
+		<bonuses>
+			<bonus name="bonus_4%" field="coinYield" modifier="0" percentModifier="4" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.japanese_maple" name="Japanese Maple" type="decoration" buyable="false" giftable="false" multiplace="false" placeable="true" requireLevel="1" sizeX="2" sizeY="2">
+		<bonuses>
+			<bonus name="bonus_2%" field="coinYield" modifier="0" percentModifier="2" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.convertible_sports_car" name="Convertible Sports Car" type="decoration" buyable="false" giftable="false" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="2">
+		<bonuses>
+			<bonus name="bonus_2%" field="coinYield" modifier="0" percentModifier="2" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.black_pig" name="Black pig" type="decoration" buyable="false" giftable="false" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1">
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="3">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.small_van" name="Small Van" type="decoration" buyable="false" giftable="true" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="3">
+		<bonuses>
+			<bonus name="bonus_2%" field="coinYield" modifier="0" percentModifier="2" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.wooden_water_tower" name="Wooden Water Tower" type="decoration" buyable="false" giftable="true" multiplace="false" placeable="true" requireLevel="1" sizeX="2" sizeY="2">
+		<bonuses>
+			<bonus name="bonus_4%" field="coinYield" modifier="0" percentModifier="4" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.polar_bears" name="Polar Bears" type="decoration" buyable="false" giftable="true" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1">
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.spread_colored_parasol_kit" name="Spread Colored Parasol Kit" type="decoration" buyable="false" giftable="true" multiplace="false" placeable="true" requireLevel="1" sizeX="2" sizeY="2">
+		<bonuses>
+			<bonus name="bonus_4%" field="coinYield" modifier="0" percentModifier="4" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.hay_stacked_caravan" name="Hay-stacked Caravan" type="decoration" buyable="false" giftable="true" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="2">
+		<bonuses>
+			<bonus name="bonus_2%" field="coinYield" modifier="0" percentModifier="2" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.garbage_can" name="Garbage Can" type="decoration" buyable="false" giftable="true" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1">
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="3">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.white_poodle" name="White Poodle" type="decoration" buyable="false" giftable="true" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1">
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="3">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="wilderness.tree_2x_1" name="tree_2x_1" type="wilderness" buyable="false" giftable="false" ownable="false" sizeX="2" sizeY="2" useTileHighlight="true">
+		<pickupAnim name="chopping"/>
+		<energyCost unlockMovement="0" clear="1"/>
+		<clearReward xp="0"/>
+		<randomModifiers>
+			<modifier type="coin" tableName="defaultcointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+	</item>
+	<item id="wilderness.tree_2x_2" name="tree_2x_2" type="wilderness" buyable="false" giftable="false" ownable="false" sizeX="2" sizeY="2" useTileHighlight="true">
+		<pickupAnim name="chopping"/>
+		<energyCost unlockMovement="0" clear="1"/>
+		<clearReward xp="0"/>
+		<randomModifiers>
+			<modifier type="coin" tableName="defaultcointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+	</item>
+	<item id="wilderness.tree_3x_1" name="tree_3x_1" type="wilderness" buyable="false" giftable="false" ownable="false" sizeX="2" sizeY="2" useTileHighlight="true">
+		<pickupAnim name="chopping"/>
+		<energyCost unlockMovement="0" clear="1"/>
+		<clearReward xp="0"/>
+		<randomModifiers>
+			<modifier type="coin" tableName="defaultcointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+	</item>
+	<item id="wilderness.tree_3x_2" name="tree_3x_2" type="wilderness" buyable="false" giftable="false" ownable="false" sizeX="2" sizeY="2" useTileHighlight="true">
+		<pickupAnim name="chopping"/>
+		<energyCost unlockMovement="0" clear="1"/>
+		<clearReward xp="0"/>
+		<randomModifiers>
+			<modifier type="coin" tableName="defaultcointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+	</item>
+	<item id="wilderness.tree_3x_3" name="tree_3x_3" type="wilderness" buyable="false" giftable="false" ownable="false" sizeX="2" sizeY="2" useTileHighlight="true">
+		<pickupAnim name="chopping"/>
+		<energyCost unlockMovement="0" clear="1"/>
+		<clearReward xp="0"/>
+		<randomModifiers>
+			<modifier type="coin" tableName="defaultcointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+	</item>
+	<item id="wilderness.tree_4x" name="tree_4x" type="wilderness" buyable="false" giftable="false" ownable="false" sizeX="2" sizeY="2" useTileHighlight="true">
+		<pickupAnim name="chopping"/>
+		<energyCost unlockMovement="0" clear="1"/>
+		<clearReward xp="0"/>
+		<randomModifiers>
+			<modifier type="coin" tableName="defaultcointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+	</item>
+	<item id="road.asphalt_road" name="Asphalt Road" type="road" buyable="true" giftable="false" multiplace="true" placeable="true" requireLevel="0" sizeX="3" sizeY="3">
+		<cost>10</cost>
+	</item>
+	<item id="road.brick_road" name="Brick Road" type="road" buyable="true" giftable="false" multiplace="true" placeable="true" requireLevel="1" sizeX="1" sizeY="1">
+		<cost>20</cost>
+	</item>
+	<item id="train_station.train_station" name="Train Station" type="train_station" buyable="false" giftable="false" placeable="false" requireLevel="1" sizeX="4" sizeY="4">
+		<requiredPopulation>1</requiredPopulation>
+		<cost>100</cost>
+		<energyCost build="0" harvest="0"/>
+	</item>
+	<item id="train_station.train_platform" name="Truck Platform" type="train_station" buyable="false" giftable="false" placeable="false" requireLevel="1" sizeX="3" sizeY="3">
+		<requiredPopulation>1</requiredPopulation>
+		<cost>100</cost>
+		<energyCost build="0" harvest="0"/>
+	</item>
+	<item id="train_tracks.train_tracks_ne" name="Train tracks" type="train_tracks" buyable="false" giftable="false" placeable="false" requireLevel="1" sizeX="3" sizeY="3">
+		<requiredPopulation>1</requiredPopulation>
+		<cost>100</cost>
+		<energyCost build="0" harvest="0"/>
+	</item>
+	<item id="train_tracks.train_tracks_nw" name="Train tracks" type="train_tracks" buyable="false" giftable="false" placeable="false" requireLevel="1" sizeX="3" sizeY="3">
+		<requiredPopulation>1</requiredPopulation>
+		<cost>100</cost>
+		<energyCost build="0" harvest="0"/>
+	</item>
+	<item id="train.train" name="Train" type="train" buyable="false" giftable="false" sizeX="1" sizeY="1">
+		<navigate walkSpeed="6" runSpeed="6" roadOffset="-0.1"/>
+		<imageScale>107.8125</imageScale>
+		<trainMinStops>1</trainMinStops>
+		<trainTripTime>300</trainTripTime>
+		<trainStorage>10</trainStorage>
+		<trainSellPrice>5</trainSellPrice>
+		<trainBuyPrice>8</trainBuyPrice>
+		<smoke show="true" offsetX="10" offsetY="46"/>
+	</item>
+	<item id="train.bullet_train" name="Bullet Train" type="train" buyable="false" giftable="false" sizeX="1" sizeY="1">
+		<navigate walkSpeed="10" runSpeed="10" roadOffset="-0.1"/>
+		<imageScale>107.8125</imageScale>
+		<trainMinStops>1</trainMinStops>
+		<trainTripTime>300</trainTripTime>
+		<trainStorage>100</trainStorage>
+		<trainSellPrice>8</trainSellPrice>
+		<trainBuyPrice>5</trainBuyPrice>
+		<smoke show="false"/>
+	</item>
+	<item id="train.handcar_train" name="handcar_train" type="train" buyable="false" giftable="false" sizeX="1" sizeY="1">
+		<navigate walkSpeed="4" runSpeed="4" roadOffset="-0.1"/>
+		<imageScale>107.8125</imageScale>
+		<trainMinStops>1</trainMinStops>
+		<trainTripTime>300</trainTripTime>
+		<trainStorage>100</trainStorage>
+		<trainSellPrice>8</trainSellPrice>
+		<trainBuyPrice>5</trainBuyPrice>
+		<smoke show="false"/>
+	</item>
+	<item id="train.train_5mina" name="train_5minA" type="train" buyable="false" giftable="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1">
+		<navigate walkSpeed="6" runSpeed="6" roadOffset="-0.1"/>
+		<imageScale>107.8125</imageScale>
+		<trainMinStops>1</trainMinStops>
+		<trainTripTime>300</trainTripTime>
+		<trainStorage>25</trainStorage>
+		<trainSellPrice>3.5</trainSellPrice>
+		<trainBuyPrice>2.5</trainBuyPrice>
+		<trainDestination>sam</trainDestination>
+		<smoke show="true" offsetX="10" offsetY="46"/>
+	</item>
+	<item id="train.train_5minb" name="train_5minB" type="train" buyable="false" giftable="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1">
+		<navigate walkSpeed="10" runSpeed="10" roadOffset="-0.1"/>
+		<unlock>questflag</unlock>
+		<requiredQuestFlag>q_expressTrain</requiredQuestFlag>
+		<imageScale>107.8125</imageScale>
+		<trainMinStops>1</trainMinStops>
+		<trainTripTime>300</trainTripTime>
+		<trainStorage>300</trainStorage>
+		<trainSellPrice>2.0</trainSellPrice>
+		<trainBuyPrice>4.0</trainBuyPrice>
+		<smoke show="true" offsetX="10" offsetY="46"/>
+		<trainDestination>conductor</trainDestination>
+	</item>
+	<item id="train.train_4hour" name="train_4hour" type="train" buyable="false" giftable="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1">
+		<navigate walkSpeed="6" runSpeed="6" roadOffset="-0.1"/>
+		<imageScale>107.8125</imageScale>
+		<trainMinStops>3</trainMinStops>
+		<trainTripTime>14400</trainTripTime>
+		<trainStorage>250</trainStorage>
+		<trainSellPrice>3.7</trainSellPrice>
+		<trainBuyPrice>2.0</trainBuyPrice>
+		<smoke show="true" offsetX="10" offsetY="46"/>
+	</item>
+	<item id="train.train_8hour" name="train_8hour" type="train" buyable="false" giftable="false" placeable="true" sizeX="1" sizeY="1">
+		<navigate walkSpeed="6" runSpeed="6" roadOffset="-0.1"/>
+		<imageScale>107.8125</imageScale>
+		<trainMinStops>4</trainMinStops>
+		<trainTripTime>28800</trainTripTime>
+		<trainStorage>350</trainStorage>
+		<trainSellPrice>3.9</trainSellPrice>
+		<trainBuyPrice>1.75</trainBuyPrice>
+		<smoke show="true" offsetX="10" offsetY="46"/>
+	</item>
+	<item id="train.train_12hour" name="train_12hour" type="train" buyable="false" giftable="false" placeable="true" sizeX="1" sizeY="1">
+		<navigate walkSpeed="6" runSpeed="6" roadOffset="-0.1"/>
+		<imageScale>107.8125</imageScale>
+		<trainMinStops>6</trainMinStops>
+		<trainTripTime>43200</trainTripTime>
+		<trainStorage>450</trainStorage>
+		<trainSellPrice>4.1</trainSellPrice>
+		<trainBuyPrice>1.5</trainBuyPrice>
+		<smoke show="true" offsetX="10" offsetY="46"/>
+	</item>
+	<item id="train.train_1day" name="train_1day" type="train" buyable="false" giftable="false" placeable="true" sizeX="1" sizeY="1">
+		<navigate walkSpeed="6" runSpeed="6" roadOffset="-0.1"/>
+		<imageScale>107.8125</imageScale>
+		<trainMinStops>8</trainMinStops>
+		<trainTripTime>86400</trainTripTime>
+		<trainStorage>550</trainStorage>
+		<trainSellPrice>4.3</trainSellPrice>
+		<trainBuyPrice>1.25</trainBuyPrice>
+		<smoke show="true" offsetX="10" offsetY="46"/>
+	</item>
+	<item id="train.train_2day" name="train_2day" type="train" buyable="false" giftable="false" placeable="true" sizeX="1" sizeY="1">
+		<navigate walkSpeed="6" runSpeed="6" roadOffset="-0.1"/>
+		<imageScale>107.8125</imageScale>
+		<trainMinStops>10</trainMinStops>
+		<trainTripTime>172800</trainTripTime>
+		<trainStorage>700</trainStorage>
+		<trainSellPrice>4.5</trainSellPrice>
+		<trainBuyPrice>1</trainBuyPrice>
+		<smoke show="true" offsetX="10" offsetY="46"/>
+	</item>
+	<item id="train.social_context_train" name="social_context_train" type="train" buyable="false" giftable="false"/>
+	<item id="expansion.expand_12_12" name="12x12 Expansion" type="expansion" buyable="true" height="12" requireLevel="15" use="OnUseFarmUpgradeItem" width="12" lottery="3">
+		<cost>20000</cost>
+		<unlock>permits</unlock>
+	</item>
+	<item id="quest_item_endorsements" name="Capital Endorsements" type="tool" buyable="true" giftable="true" market="cash" placeable="false">
+		<cash>1</cash>
+	</item>
+	<item id="quest_item_fire_axes" name=" Fire Axes" type="tool" buyable="true" giftable="true" market="cash" placeable="false">
+		<cash>1</cash>
+	</item>
+	<item id="tool.material_ribbon" name="Ribbon" giftable="true" type="tool" buyable="false" placeable="false" market="cash" lottery="4">
+		<cash>1</cash>
+	</item>
+	<item id="tool.material_city_seal" name="City Seal" giftable="true" type="tool" buyable="false" placeable="false" market="cash" lottery="4">
+		<cash>1</cash>
+	</item>
+	<item id="tool.material_funds" name="Construction Funds" type="tool" buyable="false" giftable="true" placeable="false" lottery="4">
+		<cash>1</cash>
+	</item>
+	<item id="tool.material_bricks" name="Bricks" type="tool" buyable="false" giftable="true" placeable="false" lottery="4">
+		<cash>1</cash>
+	</item>
+	<item id="tool.material_wood" name="Wood" type="tool" buyable="false" giftable="true" placeable="false" lottery="4">
+		<cash>1</cash>
+	</item>
+	<item id="tool.permits" name="Zoning Permit" type="tool" buyable="true" giftable="true" placeable="false" market="cash">
+		<cash>1</cash>
+	</item>
+	<item id="tool.gold_plating" name="Gold Plating" giftable="true" type="tool" buyable="false" placeable="false" market="cash">
+		<cash>1</cash>
+	</item>
+	<item id="constructionsite.construction_2x2_2stage" name="constructionsite.construction_2x2_2stage" type="ConstructionSite" buyable="false" giftable="false" placeable="true" sizeX="2" sizeY="2">
+		<buildsPerStage>1</buildsPerStage>
+		<energyStart>1</energyStart>
+		<energyCostPerBuild>1</energyCostPerBuild>
+		<timePerBuild>5000</timePerBuild>
+		<randomModifiers>
+			<modifier type="coin" tableName="smallstagecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<numberOfStages>2</numberOfStages>
+	</item>
+	<item id="constructionsite.construction_3x3_2stage" name="constructionsite.construction_3x3_2stage" type="ConstructionSite" buyable="false" giftable="false" placeable="true" sizeX="3" sizeY="3">
+		<buildsPerStage>1</buildsPerStage>
+		<energyStart>1</energyStart>
+		<energyCostPerBuild>1</energyCostPerBuild>
+		<timePerBuild>5000</timePerBuild>
+		<randomModifiers>
+			<modifier type="coin" tableName="smallstagecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<numberOfStages>2</numberOfStages>
+	</item>
+	<item id="constructionsite.construction_3x3_3stage" name="constructionsite.construction_3x3_3stage" type="ConstructionSite" buyable="false" giftable="false" placeable="true" sizeX="3" sizeY="3">
+		<buildsPerStage>1</buildsPerStage>
+		<energyStart>1</energyStart>
+		<energyCostPerBuild>1</energyCostPerBuild>
+		<timePerBuild>5000</timePerBuild>
+		<randomModifiers>
+			<modifier type="coin" tableName="smallstagecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<numberOfStages>3</numberOfStages>
+	</item>
+	<item id="constructionsite.construction_3x3_4stage" name="constructionsite.construction_3x3_4stage" type="ConstructionSite" buyable="false" giftable="false" placeable="true" sizeX="3" sizeY="3">
+		<buildsPerStage>1</buildsPerStage>
+		<energyStart>1</energyStart>
+		<energyCostPerBuild>1</energyCostPerBuild>
+		<timePerBuild>5000</timePerBuild>
+		<randomModifiers>
+			<modifier type="coin" tableName="mediumstagecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<numberOfStages>4</numberOfStages>
+	</item>
+	<item id="constructionsite.construction_3x3_5stage" name="constructionsite.construction_3x3_5stage" type="ConstructionSite" buyable="false" giftable="false" placeable="true" sizeX="3" sizeY="3">
+		<buildsPerStage>1</buildsPerStage>
+		<energyStart>1</energyStart>
+		<energyCostPerBuild>1</energyCostPerBuild>
+		<timePerBuild>5000</timePerBuild>
+		<randomModifiers>
+			<modifier type="coin" tableName="mediumstagecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<numberOfStages>5</numberOfStages>
+	</item>
+	<item id="constructionsite.construction_3x3_6stage" name="constructionsite.construction_3x3_6stage" type="ConstructionSite" buyable="false" giftable="false" placeable="true" sizeX="3" sizeY="3">
+		<buildsPerStage>1</buildsPerStage>
+		<energyStart>1</energyStart>
+		<energyCostPerBuild>1</energyCostPerBuild>
+		<timePerBuild>5000</timePerBuild>
+		<randomModifiers>
+			<modifier type="coin" tableName="largestagecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<numberOfStages>6</numberOfStages>
+	</item>
+	<item id="constructionsite.construction_3x3_7stage" name="constructionsite.construction_3x3_7stage" type="ConstructionSite" buyable="false" giftable="false" placeable="true" sizeX="3" sizeY="3">
+		<buildsPerStage>1</buildsPerStage>
+		<energyStart>1</energyStart>
+		<energyCostPerBuild>1</energyCostPerBuild>
+		<timePerBuild>5000</timePerBuild>
+		<randomModifiers>
+			<modifier type="coin" tableName="largestagecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<numberOfStages>7</numberOfStages>
+	</item>
+	<item id="constructionsite.construction_3x3_8stage" name="constructionsite.construction_3x3_8stage" type="ConstructionSite" buyable="false" giftable="false" placeable="true" sizeX="3" sizeY="3">
+		<buildsPerStage>1</buildsPerStage>
+		<energyStart>1</energyStart>
+		<energyCostPerBuild>1</energyCostPerBuild>
+		<timePerBuild>5000</timePerBuild>
+		<randomModifiers>
+			<modifier type="coin" tableName="largestagecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<numberOfStages>8</numberOfStages>
+	</item>
+	<item id="constructionsite.construction_4x4_2stage" name="constructionsite.construction_4x4_2stage" type="ConstructionSite" buyable="false" giftable="false" placeable="true" sizeX="4" sizeY="4">
+		<buildsPerStage>1</buildsPerStage>
+		<energyStart>1</energyStart>
+		<energyCostPerBuild>1</energyCostPerBuild>
+		<timePerBuild>5000</timePerBuild>
+		<randomModifiers>
+			<modifier type="coin" tableName="smallstagecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<numberOfStages>2</numberOfStages>
+	</item>
+	<item id="constructionsite.construction_4x4_3stage" name="constructionsite.construction_4x4_3stage" type="ConstructionSite" buyable="false" giftable="false" placeable="true" sizeX="4" sizeY="4">
+		<buildsPerStage>1</buildsPerStage>
+		<energyStart>1</energyStart>
+		<energyCostPerBuild>1</energyCostPerBuild>
+		<timePerBuild>5000</timePerBuild>
+		<randomModifiers>
+			<modifier type="coin" tableName="smallstagecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<numberOfStages>3</numberOfStages>
+	</item>
+	<item id="constructionsite.construction_4x4_4stage" name="constructionsite.construction_4x4_4stage" type="ConstructionSite" buyable="false" giftable="false" placeable="true" sizeX="4" sizeY="4">
+		<buildsPerStage>1</buildsPerStage>
+		<energyStart>1</energyStart>
+		<energyCostPerBuild>1</energyCostPerBuild>
+		<timePerBuild>5000</timePerBuild>
+		<randomModifiers>
+			<modifier type="coin" tableName="mediumstagecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<numberOfStages>4</numberOfStages>
+	</item>
+	<item id="constructionsite.construction_4x4_5stage" name="constructionsite.construction_4x4_5stage" type="ConstructionSite" buyable="false" giftable="false" placeable="true" sizeX="4" sizeY="4">
+		<buildsPerStage>1</buildsPerStage>
+		<energyStart>1</energyStart>
+		<energyCostPerBuild>1</energyCostPerBuild>
+		<timePerBuild>5000</timePerBuild>
+		<randomModifiers>
+			<modifier type="coin" tableName="mediumstagecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<numberOfStages>5</numberOfStages>
+	</item>
+	<item id="constructionsite.construction_4x4_6stage" name="constructionsite.construction_4x4_6stage" type="ConstructionSite" buyable="false" giftable="false" placeable="true" sizeX="4" sizeY="4">
+		<buildsPerStage>1</buildsPerStage>
+		<energyStart>1</energyStart>
+		<energyCostPerBuild>1</energyCostPerBuild>
+		<timePerBuild>5000</timePerBuild>
+		<randomModifiers>
+			<modifier type="coin" tableName="largestagecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<numberOfStages>6</numberOfStages>
+	</item>
+	<item id="constructionsite.construction_4x4_7stage" name="constructionsite.construction_4x4_7stage" type="ConstructionSite" buyable="false" giftable="false" placeable="true" sizeX="4" sizeY="4">
+		<buildsPerStage>1</buildsPerStage>
+		<energyStart>1</energyStart>
+		<energyCostPerBuild>1</energyCostPerBuild>
+		<timePerBuild>5000</timePerBuild>
+		<randomModifiers>
+			<modifier type="coin" tableName="largestagecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<numberOfStages>7</numberOfStages>
+	</item>
+	<item id="constructionsite.construction_4x4_8stage" name="constructionsite.construction_4x4_8stage" type="ConstructionSite" buyable="false" giftable="false" placeable="true" sizeX="4" sizeY="4">
+		<buildsPerStage>1</buildsPerStage>
+		<energyStart>1</energyStart>
+		<energyCostPerBuild>1</energyCostPerBuild>
+		<timePerBuild>5000</timePerBuild>
+		<randomModifiers>
+			<modifier type="coin" tableName="largestagecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<numberOfStages>8</numberOfStages>
+	</item>
+	<item id="constructionsite.construction_4x4_10stage" name="constructionsite.construction_4x4_10stage" type="ConstructionSite" buyable="false" giftable="false" placeable="true" sizeX="4" sizeY="4">
+		<buildsPerStage>1</buildsPerStage>
+		<energyStart>1</energyStart>
+		<energyCostPerBuild>1</energyCostPerBuild>
+		<timePerBuild>5000</timePerBuild>
+		<randomModifiers>
+			<modifier type="coin" tableName="largestagecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<numberOfStages>10</numberOfStages>
+	</item>
+	<item id="constructionsite.construction_5x5_5stage" name="constructionsite.construction_5x5_5stage" type="ConstructionSite" buyable="false" giftable="false" placeable="true" sizeX="5" sizeY="5">
+		<buildsPerStage>1</buildsPerStage>
+		<energyStart>1</energyStart>
+		<energyCostPerBuild>1</energyCostPerBuild>
+		<timePerBuild>5000</timePerBuild>
+		<randomModifiers>
+			<modifier type="coin" tableName="largestagecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<numberOfStages>10</numberOfStages>
+	</item>
+	<item id="constructionsite.construction_3x6_7stage" name="construction_3x6_7stage" type="ConstructionSite" buyable="false" giftable="false" placeable="true" sizeX="3" sizeY="6">
+		<buildsPerStage>1</buildsPerStage>
+		<energyStart>1</energyStart>
+		<energyCostPerBuild>1</energyCostPerBuild>
+		<timePerBuild>5000</timePerBuild>
+		<randomModifiers>
+			<modifier type="coin" tableName="largestagecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<numberOfStages>7</numberOfStages>
+	</item>
+	<item id="constructionsite.construction_3x6_9stage" name="construction_3x6_9stage" type="ConstructionSite" buyable="false" giftable="false" placeable="true" sizeX="3" sizeY="6">
+		<buildsPerStage>1</buildsPerStage>
+		<energyStart>1</energyStart>
+		<energyCostPerBuild>1</energyCostPerBuild>
+		<timePerBuild>5000</timePerBuild>
+		<randomModifiers>
+			<modifier type="coin" tableName="largestagecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<numberOfStages>9</numberOfStages>
+	</item>
+	<item id="constructionsite.construction_6x3_7stage" name="construction_6x3_7stage" type="ConstructionSite" buyable="false" giftable="false" placeable="true" sizeX="6" sizeY="3">
+		<buildsPerStage>1</buildsPerStage>
+		<energyStart>1</energyStart>
+		<energyCostPerBuild>1</energyCostPerBuild>
+		<timePerBuild>5000</timePerBuild>
+		<randomModifiers>
+			<modifier type="coin" tableName="largestagecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<numberOfStages>7</numberOfStages>
+	</item>
+	<item id="constructionsite.construction_4x8_11stage" name="construction_4x8_11stage" type="ConstructionSite" buyable="false" giftable="false" placeable="true" sizeX="4" sizeY="8">
+		<buildsPerStage>1</buildsPerStage>
+		<energyStart>1</energyStart>
+		<energyCostPerBuild>1</energyCostPerBuild>
+		<timePerBuild>5000</timePerBuild>
+		<randomModifiers>
+			<modifier type="coin" tableName="largestagecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<numberOfStages>11</numberOfStages>
+	</item>
+	<item id="constructionsite.construction_8x4_5stage" name="construction_8x4_5stage" type="ConstructionSite" buyable="false" giftable="false" placeable="true" sizeX="8" sizeY="4">
+		<buildsPerStage>1</buildsPerStage>
+		<energyStart>1</energyStart>
+		<energyCostPerBuild>1</energyCostPerBuild>
+		<timePerBuild>5000</timePerBuild>
+		<randomModifiers>
+			<modifier type="coin" tableName="largestagecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<numberOfStages>5</numberOfStages>
+	</item>
+	<item id="constructionsite.construction_6x6_10stage" name="construction_6x6_10stage" type="ConstructionSite" buyable="false" giftable="false" placeable="true" sizeX="6" sizeY="6">
+		<buildsPerStage>1</buildsPerStage>
+		<energyStart>1</energyStart>
+		<energyCostPerBuild>1</energyCostPerBuild>
+		<timePerBuild>5000</timePerBuild>
+		<randomModifiers>
+			<modifier type="coin" tableName="largestagecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<numberOfStages>10</numberOfStages>
+	</item>
+	<item id="constructionsite.construction_6x6_12stage" name="construction_6x6_12stage" type="ConstructionSite" buyable="false" giftable="false" placeable="true" sizeX="6" sizeY="6">
+		<buildsPerStage>1</buildsPerStage>
+		<energyStart>1</energyStart>
+		<energyCostPerBuild>1</energyCostPerBuild>
+		<timePerBuild>5000</timePerBuild>
+		<randomModifiers>
+			<modifier type="coin" tableName="largestagecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<numberOfStages>12</numberOfStages>
+	</item>
+	<item id="constructionsite.construction_8x8_12stage" name="construction_8x8_12stage" type="ConstructionSite" buyable="false" giftable="false" placeable="true" sizeX="8" sizeY="8">
+		<buildsPerStage>1</buildsPerStage>
+		<energyStart>1</energyStart>
+		<energyCostPerBuild>1</energyCostPerBuild>
+		<timePerBuild>5000</timePerBuild>
+		<randomModifiers>
+			<modifier type="coin" tableName="largestagecointable"/>
+			<modifier type="xp" tableName="defaultxptable"/>
+			<modifier type="energy" tableName="defaultenergytable"/>
+		</randomModifiers>
+		<numberOfStages>5</numberOfStages>
+	</item>
+	<item id="energy.energy_1_buy" name="+1 Energy" type="energy" allowWither="false" buyable="false" consumable="true" giftable="false" placeable="false" requireLevel="1" use="OnUseEnergyItem">
+		<cash>1</cash>
+		<energyRewards>1</energyRewards>
+	</item>
+	<item id="energy.energy_3_buy" name="+3 Energy" type="energy" allowWither="false" buyable="true" consumable="true" giftable="false" placeable="false" requireLevel="1" use="OnUseEnergyItem">
+		<cash>3</cash>
+		<energyRewards>3</energyRewards>
+	</item>
+	<item id="energy.energy_7_buy" name="+7 Energy" type="energy" allowWither="false" buyable="true" consumable="true" giftable="false" placeable="false" requireLevel="1" use="OnUseEnergyItem">
+		<cash>6</cash>
+		<energyRewards>7</energyRewards>
+	</item>
+	<item id="energy.energy_12_buy" name="+12 Energy" type="energy" allowWither="false" buyable="true" consumable="true" giftable="false" placeable="false" requireLevel="1" use="OnUseEnergyItem">
+		<cash>9</cash>
+		<energyRewards>12</energyRewards>
+	</item>
+	<item id="energy.energy_1" name="+1 Energy" type="energy" allowWither="false" buyable="false" consumable="true" giftable="true" placeable="false" requireLevel="1" use="OnUseEnergyItem">
+		<energyRewards>1</energyRewards>
+	</item>
+	<item id="energy.energy_2" name="+2 Energy" type="energy" allowWither="false" buyable="false" consumable="true" giftable="true" placeable="false" requireLevel="1" use="OnUseEnergyItem">
+		<unlock>neighbor</unlock>
+		<requiredNeighbors>7</requiredNeighbors>
+		<energyRewards>2</energyRewards>
+	</item>
+	<item id="energy.energy_3" name="+3 Energy" type="energy" allowWither="false" buyable="false" consumable="true" giftable="true" placeable="false" requireLevel="1" use="OnUseEnergyItem">
+		<unlock>neighbor</unlock>
+		<requiredNeighbors>9</requiredNeighbors>
+		<energyRewards>3</energyRewards>
+	</item>
+	<item id="energy.energy_5" name="+5 Energy" type="energy" allowWither="false" buyable="false" consumable="true" giftable="false" placeable="false" requireLevel="1" use="OnUseEnergyItem">
+		<unlock>neighbor</unlock>
+		<requiredNeighbors>12</requiredNeighbors>
+		<energyRewards>5</energyRewards>
+	</item>
+	<item id="goods.goods_20" name="+20 Goods" type="goods" allowWither="false" buyable="false" consumable="true" displayable="false" giftable="false" placeable="false" requireLevel="1" use="OnUseGoodsItem">
+		<goodsReward>20</goodsReward>
+	</item>
+	<item id="collectable.soy_milk" name="SoyMilk" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.soy_bean_milk" name="Soy Bean Milk" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.soy_powder" name="Soy Protein Powder" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.soybean_oil" name="Soybean Oil" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.soy_sauce" name="Soy Sauce" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.flower_basket" name="Flower Basket" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.wreath" name="Wreath" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.bouquets" name="Bouquets" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.vanilla_bottle" name="Vanilla Bottle" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.vanilla_perfume" name="Vanilla Perfume" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.cream_cake" name="Cream Cake" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.pumpernickel" name="Pumpernickel" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.cheese_bread" name="Cheese Bread" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.toast" name="Toast" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.baguette" name="Baguette" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.lollypop" name="Lollypop" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.cider" name="Cider" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.cigarettes" name="Cigarettes" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.chewing_gum" name="Chewing Gum" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.tooth_paste" name="Tooth Paste" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.wine" name="Wine" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.raisin" name="Raisin" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.grape_juice" name="Grape Juice" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.goblet" name="Goblet" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.vineyard_trellis" name="Vineyard Trellis" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.coffee_maker" name="Coffee Maker" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.latte" name="Latte" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.ice_coffee" name="Ice Coffee" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.doughnut" name="Doughnut" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.milk" name="Milk" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.rose" name="Rose" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.lily" name="Lily" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.orchid" name="Orchid" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.tulip" name="Tulip" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.daisy" name="Daisy" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.carrots" name="Carrots" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.cauliflowers" name="Cauliflowers" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.corns" name="Corns" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.peas" name="Peas" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.tomatoes" name="Tomatoes" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.hamburger" name="Hamburger" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.fried_chicken" name="Fried Chicken" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.french_fries" name="French Fries" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.soda" name="Soda" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.salad" name="Salad" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.mens_wear" name="Men's Wear" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.womens_wear" name="Women's Wear" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.cheongsam" name="Cheongsam" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.sportswear" name="Sportswear" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.bikini_swimwear" name="Bikini Swimwear" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.strawberry_sundae" name="Strawberry Sundae" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.ice_cream_cone" name="Ice Cream Cone" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.chocolate_ice_cream" name="Chocolate Ice Cream" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.milk_shake" name="Milk Shake" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.ice_cream_fondue" name="Ice Cream Fondue" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.wigs_for_ladies" name="Wigs for Ladies" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.styling_shear" name="Styling Shear" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.hair_dryer" name="Hair Dryer" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.shampoo" name="Shampoo" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.comb" name="Comb" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.dictionary" name="Dictionary" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.cd" name="CD" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.encyclopedia" name="Encyclopedia" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.pen" name="Pen" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.book_shelf" name="Book Shelf" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.spanner" name="Wrench" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.mower" name="Mower" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.ladder" name="Ladder" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.screw" name="Screw" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.screwdriver" name="Screwdriver" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.cotton_quilt" name="Cotton Quilt" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.stereo" name="Stereo" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.electric_fan" name="Electric Fan" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.toaster" name="Toaster" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.blender" name="Blender" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.puppet" name="Puppet" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.barbie" name="Barbie" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.robot" name="Robot" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.rc_plane" name="RC Plane" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.toy_car" name="Toy Car" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.dog_food" name="Dog Food" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.pet_collar" name="Pet Collar" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.pet_feeder" name="Pet Feeder" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.frisbee" name="Frisbee" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.fur_brush" name="Fur Brush" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.xo" name="XO" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.pool_table" name="Pool Table" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.glass" name="Glass" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.beer" name="Beer" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.dartboard" name="Dartboard" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.gasoline_in_small_bucket" name="Gasoline" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.oil_drum" name="Oil Drum" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.refueling_pump" name="Refueling Pump" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.price_tag" name="Price Tag" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.warning_sign" name="Warning Sign" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.pillow" name="Pillow" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.television" name="Television" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.seat" name="Seat" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.sofa" name="Sofa" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.bed" name="Bed" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.tuna" name="Tuna" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.crab" name="Crab" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.lobster" name="Lobster" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.fish_soup" name="Fish Soup" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.seafood _salad" name="Seafood Salad" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.pc" name="PC" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.microwave_oven" name="Microwave Oven " type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.satellite_tv" name="Satellite TV" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.cd_player" name="CD Player" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.refrigerator" name="Refrigerator" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.wheelchair" name="Wheelchair" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.bandage" name="Bandage" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.medicine" name="Medicine" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.adhesive_bandage" name="Adhesive Bandage" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.blood_pressure_monitor" name="Blood Pressure Monitor" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.pizza" name="Pizza" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.pizza_peel" name="Pizza Peel" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.cheese" name="Cheese" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.plate" name="Plate" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.orange_juice" name="Orange Juice" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.foie_gras" name="Foie Gras" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.french_braised_potato" name="French Braised Potato" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.french_onion_soup" name="French Onion Soup" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.croissant" name="Croissant" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.beef_steak" name="Beef Steak" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.barbell" name="Barbell" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.treadmill" name="Treadmill" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.jump_rope" name="Jump Rope" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.wristband" name="Wristband" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.tennis_shoes" name="Tennis Shoes" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.cinema_ticket" name="Cinema Ticket" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.popcorn" name="Popcorn" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.3d_glasses" name="3D Glasses" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.hot_dog" name="Hot Dog" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.peanut_cake" name="Peanut Cake" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.tire" name="Tire" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.windshield" name="Windshield" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.steering_wheel" name="Steering Wheel" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.brake_pad" name="Brake Pad" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.pliers" name="Pliers" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.roast_duck" name="Roast Duck" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.tea_pot" name="Tea Pot" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.dumplings" name="Dumplings" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.egg_rolls" name="Egg Rolls" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.chopsticks" name="Chopsticks" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.alarm_clock" name="Alarm Clock" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.wallet" name="Wallet" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.earring" name="Earring" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.gift_box" name="Gift Box" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.lighter" name="Lighter" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.baked_potato" name="Baked Potato" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.hash_browns" name="Hash Browns" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.mashed_potatoes" name="Mashed Potatoes" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.potato_roll" name="Potato Roll" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.potato_soup" name="Potato Soup" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.johnny_cakes" name="Johnny Cakes" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.muffin" name="Muffin" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.cream_of_wheat" name="Cream of Wheat" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.bread" name="Bread" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.cookies" name="Cookies" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.eggplant_stew" name="Eggplant Stew" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.fried_eggplant" name="Fried Eggplant" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.brilled_eggplant" name="Grilled Eggplant" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.eggplant_casserole" name="Eggplant Casserole" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.ratatouille" name="Ratatouille" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.sunflower_seeds" name="Sunflower Seeds" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.sun_butter" name="Sun Butter" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.sunflower_bread" name="Sunflower Bread" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.sunflower_oil" name="Sunflower Oil" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.sunflower_petals" name="Sunflower Petals" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectablefried_tomatoes" name="Fried Tomatoes" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.tomato_sauce" name="Tomato Sauce" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.salsa" name="Salsa" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.tomato_soup" name="Tomato Soup" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.ketchup_bottle" name="Ketchup Bottle" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.pumpkin_pie" name="Pumpkin Pie" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.pumpkin_seeds" name="Pumpkin Seeds" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.pumpkin_muffin" name="Pumpkin Muffin" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.jackolantern" name="Jackolantern" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.pumpkin_bread" name="Pumpkin Bread" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.oak_wine_bucket" name="Oak Wine Bucket" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.cork_stopper" name="Cork Stopper" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.sober_up_bottle" name="Sober up Bottle" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.cockscrew" name="Cockscrew" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.wine_stocking_shelf" name="Wine Stocking Shelf" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.fireplace" name="Fireplace" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.table_clock" name="Table Clock" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.candlestick" name="Candlestick" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.cavalier_helmet" name="Cavalier Helmet" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="collectable.oil_paintings" name="Oil Paintings" type="collectable" buyable="false" giftable="false" requiredLevel="1" sizeX="1" sizeY="1"/>
+	<item id="lottery.1" type="lottery" name="Lottery" giftable="false" buyable="true" placeable="false">
+		<cost>1000</cost>
+	</item>
+	<item id="decoration.hq_bakery" name="billboard_Bakery_Headquarters" type="decoration" className="Headquarter" buyable="false" giftable="false" placeable="true" sellSendsToInventory="true" sizeX="5" sizeY="5">
+		<randomModifiers>
+			<modifier type="xp" tableName="defaultxptable"/>
+		</randomModifiers>
+		<heightLimit>14</heightLimit>
+		<bonuses>
+			<bonus name="FranchiseAOE" field="coinYield" radius="11">
+				<allowedType type="business"/>
+				<percentModifier num="3" percent="9"/>
+				<percentModifier num="6" percent="12"/>
+				<percentModifier num="9" percent="16"/>
+				<percentModifier num="12" percent="21"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.hq_convenience_store" name="billboard_Convenience_Store_Headquarters" type="decoration" className="Headquarter" buyable="false" giftable="false" placeable="true" sellSendsToInventory="true" sizeX="5" sizeY="5">
+		<randomModifiers>
+			<modifier type="xp" tableName="defaultxptable"/>
+		</randomModifiers>
+		<heightLimit>14</heightLimit>
+		<bonuses>
+			<bonus name="FranchiseAOE" field="coinYield" radius="11">
+				<allowedType type="business"/>
+				<percentModifier num="3" percent="9"/>
+				<percentModifier num="6" percent="12"/>
+				<percentModifier num="9" percent="16"/>
+				<percentModifier num="12" percent="21"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.hq_coffee_shop" name="billboard_Coffee_Shop_Headquarters" type="decoration" className="Headquarter" buyable="false" giftable="false" placeable="true" sellSendsToInventory="true" sizeX="5" sizeY="5">
+		<randomModifiers>
+			<modifier type="xp" tableName="defaultxptable"/>
+		</randomModifiers>
+		<heightLimit>14</heightLimit>
+		<bonuses>
+			<bonus name="FranchiseAOE" field="coinYield" radius="11">
+				<allowedType type="business"/>
+				<percentModifier num="3" percent="9"/>
+				<percentModifier num="6" percent="12"/>
+				<percentModifier num="9" percent="16"/>
+				<percentModifier num="12" percent="21"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.hq_florist_shop" name="billboard_Florist_Shop_Headquarters" type="decoration" className="Headquarter" buyable="false" giftable="false" placeable="true" sellSendsToInventory="true" sizeX="5" sizeY="5">
+		<randomModifiers>
+			<modifier type="xp" tableName="defaultxptable"/>
+		</randomModifiers>
+		<heightLimit>14</heightLimit>
+		<bonuses>
+			<bonus name="FranchiseAOE" field="coinYield" radius="11">
+				<allowedType type="business"/>
+				<percentModifier num="3" percent="9"/>
+				<percentModifier num="6" percent="12"/>
+				<percentModifier num="9" percent="16"/>
+				<percentModifier num="12" percent="21"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.hq_vegetable_store" name="billboard_Vegetable_Store_Headquarters" type="decoration" className="Headquarter" buyable="false" giftable="false" placeable="true" sellSendsToInventory="true" sizeX="5" sizeY="5">
+		<randomModifiers>
+			<modifier type="xp" tableName="defaultxptable"/>
+		</randomModifiers>
+		<heightLimit>14</heightLimit>
+		<bonuses>
+			<bonus name="FranchiseAOE" field="coinYield" radius="11">
+				<allowedType type="business"/>
+				<percentModifier num="3" percent="9"/>
+				<percentModifier num="6" percent="12"/>
+				<percentModifier num="9" percent="16"/>
+				<percentModifier num="12" percent="21"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.hq_burger_joint" name="billboard_Burger_Joint_Headquarters" type="decoration" className="Headquarter" buyable="false" giftable="false" placeable="true" sellSendsToInventory="true" sizeX="5" sizeY="5">
+		<randomModifiers>
+			<modifier type="xp" tableName="defaultxptable"/>
+		</randomModifiers>
+		<heightLimit>14</heightLimit>
+		<bonuses>
+			<bonus name="FranchiseAOE" field="coinYield" radius="11">
+				<allowedType type="business"/>
+				<percentModifier num="3" percent="9"/>
+				<percentModifier num="6" percent="12"/>
+				<percentModifier num="9" percent="16"/>
+				<percentModifier num="12" percent="21"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.hq_clothing_store" name="billboard_Clothing_Store_Headquarters" type="decoration" className="Headquarter" buyable="false" giftable="false" placeable="true" sellSendsToInventory="true" sizeX="5" sizeY="5">
+		<randomModifiers>
+			<modifier type="xp" tableName="defaultxptable"/>
+		</randomModifiers>
+		<heightLimit>14</heightLimit>
+		<bonuses>
+			<bonus name="FranchiseAOE" field="coinYield" radius="11">
+				<allowedType type="business"/>
+				<percentModifier num="3" percent="9"/>
+				<percentModifier num="6" percent="12"/>
+				<percentModifier num="9" percent="16"/>
+				<percentModifier num="12" percent="21"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.hq_ice_cream_parlor" name="billboard_Ice_Cream_Parlor_Headquarters" type="decoration" className="Headquarter" buyable="false" giftable="false" placeable="true" sellSendsToInventory="true" sizeX="5" sizeY="5">
+		<randomModifiers>
+			<modifier type="xp" tableName="defaultxptable"/>
+		</randomModifiers>
+		<heightLimit>14</heightLimit>
+		<bonuses>
+			<bonus name="FranchiseAOE" field="coinYield" radius="11">
+				<allowedType type="business"/>
+				<percentModifier num="3" percent="9"/>
+				<percentModifier num="6" percent="12"/>
+				<percentModifier num="9" percent="16"/>
+				<percentModifier num="12" percent="21"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.hq_barbershop" name="billboard_Barbershop_Headquarters" type="decoration" className="Headquarter" buyable="false" giftable="false" placeable="true" sellSendsToInventory="true" sizeX="5" sizeY="5">
+		<randomModifiers>
+			<modifier type="xp" tableName="defaultxptable"/>
+		</randomModifiers>
+		<heightLimit>14</heightLimit>
+		<bonuses>
+			<bonus name="FranchiseAOE" field="coinYield" radius="11">
+				<allowedType type="business"/>
+				<percentModifier num="3" percent="9"/>
+				<percentModifier num="6" percent="12"/>
+				<percentModifier num="9" percent="16"/>
+				<percentModifier num="12" percent="21"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.hq_book_store" name="billboard_Book_Store_Headquarters" type="decoration" className="Headquarter" buyable="false" giftable="false" placeable="true" sellSendsToInventory="true" sizeX="5" sizeY="5">
+		<randomModifiers>
+			<modifier type="xp" tableName="defaultxptable"/>
+		</randomModifiers>
+		<heightLimit>14</heightLimit>
+		<bonuses>
+			<bonus name="FranchiseAOE" field="coinYield" radius="11">
+				<allowedType type="business"/>
+				<percentModifier num="3" percent="9"/>
+				<percentModifier num="6" percent="12"/>
+				<percentModifier num="9" percent="16"/>
+				<percentModifier num="12" percent="21"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.hq_tool_store" name="billboard_Tool_Store_Headquarters" type="decoration" className="Headquarter" buyable="false" giftable="false" placeable="true" sellSendsToInventory="true" sizeX="5" sizeY="5">
+		<randomModifiers>
+			<modifier type="xp" tableName="defaultxptable"/>
+		</randomModifiers>
+		<heightLimit>14</heightLimit>
+		<bonuses>
+			<bonus name="FranchiseAOE" field="coinYield" radius="11">
+				<allowedType type="business"/>
+				<percentModifier num="3" percent="9"/>
+				<percentModifier num="6" percent="12"/>
+				<percentModifier num="9" percent="16"/>
+				<percentModifier num="12" percent="21"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.hq_supermarket" name="billboard_Supermarket_Headquarters" type="decoration" className="Headquarter" buyable="false" giftable="false" placeable="true" sellSendsToInventory="true" sizeX="5" sizeY="5">
+		<randomModifiers>
+			<modifier type="xp" tableName="defaultxptable"/>
+		</randomModifiers>
+		<heightLimit>14</heightLimit>
+		<bonuses>
+			<bonus name="FranchiseAOE" field="coinYield" radius="11">
+				<allowedType type="business"/>
+				<percentModifier num="3" percent="9"/>
+				<percentModifier num="6" percent="12"/>
+				<percentModifier num="9" percent="16"/>
+				<percentModifier num="12" percent="21"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.hq_toy_store" name="billboard_Toy_Store_Headquarters" type="decoration" className="Headquarter" buyable="false" giftable="false" placeable="true" sellSendsToInventory="true" sizeX="5" sizeY="5">
+		<randomModifiers>
+			<modifier type="xp" tableName="defaultxptable"/>
+		</randomModifiers>
+		<heightLimit>14</heightLimit>
+		<bonuses>
+			<bonus name="FranchiseAOE" field="coinYield" radius="11">
+				<allowedType type="business"/>
+				<percentModifier num="3" percent="9"/>
+				<percentModifier num="6" percent="12"/>
+				<percentModifier num="9" percent="16"/>
+				<percentModifier num="12" percent="21"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.hq_pet_store" name="billboard_Pet_Store_Headquarters" type="decoration" className="Headquarter" buyable="false" giftable="false" placeable="true" sellSendsToInventory="true" sizeX="5" sizeY="5">
+		<randomModifiers>
+			<modifier type="xp" tableName="defaultxptable"/>
+		</randomModifiers>
+		<heightLimit>14</heightLimit>
+		<bonuses>
+			<bonus name="FranchiseAOE" field="coinYield" radius="11">
+				<allowedType type="business"/>
+				<percentModifier num="3" percent="9"/>
+				<percentModifier num="6" percent="12"/>
+				<percentModifier num="9" percent="16"/>
+				<percentModifier num="12" percent="21"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.hq_bar" name="billboard_Bar_Headquarters" type="decoration" className="Headquarter" buyable="false" giftable="false" placeable="true" sellSendsToInventory="true" sizeX="5" sizeY="5">
+		<randomModifiers>
+			<modifier type="xp" tableName="defaultxptable"/>
+		</randomModifiers>
+		<heightLimit>14</heightLimit>
+		<bonuses>
+			<bonus name="FranchiseAOE" field="coinYield" radius="11">
+				<allowedType type="business"/>
+				<percentModifier num="3" percent="9"/>
+				<percentModifier num="6" percent="12"/>
+				<percentModifier num="9" percent="16"/>
+				<percentModifier num="12" percent="21"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.hq_gas_station" name="billboard_Gas_Station_Headquarters" type="decoration" className="Headquarter" buyable="false" giftable="false" placeable="true" sellSendsToInventory="true" sizeX="5" sizeY="5">
+		<randomModifiers>
+			<modifier type="xp" tableName="defaultxptable"/>
+		</randomModifiers>
+		<heightLimit>14</heightLimit>
+		<bonuses>
+			<bonus name="FranchiseAOE" field="coinYield" radius="11">
+				<allowedType type="business"/>
+				<percentModifier num="3" percent="9"/>
+				<percentModifier num="6" percent="12"/>
+				<percentModifier num="9" percent="16"/>
+				<percentModifier num="12" percent="21"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.hq_hotel" name="billboard_Hotel_Headquarters" type="decoration" className="Headquarter" buyable="false" giftable="false" placeable="true" sellSendsToInventory="true" sizeX="5" sizeY="5">
+		<randomModifiers>
+			<modifier type="xp" tableName="defaultxptable"/>
+		</randomModifiers>
+		<heightLimit>14</heightLimit>
+		<bonuses>
+			<bonus name="FranchiseAOE" field="coinYield" radius="11">
+				<allowedType type="business"/>
+				<percentModifier num="3" percent="9"/>
+				<percentModifier num="6" percent="12"/>
+				<percentModifier num="9" percent="16"/>
+				<percentModifier num="12" percent="21"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.hq_seafood_restaurant" name="billboard_Seafood_Restaurant_Headquarters" type="decoration" className="Headquarter" buyable="false" giftable="false" placeable="true" sellSendsToInventory="true" sizeX="5" sizeY="5">
+		<randomModifiers>
+			<modifier type="xp" tableName="defaultxptable"/>
+		</randomModifiers>
+		<heightLimit>14</heightLimit>
+		<bonuses>
+			<bonus name="FranchiseAOE" field="coinYield" radius="11">
+				<allowedType type="business"/>
+				<percentModifier num="3" percent="9"/>
+				<percentModifier num="6" percent="12"/>
+				<percentModifier num="9" percent="16"/>
+				<percentModifier num="12" percent="21"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.hq_appliances_store" name="billboard_Appliances_Store_Headquarters" type="decoration" className="Headquarter" buyable="false" giftable="false" placeable="true" sellSendsToInventory="true" sizeX="5" sizeY="5">
+		<randomModifiers>
+			<modifier type="xp" tableName="defaultxptable"/>
+		</randomModifiers>
+		<heightLimit>14</heightLimit>
+		<bonuses>
+			<bonus name="FranchiseAOE" field="coinYield" radius="11">
+				<allowedType type="business"/>
+				<percentModifier num="3" percent="9"/>
+				<percentModifier num="6" percent="12"/>
+				<percentModifier num="9" percent="16"/>
+				<percentModifier num="12" percent="21"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.hq_pharmacy" name="billboard_Pharmacy_Headquarters" type="decoration" className="Headquarter" buyable="false" giftable="false" placeable="true" sellSendsToInventory="true" sizeX="5" sizeY="5">
+		<randomModifiers>
+			<modifier type="xp" tableName="defaultxptable"/>
+		</randomModifiers>
+		<heightLimit>14</heightLimit>
+		<bonuses>
+			<bonus name="FranchiseAOE" field="coinYield" radius="11">
+				<allowedType type="business"/>
+				<percentModifier num="3" percent="9"/>
+				<percentModifier num="6" percent="12"/>
+				<percentModifier num="9" percent="16"/>
+				<percentModifier num="12" percent="21"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.hq_pizza_house" name="billboard_Pizza_House_Headquarters" type="decoration" className="Headquarter" buyable="false" giftable="false" placeable="true" sellSendsToInventory="true" sizeX="5" sizeY="5">
+		<randomModifiers>
+			<modifier type="xp" tableName="defaultxptable"/>
+		</randomModifiers>
+		<heightLimit>14</heightLimit>
+		<bonuses>
+			<bonus name="FranchiseAOE" field="coinYield" radius="11">
+				<allowedType type="business"/>
+				<percentModifier num="3" percent="9"/>
+				<percentModifier num="6" percent="12"/>
+				<percentModifier num="9" percent="16"/>
+				<percentModifier num="12" percent="21"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.hq_french_restaurant" name="billboard_French_Restaurant_Headquarters" type="decoration" className="Headquarter" buyable="false" giftable="false" placeable="true" sellSendsToInventory="true" sizeX="5" sizeY="5" lottery="2">
+		<randomModifiers>
+			<modifier type="xp" tableName="defaultxptable"/>
+		</randomModifiers>
+		<heightLimit>14</heightLimit>
+		<bonuses>
+			<bonus name="FranchiseAOE" field="coinYield" radius="11">
+				<allowedType type="business"/>
+				<percentModifier num="3" percent="9"/>
+				<percentModifier num="6" percent="12"/>
+				<percentModifier num="9" percent="16"/>
+				<percentModifier num="12" percent="21"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.hq_fitness_center" name="billboard_Fitness_Center_Headquarters" type="decoration" className="Headquarter" buyable="false" giftable="false" placeable="true" sellSendsToInventory="true" sizeX="5" sizeY="5">
+		<randomModifiers>
+			<modifier type="xp" tableName="defaultxptable"/>
+		</randomModifiers>
+		<heightLimit>14</heightLimit>
+		<bonuses>
+			<bonus name="FranchiseAOE" field="coinYield" radius="11">
+				<allowedType type="business"/>
+				<percentModifier num="3" percent="9"/>
+				<percentModifier num="6" percent="12"/>
+				<percentModifier num="9" percent="16"/>
+				<percentModifier num="12" percent="21"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.hq_cinema" name="billboard_Cinema_Headquarters" type="decoration" className="Headquarter" buyable="false" giftable="false" placeable="true" sellSendsToInventory="true" sizeX="5" sizeY="5">
+		<randomModifiers>
+			<modifier type="xp" tableName="defaultxptable"/>
+		</randomModifiers>
+		<heightLimit>14</heightLimit>
+		<bonuses>
+			<bonus name="FranchiseAOE" field="coinYield" radius="11">
+				<allowedType type="business"/>
+				<percentModifier num="3" percent="9"/>
+				<percentModifier num="6" percent="12"/>
+				<percentModifier num="9" percent="16"/>
+				<percentModifier num="12" percent="21"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.hq_garage" name="billboard_Garage_Headquarters" type="decoration" className="Headquarter" buyable="false" giftable="false" placeable="true" sellSendsToInventory="true" sizeX="5" sizeY="5">
+		<randomModifiers>
+			<modifier type="xp" tableName="defaultxptable"/>
+		</randomModifiers>
+		<heightLimit>14</heightLimit>
+		<bonuses>
+			<bonus name="FranchiseAOE" field="coinYield" radius="11">
+				<allowedType type="business"/>
+				<percentModifier num="3" percent="9"/>
+				<percentModifier num="6" percent="12"/>
+				<percentModifier num="9" percent="16"/>
+				<percentModifier num="12" percent="21"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.hq_chinese_restaurant" name="billboard_Chinese_Restaurant_Headquarters" type="decoration" className="Headquarter" buyable="false" giftable="false" placeable="true" sellSendsToInventory="true" sizeX="5" sizeY="5">
+		<randomModifiers>
+			<modifier type="xp" tableName="defaultxptable"/>
+		</randomModifiers>
+		<heightLimit>14</heightLimit>
+		<bonuses>
+			<bonus name="FranchiseAOE" field="coinYield" radius="11">
+				<allowedType type="business"/>
+				<percentModifier num="3" percent="9"/>
+				<percentModifier num="6" percent="12"/>
+				<percentModifier num="9" percent="16"/>
+				<percentModifier num="12" percent="21"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.hq_specialty_boutique" name="billboard_Specialty_Boutique_Headquarters" type="decoration" className="Headquarter" buyable="false" giftable="false" placeable="true" sellSendsToInventory="true" sizeX="5" sizeY="5">
+		<randomModifiers>
+			<modifier type="xp" tableName="defaultxptable"/>
+		</randomModifiers>
+		<heightLimit>14</heightLimit>
+		<bonuses>
+			<bonus name="FranchiseAOE" field="coinYield" radius="11">
+				<allowedType type="business"/>
+				<percentModifier num="3" percent="9"/>
+				<percentModifier num="6" percent="12"/>
+				<percentModifier num="9" percent="16"/>
+				<percentModifier num="12" percent="21"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="buff.super_fertilizer" name="Super Fertilizer" giftable="false" type="buff" buyable="false" placeable="false" use="OnUseBuffItem" lottery="1">
+		<bonuses>
+			<speedup type="plot_contract" time="0.6666667" percent="false"/>
+		</bonuses>
+	</item>
+	<item id="packet.super_energy_pack" name="Super Energy Pack" giftable="false" type="packet" buyable="false" placeable="false" use="OnUsePacketItem" lottery="2">
+		<packet>
+			<item name="energy.energy_12_buy" count="10"/>
+		</packet>
+	</item>
+	<item id="buff.advanced_fertilizer" name="Advanced Fertilizer" giftable="false" type="buff" buyable="false" placeable="false" use="OnUseBuffItem" lottery="2">
+		<bonuses>
+			<speedup type="plot_contract" time="0.3333333" percent="false"/>
+		</bonuses>
+	</item>
+	<item id="packet.super_ex_pack" name="Super EX Pack" giftable="false" type="packet" buyable="false" placeable="false" use="OnUsePacketItem" lottery="2">
+		<packet>
+			<xp>150</xp>
+		</packet>
+	</item>
+	<item id="packet.advanced_energy_pack" name="Advanced Energy Pack" giftable="false" type="packet" buyable="false" placeable="false" use="OnUsePacketItem" lottery="2">
+		<packet>
+			<item name="energy.energy_7_buy" count="10"/>
+		</packet>
+	</item>
+	<item id="packet.advanced_ex_pack" name="Advanced EX Pack" giftable="false" type="packet" buyable="false" placeable="false" use="OnUsePacketItem" lottery="3">
+		<packet>
+			<xp>70</xp>
+		</packet>
+	</item>
+	<item id="packet.construction_resource_pack" name="Construction Resource Pack" giftable="false" type="packet" buyable="false" placeable="false" use="OnUsePacketItem" lottery="3">
+		<packet>
+			<item name="tool.material_funds" count="2"/>
+			<item name="tool.material_bricks" count="2"/>
+			<item name="tool.material_wood" count="2"/>
+			<item name="tool.material_ribbon" count="2"/>
+			<item name="tool.material_city_seal" count="2"/>
+		</packet>
+	</item>
+	<item id="packet.ex_pack" name="EX Pack" giftable="false" type="packet" buyable="false" placeable="false" use="OnUsePacketItem" lottery="3">
+		<packet>
+			<item name="energy.energy_3_buy" count="10"/>
+		</packet>
+	</item>
+	<item id="decoration.gift_pine_frm" name="Pine" type="decoration" buyable="false" giftable="true" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1">
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.gift_tree_house_frm" name="Tree House" type="decoration" buyable="false" giftable="true" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1">
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.gift_poplar_frm" name="Poplar" type="decoration" buyable="false" giftable="true" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1">
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.gift_star_shaped_flower_pot_frm" name="Star-shaped Flower Pot" type="decoration" buyable="false" giftable="true" multiplace="false" placeable="true" requireLevel="1" sizeX="2" sizeY="2">
+		<bonuses>
+			<bonus name="bonus_4%" field="coinYield" modifier="0" percentModifier="4" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.gift_flower_arch_frm" name="Flower Arch" type="decoration" buyable="false" giftable="true" multiplace="false" placeable="true" requireLevel="1" sizeX="2" sizeY="1">
+		<bonuses>
+			<bonus name="bonus_4%" field="coinYield" modifier="0" percentModifier="4" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.gift_deluxe_doghouse_frm" name="Deluxe Doghouse" type="decoration" buyable="false" giftable="true" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1">
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.gift_bronze_statue_frm" name="Bronze Statue" type="decoration" buyable="false" giftable="true" multiplace="false" placeable="true" requireLevel="1" sizeX="2" sizeY="1">
+		<bonuses>
+			<bonus name="bonus_3%" field="coinYield" modifier="0" percentModifier="3" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.gift_fire_hydrant_frm" name="Fire Hydrant" type="decoration" buyable="false" giftable="true" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1">
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.gift_telephone_booth_frm" name="Telephone Booth" type="decoration" buyable="false" giftable="true" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1">
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.gift_pendulum_clock_frm" name="Pendulum Clock" type="decoration" buyable="false" giftable="true" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1">
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.gift_haystack_frm" name="Haystack" type="decoration" buyable="false" giftable="true" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1">
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.gift_traffic_lights_frm" name="Traffic Lights" type="decoration" buyable="false" giftable="true" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1">
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.gift_decorated_lamp_post_frm" name="Decorated Lamp Post" type="decoration" buyable="false" giftable="true" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1">
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.gift_sheep_frm" name="Sheep" type="decoration" buyable="false" giftable="true" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1">
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.gift_goat_frm" name="Goat" type="decoration" buyable="false" giftable="true" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1">
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.gift_cow_frm" name="Cow" type="decoration" buyable="false" giftable="true" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1">
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.gift_cock_frm" name="Cock" type="decoration" buyable="false" giftable="true" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1">
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.gift_pig_frm" name="Pig" type="decoration" buyable="false" giftable="true" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1">
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.gift_bull_frm" name="Bull" type="decoration" buyable="false" giftable="true" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1">
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.gift_horse_frm" name="Horse" type="decoration" buyable="false" giftable="true" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1">
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="decoration.gift_kangaroo_frm" name="Kangaroo" type="decoration" buyable="false" giftable="true" multiplace="false" placeable="true" requireLevel="1" sizeX="1" sizeY="1">
+		<bonuses>
+			<bonus name="bonus_1%" field="coinYield" modifier="0" percentModifier="1" radius="4">
+				<allowedType type="residence"/>
+				<allowedType type="business"/>
+			</bonus>
+		</bonuses>
+	</item>
+	<item id="packet.level_gift_2" name="Esquire Package" giftable="false" type="packet" buyable="false" placeable="false" use="OnUsePacketItem">
+		<packet>
+			<item name="equipment.weapon.wujinqiang" count="1"/>
+			<item name="equipment.armor.wujinsuozijia" count="1"/>
+			<item name="equipment.mount.baige" count="1"/>
+			<coin>1000</coin>
+		</packet>
+	</item>
+	<item id="packet.level_gift_3" name="KNIGHT Package" giftable="false" type="packet" buyable="false" placeable="false" use="OnUsePacketItem">
+		<packet>
+			<item name="equipment.weapon.taijijian" count="1"/>
+			<item name="equipment.armor.babaotuolongkai" count="1"/>
+			<item name="equipment.mount.wuyuntaxue" count="1"/>
+			<item name="equipment.cloak.jinduanjiaotupifeng" count="1"/>
+			<coin>3000</coin>
+		</packet>
+	</item>
+	<item id="packet.level_gift_4" name="BARONET Package" giftable="false" type="packet" buyable="false" placeable="false" use="OnUsePacketItem">
+		<packet>
+			<item name="energy" count="10"/>
+			<item name="moral" count="500"/>
+			<coin>5000</coin>
+		</packet>
+	</item>
+	<item id="packet.level_gift_5" name="BARON Package" giftable="false" type="packet" buyable="false" placeable="false" use="OnUsePacketItem">
+		<packet>
+			<item name="energy" count="15"/>
+			<item name="moral" count="100"/>
+			<coin>8000</coin>
+		</packet>
+	</item>	
+	<item id="packet.level_gift_6" name="VISCOUNT Package" giftable="false" type="packet" buyable="false" placeable="false" use="OnUsePacketItem">
+		<packet>
+			<item name="energy" count="20"/>
+			<item name="moral" count="2000"/>
+			<coin>10000</coin>
+		</packet>
+	</item>	
+	<item id="packet.level_gift_7" name="EARL Package" giftable="false" type="packet" buyable="false" placeable="false" use="OnUsePacketItem">
+		<packet>
+			<item name="energy" count="25"/>
+			<item name="moral" count="3000"/>
+			<coin>15000</coin>
+		</packet>
+	</item>		
+	<item id="packet.level_gift_8" name="MARQUIS Package" giftable="false" type="packet" buyable="false" placeable="false" use="OnUsePacketItem">
+		<packet>
+			<item name="energy" count="30"/>
+			<item name="moral" count="4000"/>
+			<coin>20000</coin>
+		</packet>
+	</item>		
+</items>

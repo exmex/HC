@@ -1,0 +1,9 @@
+
+function /*::BEAN_NAME::*/_ToDebugString($bean/*/*::BEAN_NAME::*/*/)
+{
+	$__xsd = "(";	
+	
+/*::DEBUG_CODE::*/
+	$__xsd .= ")";	
+	return str_replace( ",)", ")", $__xsd );
+}

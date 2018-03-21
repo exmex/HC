@@ -1,0 +1,6 @@
+	
+	public function /*::METHOD_NAME::*/(/*::PARAM_DEFINE::*/)
+	{
+		if(DEBUG) Logger::getLogger()->debug(/*::METHOD_NAME::*/_ToDebugString(/*::PARAM_DEFINE::*/));
+		$this->response_data .= __/*::METHOD_NAME::*/(/*::PARAM_DEFINE::*/);
+	}

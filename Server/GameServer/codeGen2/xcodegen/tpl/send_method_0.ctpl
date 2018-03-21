@@ -1,0 +1,19 @@
+
+PHP_FUNCTION(__/*::METHOD_NAME::*/)
+{		
+	zval *retbuff;	
+	int xsize = PACKET_HEADER_SIZE;	
+	XPROTO_PACKET_HEADER *phdr = NULL;
+
+	MAKE_STD_ZVAL(retbuff);
+	retbuff->type= IS_STRING;
+	retbuff->value.str.val = emalloc(xsize+1);
+	retbuff->value.str.len = xsize;
+	retbuff->value.str.val[xsize]=0;
+	
+	phdr = (XPROTO_PACKET_HEADER*)retbuff->value.str.val;
+	phdr->len = xsize;
+	phdr->cmd = /*::XCMD_CODE::*/;
+
+	RETURN_ZVAL(retbuff,1,0);
+}

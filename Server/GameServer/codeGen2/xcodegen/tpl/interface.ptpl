@@ -1,0 +1,5 @@
+function __/*::METHOD_NAME::*/(/*::PARAM_DEFINE::*/)
+{	
+	if(DEBUG) Logger::getLogger()->debug(/*::METHOD_NAME::*/_ToDebugString(/*::PARAM_DEFINE::*/));
+	$_SERVER['GAME_SERVER_INSTANCE']->/*::METHOD_NAME::*/(/*::PARAM_DEFINE::*/);
+}

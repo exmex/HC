@@ -1,0 +1,39 @@
+
+PHP_FUNCTION(__/*::METHOD_NAME::*/)
+{
+	long  ret =  0;
+	int arg_len;		
+	zval *retbuff;	
+	int xsize = PACKET_HEADER_SIZE;
+	int psize = 0;
+	XPROTO_PACKET_HEADER *phdr = NULL;
+	char * buff;
+	/*::BEAN_NAME::*/_Object * obj =(/*::BEAN_NAME::*/_Object *)emalloc(sizeof(/*::BEAN_NAME::*/_Object));
+    memset(obj, 0, sizeof(/*::BEAN_NAME::*/_Object));
+	
+	if(zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CC,/*::READ_PARAM_CODE::*/&arg_len)== FAILURE) 
+	{
+		RETURN_LONG(-1);
+	}
+	
+	psize = /*::BEAN_NAME::*/_Size_s(obj TSRMLS_CC);
+	xsize += psize;
+
+	MAKE_STD_ZVAL(retbuff);
+	retbuff->type= IS_STRING;
+	retbuff->value.str.val = emalloc(xsize+1);
+	retbuff->value.str.len = xsize;
+	retbuff->value.str.val[xsize]=0;
+	buff = retbuff->value.str.val;
+
+	phdr = (XPROTO_PACKET_HEADER*)buff;
+	phdr->len = xsize;
+	phdr->cmd = /*::XCMD_CODE::*/;
+
+	/*::BEAN_NAME::*/_ToBuffer_s(obj TSRMLS_CC,buff + PACKET_HEADER_SIZE,psize, &psize);
+	
+/*::BEAN_FREE_CODE::*/
+	efree(obj);
+
+	RETURN_ZVAL(retbuff,1,0);
+}

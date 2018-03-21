@@ -1,0 +1,8 @@
+	{
+		zend_class_entry ce;
+		INIT_CLASS_ENTRY(ce, "/*::BEAN_NAME::*/", /*::BEAN_NAME::*/_methods);
+		/*::BEAN_NAME::*/_ce = zend_register_internal_class(&ce TSRMLS_CC);
+		/*::BEAN_NAME::*/_ce->create_object = /*::BEAN_NAME::*/_create_handler;
+		memcpy(&/*::BEAN_NAME::*/_Object_handlers, zend_get_std_object_handlers(), sizeof(zend_object_handlers));
+		/*::BEAN_NAME::*/_Object_handlers.clone_obj = NULL;
+	}

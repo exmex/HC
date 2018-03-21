@@ -1,0 +1,225 @@
+
+typedef struct /*::BEAN_NAME::*/_Object_t{
+	zend_object  stdobj;		
+	struct /*::BEAN_NAME::*/_Object_t *ptr;		
+/*::STRUCT_FIELD_CODE::*/
+}/*::BEAN_NAME::*/_Object;
+
+zend_class_entry */*::BEAN_NAME::*/_ce;
+zend_object_handlers /*::BEAN_NAME::*/_Object_handlers;
+
+void /*::BEAN_NAME::*/_construct_s(zval * zobj TSRMLS_DC)
+{
+	/*::BEAN_NAME::*/_Object* obj = (/*::BEAN_NAME::*/_Object*) zend_object_store_get_object(zobj TSRMLS_CC);
+
+/*::CONSTRUCT_CODE::*/
+}
+
+PHP_METHOD(/*::BEAN_NAME::*/, __construct)
+{
+	/*::BEAN_NAME::*/_construct_s(getThis() TSRMLS_CC);		
+}
+
+PHP_METHOD(/*::BEAN_NAME::*/, __set)
+{
+        int arglen;
+        zval *propname;
+        zval *param_value;
+        /*::BEAN_NAME::*/_Object* obj;
+        
+        if(zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CC, "zz", &propname,&param_value,&arglen) == FAILURE) {
+            RETURN_NULL();
+        }
+        
+        obj = (/*::BEAN_NAME::*/_Object*) zend_object_store_get_object(getThis() TSRMLS_CC);
+
+		
+		if (Z_TYPE_P(propname) != IS_STRING )
+		{
+			zend_error(E_WARNING,"/*::BEAN_NAME::*/->__set invalid parameters");
+			RETURN_NULL();
+		}
+		
+		if (param_value == NULL || Z_TYPE_P(param_value) == IS_NULL)
+		{
+			zend_error(E_WARNING,"/*::BEAN_NAME::*/->__set cant set a NULL value");
+			RETURN_NULL();
+		}
+
+		switch(str_hash(Z_STRVAL_P(propname),Z_STRLEN_P(propname)))
+		{
+/*::SET_CODE::*/
+			default:
+				zend_error(E_WARNING,"/*::BEAN_NAME::*/->__set undefine parameter");
+		}			  
+}
+
+PHP_METHOD(/*::BEAN_NAME::*/, __get)
+{
+        int arglen;
+        zval * propname;
+        /*::BEAN_NAME::*/_Object *obj;
+        if(zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CC,"z", &propname,&arglen) == FAILURE) {
+                RETURN_NULL();
+        }
+
+        obj = (/*::BEAN_NAME::*/_Object *)zend_object_store_get_object(getThis() TSRMLS_CC);
+
+		if (Z_TYPE_P(propname) != IS_STRING )
+		{
+			zend_error(E_WARNING,"/*::BEAN_NAME::*/->__get invalid parameters");
+			RETURN_NULL();
+		}
+		
+		switch(str_hash(Z_STRVAL_P(propname),Z_STRLEN_P(propname)))
+		{
+/*::GET_CODE::*/
+			default:
+				zend_error(E_WARNING,"/*::BEAN_NAME::*/->__get undefine parameter");
+		}	
+	  
+	  RETURN_NULL();
+}
+
+PHP_METHOD(/*::BEAN_NAME::*/,Size)
+{	
+	int ret = /*::BEAN_NAME::*/_Size_s(getThis() TSRMLS_CC);
+
+	RETURN_LONG(ret); 
+}
+
+int /*::BEAN_NAME::*/_Size_s(zval * zobj TSRMLS_DC)
+{
+	int len = 0;	
+	/*::BEAN_NAME::*/_Object *obj = (/*::BEAN_NAME::*/_Object *)zend_object_store_get_object(zobj TSRMLS_CC);
+	if (obj == NULL){
+		return 0;
+	}
+	
+/*::SIZE_CODE::*/	
+	return len;
+}
+
+
+PHP_METHOD(/*::BEAN_NAME::*/,FromBuffer)
+{
+	long  ret =  0;
+	int arg_len;
+	zval *__src/*XBYTE_ARRAY*/, *position, *raw_data; int xsize=0;  
+
+	if(zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CC, "z",&__src,&arg_len) 
+		== FAILURE) 
+	{
+		RETURN_LONG(-1);
+	}	
+		
+	raw_data  = zend_read_property(zend_get_class_entry(__src TSRMLS_CC), __src, "raw_data", sizeof("raw_data")-1, 1 TSRMLS_CC);
+	position  = zend_read_property(zend_get_class_entry(__src TSRMLS_CC), __src, "position", sizeof("position")-1, 1 TSRMLS_CC);
+	ret=/*::BEAN_NAME::*/_FromBuffer_s(getThis() TSRMLS_CC,Z_STRVAL_P(raw_data)+Z_LVAL_P(position),Z_STRLEN_P(raw_data)-Z_LVAL_P(position),&xsize);
+	position->value.lval+=xsize;
+		
+	RETURN_LONG(ret);
+}
+
+int /*::BEAN_NAME::*/_FromBuffer_s(zval *zsrc_obj TSRMLS_DC, const char *__src,  int  __maxlen, int *__ret_size)
+{
+		int __cur_size = *__ret_size;
+		int __xsize = 0;		
+		int __ret=0;
+		/*::BEAN_NAME::*/_Object *src_obj = (/*::BEAN_NAME::*/_Object *)zend_object_store_get_object(zsrc_obj TSRMLS_CC);
+
+/*::FROM_BUFFER_CODE::*/
+		*__ret_size = __cur_size + __xsize;
+		return __xsize;
+}
+
+PHP_METHOD(/*::BEAN_NAME::*/,ToBuffer)
+{
+	
+	long  ret =  0;
+	int arg_len;	
+	int xsize=0;  
+	zval *retbuff;
+
+	if(zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CC, "z",&retbuff,&arg_len) 
+		== FAILURE) 
+	{
+		RETURN_LONG(-1);
+	}	
+	
+	xsize=/*::BEAN_NAME::*/_Size_s(getThis() TSRMLS_CC);
+	if(xsize<0) RETURN_LONG(xsize);
+
+	retbuff->type= IS_STRING;
+	retbuff->value.str.val = emalloc(xsize+1);
+	retbuff->value.str.len = xsize;
+	retbuff->value.str.val[xsize]=0;
+	ret=/*::BEAN_NAME::*/_ToBuffer_s(getThis() TSRMLS_CC,retbuff->value.str.val,xsize, &xsize);
+
+		
+	RETURN_LONG(ret);
+	
+}
+
+int /*::BEAN_NAME::*/_ToBuffer_s(zval *zdst_obj TSRMLS_DC, char *__dst,  int  __maxlen, int *__ret_size)
+{
+		int __cur_size = *__ret_size;
+		int __xsize = 0;
+		zval *__sob;
+		int __ret=0;
+		/*::BEAN_NAME::*/_Object *dst_obj = (/*::BEAN_NAME::*/_Object *)zend_object_store_get_object(zdst_obj TSRMLS_CC);
+
+/*::TO_BUFFER_CODE::*/				
+		*__ret_size = __cur_size + __xsize;
+		return __xsize;
+}
+
+ZEND_BEGIN_ARG_INFO_EX(/*::BEAN_NAME::*/_get, 0, 0, 1)
+	ZEND_ARG_INFO(0, key)	
+ZEND_END_ARG_INFO()
+ZEND_BEGIN_ARG_INFO_EX(/*::BEAN_NAME::*/_set, 0, 0, 1)
+	ZEND_ARG_INFO(0, key)	
+	ZEND_ARG_INFO(0, value)	
+ZEND_END_ARG_INFO()
+
+function_entry /*::BEAN_NAME::*/_methods[] = {
+    PHP_ME(/*::BEAN_NAME::*/,  __construct,     NULL, ZEND_ACC_PUBLIC | ZEND_ACC_CTOR)
+	PHP_ME(/*::BEAN_NAME::*/,  __get,         /*::BEAN_NAME::*/_get, ZEND_ACC_PUBLIC)
+	PHP_ME(/*::BEAN_NAME::*/,  __set,         /*::BEAN_NAME::*/_set, ZEND_ACC_PUBLIC)
+	PHP_ME(/*::BEAN_NAME::*/,  Size,          NULL, ZEND_ACC_PUBLIC)
+	PHP_ME(/*::BEAN_NAME::*/,  FromBuffer,          NULL, ZEND_ACC_PUBLIC)
+	PHP_ME(/*::BEAN_NAME::*/,  ToBuffer,          NULL, ZEND_ACC_PUBLIC)
+	{NULL, NULL, NULL}
+};
+			
+
+void /*::BEAN_NAME::*/_free_storage(void *object TSRMLS_DC)
+{
+    /*::BEAN_NAME::*/_Object *obj = (/*::BEAN_NAME::*/_Object *)object; 
+
+/*::BEAN_FREE_CODE::*/
+    zend_hash_destroy(obj->stdobj.properties);
+    FREE_HASHTABLE(obj->stdobj.properties);
+
+    efree(obj);
+}
+
+zend_object_value /*::BEAN_NAME::*/_create_handler(zend_class_entry *type TSRMLS_DC)
+{
+    zval *tmp;
+    zend_object_value retval;
+    /*::BEAN_NAME::*/_Object *obj;
+
+    obj = (/*::BEAN_NAME::*/_Object *)emalloc(sizeof(/*::BEAN_NAME::*/_Object));
+    memset(obj, 0, sizeof(/*::BEAN_NAME::*/_Object));
+    obj->stdobj.ce = type;
+
+    ALLOC_HASHTABLE(obj->stdobj.properties);
+    zend_hash_init(obj->stdobj.properties, 0, NULL, ZVAL_PTR_DTOR, 0);
+    zend_hash_copy(obj->stdobj.properties, &type->default_properties,(copy_ctor_func_t)zval_add_ref, (void *)&tmp, sizeof(zval *));
+
+    retval.handle = zend_objects_store_put(obj, NULL, /*::BEAN_NAME::*/_free_storage, NULL TSRMLS_CC);
+    retval.handlers = &/*::BEAN_NAME::*/_Object_handlers;
+
+    return retval;
+}
