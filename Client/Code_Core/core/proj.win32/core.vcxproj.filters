@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="network">
+      <UniqueIdentifier>{1e35845d-3740-4f17-8e8a-5567a7584c33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network\base">
+      <UniqueIdentifier>{23802f05-b777-4f54-9c8b-72930a5597fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network\download">
+      <UniqueIdentifier>{7d13dcf9-7cb3-4f99-a98c-f0ed82e6a763}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network\packet">
+      <UniqueIdentifier>{82fd8dbe-964b-45fb-80b2-86172cdee544}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="general">
+      <UniqueIdentifier>{259bb8e2-88fd-4263-b232-d028bc1b2dc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network\upload">
+      <UniqueIdentifier>{60434471-d7b8-45e1-9ebd-1a2ca06ed83e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\AsyncSocket.cpp">
+      <Filter>network\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\IoSocket.cpp">
+      <Filter>network\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CurlDownload.cpp">
+      <Filter>network\download</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\LoadingUnit.cpp">
+      <Filter>network\download</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SeverConsts.cpp">
+      <Filter>network\download</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PacketBase.cpp">
+      <Filter>network\packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PacketManager.cpp">
+      <Filter>network\packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SocketBase.cpp">
+      <Filter>network\packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ThreadSocket.cpp">
+      <Filter>network\packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\AsyncSprite.cpp">
+      <Filter>general</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TableReader.cpp">
+      <Filter>general</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Concurrency.cpp">
+      <Filter>general</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Language.cpp">
+      <Filter>general</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\stdafx.cpp">
+      <Filter>general</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\StringConverter.cpp">
+      <Filter>general</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\GameMaths.cpp">
+      <Filter>general</Filter>
+    </ClCompile>
+    <ClCompile Include="..\platform\GamePlatform.cpp">
+      <Filter>general</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\AES.cpp">
+      <Filter>general</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\inifile.cpp">
+      <Filter>general</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Base64.cpp">
+      <Filter>general</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\md5.cpp">
+      <Filter>general</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tinyxml2.cpp">
+      <Filter>general</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\rc4.cpp">
+      <Filter>general</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\GameEncryptKey.cpp">
+      <Filter>general</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CurlUpload.cpp">
+      <Filter>network\upload</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\HeroFileUtils.cpp">
+      <Filter>general</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\LoadResources.cpp">
+      <Filter>general</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CCMultiSprite.cpp">
+      <Filter>general</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\GateKeeper.cpp">
+      <Filter>general</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\LegendAnimation.cpp">
+      <Filter>general</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\LegendAminationEffect.cpp">
+      <Filter>general</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\LegendAnimationFileInfo.cpp">
+      <Filter>general</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\GameAnimation.cpp">
+      <Filter>general</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\LoadingUnit.h">
+      <Filter>network\download</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CurlDownload.h">
+      <Filter>network\download</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PacketBase.h">
+      <Filter>network\packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PacketManager.h">
+      <Filter>network\packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SocketBase.h">
+      <Filter>network\packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\TableReader.h">
+      <Filter>general</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\GamePlatform.h">
+      <Filter>general</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\IteratorWrapper.h">
+      <Filter>general</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Language.h">
+      <Filter>general</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Singleton.h">
+      <Filter>general</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\stdafx.h">
+      <Filter>general</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StringConverter.h">
+      <Filter>general</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\GameMaths.h">
+      <Filter>general</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\AES.h">
+      <Filter>general</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\AsyncSocket.h">
+      <Filter>network\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IoSocket.h">
+      <Filter>network\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\AsyncSprite.h">
+      <Filter>general</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SeverConsts.h">
+      <Filter>network\download</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\inifile.h">
+      <Filter>general</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Base64.h">
+      <Filter>general</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\md5.h">
+      <Filter>general</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\tinyxml2.h">
+      <Filter>general</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rc4.h">
+      <Filter>general</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\GameEncryptKey.h">
+      <Filter>general</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CurlUpload.h">
+      <Filter>network\upload</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ThreadSocket.h">
+      <Filter>network\packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Concurrency.h" />
+    <ClInclude Include="..\include\HeroFileUtils.h">
+      <Filter>general</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\LoadResources.h">
+      <Filter>general</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CCMultiSprite.h">
+      <Filter>general</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\GateKeeper.h">
+      <Filter>general</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\LegendAnimation.h">
+      <Filter>general</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\LegendAminationEffect.h">
+      <Filter>general</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\LegendAnimationFileInfo.h">
+      <Filter>general</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\GameAnimation.h">
+      <Filter>general</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

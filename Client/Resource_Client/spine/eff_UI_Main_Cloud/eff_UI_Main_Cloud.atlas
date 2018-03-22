@@ -1,0 +1,34 @@
+
+eff_UI_Main_Cloud.png
+size: 484,541
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+eff_UI_Main_Cloud1
+  rotate: true
+  xy: 276, 87
+  size: 452, 132
+  orig: 452, 132
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Cloud2
+  rotate: true
+  xy: 146, 25
+  size: 514, 128
+  orig: 514, 128
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Cloud3
+  rotate: true
+  xy: 2, 19
+  size: 520, 142
+  orig: 520, 142
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Cloud4
+  rotate: false
+  xy: 276, 2
+  size: 206, 83
+  orig: 206, 83
+  offset: 0, 0
+  index: -1

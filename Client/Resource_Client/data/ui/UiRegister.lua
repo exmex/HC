@@ -1,0 +1,5 @@
+UIREGISTERTABLE =
+{
+	{szScript = "",szCcbi = ""},
+
+}

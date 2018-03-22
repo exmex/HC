@@ -1,0 +1,15 @@
+{
+    "version": 1,  
+    "strings":  
+    [
+		{"k":"@LOADINGFRAME_NeedUpdate3G", "v":"You are under 3G net,please convert into Wifi as a recommendation.Do you approve it?"},
+		{"k": "@loading2", "v": ""},
+		{"k": "@UpdateSizeInfo", "v": "#v1#KB/#v2#KB"},
+		{"k":"@SeverConstsSeverFileFailedMsg", "v":"Failure to acquire server lists,please click 'ok' as retry."},
+		{"k":"@UpdateFileListFailed", "v":"Failure to update list files,please click 'ok' as retry."},
+		{"k":"@LoadText", "v":"Loading..."},
+		{"k":"@LOADINGFRAME_NeedUpdate", "v":"Click 'ok' for updating."},
+		{"k":"@LOGIN_PLAYER_DATA_ERROR","v":"The data for login is abnormal,please searching for 'we4dota' to consult on Facebook."},
+		{"k": "@ServerIsFull","v":"The server is filled,please relogin again by server convertion."}
+	]
+}

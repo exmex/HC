@@ -1,0 +1,279 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF6BD46616D2114D00023018 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6BD46516D2114D00023018 /* Foundation.framework */; };
+		CF6BD48816D2119C00023018 /* json_reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF6BD48416D2119C00023018 /* json_reader.cpp */; };
+		CF6BD48916D2119C00023018 /* json_value.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF6BD48516D2119C00023018 /* json_value.cpp */; };
+		CF6BD48A16D2119C00023018 /* json_writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF6BD48716D2119C00023018 /* json_writer.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CF6BD46016D2114D00023018 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CF6BD46216D2114D00023018 /* libJsonCpp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJsonCpp.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF6BD46516D2114D00023018 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CF6BD46916D2114D00023018 /* JsonCpp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JsonCpp-Prefix.pch"; sourceTree = "<group>"; };
+		CF6BD47916D2117D00023018 /* autolink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = autolink.h; path = ../../../../include/json/autolink.h; sourceTree = "<group>"; };
+		CF6BD47A16D2117D00023018 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../../../../include/json/config.h; sourceTree = "<group>"; };
+		CF6BD47B16D2117D00023018 /* features.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = features.h; path = ../../../../include/json/features.h; sourceTree = "<group>"; };
+		CF6BD47C16D2117D00023018 /* forwards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = forwards.h; path = ../../../../include/json/forwards.h; sourceTree = "<group>"; };
+		CF6BD47D16D2117D00023018 /* json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = json.h; path = ../../../../include/json/json.h; sourceTree = "<group>"; };
+		CF6BD47E16D2117D00023018 /* reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = reader.h; path = ../../../../include/json/reader.h; sourceTree = "<group>"; };
+		CF6BD47F16D2117D00023018 /* value.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = value.h; path = ../../../../include/json/value.h; sourceTree = "<group>"; };
+		CF6BD48016D2117D00023018 /* writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = writer.h; path = ../../../../include/json/writer.h; sourceTree = "<group>"; };
+		CF6BD48116D2119C00023018 /* json_batchallocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = json_batchallocator.h; path = ../../../../src/lib_json/json_batchallocator.h; sourceTree = "<group>"; };
+		CF6BD48216D2119C00023018 /* json_internalarray.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = json_internalarray.inl; path = ../../../../src/lib_json/json_internalarray.inl; sourceTree = "<group>"; };
+		CF6BD48316D2119C00023018 /* json_internalmap.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = json_internalmap.inl; path = ../../../../src/lib_json/json_internalmap.inl; sourceTree = "<group>"; };
+		CF6BD48416D2119C00023018 /* json_reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = json_reader.cpp; path = ../../../../src/lib_json/json_reader.cpp; sourceTree = "<group>"; };
+		CF6BD48516D2119C00023018 /* json_value.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = json_value.cpp; path = ../../../../src/lib_json/json_value.cpp; sourceTree = "<group>"; };
+		CF6BD48616D2119C00023018 /* json_valueiterator.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = json_valueiterator.inl; path = ../../../../src/lib_json/json_valueiterator.inl; sourceTree = "<group>"; };
+		CF6BD48716D2119C00023018 /* json_writer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = json_writer.cpp; path = ../../../../src/lib_json/json_writer.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF6BD45F16D2114D00023018 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF6BD46616D2114D00023018 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF6BD45716D2114D00023018 = {
+			isa = PBXGroup;
+			children = (
+				CF6BD46716D2114D00023018 /* JsonCpp */,
+				CF6BD46416D2114D00023018 /* Frameworks */,
+				CF6BD46316D2114D00023018 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF6BD46316D2114D00023018 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF6BD46216D2114D00023018 /* libJsonCpp.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF6BD46416D2114D00023018 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF6BD46516D2114D00023018 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF6BD46716D2114D00023018 /* JsonCpp */ = {
+			isa = PBXGroup;
+			children = (
+				CF6BD48116D2119C00023018 /* json_batchallocator.h */,
+				CF6BD48216D2119C00023018 /* json_internalarray.inl */,
+				CF6BD48316D2119C00023018 /* json_internalmap.inl */,
+				CF6BD48416D2119C00023018 /* json_reader.cpp */,
+				CF6BD48516D2119C00023018 /* json_value.cpp */,
+				CF6BD48616D2119C00023018 /* json_valueiterator.inl */,
+				CF6BD48716D2119C00023018 /* json_writer.cpp */,
+				CF6BD47916D2117D00023018 /* autolink.h */,
+				CF6BD47A16D2117D00023018 /* config.h */,
+				CF6BD47B16D2117D00023018 /* features.h */,
+				CF6BD47C16D2117D00023018 /* forwards.h */,
+				CF6BD47D16D2117D00023018 /* json.h */,
+				CF6BD47E16D2117D00023018 /* reader.h */,
+				CF6BD47F16D2117D00023018 /* value.h */,
+				CF6BD48016D2117D00023018 /* writer.h */,
+				CF6BD46816D2114D00023018 /* Supporting Files */,
+			);
+			path = JsonCpp;
+			sourceTree = "<group>";
+		};
+		CF6BD46816D2114D00023018 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF6BD46916D2114D00023018 /* JsonCpp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF6BD46116D2114D00023018 /* JsonCpp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF6BD47016D2114D00023018 /* Build configuration list for PBXNativeTarget "JsonCpp" */;
+			buildPhases = (
+				CF6BD45E16D2114D00023018 /* Sources */,
+				CF6BD45F16D2114D00023018 /* Frameworks */,
+				CF6BD46016D2114D00023018 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JsonCpp;
+			productName = JsonCpp;
+			productReference = CF6BD46216D2114D00023018 /* libJsonCpp.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF6BD45916D2114D00023018 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = fish;
+			};
+			buildConfigurationList = CF6BD45C16D2114D00023018 /* Build configuration list for PBXProject "JsonCpp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF6BD45716D2114D00023018;
+			productRefGroup = CF6BD46316D2114D00023018 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF6BD46116D2114D00023018 /* JsonCpp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF6BD45E16D2114D00023018 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF6BD48816D2119C00023018 /* json_reader.cpp in Sources */,
+				CF6BD48916D2119C00023018 /* json_value.cpp in Sources */,
+				CF6BD48A16D2119C00023018 /* json_writer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CF6BD46E16D2114D00023018 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CF6BD46F16D2114D00023018 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF6BD47116D2114D00023018 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				DSTROOT = /tmp/JsonCpp.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JsonCpp/JsonCpp-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../include\"";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Debug;
+		};
+		CF6BD47216D2114D00023018 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				DSTROOT = /tmp/JsonCpp.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JsonCpp/JsonCpp-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../include\"";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF6BD45C16D2114D00023018 /* Build configuration list for PBXProject "JsonCpp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF6BD46E16D2114D00023018 /* Debug */,
+				CF6BD46F16D2114D00023018 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF6BD47016D2114D00023018 /* Build configuration list for PBXNativeTarget "JsonCpp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF6BD47116D2114D00023018 /* Debug */,
+				CF6BD47216D2114D00023018 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF6BD45916D2114D00023018 /* Project object */;
+}

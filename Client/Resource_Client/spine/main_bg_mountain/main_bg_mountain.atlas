@@ -1,0 +1,272 @@
+
+main_bg_mountain.png
+size: 1952,1562
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+eff_UI_Main_Cloud1
+  rotate: true
+  xy: 2, 7
+  size: 362, 106
+  orig: 362, 106
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Cloud2
+  rotate: false
+  xy: 1246, 1342
+  size: 411, 102
+  orig: 411, 102
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Cloud3
+  rotate: false
+  xy: 1246, 1446
+  size: 416, 114
+  orig: 416, 114
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Cloud4
+  rotate: false
+  xy: 110, 21
+  size: 165, 66
+  orig: 165, 66
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Cloud5
+  rotate: true
+  xy: 1528, 1181
+  size: 159, 116
+  orig: 159, 116
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Cloud6
+  rotate: true
+  xy: 1670, 12
+  size: 270, 151
+  orig: 270, 151
+  offset: 0, 0
+  index: -1
+eff_UI_Main_SeaSurface_1
+  rotate: true
+  xy: 110, 89
+  size: 280, 140
+  orig: 280, 140
+  offset: 0, 0
+  index: -1
+eff_UI_Main_SeaSurface_10
+  rotate: false
+  xy: 1659, 1278
+  size: 280, 140
+  orig: 280, 140
+  offset: 0, 0
+  index: -1
+eff_UI_Main_SeaSurface_11
+  rotate: false
+  xy: 1246, 1200
+  size: 280, 140
+  orig: 280, 140
+  offset: 0, 0
+  index: -1
+eff_UI_Main_SeaSurface_12
+  rotate: false
+  xy: 1246, 1058
+  size: 280, 140
+  orig: 280, 140
+  offset: 0, 0
+  index: -1
+eff_UI_Main_SeaSurface_13
+  rotate: false
+  xy: 1646, 1136
+  size: 280, 140
+  orig: 280, 140
+  offset: 0, 0
+  index: -1
+eff_UI_Main_SeaSurface_14
+  rotate: false
+  xy: 1528, 994
+  size: 280, 140
+  orig: 280, 140
+  offset: 0, 0
+  index: -1
+eff_UI_Main_SeaSurface_15
+  rotate: false
+  xy: 1246, 916
+  size: 280, 140
+  orig: 280, 140
+  offset: 0, 0
+  index: -1
+eff_UI_Main_SeaSurface_16
+  rotate: true
+  xy: 1810, 854
+  size: 280, 140
+  orig: 280, 140
+  offset: 0, 0
+  index: -1
+eff_UI_Main_SeaSurface_17
+  rotate: false
+  xy: 1528, 852
+  size: 280, 140
+  orig: 280, 140
+  offset: 0, 0
+  index: -1
+eff_UI_Main_SeaSurface_18
+  rotate: false
+  xy: 1246, 774
+  size: 280, 140
+  orig: 280, 140
+  offset: 0, 0
+  index: -1
+eff_UI_Main_SeaSurface_19
+  rotate: true
+  xy: 1810, 572
+  size: 280, 140
+  orig: 280, 140
+  offset: 0, 0
+  index: -1
+eff_UI_Main_SeaSurface_2
+  rotate: true
+  xy: 252, 89
+  size: 280, 140
+  orig: 280, 140
+  offset: 0, 0
+  index: -1
+eff_UI_Main_SeaSurface_20
+  rotate: false
+  xy: 1528, 710
+  size: 280, 140
+  orig: 280, 140
+  offset: 0, 0
+  index: -1
+eff_UI_Main_SeaSurface_21
+  rotate: false
+  xy: 1246, 632
+  size: 280, 140
+  orig: 280, 140
+  offset: 0, 0
+  index: -1
+eff_UI_Main_SeaSurface_22
+  rotate: false
+  xy: 1528, 568
+  size: 280, 140
+  orig: 280, 140
+  offset: 0, 0
+  index: -1
+eff_UI_Main_SeaSurface_23
+  rotate: false
+  xy: 1246, 490
+  size: 280, 140
+  orig: 280, 140
+  offset: 0, 0
+  index: -1
+eff_UI_Main_SeaSurface_24
+  rotate: true
+  xy: 1810, 290
+  size: 280, 140
+  orig: 280, 140
+  offset: 0, 0
+  index: -1
+eff_UI_Main_SeaSurface_25
+  rotate: false
+  xy: 1528, 426
+  size: 280, 140
+  orig: 280, 140
+  offset: 0, 0
+  index: -1
+eff_UI_Main_SeaSurface_26
+  rotate: false
+  xy: 1246, 348
+  size: 280, 140
+  orig: 280, 140
+  offset: 0, 0
+  index: -1
+eff_UI_Main_SeaSurface_27
+  rotate: false
+  xy: 1528, 284
+  size: 280, 140
+  orig: 280, 140
+  offset: 0, 0
+  index: -1
+eff_UI_Main_SeaSurface_28
+  rotate: false
+  xy: 1246, 206
+  size: 280, 140
+  orig: 280, 140
+  offset: 0, 0
+  index: -1
+eff_UI_Main_SeaSurface_29
+  rotate: true
+  xy: 1528, 2
+  size: 280, 140
+  orig: 280, 140
+  offset: 0, 0
+  index: -1
+eff_UI_Main_SeaSurface_3
+  rotate: true
+  xy: 394, 89
+  size: 280, 140
+  orig: 280, 140
+  offset: 0, 0
+  index: -1
+eff_UI_Main_SeaSurface_30
+  rotate: false
+  xy: 1246, 64
+  size: 280, 140
+  orig: 280, 140
+  offset: 0, 0
+  index: -1
+eff_UI_Main_SeaSurface_4
+  rotate: true
+  xy: 536, 89
+  size: 280, 140
+  orig: 280, 140
+  offset: 0, 0
+  index: -1
+eff_UI_Main_SeaSurface_5
+  rotate: true
+  xy: 678, 89
+  size: 280, 140
+  orig: 280, 140
+  offset: 0, 0
+  index: -1
+eff_UI_Main_SeaSurface_6
+  rotate: true
+  xy: 820, 89
+  size: 280, 140
+  orig: 280, 140
+  offset: 0, 0
+  index: -1
+eff_UI_Main_SeaSurface_7
+  rotate: true
+  xy: 962, 89
+  size: 280, 140
+  orig: 280, 140
+  offset: 0, 0
+  index: -1
+eff_UI_Main_SeaSurface_8
+  rotate: true
+  xy: 1104, 89
+  size: 280, 140
+  orig: 280, 140
+  offset: 0, 0
+  index: -1
+eff_UI_Main_SeaSurface_9
+  rotate: false
+  xy: 1664, 1420
+  size: 280, 140
+  orig: 280, 140
+  offset: 0, 0
+  index: -1
+main_bg_mountain1
+  rotate: true
+  xy: 2, 371
+  size: 1189, 615
+  orig: 1189, 615
+  offset: 0, 0
+  index: -1
+main_bg_mountain2
+  rotate: true
+  xy: 619, 371
+  size: 1189, 615
+  orig: 1189, 615
+  offset: 0, 0
+  index: -1

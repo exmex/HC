@@ -1,0 +1,34 @@
+
+pig.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+gold
+  rotate: false
+  xy: 199, 179
+  size: 44, 44
+  orig: 44, 44
+  offset: 0, 0
+  index: -1
+gold_01
+  rotate: false
+  xy: 2, 2
+  size: 39, 50
+  orig: 39, 50
+  offset: 0, 0
+  index: -1
+pig
+  rotate: false
+  xy: 2, 54
+  size: 195, 169
+  orig: 195, 169
+  offset: 0, 0
+  index: -1
+pig_01
+  rotate: false
+  xy: 43, 32
+  size: 62, 20
+  orig: 62, 20
+  offset: 0, 0
+  index: -1

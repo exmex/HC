@@ -1,0 +1,20 @@
+
+eff_UI_Main_Exercise.png
+size: 235,190
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+eff_UI_Main_Exercise
+  rotate: false
+  xy: 2, 2
+  size: 200, 186
+  orig: 200, 186
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Exercise_Light
+  rotate: true
+  xy: 204, 158
+  size: 30, 29
+  orig: 30, 29
+  offset: 0, 0
+  index: -1

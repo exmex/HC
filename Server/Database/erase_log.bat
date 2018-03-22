@@ -1,0 +1,1 @@
+del /p data\%USERDOMAIN%.err

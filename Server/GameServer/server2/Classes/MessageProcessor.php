@@ -76,6 +76,7 @@ class MessageProcessor
         $aesMgr = new AESMcryptMgr();
         $sessionKey = '123456789';
         $aesMgr->setKey($sessionKey);
+        file_put_contents("request.bin", $cryptCode);
         $decryptMsg = $aesMgr->decrypt($cryptCode);
 
         $GLOBALS['USER_IN'] = $tbUserInfo->getUin();

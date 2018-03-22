@@ -1,0 +1,20 @@
+
+eff_UI_Main_Mailbox.png
+size: 132,94
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+eff_UI_Main_Mailbox
+  rotate: true
+  xy: 2, 2
+  size: 90, 105
+  orig: 90, 105
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Mailbox_1
+  rotate: false
+  xy: 109, 68
+  size: 21, 24
+  orig: 21, 24
+  offset: 0, 0
+  index: -1

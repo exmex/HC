@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		279B2DF51A39C42200798E86 /* GameAnimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 279B2DF41A39C42200798E86 /* GameAnimation.cpp */; };
+		AF1D365C19D6B2950025C321 /* CCMultiSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF1D365A19D6B2950025C321 /* CCMultiSprite.cpp */; };
+		AF1D365D19D6B2950025C321 /* GateKeeper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF1D365B19D6B2950025C321 /* GateKeeper.cpp */; };
+		AF1D365F19D6B2A20025C321 /* LoadResources.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF1D365E19D6B2A20025C321 /* LoadResources.cpp */; };
+		AF6913DF197A420300F05459 /* CurlUpload.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF6913DE197A420300F05459 /* CurlUpload.cpp */; };
+		AFBEE23319D6BD65007B775D /* GateKeeper.mm in Sources */ = {isa = PBXBuildFile; fileRef = AFBEE23219D6BD65007B775D /* GateKeeper.mm */; };
+		AFBEE25619D82A3C007B775D /* LegendAminationEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AFBEE25319D82A3C007B775D /* LegendAminationEffect.cpp */; };
+		AFBEE25719D82A3C007B775D /* LegendAnimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AFBEE25419D82A3C007B775D /* LegendAnimation.cpp */; };
+		AFBEE25819D82A3C007B775D /* LegendAnimationFileInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AFBEE25519D82A3C007B775D /* LegendAnimationFileInfo.cpp */; };
+		AFC826CD19443C7A0038BB9D /* GameEncryptKey.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AFC826CA19443C7A0038BB9D /* GameEncryptKey.cpp */; };
+		AFC826CE19443C7A0038BB9D /* rc4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AFC826CB19443C7A0038BB9D /* rc4.cpp */; };
+		AFC826CF19443C7A0038BB9D /* tinyxml2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AFC826CC19443C7A0038BB9D /* tinyxml2.cpp */; };
+		AFD50340183E499F0081D66E /* Base64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AFD5033E183E499F0081D66E /* Base64.cpp */; };
+		AFD50341183E499F0081D66E /* md5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AFD5033F183E499F0081D66E /* md5.cpp */; };
+		AFF9C4DB19D5CB65002F1E6D /* HeroFileUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AFF9C4D719D5CB65002F1E6D /* HeroFileUtils.cpp */; };
+		CF2D853017B356790050FB70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2D852F17B356790050FB70 /* Foundation.framework */; };
+		CF2D856417B376060050FB70 /* AES.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF2D855017B376060050FB70 /* AES.cpp */; };
+		CF2D856517B376060050FB70 /* AsyncSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF2D855117B376060050FB70 /* AsyncSocket.cpp */; };
+		CF2D856617B376060050FB70 /* AsyncSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF2D855317B376060050FB70 /* AsyncSprite.cpp */; };
+		CF2D856717B376060050FB70 /* Concurrency.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF2D855517B376060050FB70 /* Concurrency.cpp */; };
+		CF2D856817B376060050FB70 /* CurlDownload.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF2D855617B376060050FB70 /* CurlDownload.cpp */; };
+		CF2D856917B376060050FB70 /* GameMaths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF2D855717B376060050FB70 /* GameMaths.cpp */; };
+		CF2D856A17B376060050FB70 /* IoSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF2D855817B376060050FB70 /* IoSocket.cpp */; };
+		CF2D856B17B376060050FB70 /* Language.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF2D855A17B376060050FB70 /* Language.cpp */; };
+		CF2D856C17B376060050FB70 /* LoadingUnit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF2D855B17B376060050FB70 /* LoadingUnit.cpp */; };
+		CF2D856D17B376060050FB70 /* PacketBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF2D855C17B376060050FB70 /* PacketBase.cpp */; };
+		CF2D856E17B376060050FB70 /* PacketManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF2D855D17B376060050FB70 /* PacketManager.cpp */; };
+		CF2D856F17B376060050FB70 /* SeverConsts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF2D855E17B376060050FB70 /* SeverConsts.cpp */; };
+		CF2D857017B376060050FB70 /* SocketBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF2D855F17B376060050FB70 /* SocketBase.cpp */; };
+		CF2D857117B376060050FB70 /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF2D856017B376060050FB70 /* stdafx.cpp */; };
+		CF2D857217B376060050FB70 /* StringConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF2D856117B376060050FB70 /* StringConverter.cpp */; };
+		CF2D857317B376060050FB70 /* TableReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF2D856217B376060050FB70 /* TableReader.cpp */; };
+		CF2D857417B376060050FB70 /* ThreadSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF2D856317B376060050FB70 /* ThreadSocket.cpp */; };
+		CF2D857817B3766E0050FB70 /* GamePlatform.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF2D857717B3766E0050FB70 /* GamePlatform.mm */; };
+		F727BE4B17E4615B0060DC28 /* inifile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F727BE4A17E4615B0060DC28 /* inifile.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CF2D852A17B356790050FB70 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		279B2DF31A39C40D00798E86 /* GameAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameAnimation.h; path = ../../../include/GameAnimation.h; sourceTree = "<group>"; };
+		279B2DF41A39C42200798E86 /* GameAnimation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameAnimation.cpp; path = ../../../src/GameAnimation.cpp; sourceTree = "<group>"; };
+		AF1D365719D6B27F0025C321 /* GateKeeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GateKeeper.h; path = ../../../include/GateKeeper.h; sourceTree = "<group>"; };
+		AF1D365819D6B27F0025C321 /* LoadResources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoadResources.h; path = ../../../include/LoadResources.h; sourceTree = "<group>"; };
+		AF1D365919D6B2880025C321 /* CCMultiSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCMultiSprite.h; path = ../../../include/CCMultiSprite.h; sourceTree = "<group>"; };
+		AF1D365A19D6B2950025C321 /* CCMultiSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CCMultiSprite.cpp; path = ../../../src/CCMultiSprite.cpp; sourceTree = "<group>"; };
+		AF1D365B19D6B2950025C321 /* GateKeeper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GateKeeper.cpp; path = ../../../src/GateKeeper.cpp; sourceTree = "<group>"; };
+		AF1D365E19D6B2A20025C321 /* LoadResources.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LoadResources.cpp; path = ../../../src/LoadResources.cpp; sourceTree = "<group>"; };
+		AF6913DE197A420300F05459 /* CurlUpload.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CurlUpload.cpp; path = ../../../src/CurlUpload.cpp; sourceTree = "<group>"; };
+		AF6913E0197A420B00F05459 /* CurlUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CurlUpload.h; path = ../../../include/CurlUpload.h; sourceTree = "<group>"; };
+		AFBEE23219D6BD65007B775D /* GateKeeper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GateKeeper.mm; path = ../../../src/GateKeeper.mm; sourceTree = "<group>"; };
+		AFBEE25019D8293C007B775D /* LegendAminationEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LegendAminationEffect.h; path = ../../../include/LegendAminationEffect.h; sourceTree = "<group>"; };
+		AFBEE25119D8293C007B775D /* LegendAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LegendAnimation.h; path = ../../../include/LegendAnimation.h; sourceTree = "<group>"; };
+		AFBEE25219D8293D007B775D /* LegendAnimationFileInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LegendAnimationFileInfo.h; path = ../../../include/LegendAnimationFileInfo.h; sourceTree = "<group>"; };
+		AFBEE25319D82A3C007B775D /* LegendAminationEffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LegendAminationEffect.cpp; path = ../../../src/LegendAminationEffect.cpp; sourceTree = "<group>"; };
+		AFBEE25419D82A3C007B775D /* LegendAnimation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LegendAnimation.cpp; path = ../../../src/LegendAnimation.cpp; sourceTree = "<group>"; };
+		AFBEE25519D82A3C007B775D /* LegendAnimationFileInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LegendAnimationFileInfo.cpp; path = ../../../src/LegendAnimationFileInfo.cpp; sourceTree = "<group>"; };
+		AFC826C719443C6E0038BB9D /* GameEncryptKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameEncryptKey.h; path = ../../../include/GameEncryptKey.h; sourceTree = "<group>"; };
+		AFC826C819443C6E0038BB9D /* rc4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rc4.h; path = ../../../include/rc4.h; sourceTree = "<group>"; };
+		AFC826C919443C6E0038BB9D /* tinyxml2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tinyxml2.h; path = ../../../include/tinyxml2.h; sourceTree = "<group>"; };
+		AFC826CA19443C7A0038BB9D /* GameEncryptKey.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameEncryptKey.cpp; path = ../../../src/GameEncryptKey.cpp; sourceTree = "<group>"; };
+		AFC826CB19443C7A0038BB9D /* rc4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rc4.cpp; path = ../../../src/rc4.cpp; sourceTree = "<group>"; };
+		AFC826CC19443C7A0038BB9D /* tinyxml2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxml2.cpp; path = ../../../src/tinyxml2.cpp; sourceTree = "<group>"; };
+		AFD5033C183E498F0081D66E /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Base64.h; path = ../../../include/Base64.h; sourceTree = "<group>"; };
+		AFD5033D183E498F0081D66E /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = md5.h; path = ../../../include/md5.h; sourceTree = "<group>"; };
+		AFD5033E183E499F0081D66E /* Base64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Base64.cpp; path = ../../../src/Base64.cpp; sourceTree = "<group>"; };
+		AFD5033F183E499F0081D66E /* md5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = md5.cpp; path = ../../../src/md5.cpp; sourceTree = "<group>"; };
+		AFF9C4D719D5CB65002F1E6D /* HeroFileUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HeroFileUtils.cpp; path = ../../../src/HeroFileUtils.cpp; sourceTree = "<group>"; };
+		AFF9C4DF19D5CB71002F1E6D /* HeroFileUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeroFileUtils.h; path = ../../../include/HeroFileUtils.h; sourceTree = "<group>"; };
+		CF2D852C17B356790050FB70 /* libcore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF2D852F17B356790050FB70 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CF2D853317B356790050FB70 /* core-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "core-Prefix.pch"; sourceTree = "<group>"; };
+		CF2D853F17B375FA0050FB70 /* AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AES.h; path = ../../../include/AES.h; sourceTree = "<group>"; };
+		CF2D854017B375FA0050FB70 /* Concurrency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Concurrency.h; path = ../../../include/Concurrency.h; sourceTree = "<group>"; };
+		CF2D854117B375FA0050FB70 /* CurlDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CurlDownload.h; path = ../../../include/CurlDownload.h; sourceTree = "<group>"; };
+		CF2D854217B375FA0050FB70 /* GameMaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameMaths.h; path = ../../../include/GameMaths.h; sourceTree = "<group>"; };
+		CF2D854317B375FA0050FB70 /* GamePlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GamePlatform.h; path = ../../../include/GamePlatform.h; sourceTree = "<group>"; };
+		CF2D854417B375FA0050FB70 /* IteratorWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IteratorWrapper.h; path = ../../../include/IteratorWrapper.h; sourceTree = "<group>"; };
+		CF2D854517B375FA0050FB70 /* Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Language.h; path = ../../../include/Language.h; sourceTree = "<group>"; };
+		CF2D854617B375FA0050FB70 /* LoadingUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoadingUnit.h; path = ../../../include/LoadingUnit.h; sourceTree = "<group>"; };
+		CF2D854717B375FA0050FB70 /* PacketBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PacketBase.h; path = ../../../include/PacketBase.h; sourceTree = "<group>"; };
+		CF2D854817B375FA0050FB70 /* PacketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PacketManager.h; path = ../../../include/PacketManager.h; sourceTree = "<group>"; };
+		CF2D854917B375FA0050FB70 /* SeverConsts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SeverConsts.h; path = ../../../include/SeverConsts.h; sourceTree = "<group>"; };
+		CF2D854A17B375FA0050FB70 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Singleton.h; path = ../../../include/Singleton.h; sourceTree = "<group>"; };
+		CF2D854B17B375FA0050FB70 /* SocketBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocketBase.h; path = ../../../include/SocketBase.h; sourceTree = "<group>"; };
+		CF2D854C17B375FA0050FB70 /* stdafx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stdafx.h; path = ../../../include/stdafx.h; sourceTree = "<group>"; };
+		CF2D854D17B375FA0050FB70 /* StringConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StringConverter.h; path = ../../../include/StringConverter.h; sourceTree = "<group>"; };
+		CF2D854E17B375FA0050FB70 /* TableReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableReader.h; path = ../../../include/TableReader.h; sourceTree = "<group>"; };
+		CF2D854F17B375FA0050FB70 /* ThreadSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThreadSocket.h; path = ../../../include/ThreadSocket.h; sourceTree = "<group>"; };
+		CF2D855017B376060050FB70 /* AES.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AES.cpp; path = ../../../src/AES.cpp; sourceTree = "<group>"; };
+		CF2D855117B376060050FB70 /* AsyncSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AsyncSocket.cpp; path = ../../../src/AsyncSocket.cpp; sourceTree = "<group>"; };
+		CF2D855317B376060050FB70 /* AsyncSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AsyncSprite.cpp; path = ../../../src/AsyncSprite.cpp; sourceTree = "<group>"; };
+		CF2D855517B376060050FB70 /* Concurrency.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Concurrency.cpp; path = ../../../src/Concurrency.cpp; sourceTree = "<group>"; };
+		CF2D855617B376060050FB70 /* CurlDownload.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CurlDownload.cpp; path = ../../../src/CurlDownload.cpp; sourceTree = "<group>"; };
+		CF2D855717B376060050FB70 /* GameMaths.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameMaths.cpp; path = ../../../src/GameMaths.cpp; sourceTree = "<group>"; };
+		CF2D855817B376060050FB70 /* IoSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IoSocket.cpp; path = ../../../src/IoSocket.cpp; sourceTree = "<group>"; };
+		CF2D855A17B376060050FB70 /* Language.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Language.cpp; path = ../../../src/Language.cpp; sourceTree = "<group>"; };
+		CF2D855B17B376060050FB70 /* LoadingUnit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LoadingUnit.cpp; path = ../../../src/LoadingUnit.cpp; sourceTree = "<group>"; };
+		CF2D855C17B376060050FB70 /* PacketBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PacketBase.cpp; path = ../../../src/PacketBase.cpp; sourceTree = "<group>"; };
+		CF2D855D17B376060050FB70 /* PacketManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PacketManager.cpp; path = ../../../src/PacketManager.cpp; sourceTree = "<group>"; };
+		CF2D855E17B376060050FB70 /* SeverConsts.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SeverConsts.cpp; path = ../../../src/SeverConsts.cpp; sourceTree = "<group>"; };
+		CF2D855F17B376060050FB70 /* SocketBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SocketBase.cpp; path = ../../../src/SocketBase.cpp; sourceTree = "<group>"; };
+		CF2D856017B376060050FB70 /* stdafx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = stdafx.cpp; path = ../../../src/stdafx.cpp; sourceTree = "<group>"; };
+		CF2D856117B376060050FB70 /* StringConverter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StringConverter.cpp; path = ../../../src/StringConverter.cpp; sourceTree = "<group>"; };
+		CF2D856217B376060050FB70 /* TableReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TableReader.cpp; path = ../../../src/TableReader.cpp; sourceTree = "<group>"; };
+		CF2D856317B376060050FB70 /* ThreadSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ThreadSocket.cpp; path = ../../../src/ThreadSocket.cpp; sourceTree = "<group>"; };
+		CF2D857717B3766E0050FB70 /* GamePlatform.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GamePlatform.mm; path = ../../../platform/GamePlatform.mm; sourceTree = "<group>"; };
+		CF2D857917B37D760050FB70 /* libPlatform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = libPlatform.h; path = ../../../include/libPlatform.h; sourceTree = "<group>"; };
+		F727BE4617E461430060DC28 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncSocket.h; path = ../../../include/AsyncSocket.h; sourceTree = "<group>"; };
+		F727BE4717E461430060DC28 /* AsyncSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncSprite.h; path = ../../../include/AsyncSprite.h; sourceTree = "<group>"; };
+		F727BE4817E461430060DC28 /* inifile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = inifile.h; path = ../../../include/inifile.h; sourceTree = "<group>"; };
+		F727BE4917E461430060DC28 /* IoSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IoSocket.h; path = ../../../include/IoSocket.h; sourceTree = "<group>"; };
+		F727BE4A17E4615B0060DC28 /* inifile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = inifile.cpp; path = ../../../src/inifile.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF2D852917B356790050FB70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2D853017B356790050FB70 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF2D852317B356790050FB70 = {
+			isa = PBXGroup;
+			children = (
+				CF2D853117B356790050FB70 /* core */,
+				CF2D852E17B356790050FB70 /* Frameworks */,
+				CF2D852D17B356790050FB70 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF2D852D17B356790050FB70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF2D852C17B356790050FB70 /* libcore.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF2D852E17B356790050FB70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF2D852F17B356790050FB70 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF2D853117B356790050FB70 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				CF2D857617B3765C0050FB70 /* platform */,
+				CF2D857517B376190050FB70 /* classes */,
+				CF2D853217B356790050FB70 /* Supporting Files */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		CF2D853217B356790050FB70 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF2D853317B356790050FB70 /* core-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF2D857517B376190050FB70 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				279B2DF41A39C42200798E86 /* GameAnimation.cpp */,
+				279B2DF31A39C40D00798E86 /* GameAnimation.h */,
+				AFBEE25319D82A3C007B775D /* LegendAminationEffect.cpp */,
+				AFBEE25419D82A3C007B775D /* LegendAnimation.cpp */,
+				AFBEE25519D82A3C007B775D /* LegendAnimationFileInfo.cpp */,
+				AF1D365E19D6B2A20025C321 /* LoadResources.cpp */,
+				AF1D365A19D6B2950025C321 /* CCMultiSprite.cpp */,
+				AF1D365B19D6B2950025C321 /* GateKeeper.cpp */,
+				AF1D365919D6B2880025C321 /* CCMultiSprite.h */,
+				AF1D365719D6B27F0025C321 /* GateKeeper.h */,
+				AFBEE25019D8293C007B775D /* LegendAminationEffect.h */,
+				AFBEE25119D8293C007B775D /* LegendAnimation.h */,
+				AFBEE25219D8293D007B775D /* LegendAnimationFileInfo.h */,
+				AF1D365819D6B27F0025C321 /* LoadResources.h */,
+				AFF9C4DF19D5CB71002F1E6D /* HeroFileUtils.h */,
+				AFF9C4D719D5CB65002F1E6D /* HeroFileUtils.cpp */,
+				AF6913E0197A420B00F05459 /* CurlUpload.h */,
+				AF6913DE197A420300F05459 /* CurlUpload.cpp */,
+				AFC826CA19443C7A0038BB9D /* GameEncryptKey.cpp */,
+				AFC826CB19443C7A0038BB9D /* rc4.cpp */,
+				AFC826CC19443C7A0038BB9D /* tinyxml2.cpp */,
+				AFC826C719443C6E0038BB9D /* GameEncryptKey.h */,
+				AFC826C819443C6E0038BB9D /* rc4.h */,
+				AFC826C919443C6E0038BB9D /* tinyxml2.h */,
+				AFD5033E183E499F0081D66E /* Base64.cpp */,
+				AFD5033F183E499F0081D66E /* md5.cpp */,
+				AFD5033C183E498F0081D66E /* Base64.h */,
+				AFD5033D183E498F0081D66E /* md5.h */,
+				F727BE4A17E4615B0060DC28 /* inifile.cpp */,
+				F727BE4617E461430060DC28 /* AsyncSocket.h */,
+				F727BE4717E461430060DC28 /* AsyncSprite.h */,
+				F727BE4817E461430060DC28 /* inifile.h */,
+				F727BE4917E461430060DC28 /* IoSocket.h */,
+				CF2D857917B37D760050FB70 /* libPlatform.h */,
+				CF2D855017B376060050FB70 /* AES.cpp */,
+				CF2D855117B376060050FB70 /* AsyncSocket.cpp */,
+				CF2D855317B376060050FB70 /* AsyncSprite.cpp */,
+				CF2D855517B376060050FB70 /* Concurrency.cpp */,
+				CF2D855617B376060050FB70 /* CurlDownload.cpp */,
+				CF2D855717B376060050FB70 /* GameMaths.cpp */,
+				CF2D855817B376060050FB70 /* IoSocket.cpp */,
+				CF2D855A17B376060050FB70 /* Language.cpp */,
+				CF2D855B17B376060050FB70 /* LoadingUnit.cpp */,
+				CF2D855C17B376060050FB70 /* PacketBase.cpp */,
+				CF2D855D17B376060050FB70 /* PacketManager.cpp */,
+				CF2D855E17B376060050FB70 /* SeverConsts.cpp */,
+				CF2D855F17B376060050FB70 /* SocketBase.cpp */,
+				CF2D856017B376060050FB70 /* stdafx.cpp */,
+				CF2D856117B376060050FB70 /* StringConverter.cpp */,
+				CF2D856217B376060050FB70 /* TableReader.cpp */,
+				CF2D856317B376060050FB70 /* ThreadSocket.cpp */,
+				CF2D853F17B375FA0050FB70 /* AES.h */,
+				CF2D854017B375FA0050FB70 /* Concurrency.h */,
+				CF2D854117B375FA0050FB70 /* CurlDownload.h */,
+				CF2D854217B375FA0050FB70 /* GameMaths.h */,
+				CF2D854317B375FA0050FB70 /* GamePlatform.h */,
+				CF2D854417B375FA0050FB70 /* IteratorWrapper.h */,
+				CF2D854517B375FA0050FB70 /* Language.h */,
+				CF2D854617B375FA0050FB70 /* LoadingUnit.h */,
+				CF2D854717B375FA0050FB70 /* PacketBase.h */,
+				CF2D854817B375FA0050FB70 /* PacketManager.h */,
+				CF2D854917B375FA0050FB70 /* SeverConsts.h */,
+				CF2D854A17B375FA0050FB70 /* Singleton.h */,
+				CF2D854B17B375FA0050FB70 /* SocketBase.h */,
+				CF2D854C17B375FA0050FB70 /* stdafx.h */,
+				CF2D854D17B375FA0050FB70 /* StringConverter.h */,
+				CF2D854E17B375FA0050FB70 /* TableReader.h */,
+				CF2D854F17B375FA0050FB70 /* ThreadSocket.h */,
+			);
+			name = classes;
+			sourceTree = "<group>";
+		};
+		CF2D857617B3765C0050FB70 /* platform */ = {
+			isa = PBXGroup;
+			children = (
+				AFBEE23219D6BD65007B775D /* GateKeeper.mm */,
+				CF2D857717B3766E0050FB70 /* GamePlatform.mm */,
+			);
+			name = platform;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF2D852B17B356790050FB70 /* core */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF2D853A17B356790050FB70 /* Build configuration list for PBXNativeTarget "core" */;
+			buildPhases = (
+				CF2D852817B356790050FB70 /* Sources */,
+				CF2D852917B356790050FB70 /* Frameworks */,
+				CF2D852A17B356790050FB70 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = core;
+			productName = core;
+			productReference = CF2D852C17B356790050FB70 /* libcore.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF2D852417B356790050FB70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = fish;
+			};
+			buildConfigurationList = CF2D852717B356790050FB70 /* Build configuration list for PBXProject "core" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF2D852317B356790050FB70;
+			productRefGroup = CF2D852D17B356790050FB70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF2D852B17B356790050FB70 /* core */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF2D852817B356790050FB70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				279B2DF51A39C42200798E86 /* GameAnimation.cpp in Sources */,
+				CF2D856417B376060050FB70 /* AES.cpp in Sources */,
+				CF2D856517B376060050FB70 /* AsyncSocket.cpp in Sources */,
+				CF2D856617B376060050FB70 /* AsyncSprite.cpp in Sources */,
+				CF2D856717B376060050FB70 /* Concurrency.cpp in Sources */,
+				CF2D856817B376060050FB70 /* CurlDownload.cpp in Sources */,
+				CF2D856917B376060050FB70 /* GameMaths.cpp in Sources */,
+				CF2D856A17B376060050FB70 /* IoSocket.cpp in Sources */,
+				CF2D856B17B376060050FB70 /* Language.cpp in Sources */,
+				CF2D856C17B376060050FB70 /* LoadingUnit.cpp in Sources */,
+				CF2D856D17B376060050FB70 /* PacketBase.cpp in Sources */,
+				CF2D856E17B376060050FB70 /* PacketManager.cpp in Sources */,
+				CF2D856F17B376060050FB70 /* SeverConsts.cpp in Sources */,
+				CF2D857017B376060050FB70 /* SocketBase.cpp in Sources */,
+				CF2D857117B376060050FB70 /* stdafx.cpp in Sources */,
+				CF2D857217B376060050FB70 /* StringConverter.cpp in Sources */,
+				CF2D857317B376060050FB70 /* TableReader.cpp in Sources */,
+				CF2D857417B376060050FB70 /* ThreadSocket.cpp in Sources */,
+				CF2D857817B3766E0050FB70 /* GamePlatform.mm in Sources */,
+				F727BE4B17E4615B0060DC28 /* inifile.cpp in Sources */,
+				AFD50340183E499F0081D66E /* Base64.cpp in Sources */,
+				AFD50341183E499F0081D66E /* md5.cpp in Sources */,
+				AFC826CD19443C7A0038BB9D /* GameEncryptKey.cpp in Sources */,
+				AFC826CE19443C7A0038BB9D /* rc4.cpp in Sources */,
+				AFC826CF19443C7A0038BB9D /* tinyxml2.cpp in Sources */,
+				AF6913DF197A420300F05459 /* CurlUpload.cpp in Sources */,
+				AFF9C4DB19D5CB65002F1E6D /* HeroFileUtils.cpp in Sources */,
+				AF1D365C19D6B2950025C321 /* CCMultiSprite.cpp in Sources */,
+				AF1D365D19D6B2950025C321 /* GateKeeper.cpp in Sources */,
+				AF1D365F19D6B2A20025C321 /* LoadResources.cpp in Sources */,
+				AFBEE23319D6BD65007B775D /* GateKeeper.mm in Sources */,
+				AFBEE25619D82A3C007B775D /* LegendAminationEffect.cpp in Sources */,
+				AFBEE25719D82A3C007B775D /* LegendAnimation.cpp in Sources */,
+				AFBEE25819D82A3C007B775D /* LegendAnimationFileInfo.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CF2D853817B356790050FB70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CF2D853917B356790050FB70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF2D853B17B356790050FB70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				DSTROOT = /tmp/core.dst;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "core/core-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					COCOS2D_JAVASCRIPT,
+					USE_FILE32API,
+					CC_TARGET_OS_IPHONE,
+					"COCOS2D_DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../include\"",
+					"\"$(SRCROOT)/../../../cocos2dx\"",
+					"\"$(SRCROOT)/../../../cocos2dx/platform\"",
+					"\"$(SRCROOT)/../../../cocos2dx/platform/ios\"",
+					"\"$(SRCROOT)/../../../CocosDenshion/include\"",
+					"\"$(SRCROOT)/../../../cocos2dx/include\"",
+					"\"$(SRCROOT)/../../../cocos2dx/kazmath/include\"",
+					"\"$(SRCROOT)/../../../extensions\"",
+					"\"$(SRCROOT)/../../../jsoncpp-src-0.5.0/include\"",
+					"\"$(SRCROOT)/../../../protobuf-2.5.0rc1/src\"",
+					"\"$(SRCROOT)/../../../scripting/lua/lua\"",
+					"\"$(SRCROOT)/../../../scripting/lua/cocos2dx_support\"",
+					"\"$(SRCROOT)/../../../scripting/lua/tolua\"",
+					"\"$(SRCROOT)/../../../cocos2dx/platform/third_party/ios\"",
+					"\"$(SRCROOT)/../../../../Code_Client/libOS/include\"",
+					"\"$(SRCROOT)/../../../../Code_Client/projects/Game/Classes\"",
+					"\"$(SRCROOT)/../../../extensions/\\AssetsManager\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Debug;
+		};
+		CF2D853C17B356790050FB70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				DSTROOT = /tmp/core.dst;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "core/core-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					COCOS2D_JAVASCRIPT,
+					USE_FILE32API,
+					CC_TARGET_OS_IPHONE,
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../include\"",
+					"\"$(SRCROOT)/../../../cocos2dx\"",
+					"\"$(SRCROOT)/../../../cocos2dx/platform\"",
+					"\"$(SRCROOT)/../../../cocos2dx/platform/ios\"",
+					"\"$(SRCROOT)/../../../CocosDenshion/include\"",
+					"\"$(SRCROOT)/../../../cocos2dx/include\"",
+					"\"$(SRCROOT)/../../../cocos2dx/kazmath/include\"",
+					"\"$(SRCROOT)/../../../extensions\"",
+					"\"$(SRCROOT)/../../../jsoncpp-src-0.5.0/include\"",
+					"\"$(SRCROOT)/../../../protobuf-2.5.0rc1/src\"",
+					"\"$(SRCROOT)/../../../scripting/lua/lua\"",
+					"\"$(SRCROOT)/../../../scripting/lua/cocos2dx_support\"",
+					"\"$(SRCROOT)/../../../scripting/lua/tolua\"",
+					"\"$(SRCROOT)/../../../cocos2dx/platform/third_party/ios\"",
+					"\"$(SRCROOT)/../../../../Code_Client/libOS/include\"",
+					"\"$(SRCROOT)/../../../../Code_Client/projects/Game/Classes\"",
+					"\"$(SRCROOT)/../../../extensions/\\AssetsManager\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF2D852717B356790050FB70 /* Build configuration list for PBXProject "core" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2D853817B356790050FB70 /* Debug */,
+				CF2D853917B356790050FB70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF2D853A17B356790050FB70 /* Build configuration list for PBXNativeTarget "core" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2D853B17B356790050FB70 /* Debug */,
+				CF2D853C17B356790050FB70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF2D852417B356790050FB70 /* Project object */;
+}

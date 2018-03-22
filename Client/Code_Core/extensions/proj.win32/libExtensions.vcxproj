@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{21B2C324-891F-48EA-AD1A-5AE13DE12E28}</ProjectGuid>
+    <RootNamespace>Extensions.win32</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\build\$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\build\$(Configuration).win32.intermediate\libExtensions\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\build\$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\build\$(Configuration).win32.intermediate\libExtensions\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\include;$(ProjectDir)..\..\external\chipmunk\include\chipmunk;$(ProjectDir)..\..\external\sqlite3\include;$(ProjectDir)..\..\external\libwebsockets\win32\include;$(ProjectDir)..\..\external;$(ProjectDir)..\..\cocos2dx;$(ProjectDir)..\..\cocos2dx\include;$(ProjectDir)..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\cocos2dx\platform\win32;$(ProjectDir)..\..\cocos2dx\platform\third_party\win32;$(ProjectDir)..\..\cocos2dx\platform\third_party\win32\pthread;$(ProjectDir)..\..\cocos2dx\platform\third_party\win32\OGLES;$(ProjectDir)..\..\cocos2dx\platform\third_party\win32\zlib;$(ProjectDir)..\..\cocos2dx\platform\third_party\win32\libfreetype2;$(ProjectDir)..\..\CocosDenshion\include;$(ProjectDir)..\..\core\include;..\;$(ProjectDir)..\..\scripting\lua\cocos2dx_support;$(ProjectDir)..\..\scripting\lua\lua;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_LIB;COCOS2D_DEBUG=1;CC_ENABLE_CHIPMUNK_INTEGRATION=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\include;$(ProjectDir)..\..\external\chipmunk\include\chipmunk;$(ProjectDir)..\..\external\sqlite3\include;$(ProjectDir)..\..\external\libwebsockets\win32\include;$(ProjectDir)..\..\external;$(ProjectDir)..\..\cocos2dx;$(ProjectDir)..\..\cocos2dx\include;$(ProjectDir)..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\cocos2dx\platform\win32;$(ProjectDir)..\..\cocos2dx\platform\third_party\win32;$(ProjectDir)..\..\cocos2dx\platform\third_party\win32\pthread;$(ProjectDir)..\..\cocos2dx\platform\third_party\win32\OGLES;$(ProjectDir)..\..\cocos2dx\platform\third_party\win32\zlib;$(ProjectDir)..\..\cocos2dx\platform\third_party\win32\libfreetype2;$(ProjectDir)..\..\CocosDenshion\include;..\;$(ProjectDir)..\..\core\include;$(ProjectDir)..\..\scripting\lua\cocos2dx_support;$(ProjectDir)..\..\scripting\lua\lua;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_LIB;CC_ENABLE_CHIPMUNK_INTEGRATION=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\AssetsManager\AssetsManager.cpp" />
+    <ClCompile Include="..\CCBReader\CCBAnimationManager.cpp" />
+    <ClCompile Include="..\CCBReader\CCBBehavior.cpp" />
+    <ClCompile Include="..\CCBReader\CCBClippingNode.cpp" />
+    <ClCompile Include="..\CCBReader\CCBClippingNodeLoader.cpp" />
+    <ClCompile Include="..\CCBReader\CCBFileLoader.cpp" />
+    <ClCompile Include="..\CCBReader\CCBFileNew.cpp" />
+    <ClCompile Include="..\CCBReader\CCBFileNewLoader.cpp" />
+    <ClCompile Include="..\CCBReader\CCBKeyframe.cpp" />
+    <ClCompile Include="..\CCBReader\CCBReader.cpp" />
+    <ClCompile Include="..\CCBReader\CCBSequence.cpp" />
+    <ClCompile Include="..\CCBReader\CCBSequenceProperty.cpp" />
+    <ClCompile Include="..\CCBReader\CCBValue.cpp" />
+    <ClCompile Include="..\CCBReader\CCClippingNodeLoader.cpp" />
+    <ClCompile Include="..\CCBReader\CCControlButtonLoader.cpp" />
+    <ClCompile Include="..\CCBReader\CCControlLoader.cpp" />
+    <ClCompile Include="..\CCBReader\CCData.cpp" />
+    <ClCompile Include="..\CCBReader\CCLabelBMFontLoader.cpp" />
+    <ClCompile Include="..\CCBReader\CCLabelTTFLoader.cpp" />
+    <ClCompile Include="..\CCBReader\CCLayerColorLoader.cpp" />
+    <ClCompile Include="..\CCBReader\CCLayerGradientLoader.cpp" />
+    <ClCompile Include="..\CCBReader\CCLayerLoader.cpp" />
+    <ClCompile Include="..\CCBReader\CCMenuItemCCBFileLoader.cpp" />
+    <ClCompile Include="..\CCBReader\CCMenuItemImageLoader.cpp" />
+    <ClCompile Include="..\CCBReader\CCMenuItemLoader.cpp" />
+    <ClCompile Include="..\CCBReader\CCNode+CCBRelativePositioning.cpp" />
+    <ClCompile Include="..\CCBReader\CCNodeLoader.cpp" />
+    <ClCompile Include="..\CCBReader\CCNodeLoaderLibrary.cpp" />
+    <ClCompile Include="..\CCBReader\CCParticleSystemQuadLoader.cpp" />
+    <ClCompile Include="..\CCBReader\CCScale9SpriteLoader.cpp" />
+    <ClCompile Include="..\CCBReader\CCScrollViewLoader.cpp" />
+    <ClCompile Include="..\CCBReader\CCSpriteLoader.cpp" />
+    <ClCompile Include="..\cells\CCell.cpp" />
+    <ClCompile Include="..\cells\CCells.cpp" />
+    <ClCompile Include="..\cells\CCreationFactory.cpp" />
+    <ClCompile Include="..\cells\CCreationWorker.cpp" />
+    <ClCompile Include="..\cells\CDownloader.cpp" />
+    <ClCompile Include="..\cells\cells.cpp" />
+    <ClCompile Include="..\cells\CUtils.cpp" />
+    <ClCompile Include="..\cells\md5.c" />
+    <ClCompile Include="..\cells\zpip.c" />
+    <ClCompile Include="..\CocoStudio\Armature\animation\CCArmatureAnimation.cpp" />
+    <ClCompile Include="..\CocoStudio\Armature\animation\CCProcessBase.cpp" />
+    <ClCompile Include="..\CocoStudio\Armature\animation\CCTween.cpp" />
+    <ClCompile Include="..\CocoStudio\Armature\CCArmature.cpp" />
+    <ClCompile Include="..\CocoStudio\Armature\CCBone.cpp" />
+    <ClCompile Include="..\CocoStudio\Armature\datas\CCDatas.cpp" />
+    <ClCompile Include="..\CocoStudio\Armature\display\CCBatchNode.cpp" />
+    <ClCompile Include="..\CocoStudio\Armature\display\CCDecorativeDisplay.cpp" />
+    <ClCompile Include="..\CocoStudio\Armature\display\CCDisplayFactory.cpp" />
+    <ClCompile Include="..\CocoStudio\Armature\display\CCDisplayManager.cpp" />
+    <ClCompile Include="..\CocoStudio\Armature\display\CCSkin.cpp" />
+    <ClCompile Include="..\CocoStudio\Armature\physics\CCColliderDetector.cpp" />
+    <ClCompile Include="..\CocoStudio\Armature\utils\CCArmatureDataManager.cpp" />
+    <ClCompile Include="..\CocoStudio\Armature\utils\CCArmatureDefine.cpp" />
+    <ClCompile Include="..\CocoStudio\Armature\utils\CCDataReaderHelper.cpp" />
+    <ClCompile Include="..\CocoStudio\Armature\utils\CCSpriteFrameCacheHelper.cpp" />
+    <ClCompile Include="..\CocoStudio\Armature\utils\CCTransformHelp.cpp" />
+    <ClCompile Include="..\CocoStudio\Armature\utils\CCTweenFunction.cpp" />
+    <ClCompile Include="..\CocoStudio\Armature\utils\CCUtilMath.cpp" />
+    <ClCompile Include="..\CocoStudio\Json\DictionaryHelper.cpp" />
+    <ClCompile Include="..\dfont\dfont_manager.cpp" />
+    <ClCompile Include="..\dfont\dfont_render.cpp" />
+    <ClCompile Include="..\dfont\dfont_utility.cpp" />
+    <ClCompile Include="..\GUI\CCControlExtension\CCControl.cpp" />
+    <ClCompile Include="..\GUI\CCControlExtension\CCControlButton.cpp" />
+    <ClCompile Include="..\GUI\CCControlExtension\CCControlColourPicker.cpp" />
+    <ClCompile Include="..\GUI\CCControlExtension\CCControlHuePicker.cpp" />
+    <ClCompile Include="..\GUI\CCControlExtension\CCControlPotentiometer.cpp" />
+    <ClCompile Include="..\GUI\CCControlExtension\CCControlSaturationBrightnessPicker.cpp" />
+    <ClCompile Include="..\GUI\CCControlExtension\CCControlSlider.cpp" />
+    <ClCompile Include="..\GUI\CCControlExtension\CCControlStepper.cpp" />
+    <ClCompile Include="..\GUI\CCControlExtension\CCControlSwitch.cpp" />
+    <ClCompile Include="..\GUI\CCControlExtension\CCControlUtils.cpp" />
+    <ClCompile Include="..\GUI\CCControlExtension\CCInvocation.cpp" />
+    <ClCompile Include="..\GUI\CCControlExtension\CCScale9Sprite.cpp" />
+    <ClCompile Include="..\GUI\CCEditBox\CCEditBox.cpp" />
+    <ClCompile Include="..\GUI\CCEditBox\CCEditBoxImplWin.cpp" />
+    <ClCompile Include="..\GUI\CCMenuCCBFile.cpp" />
+    <ClCompile Include="..\GUI\CCScrollView\CCReViScrollViewFacade.cpp" />
+    <ClCompile Include="..\GUI\CCScrollView\CCScrollView.cpp" />
+    <ClCompile Include="..\GUI\CCScrollView\CCSorting.cpp" />
+    <ClCompile Include="..\GUI\CCScrollView\CCTableView.cpp" />
+    <ClCompile Include="..\GUI\CCScrollView\CCTableViewCell.cpp" />
+    <ClCompile Include="..\LocalStorage\LocalStorage.cpp" />
+    <ClCompile Include="..\network\HttpClient.cpp" />
+    <ClCompile Include="..\network\Websocket.cpp" />
+    <ClCompile Include="..\physics_nodes\CCPhysicsDebugNode.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\physics_nodes\CCPhysicsSprite.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\RichControls\CCHTMLLabel.cpp" />
+    <ClCompile Include="..\RichControls\CCRichAtlas.cpp" />
+    <ClCompile Include="..\RichControls\CCRichCache.cpp" />
+    <ClCompile Include="..\RichControls\CCRichCompositor.cpp" />
+    <ClCompile Include="..\RichControls\CCRichElement.cpp" />
+    <ClCompile Include="..\RichControls\CCRichNode.cpp" />
+    <ClCompile Include="..\RichControls\CCRichOverlay.cpp" />
+    <ClCompile Include="..\RichControls\CCRichParser.cpp" />
+    <ClCompile Include="..\spine\Animation.c" />
+    <ClCompile Include="..\spine\AnimationState.c" />
+    <ClCompile Include="..\spine\AnimationStateData.c" />
+    <ClCompile Include="..\spine\Atlas.c" />
+    <ClCompile Include="..\spine\AtlasAttachmentLoader.c" />
+    <ClCompile Include="..\spine\Attachment.c" />
+    <ClCompile Include="..\spine\AttachmentLoader.c" />
+    <ClCompile Include="..\spine\Bone.c" />
+    <ClCompile Include="..\spine\BoneData.c" />
+    <ClCompile Include="..\spine\BoundingBoxAttachment.c" />
+    <ClCompile Include="..\spine\Event.c" />
+    <ClCompile Include="..\spine\EventData.c" />
+    <ClCompile Include="..\spine\extension.c" />
+    <ClCompile Include="..\spine\Json.c" />
+    <ClCompile Include="..\spine\MeshAttachment.c" />
+    <ClCompile Include="..\spine\PolygonBatch.cpp" />
+    <ClCompile Include="..\spine\RegionAttachment.c" />
+    <ClCompile Include="..\spine\Skeleton.c" />
+    <ClCompile Include="..\spine\SkeletonAnimation.cpp" />
+    <ClCompile Include="..\spine\SkeletonBounds.c" />
+    <ClCompile Include="..\spine\SkeletonData.c" />
+    <ClCompile Include="..\spine\SkeletonJson.c" />
+    <ClCompile Include="..\spine\SkeletonRenderer.cpp" />
+    <ClCompile Include="..\spine\Skin.c" />
+    <ClCompile Include="..\spine\SkinnedMeshAttachment.c" />
+    <ClCompile Include="..\spine\Slot.c" />
+    <ClCompile Include="..\spine\SlotData.c" />
+    <ClCompile Include="..\spine\spine-cocos2dx.cpp" />
+    <ClCompile Include="Win32InputBox.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\AssetsManager\AssetsManager.h" />
+    <ClInclude Include="..\CCBReader\CCBAnimationManager.h" />
+    <ClInclude Include="..\CCBReader\CCBBehavior.h" />
+    <ClInclude Include="..\CCBReader\CCBClippingNode.h" />
+    <ClInclude Include="..\CCBReader\CCBClippingNodeLoader.h" />
+    <ClInclude Include="..\CCBReader\CCBFileLoader.h" />
+    <ClInclude Include="..\CCBReader\CCBFileNew.h" />
+    <ClInclude Include="..\CCBReader\CCBFileNewLoader.h" />
+    <ClInclude Include="..\CCBReader\CCBKeyframe.h" />
+    <ClInclude Include="..\CCBReader\CCBMemberVariableAssigner.h" />
+    <ClInclude Include="..\CCBReader\CCBReader.h" />
+    <ClInclude Include="..\CCBReader\CCBSelectorResolver.h" />
+    <ClInclude Include="..\CCBReader\CCBSequence.h" />
+    <ClInclude Include="..\CCBReader\CCBSequenceProperty.h" />
+    <ClInclude Include="..\CCBReader\CCBValue.h" />
+    <ClInclude Include="..\CCBReader\CCClippingNodeLoader.h" />
+    <ClInclude Include="..\CCBReader\CCControlButtonLoader.h" />
+    <ClInclude Include="..\CCBReader\CCControlLoader.h" />
+    <ClInclude Include="..\CCBReader\CCData.h" />
+    <ClInclude Include="..\CCBReader\CCLabelBMFontLoader.h" />
+    <ClInclude Include="..\CCBReader\CCLabelTTFLoader.h" />
+    <ClInclude Include="..\CCBReader\CCLayerColorLoader.h" />
+    <ClInclude Include="..\CCBReader\CCLayerGradientLoader.h" />
+    <ClInclude Include="..\CCBReader\CCLayerLoader.h" />
+    <ClInclude Include="..\CCBReader\CCMenuItemCCBFileLoader.h" />
+    <ClInclude Include="..\CCBReader\CCMenuItemImageLoader.h" />
+    <ClInclude Include="..\CCBReader\CCMenuItemLoader.h" />
+    <ClInclude Include="..\CCBReader\CCMenuLoader.h" />
+    <ClInclude Include="..\CCBReader\CCNode+CCBRelativePositioning.h" />
+    <ClInclude Include="..\CCBReader\CCNodeLoader.h" />
+    <ClInclude Include="..\CCBReader\CCNodeLoaderLibrary.h" />
+    <ClInclude Include="..\CCBReader\CCNodeLoaderListener.h" />
+    <ClInclude Include="..\CCBReader\CCParticleSystemQuadLoader.h" />
+    <ClInclude Include="..\CCBReader\CCScale9SpriteLoader.h" />
+    <ClInclude Include="..\CCBReader\CCScrollViewLoader.h" />
+    <ClInclude Include="..\CCBReader\CCSpriteLoader.h" />
+    <ClInclude Include="..\cells\CCell.h" />
+    <ClInclude Include="..\cells\CCells.h" />
+    <ClInclude Include="..\cells\CContainer.h" />
+    <ClInclude Include="..\cells\CCreationFactory.h" />
+    <ClInclude Include="..\cells\CCreationWorker.h" />
+    <ClInclude Include="..\cells\CDownloader.h" />
+    <ClInclude Include="..\cells\cells.h" />
+    <ClInclude Include="..\cells\CPlatform.h" />
+    <ClInclude Include="..\cells\CUtils.h" />
+    <ClInclude Include="..\cells\md5.h" />
+    <ClInclude Include="..\cells\zpip.h" />
+    <ClInclude Include="..\CocoStudio\Armature\animation\CCArmatureAnimation.h" />
+    <ClInclude Include="..\CocoStudio\Armature\animation\CCProcessBase.h" />
+    <ClInclude Include="..\CocoStudio\Armature\animation\CCTween.h" />
+    <ClInclude Include="..\CocoStudio\Armature\CCArmature.h" />
+    <ClInclude Include="..\CocoStudio\Armature\CCBone.h" />
+    <ClInclude Include="..\CocoStudio\Armature\datas\CCDatas.h" />
+    <ClInclude Include="..\CocoStudio\Armature\display\CCBatchNode.h" />
+    <ClInclude Include="..\CocoStudio\Armature\display\CCDecorativeDisplay.h" />
+    <ClInclude Include="..\CocoStudio\Armature\display\CCDisplayFactory.h" />
+    <ClInclude Include="..\CocoStudio\Armature\display\CCDisplayManager.h" />
+    <ClInclude Include="..\CocoStudio\Armature\display\CCSkin.h" />
+    <ClInclude Include="..\CocoStudio\Armature\external_tool\sigslot.h" />
+    <ClInclude Include="..\CocoStudio\Armature\physics\CCColliderDetector.h" />
+    <ClInclude Include="..\CocoStudio\Armature\utils\CCArmatureDataManager.h" />
+    <ClInclude Include="..\CocoStudio\Armature\utils\CCArmatureDefine.h" />
+    <ClInclude Include="..\CocoStudio\Armature\utils\CCDataReaderHelper.h" />
+    <ClInclude Include="..\CocoStudio\Armature\utils\CCSpriteFrameCacheHelper.h" />
+    <ClInclude Include="..\CocoStudio\Armature\utils\CCTransformHelp.h" />
+    <ClInclude Include="..\CocoStudio\Armature\utils\CCTweenFunction.h" />
+    <ClInclude Include="..\CocoStudio\Armature\utils\CCUtilMath.h" />
+    <ClInclude Include="..\CocoStudio\Json\DictionaryHelper.h" />
+    <ClInclude Include="..\CocoStudio\Json\rapidjson\document.h" />
+    <ClInclude Include="..\CocoStudio\Json\rapidjson\filestream.h" />
+    <ClInclude Include="..\CocoStudio\Json\rapidjson\internal\pow10.h" />
+    <ClInclude Include="..\CocoStudio\Json\rapidjson\internal\stack.h" />
+    <ClInclude Include="..\CocoStudio\Json\rapidjson\internal\strfunc.h" />
+    <ClInclude Include="..\CocoStudio\Json\rapidjson\prettywriter.h" />
+    <ClInclude Include="..\CocoStudio\Json\rapidjson\rapidjson.h" />
+    <ClInclude Include="..\CocoStudio\Json\rapidjson\reader.h" />
+    <ClInclude Include="..\CocoStudio\Json\rapidjson\stringbuffer.h" />
+    <ClInclude Include="..\CocoStudio\Json\rapidjson\writer.h" />
+    <ClInclude Include="..\dfont\dfont_config.h" />
+    <ClInclude Include="..\dfont\dfont_manager.h" />
+    <ClInclude Include="..\dfont\dfont_render.h" />
+    <ClInclude Include="..\dfont\dfont_utility.h" />
+    <ClInclude Include="..\GUI\CCControlExtension\CCControl.h" />
+    <ClInclude Include="..\GUI\CCControlExtension\CCControlButton.h" />
+    <ClInclude Include="..\GUI\CCControlExtension\CCControlColourPicker.h" />
+    <ClInclude Include="..\GUI\CCControlExtension\CCControlExtensions.h" />
+    <ClInclude Include="..\GUI\CCControlExtension\CCControlHuePicker.h" />
+    <ClInclude Include="..\GUI\CCControlExtension\CCControlPotentiometer.h" />
+    <ClInclude Include="..\GUI\CCControlExtension\CCControlSaturationBrightnessPicker.h" />
+    <ClInclude Include="..\GUI\CCControlExtension\CCControlSlider.h" />
+    <ClInclude Include="..\GUI\CCControlExtension\CCControlStepper.h" />
+    <ClInclude Include="..\GUI\CCControlExtension\CCControlSwitch.h" />
+    <ClInclude Include="..\GUI\CCControlExtension\CCControlUtils.h" />
+    <ClInclude Include="..\GUI\CCControlExtension\CCInvocation.h" />
+    <ClInclude Include="..\GUI\CCControlExtension\CCScale9Sprite.h" />
+    <ClInclude Include="..\GUI\CCEditBox\CCEditBox.h" />
+    <ClInclude Include="..\GUI\CCEditBox\CCEditBoxImpl.h" />
+    <ClInclude Include="..\GUI\CCEditBox\CCEditBoxImplWin.h" />
+    <ClInclude Include="..\GUI\CCMenuCCBFile.h" />
+    <ClInclude Include="..\GUI\CCScrollView\CCReViScrollViewFacade.h" />
+    <ClInclude Include="..\GUI\CCScrollView\CCScrollView.h" />
+    <ClInclude Include="..\cocos-ext.h" />
+    <ClInclude Include="..\ExtensionMacros.h" />
+    <ClInclude Include="..\GUI\CCScrollView\CCSorting.h" />
+    <ClInclude Include="..\GUI\CCScrollView\CCTableView.h" />
+    <ClInclude Include="..\GUI\CCScrollView\CCTableViewCell.h" />
+    <ClInclude Include="..\LocalStorage\LocalStorage.h" />
+    <ClInclude Include="..\network\HttpClient.h" />
+    <ClInclude Include="..\network\HttpRequest.h" />
+    <ClInclude Include="..\network\HttpResponse.h" />
+    <ClInclude Include="..\network\Websocket.h" />
+    <ClInclude Include="..\physics_nodes\CCPhysicsDebugNode.h" />
+    <ClInclude Include="..\physics_nodes\CCPhysicsSprite.h" />
+    <ClInclude Include="..\renren-ext.h" />
+    <ClInclude Include="..\RichControls\CCHTMLLabel.h" />
+    <ClInclude Include="..\RichControls\CCRichAtlas.h" />
+    <ClInclude Include="..\RichControls\CCRichCache.h" />
+    <ClInclude Include="..\RichControls\CCRichCompositor.h" />
+    <ClInclude Include="..\RichControls\CCRichElement.h" />
+    <ClInclude Include="..\RichControls\CCRichNode.h" />
+    <ClInclude Include="..\RichControls\CCRichOverlay.h" />
+    <ClInclude Include="..\RichControls\CCRichParser.h" />
+    <ClInclude Include="..\RichControls\CCRichProtocols.h" />
+    <ClInclude Include="..\spine\Animation.h" />
+    <ClInclude Include="..\spine\AnimationState.h" />
+    <ClInclude Include="..\spine\AnimationStateData.h" />
+    <ClInclude Include="..\spine\Atlas.h" />
+    <ClInclude Include="..\spine\AtlasAttachmentLoader.h" />
+    <ClInclude Include="..\spine\Attachment.h" />
+    <ClInclude Include="..\spine\AttachmentLoader.h" />
+    <ClInclude Include="..\spine\Bone.h" />
+    <ClInclude Include="..\spine\BoneData.h" />
+    <ClInclude Include="..\spine\BoundingBoxAttachment.h" />
+    <ClInclude Include="..\spine\Event.h" />
+    <ClInclude Include="..\spine\EventData.h" />
+    <ClInclude Include="..\spine\extension.h" />
+    <ClInclude Include="..\spine\Json.h" />
+    <ClInclude Include="..\spine\MeshAttachment.h" />
+    <ClInclude Include="..\spine\PolygonBatch.h" />
+    <ClInclude Include="..\spine\RegionAttachment.h" />
+    <ClInclude Include="..\spine\Skeleton.h" />
+    <ClInclude Include="..\spine\SkeletonAnimation.h" />
+    <ClInclude Include="..\spine\SkeletonBounds.h" />
+    <ClInclude Include="..\spine\SkeletonData.h" />
+    <ClInclude Include="..\spine\SkeletonJson.h" />
+    <ClInclude Include="..\spine\SkeletonRenderer.h" />
+    <ClInclude Include="..\spine\Skin.h" />
+    <ClInclude Include="..\spine\SkinnedMeshAttachment.h" />
+    <ClInclude Include="..\spine\Slot.h" />
+    <ClInclude Include="..\spine\SlotData.h" />
+    <ClInclude Include="..\spine\spine-cocos2dx.h" />
+    <ClInclude Include="..\spine\spine.h" />
+    <ClInclude Include="Win32InputBox.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,27 @@
+
+eff_UI_Main_Guild.png
+size: 241,191
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+eff_UI_Main_Guild
+  rotate: false
+  xy: 2, 2
+  size: 196, 187
+  orig: 196, 187
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Guild_1
+  rotate: true
+  xy: 200, 108
+  size: 43, 16
+  orig: 43, 16
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Guild_Light
+  rotate: false
+  xy: 200, 153
+  size: 39, 36
+  orig: 39, 36
+  offset: 0, 0
+  index: -1

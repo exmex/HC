@@ -1,0 +1,5 @@
+##更新进度条
+UpdateProgressBG = installer/loading_bar_bg.png
+UpdateProgressBar = installer/loading_bar.png
+##是否启用RC4协议加密
+OpenRc4Encrypt = false

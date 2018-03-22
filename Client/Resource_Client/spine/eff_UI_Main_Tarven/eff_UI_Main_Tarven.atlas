@@ -1,0 +1,27 @@
+
+eff_UI_Main_Tarven.png
+size: 498,114
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+eff_UI_Main_Tarven
+  rotate: false
+  xy: 2, 10
+  size: 249, 102
+  orig: 249, 102
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Tarven_1
+  rotate: false
+  xy: 253, 2
+  size: 117, 110
+  orig: 117, 110
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Tarven_Light
+  rotate: false
+  xy: 372, 58
+  size: 124, 54
+  orig: 124, 54
+  offset: 0, 0
+  index: -1

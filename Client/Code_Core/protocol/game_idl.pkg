@@ -1,0 +1,275 @@
+
+class XPACKET_DoLogin:public _auto_pointer_class_base
+{
+  
+    std::string & get_userId();
+    std::string & get_server();
+    std::string & get_sessionKey();
+    std::string & get_version();
+
+	static	int    _Size(std::string&  userId,std::string&  server,std::string&  sessionKey,std::string&  version);
+	static	int    _FromBuffer(const char *__src,int     __len,std::string&  userId,std::string&  server,std::string&  sessionKey,std::string&  version);
+	static	int    _ToBuffer(char *__dst,int     __len,std::string&  userId,std::string&  server,std::string&  sessionKey,std::string&  version);
+	int   Size();
+	int   FromBuffer(const char *__src,int     __len);
+	int   ToBuffer(char *__dst,int     __len);
+};
+
+//typedef _bean_ptr_t<XPACKET_DoLogin>  XPACKET_DoLoginPtr;
+
+class XPACKET_DoLoginPtr {
+   XPACKET_DoLoginPtr();
+    ~XPACKET_DoLoginPtr();
+    void Attach( XPACKET_DoLogin* pInterface) ;
+    void Attach( XPACKET_DoLogin* pInterface, bool fAddRef);
+     XPACKET_DoLogin* Detach();
+    void Release() ;
+    void AddRef() ;
+    XPACKET_DoLogin* GetInterfacePtr();
+    int CreateInstance() ;
+};
+
+//--------------------------------------------------------------
+
+
+class XPACKET_SendInternalNotifyByProxy:public _auto_pointer_class_base
+{
+  
+    int get_action();
+
+	static	int    _Size(int&  action);
+	static	int    _FromBuffer(const char *__src,int     __len,int&  action);
+	static	int    _ToBuffer(char *__dst,int     __len,int&  action);
+	int   Size();
+	int   FromBuffer(const char *__src,int     __len);
+	int   ToBuffer(char *__dst,int     __len);
+};
+
+//typedef _bean_ptr_t<XPACKET_SendInternalNotifyByProxy>  XPACKET_SendInternalNotifyByProxyPtr;
+
+class XPACKET_SendInternalNotifyByProxyPtr {
+   XPACKET_SendInternalNotifyByProxyPtr();
+    ~XPACKET_SendInternalNotifyByProxyPtr();
+    void Attach( XPACKET_SendInternalNotifyByProxy* pInterface) ;
+    void Attach( XPACKET_SendInternalNotifyByProxy* pInterface, bool fAddRef);
+     XPACKET_SendInternalNotifyByProxy* Detach();
+    void Release() ;
+    void AddRef() ;
+    XPACKET_SendInternalNotifyByProxy* GetInterfacePtr();
+    int CreateInstance() ;
+};
+
+//--------------------------------------------------------------
+
+
+class XPACKET_OnKickout:public _auto_pointer_class_base
+{
+  
+    int get_error_code();
+
+	static	int    _Size(int&  error_code);
+	static	int    _FromBuffer(const char *__src,int     __len,int&  error_code);
+	static	int    _ToBuffer(char *__dst,int     __len,int&  error_code);
+	int   Size();
+	int   FromBuffer(const char *__src,int     __len);
+	int   ToBuffer(char *__dst,int     __len);
+};
+
+//typedef _bean_ptr_t<XPACKET_OnKickout>  XPACKET_OnKickoutPtr;
+
+class XPACKET_OnKickoutPtr {
+   XPACKET_OnKickoutPtr();
+    ~XPACKET_OnKickoutPtr();
+    void Attach( XPACKET_OnKickout* pInterface) ;
+    void Attach( XPACKET_OnKickout* pInterface, bool fAddRef);
+     XPACKET_OnKickout* Detach();
+    void Release() ;
+    void AddRef() ;
+    XPACKET_OnKickout* GetInterfacePtr();
+    int CreateInstance() ;
+};
+
+//--------------------------------------------------------------
+
+
+class XPACKET_SendPing:public _auto_pointer_class_base
+{
+  
+    std::string & get_time();
+
+	static	int    _Size(std::string&  time);
+	static	int    _FromBuffer(const char *__src,int     __len,std::string&  time);
+	static	int    _ToBuffer(char *__dst,int     __len,std::string&  time);
+	int   Size();
+	int   FromBuffer(const char *__src,int     __len);
+	int   ToBuffer(char *__dst,int     __len);
+};
+
+//typedef _bean_ptr_t<XPACKET_SendPing>  XPACKET_SendPingPtr;
+
+class XPACKET_SendPingPtr {
+   XPACKET_SendPingPtr();
+    ~XPACKET_SendPingPtr();
+    void Attach( XPACKET_SendPing* pInterface) ;
+    void Attach( XPACKET_SendPing* pInterface, bool fAddRef);
+     XPACKET_SendPing* Detach();
+    void Release() ;
+    void AddRef() ;
+    XPACKET_SendPing* GetInterfacePtr();
+    int CreateInstance() ;
+};
+
+//--------------------------------------------------------------
+
+
+class XPACKET_SendProtoBuff:public _auto_pointer_class_base
+{
+  
+   std::vector<unsigned char> &get_data();
+
+	static	int    _Size(std::vector<unsigned char>&  data);
+	static	int    _FromBuffer(const char *__src,int     __len,std::vector<unsigned char>&  data);
+	static	int    _ToBuffer(char *__dst,int     __len,std::vector<unsigned char>&  data);
+	int   Size();
+	int   FromBuffer(const char *__src,int     __len);
+	int   ToBuffer(char *__dst,int     __len);
+};
+
+//typedef _bean_ptr_t<XPACKET_SendProtoBuff>  XPACKET_SendProtoBuffPtr;
+
+class XPACKET_SendProtoBuffPtr {
+   XPACKET_SendProtoBuffPtr();
+    ~XPACKET_SendProtoBuffPtr();
+    void Attach( XPACKET_SendProtoBuff* pInterface) ;
+    void Attach( XPACKET_SendProtoBuff* pInterface, bool fAddRef);
+     XPACKET_SendProtoBuff* Detach();
+    void Release() ;
+    void AddRef() ;
+    XPACKET_SendProtoBuff* GetInterfacePtr();
+    int CreateInstance() ;
+};
+
+//--------------------------------------------------------------
+
+
+class XPACKET_OnServerErrorMessage:public _auto_pointer_class_base
+{
+  
+    int get_error_code();
+    std::string & get_lpszMsg();
+
+	static	int    _Size(int&  error_code,std::string&  lpszMsg);
+	static	int    _FromBuffer(const char *__src,int     __len,int&  error_code,std::string&  lpszMsg);
+	static	int    _ToBuffer(char *__dst,int     __len,int&  error_code,std::string&  lpszMsg);
+	int   Size();
+	int   FromBuffer(const char *__src,int     __len);
+	int   ToBuffer(char *__dst,int     __len);
+};
+
+//typedef _bean_ptr_t<XPACKET_OnServerErrorMessage>  XPACKET_OnServerErrorMessagePtr;
+
+class XPACKET_OnServerErrorMessagePtr {
+   XPACKET_OnServerErrorMessagePtr();
+    ~XPACKET_OnServerErrorMessagePtr();
+    void Attach( XPACKET_OnServerErrorMessage* pInterface) ;
+    void Attach( XPACKET_OnServerErrorMessage* pInterface, bool fAddRef);
+     XPACKET_OnServerErrorMessage* Detach();
+    void Release() ;
+    void AddRef() ;
+    XPACKET_OnServerErrorMessage* GetInterfacePtr();
+    int CreateInstance() ;
+};
+
+//--------------------------------------------------------------
+
+
+class XPACKET_OnSendZipData:public _auto_pointer_class_base
+{
+  
+   std::vector<unsigned char> &get_zipData();
+
+	static	int    _Size(std::vector<unsigned char>&  zipData);
+	static	int    _FromBuffer(const char *__src,int     __len,std::vector<unsigned char>&  zipData);
+	static	int    _ToBuffer(char *__dst,int     __len,std::vector<unsigned char>&  zipData);
+	int   Size();
+	int   FromBuffer(const char *__src,int     __len);
+	int   ToBuffer(char *__dst,int     __len);
+};
+
+//typedef _bean_ptr_t<XPACKET_OnSendZipData>  XPACKET_OnSendZipDataPtr;
+
+class XPACKET_OnSendZipDataPtr {
+   XPACKET_OnSendZipDataPtr();
+    ~XPACKET_OnSendZipDataPtr();
+    void Attach( XPACKET_OnSendZipData* pInterface) ;
+    void Attach( XPACKET_OnSendZipData* pInterface, bool fAddRef);
+     XPACKET_OnSendZipData* Detach();
+    void Release() ;
+    void AddRef() ;
+    XPACKET_OnSendZipData* GetInterfacePtr();
+    int CreateInstance() ;
+};
+
+//--------------------------------------------------------------
+
+
+class XPACKET_OnPong:public _auto_pointer_class_base
+{
+  
+    std::string & get_time();
+
+	static	int    _Size(std::string&  time);
+	static	int    _FromBuffer(const char *__src,int     __len,std::string&  time);
+	static	int    _ToBuffer(char *__dst,int     __len,std::string&  time);
+	int   Size();
+	int   FromBuffer(const char *__src,int     __len);
+	int   ToBuffer(char *__dst,int     __len);
+};
+
+//typedef _bean_ptr_t<XPACKET_OnPong>  XPACKET_OnPongPtr;
+
+class XPACKET_OnPongPtr {
+   XPACKET_OnPongPtr();
+    ~XPACKET_OnPongPtr();
+    void Attach( XPACKET_OnPong* pInterface) ;
+    void Attach( XPACKET_OnPong* pInterface, bool fAddRef);
+     XPACKET_OnPong* Detach();
+    void Release() ;
+    void AddRef() ;
+    XPACKET_OnPong* GetInterfacePtr();
+    int CreateInstance() ;
+};
+
+//--------------------------------------------------------------
+
+
+class XPACKET_OnProtoReponse:public _auto_pointer_class_base
+{
+  
+    int get_error_code();
+   std::vector<unsigned char> &get_data();
+
+	static	int    _Size(int&  error_code,std::vector<unsigned char>&  data);
+	static	int    _FromBuffer(const char *__src,int     __len,int&  error_code,std::vector<unsigned char>&  data);
+	static	int    _ToBuffer(char *__dst,int     __len,int&  error_code,std::vector<unsigned char>&  data);
+	int   Size();
+	int   FromBuffer(const char *__src,int     __len);
+	int   ToBuffer(char *__dst,int     __len);
+};
+
+//typedef _bean_ptr_t<XPACKET_OnProtoReponse>  XPACKET_OnProtoReponsePtr;
+
+class XPACKET_OnProtoReponsePtr {
+   XPACKET_OnProtoReponsePtr();
+    ~XPACKET_OnProtoReponsePtr();
+    void Attach( XPACKET_OnProtoReponse* pInterface) ;
+    void Attach( XPACKET_OnProtoReponse* pInterface, bool fAddRef);
+     XPACKET_OnProtoReponse* Detach();
+    void Release() ;
+    void AddRef() ;
+    XPACKET_OnProtoReponse* GetInterfacePtr();
+    int CreateInstance() ;
+};
+
+//--------------------------------------------------------------
+

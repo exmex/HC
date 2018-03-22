@@ -1,0 +1,62 @@
+
+eff_UI_Main_Skill.png
+size: 187,170
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+eff_UI_Main_Skill
+  rotate: true
+  xy: 2, 2
+  size: 166, 146
+  orig: 166, 146
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Skill_01
+  rotate: false
+  xy: 150, 36
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Skill_02
+  rotate: false
+  xy: 169, 53
+  size: 15, 14
+  orig: 15, 14
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Skill_03
+  rotate: false
+  xy: 150, 69
+  size: 26, 14
+  orig: 26, 14
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Skill_04
+  rotate: false
+  xy: 169, 38
+  size: 16, 13
+  orig: 16, 13
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Skill_05
+  rotate: false
+  xy: 150, 129
+  size: 34, 39
+  orig: 34, 39
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Skill_06
+  rotate: true
+  xy: 150, 85
+  size: 42, 28
+  orig: 42, 28
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Skill_07
+  rotate: false
+  xy: 150, 50
+  size: 17, 17
+  orig: 17, 17
+  offset: 0, 0
+  index: -1

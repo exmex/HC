@@ -1,0 +1,20 @@
+
+eff_UI_Main_Treasure.png
+size: 348,123
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+eff_UI_Main_Treasure
+  rotate: false
+  xy: 2, 2
+  size: 242, 119
+  orig: 242, 119
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Treasure_1
+  rotate: true
+  xy: 246, 7
+  size: 114, 100
+  orig: 114, 100
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,118 @@
+
+tutorial_head_cm.png
+size: 424,523
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Eyebrows
+  rotate: true
+  xy: 394, 44
+  size: 93, 28
+  orig: 93, 28
+  offset: 0, 0
+  index: -1
+Eyes
+  rotate: false
+  xy: 197, 10
+  size: 103, 48
+  orig: 103, 48
+  offset: 0, 0
+  index: -1
+Eyes_1
+  rotate: true
+  xy: 357, 52
+  size: 85, 35
+  orig: 85, 35
+  offset: 0, 0
+  index: -1
+Eyes_2
+  rotate: true
+  xy: 368, 316
+  size: 100, 52
+  orig: 100, 52
+  offset: 0, 0
+  index: -1
+Hair_01
+  rotate: true
+  xy: 197, 60
+  size: 69, 158
+  orig: 69, 158
+  offset: 0, 0
+  index: -1
+Hair_02
+  rotate: false
+  xy: 357, 218
+  size: 50, 96
+  orig: 50, 96
+  offset: 0, 0
+  index: -1
+Head_01
+  rotate: false
+  xy: 2, 130
+  size: 178, 177
+  orig: 178, 177
+  offset: 0, 0
+  index: -1
+Head_02
+  rotate: false
+  xy: 2, 309
+  size: 258, 212
+  orig: 258, 212
+  offset: 0, 0
+  index: -1
+L_Hand
+  rotate: true
+  xy: 357, 139
+  size: 77, 52
+  orig: 77, 52
+  offset: 0, 0
+  index: -1
+Leye
+  rotate: false
+  xy: 302, 24
+  size: 28, 34
+  orig: 28, 34
+  offset: 0, 0
+  index: -1
+R_Arm
+  rotate: false
+  xy: 368, 418
+  size: 50, 103
+  orig: 50, 103
+  offset: 0, 0
+  index: -1
+Reye
+  rotate: true
+  xy: 262, 314
+  size: 17, 26
+  orig: 17, 26
+  offset: 0, 0
+  index: -1
+Shoulder
+  rotate: true
+  xy: 114, 20
+  size: 108, 81
+  orig: 108, 81
+  offset: 0, 0
+  index: -1
+Skirt_01
+  rotate: true
+  xy: 262, 333
+  size: 188, 104
+  orig: 188, 104
+  offset: 0, 0
+  index: -1
+Skirt_02
+  rotate: false
+  xy: 182, 131
+  size: 173, 176
+  orig: 173, 176
+  offset: 0, 0
+  index: -1
+Spine_01
+  rotate: false
+  xy: 2, 2
+  size: 110, 126
+  orig: 110, 126
+  offset: 0, 0
+  index: -1

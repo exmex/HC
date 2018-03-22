@@ -1,0 +1,326 @@
+ed.music = {}
+ed.sound = {}
+ed.music = {
+  ["map"] = "installer/stage_select_bgm.mp3",
+  ["chapter1"] = "sound_menu/battle_bgm.mp3",
+  ["chapter2"] = "sound_menu/battle_bgm.mp3",
+  ["chapter3"] = "sound_menu/battle_bgm.mp3",
+  ["chapter4"] = "sound_menu/battle_bgm.mp3",
+  ["chapter5"] = "sound_menu/battle_bgm.mp3",
+  ["chapter6"] = "sound_menu/battle_bgm.mp3",
+  ["chapter7"] = "sound_menu/battle_bgm.mp3",
+  ["chapter8"] = "sound_menu/battle_bgm.mp3",
+  ["chapter9"] = "sound_menu/battle_bgm.mp3",
+  ["chapter10"] = "sound_menu/battle_bgm.mp3",
+  ["chapter11"] = "sound_menu/battle_bgm.mp3",
+  ["chapter12"] = "sound_menu/battle_bgm.mp3",
+  ["chapter13"] = "sound_menu/battle_bgm.mp3",
+  ["chapter14"] = "sound_menu/battle_bgm.mp3",
+  ["chapter101"] = "sound_menu/battle_bgm.mp3",
+  ["chapter102"] = "sound_menu/battle_bgm.mp3",
+  ["chapter103"] = "sound_menu/battle_bgm.mp3",
+  ["chapter-3"] = "sound_menu/battle_bgm_crusade.mp3",
+  ["chapter-1"] = "sound_menu/battle_bgm_arena.mp3",
+  ["chapter104"] = "sound_menu/battle_bgm.mp3"
+}
+ed.sound.deo = {
+  common_click_feedback = "sound_menu/common_click_feedback.mp3",
+  common_back = "sound_menu/common_back.mp3",
+  common_popup_small = "sound_menu/common_popup_small.mp3",
+  common_change_filter = "sound_menu/common_change_filter.mp3",
+  common_popup_window = "sound_menu/common_popup_window.mp3",
+  common_add_queue = "sound_menu/common_add_queue.mp3",
+  common_remove_queue = "sound_menu/common_remove_queue.mp3",
+  common_alert = "sound_menu/common_alert.mp3",
+  common_switch_on = "sound_menu/common_switch_on.mp3",
+  common_switch_off = "sound_menu/common_switch_off.mp3",
+  common_exp_up = nil,
+  common_hero_lvlup = "sound_menu/common_hero_lvlup.mp3",
+  common_close_popup_window = "sound_menu/common_close_popup_window.mp3",
+  common_coin_change = "sound_menu/common_coin_change.mp3",
+  common_craft_success = "sound_menu/common_craft_success.mp3",
+  common_equip_success = "sound_menu/common_equip_success.mp3",
+  common_hero_upgrade = "sound_menu/common_hero_upgrade.mp3",
+  common_shop_refresh_success = "sound_menu/common_shop_refresh_success.mp3",
+  battledown_star_three = "sound_menu/battledown_star_three.mp3",
+  battledown_star_two = "sound_menu/battledown_star_two.mp3",
+  battledown_star_one = "sound_menu/battledown_star_one.mp3",
+  map_change_chapter = "sound_menu/map_change_chapter.mp3",
+  battle_fury_full = "sound_menu/battle_fury_full.mp3",
+  battle_begin = "sound_menu/battle_begin.mp3",
+  map_stage_detail = "sound_menu/map_stage_detail.mp3",
+  skill_att_bar_change = "sound_menu/skill_att_bar_change.mp3",
+  skill_unlock_success = "sound_menu/skill_unlock_success.mp3",
+  battle_loot = "sound_menu/battle_loot.mp3",
+  skill_upgrade_fail = "sound_menu/skill_upgrade_fail.mp3",
+  skill_upgrade_success_blue = "sound_menu/skill_upgrade_success_blue.mp3",
+  skill_upgrade_success_gold = "sound_menu/skill_upgrade_success_gold.mp3",
+  flip_book_page = "sound_menu/flip_book_page.mp3",
+  flip_book = "sound_menu/flip_book.mp3",
+  battle_drop = "sound_menu/battle_drop.mp3",
+  map_bgm = "sound_menu/stage_select_bgm.mp3",
+  skill_remove_blue_star_success = "sound_menu/skill_remove_blue_star_success.mp3",
+  battle_next_wave = "sound_menu/battle_next_wave.mp3",
+  battle_win = "sound_menu/battle_win.mp3",
+  battle_lose = "sound_menu/battle_lose.mp3",
+  battle_cheer = "sound_menu/battle_cheer.mp3",
+  battledown_pop_loot = "sound_menu/battledown_pop_loot.mp3"
+}
+ed.sound.common = {
+  back = ed.sound.deo.common_back,
+  popShortcut = ed.sound.deo.common_click_feedback,
+  pushShortcut = ed.sound.deo.common_click_feedback,
+  openPopWindow = ed.sound.deo.common_popup_window,
+  closePopWindow = ed.sound.deo.common_close_popup_window
+}
+ed.sound.main = {
+  clickPVE = ed.sound.deo.common_click_feedback,
+  clickPackage = ed.sound.deo.common_click_feedback,
+  clickFragment = ed.sound.deo.common_click_feedback,
+  clickHeroPackage = ed.sound.deo.common_click_feedback,
+  clickGM = ed.sound.deo.common_click_feedback,
+  clickHandbook = ed.sound.deo.common_click_feedback,
+  clickEstrenUpgrade = ed.sound.deo.common_click_feedback,
+  clickShop = ed.sound.deo.common_click_feedback,
+  clickSpecialShop = ed.sound.deo.common_click_feedback,
+  clickTarvern = ed.sound.deo.common_click_feedback,
+  clickcot = ed.sound.deo.common_click_feedback,
+  clickHeroTest = ed.sound.deo.common_click_feedback,
+  clickTask = ed.sound.deo.common_click_feedback,
+  clickRecharge = ed.sound.deo.common_click_feedback,
+  clickPVP = ed.sound.deo.common_click_feedback,
+  clickexercise = ed.sound.deo.common_click_feedback
+}
+ed.sound.package = {
+  clickFilter = ed.sound.deo.common_change_filter,
+  clickElement = ed.sound.deo.common_click_feedback,
+  clickUseEquip = ed.sound.deo.common_click_feedback,
+  clickCompose = ed.sound.deo.common_click_feedback,
+  clickDetail = ed.sound.deo.common_click_feedback,
+  clickSell = ed.sound.deo.common_click_feedback
+}
+ed.sound.eatExpList = {
+  clickHero = ed.sound.deo.common_exp_up,
+  levelUp = ed.sound.deo.common_hero_lvlup,
+  openWindow = ed.sound.deo.common_popup_window,
+  closeWindow = ed.sound.deo.common_close_popup_window
+}
+ed.sound.equipDetail = {
+  openWindow = ed.sound.deo.common_popup_window,
+  closeWindow = ed.sound.deo.common_close_popup_window
+}
+ed.sound.sellProp = {
+  sellProp = ed.sound.deo.common_coin_change,
+  openWindow = ed.sound.deo.common_popup_window,
+  closeWindow = ed.sound.deo.common_close_popup_window,
+  add = ed.sound.deo.common_click_feedback,
+  minus = ed.sound.deo.common_click_feedback,
+  max = ed.sound.deo.common_click_feedback
+}
+ed.sound.buyProp = {
+  openWindow = ed.sound.deo.common_popup_window,
+  closeWindow = ed.sound.deo.common_close_popup_window
+}
+ed.sound.selectStage = {
+  clickChapter = ed.sound.deo.map_change_chapter,
+  clickStage = ed.sound.deo.map_stage_detail,
+  clickNormalMode = ed.sound.deo.common_click_feedback,
+  clickEliteMode = ed.sound.deo.common_click_feedback
+}
+ed.sound.stageDetail = {
+  clickGo = ed.sound.deo.common_click_feedback,
+  clickDisabledGo = ed.sound.deo.common_alert,
+  clickEnemy = ed.sound.deo.common_popup_small,
+  clickReward = ed.sound.deo.common_popup_small
+}
+ed.sound.prepare = {
+  selectHero = ed.sound.deo.common_add_queue,
+  disSelectHero = ed.sound.deo.common_remove_queue,
+  clickDeleteHero = ed.sound.deo.common_remove_queue,
+  dragDeleteHero = ed.sound.deo.common_remove_queue,
+  heroFilled = ed.sound.deo.common_alert,
+  moveHero = nil,
+  clickGo = ed.sound.deo.battle_begin,
+  clickFilter = ed.sound.deo.common_change_filter
+}
+ed.sound.battle = {
+  clickReturn = ed.sound.deo.common_click_feedback,
+  clickPause = ed.sound.deo.common_click_feedback,
+  enableAuto = ed.sound.deo.common_switch_on,
+  disenableAuto = ed.sound.deo.common_switch_off,
+  loot = nil,
+  clickLoot = ed.sound.deo.battle_loot,
+  autoCollectLoot = ed.sound.deo.battle_loot,
+  win = ed.sound.deo.battle_cheer,
+  lose = ed.sound.deo.battle_lose,
+  cdOver = ed.sound.deo.battle_fury_full,
+  useSkill = nil,
+  pushResultScene = ed.sound.deo.battle_win,
+  goNextBattle = ed.sound.deo.battle_next_wave
+}
+ed.sound.stageDone = {
+  pushEndScene = nil,
+  pushStar1 = ed.sound.deo.battledown_star_one,
+  pushStar2 = ed.sound.deo.battledown_star_two,
+  pushStar3 = ed.sound.deo.battledown_star_three,
+  pushStarEnd = nil,
+  pushItem = ed.sound.deo.battledown_pop_loot,
+  replay = ed.sound.deo.common_click_feedback,
+  nextStage = ed.sound.deo.common_click_feedback,
+  statistic = ed.sound.deo.common_click_feedback,
+  heroLevelUp = ed.sound.deo.common_hero_lvlup,
+  viewLoot = ed.sound.deo.common_popup_small,
+  playerGainExpStart = nil,
+  playerGainExpEnd = nil,
+  playerLevelUp = nil,
+  heroExpGainStart = ed.sound.deo.common_exp_up,
+  heroExpGainEnd = nil
+}
+ed.sound.stageFailed = {
+  reply = ed.sound.deo.common_click_feedback,
+  nextStage = ed.sound.deo.common_click_feedback
+}
+ed.sound.heroPackage = {
+  changeList = ed.sound.deo.common_change_filter,
+  clickHero = ed.sound.deo.common_popup_window,
+  summonHero = ed.sound.deo.common_craft_success
+}
+ed.sound.equipCraft = {
+  clickOpenCraft = ed.sound.deo.common_popup_window,
+  clickWearEquip = ed.sound.deo.common_equip_success,
+  craftSuccess = ed.sound.deo.common_craft_success,
+  craftFailed = ed.sound.deo.common_alert,
+  upgradeSuccess = ed.sound.deo.common_craft_success,
+  upgradeFailed = ed.sound.deo.common_alert,
+  clickCraftButton = ed.sound.deo.common_click_feedback,
+  clickDisenabledCraftButton = ed.sound.deo.common_alert,
+  clickCraftBackButton = ed.sound.deo.common_click_feedback,
+  clickTreeIcon = ed.sound.deo.common_click_feedback,
+  openWindow = nil,
+  closeWindow = nil
+}
+ed.sound.heroDetail = {
+  createWindow = nil,
+  closeWindow = ed.sound.deo.common_close_popup_window,
+  createSkillLayer = nil,
+  closeSkillLayer = nil,
+  createAttLayer = nil,
+  closeAttLayer = nil,
+  createCardLayer = nil,
+  closeCardLayer = nil,
+  clickHeroFca = nil,
+  clickEquip = ed.sound.deo.common_popup_window,
+  clickAttButton = ed.sound.deo.common_click_feedback,
+  clickCardButton = ed.sound.deo.common_click_feedback,
+  clickSkillButton = ed.sound.deo.common_click_feedback,
+  clickDisabledUpgrade = ed.sound.deo.common_alert,
+  clickUpgrade = ed.sound.deo.common_click_feedback,
+  clickEvolve = ed.sound.deo.common_click_feedback,
+  heroAttAnim = nil,
+  equippingAnim = nil,
+  evolveAnim = nil,
+  upgradeAnim = nil,
+  upgradeReply = ed.sound.deo.common_hero_upgrade,
+  evolveReply = ed.sound.deo.common_hero_upgrade
+}
+ed.sound.fragmentCompose = {
+  composeSuccess = ed.sound.deo.common_craft_success,
+  composeFailed = ed.sound.deo.common_alert,
+  openWindow = ed.sound.deo.common_popup_window,
+  closeWindow = ed.sound.deo.common_close_popup_window
+}
+ed.sound.shop = {
+  buySuccess = ed.sound.deo.common_coin_change,
+  buyFailed = ed.sound.deo.common_alert,
+  clickRefresh = ed.sound.deo.common_popup_window,
+  refreshFailed = ed.sound.deo.common_alert,
+  refresh = ed.sound.deo.common_shop_refresh_success
+}
+ed.sound.handbook = {
+  clickBack = ed.sound.deo.common_back,
+  turnPage = ed.sound.deo.flip_book_page,
+  turnPageFailed = nil,
+  clickTag = ed.sound.deo.flip_book,
+  clickElement = ed.sound.deo.common_popup_window,
+  clickLeftArrow = nil,
+  clickRightArrow = nil
+}
+ed.sound.dialog = {
+  openWindow = ed.sound.deo.common_popup_window,
+  closeWindow = ed.sound.deo.common_close_popup_window,
+  clickAlertOK = ed.sound.deo.common_click_feedback,
+  clickConfirmLeft = ed.sound.deo.common_click_feedback,
+  clickConfirmRight = ed.sound.deo.common_click_feedback
+}
+ed.sound.toast = {
+  show = ed.sound.deo.common_popup_small
+}
+ed.sound.tutorial = {
+  exhibition = ed.sound.deo.common_popup_small
+}
+ed.sound.pvp = {
+  clickChangeTeam = ed.sound.deo.common_click_feedback,
+  clickChangeEnemy = ed.sound.deo.common_click_feedback,
+  clickGetReward = ed.sound.deo.common_click_feedback,
+  clickEnemyHead = ed.sound.deo.common_click_feedback
+}
+ed.sound.equipStrengthen = {
+  clickSelectHero = ed.sound.deo.common_click_feedback,
+  clickHeroHead = ed.sound.deo.common_click_feedback,
+  clickEquip = ed.sound.deo.common_click_feedback,
+  clickOpenPackage = ed.sound.deo.common_click_feedback,
+  clickMaterial = ed.sound.deo.common_click_feedback,
+  clickStren = ed.sound.deo.common_click_feedback,
+  clickFastStren = ed.sound.deo.common_click_feedback,
+  strenSuccess = ed.sound.deo.common_craft_success
+}
+ed.sound.exercise = {
+  clickExercise = ed.sound.deo.common_click_feedback,
+  clickDegree = ed.sound.deo.common_click_feedback
+}
+ed.sound.tavern = {
+  createStonePrompt = nil,
+  createStonePrompt = nil,
+  createGetNewHero = nil,
+  createCardLayer = nil,
+  closeCardLayer = nil,
+  createLootCard = ed.sound.deo.common_popup_small,
+  closeLootCard = nil,
+  createLootsLayer = nil,
+  closeLootsLayer = nil,
+  clickCardLayer = nil,
+  clickCloseLoots = ed.sound.deo.common_click_feedback,
+  clickTavernAgain = ed.sound.deo.common_click_feedback,
+  clickBronzeBuy = ed.sound.deo.common_click_feedback,
+  clickBronzeOnce = ed.sound.deo.common_click_feedback,
+  clickBronzeTen = ed.sound.deo.common_click_feedback,
+  clickSilverBuy = ed.sound.deo.common_click_feedback,
+  clickSilverOnce = ed.sound.deo.common_click_feedback,
+  clickSilverTen = ed.sound.deo.common_click_feedback,
+  clickGoldBuy = ed.sound.deo.common_click_feedback,
+  clickGoldOnce = ed.sound.deo.common_click_feedback,
+  clickGoldTen = ed.sound.deo.common_click_feedback,
+  openBoxAnim = ed.sound.deo.skill_upgrade_success_blue,
+  showCardAnim = ed.sound.deo.battle_cheer,
+  showLootAnim = "sound_menu/tavern_pop_item.mp3",
+  scrollBoardAnim = nil
+}
+ed.sound.dialogue = {
+  appear = nil,
+  click = ed.sound.deo.common_click_feedback
+}
+ed.sound.task = {
+  createWindow = nil,
+  closeWindow = nil,
+  createPopWindow = ed.sound.deo.common_craft_success,
+  closePopWindow = nil,
+  clickClose = ed.sound.deo.common_click_feedback,
+  pressTaskBoard = nil,
+  clickTaskBoard = nil,
+  clickPopWindowok = ed.sound.deo.common_click_feedback,
+  popWindowTitleAnim = nil
+}
+ed.sound.announce = {
+  createAnnounce = ed.sound.deo.common_popup_window,
+  destroyAnnounce = ed.sound.deo.common_close_popup_window
+}

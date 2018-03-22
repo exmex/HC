@@ -33,7 +33,7 @@ class WorldSvc extends GameProtocolServer
 
     var $domain_name;
 
-    var $debug = false;
+    var $debug = true;
 
 
     /**
@@ -250,7 +250,7 @@ class WorldSvc extends GameProtocolServer
     {
         $pbStr = $pPacket->serializeToString();
 
-        $isDebug = false;
+        $isDebug = true;
         if ($isDebug) {
             $log = BytesToString($pbStr, strlen($pbStr), " ");
             Logger::getLogger()->debug("serial=" . $log);

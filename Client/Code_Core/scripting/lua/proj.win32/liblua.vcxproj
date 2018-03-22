@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D5892D80-3FEE-40CE-B870-490CB498BC07}</ProjectGuid>
+    <RootNamespace>liblua</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\build\$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\build\$(Configuration).win32.intermediate\liblua\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\build\$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\build\$(Configuration).win32.intermediate\liblua\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\cocos2dx;$(ProjectDir)..\..\..\cocos2dx\include;$(ProjectDir)..\..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\..\cocos2dx\platform\win32;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32\OGLES;$(ProjectDir)..\..\..\CocosDenshion\include;$(ProjectDir)..\tolua;$(ProjectDir)..\lua;$(ProjectDir)..\..\..\extensions;$(ProjectDir)..\..\..\samples\Lua\HelloLua\Classes;$(ProjectDir)..\..\..\extensions\AssetsManager;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32;$(ProjectDir)..\..\..\projects\hero\Classes;$(ProjectDir)..\..\..\core\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;COCOS2D_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4800;4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\cocos2dx;$(ProjectDir)..\..\..\cocos2dx\include;$(ProjectDir)..\..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\..\cocos2dx\platform\win32;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32\OGLES;$(ProjectDir)..\..\..\CocosDenshion\include;$(ProjectDir)..\tolua;$(ProjectDir)..\lua;$(ProjectDir)..\..\..\extensions;$(ProjectDir)..\..\..\samples\Lua\HelloLua\Classes;$(ProjectDir)..\..\..\extensions\AssetsManager;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32;$(ProjectDir)..\..\..\projects\hero\Classes;$(ProjectDir)..\..\..\core\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;LIBLUA_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4800;4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>libcocos2d.lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\protocol\game_idl.cpp" />
+    <ClCompile Include="..\..\..\protocol\StringHlp.cpp" />
+    <ClCompile Include="..\..\..\protocol\xproto.cpp" />
+    <ClCompile Include="..\cocos2dx_support\CCLuaBridge.cpp" />
+    <ClCompile Include="..\cocos2dx_support\CCLuaEngine.cpp" />
+    <ClCompile Include="..\cocos2dx_support\CCLuaStack.cpp" />
+    <ClCompile Include="..\cocos2dx_support\CCLuaValue.cpp" />
+    <ClCompile Include="..\cocos2dx_support\Cocos2dxLuaLoader.cpp" />
+    <ClCompile Include="..\cocos2dx_support\LuaCocos2d.cpp" />
+    <ClCompile Include="..\cocos2dx_support\tolua_fix.c" />
+    <ClCompile Include="..\lpeg\lpcap.c" />
+    <ClCompile Include="..\lpeg\lpcode.c" />
+    <ClCompile Include="..\lpeg\lpprint.c" />
+    <ClCompile Include="..\lpeg\lptree.c" />
+    <ClCompile Include="..\lpeg\lpvm.c" />
+    <ClCompile Include="..\LuaBitOp\bit.c" />
+    <ClCompile Include="..\luasocket\auxiliar.c" />
+    <ClCompile Include="..\luasocket\buffer.c" />
+    <ClCompile Include="..\luasocket\except.c" />
+    <ClCompile Include="..\luasocket\inet.c" />
+    <ClCompile Include="..\luasocket\io.c" />
+    <ClCompile Include="..\luasocket\luasocket.c" />
+    <ClCompile Include="..\luasocket\mime.c" />
+    <ClCompile Include="..\luasocket\options.c" />
+    <ClCompile Include="..\luasocket\select.c" />
+    <ClCompile Include="..\luasocket\tcp.c" />
+    <ClCompile Include="..\luasocket\timeout.c" />
+    <ClCompile Include="..\luasocket\udp.c" />
+    <ClCompile Include="..\luasocket\wsocket.c" />
+    <ClCompile Include="..\luastruct\struct.c" />
+    <ClCompile Include="..\lua\lapi.c" />
+    <ClCompile Include="..\lua\lauxlib.c" />
+    <ClCompile Include="..\lua\lbaselib.c" />
+    <ClCompile Include="..\lua\lcode.c" />
+    <ClCompile Include="..\lua\ldblib.c" />
+    <ClCompile Include="..\lua\ldebug.c" />
+    <ClCompile Include="..\lua\ldo.c" />
+    <ClCompile Include="..\lua\ldump.c" />
+    <ClCompile Include="..\lua\lfunc.c" />
+    <ClCompile Include="..\lua\lgc.c" />
+    <ClCompile Include="..\lua\linit.c" />
+    <ClCompile Include="..\lua\liolib.c" />
+    <ClCompile Include="..\lua\llex.c" />
+    <ClCompile Include="..\lua\lmathlib.c" />
+    <ClCompile Include="..\lua\lmem.c" />
+    <ClCompile Include="..\lua\loadlib.c" />
+    <ClCompile Include="..\lua\lobject.c" />
+    <ClCompile Include="..\lua\lopcodes.c" />
+    <ClCompile Include="..\lua\loslib.c" />
+    <ClCompile Include="..\lua\lparser.c" />
+    <ClCompile Include="..\lua\lstate.c" />
+    <ClCompile Include="..\lua\lstring.c" />
+    <ClCompile Include="..\lua\lstrlib.c" />
+    <ClCompile Include="..\lua\ltable.c" />
+    <ClCompile Include="..\lua\ltablib.c" />
+    <ClCompile Include="..\lua\ltm.c" />
+    <ClCompile Include="..\lua\lua.c" />
+    <ClCompile Include="..\lua\lundump.c" />
+    <ClCompile Include="..\lua\lvm.c" />
+    <ClCompile Include="..\lua\lzio.c" />
+    <ClCompile Include="..\lua\print.c" />
+    <ClCompile Include="..\md5\ldes56.c" />
+    <ClCompile Include="..\md5\md5.c" />
+    <ClCompile Include="..\md5\md5lib.c" />
+    <ClCompile Include="..\tolua\tolua_event.c" />
+    <ClCompile Include="..\tolua\tolua_is.c" />
+    <ClCompile Include="..\tolua\tolua_map.c" />
+    <ClCompile Include="..\tolua\tolua_push.c" />
+    <ClCompile Include="..\tolua\tolua_to.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\protocol\beanip.h" />
+    <ClInclude Include="..\..\..\protocol\game_idl.h" />
+    <ClInclude Include="..\..\..\protocol\StringHlp.h" />
+    <ClInclude Include="..\..\..\protocol\xproto.h" />
+    <ClInclude Include="..\cocos2dx_support\CCLuaBridge.h" />
+    <ClInclude Include="..\cocos2dx_support\CCLuaEngine.h" />
+    <ClInclude Include="..\cocos2dx_support\CCLuaStack.h" />
+    <ClInclude Include="..\cocos2dx_support\CCLuaValue.h" />
+    <ClInclude Include="..\cocos2dx_support\Cocos2dxLuaLoader.h" />
+    <ClInclude Include="..\cocos2dx_support\LuaCocos2d.h" />
+    <ClInclude Include="..\cocos2dx_support\tolua_fix.h" />
+    <ClInclude Include="..\lpeg\lpcap.h" />
+    <ClInclude Include="..\lpeg\lpcode.h" />
+    <ClInclude Include="..\lpeg\lpprint.h" />
+    <ClInclude Include="..\lpeg\lptree.h" />
+    <ClInclude Include="..\lpeg\lptypes.h" />
+    <ClInclude Include="..\lpeg\lpvm.h" />
+    <ClInclude Include="..\luasocket\auxiliar.h" />
+    <ClInclude Include="..\luasocket\buffer.h" />
+    <ClInclude Include="..\luasocket\except.h" />
+    <ClInclude Include="..\luasocket\inet.h" />
+    <ClInclude Include="..\luasocket\io.h" />
+    <ClInclude Include="..\luasocket\luasocket.h" />
+    <ClInclude Include="..\luasocket\mime.h" />
+    <ClInclude Include="..\luasocket\options.h" />
+    <ClInclude Include="..\luasocket\select.h" />
+    <ClInclude Include="..\luasocket\socket.h" />
+    <ClInclude Include="..\luasocket\tcp.h" />
+    <ClInclude Include="..\luasocket\timeout.h" />
+    <ClInclude Include="..\luasocket\udp.h" />
+    <ClInclude Include="..\luasocket\wsocket.h" />
+    <ClInclude Include="..\lua\lapi.h" />
+    <ClInclude Include="..\lua\lauxlib.h" />
+    <ClInclude Include="..\lua\lcode.h" />
+    <ClInclude Include="..\lua\ldebug.h" />
+    <ClInclude Include="..\lua\ldo.h" />
+    <ClInclude Include="..\lua\lfunc.h" />
+    <ClInclude Include="..\lua\lgc.h" />
+    <ClInclude Include="..\lua\llex.h" />
+    <ClInclude Include="..\lua\llimits.h" />
+    <ClInclude Include="..\lua\lmem.h" />
+    <ClInclude Include="..\lua\lobject.h" />
+    <ClInclude Include="..\lua\lopcodes.h" />
+    <ClInclude Include="..\lua\lparser.h" />
+    <ClInclude Include="..\lua\lstate.h" />
+    <ClInclude Include="..\lua\lstring.h" />
+    <ClInclude Include="..\lua\ltable.h" />
+    <ClInclude Include="..\lua\ltm.h" />
+    <ClInclude Include="..\lua\lua.h" />
+    <ClInclude Include="..\lua\luaconf.h" />
+    <ClInclude Include="..\lua\lualib.h" />
+    <ClInclude Include="..\lua\lundump.h" />
+    <ClInclude Include="..\lua\lvm.h" />
+    <ClInclude Include="..\lua\lzio.h" />
+    <ClInclude Include="..\md5\ldes56.h" />
+    <ClInclude Include="..\tolua\tolua++.h" />
+    <ClInclude Include="..\tolua\tolua_event.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\extensions\proj.win32\libExtensions.vcxproj">
+      <Project>{21b2c324-891f-48ea-ad1a-5ae13de12e28}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

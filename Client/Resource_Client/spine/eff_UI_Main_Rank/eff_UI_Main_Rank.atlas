@@ -1,0 +1,27 @@
+
+eff_UI_Main_Rank.png
+size: 195,119
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+eff_UI_Main_Rank
+  rotate: false
+  xy: 2, 2
+  size: 124, 115
+  orig: 124, 115
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Rank_1
+  rotate: false
+  xy: 128, 9
+  size: 38, 67
+  orig: 38, 67
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Rank_2
+  rotate: true
+  xy: 128, 78
+  size: 39, 65
+  orig: 39, 65
+  offset: 0, 0
+  index: -1

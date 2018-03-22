@@ -15,19 +15,19 @@ define('SERVER_PATH', $GLOBALS['GAME_ROOT'] . 'servers/');
 define('WEB_DATABASE_HOST', '127.0.0.1');
 define('WEB_DATABASE_USER', 'root');
 define('WEB_DATABASE_PASSWORD', '');
-define('WEB_DATABASE_DB_NAME', 'dota');
+define('WEB_DATABASE_DB_NAME', 'hero');
 
 // proxy mysql database
 define('PROXY_DATABASE_HOST', '127.0.0.1');
 define('PROXY_DATABASE_USER', 'root');
 define('PROXY_DATABASE_PASSWORD', '');
-define('PROXY_DATABASE_DB_NAME', 'dota');
+define('PROXY_DATABASE_DB_NAME', 'hero');
 
 //游戏数据库配置
 define('DATABASE_HOST', '127.0.0.1');
 define('DATABASE_USER', 'root');
 define('DATABASE_PASSWORD', '');
-define('DATABASE_DB_NAME', 'dota');
+define('DATABASE_DB_NAME', 'hero');
 
 define("MEMCACHE_INFO",
     '$MEMCACHE_INFO = array(

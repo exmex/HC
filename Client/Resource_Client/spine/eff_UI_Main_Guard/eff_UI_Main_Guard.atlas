@@ -1,0 +1,62 @@
+
+eff_UI_Main_Guard.png
+size: 252,272
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+eff_UI_Main_Guard
+  rotate: false
+  xy: 2, 114
+  size: 183, 156
+  orig: 183, 156
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Guard_1
+  rotate: false
+  xy: 206, 11
+  size: 35, 35
+  orig: 35, 35
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Guard_Light1
+  rotate: false
+  xy: 2, 68
+  size: 110, 44
+  orig: 110, 44
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Guard_Light2
+  rotate: true
+  xy: 187, 160
+  size: 110, 44
+  orig: 110, 44
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Guard_Light3
+  rotate: false
+  xy: 2, 22
+  size: 110, 44
+  orig: 110, 44
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Guard_Light4
+  rotate: true
+  xy: 114, 2
+  size: 110, 44
+  orig: 110, 44
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Guard_Light5
+  rotate: true
+  xy: 160, 2
+  size: 110, 44
+  orig: 110, 44
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Guard_Light6
+  rotate: true
+  xy: 206, 48
+  size: 110, 44
+  orig: 110, 44
+  offset: 0, 0
+  index: -1

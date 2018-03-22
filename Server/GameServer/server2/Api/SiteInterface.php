@@ -24,7 +24,7 @@ class SiteInterface
     protected static $arr_sql_query;
 
     /** @var bool */
-    public $debug = false;
+    public $debug = true;
 
     /** @var array 初始化的子类对象数组 */
     protected static $classArr = array();

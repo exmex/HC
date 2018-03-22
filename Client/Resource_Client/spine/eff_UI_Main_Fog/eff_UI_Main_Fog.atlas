@@ -1,0 +1,13 @@
+
+eff_UI_Main_Fog.png
+size: 274,155
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+eff_UI_Main_Fog_2
+  rotate: false
+  xy: 2, 2
+  size: 270, 151
+  orig: 270, 151
+  offset: 0, 0
+  index: -1

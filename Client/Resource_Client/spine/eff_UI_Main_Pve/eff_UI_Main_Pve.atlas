@@ -1,0 +1,160 @@
+
+eff_UI_Main_Pve.png
+size: 1003,237
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+eff_UI_Main_Pve
+  rotate: true
+  xy: 2, 24
+  size: 211, 258
+  orig: 211, 258
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Pve01_01
+  rotate: false
+  xy: 262, 122
+  size: 79, 113
+  orig: 79, 113
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Pve01_02
+  rotate: false
+  xy: 262, 7
+  size: 79, 113
+  orig: 79, 113
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Pve01_03
+  rotate: false
+  xy: 343, 122
+  size: 79, 113
+  orig: 79, 113
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Pve01_04
+  rotate: false
+  xy: 343, 7
+  size: 79, 113
+  orig: 79, 113
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Pve01_05
+  rotate: false
+  xy: 424, 122
+  size: 79, 113
+  orig: 79, 113
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Pve01_06
+  rotate: false
+  xy: 424, 7
+  size: 79, 113
+  orig: 79, 113
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Pve01_07
+  rotate: false
+  xy: 505, 122
+  size: 79, 113
+  orig: 79, 113
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Pve01_08
+  rotate: false
+  xy: 505, 7
+  size: 79, 113
+  orig: 79, 113
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Pve01_09
+  rotate: false
+  xy: 586, 122
+  size: 79, 113
+  orig: 79, 113
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Pve01_10
+  rotate: false
+  xy: 586, 7
+  size: 79, 113
+  orig: 79, 113
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Pve02_01
+  rotate: false
+  xy: 667, 132
+  size: 75, 103
+  orig: 75, 103
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Pve02_02
+  rotate: false
+  xy: 667, 27
+  size: 75, 103
+  orig: 75, 103
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Pve02_03
+  rotate: false
+  xy: 744, 132
+  size: 75, 103
+  orig: 75, 103
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Pve02_04
+  rotate: false
+  xy: 744, 27
+  size: 75, 103
+  orig: 75, 103
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Pve02_05
+  rotate: true
+  xy: 821, 160
+  size: 75, 103
+  orig: 75, 103
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Pve02_06
+  rotate: false
+  xy: 926, 132
+  size: 75, 103
+  orig: 75, 103
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Pve02_07
+  rotate: true
+  xy: 821, 83
+  size: 75, 103
+  orig: 75, 103
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Pve02_08
+  rotate: false
+  xy: 926, 27
+  size: 75, 103
+  orig: 75, 103
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Pve02_09
+  rotate: true
+  xy: 821, 6
+  size: 75, 103
+  orig: 75, 103
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Pve03_01
+  rotate: false
+  xy: 2, 7
+  size: 26, 15
+  orig: 26, 15
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Pve04_01
+  rotate: false
+  xy: 667, 2
+  size: 22, 23
+  orig: 22, 23
+  offset: 0, 0
+  index: -1

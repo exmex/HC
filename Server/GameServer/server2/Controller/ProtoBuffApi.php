@@ -42,8 +42,10 @@ function OnProtoBuff(WorldSvc $svc, XPACKET_SendProtoBuff $pPacket, Down_DownMsg
     {
     	return 6;
     }
-// 	Logger::getLogger()->debug("OnProtoBuff Process Start! UIN = " . $pPacket->data . " KEY = ---------------------------------------");
-//     Logger::getLogger()->debug("OnProtoBuff Process Start! UIN = " . $GLOBALS['USER_IN'] . " KEY = " . strval($GLOBALS['USER_KEY']));
+
+ 	Logger::getLogger()->debug("OnProtoBuff Process Start! UIN = " . $pPacket->data . " KEY = ---------------------------------------");
+    Logger::getLogger()->debug("OnProtoBuff Process Start! UIN = " . $GLOBALS['USER_IN'] . " KEY = " . strval($GLOBALS['USER_KEY']));
+
     if (empty($realMsg)) {
         Logger::getLogger()->error("DecodeMessage error!" . strval($GLOBALS['USER_KEY']));
       return 1;
@@ -67,7 +69,7 @@ function OnProtoBuff(WorldSvc $svc, XPACKET_SendProtoBuff $pPacket, Down_DownMsg
     ob_start();
     $newObj->dump(true, 5);
     $debugLogStr_ = ob_get_contents();
-//     Logger::getLogger()->debug("[" . getmypid() . "] OnProtoBuff Get Up_UpMsg Data:\r\n" . $debugLogStr_);
+    Logger::getLogger()->debug("[" . getmypid() . "] OnProtoBuff Get Up_UpMsg Data:\r\n" . $debugLogStr_);
 
     $debugLogStr_ = null;
     ob_end_clean();

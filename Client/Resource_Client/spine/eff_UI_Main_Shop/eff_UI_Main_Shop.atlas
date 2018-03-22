@@ -1,0 +1,27 @@
+
+eff_UI_Main_Shop.png
+size: 224,165
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+eff_UI_Main_Shop
+  rotate: false
+  xy: 2, 2
+  size: 188, 161
+  orig: 188, 161
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Shop_1
+  rotate: false
+  xy: 192, 96
+  size: 19, 36
+  orig: 19, 36
+  offset: 0, 0
+  index: -1
+eff_UI_Main_Shop_Light
+  rotate: false
+  xy: 192, 134
+  size: 30, 29
+  orig: 30, 29
+  offset: 0, 0
+  index: -1
