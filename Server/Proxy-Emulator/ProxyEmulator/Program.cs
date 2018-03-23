@@ -65,6 +65,9 @@ namespace ProxyEmulator
                 Console.WriteLine("API Result: " + byteArr.Length);
 
                 _ns.Write(byteArr, 0, byteArr.Length);
+                
+                _buffer = new byte[2048];
+                _ns.BeginRead(_buffer, 0, 2048, OnPacket, null);
             }
             catch (Exception ex)
             {
