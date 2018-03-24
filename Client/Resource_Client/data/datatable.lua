@@ -127,7 +127,7 @@ end
 ed.loadCSV = loadCSV
 local function getDataTable(table_name)
 
- -- LegendLog("loading table ".. table_name)
+ LegendLog("loading table ".. table_name)
 
   local ret = datatable_cache[table_name]
   if ret then

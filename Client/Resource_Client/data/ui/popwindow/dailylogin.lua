@@ -96,6 +96,8 @@ class.doDailyReward = doDailyReward
 local function getMonthDayAmount(self)
   local date = getDate()
   local y, m = date.y, date.m
+  local dataTable = ed.getDataTable("DailyLoginReward")
+  if(not dataTable[y]) then return 0 end
   local dt = ed.getDataTable("DailyLoginReward")[y][m]
   local index = 1
   while dt[index] and dt[index]["Reward Type"] do
@@ -149,6 +151,8 @@ local function getRewardData(self)
     Gold = "UI/alpha/HVGA/task_gold_icon.png"
   }
   local da = self:getMonthDayAmount()
+  if(not da) then return end
+  
   self.data = {}
   for i = 1, da do
     local row = getRewardAt(i)
