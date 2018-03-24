@@ -4,7 +4,7 @@
     <client_language>en-US</client_language>
     <LastLoginPUID>admin</LastLoginPUID>
     <internalAnnouncementVersion>0</internalAnnouncementVersion>
-    <internalAnnouncementDownloadTime>1521637691</internalAnnouncementDownloadTime>
+    <internalAnnouncementDownloadTime>1521792240</internalAnnouncementDownloadTime>
     <lastservername>Local</lastservername>
     <lastloginname>admin</lastloginname>
     <1>no</1>
@@ -96,4 +96,7 @@
     <1-win32_admin-nt_fn>fls</1-win32_admin-nt_fn>
     <1-win32_admin-nt_nt>1,2,3,4,5,6,7,</1-win32_admin-nt_nt>
     <1-win32_admin-td_cm>1,8,5,16,10,</1-win32_admin-td_cm>
+    <Stage6Wave3>true</Stage6Wave3>
+    <Stage7Wave3>true</Stage7Wave3>
+    <WinBackToSelect7>true</WinBackToSelect7>
 </userDefaultRoot>
