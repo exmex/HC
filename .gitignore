@@ -14,12 +14,20 @@
 
 # Build results
 [Dd]ebug/
+[Dd]ebug.win32/
+[Dd]ebug.win32.intermediate/
+[Dd]ebug-iphoneos/
 [Dd]ebugPublic/
 [Rr]elease/
+[Dd]ebug/
+[Rr]elease.win32/
+[Rr]elease.win32.intermediate/
+[Rr]elease-iphoneos/
 [Rr]eleases/
 x64/
 x86/
 bld/
+[Bb]build/
 [Bb]in/
 [Oo]bj/
 [Ll]og/

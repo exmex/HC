@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{41d3620c-385c-496d-985d-5be58b9779ec}</ProjectGuid>
+    <!--$guid1$-->
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>
+    </StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>lua_CardGame</Name>
+    <RootNamespace>lua_CardGame</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\Resource_Client\data\bot.lua">
+      <Link>bot.lua</Link>
+    </Compile>
+    <Compile Include="..\..\..\Resource_Client\data\config.lua">
+      <Link>config.lua</Link>
+    </Compile>
+    <Compile Include="..\..\..\Resource_Client\data\GameConfig.lua">
+      <Link>GameConfig.lua</Link>
+    </Compile>
+    <Compile Include="..\..\..\Resource_Client\data\hello.lua">
+      <Link>hello.lua</Link>
+    </Compile>
+    <Compile Include="..\..\..\Resource_Client\data\HeroStars.lua">
+      <Link>HeroStars.lua</Link>
+    </Compile>
+    <Compile Include="..\..\..\Resource_Client\data\maingameproject.lua">
+      <Link>maingameproject.lua</Link>
+    </Compile>
+    <Compile Include="..\..\..\Resource_Client\data\ui\serverlogin.lua">
+      <Link>serverlogin.lua</Link>
+    </Compile>
+    <Compile Include="..\..\..\Resource_Client\data\util\smtplog.lua">
+      <Link>smtplog.lua</Link>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+</Project>
