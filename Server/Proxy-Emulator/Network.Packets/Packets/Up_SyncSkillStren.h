@@ -18,6 +18,11 @@ namespace Network
 				MessageType = 61;
 			}
 
+			Up_SyncSkillStren(const up::sync_skill_stren* sync) : Up_SyncSkillStren()
+			{
+
+			}
+
 			virtual String^ ToString() override
 			{
 				return "";

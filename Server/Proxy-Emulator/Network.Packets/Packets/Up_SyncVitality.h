@@ -18,6 +18,11 @@ namespace Network
 				MessageType = 30;
 			}
 
+			Up_SyncVitality(const up::sync_vitality* sync) : Up_SyncVitality()
+			{
+				
+			}
+
 			virtual String^ ToString() override
 			{
 				return "";

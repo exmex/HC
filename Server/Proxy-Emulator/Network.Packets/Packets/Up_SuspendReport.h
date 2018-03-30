@@ -13,9 +13,17 @@ namespace Network
 		// _suspend_report, 31
 		public ref struct Up_SuspendReport : Up_UpMsg
 		{
+			// game time
+			UInt32 _gametime;
+			
 			Up_SuspendReport()
 			{
 				MessageType = 31;
+			}
+
+			Up_SuspendReport(const up::suspend_report* suspend) : Up_SuspendReport()
+			{
+				_gametime = Convert::ToUInt32(suspend->_gametime());
 			}
 
 			virtual String^ ToString() override
