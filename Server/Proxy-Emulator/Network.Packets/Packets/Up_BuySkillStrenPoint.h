@@ -18,6 +18,11 @@ namespace Network
 				MessageType = 25;
 			}
 
+			Up_BuySkillStrenPoint(const up::buy_skill_stren_point* buy) : Up_BuySkillStrenPoint()
+			{
+				
+			}
+
 			virtual String^ ToString() override
 			{
 				return "";

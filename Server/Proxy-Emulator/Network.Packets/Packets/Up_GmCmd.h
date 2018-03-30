@@ -145,6 +145,34 @@ namespace Network
 				MessageType = 7;
 			}
 
+			Up_GmCmd(const up::gm_cmd* cmd) : Up_GmCmd()
+			{
+				_unlock_all_stages = Convert::ToInt32(cmd->_unlock_all_stages());
+				_get_all_heroes = Convert::ToInt32(cmd->_get_all_heroes());
+
+				auto heroInfoList = cmd->_set_hero_info();
+				for(int i = 0; i < heroInfoList.size(); i++)
+					_set_hero_info.Add(gcnew Hero(&heroInfoList.Get(i)));
+
+				_set_vitality = Convert::ToInt32(cmd->_set_vitality());
+				_set_money = gcnew SetMoney(&cmd->_set_money());
+				_set_recharge_sum = Convert::ToInt32(cmd->_set_recharge_sum());
+				_set_player_level = Convert::ToInt32(cmd->_set_player_level());
+				_set_player_exp = Convert::ToInt32(cmd->_set_player_exp());
+
+				auto setItemsList = cmd->_set_items();
+				for (int i = 0; i < setItemsList.size(); i++)
+					_set_items.Add(Convert::ToInt32(setItemsList.Get(i)));
+
+				_reset_device = Convert::ToUInt32(cmd->_reset_device());
+				_open_mystery_shop = Convert::ToUInt32(cmd->_open_mystery_shop());
+				_archive_id = Convert::ToUInt32(cmd->_archive_id());
+				_restore_id = Convert::ToUInt32(cmd->_restore_id());
+				_reset_sweep = Convert::ToInt32(cmd->_reset_sweep());
+				_set_dailylogin_days = Convert::ToUInt32(cmd->_set_dailylogin_days());
+				_open_guild_stage = gcnew OpenAllGuildStage(&cmd->_open_guild_stage());
+			}
+
 			static operator Up_GmCmd^(const up::gm_cmd* cmd)
 			{
 				Up_GmCmd^ _cmd = gcnew Up_GmCmd();

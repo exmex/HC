@@ -18,6 +18,11 @@ namespace Network
 				MessageType = 24;
 			}
 
+			Up_BuyVitality(const up::buy_vitality* buy) : Up_BuyVitality()
+			{
+				
+			}
+
 			virtual String^ ToString() override
 			{
 				return "";

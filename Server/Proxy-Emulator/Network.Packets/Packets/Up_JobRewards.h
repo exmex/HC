@@ -13,9 +13,16 @@ namespace Network
 		// _job_rewards, 21
 		public ref struct Up_JobRewards : Up_UpMsg
 		{
+			UInt32 _job;
+
 			Up_JobRewards()
 			{
 				MessageType = 21;
+			}
+
+			Up_JobRewards(const up::job_rewards* job) : Up_JobRewards()
+			{
+				_job = Convert::ToUInt32(job->_job());
 			}
 
 			virtual String^ ToString() override

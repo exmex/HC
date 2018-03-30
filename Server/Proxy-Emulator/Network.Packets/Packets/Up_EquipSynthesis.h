@@ -13,9 +13,16 @@ namespace Network
 		// _equip_synthesis, 9
 		public ref struct Up_EquipSynthesis : Up_UpMsg
 		{
+			UInt32 _equip_id;
+
 			Up_EquipSynthesis()
 			{
 				MessageType = 9;
+			}
+
+			Up_EquipSynthesis(const up::equip_synthesis* synth) : Up_EquipSynthesis()
+			{
+				_equip_id = Convert::ToUInt32(synth->_equip_id());
 			}
 
 			virtual String^ ToString() override
