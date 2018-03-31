@@ -40,7 +40,7 @@ local UIRes = {
         t = "Label",
         base = {
           name = "ui",
-          text = "Fatal Issue",
+          text = "Fatal Error",
           fontinfo = "title_yellow"
         },
         layout = {

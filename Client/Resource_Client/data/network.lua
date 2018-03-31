@@ -403,7 +403,7 @@ local function doSend(block, ttype)
 	LegendLog(print_bytes(code))
 	LegendLog("encrypt data============")
 	LegendLog(print_bytes(up_code))
-	print_Log(up_code,tostring(logSaveId)..ttype)
+	print_Log(up_code,"packets/" .. tostring(logSaveId)..ttype)
 
 	logSaveId = logSaveId+1
 
