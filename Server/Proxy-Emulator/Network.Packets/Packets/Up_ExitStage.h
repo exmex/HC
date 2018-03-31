@@ -25,30 +25,27 @@ namespace Network
 				MessageType = 6;
 			}
 
-			static operator Up_ExitStage^(up::exit_stage* stage)
+			Up_ExitStage(const up::exit_stage* stage) : Up_ExitStage()
 			{
-				Up_ExitStage^ _stage = gcnew Up_ExitStage();
-				_stage->_result = (BattleResult)Convert::ToInt32(stage->_result());
-				_stage->_stars = Convert::ToUInt32(stage->_stars());
+				_result = (BattleResult)Convert::ToInt32(stage->_result());
+				_stars = Convert::ToUInt32(stage->_stars());
 
 				auto heroList = stage->_heroes();
 				for (int i = 0; i < heroList.size(); ++i) {
-					_stage->_heroes.Add(Convert::ToUInt32(heroList.Get(i)));
+					_heroes.Add(Convert::ToUInt32(heroList.Get(i)));
 				}
 
 				auto operationsList = stage->_oprations();
 				for (int i = 0; i < operationsList.size(); ++i) {
-					_stage->_operations.Add(Convert::ToUInt32(operationsList.Get(i)));
+					_operations.Add(Convert::ToUInt32(operationsList.Get(i)));
 				}
 
-				_stage->_md5 = gcnew String(stage->_md5().c_str());
+				_md5 = gcnew String(stage->_md5().c_str());
 
 				auto selfDataList = stage->_self_data();
 				for (int i = 0; i < selfDataList.size(); ++i) {
-					_stage->_self_data.Add(Convert::ToUInt32(selfDataList.Get(i)));
+					_self_data.Add(Convert::ToUInt32(selfDataList.Get(i)));
 				}
-
-				return _stage;
 			}
 
 			virtual String^ ToString() override

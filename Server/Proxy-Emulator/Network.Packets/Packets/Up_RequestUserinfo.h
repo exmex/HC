@@ -18,6 +18,11 @@ namespace Network
 				MessageType = 4;
 			}
 
+			Up_RequestUserinfo(const up::request_userinfo* request) : Up_RequestUserinfo()
+			{
+				
+			}
+
 			virtual String^ ToString() override
 			{
 				return "";

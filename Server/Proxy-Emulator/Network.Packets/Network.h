@@ -112,7 +112,7 @@ namespace Network {
 				Up_UpMsg^ up_msg = gcnew Up_UpMsg(msg);
 				messages->Add(up_msg);
 
-				if (msg->has__login())
+				/*if (msg->has__login())
 				{
 					Up_Login^ login = gcnew Up_Login(&msg->_login());
 					messages->Add(login);
@@ -134,7 +134,238 @@ namespace Network {
 				{
 					Up_EnterStage^ enterStage = gcnew Up_EnterStage(&msg->_enter_stage());
 					messages->Add(enterStage);
-				}
+				}*/
+
+				if (msg->has__login())
+					messages->Add(gcnew Up_Login(&msg->_login()));
+
+				if (msg->has__request_userinfo())
+					messages->Add(gcnew Up_RequestUserinfo(&msg->_request_userinfo()));
+
+				if (msg->has__enter_stage())
+					messages->Add(gcnew Up_EnterStage(&msg->_enter_stage()));
+
+				if (msg->has__exit_stage())
+					messages->Add(gcnew Up_ExitStage(&msg->_exit_stage()));
+
+				if (msg->has__gm_cmd())
+					messages->Add(gcnew Up_GmCmd(&msg->_gm_cmd()));
+
+				if (msg->has__hero_upgrade())
+					messages->Add(gcnew Up_HeroUpgrade(&msg->_hero_upgrade()));
+
+				if (msg->has__equip_synthesis())
+					messages->Add(gcnew Up_EquipSynthesis(&msg->_equip_synthesis()));
+
+				if (msg->has__wear_equip())
+					messages->Add(gcnew Up_WearEquip(&msg->_wear_equip()));
+
+				if (msg->has__consume_item())
+					messages->Add(gcnew Up_ConsumeItem(&msg->_consume_item()));
+
+				if (msg->has__shop_refresh())
+					messages->Add(gcnew Up_ShopRefresh(&msg->_shop_refresh()));
+
+				if (msg->has__shop_consume())
+					messages->Add(gcnew Up_ShopConsume(&msg->_shop_consume()));
+
+				if (msg->has__skill_levelup())
+					messages->Add(gcnew Up_SkillLevelup(&msg->_skill_levelup()));
+
+				if (msg->has__sell_item())
+					messages->Add(gcnew Up_SellItem(&msg->_sell_item()));
+
+				if (msg->has__fragment_compose())
+					messages->Add(gcnew Up_FragmentCompose(&msg->_fragment_compose()));
+
+				if (msg->has__hero_equip_upgrade())
+					messages->Add(gcnew Up_HeroEquipUpgrade(&msg->_hero_equip_upgrade()));
+
+				if (msg->has__trigger_task())
+					messages->Add(gcnew Up_TriggerTask(&msg->_trigger_task()));
+
+				if (msg->has__require_rewards())
+					messages->Add(gcnew Up_RequireRewards(&msg->_require_rewards()));
+
+				if (msg->has__trigger_job())
+					messages->Add(gcnew Up_TriggerJob(&msg->_trigger_job()));
+
+				if (msg->has__job_rewards())
+					messages->Add(gcnew Up_JobRewards(&msg->_job_rewards()));
+
+				if (msg->has__reset_elite())
+					messages->Add(gcnew Up_ResetElite(&msg->_reset_elite()));
+
+				if (msg->has__sweep_stage())
+					messages->Add(gcnew Up_SweepStage(&msg->_sweep_stage()));
+
+				if (msg->has__buy_vitality())
+					messages->Add(gcnew Up_BuyVitality(&msg->_buy_vitality()));
+
+				if (msg->has__buy_skill_stren_point())
+					messages->Add(gcnew Up_BuySkillStrenPoint(&msg->_buy_skill_stren_point()));
+
+				if (msg->has__tavern_draw())
+					messages->Add(gcnew Up_TavernDraw(&msg->_tavern_draw()));
+
+				if (msg->has__query_data())
+					messages->Add(gcnew Up_QueryData(&msg->_query_data()));
+
+				if (msg->has__hero_evolve())
+					messages->Add(gcnew Up_HeroEvolve(&msg->_hero_evolve()));
+
+				if (msg->has__enter_act_stage())
+					messages->Add(gcnew Up_EnterActStage(&msg->_enter_act_stage()));
+
+				if (msg->has__sync_vitality())
+					messages->Add(gcnew Up_SyncVitality(&msg->_sync_vitality()));
+
+				if (msg->has__suspend_report())
+					messages->Add(gcnew Up_SuspendReport(&msg->_suspend_report()));
+
+				if (msg->has__tutorial())
+					messages->Add(gcnew Up_Tutorial(&msg->_tutorial()));
+
+				if (msg->has__ladder())
+					messages->Add(gcnew Up_Ladder(&msg->_ladder()));
+
+				if (msg->has__set_name())
+					messages->Add(gcnew Up_SetName(&msg->_set_name()));
+
+				if (msg->has__midas())
+					messages->Add(gcnew Up_Midas(&msg->_midas()));
+
+				if (msg->has__open_shop())
+					messages->Add(gcnew Up_OpenShop(&msg->_open_shop()));
+
+				if (msg->has__charge())
+					messages->Add(gcnew Up_Charge(&msg->_charge()));
+
+				if (msg->has__sdk_login())
+					messages->Add(gcnew Up_SdkLogin(&msg->_sdk_login()));
+
+				if (msg->has__set_avatar())
+					messages->Add(gcnew Up_SetAvatar(&msg->_set_avatar()));
+
+				if (msg->has__ask_daily_login())
+					messages->Add(gcnew Up_AskDailyLogin(&msg->_ask_daily_login()));
+
+				if (msg->has__tbc())
+					messages->Add(gcnew Up_Tbc(&msg->_tbc()));
+
+				if (msg->has__get_maillist())
+					messages->Add(gcnew Up_GetMaillist(&msg->_get_maillist()));
+
+				if (msg->has__read_mail())
+					messages->Add(gcnew Up_ReadMail(&msg->_read_mail()));
+
+				if (msg->has__get_svr_time())
+					messages->Add(gcnew Up_GetSvrTime(&msg->_get_svr_time()));
+
+				if (msg->has__get_vip_gift())
+					messages->Add(gcnew Up_GetVipGift(&msg->_get_vip_gift()));
+
+				if (msg->has__chat())
+					messages->Add(gcnew Up_Chat(&msg->_chat()));
+
+				if (msg->has__cdkey_gift())
+					messages->Add(gcnew Up_CdkeyGift(&msg->_cdkey_gift()));
+
+				if (msg->has__guild())
+					messages->Add(gcnew Up_Guild(&msg->_guild()));
+
+				if (msg->has__ask_magicsoul())
+					messages->Add(gcnew Up_AskMagicsoul(&msg->_ask_magicsoul()));
+
+				if (msg->has__ask_activity_info())
+					messages->Add(gcnew Up_AskActivityInfo(&msg->_ask_activity_info()));
+
+				if (msg->has__excavate())
+					messages->Add(gcnew Up_Excavate(&msg->_excavate()));
+
+				if (msg->has__push_notify())
+					messages->Add(gcnew Up_PushNotify(&msg->_push_notify()));
+
+				if (msg->has__system_setting())
+					messages->Add(gcnew Up_SystemSetting(&msg->_system_setting()));
+
+				if (msg->has__query_split_data())
+					messages->Add(gcnew Up_QuerySplitData(&msg->_query_split_data()));
+
+				if (msg->has__query_split_return())
+					messages->Add(gcnew Up_QuerySplitReturn(&msg->_query_split_return()));
+
+				if (msg->has__split_hero())
+					messages->Add(gcnew Up_SplitHero(&msg->_split_hero()));
+
+				if (msg->has__worldcup())
+					messages->Add(gcnew Up_Worldcup(&msg->_worldcup()));
+
+				if (msg->has__report_battle())
+					messages->Add(gcnew Up_ReportBattle(&msg->_report_battle()));
+
+				if (msg->has__query_replay())
+					messages->Add(gcnew Up_QueryReplay(&msg->_query_replay()));
+
+				if (msg->has__sync_skill_stren())
+					messages->Add(gcnew Up_SyncSkillStren(&msg->_sync_skill_stren()));
+
+				if (msg->has__query_ranklist())
+					messages->Add(gcnew Up_QueryRanklist(&msg->_query_ranklist()));
+
+				if (msg->has__change_server())
+					messages->Add(gcnew Up_ChangeServer(&msg->_change_server()));
+
+				if (msg->has__require_arousal())
+					messages->Add(gcnew Up_RequireArousal(&msg->_require_arousal()));
+
+				if (msg->has__change_task_status())
+					messages->Add(gcnew Up_ChangeTaskStatus(&msg->_change_task_status()));
+
+				if (msg->has__request_guild_log())
+					messages->Add(gcnew Up_RequestGuildLog(&msg->_request_guild_log()));
+
+				if (msg->has__query_act_stage())
+					messages->Add(gcnew Up_QueryActStage(&msg->_query_act_stage()));
+
+				if (msg->has__request_upgrade_arousal_level())
+					messages->Add(gcnew Up_RequestUpgradeArousalLevel(&msg->_request_upgrade_arousal_level()));
+
+				if (msg->has__fb_attention())
+					messages->Add(gcnew Up_FbAttention(&msg->_fb_attention()));
+
+				if (msg->has__dot_info())
+					messages->Add(gcnew Up_DotInfo(&msg->_dot_info()));
+
+				if (msg->has__activity_info())
+					messages->Add(gcnew Up_ActivityInfo(&msg->_activity_info()));
+
+				if (msg->has__activity_lotto_info())
+					messages->Add(gcnew Up_ActivityLottoInfo(&msg->_activity_lotto_info()));
+
+				if (msg->has__activity_lotto_reward())
+					messages->Add(gcnew Up_ActivityLottoReward(&msg->_activity_lotto_reward()));
+
+				if (msg->has__activity_bigpackage_info())
+					messages->Add(gcnew Up_ActivityBigpackageInfo(&msg->_activity_bigpackage_info()));
+
+				if (msg->has__activity_bigpackage_reward_info())
+					messages->Add(gcnew Up_ActivityBigpackageRewardInfo(&msg->_activity_bigpackage_reward_info()));
+
+				if (msg->has__activity_bigpackage_reset())
+					messages->Add(gcnew Up_ActivityBigpackageReset(&msg->_activity_bigpackage_reset()));
+
+				if (msg->has__continue_pay())
+					messages->Add(gcnew Up_ContinuePay(&msg->_continue_pay()));
+
+				if (msg->has__recharge_rebate())
+					messages->Add(gcnew Up_RechargeRebate(&msg->_recharge_rebate()));
+
+				if (msg->has__every_day_happy())
+					messages->Add(gcnew Up_EveryDayHappy(&msg->_every_day_happy()));
+
+
+
 
 				return messages;
 			}

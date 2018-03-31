@@ -18,6 +18,11 @@ namespace Network
 				MessageType = 44;
 			}
 
+			Up_GetSvrTime(const up::get_svr_time* get) : Up_GetSvrTime()
+			{
+				
+			}
+
 			virtual String^ ToString() override
 			{
 				return "";
