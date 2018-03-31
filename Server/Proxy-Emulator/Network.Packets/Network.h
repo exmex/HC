@@ -109,74 +109,30 @@ namespace Network {
 
 				List<Up_UpMsg^>^ messages = gcnew List<Up_UpMsg^>(2);
 
-				Up_UpMsg^ up_msg = gcnew Up_UpMsg();
-				// required uint32 _repeat = 1;
-				if (msg->has__repeat())
-				{
-					//Console::WriteLine(msg->_repeat());
-					up_msg->Repeat = Convert::ToInt32(msg->_repeat());
-				}
-
-				// optional uint32 _user_id = 2;
-				if (msg->has__user_id())
-				{
-					up_msg->UserId = Convert::ToInt32(msg->_user_id());
-					//Console::WriteLine(msg->_user_id());
-				}
+				Up_UpMsg^ up_msg = gcnew Up_UpMsg(msg);
 				messages->Add(up_msg);
 
-				// optional login _login = 3;
 				if (msg->has__login())
 				{
-					/*
-					Up_UpMsg {
-						1: _repeat => 0
-						2: _user_id => 1
-						3: _login =>
-						Up_Login {
-							1: _active_code => 0
-							2: _old_deviceid => 'win32_admin'
-							3: _version => '47b2607b941a7abc5ac4e2080e816123'
-							4: _languageid => 0
-						}
-						38: _sdk_login =>
-						Up_SdkLogin {
-							1: _session_key => '3333333333'
-							2: _plat_id => 0
-						}
-					}
-					 */
-
-					/*Up_Login^ login = gcnew Up_Login();
-					login->MessageType = 3;
-					login->_active_code = Convert::ToInt32((unsigned int)msg->_login()._active_code());
-					login->_old_deviceid = gcnew String(msg->_login()._old_deviceid().c_str());
-					login->_version = gcnew String(msg->_login()._version().c_str());
-					login->_languageid = Convert::ToInt32((unsigned int)msg->_login()._languageid());*/
-					Up_Login^ login = &msg->_login();
+					Up_Login^ login = gcnew Up_Login(&msg->_login());
 					messages->Add(login);
 				}
 
 				if (msg->has__sdk_login())
 				{
-					/*Up_SdkLogin^ sdkLogin = gcnew Up_SdkLogin();
-					sdkLogin->MessageType = 38;
-					sdkLogin->_session_key = gcnew String(msg->_sdk_login()._session_key().c_str());
-					sdkLogin->_plat_id = Convert::ToInt32(msg->_sdk_login()._plat_id());*/
-					Up_SdkLogin^ sdkLogin = &msg->_sdk_login();
+					Up_SdkLogin^ sdkLogin = gcnew Up_SdkLogin(&msg->_sdk_login());
 					messages->Add(sdkLogin);
 				}
 
 				if (msg->has__system_setting())
 				{
-					//Up_SystemSetting^ systemSetting = gcnew Up_SystemSetting(msg->_system_setting()._request(), msg->_system_setting()._change());
-					Up_SystemSetting^ systemSetting = &msg->_system_setting();
+					Up_SystemSetting^ systemSetting = gcnew Up_SystemSetting(&msg->_system_setting());
 					messages->Add(systemSetting);
 				}
 
 				if(msg->has__enter_stage())
 				{
-					Up_EnterStage^ enterStage = &msg->_enter_stage();
+					Up_EnterStage^ enterStage = gcnew Up_EnterStage(&msg->_enter_stage());
 					messages->Add(enterStage);
 				}
 

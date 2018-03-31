@@ -12,6 +12,12 @@ namespace Network {
 		{
 		public:
 
+			enum class ChatChannel {
+				world_channel = 1,
+				guild_channel = 2,
+				personal_channel = 3
+			};
+
 			enum class BattleResult
 			{
 				victory = 0,
@@ -60,6 +66,25 @@ namespace Network {
 			Int32 ^ UserId;
 			Int32 ^ Repeat;
 			Int32 ^ MessageType;
+
+			String^ _important_data_md5;
+
+			Up_UpMsg()
+			{
+				
+			}
+
+			Up_UpMsg(const up::up_msg* msg)
+			{
+				if (msg->has__repeat())
+					Repeat = Convert::ToInt32(msg->_repeat());
+
+				if (msg->has__user_id())
+					UserId = Convert::ToInt32(msg->_user_id());
+
+				if (msg->has__important_data_md5())
+					_important_data_md5 = gcnew String(msg->_important_data_md5().c_str());
+			}
 
 			virtual String^ ToString() override
 			{

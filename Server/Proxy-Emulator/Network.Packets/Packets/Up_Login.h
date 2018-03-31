@@ -20,14 +20,12 @@ namespace Network {
 				MessageType = 3;
 			}
 
-			static operator Up_Login ^ (const up::login* login)
+			Up_Login(const up::login* login) : Up_Login()
 			{
-				Up_Login^ _login = gcnew Up_Login();
-				_login->_active_code = Convert::ToInt32(login->_active_code());
-				_login->_old_deviceid = gcnew String(login->_old_deviceid().c_str());
-				_login->_version = gcnew String(login->_version().c_str());
-				_login->_languageid = Convert::ToInt32(login->_languageid());
-				return _login;
+				_active_code = Convert::ToInt32(login->_active_code());
+				_old_deviceid = gcnew String(login->_old_deviceid().c_str());
+				_version = gcnew String(login->_version().c_str());
+				_languageid = Convert::ToInt32(login->_languageid());				
 			}
 
 			virtual String^ ToString() override

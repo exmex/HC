@@ -20,11 +20,9 @@ namespace Network
 				MessageType = 5;
 			}
 
-			static operator Up_EnterStage^ (const up::enter_stage* stage)
+			Up_EnterStage(const up::enter_stage* stage)
 			{
-				Up_EnterStage^ _stage = gcnew Up_EnterStage();
-				_stage->_stage_id = stage->_stage_id();
-				return _stage;
+				_stage_id = stage->_stage_id();
 			}
 
 			virtual String^ ToString() override

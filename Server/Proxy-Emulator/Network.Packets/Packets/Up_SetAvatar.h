@@ -13,9 +13,16 @@ namespace Network
 		// _set_avatar, 39
 		public ref struct Up_SetAvatar : Up_UpMsg
 		{
+			UInt32^ _avatar;
+
 			Up_SetAvatar()
 			{
 				MessageType = 39;
+			}
+
+			Up_SetAvatar(const up::set_avatar* set) : Up_SetAvatar()
+			{
+				_avatar = Convert::ToUInt32(set->_avatar());
 			}
 
 			virtual String^ ToString() override

@@ -18,6 +18,11 @@ namespace Network
 				MessageType = 42;
 			}
 
+			Up_GetMaillist(const up::get_maillist* get) : Up_GetMaillist()
+			{
+				
+			}
+
 			virtual String^ ToString() override
 			{
 				return "";
