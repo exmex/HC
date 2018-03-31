@@ -18,6 +18,11 @@ namespace Network
 				MessageType = 51;
 			}
 
+			Up_AskActivityInfo(const up::ask_activity_info* ask) : Up_AskActivityInfo()
+			{
+
+			}
+
 			virtual String^ ToString() override
 			{
 				return "";

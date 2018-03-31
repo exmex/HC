@@ -18,6 +18,11 @@ namespace Network
 				MessageType = 68;
 			}
 
+			Up_RequestUpgradeArousalLevel(const up::request_upgrade_arousal_level* request) : Up_RequestUpgradeArousalLevel()
+			{
+				
+			}
+
 			virtual String^ ToString() override
 			{
 				return "";

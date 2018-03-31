@@ -13,9 +13,18 @@ namespace Network
 		// _split_hero, 57
 		public ref struct Up_SplitHero : Up_UpMsg
 		{
+			UInt32 _tid;
+			UInt32 _stone_id;
+
 			Up_SplitHero()
 			{
 				MessageType = 57;
+			}
+
+			Up_SplitHero(const up::split_hero* split) : Up_SplitHero()
+			{
+				_tid = Convert::ToUInt32(split->_tid());
+				_stone_id = Convert::ToUInt32(split->_stone_id());
 			}
 
 			virtual String^ ToString() override

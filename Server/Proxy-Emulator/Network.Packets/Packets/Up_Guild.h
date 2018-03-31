@@ -142,9 +142,9 @@ namespace Network
 
 		};
 
-		public ref struct GuildOpenPannel
+		public ref struct GuildOpenPanel
 		{
-			GuildOpenPannel(const up::guild_open_pannel* guild)
+			GuildOpenPanel(const up::guild_open_pannel* guild)
 			{
 
 			}
@@ -481,7 +481,7 @@ namespace Network
 			GuildKick^ _kick;
 			GuildSet^ _set;
 			GuildQuery^ _query;
-			GuildOpenPannel^ _open_pannel;
+			GuildOpenPanel^ _open_panel;
 			GuildSetJob^ _set_job;
 			GuildAddHire^ _add_hire;
 			GuildDelHire^ _del_hire;
@@ -511,6 +511,46 @@ namespace Network
 			Up_Guild()
 			{
 				MessageType = 49;
+			}
+
+			Up_Guild(const up::guild* guild) : Up_Guild()
+			{
+				_create = gcnew GuildCreate(&guild->_create());
+				_dismiss = gcnew GuildDismiss(&guild->_dismiss());
+				_list = gcnew GuildList(&guild->_list());
+				_search = gcnew GuildSearch(&guild->_search());
+				_join = gcnew GuildJoin(&guild->_join());
+				_join_confirm = gcnew GuildJoinConfirm(&guild->_join_confirm());
+				_guild_leave = gcnew GuildLeave(&guild->_guild_leave());
+				_kick = gcnew GuildKick(&guild->_kick());
+				_set = gcnew GuildSet(&guild->_set());
+				_query = gcnew GuildQuery(&guild->_query());
+				_open_panel = gcnew GuildOpenPanel(&guild->_open_pannel());
+				_set_job = gcnew GuildSetJob(&guild->_set_job());
+				_add_hire = gcnew GuildAddHire(&guild->_add_hire());
+				_del_hire = gcnew GuildDelHire(&guild->_del_hire());
+				_query_hires = gcnew GuildQueryHires(&guild->_query_hires());
+				_hire_hero = gcnew GuildHireHero(&guild->_hire_hero());
+				_worship_req = gcnew GuildWorshipReq(&guild->_worship_req());
+				_worship_withdraw = gcnew GuildWorshipWithdraw(&guild->_worship_withdraw());
+				_query_hh_detail = gcnew GuildQureyHhDetail(&guild->_query_hh_detail());
+				_instance_query = gcnew GuildInstanceQuery(&guild->_instance_query());
+				_instance_detail = gcnew GuildInstanceDetail(&guild->_instance_detail());
+				_instance_start = gcnew GuildInstanceStart(&guild->_instance_start());
+				_instance_end = gcnew GuildInstanceEnd(&guild->_instance_end());
+				_instance_drop = gcnew GuildInstanceDrop(&guild->_instance_drop());
+				_instance_open = gcnew GuildInstanceOpen(&guild->_instance_open());
+				_instance_apply = gcnew GuildInstanceApply(&guild->_instance_apply());
+				_drop_info = gcnew GuildDropInfo(&guild->_drop_info());
+				_drop_give = gcnew GuildDropGive(&guild->_drop_give());
+				_instance_damage = gcnew GuildInstanceDamage(&guild->_instance_damage());
+				_items_history = gcnew GuildItemsHistory(&guild->_items_history());
+				_guild_jump = gcnew GuildJump(&guild->_guild_jump());
+				_guild_app_queue = gcnew GuildAppQueue(&guild->_guild_app_queue());
+				_instance_prepare = gcnew GuildPrepareInstance(&guild->_instance_prepare());
+				_guild_query_member = gcnew GuildQueryMember(&guild->_guild_query_member());
+				_guild_stage_rank = gcnew GuildStageRank(&guild->_guild_stage_rank());
+				_set_jump = gcnew GuildSetJump(&guild->_set_jump());
 			}
 
 			virtual String^ ToString() override

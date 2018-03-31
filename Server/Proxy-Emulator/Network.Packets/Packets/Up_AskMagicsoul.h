@@ -18,6 +18,11 @@ namespace Network
 				MessageType = 50;
 			}
 
+			Up_AskMagicsoul(const up::ask_magicsoul* ask) : Up_AskMagicsoul()
+			{
+				
+			}
+
 			virtual String^ ToString() override
 			{
 				return "";

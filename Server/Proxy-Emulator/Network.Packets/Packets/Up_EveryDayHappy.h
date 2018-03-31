@@ -13,9 +13,16 @@ namespace Network
 		// _every_day_happy, 304
 		public ref struct Up_EveryDayHappy : Up_UpMsg
 		{
+			UInt32 _every_day_happy;
+
 			Up_EveryDayHappy()
 			{
 				MessageType = 304;
+			}
+
+			Up_EveryDayHappy(const up::every_day_happy* everyday) : Up_EveryDayHappy()
+			{
+				_every_day_happy = Convert::ToUInt32(everyday->_every_day_happy());
 			}
 
 			virtual String^ ToString() override

@@ -17,6 +17,11 @@ namespace Network
 			{
 				MessageType = 66;
 			}
+			
+			Up_RequestGuildLog(const up::request_guild_log* request) : Up_RequestGuildLog()
+			{
+				
+			}
 
 			virtual String^ ToString() override
 			{

@@ -13,9 +13,16 @@ namespace Network
 		// _continue_pay, 302
 		public ref struct Up_ContinuePay : Up_UpMsg
 		{
+			UInt32 _continue_pay;
+
 			Up_ContinuePay()
 			{
 				MessageType = 302;
+			}
+
+			Up_ContinuePay(const up::continue_pay* pay) : Up_ContinuePay()
+			{
+				_continue_pay = Convert::ToUInt32(pay->_continue_pay());
 			}
 
 			virtual String^ ToString() override

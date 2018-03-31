@@ -18,6 +18,11 @@ namespace Network
 				MessageType = 55;
 			}
 
+			Up_QuerySplitData(const up::query_split_data* query) : Up_QuerySplitData()
+			{
+				
+			}
+
 			virtual String^ ToString() override
 			{
 				return "";
