@@ -60,7 +60,10 @@ namespace Network
 
 		public ref struct ChatFetchBl
 		{
-			
+			ChatFetchBl(const up::chat_fetch_bl* chat)
+			{
+				
+			}
 		};
 
 		public ref struct ChatSay
@@ -147,6 +150,17 @@ namespace Network
 			Up_Chat()
 			{
 				MessageType = 47;
+			}
+
+			Up_Chat(const up::chat* chat) : Up_Chat()
+			{
+				_say = gcnew ChatSay(&chat->_say());
+				_fresh = gcnew ChatFresh(&chat->_fresh());
+				_fetch = gcnew ChatFetch(&chat->_fetch());
+				_chat_add_bl = gcnew ChatAddBl(&chat->_chat_add_bl());
+				_chat_del_bl = gcnew ChatDelBl(&chat->_chat_del_bl());
+				_chat_fetch_bl = gcnew ChatFetchBl(&chat->_chat_fetch_bl());
+				_chat_broad_say = gcnew ChatBroadSay(&chat->_chat_broad_say());
 			}
 
 			virtual String^ ToString() override

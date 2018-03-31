@@ -63,6 +63,19 @@ namespace Network {
 				vivo_android = 117,
 			};
 
+			enum class GuildJobT {
+				chairman = 1,
+				member = 2,
+				elder = 3,
+			};
+
+			enum class HireFrom {
+				hire_from_guild = 0,
+				hire_from_tbc = 1,
+				stage = 2,
+				excav = 3,
+			};
+
 			Int32 ^ UserId;
 			Int32 ^ Repeat;
 			Int32 ^ MessageType;
