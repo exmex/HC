@@ -76,12 +76,14 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\x86\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\x86\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -140,6 +142,73 @@
   <ItemGroup>
     <ClInclude Include="Network.h" />
     <ClInclude Include="Packets.h" />
+    <ClInclude Include="Packets\Down_ActivityBigpackageInfoReply.h" />
+    <ClInclude Include="Packets\Down_ActivityBigpackageResetReply.h" />
+    <ClInclude Include="Packets\Down_ActivityBigpackageRewardReply.h" />
+    <ClInclude Include="Packets\Down_ActivityInfos.h" />
+    <ClInclude Include="Packets\Down_ActivityLottoInfoReply.h" />
+    <ClInclude Include="Packets\Down_ActivityLottoRewardReply.h" />
+    <ClInclude Include="Packets\Down_AskDailyLoginReply.h" />
+    <ClInclude Include="Packets\Down_AskMagicsoulReply.h" />
+    <ClInclude Include="Packets\Down_BattleCheckFail.h" />
+    <ClInclude Include="Packets\Down_CdkeyGiftReply.h" />
+    <ClInclude Include="Packets\Down_ChangeServerReply.h" />
+    <ClInclude Include="Packets\Down_ChargeReply.h" />
+    <ClInclude Include="Packets\Down_ChatReply.h" />
+    <ClInclude Include="Packets\Down_ConsumeItemReply.h" />
+    <ClInclude Include="Packets\Down_ContinuePayReply.h" />
+    <ClInclude Include="Packets\Down_EnterStageReply.h" />
+    <ClInclude Include="Packets\Down_EquipSynthesisReply.h" />
+    <ClInclude Include="Packets\Down_ErrorInfo.h" />
+    <ClInclude Include="Packets\Down_EveryDayHappyReply.h" />
+    <ClInclude Include="Packets\Down_ExcavateReply.h" />
+    <ClInclude Include="Packets\Down_ExitStageReply.h" />
+    <ClInclude Include="Packets\Down_FbAttentionReply.h" />
+    <ClInclude Include="Packets\Down_FragmentComposeReply.h" />
+    <ClInclude Include="Packets\Down_GetMaillistReply.h" />
+    <ClInclude Include="Packets\Down_GetVipGiftReply.h" />
+    <ClInclude Include="Packets\Down_GuildReply.h" />
+    <ClInclude Include="Packets\Down_HeroEquipUpgradeReply.h" />
+    <ClInclude Include="Packets\Down_HeroEvolveReply.h" />
+    <ClInclude Include="Packets\Down_HeroUpgradeReply.h" />
+    <ClInclude Include="Packets\Down_JobRewardsReply.h" />
+    <ClInclude Include="Packets\Down_LadderReply.h" />
+    <ClInclude Include="Packets\Down_LoginReply.h" />
+    <ClInclude Include="Packets\Down_MidasReply.h" />
+    <ClInclude Include="Packets\Down_NotifyMsg.h" />
+    <ClInclude Include="Packets\Down_OpenShopReply.h" />
+    <ClInclude Include="Packets\Down_ActivityInfoReply.h" />
+    <ClInclude Include="Packets\Down_QueryDataReply.h" />
+    <ClInclude Include="Packets\Down_QueryRanklistReply.h" />
+    <ClInclude Include="Packets\Down_QueryReplay.h" />
+    <ClInclude Include="Packets\Down_QuerySplitDataReply.h" />
+    <ClInclude Include="Packets\Down_QuerySplitReturnReply.h" />
+    <ClInclude Include="Packets\Down_ReadMailReply.h" />
+    <ClInclude Include="Packets\Down_RechargeRebateReply.h" />
+    <ClInclude Include="Packets\Down_RequireRewardsReply.h" />
+    <ClInclude Include="Packets\Down_Reset.h" />
+    <ClInclude Include="Packets\Down_ResetEliteReply.h" />
+    <ClInclude Include="Packets\Down_SdkLoginReply.h" />
+    <ClInclude Include="Packets\Down_SellItemReply.h" />
+    <ClInclude Include="Packets\Down_SetAvatarReply.h" />
+    <ClInclude Include="Packets\Down_SetNameReply.h" />
+    <ClInclude Include="Packets\Down_ShopConsumeReply.h" />
+    <ClInclude Include="Packets\Down_SkillLevelupReply.h" />
+    <ClInclude Include="Packets\Down_SplitHeroReply.h" />
+    <ClInclude Include="Packets\Down_SuperLink.h" />
+    <ClInclude Include="Packets\Down_SweepStageReply.h" />
+    <ClInclude Include="Packets\Down_SyncSkillStrenReply.h" />
+    <ClInclude Include="Packets\Down_SyncVitalityReply.h" />
+    <ClInclude Include="Packets\Down_SystemSettingReply.h" />
+    <ClInclude Include="Packets\Down_TavernDrawReply.h" />
+    <ClInclude Include="Packets\Down_TbcReply.h" />
+    <ClInclude Include="Packets\Down_TriggerJobReply.h" />
+    <ClInclude Include="Packets\Down_TriggerTaskReply.h" />
+    <ClInclude Include="Packets\Down_TutorialReply.h" />
+    <ClInclude Include="Packets\Down_UserCheck.h" />
+    <ClInclude Include="Packets\Down_UserShop.h" />
+    <ClInclude Include="Packets\Down_WearEquipReply.h" />
+    <ClInclude Include="Packets\Down_WorldcupReply.h" />
     <ClInclude Include="Packets\Up_ActivityBigpackageInfo.h" />
     <ClInclude Include="Packets\Up_ActivityBigpackageReset.h" />
     <ClInclude Include="Packets\Up_ActivityBigpackageRewardInfo.h" />
@@ -220,6 +289,7 @@
     <ClInclude Include="Packets\Up_Worldcup.h" />
     <ClInclude Include="pb\bcdown.pb.h" />
     <ClInclude Include="pb\bcup.pb.h" />
+    <ClInclude Include="pb\down.pb.h" />
     <ClInclude Include="pb\up.pb.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Stdafx.h" />
@@ -234,6 +304,12 @@
     <ClCompile Include="pb\bcup.pb.cc">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="pb\down.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">/bigobj %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="pb\up.pb.cc">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>

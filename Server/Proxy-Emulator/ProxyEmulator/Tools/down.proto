@@ -44,7 +44,7 @@ enum hero_status {
 enum server_opt_result {
     get_ok    = 0;    //get list
     change_ok = 1;    //change server
-    fail      = 2;
+    server_opt_result_fail      = 2;
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -401,8 +401,8 @@ message user_summary {
 
 //雇佣结果
 enum hire_result {
-    success = 0;
-    fail    = 1;
+    hire_result_success = 0;
+    hire_result_fail    = 1;
     stage_invalid = 2;
 }
 
@@ -523,7 +523,7 @@ message usermidas {
 
 // 触发任务的返回
 message trigger_task_reply {
-    repeated result     _result = 1 [default = success];
+    repeated result     _result = 1; //[default = success];
 }
 
 // 要求任务奖励的返回
@@ -534,7 +534,7 @@ message require_rewards_reply {
 
 // 每日活动触发返回
 message trigger_job_reply {
-    repeated result     _result = 1 [default = success];
+    repeated result     _result = 1; //[default = success];
 }
 
 // 活动奖励
@@ -931,7 +931,7 @@ message sys_mail {
     enum status {
         unread  = 0;
         read    = 1;
-        delete    = 2;
+        _delete    = 2;
     }
     required uint32 _id             = 1;
     required status _status         = 2;
@@ -1093,7 +1093,7 @@ message guild_reply {
     optional guild_search           _search             = 4;        //按条件查询公会 ok
     optional guild_join             _join               = 5;        //加入公会 ok
     optional guild_join_confirm     _join_confirm       = 6;        //加入公会确认 ok
-    optional guild_leave            _leave              = 7;        //离开公会 ok
+    optional guild_leave            _guild_leave              = 7;        //离开公会 ok
     optional guild_kick             _kick               = 8;        //踢出公会 ok
     optional guild_set              _set                = 9;        //设置公会信息 ok
     optional guild_query            _query              = 10;       //查询本公会信息 ok
@@ -1544,7 +1544,7 @@ message res_pack {
 }
 
 message ask_magicsoul_reply {
-  repeated uint32 _id = 0 ; // 当前魂匣英雄列表，1号位为当月热点
+  repeated uint32 _id = 1; // 当前魂匣英雄列表，1号位为当月热点
 }
 
 // 用于客户端和服务器之间重要数据的md5校验
@@ -1755,8 +1755,8 @@ message server_info {
 // 公会副本
 message guild_instance_query {
     enum is_can_jump {
-        true     = 1;
-        false    = 2;
+        _true     = 1;
+        _false    = 2;
     }
     required uint32 _current_raid_id = 1;
     repeated guild_instance_summary _summary = 2;

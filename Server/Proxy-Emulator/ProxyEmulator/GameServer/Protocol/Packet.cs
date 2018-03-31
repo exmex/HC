@@ -158,7 +158,7 @@ namespace GameServer.Protocol
                 }
             }
 
-            var obj = Class1.ParseDownMsg(output);
+            var obj = Class1.ParseUpMsg(output);
             Logger.Debug(((Up_Login)obj[0]).ToString());
             Logger.Debug(((Up_SdkLogin)obj[1]).ToString());
 

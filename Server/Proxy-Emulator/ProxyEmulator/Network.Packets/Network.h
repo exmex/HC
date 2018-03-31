@@ -81,6 +81,76 @@
 #include "Packets\Up_WearEquip.h"
 #include "Packets\Up_Worldcup.h"
 
+#include "pb\down.pb.h"
+
+#include "Packets\Down_LoginReply.h"
+#include "Packets\Down_Reset.h"
+#include "Packets\Down_EnterStageReply.h"
+#include "Packets\Down_ExitStageReply.h"
+#include "Packets\Down_HeroUpgradeReply.h"
+#include "Packets\Down_EquipSynthesisReply.h"
+#include "Packets\Down_WearEquipReply.h"
+#include "Packets\Down_ConsumeItemReply.h"
+#include "Packets\Down_UserShop.h"
+#include "Packets\Down_ShopConsumeReply.h"
+#include "Packets\Down_SkillLevelupReply.h"
+#include "Packets\Down_SellItemReply.h"
+#include "Packets\Down_FragmentComposeReply.h"
+#include "Packets\Down_HeroEquipUpgradeReply.h"
+#include "Packets\Down_TriggerTaskReply.h"
+#include "Packets\Down_RequireRewardsReply.h"
+#include "Packets\Down_TriggerJobReply.h"
+#include "Packets\Down_JobRewardsReply.h"
+#include "Packets\Down_ResetEliteReply.h"
+#include "Packets\Down_SweepStageReply.h"
+#include "Packets\Down_TavernDrawReply.h"
+#include "Packets\Down_SyncSkillStrenReply.h"
+#include "Packets\Down_QueryDataReply.h"
+#include "Packets\Down_HeroEvolveReply.h"
+#include "Packets\Down_SyncVitalityReply.h"
+#include "Packets\Down_UserCheck.h"
+#include "Packets\Down_TutorialReply.h"
+#include "Packets\Down_ErrorInfo.h"
+#include "Packets\Down_LadderReply.h"
+#include "Packets\Down_SetNameReply.h"
+#include "Packets\Down_MidasReply.h"
+#include "Packets\Down_OpenShopReply.h"
+#include "Packets\Down_ChargeReply.h"
+#include "Packets\Down_SdkLoginReply.h"
+#include "Packets\Down_SetAvatarReply.h"
+#include "Packets\Down_NotifyMsg.h"
+#include "Packets\Down_AskDailyLoginReply.h"
+#include "Packets\Down_TbcReply.h"
+#include "Packets\Down_GetMaillistReply.h"
+#include "Packets\Down_ReadMailReply.h"
+#include "Packets\Down_GetVipGiftReply.h"
+#include "Packets\Down_ChatReply.h"
+#include "Packets\Down_CdkeyGiftReply.h"
+#include "Packets\Down_GuildReply.h"
+#include "Packets\Down_AskMagicsoulReply.h"
+#include "Packets\Down_ActivityInfos.h"
+#include "Packets\Down_ExcavateReply.h"
+#include "Packets\Down_SystemSettingReply.h"
+#include "Packets\Down_QuerySplitDataReply.h"
+#include "Packets\Down_QuerySplitReturnReply.h"
+#include "Packets\Down_SplitHeroReply.h"
+#include "Packets\Down_WorldcupReply.h"
+#include "Packets\Down_BattleCheckFail.h"
+#include "Packets\Down_QueryReplay.h"
+#include "Packets\Down_SuperLink.h"
+#include "Packets\Down_QueryRanklistReply.h"
+#include "Packets\Down_ChangeServerReply.h"
+#include "Packets\Down_ActivityInfoReply.h"
+#include "Packets\Down_ActivityLottoInfoReply.h"
+#include "Packets\Down_ActivityLottoRewardReply.h"
+#include "Packets\Down_ActivityBigpackageInfoReply.h"
+#include "Packets\Down_ActivityBigpackageRewardReply.h"
+#include "Packets\Down_ActivityBigpackageResetReply.h"
+#include "Packets\Down_FbAttentionReply.h"
+#include "Packets\Down_ContinuePayReply.h"
+#include "Packets\Down_RechargeRebateReply.h"
+#include "Packets\Down_EveryDayHappyReply.h"
+
 #include <iostream>
 #pragma once
 
@@ -95,7 +165,20 @@ namespace Network {
 		public ref class Class1
 		{
 		public:
-			static List<Up_UpMsg^>^ ParseDownMsg(array<Byte>^ data)
+			static array<Byte>^ ParseDownMsg()
+			{
+				down::down_msg* msg = new down::down_msg();
+
+				array<Byte>^ data = gcnew array<Byte>(msg->ByteSize());
+				pin_ptr<unsigned char> data_pin = &data[0];
+				unsigned char* data_ptr = data_pin;
+
+				msg->SerializeToArray(data_ptr, data->Length);
+
+				return data;
+			}
+
+			static List<Up_UpMsg^>^ ParseUpMsg(array<Byte>^ data)
 			{
 				int dataLen = data->Length;
 				pin_ptr<unsigned char> data_pin = &data[0];

@@ -80,7 +80,7 @@ namespace Network
                     }
 
                     Payload = reader.ReadBytes(len);
-                    Messages = Class1.ParseDownMsg(Payload);
+                    Messages = Class1.ParseUpMsg(Payload);
                 }
             }
         }

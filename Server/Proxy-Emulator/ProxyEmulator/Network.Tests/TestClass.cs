@@ -47,7 +47,7 @@ namespace Network.Tests
             Assert.AreEqual(XProtoPackets.SendProtoBuff, (int)packet.Id);
             
             var protoBufPacket = new ProtoBuffPacket(packet.Payload);
-            Assert.AreEqual(2, protoBufPacket.Messages.Count);
+            Assert.AreEqual(3, protoBufPacket.Messages.Count);
 
             var protoBufMessage = protoBufPacket.Messages[0];
             Assert.IsAssignableFrom(typeof(Up_Login), protoBufMessage);

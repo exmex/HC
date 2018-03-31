@@ -184,7 +184,7 @@ namespace Network
                 }
             }
 
-            var obj = Class1.ParseDownMsg(output);
+            var obj = Class1.ParseUpMsg(output);
         }
     }
 }
