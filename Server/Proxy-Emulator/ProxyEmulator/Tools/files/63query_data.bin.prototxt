@@ -1,0 +1,12 @@
+_repeat: 0
+_user_id: 1
+_query_data {
+  _type: rmb
+  _type: recharge
+  _type: monthcard
+  _month_card_id: 10300
+}
+_sdk_login {
+  _session_key: "1521792852"
+  _plat_id: self
+}

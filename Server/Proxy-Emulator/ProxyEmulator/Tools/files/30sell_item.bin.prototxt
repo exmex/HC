@@ -1,0 +1,12 @@
+_repeat: 0
+_user_id: 1
+_sell_item {
+  _item: 25974
+  _item: 60789
+  _item: 1396
+  _item: 1408
+}
+_sdk_login {
+  _session_key: "1521637696"
+  _plat_id: self
+}

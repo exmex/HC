@@ -1,0 +1,9 @@
+_repeat: 0
+_user_id: 1
+_hero_evolve {
+  _heroid: 5
+}
+_sdk_login {
+  _session_key: "1521792852"
+  _plat_id: self
+}

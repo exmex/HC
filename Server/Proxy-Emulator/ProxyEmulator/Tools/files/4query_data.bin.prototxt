@@ -1,0 +1,12 @@
+_repeat: 0
+_user_id: 1
+_query_data {
+  _type: hero
+  _query_heroes: 8
+  _query_heroes: 16
+  _query_heroes: 10
+}
+_sdk_login {
+  _session_key: "1521792852"
+  _plat_id: self
+}

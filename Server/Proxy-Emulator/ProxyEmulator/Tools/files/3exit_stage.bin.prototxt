@@ -1,0 +1,23 @@
+_repeat: 0
+_user_id: 1
+_exit_stage {
+  _stars: 3
+  _heroes: 1
+  _heroes: 8
+  _heroes: 5
+  _heroes: 16
+  _heroes: 10
+  _oprations: 15048
+  _oprations: 15584
+  _oprations: 18000
+  _oprations: 23208
+  _self_data: 8586
+  _self_data: 9425
+  _self_data: 10000
+  _self_data: 10000
+  _self_data: 10000
+}
+_sdk_login {
+  _session_key: "1521792852"
+  _plat_id: self
+}

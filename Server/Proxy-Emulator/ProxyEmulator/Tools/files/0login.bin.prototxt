@@ -1,0 +1,12 @@
+_repeat: 0
+_user_id: 1
+_login {
+  _active_code: 0
+  _old_deviceid: "win32_admin"
+  _version: "47b2607b941a7abc5ac4e2080e816123"
+  _languageid: 0
+}
+_sdk_login {
+  _session_key: "3333333333"
+  _plat_id: self
+}

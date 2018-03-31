@@ -1,0 +1,1 @@
+xcopy ..\Resource_Client\data\up.proto .\ /Y && protoc up.proto --cpp_out=.\ && xcopy up.pb.cc ..\..\Server\Proxy-Emulator\Network\pb\ /Y && xcopy up.pb.h ..\..\Server\Proxy-Emulator\Network\pb\ /Y

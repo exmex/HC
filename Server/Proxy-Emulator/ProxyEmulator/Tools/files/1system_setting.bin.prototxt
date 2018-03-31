@@ -1,0 +1,12 @@
+_repeat: 0
+_user_id: 1
+_sdk_login {
+  _session_key: "1521888531"
+  _plat_id: self
+}
+_system_setting {
+  _change {
+    key: "language"
+    value: "en-US"
+  }
+}

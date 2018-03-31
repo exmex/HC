@@ -1,0 +1,10 @@
+_repeat: 0
+_user_id: 1
+_enter_stage {
+  _stage_id: 4
+}
+_sdk_login {
+  _session_key: "1521637696"
+  _plat_id: self
+}
+_important_data_md5: "69371a2117b5eca675a845e7cdbe34cf"

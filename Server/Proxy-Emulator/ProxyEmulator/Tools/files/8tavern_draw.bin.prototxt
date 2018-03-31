@@ -1,0 +1,10 @@
+_repeat: 0
+_user_id: 1
+_tavern_draw {
+  _draw_type: combo
+  _box_type: magicsoul
+}
+_sdk_login {
+  _session_key: "1521637696"
+  _plat_id: self
+}

@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{F217B5B6-0EE4-4B51-91C4-80845A9BBE0A}</ProjectGuid>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>Network.Packets</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <ProjectName>Network.Packets</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalIncludeDirectories>H:\Source\HG\Client\Code_Core\protobuf-2.5.0rc1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libprotobuf.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>H:\Source\HG\Client\Code_Core\protobuf-2.5.0rc1\vsprojects\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalIncludeDirectories>H:\Source\HG\Client\Code_Core\protobuf-2.5.0rc1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libprotobuf.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>H:\Source\HG\Client\Code_Core\protobuf-2.5.0rc1\vsprojects\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Network.h" />
+    <ClInclude Include="Packets.h" />
+    <ClInclude Include="Packets\Up_ActivityBigpackageInfo.h" />
+    <ClInclude Include="Packets\Up_ActivityBigpackageReset.h" />
+    <ClInclude Include="Packets\Up_ActivityBigpackageRewardInfo.h" />
+    <ClInclude Include="Packets\Up_ActivityInfo.h" />
+    <ClInclude Include="Packets\Up_ActivityLottoInfo.h" />
+    <ClInclude Include="Packets\Up_ActivityLottoReward.h" />
+    <ClInclude Include="Packets\Up_AskActivityInfo.h" />
+    <ClInclude Include="Packets\Up_AskDailyLogin.h" />
+    <ClInclude Include="Packets\Up_AskMagicsoul.h" />
+    <ClInclude Include="Packets\Up_BuySkillStrenPoint.h" />
+    <ClInclude Include="Packets\Up_BuyVitality.h" />
+    <ClInclude Include="Packets\Up_CdkeyGift.h" />
+    <ClInclude Include="Packets\Up_ChangeServer.h" />
+    <ClInclude Include="Packets\Up_ChangeTaskStatus.h" />
+    <ClInclude Include="Packets\Up_Charge.h" />
+    <ClInclude Include="Packets\Up_Chat.h" />
+    <ClInclude Include="Packets\Up_ConsumeItem.h" />
+    <ClInclude Include="Packets\Up_ContinuePay.h" />
+    <ClInclude Include="Packets\Up_DotInfo.h" />
+    <ClInclude Include="Packets\Up_EnterActStage.h" />
+    <ClInclude Include="Packets\Up_EnterStage.h" />
+    <ClInclude Include="Packets\Up_EquipSynthesis.h" />
+    <ClInclude Include="Packets\Up_EveryDayHappy.h" />
+    <ClInclude Include="Packets\Up_Excavate.h" />
+    <ClInclude Include="Packets\Up_ExitStage.h" />
+    <ClInclude Include="Packets\Up_FbAttention.h" />
+    <ClInclude Include="Packets\Up_FragmentCompose.h" />
+    <ClInclude Include="Packets\Up_GetMaillist.h" />
+    <ClInclude Include="Packets\Up_GetSvrTime.h" />
+    <ClInclude Include="Packets\Up_GetVipGift.h" />
+    <ClInclude Include="Packets\Up_GmCmd.h" />
+    <ClInclude Include="Packets\Up_Guild.h" />
+    <ClInclude Include="Packets\Up_HeroEquipUpgrade.h" />
+    <ClInclude Include="Packets\Up_HeroEvolve.h" />
+    <ClInclude Include="Packets\Up_HeroUpgrade.h" />
+    <ClInclude Include="Packets\Up_JobRewards.h" />
+    <ClInclude Include="Packets\Up_Ladder.h" />
+    <ClInclude Include="Packets\Up_Midas.h" />
+    <ClInclude Include="Packets\Up_OpenShop.h" />
+    <ClInclude Include="Packets\Up_PushNotify.h" />
+    <ClInclude Include="Packets\Up_QueryActStage.h" />
+    <ClInclude Include="Packets\Up_QueryData.h" />
+    <ClInclude Include="Packets\Up_QueryRanklist.h" />
+    <ClInclude Include="Packets\Up_QueryReplay.h" />
+    <ClInclude Include="Packets\Up_QuerySplitData.h" />
+    <ClInclude Include="Packets\Up_QuerySplitReturn.h" />
+    <ClInclude Include="Packets\Up_ReadMail.h" />
+    <ClInclude Include="Packets\Up_RechargeRebate.h" />
+    <ClInclude Include="Packets\Up_ReportBattle.h" />
+    <ClInclude Include="Packets\Up_RequestGuildLog.h" />
+    <ClInclude Include="Packets\Up_RequestUpgradeArousalLevel.h" />
+    <ClInclude Include="Packets\Up_RequestUserinfo.h" />
+    <ClInclude Include="Packets\Up_RequireArousal.h" />
+    <ClInclude Include="Packets\Up_RequireRewards.h" />
+    <ClInclude Include="Packets\Up_ResetElite.h" />
+    <ClInclude Include="Packets\Up_SellItem.h" />
+    <ClInclude Include="Packets\Up_SetAvatar.h" />
+    <ClInclude Include="Packets\Up_SetName.h" />
+    <ClInclude Include="Packets\Up_ShopConsume.h" />
+    <ClInclude Include="Packets\Up_ShopRefresh.h" />
+    <ClInclude Include="Packets\Up_SkillLevelup.h" />
+    <ClInclude Include="Packets\Up_SplitHero.h" />
+    <ClInclude Include="Packets\Up_String.h" />
+    <ClInclude Include="Packets\Up_SuspendReport.h" />
+    <ClInclude Include="Packets\Up_SweepStage.h" />
+    <ClInclude Include="Packets\Up_SyncSkillStren.h" />
+    <ClInclude Include="Packets\Up_SyncVitality.h" />
+    <ClInclude Include="Packets\Up_TavernDraw.h" />
+    <ClInclude Include="Packets\Up_Tbc.h" />
+    <ClInclude Include="Packets\Up_TriggerJob.h" />
+    <ClInclude Include="Packets\Up_TriggerTask.h" />
+    <ClInclude Include="Packets\Up_Tutorial.h" />
+    <ClInclude Include="Packets\Up_UpMsg.h" />
+    <ClInclude Include="Packets\Up_Login.h" />
+    <ClInclude Include="Packets\Up_SdkLogin.h" />
+    <ClInclude Include="Packets\Up_SystemSettingChange.h" />
+    <ClInclude Include="Packets\Up_WearEquip.h" />
+    <ClInclude Include="Packets\Up_Worldcup.h" />
+    <ClInclude Include="pb\bcdown.pb.h" />
+    <ClInclude Include="pb\bcup.pb.h" />
+    <ClInclude Include="pb\up.pb.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="Network.cpp" />
+    <ClCompile Include="pb\bcdown.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="pb\bcup.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="pb\up.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="app.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

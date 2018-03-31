@@ -1,0 +1,9 @@
+_repeat: 0
+_user_id: 1
+_trigger_task {
+  _task: 2621444
+}
+_sdk_login {
+  _session_key: "1521792852"
+  _plat_id: self
+}

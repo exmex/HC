@@ -1,0 +1,115 @@
+package bcdown;
+
+message battlecheck {
+  repeated pve_check_msg _pve_msg = 1;
+  repeated pvp_check_msg _pvp_msg = 2;
+  repeated tbc_check_msg _tbc_msg = 3;
+  repeated excav_check_msg  _excav_msg  = 4;
+}
+
+message pve_check_msg {
+  required uint32 _checkid    = 1;
+  required uint32 _userid     = 2;
+  required uint32 _stageid    = 3;
+  required result _result     = 4 [default = victory];
+  required uint32 _stars      = 5;
+  repeated hero   _heroes     = 6;
+  repeated uint32 _oprations  = 7;
+  required uint32 _rseed      = 8;
+  optional uint32 _cli_battle_time = 9;
+}
+
+message pvp_check_msg{
+  required uint32 _checkid      = 1;
+  required uint32 _userid       = 2;
+  optional string _username     = 3;
+  optional uint32 _level        = 4;
+  optional uint32 _avatar       = 5;
+  required uint32 _oppo_userid  = 6;
+  optional string _oppo_name    = 7;
+  optional uint32 _oppo_level   = 8;
+  optional uint32 _oppo_avatar  = 9;
+  optional uint32 _oppo_robot   = 10;
+  optional result _result       = 11 [default = victory];
+  repeated hero   _self_heroes  = 12;
+  repeated hero   _oppo_heroes  = 13;
+  required uint32 _rseed        = 14;
+  optional uint32 _self_robot   = 15;
+}
+
+message tbc_check_msg{
+  required uint32 _checkid              = 1;
+  required uint32 _userid               = 2;
+  optional string _username             = 3;
+  required uint32 _oppo_userid          = 4;
+  optional string _oppo_name            = 5;
+  optional uint32 _oppo_robot           = 6;
+  optional result _result               = 7 [default = victory];
+  repeated hero   _self_heroes          = 8;
+  repeated hero   _oppo_heroes          = 9;
+  required uint32 _rseed                = 10;
+  optional uint32 _self_robot           = 11;
+  repeated hero_dyna _self_dyna_start   = 12;
+  repeated hero_dyna _self_dyna_end     = 13;
+  repeated hero_dyna _oppo_dyna_start   = 14;
+  repeated hero_dyna _oppo_dyna_end     = 15;
+  repeated uint32 _oprations            = 16;
+  optional uint32 _cli_battle_time      = 17;
+}
+
+message excav_check_msg{
+  enum oppo_type {
+    monster = 1;
+    player  = 2;
+  }
+  required uint32 _checkid              = 1;
+  required uint32 _userid               = 2;
+  required uint32 _oppo_userid          = 3;
+  optional oppo_type _oppo_type         = 4;  
+  optional result _result               = 5 [default = victory];
+  repeated hero   _self_heroes          = 6;
+  repeated hero   _oppo_heroes          = 7;
+  required uint32 _rseed                = 8;
+  repeated hero_dyna _self_dyna_start   = 9;
+  repeated hero_dyna _self_dyna_end     = 10;
+  repeated hero_dyna _oppo_dyna_start   = 11;
+  repeated hero_dyna _oppo_dyna_end     = 12;
+  repeated uint32 _oprations            = 13;
+  optional uint32 _cli_battle_time      = 14;
+}
+
+message hero_equip {
+  required uint32 _index                = 1;   // 装备的位置
+  required uint32 _item_id              = 2;   // 装备ID
+  required uint32 _exp                  = 3;   // 英雄经验   
+}
+
+message hero {
+    enum status {
+        idle    = 0;    // 空闲
+        hire    = 1;    // 雇佣兵
+        mining  = 2;    // 守矿
+    }
+    required uint32 _tid                  = 1;
+    optional uint32 _rank                 = 2;   // 英雄阶级
+    required uint32 _level                = 3;   // 英雄等级
+    required uint32 _stars                = 4;   // 进化等级
+    required uint32 _exp                  = 5;
+    required uint32 _gs                   = 6;
+    required status _state                = 7;   // 英雄状态，标识英雄正在干的事
+    repeated uint32 _skill_levels         = 8;   // 技能等级
+    repeated hero_equip _items            = 9;   // 当前的装备列表
+}
+
+message hero_dyna {
+  required uint32     _hp_perc        = 1;
+  required uint32     _mp_perc        = 2;
+  optional uint32     _custom_data    = 3;
+}
+
+enum result {
+  victory  = 0;
+  defeat   = 1;
+  canceled = 2;
+  timeout  = 3; 
+}

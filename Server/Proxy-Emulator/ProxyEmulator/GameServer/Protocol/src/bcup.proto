@@ -1,0 +1,19 @@
+package bcup;
+
+message battlecheck_reply {
+  repeated check_result _result = 1;  // 当为空时，表示请求校验数据
+}
+
+message check_result {
+  enum result {
+    honest  = 1;    // pve用
+    cheat   = 2;    // pve用
+    victory = 3;    // pvp用
+    defeat  = 4;    // pvp用
+  }
+
+  required uint32 _checkid = 1;                    // 在第一次发送请求的时候，设置为0
+  required uint32 _userid  = 2;                    // 没什么作用，直接返回
+  required result _result  = 3 [default = honest]; // 战斗校验的结果
+  required uint32 _is_plugin = 4;                  // 是否为外挂,1是 0否
+}

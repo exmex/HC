@@ -1,0 +1,10 @@
+_repeat: 0
+_user_id: 1
+_set_name {
+  _type: free
+  _name: "admin"
+}
+_sdk_login {
+  _session_key: "1521637696"
+  _plat_id: self
+}
